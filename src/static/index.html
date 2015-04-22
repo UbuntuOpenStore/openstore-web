@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title ng-bind="title">Open App Store</title>
+        <base href="/" />
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    </head>
+    <body class="ng-cloak">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <span class="navbar-brand">
+                        Open Appstore
+                    </span>
+                </div>
+                <div class="navbar-collapse collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="http://notyetthere.org/openstore/v1/openstore.mzanetti_0.4_armhf.click">Download</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>
+                        Now that the Ubuntu Phone is finally in the hands of many people, it’s time to get some hacking started! This is an attempt to bootstrap some hacking community around the devices that wants to explore the phone beyond of what the platform offers to the normal user at this time. To get this started I prepared an app, called Open App Store that allows hackers to install applications that can’t be published to the official store. This really is not about competing with the official Ubuntu store, but is meant as an extension for power users and developers.
+                        <br/>Excited? Download the app
+                        <a href="http://notyetthere.org/openstore/v1/openstore.mzanetti_0.4_armhf.click">here</a>
+                        but think twice! This thing opens doors for possibilities to break your Ubuntu installation. Only install it if you know what you’re doing, install it at your own risk and make sure that you know how to reflash your device if you break something.
+                    </p>
+
+                    <p>
+                        At this point you won’t find many apps in this store, but I managed to prepare two:
+                    </p>
+
+                    <ul>
+                        <li>
+                            TweakGeek: An app that allows you changing special settings of the device.
+                        </li>
+                        <li>
+                            Big Moving Text: You probably know this one from the official store. This version however, is able to keep your display lit while the text is running. Thanks to Michal Predotka for this contribution.
+                        </li>
+                    </ul>
+
+                    <p>
+                        If you have an app that you’d like publishing in this store, here are the rules we’re gonna start with (those might change at some point but for now I think they make sense to see where this is going):
+                    </p>
+
+                    <ul>
+                        <li>
+                            If an application can be published in the official Ubuntu store, publish it there.
+                        </li>
+                        <li>
+                            If an application could be published in the official Ubuntu store if it wouldn’t be about that one cool feature, publish a stripped down version in the official store! Not everyone should and will have Open App Store installed.
+                        </li>
+                        <li>
+                            Only open source applications allowed: As the applications might have arbitrary access to the device, every submitted app will get a review and the source code is published along with the app.
+                        </li>
+                    </ul>
+
+                    <p>
+                        Still on board? Here’s how you get started:
+                        <ul>
+                            <li>
+                                Add an additional .apparmor file to your project (.apparmor.openstore) requesting the special permissions you need.
+                            </li>
+                            <li>
+                                Send me a link to a branch for your app to michael.zanetti@ubuntu.com along with some instructions on how to build it if they differ from the standard (Ubuntu SDK).
+                            </li>
+                            <li>
+                                Give a short explanation why you can’t publish that in the official store. No need to go into details, a one liner like “needs to keep the display lit” will do. List all the special features you have, if there are more.
+                            </li>
+                        </ul>
+                    </p>
+
+                    <p>
+                        Looking forward to your contributions. For now the source code for the Open App Store can be found
+                        <a href="https://code.launchpad.net/~mzanetti/+junk/openstore">here</a>.
+                        If you want to help out with developing the store app and/or the infrastructure behind it, ping me on IRC or drop me a mail.
+                    </p>
+
+                    <p>
+                        Happy Hacking!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
