@@ -16,7 +16,12 @@ if (cluster.isMaster) {
     });
 }
 else {
-    var port = process.env.PORT || 3000;
     app.use(express.static(__dirname + '/static'));
+
+    app.all(['/:route'], function(req, res) { //For html5mode on frontend
+        res.sendFile('index.html', {root: __dirname + '/static'});
+    });
+
+    var port = process.env.PORT || 3000;
     app.listen(port, '0.0.0.0');
 }
