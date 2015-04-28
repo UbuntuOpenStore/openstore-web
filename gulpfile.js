@@ -24,7 +24,9 @@ gulp.task('connect', function() {
         livereload: true,
         middleware: function(connect, opt) {
             return [
-                history()
+                history({
+                    index: '/index.html'
+                })
             ]
         }
     });

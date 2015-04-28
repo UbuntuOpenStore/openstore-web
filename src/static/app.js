@@ -20,6 +20,10 @@ angular.module('openappstore').config(function($stateProvider, $urlRouterProvide
         url: '/apps',
         templateUrl: '/partials/apps.html',
         controller: 'appsCtrl'
+    }).state('app', {
+        url: '/app/:name',
+        templateUrl: '/partials/app.html',
+        controller: 'appsCtrl'
     });
 
     $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|mailto|scope):/);

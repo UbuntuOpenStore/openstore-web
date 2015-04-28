@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-sm-4" ng-repeat="app in apps|orderBy:'name'">
         <div class="list-group">
-            <a class="list-group-item clickable">
+            <a class="list-group-item clickable" ui-sref="app({name: app.id})">
                 <div class="row-action-primary pull-left">
                     <div class="icon ubuntu-shape">
                         <img ng-src="{{app.icon}}" alt="{{app.name}}" />

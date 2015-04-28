@@ -37,6 +37,16 @@ body {
     display: inline-block;
 }
 
+.icon-large {
+  height: 92px;
+  width: 92px;
+  margin-bottom: 10px;
+}
+
+.icon-large img {
+  border-radius: 2rem;
+}
+
 .list-group .list-group-item {
     min-height: 85px;
 }
@@ -45,4 +55,16 @@ body {
     float: left;
     display: inline-block;
     padding-right: 16px;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.app .icon-large {
+    margin-right: 16px;
+}
+
+.description {
+    margin-top: 20px;
 }

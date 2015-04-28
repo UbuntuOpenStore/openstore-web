@@ -18,7 +18,7 @@ if (cluster.isMaster) {
 else {
     app.use(express.static(__dirname + '/static'));
 
-    app.all(['/:route'], function(req, res) { //For html5mode on frontend
+    app.all(['/:route', '/:route/:param'], function(req, res) { //For html5mode on frontend
         res.sendFile('index.html', {root: __dirname + '/static'});
     });
 

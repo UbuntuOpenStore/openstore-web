@@ -1,0 +1,18 @@
+<div class="row app">
+    <div class="col-md-12">
+        <div class="icon-large ubuntu-shape pull-left">
+            <img ng-src="{{app.icon}}" alt="{{app.name}}" />
+        </div>
+
+        <h2 ng-bind="app.name"></h2>
+        <h4 ng-bind="app.tagline"></h4>
+        <div>
+            <span class="label label-primary">v{{app.version}}</span>
+            <span class="label label-info" ng-bind="app.license"></span>
+            <span class="label label-success" ng-bind="app.filesize|bytes"></span>
+        </div>
+        <div class="description">
+            <p ng-bind="app.description"></p>
+        </div>
+    </div>
+</div>
