@@ -1,4 +1,5 @@
 {
+    "node": true,
     "browser": true,
     "esnext": true,
     "curly": true,
