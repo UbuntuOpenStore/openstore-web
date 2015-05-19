@@ -4,14 +4,14 @@ Web viewer for the [Open App Store](http://notyetthere.org/openstore-tweakgeek-a
 
 ## Development ##
 
-* Install [gulp](http://gulpjs.com/):
-    * Run: `npm install gulp --global`
+* Install mongodb:
+    * Ubuntu: `apt-get install mongodb`
+    * Arch Linux: `pacman -S mongodb`
+* Install gulp and supervisor:
+    * Run: `npm install gulp supervisor --global`
 * Install NPM dependencies:
     * Run: `npm install`
-* Start up local dev webserver:
-    * Run: `gulp serve`
-    * Go to: `localhost:5000`
-* Alternatively run the production server:
+* Start up webserver:
     * Run: `npm start`
     * Go to: `localhost:3000`
 

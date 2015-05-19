@@ -1,27 +1,29 @@
+var config = require('./config');
+var api = require('./api');
+var auth = require('./auth');
 var cluster = require('cluster');
 var os = require('os');
 var express = require('express');
 
-var app = express();
-
 if (cluster.isMaster) {
-    var cpus = os.cpus().length;
-
-    for (var i = 0; i < cpus; i += 1) {
-      cluster.fork();
+    for (var i = 0; i < os.cpus().length; i += 1) {
+        cluster.fork();
     }
 
     cluster.on('exit', function() {
-      cluster.fork();
+        cluster.fork();
     });
 }
 else {
-    app.use(express.static(__dirname + '/static'));
+    var app = express();
+    auth.setup(app);
+    api.setup(app);
 
-    app.all(['/:route', '/:route/:param'], function(req, res) { //For html5mode on frontend
-        res.sendFile('index.html', {root: __dirname + '/static'});
+    app.use(express.static(__dirname + '/../www'));
+
+    app.all(['/', '/docs', '/submit', '/apps', '/app/:name'], function(req, res) { //For html5mode on frontend
+        res.sendFile('index.html', {root: __dirname + '/../www'});
     });
 
-    var port = process.env.PORT || 3000;
-    app.listen(port, '0.0.0.0');
+    app.listen(config.server.port, config.server.ip);
 }
