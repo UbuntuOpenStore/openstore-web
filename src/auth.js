@@ -99,8 +99,8 @@ function setup(app) {
 
     app.post('/auth/ubuntu', passport.authenticate('ubuntu'));
     app.get('/auth/ubuntu/return', passport.authenticate('ubuntu', {
-        successRedirect: '/auth/me',
-        failureRedirect: '/auth/login'
+        successRedirect: '/manage',
+        failureRedirect: '/'
     }));
 
     app.get('/auth/me', function(req, res) {

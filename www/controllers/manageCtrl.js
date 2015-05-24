@@ -23,7 +23,9 @@ angular.module('openappstore').controller('manageCtrl', function($scope, $http, 
     })
     .then(function(res) {
         $scope.loading = false;
-        $scope.packages = res.data.data;
+        if (res && res.data && res.data.data) {
+            $scope.packages = res.data.data;
+        }
     });
 
     $scope.newPackage = function() {
