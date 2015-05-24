@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('openappstore', ['ui.router']);
+angular.module('openappstore', ['ui.router', 'ui.bootstrap']);
 
 angular.module('openappstore').config(function($stateProvider, $urlRouterProvider, $locationProvider, $compileProvider) {
     $urlRouterProvider.otherwise('/');
@@ -9,21 +9,30 @@ angular.module('openappstore').config(function($stateProvider, $urlRouterProvide
     $stateProvider.state('main', {
         url: '/',
         templateUrl: '/partials/main.html',
-    }).state('docs', {
+    })
+    .state('docs', {
         url: '/docs',
         templateUrl: '/partials/docs.html',
-    }).state('submit', {
+    })
+    .state('submit', {
         url: '/submit',
         templateUrl: '/partials/submit.html',
         controller: 'submitCtrl'
-    }).state('apps', {
+    })
+    .state('apps', {
         url: '/apps',
         templateUrl: '/partials/apps.html',
         controller: 'appsCtrl'
-    }).state('app', {
+    })
+    .state('app', {
         url: '/app/:name',
         templateUrl: '/partials/app.html',
         controller: 'appsCtrl'
+    })
+    .state('manage', {
+        url: '/manage',
+        templateUrl: '/partials/manage.html',
+        controller: 'manageCtrl'
     });
 
     $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|mailto|scope):/);

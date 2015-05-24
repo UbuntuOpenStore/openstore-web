@@ -21,7 +21,7 @@ else {
 
     app.use(express.static(__dirname + '/../www'));
 
-    app.all(['/', '/docs', '/submit', '/apps', '/app/:name'], function(req, res) { //For html5mode on frontend
+    app.all(['/', '/docs', '/submit', '/apps', '/app/:name', '/manage'], function(req, res) { //For html5mode on frontend
         res.sendFile('index.html', {root: __dirname + '/../www'});
     });
 

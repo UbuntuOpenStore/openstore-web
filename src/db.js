@@ -10,9 +10,9 @@ mongoose.connect(config.mongo.uri + config.mongo.database, function(err) {
 
 var packageSchema = mongoose.Schema({
     author: String,
-    apikey: String,
     category: String,
     description: String,
+    deleted: Boolean,
     filesize: Number,
     icon: String,
     id: {type: String, index: true},

@@ -39,7 +39,7 @@ function setup(app) {
     });
 
     app.get('/repo/repolist.json', function(req, res) {
-        db.Package.find({}, function(err, packages) {
+        db.Package.find({$or: [{deleted: false}, {deleted: {$exists: false}}]}, function(err, packages) {
             if (err) {
                 error(res, err);
             }
@@ -54,7 +54,7 @@ function setup(app) {
     });
 
     app.get('/api/apps', function(req, res) {
-        db.Package.find({}, function(err, packages) {
+        db.Package.find({$or: [{deleted: false}, {deleted: {$exists: false}}]}, function(err, packages) {
             if (err) {
                 error(res, err);
             }
@@ -83,7 +83,12 @@ function setup(app) {
                 }
             });
         }, function(err, packages) {
-            done(err, pkg);
+            if (err) {
+                error(res, err);
+            }
+            else {
+                success(res, packages);
+            }
         });
     });
 
@@ -94,8 +99,8 @@ function setup(app) {
         }
 
         async.map(data, function(item, done) {
-            //TODO check that request contains id
-            db.Package.findOne({id: item.id}, function(err, pkg) {
+            //TODO check that request contains _id
+            db.Package.findOne({_id: item._id}, function(err, pkg) {
                 if (err) {
                     done(err);
                 }
@@ -115,6 +120,33 @@ function setup(app) {
             }
             else {
                 success(res, packages);
+            }
+        });
+    });
+
+    app.delete('/api/apps', passport.authenticate('localapikey', {session: false}), isAdmin, function(req, res) {
+        var data = req.body;
+        if (!Array.isArray(req.body)) {
+            data = [req.body];
+        }
+
+        async.map(data, function(item, done) {
+            //TODO check that request contains _id
+            db.Package.findOne({_id: item._id}, function(err, pkg) {
+                if (err) {
+                    done(err);
+                }
+                else {
+                    pkg.deleted = true;
+                    pkg.save(done);
+                }
+            });
+        }, function(err, packages) {
+            if (err) {
+                error(res, err);
+            }
+            else {
+                success(res, null);
             }
         });
     });

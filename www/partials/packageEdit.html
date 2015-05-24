@@ -1,0 +1,116 @@
+<div class="modal-header">
+    <button type="button" class="close" ng-click="$dismiss('x button')">
+        <i class="fa fa-times"></i>
+    </button>
+    <h4 class="modal-title">
+        Package
+        <span ng-show="pkg._id">Edit</span>
+        <span ng-show="!pkg._id">Create</span>
+    </h4>
+</div>
+
+<div class="modal-body">
+    <form class="form-horizontal" role="form">
+        <div class="form-group">
+            <label for="id" class="col-sm-2 control-label">ID</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="id" placeholder="ID" ng-model="pkg.id" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="name" class="col-sm-2 control-label">Name</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="name" placeholder="Name" ng-model="pkg.name" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="author" class="col-sm-2 control-label">Author</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="author" placeholder="Author" ng-model="pkg.author" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="tagline" class="col-sm-2 control-label">Tag Line</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="tagline" placeholder="Tag Line" ng-model="pkg.tagline" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="description" class="col-sm-2 control-label">Description</label>
+            <div class="col-sm-10">
+                <textarea class="form-control" id="description" placeholder="Description" ng-model="pkg.description" rows="4"></textarea>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="version" class="col-sm-2 control-label">Version</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="version" placeholder="Version" ng-model="pkg.version" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="license" class="col-sm-2 control-label">License</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="license" placeholder="License" ng-model="pkg.license" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="icon" class="col-sm-2 control-label">Icon URL</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="icon" placeholder="Icon URL" ng-model="pkg.icon" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="package" class="col-sm-2 control-label">Package URL</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="package" placeholder="Package URL" ng-model="pkg.package" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="source" class="col-sm-2 control-label">Source URL</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="source" placeholder="Source URL" ng-model="pkg.source" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="filesize" class="col-sm-2 control-label">File Size</label>
+            <div class="col-sm-10">
+                <input type="number" min="0" class="form-control" id="filesize" placeholder="File Size" ng-model="pkg.filesize" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="category" class="col-sm-2 control-label">Category</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="category" placeholder="Category" ng-model="pkg.category" />
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="modal-footer">
+    <button ng-click="$dismiss('cancel button')" class="btn btn-default">
+        <i class="fa fa-times"></i>
+        Cancel
+    </button>
+
+    <button ng-click="save(pkg)" class="btn btn-primary" ng-disabled="saving">
+        <span ng-show="pkg._id">
+            <i class="fa" ng-class="{'fa-spinner fa-spin': saving, 'fa-check': !saving}"></i>
+            Save
+        </span>
+        <span ng-show="!pkg._id">
+            <i class="fa" ng-class="{'fa-spinner fa-spin': saving, 'fa-plus': !saving}"></i>
+            Create
+        </span>
+    </button>
+</div>

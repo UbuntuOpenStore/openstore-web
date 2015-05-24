@@ -103,12 +103,28 @@ function setup(app) {
         failureRedirect: '/auth/login'
     }));
 
-    app.get('/auth/login', function(req, res) {
-        res.send('<form action="/auth/ubuntu" method="post"><div><input type="submit" value="Sign In"/></div></form>');
-    });
-
     app.get('/auth/me', function(req, res) {
-        res.send(req.user);
+        if (req.user) {
+            res.send({
+                success: true,
+                data: {
+                    name: req.user.name,
+                    language: req.user.language,
+                    username: req.user.username,
+                    apikey: req.user.apikey,
+                    role: req.user.role,
+                },
+                message: null
+            });
+        }
+        else {
+            res.status(401);
+            res.send({
+                success: false,
+                data: null,
+                message: 'User not logged in'
+            });
+        }
     });
 
     app.get('/auth/logout', function(req, res){
