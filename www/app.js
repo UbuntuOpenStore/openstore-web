@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('openappstore', ['ui.router', 'ui.bootstrap']);
+angular.module('openappstore', ['ui.router', 'ui.bootstrap', 'ngFileUpload']);
 
 angular.module('openappstore').config(function($stateProvider, $urlRouterProvider, $locationProvider, $compileProvider) {
     $urlRouterProvider.otherwise('/');

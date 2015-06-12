@@ -9,18 +9,22 @@ mongoose.connect(config.mongo.uri + config.mongo.database, function(err) {
 });
 
 var packageSchema = mongoose.Schema({
+    architecture: String,
     author: String,
     category: String,
     description: String,
     deleted: Boolean,
     filesize: Number,
+    framework: String,
     icon: String,
     id: {type: String, index: true},
     license: String,
+    manifest: {},
     name: String,
     package: String,
     source: String,
     tagline: String,
+    types: [String],
     version: String,
 });
 

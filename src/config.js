@@ -9,6 +9,12 @@ var config = {
         uri: process.env.MONGODB_URI || 'mongodb://localhost/',
         database: process.env.MONGODB_DB || 'openappstore',
     },
+    smartfile: {
+        key: process.env.SMARTFILE_KEY || '',
+        password: process.env.SMARTFILE_PASS || '',
+        url: process.env.SMARTFILE_URL || 'https://app.smartfile.com/api/2/path/data/test/',
+        share: process.env.SMARTFILE_SHARE || 'https://file.ac/MjgQmGAVzEU/',
+    }
 };
 
 module.exports = config

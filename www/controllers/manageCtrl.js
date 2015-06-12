@@ -1,10 +1,12 @@
 'use strict';
 
-angular.module('openappstore').controller('manageCtrl', function($scope, $http, $location, $modal, $timeout) {
+angular.module('openappstore').controller('manageCtrl', function($scope, $http, $location, $modal, $timeout, Upload) {
     $scope.saving = false;
     $scope.loading = true;
     $scope.user = null;
     $scope.packages = [];
+    $scope.file = null;
+    $scope.error = null;
 
     $http.get('/auth/me').then(function(res) {
         $scope.user = res.data.data;
@@ -30,18 +32,11 @@ angular.module('openappstore').controller('manageCtrl', function($scope, $http, 
 
     $scope.newPackage = function() {
         return {
-            author: '',
             category: '',
             description: '',
-            filesize: 0,
-            icon: '',
-            id: '',
             license: '',
-            name: '',
-            package: '',
             source: '',
             tagline: '',
-            version: '',
         };
     };
 
@@ -55,37 +50,52 @@ angular.module('openappstore').controller('manageCtrl', function($scope, $http, 
         });
     };
 
+    $scope.cancel = function() {
+        modal.close();
+        $scope.error = null;
+    };
+
     $scope.save = function(pkg) {
         $scope.saving = true;
         var method = 'POST';
+        var url = '/api/apps?apikey=' + $scope.user.apikey;
         if (pkg._id) {
             method = 'PUT';
+            url = '/api/apps/' + pkg.id + '?apikey=' + $scope.user.apikey;
         }
 
-        $http({
+        Upload.upload({
             method: method,
-            url: '/api/apps',
-            params: {
-                apikey: $scope.user.apikey
+            url: url,
+            fields: {
+                tagline: pkg.tagline,
+                description: pkg.description,
+                license: pkg.license,
+                source: pkg.source,
+                category: pkg.category,
             },
-            data: pkg,
-            headers: {
-                'Content-Type': 'application/json'
-            }
+            file: $scope.file
         })
-        .then(function(res) {
+        .progress(function(evt) {
+            var progressPercentage = parseInt(100.0 * evt.loaded / evt.total);
+            console.log('progress: ' + progressPercentage + '% ' + evt.config.file.name);
+        })
+        .error(function(data, status) {
+            console.error(data, status);
+            $scope.error = data.message;
             $scope.saving = false;
+        })
+        .success(function(data) {
+            $scope.saving = false;
+            $scope.file = null;
+            $scope.error = null;
             modal.close();
 
             $scope.loading = true;
-            return $http.get('/api/apps');
-        }, function(res) {
-            $scope.saving = false;
-            console.log('failed to save', res);
-        })
-        .then(function(res) {
-            $scope.loading = false;
-            $scope.packages = res.data.data;
+            $http.get('/api/apps').then(function(res) {
+                $scope.loading = false;
+                $scope.packages = res.data.data;
+            });
         });
     };
 
@@ -93,12 +103,9 @@ angular.module('openappstore').controller('manageCtrl', function($scope, $http, 
         bootbox.confirm('Are you sure you want to remove package "' + pkg.id + '"?', function(result) {
             if (result) {
                 $timeout(function() {
-                    $http.delete('/api/apps', {
+                    $http.delete('/api/apps/' + pkg.id, {
                         params: {
                             apikey: $scope.user.apikey
-                        },
-                        data: {
-                            _id: pkg._id
                         },
                         headers: {
                             'Content-Type': 'application/json'
@@ -120,4 +127,8 @@ angular.module('openappstore').controller('manageCtrl', function($scope, $http, 
             }
         });
     };
+
+    $scope.setFile = function(files) {
+        $scope.file = files[0];
+    }
 });
