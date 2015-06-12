@@ -7,6 +7,7 @@ var passport = require('passport');
 var multer  = require('multer');
 var request = require('request');
 var fs = require('fs');
+var path = require('path');
 
 function success(res, data, message) {
     res.send({
@@ -36,16 +37,30 @@ function isAdmin(req, res, next) {
     }
 }
 
-function uploadToSmartfile(filepath, filename, callback) {
+function uploadToSmartfile(filepath, filestream, filename, callback) {
     var headers = {
         'Authorization': 'Basic ' + new Buffer(config.smartfile.key + ':' + config.smartfile.password).toString('base64'),
     };
 
+    var contentType = undefined;
+    if (filestream) {
+        if (path.extname(filename).toLowerCase() == '.png') {
+            contentType = 'image/png';
+        }
+        else if (path.extname(filename).toLowerCase() == '.jpg' || path.extname(filename).toLowerCase() == '.jpeg') {
+            contentType = 'image/jpeg';
+        }
+    }
+    else {
+        filestream = fs.createReadStream(filepath);
+    }
+
     var formData = {
         file: {
-            value:  fs.createReadStream(filepath),
+            value: filestream,
             options: {
-                filename: filename
+                filename: filename,
+                contentType: contentType,
             }
         }
     };
@@ -59,7 +74,7 @@ function uploadToSmartfile(filepath, filename, callback) {
             callback(err);
         }
         else if (response.statusCode != 200) {
-            callback('Could not upload file to smartfile, error code ' + response.statusCode);
+            callback('Could not upload "' + filename + '" to smartfile, error code ' + response.statusCode);
         }
         else {
             callback(null, config.smartfile.share + filename);
@@ -123,7 +138,71 @@ function setup(app) {
         });
     });
 
-    function updateFromClick(req, res, pkg) {
+    function saveClick(req, res, pkg, data, file) {
+        var filename = data.manifest.name + '_' + data.manifest.version + '_' + data.manifest.architecture + '.click';
+        uploadToSmartfile(file.path, null, filename, function(err, url) {
+            fs.unlink(file.path);
+
+            if (err) {
+                error(res, err);
+            }
+            else {
+                var author = '';
+                if (data.manifest.maintainer) {
+                    author = data.manifest.maintainer.replace(/\<.*\>/, '').trim();
+                }
+
+                pkg.architecture = data.manifest.architecture;
+                pkg.author = author;
+                pkg.category = req.body.category;
+                pkg.description = req.body.description;
+                pkg.filesize = file.size;
+                pkg.framework = data.manifest.framework;
+                pkg.id = data.manifest.name;
+                pkg.license = req.body.license;
+                pkg.manifest = data.manifest;
+                pkg.name = data.manifest.title;
+                pkg.package = url;
+                pkg.source = req.body.source;
+                pkg.tagline = req.body.tagline;
+                pkg.types = data.types;
+                pkg.version = data.manifest.version;
+
+                if (data.icon) {
+                    var iconname = data.manifest.name + path.extname(data.iconpath);
+                    uploadToSmartfile(null, data.icon, iconname, function(err, url) {
+                        if (err) {
+                            error(res, err);
+                        }
+                        else {
+                            pkg.icon = url;
+
+                            pkg.save(function(err) {
+                                if (err) {
+                                    error(res, err);
+                                }
+                                else {
+                                    success(res, pkg);
+                                }
+                            });
+                        }
+                    });
+                }
+                else {
+                    pkg.save(function(err) {
+                        if (err) {
+                            error(res, err);
+                        }
+                        else {
+                            success(res, pkg);
+                        }
+                    });
+                }
+            }
+        });
+    }
+
+    function updateFromClick(req, res, pkg, failIfExists) {
         if (!req.files || !req.files.file) {
             error(res, 'No file upload specified');
         }
@@ -134,7 +213,7 @@ function setup(app) {
         else {
             var data = {};
             var file = req.files.file;
-            clickParser.parseClickPackage(data, file.path, function(err) {
+            clickParser.parseClickPackage(file.path, function(err, data) {
                 if (err) {
                     error(res, err);
                     fs.unlink(file.path);
@@ -148,57 +227,30 @@ function setup(app) {
                     fs.unlink(file.path);
                 }
                 else {
-                    var filename = data.manifest.name + '_' + data.manifest.version + '_' + data.manifest.architecture;
-                    uploadToSmartfile(file.path, filename, function(err, url) {
-                        if (err) {
-                            error(res, err);
-                            fs.unlink(file.path);
-                        }
-                        else {
-                            var author = '';
-                            if (data.manifest.maintainer) {
-                                author = data.manifest.maintainer.replace(/\<.*\>/, '').trim();
+                    if (failIfExists) {
+                        db.Package.findOne({id: data.manifest.name}).or([{deleted: false}, {deleted: {'$exists': false}}]).exec(function(err, p) {
+                            if (err) {
+                                error(res, err);
                             }
-
-                            pkg.architecture = data.manifest.architecture;
-                            pkg.author = author;
-                            pkg.category = req.body.category;
-                            pkg.description = req.body.description;
-                            pkg.filesize = file.size;
-                            pkg.framework = data.manifest.framework;
-                            //TODO = icon
-                            pkg.id = data.manifest.name;
-                            pkg.license = req.body.license;
-                            pkg.manifest = data.manifest;
-                            pkg.name = data.manifest.title;
-                            pkg.package = url;
-                            pkg.source = req.body.source;
-                            pkg.tagline = req.body.tagline;
-                            pkg.types = data.types;
-                            pkg.version = data.manifest.version;
-
-                            pkg.save(function(err) {
-                                if (err) {
-                                    error(res, err);
-                                }
-                                else {
-                                    success(res, pkg);
-                                }
-
-                                fs.unlink(file.path);
-                            });
-                        }
-                    });
+                            else if (p) {
+                                error(res, 'Package with id "' + data.manifest.name + '" already exists');
+                            }
+                            else {
+                                saveClick(req, res, pkg, data, file);
+                            }
+                        });
+                    }
+                    else {
+                        saveClick(req, res, pkg, data, file);
+                    }
                 }
             });
         }
     }
 
     app.post('/api/apps', passport.authenticate('localapikey', {session: false}), isAdmin, function(req, res) {
-        //TODO fail if package already exists
-
         var pkg = new db.Package();
-        updateFromClick(req, res, pkg);
+        updateFromClick(req, res, pkg, true);
     });
 
     app.put('/api/apps/:id', passport.authenticate('localapikey', {session: false}), isAdmin, function(req, res) {

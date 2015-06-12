@@ -17,6 +17,7 @@
     "devel": true,
     "globals": {
         "angular": true,
-        "_": true
+        "_": true,
+        "bootbox": true
     }
 }

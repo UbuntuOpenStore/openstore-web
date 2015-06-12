@@ -130,5 +130,5 @@ angular.module('openappstore').controller('manageCtrl', function($scope, $http, 
 
     $scope.setFile = function(files) {
         $scope.file = files[0];
-    }
+    };
 });
