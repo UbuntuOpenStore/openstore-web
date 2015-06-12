@@ -19,7 +19,7 @@ angular.module('openappstore').controller('manageCtrl', function($scope, $http, 
             $scope.loading = true;
             return $http.get('/api/apps');
         }
-    }, function(res) {
+    }, function() {
         $scope.user = null;
         $location.path('/auth/logout');
     })
@@ -85,7 +85,7 @@ angular.module('openappstore').controller('manageCtrl', function($scope, $http, 
             $scope.error = data.message;
             $scope.saving = false;
         })
-        .success(function(data) {
+        .success(function() {
             $scope.saving = false;
             $scope.file = null;
             $scope.error = null;
@@ -111,7 +111,7 @@ angular.module('openappstore').controller('manageCtrl', function($scope, $http, 
                             'Content-Type': 'application/json'
                         }
                     })
-                    .then(function(res) {
+                    .then(function() {
                         console.log('successful delete');
 
                         $scope.loading = true;

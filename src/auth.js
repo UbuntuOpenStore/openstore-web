@@ -39,7 +39,7 @@ function setup(app) {
                 done(null, false);
             }
             else {
-                done(null, user)
+                done(null, user);
             }
         });
     }));

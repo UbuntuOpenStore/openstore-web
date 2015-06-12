@@ -1,13 +1,12 @@
 var db = require('./db');
 var clickParser = require('./clickParser');
 var config = require('./config');
-var bodyParser = require('body-parser');
-var async = require('async');
 var passport = require('passport');
 var multer  = require('multer');
 var request = require('request');
 var fs = require('fs');
 var path = require('path');
+var cluster = require('cluster');
 
 function success(res, data, message) {
     res.send({
@@ -42,7 +41,7 @@ function uploadToSmartfile(filepath, filestream, filename, callback) {
         'Authorization': 'Basic ' + new Buffer(config.smartfile.key + ':' + config.smartfile.password).toString('base64'),
     };
 
-    var contentType = undefined;
+    var contentType;
     if (filestream) {
         if (path.extname(filename).toLowerCase() == '.png') {
             contentType = 'image/png';
@@ -69,7 +68,7 @@ function uploadToSmartfile(filepath, filestream, filename, callback) {
         url: config.smartfile.url,
         formData: formData,
         headers: headers,
-    }, function(err, response, body) {
+    }, function(err, response) {
         if (err) {
             callback(err);
         }
@@ -124,7 +123,7 @@ function setup(app) {
                     packages: result
                 });
             }
-        })
+        });
     });
 
     app.get('/api/apps', function(req, res) {
@@ -211,7 +210,6 @@ function setup(app) {
             fs.unlink(req.files.file.path);
         }
         else {
-            var data = {};
             var file = req.files.file;
             clickParser.parseClickPackage(file.path, function(err, data) {
                 if (err) {

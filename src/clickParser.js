@@ -3,8 +3,6 @@ var ar = require('ar');
 var zlib = require('zlib');
 var tar = require('tar-stream');
 var streamifier = require('streamifier');
-var async = require('async');
-var concat = require('concat-stream');
 
 function isJson(string) {
     var value = true;
