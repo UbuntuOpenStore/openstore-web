@@ -4,10 +4,14 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "start": "supervisor -w src -i src/static src/index.js"
+    "start": "supervisor -w src src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/UbuntuOpenAppStore/openappstore-web.git"
   },
   "author": "Brian Douglass",
-  "license": "GPL3",
+  "license": "GPL-3.0",
   "dependencies": {
     "ar": "0.0.1",
     "async": "^1.2.1",
@@ -22,6 +26,7 @@
     "passport": "^0.2.1",
     "passport-localapikey": "0.0.3",
     "passport-ubuntu": "^0.1.2",
+    "request": "^2.57.0",
     "streamifier": "^0.1.1",
     "tar": "^2.1.1",
     "tar-stream": "^1.1.5"
