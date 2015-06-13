@@ -59,7 +59,7 @@ angular.module('openappstore').controller('manageCtrl', function($scope, $http, 
         $scope.saving = true;
         var method = 'POST';
         var url = '/api/apps?apikey=' + $scope.user.apikey;
-        if (pkg._id) {
+        if (pkg.id) {
             method = 'PUT';
             url = '/api/apps/' + pkg.id + '?apikey=' + $scope.user.apikey;
         }

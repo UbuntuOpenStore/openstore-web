@@ -4,8 +4,8 @@
     </button>
     <h4 class="modal-title">
         Package
-        <span ng-show="pkg._id">Edit</span>
-        <span ng-show="!pkg._id">Create</span>
+        <span ng-show="pkg.id">Edit</span>
+        <span ng-show="!pkg.id">Create</span>
     </h4>
 </div>
 
@@ -68,11 +68,11 @@
     </button>
 
     <button ng-click="save(pkg)" class="btn btn-primary" ng-disabled="saving">
-        <span ng-show="pkg._id">
+        <span ng-show="pkg.id">
             <i class="fa" ng-class="{'fa-spinner fa-spin': saving, 'fa-check': !saving}"></i>
             Save
         </span>
-        <span ng-show="!pkg._id">
+        <span ng-show="!pkg.id">
             <i class="fa" ng-class="{'fa-spinner fa-spin': saving, 'fa-plus': !saving}"></i>
             Create
         </span>

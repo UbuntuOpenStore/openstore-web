@@ -112,13 +112,48 @@ function setup(app) {
         });
     });
 
-    app.get('/api/apps', function(req, res) {
-        db.Package.find({$or: [{deleted: false}, {deleted: {$exists: false}}]}, function(err, packages) {
+    app.get(['/api/apps', '/api/apps/:id'], function(req, res) {
+        var query = {};
+        if (req.params.id) {
+            query['id'] = req.params.id;
+        }
+
+        db.Package.find(query).or([{deleted: false}, {deleted: {'$exists': false}}]).exec(function(err, packages) {
             if (err) {
                 error(res, err);
             }
             else {
-                success(res, packages);
+                var result = [];
+                packages.forEach(function(pkg) {
+                    result.push({
+                        architecture: pkg.architecture,
+                        author: pkg.author,
+                        category: pkg.category,
+                        description: pkg.description,
+                        filesize: pkg.filesize,
+                        framework: pkg.framework,
+                        icon: pkg.icon,
+                        id: pkg.id,
+                        license: pkg.license,
+                        name: pkg.name,
+                        package: pkg.package,
+                        source: pkg.source,
+                        tagline: pkg.tagline,
+                        types: pkg.types,
+                        version: pkg.version,
+                    });
+                });
+
+                if (req.params.id) {
+                    if (result.length > 0) {
+                        result = result[0];
+                    }
+                    else {
+                        return error(res, 'App not found', 404);
+                    }
+                }
+
+                success(res, result);
             }
         });
     });
