@@ -36,30 +36,16 @@ function isAdmin(req, res, next) {
     }
 }
 
-function uploadToSmartfile(filepath, filestream, filename, callback) {
+function uploadToSmartfile(filepath, filename, callback) {
     var headers = {
         'Authorization': 'Basic ' + new Buffer(config.smartfile.key + ':' + config.smartfile.password).toString('base64'),
     };
 
-    var contentType;
-    if (filestream) {
-        if (path.extname(filename).toLowerCase() == '.png') {
-            contentType = 'image/png';
-        }
-        else if (path.extname(filename).toLowerCase() == '.jpg' || path.extname(filename).toLowerCase() == '.jpeg') {
-            contentType = 'image/jpeg';
-        }
-    }
-    else {
-        filestream = fs.createReadStream(filepath);
-    }
-
     var formData = {
         file: {
-            value: filestream,
+            value: fs.createReadStream(filepath),
             options: {
-                filename: filename,
-                contentType: contentType,
+                filename: filename
             }
         }
     };
@@ -139,7 +125,7 @@ function setup(app) {
 
     function saveClick(req, res, pkg, data, file) {
         var filename = data.manifest.name + '_' + data.manifest.version + '_' + data.manifest.architecture + '.click';
-        uploadToSmartfile(file.path, null, filename, function(err, url) {
+        uploadToSmartfile(file.path, filename, function(err, url) {
             fs.unlink(file.path);
 
             if (err) {
@@ -168,8 +154,8 @@ function setup(app) {
                 pkg.version = data.manifest.version;
 
                 if (data.icon) {
-                    var iconname = data.manifest.name + path.extname(data.iconpath);
-                    uploadToSmartfile(null, data.icon, iconname, function(err, url) {
+                    var iconname = data.manifest.name + path.extname(data.icon);
+                    uploadToSmartfile(data.icon, iconname, function(err, url) {
                         if (err) {
                             error(res, err);
                         }
@@ -211,7 +197,7 @@ function setup(app) {
         }
         else {
             var file = req.files.file;
-            clickParser.parseClickPackage(file.path, function(err, data) {
+            clickParser.parseClickPackage(file.path, true, function(err, data) {
                 if (err) {
                     error(res, err);
                     fs.unlink(file.path);
@@ -266,7 +252,7 @@ function setup(app) {
     });
 
     app.delete('/api/apps/:id', passport.authenticate('localapikey', {session: false}), isAdmin, function(req, res) {
-        db.Package.findOne({id: req.params.id}, function(err, pkg) {
+        db.Package.findOne({id: req.params.id}).or([{deleted: false}, {deleted: {'$exists': false}}]).exec(function(err, pkg) {
             if (err) {
                 error(res, err);
             }

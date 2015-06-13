@@ -1,8 +1,11 @@
 var fs = require('fs');
 var ar = require('ar');
 var zlib = require('zlib');
-var tar = require('tar-stream');
+var tarstream = require('tar-stream');
 var streamifier = require('streamifier');
+var tar = require('tar');
+var uuid = require('node-uuid');
+var path = require('path');
 
 function isJson(string) {
     var value = true;
@@ -17,39 +20,38 @@ function isJson(string) {
 }
 
 function extractIcon(fileData, data, callback) {
-    if (data.iconpath) {
-        streamifier.createReadStream(fileData)
-        .pipe(zlib.Unzip())
-        .pipe(tar.extract())
-        .on('entry', function(header, stream, cb) {
-            if (header.name == './' + data.iconpath) {
-                stream.on('data', function(fdata) {
-                    data.icon = fdata;
-                    cb();
-                });
-            }
-            else {
-                cb();
-            }
-
-            stream.resume();
-        })
-        .on('error', function(err) {
-            callback(err);
-        })
-        .on('finish', function() {
-            callback(null, data);
-        });
-    }
-    else {
+    var write = '/tmp/' + uuid.v4() + path.extname(data.iconpath).toLowerCase();
+    var f = fs.createWriteStream(write)
+    .on('finish', function() {
+        data.icon = write;
         callback(null, data);
-    }
+    });
+
+    var found = false;
+    streamifier.createReadStream(fileData)
+    .on('error', function(err) {
+        console.error(err);
+        callback(null, data);
+    })
+    .pipe(zlib.Unzip())
+    .pipe(tar.Parse())
+    .on('entry', function(entry) {
+        if (entry.path == './' + data.iconpath) {
+            entry.pipe(f);
+            found = true;
+        }
+    })
+    .on('end', function() {
+        if (!found) {
+            callback(null, data);
+        }
+    });
 }
 
-function parseData(fileData, data, callback) {
+function parseData(fileData, data, icon, callback) {
     streamifier.createReadStream(fileData)
     .pipe(zlib.Unzip())
-    .pipe(tar.extract())
+    .pipe(tarstream.extract())
     .on('entry', function(header, stream, cb) {
         if (header.name == './meta/package.yaml') {
             data.types.push('snappy');
@@ -84,18 +86,23 @@ function parseData(fileData, data, callback) {
         callback(err);
     })
     .on('finish', function() {
-        extractIcon(fileData, data, callback);
+        if (icon) {
+            extractIcon(fileData, data, callback);
+        }
+        else {
+            callback(null, data);
+        }
     });
 }
 
-function parseControl(control, data, callback) {
+function parseControl(control, data, icon, callback) {
     var types = [];
     var manifest = {};
     var desktopFiles = [];
 
     streamifier.createReadStream(control)
     .pipe(zlib.Unzip())
-    .pipe(tar.extract())
+    .pipe(tarstream.extract())
     .on('entry', function(header, stream, cb) {
         if (header.name == './manifest') {
             stream.on('data', function(fdata) {
@@ -143,11 +150,11 @@ function parseControl(control, data, callback) {
             types: types,
             manifest: manifest,
             desktopFiles: desktopFiles,
-        }, callback);
+        }, icon, callback);
     });
 }
 
-function parseClickPackage(filepath, callback) {
+function parseClickPackage(filepath, icon, callback) {
     var data = null;
     var control = null;
 
@@ -165,7 +172,7 @@ function parseClickPackage(filepath, callback) {
         callback('Malformed click package');
     }
     else {
-        parseControl(control, data, callback);
+        parseControl(control, data, icon, callback);
     }
 }
 
