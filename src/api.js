@@ -77,7 +77,26 @@ function setup(app) {
     });
 
     app.get('/repo/repolist.json', function(req, res) {
-        db.Package.find({$or: [{deleted: false}, {deleted: {$exists: false}}]}, function(err, packages) {
+        var query = {};
+        if (req.query.frameworks) {
+            var frameworks = req.query.frameworks.split(',');
+            query['framework'] = {
+                $in: frameworks
+            };
+        }
+
+        if (req.query.architecture) {
+            var architectures = [req.query.architecture];
+            if (req.query.architecture != 'all') {
+                architectures.push('all');
+            }
+
+            query['architecture'] = {
+                $in: architectures
+            };
+        }
+
+        db.Package.find(query).or([{deleted: false}, {deleted: {'$exists': false}}]).exec(function(err, packages) {
             if (err) {
                 error(res, err);
             }
@@ -116,6 +135,24 @@ function setup(app) {
         var query = {};
         if (req.params.id) {
             query['id'] = req.params.id;
+        }
+
+        if (req.query.frameworks) {
+            var frameworks = req.query.frameworks.split(',');
+            query['framework'] = {
+                $in: frameworks
+            };
+        }
+
+        if (req.query.architecture) {
+            var architectures = [req.query.architecture];
+            if (req.query.architecture != 'all') {
+                architectures.push('all');
+            }
+
+            query['architecture'] = {
+                $in: architectures
+            };
         }
 
         db.Package.find(query).or([{deleted: false}, {deleted: {'$exists': false}}]).exec(function(err, packages) {

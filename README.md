@@ -19,6 +19,9 @@ Web viewer for the [Open App Store](http://notyetthere.org/openstore-tweakgeek-a
 
 * GET /api/apps
     * Returns a list of all non-deleted apps
+    * Optionally takes the query string parameters:
+        * frameworks: A comma separated list of frameworks, limits results to only apps with one of the specified frameworks
+        * architecture: One of all, armhf, i386, or x86_64, limits results to only apps that support that architecture
     * Format:
 
     ```
