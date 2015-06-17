@@ -1,6 +1,6 @@
 var db = require('./db');
-var clickParser = require('./clickParser');
 var config = require('./config');
+var parse = require('click-parser');
 var passport = require('passport');
 var multer  = require('multer');
 var request = require('request');
@@ -104,21 +104,21 @@ function setup(app) {
                 var result = [];
                 packages.forEach(function(pkg) {
                     result.push({
-                        architecture: pkg.architecture,
-                        author: pkg.author,
-                        category: pkg.category,
-                        description: pkg.description,
-                        filesize: pkg.filesize,
-                        framework: pkg.framework,
-                        icon: pkg.icon,
-                        id: pkg.id,
-                        license: pkg.license,
-                        name: pkg.name,
-                        package: pkg.package,
-                        source: pkg.source,
-                        tagline: pkg.tagline,
-                        types: pkg.types,
-                        version: pkg.version,
+                        architecture: pkg.architecture ? pkg.architecture : '',
+                        author: pkg.author ? pkg.author : '',
+                        category: pkg.category ? pkg.category : '',
+                        description: pkg.description ? pkg.description : '',
+                        filesize: pkg.filesize ? pkg.filesize : 0,
+                        framework: pkg.framework ? pkg.framework : '',
+                        icon: pkg.icon ? pkg.icon : '',
+                        id: pkg.id ? pkg.id : '',
+                        license: pkg.license ? pkg.license : '',
+                        name: pkg.name ? pkg.name : '',
+                        package: pkg.package ? pkg.package : '',
+                        source: pkg.source ? pkg.source : '',
+                        tagline: pkg.tagline ? pkg.tagline : '',
+                        types: pkg.types ? pkg.types : [],
+                        version: pkg.version ? pkg.version : '',
                     });
                 });
 
@@ -163,21 +163,21 @@ function setup(app) {
                 var result = [];
                 packages.forEach(function(pkg) {
                     result.push({
-                        architecture: pkg.architecture,
-                        author: pkg.author,
-                        category: pkg.category,
-                        description: pkg.description,
-                        filesize: pkg.filesize,
-                        framework: pkg.framework,
-                        icon: pkg.icon,
-                        id: pkg.id,
-                        license: pkg.license,
-                        name: pkg.name,
-                        package: pkg.package,
-                        source: pkg.source,
-                        tagline: pkg.tagline,
-                        types: pkg.types,
-                        version: pkg.version,
+                        architecture: pkg.architecture ? pkg.architecture : '',
+                        author: pkg.author ? pkg.author : '',
+                        category: pkg.category ? pkg.category : '',
+                        description: pkg.description ? pkg.description : '',
+                        filesize: pkg.filesize ? pkg.filesize : 0,
+                        framework: pkg.framework ? pkg.framework : '',
+                        icon: pkg.icon ? pkg.icon : '',
+                        id: pkg.id ? pkg.id : '',
+                        license: pkg.license ? pkg.license : '',
+                        name: pkg.name ? pkg.name : '',
+                        package: pkg.package ? pkg.package : '',
+                        source: pkg.source ? pkg.source : '',
+                        tagline: pkg.tagline ? pkg.tagline : '',
+                        types: pkg.types ? pkg.types : [],
+                        version: pkg.version ? pkg.version : '',
                     });
                 });
 
@@ -196,7 +196,7 @@ function setup(app) {
     });
 
     function saveClick(req, res, pkg, data, file) {
-        var filename = data.manifest.name + '_' + data.manifest.version + '_' + data.manifest.architecture + '.click';
+        var filename = data.name + '_' + data.version + '_' + data.architecture + '.click';
         uploadToSmartfile(file.path, filename, function(err, url) {
             fs.unlink(file.path);
 
@@ -204,30 +204,26 @@ function setup(app) {
                 error(res, err);
             }
             else {
-                var author = '';
-                if (data.manifest.maintainer) {
-                    author = data.manifest.maintainer.replace(/\<.*\>/, '').trim();
-                }
-
-                pkg.architecture = data.manifest.architecture;
-                pkg.author = author;
+                pkg.architecture = data.architecture;
+                pkg.author = data.maintainer;
                 pkg.category = req.body.category;
                 pkg.description = req.body.description;
                 pkg.filesize = file.size;
-                pkg.framework = data.manifest.framework;
-                pkg.id = data.manifest.name;
+                pkg.framework = data.framework;
+                pkg.id = data.name;
                 pkg.license = req.body.license;
                 pkg.manifest = data.manifest;
-                pkg.name = data.manifest.title;
+                pkg.name = data.title;
                 pkg.package = url;
                 pkg.source = req.body.source;
                 pkg.tagline = req.body.tagline;
                 pkg.types = data.types;
-                pkg.version = data.manifest.version;
+                pkg.version = data.version;
 
                 if (data.icon) {
-                    var iconname = data.manifest.name + path.extname(data.icon);
+                    var iconname = data.name + path.extname(data.icon);
                     uploadToSmartfile(data.icon, iconname, function(err, url) {
+                        fs.unlink(data.icon);
                         if (err) {
                             error(res, err);
                         }
@@ -269,27 +265,27 @@ function setup(app) {
         }
         else {
             var file = req.files.file;
-            clickParser.parseClickPackage(file.path, true, function(err, data) {
+            parse(file.path, true, function(err, data) {
                 if (err) {
                     error(res, err);
                     fs.unlink(file.path);
                 }
-                else if (!data.manifest || !data.manifest.name || !data.manifest.version || !data.manifest.architecture) {
+                else if (!data.name || !data.version || !data.architecture) {
                     error(res, 'Malformed manifest');
                     fs.unlink(file.path);
                 }
-                else if (pkg.id && pkg.id != data.manifest.name) {
+                else if (pkg.id && pkg.id != data.name) {
                     error(res, 'Uploaded manifest does not match package to update');
                     fs.unlink(file.path);
                 }
                 else {
                     if (failIfExists) {
-                        db.Package.findOne({id: data.manifest.name}).or([{deleted: false}, {deleted: {'$exists': false}}]).exec(function(err, p) {
+                        db.Package.findOne({id: data.name}).or([{deleted: false}, {deleted: {'$exists': false}}]).exec(function(err, p) {
                             if (err) {
                                 error(res, err);
                             }
                             else if (p) {
-                                error(res, 'Package with id "' + data.manifest.name + '" already exists');
+                                error(res, 'Package with id "' + data.name + '" already exists');
                             }
                             else {
                                 saveClick(req, res, pkg, data, file);
