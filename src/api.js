@@ -206,19 +206,34 @@ function setup(app) {
             else {
                 pkg.architecture = data.architecture;
                 pkg.author = data.maintainer;
-                pkg.category = req.body.category;
-                pkg.description = req.body.description;
                 pkg.filesize = file.size;
                 pkg.framework = data.framework;
                 pkg.id = data.name;
-                pkg.license = req.body.license;
                 pkg.manifest = data.manifest;
                 pkg.name = data.title;
                 pkg.package = url;
-                pkg.source = req.body.source;
-                pkg.tagline = req.body.tagline;
                 pkg.types = data.types;
                 pkg.version = data.version;
+
+                if (req.body.category || req.body.category === '') {
+                    pkg.category = req.body.category;
+                }
+
+                if (req.body.description || req.body.description === '') {
+                    pkg.description = req.body.description;
+                }
+
+                if (req.body.license || req.body.license === '') {
+                    pkg.license = req.body.license;
+                }
+
+                if (req.body.source || req.body.source === '') {
+                    pkg.source = req.body.source;
+                }
+
+                if (req.body.tagline || req.body.tagline === '') {
+                    pkg.tagline = req.body.tagline;
+                }
 
                 if (data.icon) {
                     var iconname = data.name + path.extname(data.icon);
