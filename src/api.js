@@ -80,7 +80,7 @@ function setup(app) {
         var query = {};
         if (req.query.frameworks) {
             var frameworks = req.query.frameworks.split(',');
-            query['framework'] = {
+            query.framework = {
                 $in: frameworks
             };
         }
@@ -91,7 +91,7 @@ function setup(app) {
                 architectures.push('all');
             }
 
-            query['architecture'] = {
+            query.architecture = {
                 $in: architectures
             };
         }
@@ -134,12 +134,12 @@ function setup(app) {
     app.get(['/api/apps', '/api/apps/:id'], function(req, res) {
         var query = {};
         if (req.params.id) {
-            query['id'] = req.params.id;
+            query.id = req.params.id;
         }
 
         if (req.query.frameworks) {
             var frameworks = req.query.frameworks.split(',');
-            query['framework'] = {
+            query.framework = {
                 $in: frameworks
             };
         }
@@ -150,7 +150,7 @@ function setup(app) {
                 architectures.push('all');
             }
 
-            query['architecture'] = {
+            query.architecture = {
                 $in: architectures
             };
         }
