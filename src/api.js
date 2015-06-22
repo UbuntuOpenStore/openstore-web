@@ -270,9 +270,41 @@ function setup(app) {
         });
     }
 
-    function updateFromClick(req, res, pkg, failIfExists) {
+    function updateFromClick(req, res, pkg, failIfExists, failIfMissingFile) {
         if (!req.files || !req.files.file) {
-            error(res, 'No file upload specified');
+            if (failIfMissingFile) {
+                error(res, 'No file upload specified');
+            }
+            else {
+                if (req.body.category || req.body.category === '') {
+                    pkg.category = req.body.category;
+                }
+
+                if (req.body.description || req.body.description === '') {
+                    pkg.description = req.body.description;
+                }
+
+                if (req.body.license || req.body.license === '') {
+                    pkg.license = req.body.license;
+                }
+
+                if (req.body.source || req.body.source === '') {
+                    pkg.source = req.body.source;
+                }
+
+                if (req.body.tagline || req.body.tagline === '') {
+                    pkg.tagline = req.body.tagline;
+                }
+
+                pkg.save(function(err) {
+                    if (err) {
+                        error(res, err);
+                    }
+                    else {
+                        success(res, pkg);
+                    }
+                });
+            }
         }
         else if (req.files.file.path.indexOf('.click') == -1) {
             error(res, 'The file must be a click package');
@@ -317,7 +349,7 @@ function setup(app) {
 
     app.post('/api/apps', passport.authenticate('localapikey', {session: false}), isAdmin, function(req, res) {
         var pkg = new db.Package();
-        updateFromClick(req, res, pkg, true);
+        updateFromClick(req, res, pkg, true, true);
     });
 
     app.put('/api/apps/:id', passport.authenticate('localapikey', {session: false}), isAdmin, function(req, res) {
