@@ -4,12 +4,26 @@
             <img ng-src="{{app.icon}}" alt="{{app.name}}" />
         </div>
 
-        <h2 ng-bind="app.name"></h2>
-        <h4 ng-bind="app.tagline"></h4>
-        <div>
+        <div class="pull-right">
             <span class="label label-primary">v{{app.version}}</span>
             <span class="label label-info" ng-bind="app.license"></span>
             <span class="label label-success" ng-bind="app.filesize|bytes"></span>
+        </div>
+
+        <h2 ng-bind="app.name"></h2>
+        <h4 ng-bind="app.tagline"></h4>
+
+        <div class="clearfix visible-xs visible-sm"></div>
+
+        <div>
+            <!--<a ng-href="openapp://{{app.id}}" class="btn btn-info" ng-hide="app.id == 'openstore.mzanetti'">Install</a>-->
+            <a href="/docs#install" class="btn btn-info" ng-show="app.id == 'openstore.mzanetti'">Install</a>
+            <a ng-href="{{app.package}}" class="btn btn-success">Download</a>
+            <a ng-href="{{app.source}}" class="btn btn-primary" ng-if="app.source">Source</a>
+
+            <!--<p class="small-note" ng-hide="app.id == 'openstore.mzanetti'">
+                *You must have the Open App Store app installed on your phone for the "Install" button to work
+            </p>-->
         </div>
         <div class="description">
             <p ng-bind="app.description"></p>

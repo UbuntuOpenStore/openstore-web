@@ -35,5 +35,5 @@ angular.module('openappstore').config(function($stateProvider, $urlRouterProvide
         controller: 'manageCtrl'
     });
 
-    $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|mailto|scope):/);
+    $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|mailto|scope|openapp):/);
 });
