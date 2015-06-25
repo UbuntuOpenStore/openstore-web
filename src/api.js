@@ -115,6 +115,7 @@ function setup(app) {
                         license: pkg.license ? pkg.license : '',
                         name: pkg.name ? pkg.name : '',
                         package: pkg.package ? pkg.package : '',
+                        permissions: pkg.permissions ? pkg.permissions: [],
                         source: pkg.source ? pkg.source : '',
                         tagline: pkg.tagline ? pkg.tagline : '',
                         types: pkg.types ? pkg.types : [],
@@ -174,6 +175,7 @@ function setup(app) {
                         license: pkg.license ? pkg.license : '',
                         name: pkg.name ? pkg.name : '',
                         package: pkg.package ? pkg.package : '',
+                        permissions: pkg.permissions ? pkg.permissions: [],
                         source: pkg.source ? pkg.source : '',
                         tagline: pkg.tagline ? pkg.tagline : '',
                         types: pkg.types ? pkg.types : [],
@@ -212,6 +214,7 @@ function setup(app) {
                 pkg.manifest = data.manifest;
                 pkg.name = data.title;
                 pkg.package = url;
+                pkg.permissions = data.permissions;
                 pkg.types = data.types;
                 pkg.version = data.version;
 

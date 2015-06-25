@@ -22,6 +22,7 @@ var packageSchema = mongoose.Schema({
     manifest: {},
     name: String,
     package: String,
+    permissions: [String],
     source: String,
     tagline: String,
     types: [String],
