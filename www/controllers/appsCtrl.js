@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('openappstore').controller('appsCtrl', function($scope, $state, $http) {
+angular.module('openstore').controller('appsCtrl', function($scope, $state, $http) {
     $scope.apps = {};
     $scope.app = null;
     $http.get('/repo/repolist.json').then(function(response) {

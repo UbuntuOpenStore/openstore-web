@@ -1,8 +1,8 @@
 'use strict';
 
-angular.module('openappstore', ['ui.router', 'ui.bootstrap', 'ngFileUpload']);
+angular.module('openstore', ['ui.router', 'ui.bootstrap', 'ngFileUpload']);
 
-angular.module('openappstore').config(function($stateProvider, $urlRouterProvider, $locationProvider, $compileProvider) {
+angular.module('openstore').config(function($stateProvider, $urlRouterProvider, $locationProvider, $compileProvider) {
     $urlRouterProvider.otherwise('/');
     $locationProvider.html5Mode(true);
 
@@ -35,5 +35,5 @@ angular.module('openappstore').config(function($stateProvider, $urlRouterProvide
         controller: 'manageCtrl'
     });
 
-    $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|mailto|scope|openapp):/);
+    $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|mailto|scope|openstore):/);
 });

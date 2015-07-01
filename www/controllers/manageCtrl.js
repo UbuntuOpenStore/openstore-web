@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('openappstore').controller('manageCtrl', function($scope, $http, $location, $modal, $timeout, Upload) {
+angular.module('openstore').controller('manageCtrl', function($scope, $http, $location, $modal, $timeout, Upload) {
     $scope.saving = false;
     $scope.loading = true;
     $scope.user = null;

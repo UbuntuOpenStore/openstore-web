@@ -1,5 +1,5 @@
 'use strict';
 
-angular.module('openappstore').controller('submitCtrl', function() {
+angular.module('openstore').controller('submitCtrl', function() {
 
 });

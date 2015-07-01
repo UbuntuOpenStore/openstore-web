@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('openappstore').filter('bytes', function() {
+angular.module('openstore').filter('bytes', function() {
     return function(bytes) {
         var unit = 'B';
 
