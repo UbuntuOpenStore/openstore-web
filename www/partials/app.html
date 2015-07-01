@@ -16,14 +16,14 @@
         <div class="clearfix visible-xs visible-sm"></div>
 
         <div>
-            <!--<a ng-href="openapp://{{app.id}}" class="btn btn-info" ng-hide="app.id == 'openstore.mzanetti'">Install</a>-->
+            <a ng-href="openstore://{{app.id}}" class="btn btn-info" ng-hide="app.id == 'openstore.mzanetti'">Install</a>
             <a href="/docs#install" class="btn btn-info" ng-show="app.id == 'openstore.mzanetti'">Install</a>
             <a ng-href="{{app.package}}" class="btn btn-success">Download</a>
             <a ng-href="{{app.source}}" class="btn btn-primary" ng-if="app.source">Source</a>
 
-            <!--<p class="small-note" ng-hide="app.id == 'openstore.mzanetti'">
-                *You must have the Open App Store app installed on your phone for the "Install" button to work
-            </p>-->
+            <p class="small-note" ng-hide="app.id == 'openstore.mzanetti'">
+                *You must have the OpenStore app installed on your phone for the "Install" button to work
+            </p>
         </div>
         <div class="description">
             <p ng-bind="app.description"></p>

@@ -1,6 +1,6 @@
-# Open App Store Web #
+# OpenStore Web #
 
-Web viewer for the [Open App Store](http://notyetthere.org/openstore-tweakgeek-and-more/).
+Web viewer and api for the [OpenStore](http://notyetthere.org/openstore-tweakgeek-and-more/).
 
 ## Development ##
 
