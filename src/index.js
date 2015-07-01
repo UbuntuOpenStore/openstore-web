@@ -16,6 +16,8 @@ if (cluster.isMaster) {
 }
 else {
     var app = express();
+    app.set('json spaces', 2);
+
     auth.setup(app);
     api.setup(app);
 
