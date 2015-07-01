@@ -105,6 +105,7 @@ function setup(app) {
                 packages.forEach(function(pkg) {
                     result.push({
                         architecture: pkg.architecture ? pkg.architecture : '',
+                        apparmor: pkg.apparmor ? pkg.apparmor : {},
                         author: pkg.author ? pkg.author : '',
                         category: pkg.category ? pkg.category : '',
                         description: pkg.description ? pkg.description : '',
@@ -165,6 +166,7 @@ function setup(app) {
                 packages.forEach(function(pkg) {
                     result.push({
                         architecture: pkg.architecture ? pkg.architecture : '',
+                        apparmor: pkg.apparmor ? pkg.apparmor : {},
                         author: pkg.author ? pkg.author : '',
                         category: pkg.category ? pkg.category : '',
                         description: pkg.description ? pkg.description : '',
@@ -207,6 +209,7 @@ function setup(app) {
             }
             else {
                 pkg.architecture = data.architecture;
+                pkg.apparmor = data.apparmor;
                 pkg.author = data.maintainer;
                 pkg.filesize = file.size;
                 pkg.framework = data.framework;
