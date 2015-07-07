@@ -7,6 +7,7 @@ var request = require('request');
 var fs = require('fs');
 var path = require('path');
 var cluster = require('cluster');
+var lwip = require('lwip');
 
 function success(res, data, message) {
     res.send({
@@ -243,24 +244,63 @@ function setup(app) {
 
                 if (data.icon) {
                     var iconname = data.name + path.extname(data.icon);
-                    uploadToSmartfile(data.icon, iconname, function(err, url) {
-                        fs.unlink(data.icon);
-                        if (err) {
-                            error(res, err);
-                        }
-                        else {
-                            pkg.icon = url;
 
-                            pkg.save(function(err) {
-                                if (err) {
-                                    error(res, err);
-                                }
-                                else {
-                                    success(res, pkg);
-                                }
-                            });
-                        }
-                    });
+                    if (data.icon.substring(data.icon.length - 4) == '.png') {
+                        lwip.open(data.icon, function(err, image) {
+                            if (err) {
+                                error(res, err);
+                            }
+                            else {
+                                image.batch()
+                                    .resize(92, 92)
+                                    .writeFile(data.icon, function(err) {
+                                        if (err) {
+                                            error(res, err);
+                                        }
+                                        else {
+                                            uploadToSmartfile(data.icon, iconname, function(err, url) {
+                                                fs.unlink(data.icon);
+                                                if (err) {
+                                                    error(res, err);
+                                                }
+                                                else {
+                                                    pkg.icon = url;
+
+                                                    pkg.save(function(err) {
+                                                        if (err) {
+                                                            error(res, err);
+                                                        }
+                                                        else {
+                                                            success(res, pkg);
+                                                        }
+                                                    });
+                                                }
+                                            });
+                                        }
+                                    });
+                            }
+                        });
+                    }
+                    else {
+                        uploadToSmartfile(data.icon, iconname, function(err, url) {
+                            fs.unlink(data.icon);
+                            if (err) {
+                                error(res, err);
+                            }
+                            else {
+                                pkg.icon = url;
+
+                                pkg.save(function(err) {
+                                    if (err) {
+                                        error(res, err);
+                                    }
+                                    else {
+                                        success(res, pkg);
+                                    }
+                                });
+                            }
+                        });
+                    }
                 }
                 else {
                     pkg.save(function(err) {
