@@ -77,64 +77,7 @@ function setup(app) {
         });
     });
 
-    app.get('/repo/repolist.json', function(req, res) {
-        var query = {};
-        if (req.query.frameworks) {
-            var frameworks = req.query.frameworks.split(',');
-            query.framework = {
-                $in: frameworks
-            };
-        }
-
-        if (req.query.architecture) {
-            var architectures = [req.query.architecture];
-            if (req.query.architecture != 'all') {
-                architectures.push('all');
-            }
-
-            query.architecture = {
-                $in: architectures
-            };
-        }
-
-        db.Package.find(query).or([{deleted: false}, {deleted: {'$exists': false}}]).exec(function(err, packages) {
-            if (err) {
-                error(res, err);
-            }
-            else {
-                var result = [];
-                packages.forEach(function(pkg) {
-                    result.push({
-                        architecture: pkg.architecture ? pkg.architecture : '',
-                        apparmor: pkg.apparmor ? pkg.apparmor : {},
-                        author: pkg.author ? pkg.author : '',
-                        category: pkg.category ? pkg.category : '',
-                        description: pkg.description ? pkg.description : '',
-                        filesize: pkg.filesize ? pkg.filesize : 0,
-                        framework: pkg.framework ? pkg.framework : '',
-                        icon: pkg.icon ? pkg.icon : '',
-                        id: pkg.id ? pkg.id : '',
-                        license: pkg.license ? pkg.license : '',
-                        name: pkg.name ? pkg.name : '',
-                        package: pkg.package ? pkg.package : '',
-                        permissions: pkg.permissions ? pkg.permissions: [],
-                        source: pkg.source ? pkg.source : '',
-                        tagline: pkg.tagline ? pkg.tagline : '',
-                        types: pkg.types ? pkg.types : [],
-                        version: pkg.version ? pkg.version : '',
-                    });
-                });
-
-                res.send({
-                    success: true,
-                    message: null,
-                    packages: result
-                });
-            }
-        });
-    });
-
-    app.get(['/api/apps', '/api/apps/:id'], function(req, res) {
+    app.get(['/api/apps', '/api/apps/:id', '/repo/repolist.json'], function(req, res) {
         var query = {};
         if (req.params.id) {
             query.id = req.params.id;
@@ -195,7 +138,16 @@ function setup(app) {
                     }
                 }
 
-                success(res, result);
+                if (req.originalUrl == '/repo/repolist.json') {
+                    res.send({
+                        success: true,
+                        message: null,
+                        packages: result,
+                    });
+                }
+                else {
+                    success(res, result);
+                }
             }
         });
     });

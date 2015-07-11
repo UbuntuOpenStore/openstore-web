@@ -3,8 +3,8 @@
 angular.module('openstore').controller('appsCtrl', function($scope, $state, $http) {
     $scope.apps = {};
     $scope.app = null;
-    $http.get('/repo/repolist.json').then(function(response) {
-        $scope.apps = response.data.packages;
+    $http.get('/api/apps').then(function(response) {
+        $scope.apps = response.data.data;
 
         if ($state.params.name) {
             angular.forEach($scope.apps, function(app) {

@@ -10,7 +10,6 @@ mongoose.connect(config.mongo.uri + config.mongo.database, function(err) {
 
 var packageSchema = mongoose.Schema({
     architecture: String,
-    apparmor: {},
     author: String,
     category: String,
     description: String,
@@ -23,7 +22,6 @@ var packageSchema = mongoose.Schema({
     manifest: {},
     name: String,
     package: String,
-    permissions: [String],
     source: String,
     tagline: String,
     types: [String],
