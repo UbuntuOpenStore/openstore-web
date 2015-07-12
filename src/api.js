@@ -1,5 +1,6 @@
 var db = require('./db');
 var config = require('./config');
+var packages = require('./packages');
 var parse = require('click-parser');
 var passport = require('passport');
 var multer  = require('multer');
@@ -162,85 +163,7 @@ function setup(app) {
                 error(res, err);
             }
             else {
-                var manifest = {
-                    architecture: data.architecture,
-                    description: pkg.description,
-                    framework: data.framework,
-                    hooks: {},
-                    maintainer: data.maintainer,
-                    name: data.name,
-                    title: data.title,
-                    version: data.version,
-                };
-
-                data.apps.forEach(function(app) {
-                    var hook = {};
-
-                    if (Object.keys(app.apparmor).length > 0) {
-                        hook.apparmor = app.apparmor;
-                    }
-
-                    if (Object.keys(app.desktop).length > 0) {
-                        hook.desktop = app.desktop;
-                    }
-
-                    if (Object.keys(app.contentHub).length > 0) {
-                        hook['content-hub'] = app.contentHub;
-                    }
-
-                    if (Object.keys(app.urlDispatcher).length > 0) {
-                        hook.urls = app.urlDispatcher;
-                    }
-
-                    if (Object.keys(app.accountService).length > 0) {
-                        hook['account-application'] = app.accountService;
-                    }
-
-                    if (Object.keys(app.accountApplication).length > 0) {
-                        hook['account-service'] = app.accountApplication;
-                    }
-
-                    if (Object.keys(app.pushHelper).length > 0) {
-                        hook['push-helper'] = app.pushHelper;
-                    }
-
-                    if (Object.keys(app.webappProperties).length > 0) {
-                        hook['webapp-properties'] = app.webappProperties;
-                    }
-
-                    manifest.hooks[app.name] = hook;
-                });
-
-                pkg.architecture = data.architecture;
-                pkg.author = data.maintainer;
-                pkg.filesize = file.size;
-                pkg.framework = data.framework;
-                pkg.id = data.name;
-                pkg.manifest = manifest;
-                pkg.name = data.title;
-                pkg.package = url;
-                pkg.types = data.types;
-                pkg.version = data.version;
-
-                if (req.body.category || req.body.category === '') {
-                    pkg.category = req.body.category;
-                }
-
-                if (req.body.description || req.body.description === '') {
-                    pkg.description = req.body.description;
-                }
-
-                if (req.body.license || req.body.license === '') {
-                    pkg.license = req.body.license;
-                }
-
-                if (req.body.source || req.body.source === '') {
-                    pkg.source = req.body.source;
-                }
-
-                if (req.body.tagline || req.body.tagline === '') {
-                    pkg.tagline = req.body.tagline;
-                }
+                packages.updateInfo(pkg, data, req.body, file, url);
 
                 if (data.icon) {
                     var iconname = data.name + path.extname(data.icon);
