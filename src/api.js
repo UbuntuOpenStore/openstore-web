@@ -122,7 +122,7 @@ function setup(app) {
                         license: pkg.license ? pkg.license : '',
                         manifest: pkg.manifest ? pkg.manifest : {},
                         name: pkg.name ? pkg.name : '',
-                        package: config.server.host + '/api/download/' + pkg.id,
+                        package: config.server.host + '/api/download/' + pkg.id + '/' + pkg.id + '_' + pkg.version + '_' + pkg.architecture + '.click',
                         permissions: pkg.permissions ? pkg.permissions: [],
                         source: pkg.source ? pkg.source : '',
                         tagline: pkg.tagline ? pkg.tagline : '',
@@ -354,7 +354,7 @@ function setup(app) {
         });
     });
 
-    app.get('/api/download/:id', function(req, res) {
+    app.get('/api/download/:id/:click', function(req, res) {
         db.Package.findOne({id: req.params.id}).or([{deleted: false}, {deleted: {'$exists': false}}]).exec(function(err, pkg) {
             if (err) {
                 error(res, err);
