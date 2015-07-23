@@ -18,7 +18,7 @@
         <div>
             <a ng-href="openstore://{{app.id}}" class="btn btn-info" ng-hide="app.id == 'openstore.mzanetti'">Install</a>
             <a href="/docs#install" class="btn btn-info" ng-show="app.id == 'openstore.mzanetti'">Install</a>
-            <a ng-href="{{app.package}}" class="btn btn-success">Download</a>
+            <a ng-href="{{app.package}}" class="btn btn-success" target="_blank">Download</a>
             <a ng-href="{{app.source}}" class="btn btn-primary" ng-if="app.source">Source</a>
 
             <p class="small-note" ng-hide="app.id == 'openstore.mzanetti'">

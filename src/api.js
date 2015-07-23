@@ -122,7 +122,7 @@ function setup(app) {
                         license: pkg.license ? pkg.license : '',
                         manifest: pkg.manifest ? pkg.manifest : {},
                         name: pkg.name ? pkg.name : '',
-                        package: pkg.package ? pkg.package : '',
+                        package: config.server.host + '/api/download/' + pkg.id,
                         permissions: pkg.permissions ? pkg.permissions: [],
                         source: pkg.source ? pkg.source : '',
                         tagline: pkg.tagline ? pkg.tagline : '',
@@ -348,6 +348,32 @@ function setup(app) {
                     }
                     else {
                         success(res, null);
+                    }
+                });
+            }
+        });
+    });
+
+    app.get('/api/download/:id', function(req, res) {
+        db.Package.findOne({id: req.params.id}).or([{deleted: false}, {deleted: {'$exists': false}}]).exec(function(err, pkg) {
+            if (err) {
+                error(res, err);
+            }
+            else if (!pkg) {
+                error(res, 'Package not found', 404);
+            }
+            else {
+                console.log(pkg.downloads);
+                var version = 'v' + pkg.version.replace(/\./g, '__');
+                var inc = {};
+                inc['downloads.' + version] = 1;
+
+                db.Package.update({_id: pkg._id}, {$inc: inc}, function(err) {
+                    if (err) {
+                        console.error(err);
+                    }
+                    else {
+                        res.redirect(301, pkg.package);
                     }
                 });
             }
