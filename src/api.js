@@ -363,7 +363,6 @@ function setup(app) {
                 error(res, 'Package not found', 404);
             }
             else {
-                console.log(pkg.downloads);
                 var version = 'v' + pkg.version.replace(/\./g, '__');
                 var inc = {};
                 inc['downloads.' + version] = 1;
