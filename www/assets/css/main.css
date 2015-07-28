@@ -76,3 +76,7 @@ body {
 .small-note {
     font-size: 12px;
 }
+
+.tab-content {
+    margin-top: 5px;
+}
