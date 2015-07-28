@@ -4,6 +4,7 @@ angular.module('openstore').controller('appsCtrl', function($scope, $state, $htt
     $scope.apps = {};
     $scope.app = null;
     $scope.tab = 'contents';
+    $scope.manifest = false;
 
     $http.get('/api/apps').then(function(response) {
         $scope.apps = response.data.data;
@@ -13,6 +14,7 @@ angular.module('openstore').controller('appsCtrl', function($scope, $state, $htt
                 if (app.id == $state.params.name) {
                     $scope.app = app;
                     $scope.tab = 'contents';
+                    $scope.manifest = false;
                 }
             });
         }

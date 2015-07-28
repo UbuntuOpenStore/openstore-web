@@ -16,7 +16,7 @@ body {
     max-width: 100%;
     vertical-align: bottom;
     position: relative;
-    z-index: 100;
+    z-index: 5;
 }
 
 .ubuntu-shape:after {
@@ -74,9 +74,19 @@ body {
 }
 
 .small-note {
-    font-size: 12px;
+    font-size: 10px;
+    margin-top: 5px;
 }
 
 .tab-content {
+    margin-top: 5px;
+}
+
+.main-container {
+    padding-top: 80px;
+}
+
+.navbar-brand {
+    display: block;
     margin-top: 5px;
 }

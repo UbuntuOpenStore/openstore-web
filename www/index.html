@@ -31,6 +31,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu" />
 
         <link rel="stylesheet" href="/assets/css/main.css" />
+        <link rel="stylesheet" href="/assets/css/ubuntu.css" />
 
         <style>
             .ng-cloak {
@@ -39,25 +40,45 @@
         </style>
     </head>
     <body ng-controller="indexCtrl">
-        <nav class="navbar navbar-default" role="navigation">
+        <nav class="navbar navbar-default" role="navigation" data-role="header">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+                    <div data-role="actions" class="visible-xs visible-sm">
+                        <button type="button" data-role="actions-overflow-icon" ng-click="opened = !opened"></button>
+                        <div data-role="actions-overflow-list" ng-class="{opened: opened}">
+                            <ul>
+                                <li>
+                                    <a href="/submit" ng-click="opened = false">Submit</a>
+                                </li>
+                                <li>
+                                    <a href="/apps" ng-click="opened = false">Browse</a>
+                                </li>
+                                <li>
+                                    <a href="/docs" ng-click="opened = false">Docs</a>
+                                </li>
+                                <li>
+                                    <a href="https://launchpad.net/~openstore-team" ng-click="opened = false">Source</a>
+                                </li>
+                                <li>
+                                    <a href="/app/openstore.mzanetti" ng-click="opened = false">Download</a>
+                                </li>
+                                <li ng-show="$state.current.name != 'manage'">
+                                    <a class="clickable" ng-click="loginModal(); opened = false">Log In</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                     <a class="navbar-brand ng-cloak" href="/apps" ng-if="$state.current.name == 'app'">
-                        <i class="fa fa-chevron-left"></i>
+                        <div data-role="back-btn"></div>
                         OpenStore
                     </a>
                     <a class="navbar-brand" href="/" ng-if="$state.current.name != 'app'">
-                        <i class="fa fa-chevron-left ng-cloak" ng-if="$state.current.name != 'main'"></i>
+                        <div data-role="back-btn" ng-if="$state.current.name != 'main'"></div>
                         OpenStore
                     </a>
                 </div>
-                <div class="navbar-collapse collapse navbar-right">
+
+                <div class="navbar-collapse navbar-right hidden-xs hidden-sm">
                     <ul class="nav navbar-nav">
                         <li>
                             <a href="/submit">Submit</a>
@@ -82,8 +103,8 @@
             </div>
         </nav>
 
-        <div class="container">
-            <div ui-view></div>
+        <div class="container" data-role="content">
+            <div data-role="tab" ui-view></div>
         </div>
     </body>
 </html>

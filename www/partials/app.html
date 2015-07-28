@@ -5,21 +5,21 @@
         </div>
 
         <div class="pull-right">
-            <span class="label label-primary">v{{app.version}}</span>
-            <span class="label label-info" ng-bind="app.license"></span>
-            <span class="label label-success" ng-bind="app.filesize|bytes"></span>
+            <span class="label background-blue">v{{app.version}}</span>
+            <span class="label background-orange" ng-bind="app.license"></span>
+            <span class="label background-green" ng-bind="app.filesize|bytes"></span>
         </div>
+
+        <div class="clearfix visible-xs visible-sm"></div>
 
         <h2 ng-bind="app.name"></h2>
         <h4 ng-bind="app.tagline"></h4>
 
-        <div class="clearfix visible-xs visible-sm"></div>
-
         <div>
-            <a ng-href="openstore://{{app.id}}" class="btn btn-info" ng-hide="app.id == 'openstore.mzanetti'">Install</a>
-            <a href="/docs#install" class="btn btn-info" ng-show="app.id == 'openstore.mzanetti'">Install</a>
-            <a ng-href="{{app.download}}" class="btn btn-success" target="_blank">Download</a>
-            <a ng-href="{{app.source}}" class="btn btn-primary" ng-if="app.source">Source</a>
+            <a ng-href="openstore://{{app.id}}" class="primary" data-role="button" ng-hide="app.id == 'openstore.mzanetti'">Install</a>
+            <a href="/docs#install" class="primary" data-role="button" ng-show="app.id == 'openstore.mzanetti'">Install</a>
+            <a ng-href="{{app.download}}" class="secondary" data-role="button" target="_blank">Download</a>
+            <a ng-href="{{app.source}}" class="information" data-role="button" ng-if="app.source">Source</a>
 
             <p class="small-note" ng-hide="app.id == 'openstore.mzanetti'">
                 *You must have the OpenStore app installed on your phone for the "Install" button to work
@@ -29,21 +29,19 @@
             <p ng-bind="app.description"></p>
         </div>
     </div>
-    <div class="col-md-6">
-        <ul class="nav nav-pills">
-            <li ng-class="{active: tab == 'contents'}" class="clickable">
-                <a ng-click="tab = 'contents'">Package Contents</a>
-            </li>
-            <li ng-class="{active: tab == 'manifest'}" class="clickable">
-                <a ng-click="tab = 'manifest'">Manifest</a>
-            </li>
-        </ul>
+
+    <div class="col-md-6 hidden-xs hidden-sm">
+        <div>
+            <a ng-class="{secondary: tab != 'contents'}" class="information clickable" data-role="button" ng-click="tab = 'contents'">Package Contents</a>
+            <a ng-class="{secondary: tab != 'manifest'}" class="information clickable" data-role="button" ng-click="tab = 'manifest'">Manifest</a>
+        </div>
 
         <div class="tab-content" ng-show="tab == 'contents'">
-            <div class="well">
+            <div data-role="well">
+                <!-- TODO put this into a directive -->
                 <div ng-repeat="(name, hook) in app.manifest.hooks">
                     <h4>{{name}} ({{appType(hook)}})</h4>
-                    <p ng-class="{'text-danger': hook.apparmor.template == 'unconfined'}">
+                    <p ng-class="{'text-red': hook.apparmor.template == 'unconfined'}">
                         Apparmor profile:
                         <span ng-if="hook.apparmor.template" ng-bind="hook.apparmor.template || 'None'"></span>
                     </p>
@@ -70,7 +68,44 @@
         </div>
 
         <div class="tab-content" ng-show="tab == 'manifest'">
-                <pre ng-bind="app.manifest | json"></pre>
+            <pre ng-bind="app.manifest | json" data-role="well"></pre>
+        </div>
+    </div>
+
+    <div class="col-md-6 visible-xs visible-sm">
+        <div data-role="divider"></div>
+        <div>
+            <h3>Package Contents</h3>
+            <div ng-repeat="(name, hook) in app.manifest.hooks">
+                <h4>{{name}} ({{appType(hook)}})</h4>
+                <p ng-class="{'text-red': hook.apparmor.template == 'unconfined'}">
+                    Apparmor profile:
+                    <span ng-if="hook.apparmor.template" ng-bind="hook.apparmor.template || 'None'"></span>
+                </p>
+                <p ng-if="hook.apparmor.policy_groups.length > 0">
+                    Permissions:
+                    <ul>
+                        <li ng-repeat="policy in hook.apparmor.policy_groups" ng-bind="policy"></li>
+                    </ul>
+                </p>
+                <p ng-if="hook.apparmor.read_path.length > 0">
+                    Read Paths:
+                    <ul>
+                        <li ng-repeat="path in hook.apparmor.read_path" ng-bind="path"></li>
+                    </ul>
+                </p>
+                <p ng-if="hook.apparmor.write_path.length > 0">
+                    Write Paths:
+                    <ul>
+                        <li ng-repeat="path in hook.apparmor.write_path" ng-bind="path"></li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        <a class="information secondary clickable" data-role="button" ng-click="manifest = !manifest">Manifest</a>
+        <div ng-if="manifest">
+            <pre ng-bind="app.manifest | json" data-role="well"></pre>
         </div>
     </div>
 </div>
