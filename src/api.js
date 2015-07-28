@@ -110,7 +110,6 @@ function setup(app) {
                 var result = [];
                 packages.forEach(function(pkg) {
                     result.push({
-                        apparmor: pkg.apparmor ? pkg.apparmor : {},
                         architecture: pkg.architecture ? pkg.architecture : '',
                         author: pkg.author ? pkg.author : '',
                         category: pkg.category ? pkg.category : '',
@@ -122,7 +121,7 @@ function setup(app) {
                         license: pkg.license ? pkg.license : '',
                         manifest: pkg.manifest ? pkg.manifest : {},
                         name: pkg.name ? pkg.name : '',
-                        //package: config.server.host + '/api/download/' + pkg.id + '/' + pkg.id + '_' + pkg.version + '_' + pkg.architecture + '.click',
+                        download: config.server.host + '/api/download/' + pkg.id + '/' + pkg.id + '_' + pkg.version + '_' + pkg.architecture + '.click',
                         package: pkg.package ? pkg.package : '',
                         permissions: pkg.permissions ? pkg.permissions: [],
                         source: pkg.source ? pkg.source : '',
