@@ -14,7 +14,7 @@
         <div class="form-group">
             <label for="id" class="col-sm-2 control-label">Upload Click Package</label>
             <div class="col-sm-10">
-                <div class="btn btn-success" ngf-select ngf-multiple="false" ngf-change="setFile($files)">
+                <div class="information" data-role="button" ngf-select ngf-multiple="false" ngf-change="setFile($files)">
                     <i class="fa fa-file-archive-o"></i>
                     File
                 </div>
@@ -76,12 +76,12 @@
 <div class="modal-footer">
     <span class="text-danger" ng-bind="error"></span>
 
-    <button ng-click="cancel()" class="btn btn-default">
+    <button ng-click="cancel()" class="secondary" data-role="button">
         <i class="fa fa-times"></i>
         Cancel
     </button>
 
-    <button ng-click="save(pkg)" class="btn btn-primary" ng-disabled="saving">
+    <button ng-click="save(pkg)" class="primary" data-role="button" ng-disabled="saving">
         <span ng-show="pkg.id">
             <i class="fa" ng-class="{'fa-spinner fa-spin': saving, 'fa-check': !saving}"></i>
             Save

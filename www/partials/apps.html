@@ -1,20 +1,18 @@
-<div class="row">
+<div class="row app-list" data-role="list">
     <div class="col-sm-4" ng-repeat="app in apps|orderBy:'name'">
-        <div class="list-group">
-            <a class="list-group-item clickable" ui-sref="app({name: app.id})">
-                <div class="row-action-primary pull-left">
+        <div data-role="listitem" class="listitem">
+            <a class="clickable" ui-sref="app({name: app.id})">
+                <div class="pull-left">
                     <div class="icon ubuntu-shape">
                         <img ng-src="{{app.icon}}" alt="{{app.name}}" />
                     </div>
                 </div>
 
-                <div class="row-content">
+                <div class="listitem-content">
                     <h4 class="list-group-item-heading" ng-bind="app.name"></h4>
                     <p class="list-group-item-text" ng-bind="app.tagline"></p>
                 </div>
             </a>
-
-            <div class="list-group-separator"></div>
         </div>
         <div ng-class="{clearfix: $index % 3 == 2}"></div>
     </div>

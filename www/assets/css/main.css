@@ -90,3 +90,22 @@ body {
     display: block;
     margin-top: 5px;
 }
+
+.navbar-collapse {
+    margin-top: 5px;
+}
+
+.app-list .listitem {
+    min-height: 75px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.app-list .listitem a {
+    min-height: 75px;
+    display: block;
+}
+
+.listitem-content {
+    margin-left: 75px;
+}

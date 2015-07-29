@@ -30,52 +30,9 @@
         </div>
     </div>
 
-    <div class="col-md-6 hidden-xs hidden-sm">
-        <div>
-            <a ng-class="{secondary: tab != 'contents'}" class="information clickable" data-role="button" ng-click="tab = 'contents'">Package Contents</a>
-            <a ng-class="{secondary: tab != 'manifest'}" class="information clickable" data-role="button" ng-click="tab = 'manifest'">Manifest</a>
-        </div>
-
-        <div class="tab-content" ng-show="tab == 'contents'">
-            <div data-role="well">
-                <!-- TODO put this into a directive -->
-                <div ng-repeat="(name, hook) in app.manifest.hooks">
-                    <h4>{{name}} ({{appType(hook)}})</h4>
-                    <p ng-class="{'text-red': hook.apparmor.template == 'unconfined'}">
-                        Apparmor profile:
-                        <span ng-if="hook.apparmor.template" ng-bind="hook.apparmor.template || 'None'"></span>
-                    </p>
-                    <p ng-if="hook.apparmor.policy_groups.length > 0">
-                        Permissions:
-                        <ul>
-                            <li ng-repeat="policy in hook.apparmor.policy_groups" ng-bind="policy"></li>
-                        </ul>
-                    </p>
-                    <p ng-if="hook.apparmor.read_path.length > 0">
-                        Read Paths:
-                        <ul>
-                            <li ng-repeat="path in hook.apparmor.read_path" ng-bind="path"></li>
-                        </ul>
-                    </p>
-                    <p ng-if="hook.apparmor.write_path.length > 0">
-                        Write Paths:
-                        <ul>
-                            <li ng-repeat="path in hook.apparmor.write_path" ng-bind="path"></li>
-                        </ul>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="tab-content" ng-show="tab == 'manifest'">
-            <pre ng-bind="app.manifest | json" data-role="well"></pre>
-        </div>
-    </div>
-
-    <div class="col-md-6 visible-xs visible-sm">
-        <div data-role="divider"></div>
-        <div>
-            <h3>Package Contents</h3>
+    <div class="col-md-6">
+        <h3>Package Contents</h3>
+        <div data-role="well">
             <div ng-repeat="(name, hook) in app.manifest.hooks">
                 <h4>{{name}} ({{appType(hook)}})</h4>
                 <p ng-class="{'text-red': hook.apparmor.template == 'unconfined'}">
