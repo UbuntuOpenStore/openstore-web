@@ -47,16 +47,6 @@ body {
     border-radius: 2rem;
 }
 
-.list-group .list-group-item {
-    min-height: 85px;
-}
-
-.list-group .row-action-primary {
-    float: left;
-    display: inline-block;
-    padding-right: 16px;
-}
-
 .clickable {
     cursor: pointer;
 }
@@ -108,4 +98,14 @@ body {
 
 .listitem-content {
     margin-left: 75px;
+}
+
+.tagline {
+    padding-right: 60px;
+    display: block;
+}
+
+.title {
+    margin-top: 0;
+    margin-bottom: 10px;
 }

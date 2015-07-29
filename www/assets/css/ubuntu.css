@@ -252,43 +252,39 @@ html, body, [data-role="mainview"], [data-role="content"] {
 }
 
 [data-role="list"] [data-role="listitem"] {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 100%;
-  height: 3.1rem;
-  border-bottom: solid 0.1rem #c7c7c7;
-  color: #787878;
-  position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 3.1rem;
+    border-bottom: solid 0.1rem #c7c7c7;
+    color: #787878;
+    position: relative;
 }
 
 [data-role="list"] [data-role="listitem"] > a {
-  text-decoration: none;
-  color: #787878;
-  display: block;
-  height: 3rem;
-  position: relative;
-  border: none;
-  line-height: 3rem;
-  padding-left: 1rem;
-  padding-right: 1.5rem;
-  border-top: 1px solid #ebebeb;
-  font-size: 0.9rem;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+    text-decoration: none;
+    color: #787878;
+    display: block;
+    height: 3rem;
+    position: relative;
+    border: none;
+    padding-left: 1rem;
+    padding-right: 1.5rem;
+    border-top: 1px solid #ebebeb;
+    font-size: 0.9rem;
 }
 
 [data-role="list"] [data-role="listitem"] > a:after {
-  content: "";
-  background: transparent url(/assets/suru/go-next.svg) no-repeat 0.5rem 0.5rem;
-  background-size: 40% 75%;
-  position: absolute;
-  width: 7rem;
-  height: 7rem;
-  top: 50%;
-  right: 0;
-  margin-top: -3.5rem;
-  z-index: 0;
+    content: "";
+    background: transparent url(/assets/suru/go-next.svg) no-repeat 0.5rem 0.5rem;
+    background-size: 40% 75%;
+    position: absolute;
+    width: 7rem;
+    height: 7rem;
+    top: 50%;
+    right: 0;
+    margin-top: -3.5rem;
+    z-index: 0;
 }
 
 [data-role="list"] [data-role="listitem"] > a:active {
