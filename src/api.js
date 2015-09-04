@@ -9,6 +9,7 @@ var fs = require('fs');
 var path = require('path');
 var cluster = require('cluster');
 var lwip = require('lwip');
+var svgexport = require('svgexport');
 
 function success(res, data, message) {
     res.send({
@@ -202,6 +203,33 @@ function setup(app) {
                                         }
                                     });
                             }
+                        });
+                    }
+                    else if (data.icon.substring(data.icon.length - 4) == '.svg') {
+                        var pngIcon = data.icon.replace('.svg', '.png');
+                        iconname = iconname.replace('.svg', '.png');
+                        svgexport.render([{
+                            input: data.icon,
+                            output: pngIcon + ' 92:92',
+                        }], function() {
+                            uploadToSmartfile(pngIcon, iconname, function(err, url) {
+                                fs.unlink(data.icon);
+                                if (err) {
+                                    error(res, err);
+                                }
+                                else {
+                                    pkg.icon = url;
+
+                                    pkg.save(function(err) {
+                                        if (err) {
+                                            error(res, err);
+                                        }
+                                        else {
+                                            success(res, pkg);
+                                        }
+                                    });
+                                }
+                            });
                         });
                     }
                     else {
