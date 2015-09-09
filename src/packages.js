@@ -50,6 +50,10 @@ function updateInfo(pkg, data, body, file, url) {
             hook['webapp-properties'] = app.webappProperties;
         }
 
+        if (Object.keys(app.scopeIni).length > 0) {
+            hook['scope'] = app.scopeIni;
+        }
+
         manifest.hooks[app.name] = hook;
     });
 
