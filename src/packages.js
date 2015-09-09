@@ -6,7 +6,7 @@ var fs = require('fs');
 function updateInfo(pkg, data, body, file, url) {
     var manifest = {
         architecture: data.architecture,
-        description: pkg.description,
+        description: data.description,
         framework: data.framework,
         hooks: {},
         maintainer: data.maintainer,
@@ -65,6 +65,7 @@ function updateInfo(pkg, data, body, file, url) {
     pkg.name = data.title;
     pkg.types = data.types;
     pkg.version = data.version;
+    pkg.description = data.description;
 
     if (file && file.size) {
         pkg.filesize = file.size;
@@ -79,7 +80,7 @@ function updateInfo(pkg, data, body, file, url) {
             pkg.category = body.category;
         }
 
-        if (body.description || body.description === '') {
+        if (body.description) { //Only set description if non-empty (allows us to pull from the manifest on create)
             pkg.description = body.description;
         }
 
