@@ -7,6 +7,44 @@ var os = require('os');
 var express = require('express');
 var fs = require('fs');
 
+//list borrowed from https://github.com/prerender/prerender-node
+var useragents = [
+    //'googlebot',
+    //'yahoo',
+    //'bingbot',
+    'baiduspider',
+    'facebookexternalhit',
+    'twitterbot',
+    'rogerbot',
+    'linkedinbot',
+    'embedly',
+    'quora link preview',
+    'showyoubot',
+    'outbrain',
+    'pinterest',
+    'developers.google.com/+/web/snippet',
+    'slackbot',
+    'vkShare',
+    'W3C_Validator'
+];
+
+function openGraphData(html, og) {
+    html = html.replace(/meta name="description" content="(?:[\S\s]*?)"/gi,         'meta name="description" content="' + og.description + '"');
+    html = html.replace(/meta itemprop="name" content="(?:[\S\s]*?)"/gi,            'meta itemprop="name" content="' + og.title + '"');
+    html = html.replace(/meta itemprop="description" content="(?:[\S\s]*?)"/gi,     'meta itemprop="description" content="' + og.description + '"');
+    html = html.replace(/meta itemprop="image" content="(?:[\S\s]*?)"/gi,           'meta itemprop="image" content="' + og.image + '"');
+    html = html.replace(/meta name="twitter:title" content="(?:[\S\s]*?)"/gi,       'meta name="twitter:title" content="' + og.title + '"');
+    html = html.replace(/meta name="twitter:description" content="(?:[\S\s]*?)"/gi, 'meta name="twitter:description" content="' + og.description + '"');
+    html = html.replace(/meta name="twitter:image:src" content="(?:[\S\s]*?)"/gi,   'meta name="twitter:image:src" content="' + og.image + '"');
+    html = html.replace(/meta property="og:title" content="(?:[\S\s]*?)"/gi,        'meta property="og:title" content="' + og.title + '"');
+    html = html.replace(/meta property="og:url" content="(?:[\S\s]*?)"/gi,          'meta property="og:url" content="' + og.url + '"');
+    html = html.replace(/meta property="og:image" content="(?:[\S\s]*?)"/gi,        'meta property="og:image" content="' + og.image + '"');
+    html = html.replace(/meta property="og:description" content="(?:[\S\s]*?)"/gi,  'meta property="og:description" content="' + og.description + '"');
+    html = html.replace(/meta property="og:site_name" content="(?:[\S\s]*?)"/gi,    'meta property="og:site_name" content="' + og.title + ' - OpenStore' + '"');
+
+    return html;
+}
+
 if (cluster.isMaster) {
     for (var i = 0; i < os.cpus().length; i += 1) {
         cluster.fork();
@@ -17,27 +55,6 @@ if (cluster.isMaster) {
     });
 }
 else {
-    //list borrowed from https://github.com/prerender/prerender-node
-    var useragents = [
-        //'googlebot',
-        //'yahoo',
-        //'bingbot',
-        'baiduspider',
-        'facebookexternalhit',
-        'twitterbot',
-        'rogerbot',
-        'linkedinbot',
-        'embedly',
-        'quora link preview',
-        'showyoubot',
-        'outbrain',
-        'pinterest',
-        'developers.google.com/+/web/snippet',
-        'slackbot',
-        'vkShare',
-        'W3C_Validator'
-    ];
-
     var app = express();
     app.set('json spaces', 2);
 
@@ -45,23 +62,6 @@ else {
     api.setup(app);
 
     app.use(express.static(__dirname + '/../www'));
-
-    function openGraphData(html, og) {
-        html = html.replace(/meta name="description" content="(?:[\S\s]*?)"/gi,         'meta name="description" content="' + og.description + '"');
-        html = html.replace(/meta itemprop="name" content="(?:[\S\s]*?)"/gi,            'meta itemprop="name" content="' + og.title + '"');
-        html = html.replace(/meta itemprop="description" content="(?:[\S\s]*?)"/gi,     'meta itemprop="description" content="' + og.description + '"');
-        html = html.replace(/meta itemprop="image" content="(?:[\S\s]*?)"/gi,           'meta itemprop="image" content="' + og.image + '"');
-        html = html.replace(/meta name="twitter:title" content="(?:[\S\s]*?)"/gi,       'meta name="twitter:title" content="' + og.title + '"');
-        html = html.replace(/meta name="twitter:description" content="(?:[\S\s]*?)"/gi, 'meta name="twitter:description" content="' + og.description + '"');
-        html = html.replace(/meta name="twitter:image:src" content="(?:[\S\s]*?)"/gi,   'meta name="twitter:image:src" content="' + og.image + '"');
-        html = html.replace(/meta property="og:title" content="(?:[\S\s]*?)"/gi,        'meta property="og:title" content="' + og.title + '"');
-        html = html.replace(/meta property="og:url" content="(?:[\S\s]*?)"/gi,          'meta property="og:url" content="' + og.url + '"');
-        html = html.replace(/meta property="og:image" content="(?:[\S\s]*?)"/gi,        'meta property="og:image" content="' + og.image + '"');
-        html = html.replace(/meta property="og:description" content="(?:[\S\s]*?)"/gi,  'meta property="og:description" content="' + og.description + '"');
-        html = html.replace(/meta property="og:site_name" content="(?:[\S\s]*?)"/gi,    'meta property="og:site_name" content="' + og.title + ' - OpenStore' + '"');
-
-        return html;
-    }
 
     app.get('/app/:name', function(req, res) { //For populating opengraph data, etc for bots that don't execute javascript (like twitter cards)
         var useragent = req.headers['user-agent'];
@@ -73,7 +73,6 @@ else {
             res.header('Content-Type', 'text/html');
             db.Package.findOne({id: req.params.name}, function(err, pkg) {
                 if (err) {
-                    logger.error('server: ' + err);
                     res.status(500);
                     res.send();
                 }
