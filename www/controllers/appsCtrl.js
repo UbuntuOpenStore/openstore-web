@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('openstore').controller('appsCtrl', function($scope, $state, $http) {
+angular.module('openstore').controller('appsCtrl', function($scope, $rootScope, $state, $http) {
     $scope.apps = {};
     $scope.app = null;
     $scope.tab = 'contents';
@@ -12,13 +12,27 @@ angular.module('openstore').controller('appsCtrl', function($scope, $state, $htt
         if ($state.params.name) {
             angular.forEach($scope.apps, function(app) {
                 if (app.id == $state.params.name) {
-                    $scope.app = app;
+                    $scope.app = app;$rootScope.setOG();
                     $scope.tab = 'contents';
                     $scope.manifest = false;
                 }
             });
         }
     });
+
+    $scope.$watch('app', function() {
+        if ($scope.app) {
+            $rootScope.setOG($scope.app.name, {
+                title: $scope.app.name,
+                description: $scope.app.tagline,
+                image: $scope.app.icon,
+                url: '{url}/app/' + $scope.app.id,
+            });
+        }
+        else {
+            $rootScope.setOG('OpenStore', {});
+        }
+    }, true);
 
     $scope.appType = function(hook) {
         var type = 'App';
