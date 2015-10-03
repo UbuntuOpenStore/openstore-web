@@ -110,7 +110,7 @@ function setup(app) {
             else {
                 var result = [];
                 packages.forEach(function(pkg) {
-                    result.push({
+                    var p = {
                         architecture: pkg.architecture ? pkg.architecture : '',
                         author: pkg.author ? pkg.author : '',
                         category: pkg.category ? pkg.category : '',
@@ -129,7 +129,13 @@ function setup(app) {
                         tagline: pkg.tagline ? pkg.tagline : '',
                         types: pkg.types ? pkg.types : [],
                         version: pkg.version ? pkg.version : '',
-                    });
+                    };
+
+                    if (req.isAuthenticated() && req.user && req.user.role == 'admin') {
+                        p.downloads = pkg.downloads;
+                    }
+
+                    result.push(p);
                 });
 
                 if (req.params.id) {

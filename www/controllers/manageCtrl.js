@@ -50,6 +50,19 @@ angular.module('openstore').controller('manageCtrl', function($scope, $http, $lo
         });
     };
 
+    $scope.stats = function(pkg) {
+        $scope.pkg = angular.copy(pkg);
+        $scope.pkg.totalDownloads = 0;
+        _.forEach(pkg.downloads, function(downloads, version) {
+            $scope.pkg.totalDownloads += downloads;
+        });
+
+        modal = $modal.open({
+            templateUrl: '/partials/packageStats.html',
+            scope: $scope
+        });
+    };
+
     $scope.cancel = function() {
         modal.close();
         $scope.error = null;

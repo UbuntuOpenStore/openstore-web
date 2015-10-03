@@ -27,13 +27,14 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr ng-repeat="package in packages">
+                    <tr ng-repeat="package in packages|orderBy:'name'">
                         <td ng-bind="package.id"></td>
                         <td ng-bind="package.name"></td>
                         <td ng-bind="package.author"></td>
                         <td ng-bind="package.version"></td>
                         <td ng-bind="package.category"></td>
                         <td>
+                            <a ng-click="stats(package)" class="clickable text-blue" title="Stats"><i class="fa fa-info-circle"></i></a>
                             <a ng-click="edit(package)" class="clickable text-green" title="Edit"><i class="fa fa-edit"></i></a>
                             <a ng-click="remove(package)" class="clickable text-red" title="Delete"><i class="fa fa-trash"></i></a>
                         </td>
