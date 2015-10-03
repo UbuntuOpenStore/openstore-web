@@ -53,7 +53,7 @@ angular.module('openstore').controller('manageCtrl', function($scope, $http, $lo
     $scope.stats = function(pkg) {
         $scope.pkg = angular.copy(pkg);
         $scope.pkg.totalDownloads = 0;
-        _.forEach(pkg.downloads, function(downloads, version) {
+        _.forEach(pkg.downloads, function(downloads) {
             $scope.pkg.totalDownloads += downloads;
         });
 
