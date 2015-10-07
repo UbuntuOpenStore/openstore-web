@@ -8,7 +8,7 @@ var request = require('request');
 var fs = require('fs');
 var path = require('path');
 var cluster = require('cluster');
-//var lwip = require('lwip');
+var lwip = require('lwip');
 var svgexport = require('svgexport');
 
 function success(res, data, message) {
@@ -175,7 +175,7 @@ function setup(app) {
                 if (data.icon) {
                     var iconname = data.name + path.extname(data.icon);
 
-                    /*if (data.icon.substring(data.icon.length - 4) == '.png') {
+                    if (data.icon.substring(data.icon.length - 4) == '.png') {
                         lwip.open(data.icon, function(err, image) {
                             if (err) {
                                 error(res, err);
@@ -211,8 +211,7 @@ function setup(app) {
                             }
                         });
                     }
-                    else */
-                    if (data.icon.substring(data.icon.length - 4) == '.svg') {
+                    else if (data.icon.substring(data.icon.length - 4) == '.svg') {
                         var pngIcon = data.icon.replace('.svg', '.png');
                         iconname = iconname.replace('.svg', '.png');
                         svgexport.render([{
