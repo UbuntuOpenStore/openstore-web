@@ -11,6 +11,8 @@ var cluster = require('cluster');
 var lwip = require('lwip');
 var svgexport = require('svgexport');
 
+var upload = multer({dest: '/tmp'});
+
 function success(res, data, message) {
     res.send({
         success: true,
@@ -71,8 +73,6 @@ function uploadToSmartfile(filepath, filename, callback) {
 }
 
 function setup(app) {
-    app.use(multer({dest: '/tmp'}));
-
     app.get('/api/health', function(req, res) {
         success(res, {
             id: cluster.worker.id
@@ -274,7 +274,7 @@ function setup(app) {
     }
 
     function updateFromClick(req, res, pkg, failIfExists, failIfMissingFile) {
-        if (!req.files || !req.files.file) {
+        if (!req.file) {
             if (failIfMissingFile) {
                 error(res, 'No file upload specified');
             }
@@ -309,12 +309,12 @@ function setup(app) {
                 });
             }
         }
-        else if (req.files.file.path.indexOf('.click') == -1) {
+        else if (req.file.originalname.indexOf('.click') == -1) {
             error(res, 'The file must be a click package');
-            fs.unlink(req.files.file.path);
+            fs.unlink(req.file.path);
         }
         else {
-            var file = req.files.file;
+            var file = req.file;
             parse(file.path, true, function(err, data) {
                 if (err) {
                     error(res, err);
@@ -350,12 +350,12 @@ function setup(app) {
         }
     }
 
-    app.post('/api/apps', passport.authenticate('localapikey', {session: false}), isAdmin, function(req, res) {
+    app.post('/api/apps', passport.authenticate('localapikey', {session: false}), isAdmin, upload.single('file'), function(req, res) {
         var pkg = new db.Package();
         updateFromClick(req, res, pkg, true, true);
     });
 
-    app.put('/api/apps/:id', passport.authenticate('localapikey', {session: false}), isAdmin, function(req, res) {
+    app.put('/api/apps/:id', passport.authenticate('localapikey', {session: false}), isAdmin, upload.single('file'), function(req, res) {
         db.Package.findOne({id: req.params.id}).or([{deleted: false}, {deleted: {'$exists': false}}]).exec(function(err, pkg) {
             if (err) {
                 error(res, err);
