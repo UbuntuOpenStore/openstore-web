@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('openstore').controller('manageCtrl', function($scope, $http, $location, $modal, $timeout, Upload, info) {
+angular.module('openstore').controller('manageCtrl', function($scope, $location, $modal, $timeout, Upload, info, api) {
     $scope.saving = false;
     $scope.loading = true;
     $scope.user = null;
@@ -10,8 +10,15 @@ angular.module('openstore').controller('manageCtrl', function($scope, $http, $lo
     $scope.categories = info.categories;
     $scope.licenses = info.licenses;
 
-    $http.get('/auth/me').then(function(res) {
-        $scope.user = res.data.data;
+    function refresh() {
+        return api.apps.getAll().then(function(apps) {
+            $scope.loading = false;
+            $scope.packages = apps;
+        });
+    }
+
+    api.auth.me().then(function(user) {
+        $scope.user = user;
 
         if ($scope.user.role != 'admin') {
             $scope.user = null;
@@ -19,16 +26,7 @@ angular.module('openstore').controller('manageCtrl', function($scope, $http, $lo
         }
         else {
             $scope.loading = true;
-            return $http.get('/api/apps');
-        }
-    }, function() {
-        $scope.user = null;
-        $location.path('/auth/logout');
-    })
-    .then(function(res) {
-        $scope.loading = false;
-        if (res && res.data && res.data.data) {
-            $scope.packages = res.data.data;
+            return refresh();
         }
     });
 
@@ -72,32 +70,23 @@ angular.module('openstore').controller('manageCtrl', function($scope, $http, $lo
 
     $scope.save = function(pkg) {
         $scope.saving = true;
-        var method = 'POST';
-        var url = '/api/apps?apikey=' + $scope.user.apikey;
+        var data = {
+            tagline: pkg.tagline,
+            description: pkg.description,
+            license: pkg.license,
+            source: pkg.source,
+            category: pkg.category,
+        };
+
+        var upload = null
         if (pkg.id) {
-            method = 'PUT';
-            url = '/api/apps/' + pkg.id + '?apikey=' + $scope.user.apikey;
+            upload = api.apps.update($scope.user.apikey, pkg.id, data, $scope.file);
+        }
+        else {
+            upload = api.apps.create($scope.user.apikey, data, $scope.file);
         }
 
-        Upload.upload({
-            method: method,
-            url: url,
-            fields: {
-                tagline: pkg.tagline,
-                description: pkg.description,
-                license: pkg.license,
-                source: pkg.source,
-                category: pkg.category,
-            },
-            file: $scope.file
-        })
-        .progress(function(evt) {
-            if (evt.config && evt.config.file) {
-                var progressPercentage = parseInt(100.0 * evt.loaded / evt.total);
-                console.log('progress: ' + progressPercentage + '% ' + evt.config.file.name);
-            }
-        })
-        .error(function(data, status) {
+        upload.error(function(data, status) {
             console.error(data, status);
             $scope.error = data.message;
             $scope.saving = false;
@@ -109,10 +98,7 @@ angular.module('openstore').controller('manageCtrl', function($scope, $http, $lo
             modal.close();
 
             $scope.loading = true;
-            $http.get('/api/apps').then(function(res) {
-                $scope.loading = false;
-                $scope.packages = res.data.data;
-            });
+            refresh();
         });
     };
 
@@ -120,25 +106,12 @@ angular.module('openstore').controller('manageCtrl', function($scope, $http, $lo
         bootbox.confirm('Are you sure you want to remove package "' + pkg.id + '"?', function(result) {
             if (result) {
                 $timeout(function() {
-                    $http.delete('/api/apps/' + pkg.id, {
-                        params: {
-                            apikey: $scope.user.apikey
-                        },
-                        headers: {
-                            'Content-Type': 'application/json'
-                        }
-                    })
-                    .then(function() {
-                        console.log('successful delete');
-
+                    api.apps.remove($scope.user.apikey, pkg.id).then(function() {
                         $scope.loading = true;
-                        return $http.get('/api/apps');
+
+                        return refresh();
                     }, function(res) {
                         console.log('failed to delete', res);
-                    })
-                    .then(function(res) {
-                        $scope.loading = false;
-                        $scope.packages = res.data.data;
                     });
                 });
             }

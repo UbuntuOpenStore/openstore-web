@@ -1,13 +1,13 @@
 'use strict';
 
-angular.module('openstore').controller('appsCtrl', function($scope, $rootScope, $state, $http) {
+angular.module('openstore').controller('appsCtrl', function($scope, $rootScope, $state, api) {
     $scope.apps = {};
     $scope.app = null;
     $scope.tab = 'contents';
     $scope.manifest = false;
 
-    $http.get('/api/apps').then(function(response) {
-        $scope.apps = response.data.data;
+    api.apps.getAll().then(function(apps) {
+        $scope.apps = apps;
 
         if ($state.params.name) {
             angular.forEach($scope.apps, function(app) {

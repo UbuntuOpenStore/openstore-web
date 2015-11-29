@@ -1,3 +1,5 @@
+'use strict';
+
 angular.module('openstore').factory('info', function() {
     return {
         categories: [
