@@ -1,12 +1,14 @@
 'use strict';
 
-angular.module('openstore').controller('manageCtrl', function($scope, $http, $location, $modal, $timeout, Upload) {
+angular.module('openstore').controller('manageCtrl', function($scope, $http, $location, $modal, $timeout, Upload, info) {
     $scope.saving = false;
     $scope.loading = true;
     $scope.user = null;
     $scope.packages = [];
     $scope.file = null;
     $scope.error = null;
+    $scope.categories = info.categories;
+    $scope.licenses = info.licenses;
 
     $http.get('/auth/me').then(function(res) {
         $scope.user = res.data.data;
@@ -90,8 +92,10 @@ angular.module('openstore').controller('manageCtrl', function($scope, $http, $lo
             file: $scope.file
         })
         .progress(function(evt) {
-            var progressPercentage = parseInt(100.0 * evt.loaded / evt.total);
-            console.log('progress: ' + progressPercentage + '% ' + evt.config.file.name);
+            if (evt.config && evt.config.file) {
+                var progressPercentage = parseInt(100.0 * evt.loaded / evt.total);
+                console.log('progress: ' + progressPercentage + '% ' + evt.config.file.name);
+            }
         })
         .error(function(data, status) {
             console.error(data, status);
