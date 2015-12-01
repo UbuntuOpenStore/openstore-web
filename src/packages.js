@@ -1,71 +1,74 @@
 var db = require('./db');
+var config = require('./config');
 var request = require('request');
 var parse = require('click-parser');
 var fs = require('fs');
 
 function updateInfo(pkg, data, body, file, url) {
-    var manifest = {
-        architecture: data.architecture,
-        description: data.description,
-        framework: data.framework,
-        hooks: {},
-        maintainer: data.maintainer,
-        name: data.name,
-        title: data.title,
-        version: data.version,
-    };
+    if (data) {
+        var manifest = {
+            architecture: data.architecture,
+            description: data.description,
+            framework: data.framework,
+            hooks: {},
+            maintainer: data.maintainer,
+            name: data.name,
+            title: data.title,
+            version: data.version,
+        };
 
-    data.apps.forEach(function(app) {
-        var hook = {};
+        data.apps.forEach(function(app) {
+            var hook = {};
 
-        if (Object.keys(app.apparmor).length > 0) {
-            hook.apparmor = app.apparmor;
-        }
+            if (Object.keys(app.apparmor).length > 0) {
+                hook.apparmor = app.apparmor;
+            }
 
-        if (Object.keys(app.desktop).length > 0) {
-            hook.desktop = app.desktop;
-        }
+            if (Object.keys(app.desktop).length > 0) {
+                hook.desktop = app.desktop;
+            }
 
-        if (Object.keys(app.contentHub).length > 0) {
-            hook['content-hub'] = app.contentHub;
-        }
+            if (Object.keys(app.contentHub).length > 0) {
+                hook['content-hub'] = app.contentHub;
+            }
 
-        if (Object.keys(app.urlDispatcher).length > 0) {
-            hook.urls = app.urlDispatcher;
-        }
+            if (Object.keys(app.urlDispatcher).length > 0) {
+                hook.urls = app.urlDispatcher;
+            }
 
-        if (Object.keys(app.accountService).length > 0) {
-            hook['account-application'] = app.accountService;
-        }
+            if (Object.keys(app.accountService).length > 0) {
+                hook['account-application'] = app.accountService;
+            }
 
-        if (Object.keys(app.accountApplication).length > 0) {
-            hook['account-service'] = app.accountApplication;
-        }
+            if (Object.keys(app.accountApplication).length > 0) {
+                hook['account-service'] = app.accountApplication;
+            }
 
-        if (Object.keys(app.pushHelper).length > 0) {
-            hook['push-helper'] = app.pushHelper;
-        }
+            if (Object.keys(app.pushHelper).length > 0) {
+                hook['push-helper'] = app.pushHelper;
+            }
 
-        if (Object.keys(app.webappProperties).length > 0) {
-            hook['webapp-properties'] = app.webappProperties;
-        }
+            if (Object.keys(app.webappProperties).length > 0) {
+                hook['webapp-properties'] = app.webappProperties;
+            }
 
-        if (Object.keys(app.scopeIni).length > 0) {
-            hook.scope = app.scopeIni;
-        }
+            if (Object.keys(app.scopeIni).length > 0) {
+                hook.scope = app.scopeIni;
+            }
 
-        manifest.hooks[app.name] = hook;
-    });
+            manifest.hooks[app.name] = hook;
+        });
 
-    pkg.architecture = data.architecture;
-    pkg.author = data.maintainer;
-    pkg.framework = data.framework;
-    pkg.id = data.name;
-    pkg.manifest = manifest;
-    pkg.name = data.title;
-    pkg.types = data.types;
-    pkg.version = data.version;
-    pkg.description = data.description;
+        pkg.architecture = data.architecture;
+        pkg.author = data.maintainer;
+        pkg.framework = data.framework;
+        pkg.id = data.name;
+        pkg.manifest = manifest;
+        pkg.name = data.title;
+        pkg.types = data.types;
+        pkg.version = data.version;
+        pkg.description = data.description;
+    }
 
     if (file && file.size) {
         pkg.filesize = file.size;
@@ -147,5 +150,29 @@ function reparse() {
     });
 }
 
+function toJson(pkg) {
+    return {
+        architecture: pkg.architecture ? pkg.architecture : '',
+        author: pkg.author ? pkg.author : '',
+        category: pkg.category ? pkg.category : '',
+        description: pkg.description ? pkg.description : '',
+        filesize: pkg.filesize ? pkg.filesize : 0,
+        framework: pkg.framework ? pkg.framework : '',
+        icon: pkg.icon ? pkg.icon : '',
+        id: pkg.id ? pkg.id : '',
+        license: pkg.license ? pkg.license : '',
+        manifest: pkg.manifest ? pkg.manifest : {},
+        name: pkg.name ? pkg.name : '',
+        download: config.server.host + '/api/download/' + pkg.id + '/' + pkg.id + '_' + pkg.version + '_' + pkg.architecture + '.click',
+        package: pkg.package ? pkg.package : '',
+        permissions: pkg.permissions ? pkg.permissions: [],
+        source: pkg.source ? pkg.source : '',
+        tagline: pkg.tagline ? pkg.tagline : '',
+        types: pkg.types ? pkg.types : [],
+        version: pkg.version ? pkg.version : '',
+    };
+}
+
 exports.updateInfo = updateInfo;
 exports.reparse = reparse;
+exports.toJson = toJson;

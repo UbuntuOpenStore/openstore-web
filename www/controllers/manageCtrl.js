@@ -78,7 +78,7 @@ angular.module('openstore').controller('manageCtrl', function($scope, $location,
             category: pkg.category,
         };
 
-        var upload = null
+        var upload = null;
         if (pkg.id) {
             upload = api.apps.update($scope.user.apikey, pkg.id, data, $scope.file);
         }

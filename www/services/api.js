@@ -19,7 +19,7 @@ angular.module('openstore').factory('api', function($http, Upload) {
             },
 
             get: function(id) {
-                return $http.get('/api/apps/app').then(success);
+                return $http.get('/api/apps/' + id).then(success);
             },
 
             create: function(key, data, file) {
@@ -57,5 +57,5 @@ angular.module('openstore').factory('api', function($http, Upload) {
                 });
             },
         },
-    }
+    };
 });
