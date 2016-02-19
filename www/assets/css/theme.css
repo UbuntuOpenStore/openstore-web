@@ -1,0 +1,89 @@
+[data-role="button"] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 42px;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    background: #dd4814;
+    border: 2px solid #dd4814;
+    border-radius: 6px;
+    color: white;
+    font-family: "Ubuntu";
+    padding: 9px 25px;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+}
+
+[data-role="button"]:hover {
+    text-decoration: none;
+    color: white;
+}
+
+[data-role="button"].positive {
+    background: #38b44a;
+    color: white;
+    border-color: #38b44a;
+}
+
+[data-role="button"].information {
+    background: #2ab7ec;
+    color: white;
+    border-color: #2ab7ec;
+}
+
+[data-role="button"].secondary:hover {
+    color: #888888;
+}
+
+[data-role="button"].secondary {
+    background: white;
+    color: #888888;
+}
+
+[data-role="button"].information.secondary {
+    background: white;
+    color: #888888;
+    border-color: #2ab7ec;
+}
+
+[data-role="button"].information.secondary:hover {
+    color: #888888;
+}
+
+[data-role="button"].negative {
+    background: #929292;
+    color: white;
+    border-color: #929292;
+}
+
+.navbar {
+    background-color: #424242;
+    border-radius: 0px !important;
+    background-image: none !important;
+}
+
+.navbar a {
+    color: #F5F5F5 !important;
+}
+
+.navbar a:hover {
+    background-color: #616161 !important;
+}
+
+.navbar a:focus {
+    background-color: #424242 !important;
+}
+
+.navbar-toggle {
+    background-color: #616161;
+    border-radius: 5px;
+    margin-right: 25px;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #424242;
+}

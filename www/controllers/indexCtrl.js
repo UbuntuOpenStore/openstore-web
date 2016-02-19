@@ -24,6 +24,8 @@ angular.module('openstore').controller('indexCtrl', function($scope, $rootScope,
     $rootScope.$on('$stateChangeStart', function() {
         $rootScope.title = defaultTitle;
         $rootScope.og = angular.copy(defaultOg);
+
+        $('#menu').collapse('hide');
     });
 
     $rootScope.setOG = function(title, og) {

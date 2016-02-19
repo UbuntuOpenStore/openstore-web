@@ -57,7 +57,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu" />
 
         <link rel="stylesheet" href="/assets/css/main.css" />
-        <link rel="stylesheet" href="/assets/css/ubuntu.css" />
+        <link rel="stylesheet" href="/assets/css/theme.css" />
 
         <style>
             .ng-cloak {
@@ -66,10 +66,10 @@
         </style>
     </head>
     <body ng-controller="indexCtrl">
-        <nav class="navbar navbar-default" role="navigation" data-role="header">
+        <nav class="navbar" role="navigation" data-role="header">
             <div class="container">
                 <div class="navbar-header">
-                    <div data-role="actions" class="visible-xs visible-sm">
+                    <!--<div data-role="actions" class="visible-xs visible-sm">
                         <button type="button" data-role="actions-overflow-icon" ng-click="opened = !opened"></button>
                         <div data-role="actions-overflow-list" ng-class="{opened: opened}">
                             <ul>
@@ -93,18 +93,27 @@
                                 </li>
                             </ul>
                         </div>
-                    </div>
+                    </div>-->
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
                     <a class="navbar-brand ng-cloak" href="/apps" ng-if="$state.current.name == 'app'">
-                        <div data-role="back-btn"></div>
+                        <!--<div data-role="back-btn"></div>-->
+                        <i class="fa fa-angle-left"></i>
                         OpenStore
                     </a>
                     <a class="navbar-brand" href="/" ng-if="$state.current.name != 'app'">
-                        <div data-role="back-btn" ng-if="$state.current.name != 'main'"></div>
+                        <!--<div data-role="back-btn" ng-if="$state.current.name != 'main'"></div>-->
+                        <i class="fa fa-angle-left" ng-if="$state.current.name != 'main'"></i>
                         OpenStore
                     </a>
                 </div>
 
-                <div class="navbar-collapse navbar-right hidden-xs hidden-sm">
+                <div class="navbar-collapse navbar-right collapse" id="menu">
                     <ul class="nav navbar-nav">
                         <li>
                             <a href="/submit">Submit</a>
