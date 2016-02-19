@@ -60,7 +60,7 @@
         <div class="form-group">
             <label for="license" class="col-sm-2 control-label">License</label>
             <div class="col-sm-10">
-                <select id="license" class="form-control" ng-options="l for l in licenses" ng-model="pkg.license">
+                <select id="license" class="form-control" ng-options="l for l in $parent.licenses" ng-model="pkg.license">
                     <option value="">Choose a license</option>
                 </select>
             </div>
@@ -69,7 +69,7 @@
         <div class="form-group">
             <label for="category" class="col-sm-2 control-label">Category</label>
             <div class="col-sm-10">
-                <select id="category" class="form-control" ng-options="c for c in categories" ng-model="pkg.category">
+                <select id="category" class="form-control" ng-options="c for c in $parent.categories" ng-model="pkg.category">
                     <option value="">Choose a category</option>
                 </select>
             </div>
