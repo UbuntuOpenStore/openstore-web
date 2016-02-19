@@ -18,6 +18,7 @@
     "globals": {
         "angular": true,
         "_": true,
-        "bootbox": true
+        "bootbox": true,
+        "$": true
     }
 }
