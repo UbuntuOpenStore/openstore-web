@@ -83,7 +83,7 @@ function uploadIcon(url, share, pkg, filepath, callback) {
 
 function uploadClick(url, share, pkg, filepath, iconpath, callback) {
     var filename = pkg.name + '_' + pkg.version + '_' + pkg.architecture + '.click';
-    uploadToSmartfile(url, share, filepath, filename, function(err, url) {
+    uploadToSmartfile(url, share, filepath, filename, function(err, clickurl) {
         fs.unlink(filepath);
 
         if (err) {
@@ -92,11 +92,11 @@ function uploadClick(url, share, pkg, filepath, iconpath, callback) {
         else {
             if (iconpath) {
                 uploadIcon(url, share, pkg, iconpath, function(err, imgurl) {
-                    callback(err, url, imgurl);
+                    callback(err, clickurl, imgurl);
                 });
             }
             else {
-                callback(null, url);
+                callback(null, clickurl);
             }
         }
     });
