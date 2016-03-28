@@ -1,0 +1,42 @@
+{
+  "name": "openappstore-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "supervisor -w . index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/UbuntuOpenAppStore/openappstore-web.git"
+  },
+  "author": "Brian Douglass",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "click-parser": "^2.4.0",
+    "cookie-parser": "^1.4.0",
+    "cookie-session": "^1.2.0",
+    "express": "^4.13.3",
+    "lwip": "0.0.8",
+    "method-override": "^2.3.5",
+    "mongoose": "=4.1.3",
+    "multer": "^1.1.0",
+    "node-uuid": "^1.4.7",
+    "passport": "^0.3.2",
+    "passport-localapikey": "^0.0.3",
+    "passport-ubuntu": "^0.1.2",
+    "request": "^2.67.0",
+    "svgexport": "^0.2.8",
+    "winston": "^2.2.0",
+    "winston-papertrail": "^1.0.2"
+  },
+  "engines": {
+    "node": "4.2.2"
+  },
+  "devDependencies": {
+    "webpack": "^1.12.14",
+    "webpack-dev-middleware": "^1.6.0"
+  }
+}

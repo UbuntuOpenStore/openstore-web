@@ -1,39 +1,60 @@
-'use strict';
+window.jQuery = window.$ = require('jquery');
+require('bootstrap');
 
-angular.module('openstore', ['ui.router', 'ui.bootstrap', 'ngFileUpload']);
+var angular = require('angular');
+var uirouter = require('angular-ui-router');
+var uibootstrap = require('angular-ui-bootstrap');
+var fileupload = require('ng-file-upload');
 
-angular.module('openstore').config(function($stateProvider, $urlRouterProvider, $locationProvider, $compileProvider) {
+//TODO pretify these uris
+require('./css/main.css');
+require('./css/theme.css');
+require('./node_modules/bootstrap/dist/css/bootstrap.min.css');
+require('./node_modules/bootstrap/dist/css/bootstrap-theme.min.css');
+require('./node_modules/font-awesome/css/font-awesome.min.css');
+
+angular.module('openstore', [uirouter, uibootstrap, fileupload])
+.config(function($stateProvider, $urlRouterProvider, $locationProvider, $compileProvider) {
     $urlRouterProvider.otherwise('/');
     $locationProvider.html5Mode(true);
 
     $stateProvider.state('main', {
         url: '/',
-        templateUrl: '/partials/main.html',
+        templateUrl: '/app/partials/main.html',
     })
     .state('docs', {
         url: '/docs',
-        templateUrl: '/partials/docs.html',
+        templateUrl: '/app/partials/docs.html',
     })
     .state('submit', {
         url: '/submit',
-        templateUrl: '/partials/submit.html',
+        templateUrl: '/app/partials/submit.html',
         controller: 'submitCtrl'
     })
     .state('apps', {
         url: '/apps',
-        templateUrl: '/partials/apps.html',
+        templateUrl: '/app/partials/apps.html',
         controller: 'appsCtrl'
     })
     .state('app', {
         url: '/app/:name',
-        templateUrl: '/partials/app.html',
+        templateUrl: '/app/partials/app.html',
         controller: 'appsCtrl'
     })
     .state('manage', {
         url: '/manage',
-        templateUrl: '/partials/manage.html',
+        templateUrl: '/app/partials/manage.html',
         controller: 'manageCtrl'
     });
 
     $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|mailto|scope|openstore):/);
-});
+})
+.controller('indexCtrl', require('./app/controllers/indexCtrl'))
+.controller('appsCtrl', require('./app/controllers/appsCtrl'))
+.controller('manageCtrl', require('./app/controllers/manageCtrl'))
+.controller('submitCtrl', require('./app/controllers/submitCtrl'))
+.directive('ngContent', require('./app/directives/ngContent'))
+.filter('bytes', require('./app/filters/bytes'))
+.filter('versionFix', require('./app/filters/versionFix'))
+.factory('api', require('./app/services/api'))
+.factory('info', require('./app/services/info'));
