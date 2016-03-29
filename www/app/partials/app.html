@@ -5,9 +5,7 @@
         </div>
 
         <div class="pull-right">
-            <span class="label background-blue">v{{app.version}}</span>
-            <span class="label background-orange" ng-bind="app.license"></span>
-            <span class="label background-green" ng-bind="app.filesize|bytes"></span>
+            <types ng-model="app.types"></types>
         </div>
 
         <div class="clearfix visible-xs visible-sm"></div>
@@ -26,6 +24,13 @@
             </p>
         </div>
 
+        <div>
+            <span class="label background-blue">v{{app.version}}</span>
+            <span class="label background-orange" ng-bind="app.license"></span>
+            <span class="label background-green" ng-bind="app.filesize|bytes"></span>
+        </div>
+        <div class="clearfix"></div>
+
         <div class="description" ng-if="app.description">
             <p ng-bind="app.description"></p>
         </div>
@@ -34,6 +39,8 @@
             <h4>Changelog:</h4>
             <p ng-bind="app.changelog"></p>
         </div>
+
+
     </div>
 
     <div class="col-md-6">
