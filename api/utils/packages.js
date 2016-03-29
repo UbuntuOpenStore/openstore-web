@@ -9,6 +9,7 @@ function updateInfo(pkg, data, body, file, url) {
     if (data) {
         var manifest = {
             architecture: data.architecture,
+            changelog: data.changelog,
             description: data.description,
             framework: data.framework,
             hooks: {},
@@ -84,6 +85,10 @@ function updateInfo(pkg, data, body, file, url) {
             pkg.category = body.category;
         }
 
+        if (body.changelog || body.changelog === '') {
+            pkg.changelog = body.changelog;
+        }
+
         if (body.description) { //Only set description if non-empty (allows us to pull from the manifest on create)
             pkg.description = body.description;
         }
@@ -156,7 +161,9 @@ function toJson(pkg) {
         architecture: pkg.architecture ? pkg.architecture : '',
         author: pkg.author ? pkg.author : '',
         category: pkg.category ? pkg.category : '',
+        changelog: pkg.changelog ? pkg.changelog : '',
         description: pkg.description ? pkg.description : '',
+        download: config.server.host + '/api/download/' + pkg.id + '/' + pkg.id + '_' + pkg.version + '_' + pkg.architecture + '.click',
         filesize: pkg.filesize ? pkg.filesize : 0,
         framework: pkg.framework ? pkg.framework : '',
         icon: pkg.icon ? pkg.icon : '',
@@ -164,7 +171,6 @@ function toJson(pkg) {
         license: pkg.license ? pkg.license : '',
         manifest: pkg.manifest ? pkg.manifest : {},
         name: pkg.name ? pkg.name : '',
-        download: config.server.host + '/api/download/' + pkg.id + '/' + pkg.id + '_' + pkg.version + '_' + pkg.architecture + '.click',
         package: pkg.package ? pkg.package : '',
         permissions: pkg.permissions ? pkg.permissions: [],
         source: pkg.source ? pkg.source : '',

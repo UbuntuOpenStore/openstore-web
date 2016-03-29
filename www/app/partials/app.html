@@ -25,8 +25,14 @@
                 *You must have the OpenStore app installed on your phone for the "Install" button to work
             </p>
         </div>
-        <div class="description">
+
+        <div class="description" ng-if="app.description">
             <p ng-bind="app.description"></p>
+        </div>
+
+        <div class="changelog" ng-if="app.changelog">
+            <h4>Changelog:</h4>
+            <p ng-bind="app.changelog"></p>
         </div>
     </div>
 

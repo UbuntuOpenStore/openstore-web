@@ -34,6 +34,7 @@ var manageCtrl = function($scope, $location, $uibModal, $timeout, Upload, info, 
     $scope.newPackage = function() {
         return {
             category: '',
+            changelog: '',
             description: '',
             license: '',
             source: '',
@@ -72,11 +73,12 @@ var manageCtrl = function($scope, $location, $uibModal, $timeout, Upload, info, 
     $scope.save = function(pkg) {
         $scope.saving = true;
         var data = {
-            tagline: pkg.tagline,
+            category: pkg.category,
+            changelog: pkg.changelog,
             description: pkg.description,
             license: pkg.license,
             source: pkg.source,
-            category: pkg.category,
+            tagline: pkg.tagline,
         };
 
         var upload = null;

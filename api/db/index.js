@@ -13,6 +13,7 @@ var packageSchema = mongoose.Schema({
     architecture: String,
     author: String,
     category: String,
+    changelog: String,
     deleted: Boolean,
     description: String,
     downloads: {},
