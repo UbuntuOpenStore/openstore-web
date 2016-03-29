@@ -1,9 +1,11 @@
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 var webpack = require('webpack');
 
 module.exports = {
     context: __dirname,
     entry: './app.js',
     output: {
+        hash: true,
         path: __dirname,
         filename: 'bundle.js'
     },
@@ -46,6 +48,11 @@ module.exports = {
         }}),
         //new webpack.optimize.DedupePlugin(),
         //new webpack.optimize.UglifyJsPlugin(),
+        new HtmlWebpackPlugin({
+            hash: true,
+            filename: 'index.html',
+            template: __dirname + '/index.html',
+        }),
     ],
 
     jshint: {
