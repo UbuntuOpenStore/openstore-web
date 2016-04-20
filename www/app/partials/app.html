@@ -32,12 +32,12 @@
         <div class="clearfix"></div>
 
         <div class="description" ng-if="app.description">
-            <p ng-bind="app.description"></p>
+            <p ng-bind-html="app.description | nl2br"></p>
         </div>
 
         <div class="changelog" ng-if="app.changelog">
             <h4>Changelog:</h4>
-            <p ng-bind="app.changelog"></p>
+            <p ng-bind-html="app.changelog | nl2br"></p>
         </div>
 
 

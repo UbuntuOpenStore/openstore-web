@@ -24,8 +24,8 @@ function setup() {
 
     if (config.dev) {
         logger.debug('Dev mode on');
-        var webpack = require("webpack");
-        var webpackMiddleware = require("webpack-dev-middleware");
+        var webpack = require('webpack');
+        var webpackMiddleware = require('webpack-dev-middleware');
         var webpackConfig = require('../../www/webpack.config.js');
         app.use(webpackMiddleware(webpack(webpackConfig)));
     }

@@ -5,7 +5,7 @@
   "main": "api/index.js",
   "scripts": {
     "start": "cd api && npm start",
-    "dev": "cd api && npm run dev",
+    "dev": "cd api && PROCESS_LIMIT=1 npm run dev",
     "postinstall": "cd api && npm install && cd ../www && npm install"
   },
   "author": "Brian Douglass",

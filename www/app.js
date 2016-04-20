@@ -57,5 +57,6 @@ angular.module('openstore', [uirouter, uibootstrap, fileupload])
 .directive('types', require('./app/directives/types'))
 .filter('bytes', require('./app/filters/bytes'))
 .filter('versionFix', require('./app/filters/versionFix'))
+.filter('nl2br', require('./app/filters/nl2br'))
 .factory('api', require('./app/services/api'))
 .factory('info', require('./app/services/info'));
