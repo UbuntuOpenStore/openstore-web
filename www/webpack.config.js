@@ -40,11 +40,12 @@ module.exports = {
 
     devServer: {
         historyApiFallback: true,
+        port: 8081,
     },
 
     plugins: [
         new webpack.DefinePlugin({'process.env': {
-            'API': (process.env.NODE_ENV == 'production') ? JSON.stringify('https://open.uappexplorer.com') : JSON.stringify('http://local.open.uappexplorer.com:3000'),
+            'API': (process.env.NODE_ENV == 'production') ? JSON.stringify('https://open.uappexplorer.com') : JSON.stringify('http://local.open.uappexplorer.com'),
         }}),
         //new webpack.optimize.DedupePlugin(),
         //new webpack.optimize.UglifyJsPlugin(),

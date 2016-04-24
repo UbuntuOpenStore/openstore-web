@@ -1,5 +1,3 @@
-var angular = require('angular');
-
 var docsCtrl = function($scope, api) {
     api.apps.get("openstore.openstore-team").then((data) => {
         $scope.data = {
