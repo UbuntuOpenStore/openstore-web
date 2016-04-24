@@ -32,6 +32,10 @@ function setup() {
 
     app.use(express.static(__dirname + '/../../www'));
 
+    app.get('/app/openstore.mzanetti', function(req, res) {
+        res.redirect(301, config.server.host + '/app/openstore.openstore-team')
+    });
+
     app.get('/app/:name', function(req, res) { //For populating opengraph data, etc for bots that don't execute javascript (like twitter cards)
         if (opengraph.match(req)) {
             res.header('Content-Type', 'text/html');
