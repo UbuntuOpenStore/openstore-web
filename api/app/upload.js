@@ -82,7 +82,7 @@ function uploadIcon(url, share, pkg, filepath, callback) {
 }
 
 function uploadClick(url, share, pkg, filepath, iconpath, callback) {
-    var filename = pkg.name + '_' + pkg.version + '_' + pkg.architecture + '.click';
+    var filename = pkg.id + '_' + pkg.version + '_' + pkg.architecture + '.click';
     uploadToSmartfile(url, share, filepath, filename, function(err, clickurl) {
         fs.unlink(filepath);
 
