@@ -25,6 +25,7 @@ angular.module('openstore', [uirouter, uibootstrap, fileupload])
     .state('docs', {
         url: '/docs',
         templateUrl: '/app/partials/docs.html',
+        controller: 'docsCtrl'
     })
     .state('submit', {
         url: '/submit',
@@ -53,6 +54,7 @@ angular.module('openstore', [uirouter, uibootstrap, fileupload])
 .controller('appsCtrl', require('./app/controllers/appsCtrl'))
 .controller('manageCtrl', require('./app/controllers/manageCtrl'))
 .controller('submitCtrl', require('./app/controllers/submitCtrl'))
+.controller('docsCtrl', require('./app/controllers/docsCtrl'))
 .directive('ngContent', require('./app/directives/ngContent'))
 .directive('types', require('./app/directives/types'))
 .filter('bytes', require('./app/filters/bytes'))
