@@ -78,8 +78,11 @@
                         <li>
                             <a href="/app/openstore.openstore-team">Download</a>
                         </li>
-                        <li ng-show="$state.current.name != 'manage'">
+                        <li ng-show="!loggedin">
                             <a class="clickable" ng-click="loginModal()">Log In</a>
+                        </li>
+                        <li ng-show="loggedin">
+                            <a href="/manage">Manage</a>
                         </li>
                     </ul>
                 </div>

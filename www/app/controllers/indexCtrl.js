@@ -1,7 +1,7 @@
 var angular = require('angular');
 var jquery = require('jquery');
 
-var indexCtrl = function($scope, $rootScope, $state, $uibModal, $location, $sce) {
+var indexCtrl = function($scope, $rootScope, $state, $uibModal, $location, $sce, api) {
     $scope.$state = $state;
     $scope.login = $sce.trustAsResourceUrl(process.env.API + '/auth/ubuntu');
 
@@ -44,8 +44,15 @@ var indexCtrl = function($scope, $rootScope, $state, $uibModal, $location, $sce)
         $rootScope.title = title;
         $rootScope.og = og;
     };
+
+    $scope.loggedin = false;
+    var current_user = null;
+    api.auth.me().then(function(user) {
+        $scope.loggedin = true;
+        current_user = user;
+    });
 };
 
-indexCtrl.$inject = ['$scope', '$rootScope', '$state', '$uibModal', '$location', '$sce'];
+indexCtrl.$inject = ['$scope', '$rootScope', '$state', '$uibModal', '$location', '$sce', 'api'];
 
 module.exports = indexCtrl;
