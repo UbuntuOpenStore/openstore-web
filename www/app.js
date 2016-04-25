@@ -20,7 +20,8 @@ angular.module('openstore', [uirouter, uibootstrap, fileupload])
 
     $stateProvider.state('main', {
         url: '/',
-        templateUrl: '/app/partials/main.html',
+        templateUrl: '/app/partials/apps.html',
+        controller: 'appsCtrl'
     })
     .state('docs', {
         url: '/docs',

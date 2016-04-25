@@ -136,3 +136,21 @@ body {
 .navbar a.navbar-brand:hover {
     background-color: #424242 !important;
 }
+
+.disclaimer {
+    font-size: 12px;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.footer {
+    border-top: 1px solid #424242;
+    padding-top: 10px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.right-align {
+    text-align: right;
+}
