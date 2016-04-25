@@ -29,7 +29,9 @@
         <meta property="og:description" content="OpenStore for Ubuntu Touch" ng-content="og.description" />
         <meta property="og:site_name" content="OpenStore" ng-content="title" />
 
-        <link rel="icon" type="image/png" href="/img/logo.png">
+        <link rel="icon" type="image/png" href="/img/logo.png?v=2">
+        <link rel="apple-touch-icon" href="/img/logo.png" />
+        <link rel="apple-touch-icon-precomposed" href="/img/logo.png" />
 
         <style>
             .ng-cloak {
@@ -49,10 +51,12 @@
 
                     <a class="navbar-brand ng-cloak" href="/apps" ng-if="$state.current.name == 'app'">
                         <i class="fa fa-angle-left"></i>
+                        <img src="/img/logo-grey.svg" />
                         OpenStore
                     </a>
                     <a class="navbar-brand" href="/" ng-if="$state.current.name != 'app'">
                         <i class="fa fa-angle-left" ng-if="$state.current.name != 'main'"></i>
+                        <img src="/img/logo-grey.svg" />
                         OpenStore
                     </a>
                 </div>

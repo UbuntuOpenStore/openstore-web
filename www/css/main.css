@@ -124,3 +124,15 @@ body {
 .icon-bar {
     background-color: #FFFFFF !important;
 }
+
+.navbar-brand > img {
+    margin-right: 5px;
+    margin-top: -11px;
+    height: 40px;
+    width: 40px;
+    display: inline-block !important;
+}
+
+.navbar a.navbar-brand:hover {
+    background-color: #424242 !important;
+}

@@ -26,8 +26,8 @@
     "webpack": "^1.12.14"
   },
   "scripts": {
-    "devserver": "webpack-dev-server --progress --colors -d --host 0.0.0.0",
-    "server": "NODE_ENV=production webpack-dev-server --progress --colors --host 0.0.0.0",
+    "devserver": "webpack-dev-server --progress --colors -d --host 0.0.0.0 --watch-poll",
+    "server": "NODE_ENV=production webpack-dev-server --progress --colors --host 0.0.0.0 --watch-poll",
     "postinstall": "webpack --progress --colors"
   }
 }
