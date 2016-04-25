@@ -1,0 +1,22 @@
+api:
+    build: ./api/
+    ports:
+        - "8080:8080"
+    links:
+        - mongo
+    volumes:
+        - /srv/openstore:/srv/openstore
+
+web:
+    build: ./web/
+    ports:
+        - "8081:8081"
+    volumes:
+        - /srv/openstore:/srv/openstore
+
+mongo:
+    image: mongo
+    ports:
+        - "27017:27017"
+    volumes:
+        - /data/db:/data/db

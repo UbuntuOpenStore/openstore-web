@@ -22,14 +22,6 @@ function setup() {
     auth.setup(app);
     apps.setup(app);
 
-    if (config.dev) {
-        logger.debug('Dev mode on');
-        var webpack = require('webpack');
-        var webpackMiddleware = require('webpack-dev-middleware');
-        var webpackConfig = require('../../www/webpack.config.js');
-        app.use(webpackMiddleware(webpack(webpackConfig)));
-    }
-
     app.use(express.static(__dirname + '/../../www'));
 
     app.get('/app/openstore.mzanetti', function(req, res) {

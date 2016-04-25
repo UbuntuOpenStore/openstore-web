@@ -31,9 +31,5 @@
     "svgexport": "^0.2.8",
     "winston": "^2.2.0",
     "winston-papertrail": "^1.0.2"
-  },
-  "devDependencies": {
-    "webpack": "^1.12.14",
-    "webpack-dev-middleware": "^1.6.0"
   }
 }

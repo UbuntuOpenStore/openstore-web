@@ -1,21 +1,26 @@
-# OpenStore Web #
+# OpenStore Web
 
 Web viewer and api for the [OpenStore](http://notyetthere.org/openstore-tweakgeek-and-more/).
 
-## Development ##
+## Development
 
-* Install mongodb:
-    * Ubuntu: `apt-get install mongodb`
-    * Arch Linux: `pacman -S mongodb`
-* Install gulp and supervisor:
-    * Run: `npm install gulp supervisor --global`
-* Install NPM dependencies:
+* Install [vagrant](http://vagrantup.com/)
+* Install the docker compose vagrant plugin:
+    * Run: `vagrant plugin install vagrant-docker-compose`
+* Start vagrant:
+    * Run: `vagrant up`
+* Install NPM dependencies (it's best to run this in the VM):
     * Run: `npm install`
-* Start up webserver:
-    * Run: `npm start`
-    * Go to: `localhost:3000`
+* Attach to the docker container (if needed - from inside the vagrant VM):
+    * Attach to the api container: `attach_api`
+    * Attach to the web container: `attach_web`
+* Update your system's hosts file:
+    * Add `1192.168.58.123 local.open.uappexplorer.com`
+* Visit the site:
+    * In your browser go to: `local.open.uappexplorer.com`
+* Profit!
 
-## App Api ##
+## App Api
 
 * GET /api/apps
     * Returns a list of all non-deleted apps
@@ -80,7 +85,7 @@ Web viewer and api for the [OpenStore](http://notyetthere.org/openstore-tweakgee
 
 ## License ##
 
-Copyright (C) 2015 [Brian Douglass](http://bhdouglass.com/)
+Copyright (C) 2016 [Brian Douglass](http://bhdouglass.com/)
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License version 3, as published
 by the Free Software Foundation.

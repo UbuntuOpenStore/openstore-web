@@ -1,13 +1,13 @@
 var config = {
     server: {
         ip: process.env.NODEJS_IP || '0.0.0.0',
-        port: process.env.PORT || process.env.NODEJS_PORT || 3000,
+        port: process.env.PORT || process.env.NODEJS_PORT || 8080,
         session_secret: process.env.SESSION_SECRET || 'open-appstore',
-        host: process.env.HOST || 'http://local.open.uappexplorer.com:3000',
+        host: process.env.HOST || 'http://local.open.uappexplorer.com:8080',
         process_limit: process.env.PROCESS_LIMIT || 0,
     },
     mongo: {
-        uri: process.env.MONGODB_URI || 'mongodb://localhost/',
+        uri: process.env.MONGODB_URI || 'mongodb://localhost',
         database: process.env.MONGODB_DB || 'openappstore',
     },
     smartfile: {
@@ -20,7 +20,11 @@ var config = {
         host: process.env.PAPERTRAIL_HOST,
         port: process.env.PAPERTRAIL_PORT,
     },
-    dev: (process.env.NODE_ENV != 'production'),
 };
+
+//Mongo uri from docker
+if (process.env.MONGO_PORT) {
+  config.mongo.uri = process.env.MONGO_PORT.replace('tcp', 'mongodb');
+}
 
 module.exports = config;
