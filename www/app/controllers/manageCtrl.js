@@ -21,7 +21,7 @@ var manageCtrl = function($scope, $location, $uibModal, $timeout, Upload, info, 
     api.auth.me().then(function(user) {
         $scope.user = user;
 
-        if ($scope.user.role != 'admin') {
+        if (!$scope.user || $scope.user.role != 'admin') {
             $scope.user = null;
             $location.path('/auth/logout');
         }

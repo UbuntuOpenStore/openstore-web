@@ -154,3 +154,7 @@ body {
 .right-align {
     text-align: right;
 }
+
+.manage .secondary {
+    margin-right: 10px;
+}

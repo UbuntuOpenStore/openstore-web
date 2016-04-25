@@ -1,0 +1,33 @@
+<div class="users">
+    <div class="row">
+        <div class="col-sm-12">
+            <h3>
+                Users
+                <i class="fa fa-spinner fa-spin" ng-if="loading"></i>
+            </h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="user in users|orderBy:'name'">
+                        <td ng-bind="user.username"></td>
+                        <td ng-bind="user.name"></td>
+                        <td ng-bind="user.email"></td>
+                        <td ng-bind="user.role"></td> <!--TODO make this editable -->
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,6 +1,7 @@
 var config = require('../utils/config');
 var apps = require('./apps');
 var auth = require('./auth');
+var users = require('./users');
 var db = require('../db');
 var opengraph = require('../utils/opengraph');
 var logger = require('../utils/logger');
@@ -21,6 +22,7 @@ function setup() {
 
     auth.setup(app);
     apps.setup(app);
+    users.setup(app);
 
     app.use(express.static(__dirname + '/../../www'));
 
@@ -65,7 +67,7 @@ function setup() {
         }
     });
 
-    app.all(['/', '/docs', '/submit', '/apps', '/manage'], function(req, res) { //For html5mode on frontend
+    app.all(['/', '/docs', '/submit', '/apps', '/manage', '/users'], function(req, res) { //For html5mode on frontend
         res.sendFile('index.html', {root: __dirname + '/../../www'});
     });
 

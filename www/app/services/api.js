@@ -11,6 +11,7 @@ var api = function($http, Upload) {
                 });
             },
         },
+
         apps: {
             getAll: function() {
                 return $http.get(process.env.API + '/api/apps').then(success);
@@ -55,6 +56,42 @@ var api = function($http, Upload) {
                 });
             },
         },
+
+        users: {
+            getAll: function(key) {
+                return $http.get(process.env.API + '/api/users', {
+                    params: {
+                        apikey: key
+                    },
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                }).then(success);
+            },
+
+            get: function(key, id) {
+                return $http.get(process.env.API + '/api/users/' + id, {
+                    params: {
+                        apikey: key
+                    },
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                }).then(success);
+            },
+
+            update: function(key, id, role) {
+                return $http.put(process.env.API + '/api/users/' + id, {
+                    params: {
+                        apikey: key,
+                        role: role,
+                    },
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                }).then(success);
+            },
+        }
     };
 };
 

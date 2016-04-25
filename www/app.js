@@ -47,6 +47,11 @@ angular.module('openstore', [uirouter, uibootstrap, fileupload])
         url: '/manage',
         templateUrl: '/app/partials/manage.html',
         controller: 'manageCtrl'
+    })
+    .state('users', {
+        url: '/users',
+        templateUrl: '/app/partials/users.html',
+        controller: 'usersCtrl'
     });
 
     $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|mailto|scope|openstore):/);
@@ -56,6 +61,7 @@ angular.module('openstore', [uirouter, uibootstrap, fileupload])
 .controller('manageCtrl', require('./app/controllers/manageCtrl'))
 .controller('submitCtrl', require('./app/controllers/submitCtrl'))
 .controller('docsCtrl', require('./app/controllers/docsCtrl'))
+.controller('usersCtrl', require('./app/controllers/usersCtrl'))
 .directive('ngContent', require('./app/directives/ngContent'))
 .directive('types', require('./app/directives/types'))
 .filter('bytes', require('./app/filters/bytes'))
