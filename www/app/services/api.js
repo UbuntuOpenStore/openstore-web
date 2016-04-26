@@ -81,14 +81,8 @@ var api = function($http, Upload) {
             },
 
             update: function(key, id, role) {
-                return $http.put(process.env.API + '/api/users/' + id, {
-                    params: {
-                        apikey: key,
-                        role: role,
-                    },
-                    headers: {
-                        'Content-Type': 'application/json'
-                    }
+                return $http.put(process.env.API + '/api/users/' + id + '?apikey=' + key, {
+                    role: role,
                 }).then(success);
             },
         }

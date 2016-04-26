@@ -21,6 +21,13 @@ var usersCtrl = function($scope, $location, api) {
             return refresh();
         }
     });
+
+    $scope.userChanged = function(user) {
+        user.saving = true;
+        api.users.update($scope.user.apikey, user._id, user.role).then(function() {
+            user.saving = false;
+        });
+    };
 };
 
 usersCtrl.$inject = ['$scope', '$location', 'api'];

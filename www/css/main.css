@@ -158,3 +158,8 @@ body {
 .manage .secondary {
     margin-right: 10px;
 }
+
+.users select {
+    width: 200px;
+    display: inline-block;
+}

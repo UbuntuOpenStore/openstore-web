@@ -1,6 +1,11 @@
 <div class="users">
     <div class="row">
         <div class="col-sm-12">
+            <a href="/manage" data-role="button" class="secondary clickable pull-right">
+                <i class="fa fa-archive"></i>
+                Manage Packages
+            </a>
+
             <h3>
                 Users
                 <i class="fa fa-spinner fa-spin" ng-if="loading"></i>
@@ -24,7 +29,14 @@
                         <td ng-bind="user.username"></td>
                         <td ng-bind="user.name"></td>
                         <td ng-bind="user.email"></td>
-                        <td ng-bind="user.role"></td> <!--TODO make this editable -->
+                        <td>
+                            <select ng-model="user.role" ng-change="userChanged(user)" ng-disabled="user.saving" class="form-control">
+                                <option value="">Community User</option>
+                                <option value="trusted">Trusted User</option>
+                                <option value="admin">Admin User</option>
+                            </select>
+                            <i class="fa fa-spinner fa-spin" ng-if="user.saving"></i>
+                        </td>
                     </tr>
                 </tbody>
             </table>
