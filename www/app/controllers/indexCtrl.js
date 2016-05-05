@@ -48,8 +48,14 @@ var indexCtrl = function($scope, $rootScope, $state, $uibModal, $location, $sce,
     $scope.loggedin = false;
     var current_user = null;
     api.auth.me().then(function(user) {
-        $scope.loggedin = true;
-        current_user = user;
+        if (user) {
+            $scope.loggedin = true;
+            current_user = user;
+        }
+        else {
+            $scope.loggedin = false;
+            current_user = null;
+        }
     });
 };
 
