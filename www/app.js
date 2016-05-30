@@ -28,6 +28,11 @@ angular.module('openstore', [uirouter, uibootstrap, fileupload])
         templateUrl: '/app/partials/docs.html',
         controller: 'docsCtrl'
     })
+    .state('installdocs', {
+        url: '/docs#install',
+        templateUrl: '/app/partials/docs.html',
+        controller: 'docsCtrl'
+    })
     .state('submit', {
         url: '/submit',
         templateUrl: '/app/partials/submit.html',
