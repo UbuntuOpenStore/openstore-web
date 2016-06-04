@@ -48,6 +48,11 @@ angular.module('openstore', [uirouter, uibootstrap, fileupload])
         templateUrl: '/app/partials/app.html',
         controller: 'appsCtrl'
     })
+    .state('login', {
+        url: '/login',
+        templateUrl: '/app/partials/login.html',
+        controller: 'loginCtrl'
+    })
     .state('manage', {
         url: '/manage',
         templateUrl: '/app/partials/manage.html',
@@ -67,6 +72,7 @@ angular.module('openstore', [uirouter, uibootstrap, fileupload])
 .controller('submitCtrl', require('./app/controllers/submitCtrl'))
 .controller('docsCtrl', require('./app/controllers/docsCtrl'))
 .controller('usersCtrl', require('./app/controllers/usersCtrl'))
+.controller('loginCtrl', require('./app/controllers/loginCtrl'))
 .directive('ngContent', require('./app/directives/ngContent'))
 .directive('types', require('./app/directives/types'))
 .filter('bytes', require('./app/filters/bytes'))

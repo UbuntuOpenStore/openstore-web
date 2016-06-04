@@ -1,21 +1,18 @@
-<div class="modal-header">
-    <h3 class="modal-title">Login</h3>
-</div>
+<div class="text-center login">
+    <div class="icon-xlarge ubuntu-shape">
+        <img src="/img/logo-grey.svg" alt="Login to the OpenStore" />
+    </div>
 
-<div class="modal-body">
-    This feature is currently only open to admins.
-</div>
+    <div>
+        <form action="{{login}}" method="post" class="">
+            <button class="primary" data-role="button" type="submit" class="btn btn-warning">
+                <i class="fa fa-linux"></i>
+                Login via Ubuntu
+            </button>
+        </form>
+    </div>
 
-<div class="modal-footer">
-    <form action="{{login}}" method="post" class="">
-        <button class="secondary" data-role="button" ng-click="$event.preventDefault(); $dismiss('close')">
-            <i class="fa fa-close"></i>
-            Close
-        </button>
-
-        <button class="primary" data-role="button" type="submit" class="btn btn-warning">
-            <i class="fa fa-linux"></i>
-            Login via Ubuntu
-        </button>
-    </form>
+    <div class="small-note">
+        *This feature is currently only open to admins.
+    </div>
 </div>

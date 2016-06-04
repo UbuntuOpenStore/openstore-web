@@ -5,13 +5,6 @@ var indexCtrl = function($scope, $rootScope, $state, $uibModal, $location, $sce,
     $scope.$state = $state;
     $scope.login = $sce.trustAsResourceUrl(process.env.API + '/auth/ubuntu');
 
-    $rootScope.loginModal = function() {
-        $uibModal.open({
-            templateUrl: '/app/partials/login.html',
-            scope: $scope,
-        });
-    };
-
     var url = $location.protocol() + '://' + $location.host() + '/';
     var defaultTitle = 'OpenStore';
     var defaultOg = {

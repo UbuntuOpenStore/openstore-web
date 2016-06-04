@@ -54,6 +54,16 @@ body {
     border-radius: 2rem;
 }
 
+.icon-xlarge {
+  width: 184px;
+  height: 184px;
+  margin-bottom: 10px;
+}
+
+.icon-xlarge img {
+  border-radius: 4.1rem;
+}
+
 .clickable {
     cursor: pointer;
 }
@@ -162,4 +172,8 @@ body {
 .users select {
     width: 200px;
     display: inline-block;
+}
+
+.login div {
+    margin-bottom: 10px;
 }
