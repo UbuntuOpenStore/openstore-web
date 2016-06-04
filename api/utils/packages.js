@@ -4,6 +4,7 @@ var logger = require('./logger');
 var request = require('request');
 var parse = require('click-parser');
 var fs = require('fs');
+var sanitizeHtml = require('sanitize-html');
 
 function updateInfo(pkg, data, body, file, url) {
     if (data) {
@@ -105,6 +106,21 @@ function updateInfo(pkg, data, body, file, url) {
             pkg.tagline = body.tagline;
         }
     }
+
+    pkg.description = sanitizeHtml(pkg.description, {
+      allowedTags: [],
+      allowedAttributes: [],
+    }).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/\r/g, '');
+
+    pkg.changelog = sanitizeHtml(pkg.changelog, {
+      allowedTags: [],
+      allowedAttributes: [],
+    }).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/\r/g, '');
+
+    pkg.tagline = sanitizeHtml(pkg.tagline, {
+      allowedTags: [],
+      allowedAttributes: [],
+    }).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/\r/g, '');
 }
 
 function reparse() {

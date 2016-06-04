@@ -10,7 +10,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.network "private_network", ip: "192.168.58.123"
     config.vm.hostname = "openstore"
     config.vm.synced_folder "./", "/srv/openstore", id: "vagrant-root"
-    config.vm.network "forwarded_port", guest: 80, host: 8080
+    config.vm.network "forwarded_port", guest: 80, host: 8081
 
     config.vm.provision :docker
     config.vm.provision :docker_compose, project_name: "openstore", yml: "/vagrant/env/docker-compose.yml", rebuild: true, run: "always"
