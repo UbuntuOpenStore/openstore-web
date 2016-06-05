@@ -105,6 +105,10 @@ function updateInfo(pkg, data, body, file, url) {
         if (body.tagline || body.tagline === '') {
             pkg.tagline = body.tagline;
         }
+
+        if (body.maintainer !== undefined) {
+            pkg.maintainer = body.maintainer;
+        }
     }
 
     pkg.description = sanitizeHtml(pkg.description, {
@@ -185,6 +189,7 @@ function toJson(pkg) {
         icon: pkg.icon ? pkg.icon : '',
         id: pkg.id ? pkg.id : '',
         license: pkg.license ? pkg.license : '',
+        maintainer: pkg.maintainer ? pkg.maintainer : null,
         manifest: pkg.manifest ? pkg.manifest : {},
         name: pkg.name ? pkg.name : '',
         package: pkg.package ? pkg.package : '',

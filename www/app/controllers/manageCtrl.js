@@ -10,6 +10,7 @@ var manageCtrl = function($scope, $location, $uibModal, $timeout, Upload, info, 
     $scope.error = null;
     $scope.categories = info.categories;
     $scope.licenses = info.licenses;
+    $scope.users = [];
 
     function refresh() {
         return api.apps.getAll().then(function(apps) {
@@ -27,6 +28,11 @@ var manageCtrl = function($scope, $location, $uibModal, $timeout, Upload, info, 
         }
         else {
             $scope.loading = true;
+
+            api.users.getAll($scope.user.apikey).then(function(users) {
+                $scope.users = users;
+            });
+
             return refresh();
         }
     });
@@ -77,6 +83,7 @@ var manageCtrl = function($scope, $location, $uibModal, $timeout, Upload, info, 
             changelog: pkg.changelog,
             description: pkg.description,
             license: pkg.license,
+            maintainer: pkg.maintainer,
             source: pkg.source,
             tagline: pkg.tagline,
         };

@@ -22,6 +22,7 @@ var packageSchema = mongoose.Schema({
     icon: String,
     id: {type: String, index: true},
     license: String,
+    maintainer: String,
     manifest: {},
     name: String,
     package: String,
