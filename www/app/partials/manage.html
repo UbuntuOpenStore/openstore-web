@@ -1,7 +1,7 @@
 <div class="manage">
     <div class="row">
         <div class="col-sm-12">
-            <a ng-click="edit(newPackage())" data-role="button" class="primary clickable pull-right">
+            <a href="/manage/create" data-role="button" class="primary clickable pull-right">
                 <i class="fa fa-plus"></i>
                 New Package
             </a>
@@ -39,9 +39,15 @@
                         <td ng-bind="package.version"></td>
                         <td ng-bind="package.category"></td>
                         <td>
-                            <a ng-click="stats(package)" class="clickable text-blue" title="Stats"><i class="fa fa-fw fa-info-circle"></i></a>
-                            <a ng-click="edit(package)" class="clickable text-green" title="Edit"><i class="fa fa-fw fa-edit"></i></a>
-                            <a ng-click="remove(package)" class="clickable text-red" title="Delete"><i class="fa fa-fw fa-trash"></i></a>
+                            <a ng-click="stats(package)" data-role="button" class="information small clickable">
+                                <i class="fa fa-fw fa-info-circle"></i> Stats
+                            </a>
+                            <a ng-href="/manage/{{package.id}}" data-role="button" class="primary small">
+                                <i class="fa fa-fw fa-edit"></i> Edit
+                            </a>
+                            <a ng-click="remove(package)" data-role="button" class="secondary small clickable">
+                                <i class="fa fa-fw fa-trash"></i> Delete
+                            </a>
                         </td>
                     </tr>
                 </tbody>

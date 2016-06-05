@@ -53,6 +53,11 @@ angular.module('openstore', [uirouter, uibootstrap, fileupload])
         templateUrl: '/app/partials/login.html',
         controller: 'loginCtrl'
     })
+    .state('manageapp', {
+        url: '/manage/:name',
+        templateUrl: '/app/partials/manageApp.html',
+        controller: 'manageAppCtrl'
+    })
     .state('manage', {
         url: '/manage',
         templateUrl: '/app/partials/manage.html',
@@ -69,6 +74,7 @@ angular.module('openstore', [uirouter, uibootstrap, fileupload])
 .controller('indexCtrl', require('./app/controllers/indexCtrl'))
 .controller('appsCtrl', require('./app/controllers/appsCtrl'))
 .controller('manageCtrl', require('./app/controllers/manageCtrl'))
+.controller('manageAppCtrl', require('./app/controllers/manageAppCtrl'))
 .controller('submitCtrl', require('./app/controllers/submitCtrl'))
 .controller('docsCtrl', require('./app/controllers/docsCtrl'))
 .controller('usersCtrl', require('./app/controllers/usersCtrl'))

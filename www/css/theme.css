@@ -60,6 +60,11 @@
     border-color: #929292;
 }
 
+[data-role="button"].small {
+    height: 30px;
+    padding: 6px 15px;
+}
+
 .background-green {
     background-color: #3fb24f;
 }

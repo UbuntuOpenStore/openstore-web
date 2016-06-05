@@ -1,17 +1,10 @@
 var bootbox = require('bootbox');
 var angular = require('angular');
 
-var manageCtrl = function($scope, $location, $uibModal, $timeout, Upload, info, api) {
-    $scope.saving = false;
+var manageCtrl = function($scope, $location, $uibModal, $timeout, info, api) {
     $scope.loading = true;
     $scope.user = null;
     $scope.packages = [];
-    $scope.file = null;
-    $scope.error = null;
-    $scope.categories = info.categories;
-    $scope.licenses = info.licenses;
-    $scope.users = [];
-    $scope.trustedAdminUsers = [];
 
     function refresh() {
         return api.apps.getAll().then(function(apps) {
@@ -20,6 +13,7 @@ var manageCtrl = function($scope, $location, $uibModal, $timeout, Upload, info, 
         });
     }
 
+    //TODO don't autenticate every time, store the logged in status & user data
     api.auth.me().then(function(user) {
         $scope.user = user;
 
@@ -30,43 +24,9 @@ var manageCtrl = function($scope, $location, $uibModal, $timeout, Upload, info, 
         else {
             $scope.loading = true;
 
-            api.users.getAll($scope.user.apikey).then(function(users) {
-                $scope.users = users;
-
-                var trustedAdminUsers = [];
-                for (var index in users) {
-                    if (users[index].role == 'admin' || users[index].role == 'trusted') {
-                        trustedAdminUsers.push(users[index]);
-                    }
-                }
-
-                $scope.trustedAdminUsers = trustedAdminUsers;
-            });
-
             return refresh();
         }
     });
-
-    $scope.newPackage = function() {
-        return {
-            category: '',
-            changelog: '',
-            description: '',
-            license: '',
-            source: '',
-            tagline: '',
-        };
-    };
-
-    var modal = null;
-    $scope.edit = function(pkg) {
-        $scope.pkg = angular.copy(pkg);
-
-        modal = $uibModal.open({
-            templateUrl: '/app/partials/packageEdit.html',
-            scope: $scope
-        });
-    };
 
     $scope.stats = function(pkg) {
         $scope.pkg = angular.copy(pkg);
@@ -83,43 +43,6 @@ var manageCtrl = function($scope, $location, $uibModal, $timeout, Upload, info, 
 
     $scope.cancel = function() {
         modal.close();
-        $scope.error = null;
-    };
-
-    $scope.save = function(pkg) {
-        $scope.saving = true;
-        var data = {
-            category: pkg.category,
-            changelog: pkg.changelog,
-            description: pkg.description,
-            license: pkg.license,
-            maintainer: pkg.maintainer,
-            source: pkg.source,
-            tagline: pkg.tagline,
-        };
-
-        var upload = null;
-        if (pkg.id) {
-            upload = api.apps.update($scope.user.apikey, pkg.id, data, $scope.file);
-        }
-        else {
-            upload = api.apps.create($scope.user.apikey, data, $scope.file);
-        }
-
-        upload.error(function(data, status) {
-            console.error(data, status);
-            $scope.error = data.message;
-            $scope.saving = false;
-        })
-        .success(function() {
-            $scope.saving = false;
-            $scope.file = null;
-            $scope.error = null;
-            modal.close();
-
-            $scope.loading = true;
-            refresh();
-        });
     };
 
     $scope.remove = function(pkg) {
@@ -137,12 +60,8 @@ var manageCtrl = function($scope, $location, $uibModal, $timeout, Upload, info, 
             }
         });
     };
-
-    $scope.setFile = function(files) {
-        $scope.file = files[0];
-    };
 };
 
-manageCtrl.$inject = ['$scope', '$location', '$uibModal', '$timeout', 'Upload', 'info', 'api'];
+manageCtrl.$inject = ['$scope', '$location', '$uibModal', '$timeout', 'info', 'api'];
 
 module.exports = manageCtrl;
