@@ -1,5 +1,4 @@
 var bootbox = require('bootbox');
-var angular = require('angular');
 
 var manageCtrl = function($scope, $location, $timeout, info, api) {
     $scope.loading = true;
