@@ -1,20 +1,23 @@
 <div class="manage">
     <div class="row">
         <div class="col-sm-12">
-            <a href="/manage/create" data-role="button" class="primary clickable pull-right">
-                <i class="fa fa-plus"></i>
-                New Package
-            </a>
-
-            <a href="/users" data-role="button" class="secondary clickable pull-right" ng-if="user.role == 'admin'">
-                <i class="fa fa-user"></i>
-                Manage Users
-            </a>
-
             <h3>
                 Packages
                 <i class="fa fa-spinner fa-spin" ng-if="loading"></i>
             </h3>
+
+            <div class="pull-right">
+                <!--TODO make an admin menu, this is out of place here-->
+                <a href="/users" data-role="button" class="secondary clickable" ng-if="user.role == 'admin'">
+                    <i class="fa fa-user"></i>
+                    Manage Users
+                </a>
+
+                <a href="/manage/create" data-role="button" class="primary">
+                    <i class="fa fa-plus"></i>
+                    New Package
+                </a>
+            </div>
         </div>
     </div>
 
@@ -23,27 +26,34 @@
             <table class="table table-striped">
                 <thead>
                     <tr>
-                        <th>ID</th>
-                        <th>Name</th>
-                        <th>Author</th>
-                        <th>Version</th>
-                        <th>Category</th>
+                        <th class="hidden-xs hidden-sm">ID</th>
+                        <th class="hidden-xs hidden-sm">Name</th>
+                        <th class="hidden-xs hidden-sm">Author</th>
+                        <th class="hidden-xs hidden-sm">Version</th>
+                        <th class="hidden-xs hidden-sm">Category</th>
+                        <th class="visible-xs visibile-sm">Package</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr ng-repeat="package in packages|orderBy:'name'">
-                        <td ng-bind="package.id"></td>
-                        <td ng-bind="package.name"></td>
-                        <td ng-bind="package.author"></td>
-                        <td ng-bind="package.version"></td>
-                        <td ng-bind="package.category"></td>
+                    <tr ng-repeat="pkg in packages|orderBy:'name'">
+                        <td ng-bind="pkg.id" class="hidden-xs hidden-sm"></td>
+                        <td ng-bind="pkg.name" class="hidden-xs hidden-sm"></td>
+                        <td ng-bind="pkg.author" class="hidden-xs hidden-sm"></td>
+                        <td ng-bind="pkg.version" class="hidden-xs hidden-sm"></td>
+                        <td ng-bind="pkg.category" class="hidden-xs hidden-sm"></td>
+                        <td class="visible-xs visibile-sm">
+                            <b>{{pkg.name}}</b> v{{pkg.version}}
+                            <br/>
+                            {{pkg.author}}
+                        </td>
                         <td>
-                            <a ng-href="/manage/{{package.id}}" data-role="button" class="primary small">
-                                <i class="fa fa-fw fa-edit"></i> Edit
+                            <a ng-href="/manage/{{pkg.id}}" data-role="button" class="primary" title="Edit">
+                                <i class="fa fa-fw fa-edit"></i>
                             </a>
-                            <a ng-click="remove(package)" data-role="button" class="secondary small clickable">
-                                <i class="fa fa-fw fa-trash"></i> Delete
+
+                            <a ng-click="remove(pkg)" data-role="button" class="secondary clickable" title="Delete">
+                                <i class="fa fa-fw fa-trash"></i>
                             </a>
                         </td>
                     </tr>

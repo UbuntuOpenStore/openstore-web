@@ -18,7 +18,7 @@
             <table class="table table-striped">
                 <thead>
                     <tr>
-                        <th>Username</th>
+                        <th class="hidden-xs hidden-sm">Username</th>
                         <th>Name</th>
                         <th>Email</th>
                         <th>Role</th>
@@ -26,8 +26,8 @@
                 </thead>
                 <tbody>
                     <tr ng-repeat="user in users|orderBy:'name'">
-                        <td ng-bind="user.username"></td>
-                        <td ng-bind="user.name"></td>
+                        <td ng-bind="user.username" class="hidden-xs hidden-sm"></td>
+                        <td ng-bind="user.name" class="email"></td>
                         <td ng-bind="user.email"></td>
                         <td>
                             <select ng-model="user.role" ng-change="userChanged(user)" ng-disabled="user.saving" class="form-control">

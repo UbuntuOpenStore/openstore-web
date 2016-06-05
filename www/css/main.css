@@ -55,13 +55,13 @@ body {
 }
 
 .icon-xlarge {
-  width: 184px;
-  height: 184px;
-  margin-bottom: 10px;
+    width: 184px;
+    height: 184px;
+    margin-bottom: 10px;
 }
 
 .icon-xlarge img {
-  border-radius: 4.1rem;
+    border-radius: 4.1rem;
 }
 
 .clickable {
@@ -170,8 +170,12 @@ body {
 }
 
 .users select {
-    width: 200px;
+    width: 125px;
     display: inline-block;
+}
+
+.users .email {
+    word-break: break-all;
 }
 
 .login div {
