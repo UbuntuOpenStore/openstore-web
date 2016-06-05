@@ -11,6 +11,7 @@ var manageCtrl = function($scope, $location, $uibModal, $timeout, Upload, info, 
     $scope.categories = info.categories;
     $scope.licenses = info.licenses;
     $scope.users = [];
+    $scope.trustedAdminUsers = [];
 
     function refresh() {
         return api.apps.getAll().then(function(apps) {
@@ -31,6 +32,15 @@ var manageCtrl = function($scope, $location, $uibModal, $timeout, Upload, info, 
 
             api.users.getAll($scope.user.apikey).then(function(users) {
                 $scope.users = users;
+
+                var trustedAdminUsers = [];
+                for (var index in users) {
+                    if (users[index].role == 'admin' || users[index].role == 'trusted') {
+                        trustedAdminUsers.push(users[index]);
+                    }
+                }
+
+                $scope.trustedAdminUsers = trustedAdminUsers;
             });
 
             return refresh();
