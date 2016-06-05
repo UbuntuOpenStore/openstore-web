@@ -176,8 +176,8 @@ function reparse() {
     });
 }
 
-function toJson(pkg) {
-    return {
+function toJson(pkg, req) {
+    var json = {
         architecture: pkg.architecture ? pkg.architecture : '',
         author: pkg.author ? pkg.author : '',
         category: pkg.category ? pkg.category : '',
@@ -189,7 +189,6 @@ function toJson(pkg) {
         icon: pkg.icon ? pkg.icon : '',
         id: pkg.id ? pkg.id : '',
         license: pkg.license ? pkg.license : '',
-        maintainer: pkg.maintainer ? pkg.maintainer : null,
         manifest: pkg.manifest ? pkg.manifest : {},
         name: pkg.name ? pkg.name : '',
         package: pkg.package ? pkg.package : '',
@@ -199,6 +198,20 @@ function toJson(pkg) {
         types: pkg.types ? pkg.types : [],
         version: pkg.version ? pkg.version : '',
     };
+
+    if (req.isAuthenticated() && req.user && req.user.role == 'admin') {
+        json.maintainer = pkg.maintainer ? pkg.maintainer : null;
+        json.downloads = pkg.downloads;
+        json.totalDownloads = 0;
+
+        if (pkg.downloads) {
+            for (var version in pkg.downloads) {
+                json.totalDownloads += pkg.downloads[version] ? pkg.downloads[version] : 0;
+            }
+        }
+    }
+
+    return json;
 }
 
 exports.updateInfo = updateInfo;

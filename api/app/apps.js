@@ -106,13 +106,7 @@ function setup(app) {
             else {
                 var result = [];
                 pkgs.forEach(function(pkg) {
-                    var p = packages.toJson(pkg);
-
-                    if (req.isAuthenticated() && req.user && req.user.role == 'admin') {
-                        p.downloads = pkg.downloads;
-                    }
-
-                    result.push(p);
+                    result.push(packages.toJson(pkg, req));
                 });
 
                 if (req.params.id) {
@@ -180,7 +174,7 @@ function setup(app) {
                     helpers.error(res, err);
                 }
                 else {
-                    helpers.success(res, packages.toJson(pkg));
+                    helpers.success(res, packages.toJson(pkg, req));
                 }
             });
         }
@@ -206,7 +200,7 @@ function setup(app) {
                             helpers.error(res, err);
                         }
                         else {
-                            helpers.success(res, packages.toJson(pkg));
+                            helpers.success(res, packages.toJson(pkg, req));
                         }
                     });
                 }
@@ -218,7 +212,7 @@ function setup(app) {
                         helpers.error(res, err);
                     }
                     else {
-                        helpers.success(res, packages.toJson(pkg));
+                        helpers.success(res, packages.toJson(pkg, req));
                     }
                 });
             }

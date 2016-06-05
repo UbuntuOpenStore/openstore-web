@@ -1,7 +1,7 @@
 var bootbox = require('bootbox');
 var angular = require('angular');
 
-var manageCtrl = function($scope, $location, $uibModal, $timeout, info, api) {
+var manageCtrl = function($scope, $location, $timeout, info, api) {
     $scope.loading = true;
     $scope.user = null;
     $scope.packages = [];
@@ -28,23 +28,6 @@ var manageCtrl = function($scope, $location, $uibModal, $timeout, info, api) {
         }
     });
 
-    $scope.stats = function(pkg) {
-        $scope.pkg = angular.copy(pkg);
-        $scope.pkg.totalDownloads = 0;
-        angular.forEach(pkg.downloads, function(downloads) {
-            $scope.pkg.totalDownloads += downloads;
-        });
-
-        modal = $uibModal.open({
-            templateUrl: '/app/partials/packageStats.html',
-            scope: $scope
-        });
-    };
-
-    $scope.cancel = function() {
-        modal.close();
-    };
-
     $scope.remove = function(pkg) {
         bootbox.confirm('Are you sure you want to remove package "' + pkg.id + '"?', function(result) {
             if (result) {
@@ -62,6 +45,6 @@ var manageCtrl = function($scope, $location, $uibModal, $timeout, info, api) {
     };
 };
 
-manageCtrl.$inject = ['$scope', '$location', '$uibModal', '$timeout', 'info', 'api'];
+manageCtrl.$inject = ['$scope', '$location', '$timeout', 'info', 'api'];
 
 module.exports = manageCtrl;
