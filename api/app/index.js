@@ -67,7 +67,7 @@ function setup() {
         }
     });
 
-    app.all(['/', '/docs', '/submit', '/apps', '/manage', '/users', '/manage/:name'], function(req, res) { //For html5mode on frontend
+    app.all(['/', '/docs', '/submit', '/apps', '/manage', '/users', '/manage/:name', '/login'], function(req, res) { //For html5mode on frontend
         res.sendFile('index.html', {root: __dirname + '/../../www'});
     });
 
