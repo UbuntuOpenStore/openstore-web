@@ -12,25 +12,27 @@ var manageAppCtrl = function($scope, $location, $timeout, $state, Upload, info, 
     api.auth.me().then(function(user) {
         $scope.user = user;
 
-        if (!$scope.user || $scope.user.role != 'admin') {
+        if (!$scope.user || ($scope.user.role != 'admin' && $scope.user.role != 'trusted')) {
             $scope.user = null;
             $location.path('/auth/logout');
         }
         else {
             $scope.loading = true;
 
-            api.users.getAll($scope.user.apikey).then(function(users) {
-                $scope.users = users;
+            if ($scope.user.role == 'admin') {
+                api.users.getAll($scope.user.apikey).then(function(users) {
+                    $scope.users = users;
 
-                var trustedAdminUsers = [];
-                for (var index in users) {
-                    if (users[index].role == 'admin' || users[index].role == 'trusted') {
-                        trustedAdminUsers.push(users[index]);
+                    var trustedAdminUsers = [];
+                    for (var index in users) {
+                        if (users[index].role == 'admin' || users[index].role == 'trusted') {
+                            trustedAdminUsers.push(users[index]);
+                        }
                     }
-                }
 
-                $scope.trustedAdminUsers = trustedAdminUsers;
-            });
+                    $scope.trustedAdminUsers = trustedAdminUsers;
+                });
+            }
 
             if ($state.params.name == 'create') {
                 return {

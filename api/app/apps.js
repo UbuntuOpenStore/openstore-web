@@ -157,7 +157,7 @@ function setup(app) {
         });
     });
 
-    app.post('/api/apps', passport.authenticate('localapikey', {session: false}), helpers.isAdmin, mupload.single('file'), function(req, res) {
+    app.post('/api/apps', passport.authenticate('localapikey', {session: false}), helpers.isAdminOrTrusted, mupload.single('file'), function(req, res) {
         var pkg = new db.Package();
 
         if (!req.file) {
@@ -168,6 +168,10 @@ function setup(app) {
             fs.unlink(req.file.path);
         }
         else {
+            if ((req.body && !req.body.maintainer) || req.user.role != 'admin') {
+                req.body.maintainer = req.user._id;
+            }
+
             packages.updateInfo(pkg, null, req.body, req.file);
             parseFile(pkg, req.file.path, function(err) {
                 if (err) {
@@ -180,7 +184,7 @@ function setup(app) {
         }
     });
 
-    app.put('/api/apps/:id', passport.authenticate('localapikey', {session: false}), helpers.isAdmin, mupload.single('file'), function(req, res) {
+    app.put('/api/apps/:id', passport.authenticate('localapikey', {session: false}), mupload.single('file'), function(req, res) {
         db.Package.findOne({id: req.params.id}).or([{deleted: false}, {deleted: {'$exists': false}}]).exec(function(err, pkg) {
             if (err) {
                 helpers.error(res, err);
@@ -194,8 +198,33 @@ function setup(app) {
                     fs.unlink(req.file.path);
                 }
                 else {
-                    packages.updateInfo(pkg, null, req.body, req.file);
-                    parseFile(pkg, req.file.path, function(err) {
+                    //Admins may edit any package, but trusted users may only edit packages they maintain
+                    if (helpers.isAdminOrTrustedOwner(req, pkg)) {
+                        if (req.body && req.body.maintainer && req.user.role != 'admin') {
+                            delete req.body.maintainer;
+                        }
+
+                        packages.updateInfo(pkg, null, req.body, req.file);
+                        parseFile(pkg, req.file.path, function(err) {
+                            if (err) {
+                                helpers.error(res, err);
+                            }
+                            else {
+                                helpers.success(res, packages.toJson(pkg, req));
+                            }
+                        });
+                    }
+                    else {
+                        helpers.error(res, 'Forbidden', 403);
+                        fs.unlink(req.file.path);
+                    }
+                }
+            }
+            else {
+                //Admins may edit any package, but trusted users may only edit packages they maintain
+                if (helpers.isAdminOrTrustedOwner(req, pkg)) {
+                    packages.updateInfo(pkg, null, req.body);
+                    pkg.save(function(err) {
                         if (err) {
                             helpers.error(res, err);
                         }
@@ -204,36 +233,34 @@ function setup(app) {
                         }
                     });
                 }
-            }
-            else {
-                packages.updateInfo(pkg, null, req.body);
-                pkg.save(function(err) {
-                    if (err) {
-                        helpers.error(res, err);
-                    }
-                    else {
-                        helpers.success(res, packages.toJson(pkg, req));
-                    }
-                });
+                else {
+                    helpers.error(res, 'Forbidden', 403);
+                }
             }
         });
     });
 
-    app.delete('/api/apps/:id', passport.authenticate('localapikey', {session: false}), helpers.isAdmin, function(req, res) {
+    app.delete('/api/apps/:id', passport.authenticate('localapikey', {session: false}), function(req, res) {
         db.Package.findOne({id: req.params.id}).or([{deleted: false}, {deleted: {'$exists': false}}]).exec(function(err, pkg) {
             if (err) {
                 helpers.error(res, err);
             }
             else {
-                pkg.deleted = true;
-                pkg.save(function(err) {
-                    if (err) {
-                        helpers.error(res, err);
-                    }
-                    else {
-                        helpers.success(res, null);
-                    }
-                });
+                //Admins may delete any package, but trusted users may only delete packages they maintain
+                if (helpers.isAdminOrTrustedOwner(req, pkg)) {
+                    pkg.deleted = true;
+                    pkg.save(function(err) {
+                        if (err) {
+                            helpers.error(res, err);
+                        }
+                        else {
+                            helpers.success(res, null);
+                        }
+                    });
+                }
+                else {
+                    helpers.error(res, 'Forbidden', 403);
+                }
             }
         });
     });

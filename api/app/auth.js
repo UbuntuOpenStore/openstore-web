@@ -108,6 +108,7 @@ function setup(app) {
             res.send({
                 success: true,
                 data: {
+                    _id: req.user._id,
                     name: req.user.name,
                     language: req.user.language,
                     username: req.user.username,

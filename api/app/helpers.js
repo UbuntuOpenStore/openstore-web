@@ -28,6 +28,31 @@ function isAdmin(req, res, next) {
     }
 }
 
+function isAdminOrTrusted(req, res, next) {
+    if (req.isAuthenticated() && req.user && (req.user.role == 'admin' || req.user.role == 'trusted')) {
+        next();
+    }
+    else {
+        error(res, 'Forbidden', 403);
+    }
+}
+
+function isAdminOrTrustedOwner(req, pkg) {
+    var ok = false;
+    if (req.isAuthenticated()) {
+        if (req.user.role == 'admin') {
+            ok = true;
+        }
+        else if (req.user.role == 'trusted' && pkg.maintainer == req.user._id) {
+            ok = true;
+        }
+    }
+
+    return ok;
+}
+
 exports.success = success;
 exports.error = error;
 exports.isAdmin = isAdmin;
+exports.isAdminOrTrusted = isAdminOrTrusted;
+exports.isAdminOrTrustedOwner = isAdminOrTrustedOwner;

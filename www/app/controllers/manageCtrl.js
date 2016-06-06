@@ -7,6 +7,17 @@ var manageCtrl = function($scope, $location, $timeout, info, api) {
 
     function refresh() {
         return api.apps.getAll().then(function(apps) {
+            if ($scope.user.role == 'trusted') { //Only show the apps owned by the maintainer
+                var filtered = [];
+                for (var index in apps) {
+                    if (apps[index].maintainer == $scope.user._id) {
+                        filtered.push(apps[index]);
+                    }
+                }
+
+                apps = filtered;
+            }
+
             $scope.loading = false;
             $scope.packages = apps;
         });
@@ -16,7 +27,7 @@ var manageCtrl = function($scope, $location, $timeout, info, api) {
     api.auth.me().then(function(user) {
         $scope.user = user;
 
-        if (!$scope.user || $scope.user.role != 'admin') {
+        if (!$scope.user || ($scope.user.role != 'admin' && $scope.user.role != 'trusted')) {
             $scope.user = null;
             $location.path('/auth/logout');
         }
