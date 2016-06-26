@@ -12,7 +12,12 @@ function setup(app) {
         };
 
         if (req.query.q) {
-            query.id = new RegExp(req.query.q, 'i');
+            if (req.query.q.indexOf('package_name:') >= 0) {
+                query.id = req.query.q.replace('package_name:', '').replace(/"/g, '');
+            }
+            else {
+                query.id = new RegExp(req.query.q, 'i');
+            }
         }
 
         if (req.headers['x-ubuntu-architecture']) {

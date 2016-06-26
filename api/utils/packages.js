@@ -183,7 +183,7 @@ function toJson(pkg, req) {
     if (pkg.types.indexOf('snappy') >= 0) {
         extension = '.snap';
     }
-    var download =  config.server.host + '/api/download/' + pkg.id + '_' + pkg.version + '_' + pkg.architecture + extension;
+    var download =  config.server.host + '/api/download/' + pkg.id + '/' + pkg.id + '_' + pkg.version + '_' + pkg.architecture + extension;
 
     var json = {
         architecture: pkg.architecture ? pkg.architecture : '',
