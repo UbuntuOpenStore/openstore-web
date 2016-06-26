@@ -82,7 +82,12 @@ function uploadIcon(url, share, pkg, filepath, callback) {
 }
 
 function uploadClick(url, share, pkg, filepath, iconpath, callback) {
-    var filename = pkg.id + '_' + pkg.version + '_' + pkg.architecture + '.click';
+    var extension = '.click';
+    if (pkg.types.indexOf('snappy') >= 0) {
+        extension = '.snap';
+    }
+    var filename = pkg.id + '_' + pkg.version + '_' + pkg.architecture + extension;
+
     uploadToSmartfile(url, share, filepath, filename, function(err, clickurl) {
         fs.unlink(filepath);
 
@@ -91,7 +96,7 @@ function uploadClick(url, share, pkg, filepath, iconpath, callback) {
         }
         else {
             if (!iconpath) {
-                iconpath = path.join(__dirname + '../404.png');
+                iconpath = path.join(__dirname, '../404.png');
             }
 
             uploadIcon(url, share, pkg, iconpath, function(err, imgurl) {

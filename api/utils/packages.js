@@ -179,13 +179,19 @@ function reparse() {
 }
 
 function toJson(pkg, req) {
+    var extension = '.click';
+    if (pkg.types.indexOf('snappy') >= 0) {
+        extension = '.snap';
+    }
+    var download =  config.server.host + '/api/download/' + pkg.id + '_' + pkg.version + '_' + pkg.architecture + extension;
+
     var json = {
         architecture: pkg.architecture ? pkg.architecture : '',
         author: pkg.author ? pkg.author : '',
         category: pkg.category ? pkg.category : '',
         changelog: pkg.changelog ? pkg.changelog : '',
         description: pkg.description ? pkg.description : '',
-        download: config.server.host + '/api/download/' + pkg.id + '/' + pkg.id + '_' + pkg.version + '_' + pkg.architecture + '.click',
+        download: download,
         download_sha512: pkg.download_sha512 ? pkg.download_sha512 : '',
         filesize: pkg.filesize ? pkg.filesize : 0,
         framework: pkg.framework ? pkg.framework : '',
