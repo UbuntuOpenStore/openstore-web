@@ -14,12 +14,13 @@
         <h4 ng-bind="app.tagline"></h4>
 
         <div>
-            <a ng-href="openstore://{{app.id}}" class="primary" data-role="button" ng-hide="app.id == 'openstore.openstore-team'">Install</a>
+            <a ng-href="openstore://{{app.id}}" class="primary" data-role="button" ng-hide="app.id == 'openstore.openstore-team' || app.types.indexOf('snappy') >= 0">Install</a>
             <a href="/docs#install" class="primary" data-role="button" ng-show="app.id == 'openstore.openstore-team'">Install</a>
+            <a href="/docs#snap-store" class="primary" data-role="button" ng-show="app.types.indexOf('snappy') >= 0">Install</a>
             <a ng-href="{{app.download}}" class="secondary" data-role="button" target="_blank">Download</a>
             <a ng-href="{{app.source}}" class="information" data-role="button" ng-if="app.source">Source</a>
 
-            <p class="small-note" ng-hide="app.id == 'openstore.openstore-team'">
+            <p class="small-note" ng-hide="app.id == 'openstore.openstore-team' || app.types.indexOf('snappy') >= 0">
                 *You must have the OpenStore app installed on your phone for the "Install" button to work
             </p>
         </div>
