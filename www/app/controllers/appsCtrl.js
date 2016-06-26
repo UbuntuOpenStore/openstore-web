@@ -6,19 +6,29 @@ var appsCtrl = function($scope, $rootScope, $state, api) {
     $scope.tab = 'contents';
     $scope.manifest = false;
 
-    api.apps.getAll().then(function(apps) {
-        $scope.apps = apps;
+    $scope.type = 'click';
+    var query = {};
+    if ($state.params.type == 'snappy') {
+        $scope.type = 'snappy'
 
-        if ($state.params.name) {
-            angular.forEach($scope.apps, function(app) {
-                if (app.id == $state.params.name) {
-                    $scope.app = app;$rootScope.setOG();
-                    $scope.tab = 'contents';
-                    $scope.manifest = false;
-                }
-            });
-        }
-    });
+        query = {
+            types: 'snappy',
+        };
+    }
+
+    //TODO split app into it's own controller
+    if ($state.params.name) {
+        api.apps.get($state.params.name).then(function(app) {
+            $scope.app = app;
+            $scope.tab = 'contents';
+            $scope.manifest = false;
+        })
+    }
+    else {
+        api.apps.getAll(query).then(function(apps) {
+            $scope.apps = apps;
+        });
+    }
 
     $scope.$watch('app', function() {
         if ($scope.app) {

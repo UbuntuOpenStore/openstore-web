@@ -63,6 +63,7 @@ function updateInfo(pkg, data, body, file, url) {
         });
 
         pkg.architecture = data.architecture;
+        pkg.architectures = data.architecture;
         pkg.author = data.maintainer;
         pkg.framework = data.framework;
         pkg.id = data.name;
@@ -71,6 +72,7 @@ function updateInfo(pkg, data, body, file, url) {
         pkg.types = data.types;
         pkg.version = data.version;
         pkg.description = data.description;
+        pkg.snappy_meta = data.snappy_meta;
     }
 
     if (file && file.size) {
@@ -184,6 +186,7 @@ function toJson(pkg, req) {
         changelog: pkg.changelog ? pkg.changelog : '',
         description: pkg.description ? pkg.description : '',
         download: config.server.host + '/api/download/' + pkg.id + '/' + pkg.id + '_' + pkg.version + '_' + pkg.architecture + '.click',
+        download_sha512: pkg.download_sha512 ? pkg.download_sha512 : '',
         filesize: pkg.filesize ? pkg.filesize : 0,
         framework: pkg.framework ? pkg.framework : '',
         icon: pkg.icon ? pkg.icon : '',
@@ -193,6 +196,7 @@ function toJson(pkg, req) {
         name: pkg.name ? pkg.name : '',
         package: pkg.package ? pkg.package : '',
         permissions: pkg.permissions ? pkg.permissions: [],
+        snappy_meta: pkg.snappy_meta ? pkg.snappy_meta : {},
         source: pkg.source ? pkg.source : '',
         tagline: pkg.tagline ? pkg.tagline : '',
         types: pkg.types ? pkg.types : [],

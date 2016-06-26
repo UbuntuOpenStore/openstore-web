@@ -6,7 +6,7 @@ var manageCtrl = function($scope, $location, $timeout, info, api) {
     $scope.packages = [];
 
     function refresh() {
-        return api.apps.getAll().then(function(apps) {
+        return api.apps.getAll({types: ['app', 'webapp', 'scope', 'snappy']}).then(function(apps) {
             if ($scope.user.role == 'trusted') { //Only show the apps owned by the maintainer
                 var filtered = [];
                 for (var index in apps) {

@@ -15,12 +15,13 @@
   "license": "GPL-3.0",
   "dependencies": {
     "body-parser": "^1.14.1",
-    "click-parser": "^2.4.0",
+    "click-parser": "^3.0.4",
     "cookie-parser": "^1.4.0",
     "cookie-session": "^1.2.0",
     "express": "^4.13.3",
     "lwip": "0.0.8",
     "method-override": "^2.3.5",
+    "moment": "^2.13.0",
     "mongoose": "=4.1.3",
     "multer": "^1.1.0",
     "node-uuid": "^1.4.7",
@@ -29,6 +30,7 @@
     "passport-ubuntu": "^0.1.2",
     "request": "^2.67.0",
     "sanitize-html": "^1.11.4",
+    "squashfs-nodejs": "^1.0.5",
     "svgexport": "^0.2.8",
     "winston": "^2.2.0",
     "winston-papertrail": "^1.0.2"

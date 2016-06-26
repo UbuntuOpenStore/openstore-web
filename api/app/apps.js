@@ -9,10 +9,12 @@ var passport = require('passport');
 var multer  = require('multer');
 var cluster = require('cluster');
 var fs = require('fs');
+var moment = require('moment');
+var crypto = require('crypto');
 
 var mupload = multer({dest: '/tmp'});
 
-function parseFile(pkg, filepath, callback) {
+function parseFileHelper(pkg, filepath, callback) {
     parse(filepath, true, function(err, data) {
         if (err) {
             callback(err);
@@ -68,6 +70,30 @@ function parseFile(pkg, filepath, callback) {
     });
 }
 
+function parseFile(pkg, filepath, callback) {
+    var hash = crypto.createHash('sha512');
+
+    var input = fs.createReadStream(filepath);
+    input.on('readable', function() {
+        var data = input.read();
+        if (data)
+            hash.update(data);
+        else {
+            pkg.download_sha512 = hash.digest('hex');
+        }
+    });
+
+    input.on('error', function() {
+        logger.error('error reading file for sha512');
+        pkg.download_sha512 = '';
+        parseFileHelper(pkg, filepath, callback)
+    });
+
+    input.on('end', function() {
+        parseFileHelper(pkg, filepath, callback)
+    });
+}
+
 function setup(app) {
     app.get('/api/health', function(req, res) {
         helpers.success(res, {
@@ -77,8 +103,24 @@ function setup(app) {
 
     app.get(['/api/apps', '/api/apps/:id', '/repo/repolist.json'], function(req, res) {
         var query = {};
+
         if (req.params.id) {
             query.id = req.params.id;
+        }
+        else {
+            if (req.query.types && Array.isArray(req.query.types)) {
+                query['types'] = {
+                    $in: req.query.types,
+                };
+            }
+            else if (req.query.types) {
+                query['types'] = req.query.types;
+            }
+            else {
+                query['types'] = {
+                    $in: ['app', 'webapp', 'scope'],
+                };
+            }
         }
 
         if (req.query.frameworks) {
@@ -159,12 +201,14 @@ function setup(app) {
 
     app.post('/api/apps', passport.authenticate('localapikey', {session: false}), helpers.isAdminOrTrusted, mupload.single('file'), function(req, res) {
         var pkg = new db.Package();
+        pkg.published_date = moment().toISOString();
+        pkg.updated_date = moment().toISOString();
 
         if (!req.file) {
             helpers.error(res, 'No file upload specified');
         }
-        else if (req.file.originalname.indexOf('.click') == -1) {
-            helpers.error(res, 'The file must be a click package');
+        else if (req.file.originalname.indexOf('.click') == -1 && req.file.originalname.indexOf('.snap') == -1) {
+            helpers.error(res, 'The file must be a click or snap package');
             fs.unlink(req.file.path);
         }
         else {
@@ -193,8 +237,8 @@ function setup(app) {
                 helpers.error(res, 'No package found with id "' + req.params.id + '"', 404);
             }
             else if (req.file) {
-                if (req.file.originalname.indexOf('.click') == -1) {
-                    helpers.error(res, 'The file must be a click package');
+                if (req.file.originalname.indexOf('.click') == -1 && req.file.originalname.indexOf('.snap') == -1) {
+                    helpers.error(res, 'The file must be a click or snap package');
                     fs.unlink(req.file.path);
                 }
                 else {
@@ -203,6 +247,8 @@ function setup(app) {
                         if (req.body && req.body.maintainer && req.user.role != 'admin') {
                             delete req.body.maintainer;
                         }
+
+                        pkg.updated_date = moment().toISOString();
 
                         packages.updateInfo(pkg, null, req.body, req.file);
                         parseFile(pkg, req.file.path, function(err) {
@@ -223,6 +269,8 @@ function setup(app) {
             else {
                 //Admins may edit any package, but trusted users may only edit packages they maintain
                 if (helpers.isAdminOrTrustedOwner(req, pkg)) {
+                    pkg.updated_date = moment().toISOString();
+
                     packages.updateInfo(pkg, null, req.body);
                     pkg.save(function(err) {
                         if (err) {

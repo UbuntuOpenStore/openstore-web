@@ -28,6 +28,7 @@
                     <tr>
                         <th class="hidden-xs hidden-sm">ID</th>
                         <th class="hidden-xs hidden-sm">Name</th>
+                        <th class="hidden-xs hidden-sm">Types</th>
                         <th class="hidden-xs hidden-sm">Author</th>
                         <th class="hidden-xs hidden-sm">Version</th>
                         <th class="hidden-xs hidden-sm">Category</th>
@@ -39,11 +40,14 @@
                     <tr ng-repeat="pkg in packages|orderBy:'name'">
                         <td ng-bind="pkg.id" class="hidden-xs hidden-sm"></td>
                         <td ng-bind="pkg.name" class="hidden-xs hidden-sm"></td>
+                        <td ng-bind="pkg.types.join(', ')" class="hidden-xs hidden-sm"></td>
                         <td ng-bind="pkg.author" class="hidden-xs hidden-sm"></td>
                         <td ng-bind="pkg.version" class="hidden-xs hidden-sm"></td>
                         <td ng-bind="pkg.category" class="hidden-xs hidden-sm"></td>
                         <td class="visible-xs visibile-sm">
                             <b>{{pkg.name}}</b> v{{pkg.version}}
+                            <br/>
+                            {{pkg.types.join(', ')}}
                             <br/>
                             {{pkg.author}}
                         </td>

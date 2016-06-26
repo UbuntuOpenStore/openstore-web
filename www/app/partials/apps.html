@@ -6,6 +6,20 @@
         </a>
     </div>
 
+    <div class="row toggle-row">
+        <div class="col-sm-12">
+            <div class="pull-right">
+                <a href="/" data-role="button" class="primary" ng-class="{secondary: type == 'snappy', primary: type != 'snappy'}">
+                    Phone Apps
+                </a>
+
+                <a href="/?type=snappy" data-role="button" ng-class="{primary: type == 'snappy', secondary: type != 'snappy'}">
+                    Snappy Apps
+                </a>
+            </div>
+        </div>
+    </div>
+
     <div class="row app-list" data-role="list">
         <div class="col-sm-4" ng-repeat="app in apps|orderBy:'name'">
             <div data-role="listitem" class="listitem">

@@ -13,8 +13,10 @@ var api = function($http, Upload) {
         },
 
         apps: {
-            getAll: function() {
-                return $http.get(process.env.API + '/api/apps').then(success);
+            getAll: function(query) {
+                return $http.get(process.env.API + '/api/apps', {
+                    params: query,
+                }).then(success);
             },
 
             get: function(id) {

@@ -19,7 +19,7 @@ angular.module('openstore', [uirouter, uibootstrap, fileupload])
     $locationProvider.html5Mode(true);
 
     $stateProvider.state('main', {
-        url: '/',
+        url: '/?type',
         templateUrl: '/app/partials/apps.html',
         controller: 'appsCtrl'
     })

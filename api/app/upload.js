@@ -90,14 +90,13 @@ function uploadClick(url, share, pkg, filepath, iconpath, callback) {
             callback(err);
         }
         else {
-            if (iconpath) {
-                uploadIcon(url, share, pkg, iconpath, function(err, imgurl) {
-                    callback(err, clickurl, imgurl);
-                });
+            if (!iconpath) {
+                iconpath = path.join(__dirname + '../404.png');
             }
-            else {
-                callback(null, clickurl);
-            }
+
+            uploadIcon(url, share, pkg, iconpath, function(err, imgurl) {
+                callback(err, clickurl, imgurl);
+            });
         }
     });
 }

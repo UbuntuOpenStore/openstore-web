@@ -46,7 +46,7 @@
         <div data-role="well">
             <div ng-repeat="(name, hook) in app.manifest.hooks">
                 <h4>{{name}} ({{appType(hook)}})</h4>
-                <p ng-class="{'text-red': hook.apparmor.template == 'unconfined'}">
+                <p ng-class="{'text-red': hook.apparmor.template == 'unconfined'}" ng-if="hook.apparmor">
                     Apparmor profile:
                     <span ng-if="hook.apparmor.template" ng-bind="hook.apparmor.template || 'None'"></span>
                 </p>
@@ -71,9 +71,17 @@
             </div>
         </div>
 
-        <a class="information secondary clickable" data-role="button" ng-click="manifest = !manifest">Manifest</a>
-        <div ng-if="manifest">
+        <a class="information secondary clickable" data-role="button" ng-click="manifest = !manifest">
+            <span ng-if="app.types.indexOf('snappy') == -1">Manifest</span>
+            <span ng-if="app.types.indexOf('snappy') >= 0">Snapcraft</span>
+        </a>
+        <div ng-if="manifest && app.types.indexOf('snappy') == -1">
             <pre ng-bind="app.manifest | json" data-role="well"></pre>
+        </div>
+
+        <!--TODO show this in YAML-->
+        <div ng-if="manifest && app.types.indexOf('snappy') >= 0">
+            <pre ng-bind="app.snappy_meta | json" data-role="well"></pre>
         </div>
     </div>
 </div>

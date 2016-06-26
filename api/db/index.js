@@ -11,11 +11,13 @@ mongoose.connect(config.mongo.uri + '/' + config.mongo.database, function(err) {
 
 var packageSchema = mongoose.Schema({
     architecture: String,
+    architectures: [String],
     author: String,
     category: String,
     changelog: String,
     deleted: Boolean,
     description: String,
+    download_sha512: String,
     downloads: {},
     filesize: Number,
     framework: String,
@@ -26,9 +28,12 @@ var packageSchema = mongoose.Schema({
     manifest: {},
     name: String,
     package: String,
+    published_date: String,
+    snappy_meta: {},
     source: String,
     tagline: String,
     types: [String],
+    updated_date: String,
     version: String,
 });
 
