@@ -1,5 +1,3 @@
-var angular = require('angular');
-
 var appsCtrl = function($scope, $rootScope, $state, api) {
     $scope.apps = [];
     $scope.app = null;
@@ -9,7 +7,7 @@ var appsCtrl = function($scope, $rootScope, $state, api) {
     $scope.type = 'click';
     var query = {};
     if ($state.params.type == 'snappy') {
-        $scope.type = 'snappy'
+        $scope.type = 'snappy';
 
         query = {
             types: 'snappy',
@@ -22,7 +20,7 @@ var appsCtrl = function($scope, $rootScope, $state, api) {
             $scope.app = app;
             $scope.tab = 'contents';
             $scope.manifest = false;
-        })
+        });
     }
     else {
         api.apps.getAll(query).then(function(apps) {
