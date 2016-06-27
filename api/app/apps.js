@@ -26,46 +26,46 @@ function parseFileHelper(pkg, filepath, callback) {
             callback('Uploaded manifest does not match package to update');
         }
         else {
-            packages.updateInfo(pkg, data);
-
-            if (pkg._id) {
-                upload.uploadClick(
-                    config.smartfile.url,
-                    config.smartfile.share,
-                    pkg,
-                    filepath,
-                    data.icon,
-                    function(err, url, imgurl) {
-                        pkg.package = url;
-                        pkg.icon = imgurl;
-                        pkg.save(callback);
-                    }
-                );
-            }
-            else { //trying to create a new package, check if one already exists
-                db.Package.findOne({id: data.name}).or([{deleted: false}, {deleted: {'$exists': false}}]).exec(function(err, p) {
-                    if (err) {
-                        callback(err);
-                    }
-                    else if (p) {
-                        callback('Package with id "' + data.name + '" already exists');
-                    }
-                    else {
-                        upload.uploadClick(
-                            config.smartfile.url,
-                            config.smartfile.share,
-                            pkg,
-                            filepath,
-                            data.icon,
-                            function(err, url, imgurl) {
-                                pkg.package = url;
-                                pkg.icon = imgurl;
-                                pkg.save(callback);
-                            }
-                        );
-                    }
-                });
-            }
+            packages.updateInfo(pkg, data, null, null, null, function(pkg) {
+                if (pkg._id) {
+                    upload.uploadClick(
+                        config.smartfile.url,
+                        config.smartfile.share,
+                        pkg,
+                        filepath,
+                        data.icon,
+                        function(err, url, imgurl) {
+                            pkg.package = url;
+                            pkg.icon = imgurl;
+                            pkg.save(callback);
+                        }
+                    );
+                }
+                else { //trying to create a new package, check if one already exists
+                    db.Package.findOne({id: data.name}).or([{deleted: false}, {deleted: {'$exists': false}}]).exec(function(err, p) {
+                        if (err) {
+                            callback(err);
+                        }
+                        else if (p) {
+                            callback('Package with id "' + data.name + '" already exists');
+                        }
+                        else {
+                            upload.uploadClick(
+                                config.smartfile.url,
+                                config.smartfile.share,
+                                pkg,
+                                filepath,
+                                data.icon,
+                                function(err, url, imgurl) {
+                                    pkg.package = url;
+                                    pkg.icon = imgurl;
+                                    pkg.save(callback);
+                                }
+                            );
+                        }
+                    });
+                }
+            });
         }
     });
 }
@@ -216,14 +216,15 @@ function setup(app) {
                 req.body.maintainer = req.user._id;
             }
 
-            packages.updateInfo(pkg, null, req.body, req.file);
-            parseFile(pkg, req.file.path, function(err) {
-                if (err) {
-                    helpers.error(res, err);
-                }
-                else {
-                    helpers.success(res, packages.toJson(pkg, req));
-                }
+            packages.updateInfo(pkg, null, req.body, req.file, null, function(pkg) {
+                parseFile(pkg, req.file.path, function(err) {
+                    if (err) {
+                        helpers.error(res, err);
+                    }
+                    else {
+                        helpers.success(res, packages.toJson(pkg, req));
+                    }
+                });
             });
         }
     });
@@ -249,15 +250,15 @@ function setup(app) {
                         }
 
                         pkg.updated_date = moment().toISOString();
-
-                        packages.updateInfo(pkg, null, req.body, req.file);
-                        parseFile(pkg, req.file.path, function(err) {
-                            if (err) {
-                                helpers.error(res, err);
-                            }
-                            else {
-                                helpers.success(res, packages.toJson(pkg, req));
-                            }
+                        packages.updateInfo(pkg, null, req.body, req.file, null, function(pkg) {
+                            parseFile(pkg, req.file.path, function(err) {
+                                if (err) {
+                                    helpers.error(res, err);
+                                }
+                                else {
+                                    helpers.success(res, packages.toJson(pkg, req));
+                                }
+                            });
                         });
                     }
                     else {
@@ -271,15 +272,17 @@ function setup(app) {
                 if (helpers.isAdminOrTrustedOwner(req, pkg)) {
                     pkg.updated_date = moment().toISOString();
 
-                    packages.updateInfo(pkg, null, req.body);
-                    pkg.save(function(err) {
-                        if (err) {
-                            helpers.error(res, err);
-                        }
-                        else {
-                            helpers.success(res, packages.toJson(pkg, req));
-                        }
+                    packages.updateInfo(pkg, null, req.body, null, null, function(pkg) {
+                        pkg.save(function(err) {
+                            if (err) {
+                                helpers.error(res, err);
+                            }
+                            else {
+                                helpers.success(res, packages.toJson(pkg, req));
+                            }
+                        });
                     });
+
                 }
                 else {
                     helpers.error(res, 'Forbidden', 403);

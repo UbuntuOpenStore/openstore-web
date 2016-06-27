@@ -6,7 +6,7 @@ var parse = require('click-parser');
 var fs = require('fs');
 var sanitizeHtml = require('sanitize-html');
 
-function updateInfo(pkg, data, body, file, url) {
+function updateInfo(pkg, data, body, file, url, callback) {
     if (data) {
         var manifest = {
             architecture: data.architecture,
@@ -83,6 +83,21 @@ function updateInfo(pkg, data, body, file, url) {
         pkg.package = url;
     }
 
+    pkg.description = sanitizeHtml(pkg.description, {
+      allowedTags: [],
+      allowedAttributes: [],
+    }).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/\r/g, '');
+
+    pkg.changelog = sanitizeHtml(pkg.changelog, {
+      allowedTags: [],
+      allowedAttributes: [],
+    }).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/\r/g, '');
+
+    pkg.tagline = sanitizeHtml(pkg.tagline, {
+      allowedTags: [],
+      allowedAttributes: [],
+    }).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/\r/g, '');
+
     if (body) {
         if (body.category || body.category === '') {
             pkg.category = body.category;
@@ -110,23 +125,23 @@ function updateInfo(pkg, data, body, file, url) {
 
         if (body.maintainer !== undefined) {
             pkg.maintainer = body.maintainer;
+
+            db.User.findOne({_id: pkg.maintainer}, function(err, user) {
+                if (err) {
+                    logger.error(err);
+                    pkg.maintainer_name = '';
+                }
+                else {
+                    pkg.maintainer_name = user.name;
+                }
+
+                callback(pkg);
+            })
         }
     }
-
-    pkg.description = sanitizeHtml(pkg.description, {
-      allowedTags: [],
-      allowedAttributes: [],
-    }).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/\r/g, '');
-
-    pkg.changelog = sanitizeHtml(pkg.changelog, {
-      allowedTags: [],
-      allowedAttributes: [],
-    }).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/\r/g, '');
-
-    pkg.tagline = sanitizeHtml(pkg.tagline, {
-      allowedTags: [],
-      allowedAttributes: [],
-    }).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/\r/g, '');
+    else {
+        callback(pkg);
+    }
 }
 
 function reparse() {
@@ -198,6 +213,7 @@ function toJson(pkg, req) {
         icon: pkg.icon ? pkg.icon : '',
         id: pkg.id ? pkg.id : '',
         license: pkg.license ? pkg.license : '',
+        maintainer_name: pkg.maintainer_name ? pkg.maintainer_name : '',
         manifest: pkg.manifest ? pkg.manifest : {},
         name: pkg.name ? pkg.name : '',
         package: pkg.package ? pkg.package : '',
