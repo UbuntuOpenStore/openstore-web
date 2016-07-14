@@ -15,7 +15,7 @@ Web viewer and api for the [OpenStore](http://notyetthere.org/openstore-tweakgee
     * Attach to the api container: `attach_api`
     * Attach to the web container: `attach_web`
 * Update your system's hosts file:
-    * Add `1192.168.58.123 local.open.uappexplorer.com`
+    * Add `192.168.58.123 local.open.uappexplorer.com`
 * Visit the site:
     * In your browser go to: `local.open.uappexplorer.com`
 * Profit!

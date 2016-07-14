@@ -202,6 +202,7 @@ function toJson(pkg, req) {
 
     var json = {
         architecture: pkg.architecture ? pkg.architecture : '',
+        architectures: pkg.architectures ? pkg.architectures : [],
         author: pkg.author ? pkg.author : '',
         category: pkg.category ? pkg.category : '',
         changelog: pkg.changelog ? pkg.changelog : '',

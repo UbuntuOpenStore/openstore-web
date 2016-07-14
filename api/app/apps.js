@@ -136,9 +136,10 @@ function setup(app) {
                 architectures.push('all');
             }
 
-            query.architecture = {
-                $in: architectures
-            };
+            query.$or = [
+                {architecture: {$in: architectures}},
+                {architectures: {$in: architectures}},
+            ];
         }
 
         db.Package.find(query).or([{deleted: false}, {deleted: {'$exists': false}}]).exec(function(err, pkgs) {
