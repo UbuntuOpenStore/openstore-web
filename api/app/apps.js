@@ -142,7 +142,16 @@ function setup(app) {
             ];
         }
 
-        db.Package.find(query).or([{deleted: false}, {deleted: {'$exists': false}}]).exec(function(err, pkgs) {
+        var q = {
+            $and: [
+                query,
+                {
+                    $or: [{deleted: false}, {deleted: {'$exists': false}}],
+                },
+            ]
+        }
+
+        db.Package.find(q).exec(function(err, pkgs) {
             if (err) {
                 helpers.error(res, err);
             }
