@@ -151,7 +151,7 @@ function setup(app) {
             ]
         }
 
-        db.Package.find(q).exec(function(err, pkgs) {
+        db.Package.find(q).sort('name').exec(function(err, pkgs) {
             if (err) {
                 helpers.error(res, err);
             }
