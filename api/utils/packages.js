@@ -71,8 +71,13 @@ function updateInfo(pkg, data, body, file, url, callback) {
         pkg.name = data.title;
         pkg.types = data.types;
         pkg.version = data.version;
-        pkg.description = data.description;
         pkg.snappy_meta = data.snappy_meta;
+
+        //Don't overwrite the description if it already exists
+        pkg.description = pkg.description ? pkg.description : data.description;
+
+        //Don't overwrite the tagline if it already exists
+        pkg.tagline = pkg.tagline ? pkg.tagline : data.description;
     }
 
     if (file && file.size) {
@@ -83,21 +88,6 @@ function updateInfo(pkg, data, body, file, url, callback) {
         pkg.package = url;
     }
 
-    pkg.description = sanitizeHtml(pkg.description, {
-      allowedTags: [],
-      allowedAttributes: [],
-    }).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/\r/g, '');
-
-    pkg.changelog = sanitizeHtml(pkg.changelog, {
-      allowedTags: [],
-      allowedAttributes: [],
-    }).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/\r/g, '');
-
-    pkg.tagline = sanitizeHtml(pkg.tagline, {
-      allowedTags: [],
-      allowedAttributes: [],
-    }).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/\r/g, '');
-
     if (body) {
         if (body.category || body.category === '') {
             pkg.category = body.category;
@@ -107,7 +97,7 @@ function updateInfo(pkg, data, body, file, url, callback) {
             pkg.changelog = body.changelog;
         }
 
-        if (body.description) { //Only set description if non-empty (allows us to pull from the manifest on create)
+        if (body.description || body.description === '') {
             pkg.description = body.description;
         }
 
@@ -142,6 +132,21 @@ function updateInfo(pkg, data, body, file, url, callback) {
     else {
         callback(pkg);
     }
+
+    pkg.description = sanitizeHtml(pkg.description, {
+      allowedTags: [],
+      allowedAttributes: [],
+    }).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/\r/g, '');
+
+    pkg.changelog = sanitizeHtml(pkg.changelog, {
+      allowedTags: [],
+      allowedAttributes: [],
+    }).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/\r/g, '');
+
+    pkg.tagline = sanitizeHtml(pkg.tagline, {
+      allowedTags: [],
+      allowedAttributes: [],
+    }).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/\r/g, '');
 }
 
 function reparse() {
