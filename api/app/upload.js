@@ -3,7 +3,7 @@ var lwip = require('lwip');
 var request = require('request');
 var fs = require('fs');
 var path = require('path');
-var gm = require('gm');
+var gm = require('gm').subClass({imageMagick: true});
 
 function uploadToSmartfile(url, share, filepath, filename, callback) {
     request.post({
