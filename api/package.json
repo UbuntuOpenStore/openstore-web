@@ -19,6 +19,7 @@
     "cookie-parser": "^1.4.0",
     "cookie-session": "^1.2.0",
     "express": "^4.13.3",
+    "gm": "^1.22.0",
     "lwip": "0.0.8",
     "method-override": "^2.3.5",
     "moment": "^2.13.0",
@@ -31,7 +32,6 @@
     "request": "^2.67.0",
     "sanitize-html": "^1.11.4",
     "squashfs-nodejs": "^1.0.5",
-    "svgexport": "^0.2.8",
     "winston": "^2.2.0",
     "winston-papertrail": "^1.0.2"
   }

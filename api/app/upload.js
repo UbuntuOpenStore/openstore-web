@@ -1,9 +1,9 @@
 var config = require('../utils/config');
 var lwip = require('lwip');
-var svgexport = require('svgexport');
 var request = require('request');
 var fs = require('fs');
 var path = require('path');
+var gm = require('gm');
 
 function uploadToSmartfile(url, share, filepath, filename, callback) {
     request.post({
@@ -62,10 +62,12 @@ function uploadIcon(url, share, pkg, filepath, callback) {
         var pngIcon = filepath.replace('.svg', '.png');
         iconname = iconname.replace('.svg', '.png');
 
-        svgexport.render([{
-            input: filepath,
-            output: pngIcon + ' 92:92',
-        }], function() {
+        gm(filepath).write(pngIcon, function(err) {
+            if (err) {
+                console.warn('failed to convert svg: ' + err)
+            }
+            console.log(pngIcon);
+
             uploadToSmartfile(url, share, pngIcon, iconname, function(err, url) {
                 fs.unlink(filepath);
                 fs.unlink(pngIcon);
