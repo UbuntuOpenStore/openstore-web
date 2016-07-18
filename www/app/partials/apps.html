@@ -21,7 +21,7 @@
     </div>
 
     <div class="row app-list" data-role="list">
-        <div class="col-sm-4" ng-repeat="app in apps|orderBy:'name'">
+        <div class="col-sm-4" ng-repeat="app in apps|orderBy:'name'" ng-class="{clear: $index % 3 == 0}">
             <div data-role="listitem" class="listitem">
                 <a class="clickable" ui-sref="app({name: app.id})">
                     <div class="pull-left">
@@ -40,7 +40,6 @@
                     </div>
                 </a>
             </div>
-            <div ng-class="{clearfix: $index % 3 == 2}"></div>
         </div>
     </div>
 </div>

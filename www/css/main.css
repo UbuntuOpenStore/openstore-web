@@ -181,3 +181,7 @@ body {
 .toggle-row {
     margin-bottom: 15px;
 }
+
+.clear {
+    clear: both;
+}
