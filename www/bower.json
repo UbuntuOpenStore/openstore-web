@@ -1,0 +1,22 @@
+{
+  "name": "openappstore-web",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "Brian Douglass"
+  ],
+  "license": "GPL-3.0",
+  "homepage": "https://github.com/bhdouglass/openappstore-web",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-uploadcare": "^0.2.0",
+    "Uploadcare": "uploadcare#^2.9.0"
+  }
+}
