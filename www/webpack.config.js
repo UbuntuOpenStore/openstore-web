@@ -51,7 +51,7 @@ module.exports = {
         ),
         new webpack.DefinePlugin({'process.env': {
             'API': (process.env.NODE_ENV == 'production') ? JSON.stringify('https://open.uappexplorer.com') : JSON.stringify('http://local.open.uappexplorer.com'),
-            'UPLOADCARE_KEY': process.env.UPLOADCARE_KEY,
+            'UPLOADCARE_KEY': JSON.stringify(process.env.UPLOADCARE_KEY),
         }}),
         //new webpack.optimize.DedupePlugin(),
         //new webpack.optimize.UglifyJsPlugin(),
