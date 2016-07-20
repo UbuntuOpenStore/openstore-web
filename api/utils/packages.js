@@ -128,6 +128,13 @@ function updateInfo(pkg, data, body, file, url, callback) {
                 callback(pkg);
             })
         }
+
+        if (body.screenshots) {
+            pkg.screenshots = body.screenshots;
+        }
+        else {
+            pkg.screenshots = [];
+        }
     }
     else {
         callback(pkg);
@@ -212,8 +219,8 @@ function toJson(pkg, req) {
         category: pkg.category ? pkg.category : '',
         changelog: pkg.changelog ? pkg.changelog : '',
         description: pkg.description ? pkg.description : '',
-        download: download,
         download_sha512: pkg.download_sha512 ? pkg.download_sha512 : '',
+        download: download,
         filesize: pkg.filesize ? pkg.filesize : 0,
         framework: pkg.framework ? pkg.framework : '',
         icon: pkg.icon ? pkg.icon : '',
@@ -224,6 +231,7 @@ function toJson(pkg, req) {
         name: pkg.name ? pkg.name : '',
         package: pkg.package ? pkg.package : '',
         permissions: pkg.permissions ? pkg.permissions: [],
+        screenshots: pkg.screenshots ? pkg.screenshots : [],
         snappy_meta: pkg.snappy_meta ? pkg.snappy_meta : {},
         source: pkg.source ? pkg.source : '',
         tagline: pkg.tagline ? pkg.tagline : '',

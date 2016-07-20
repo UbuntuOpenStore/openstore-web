@@ -1,6 +1,11 @@
 window.jQuery = window.$ = require('jquery');
 require('bootstrap');
 
+window.UPLOADCARE_LOCALE = 'en';
+window.UPLOADCARE_TABS = 'file url';
+window.UPLOADCARE_PUBLIC_KEY = process.env.UPLOADCARE_KEY;
+window.uploadcare = require('Uploadcare');
+
 var angular = require('angular');
 var uirouter = require('angular-ui-router');
 var uibootstrap = require('angular-ui-bootstrap');

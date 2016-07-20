@@ -32,7 +32,7 @@ module.exports = {
         preLoaders: [
             {
                 test: /\.js$/,
-                exclude: /node_modules/,
+                exclude: /(node_modules|bower_components)/,
                 loader: 'jshint-loader'
             }
         ]
@@ -42,10 +42,16 @@ module.exports = {
         historyApiFallback: true,
         port: 8081,
     },
-
+    resolve: {
+        modulesDirectories: ['node_modules', 'bower_components']
+    },
     plugins: [
+        new webpack.ResolverPlugin(
+            new webpack.ResolverPlugin.DirectoryDescriptionFilePlugin('.bower.json', ['main'])
+        ),
         new webpack.DefinePlugin({'process.env': {
             'API': (process.env.NODE_ENV == 'production') ? JSON.stringify('https://open.uappexplorer.com') : JSON.stringify('http://local.open.uappexplorer.com'),
+            'UPLOADCARE_KEY': process.env.UPLOADCARE_KEY,
         }}),
         //new webpack.optimize.DedupePlugin(),
         //new webpack.optimize.UglifyJsPlugin(),

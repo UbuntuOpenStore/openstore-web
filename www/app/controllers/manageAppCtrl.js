@@ -42,6 +42,7 @@ var manageAppCtrl = function($scope, $location, $timeout, $state, Upload, info, 
                     license: '',
                     source: '',
                     tagline: '',
+                    screenshots: [],
                 };
             }
             else {
@@ -51,6 +52,26 @@ var manageAppCtrl = function($scope, $location, $timeout, $state, Upload, info, 
     }).then(function(pkg) {
         $scope.loading = false;
         $scope.pkg = pkg;
+
+        $timeout(function() {
+            var uploadcareWidget = uploadcare.MultipleWidget('#uploadcare');
+            if ($scope.pkg.screenshots && $scope.pkg.screenshots.length > 0) {
+                var screenshot = $scope.pkg.screenshots[0];
+                var pos = screenshot.indexOf('/nth');
+                var value = screenshot.substring(0, pos).replace('https://ucarecdn.com/', '');
+
+                uploadcareWidget.value(value);
+            }
+
+            uploadcareWidget.onUploadComplete(function(info) {
+                var screenshots = [];
+                for (var i = 0; i < info.count; i++) {
+                    screenshots.push(info.cdnUrl + 'nth/' + i + '/-/format/jpeg/-/quality/lightest/');
+                }
+
+                $scope.pkg.screenshots = screenshots;
+            });
+        });
     });
 
     $scope.save = function(pkg) {
@@ -63,6 +84,7 @@ var manageAppCtrl = function($scope, $location, $timeout, $state, Upload, info, 
             maintainer: pkg.maintainer,
             source: pkg.source,
             tagline: pkg.tagline,
+            screenshots: pkg.screenshots,
         };
 
         var upload = null;
