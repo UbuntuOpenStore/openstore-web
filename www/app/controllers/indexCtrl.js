@@ -1,5 +1,4 @@
 var angular = require('angular');
-var jquery = require('jquery');
 
 var indexCtrl = function($scope, $rootScope, $state, $uibModal, $location, $sce, api) {
     $scope.$state = $state;
@@ -21,7 +20,10 @@ var indexCtrl = function($scope, $rootScope, $state, $uibModal, $location, $sce,
         $rootScope.title = defaultTitle;
         $rootScope.og = angular.copy(defaultOg);
 
-        jquery('#menu').collapse('hide');
+        window.jQuery('#menu').collapse('hide');
+        if (window.jQuery.swipebox.isOpen) {
+            window.jQuery.swipebox.close();
+        }
     });
 
     $rootScope.setOG = function(title, og) {

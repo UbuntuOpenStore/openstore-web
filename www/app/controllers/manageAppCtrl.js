@@ -54,7 +54,7 @@ var manageAppCtrl = function($scope, $location, $timeout, $state, Upload, info, 
         $scope.pkg = pkg;
 
         $timeout(function() {
-            var uploadcareWidget = uploadcare.MultipleWidget('#uploadcare');
+            var uploadcareWidget = window.uploadcare.MultipleWidget('#uploadcare');
             if ($scope.pkg.screenshots && $scope.pkg.screenshots.length > 0) {
                 var screenshot = $scope.pkg.screenshots[0];
                 var pos = screenshot.indexOf('/nth');

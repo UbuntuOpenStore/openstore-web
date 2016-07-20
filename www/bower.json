@@ -16,7 +16,7 @@
     "tests"
   ],
   "dependencies": {
-    "angular-uploadcare": "^0.2.0",
-    "Uploadcare": "uploadcare#^2.9.0"
+    "Uploadcare": "uploadcare#^2.9.0",
+    "swipebox": "^1.4.4"
   }
 }

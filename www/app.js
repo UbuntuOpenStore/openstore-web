@@ -1,5 +1,6 @@
 window.jQuery = window.$ = require('jquery');
 require('bootstrap');
+require('swipebox');
 
 window.UPLOADCARE_LOCALE = 'en';
 window.UPLOADCARE_TABS = 'file url';
@@ -12,11 +13,12 @@ var uibootstrap = require('angular-ui-bootstrap');
 var fileupload = require('ng-file-upload');
 
 //TODO pretify these uris
-require('./css/main.css');
-require('./css/theme.css');
 require('./node_modules/bootstrap/dist/css/bootstrap.min.css');
 require('./node_modules/bootstrap/dist/css/bootstrap-theme.min.css');
 require('./node_modules/font-awesome/css/font-awesome.min.css');
+require('./bower_components/swipebox/src/css/swipebox.min.css');
+require('./css/main.css');
+require('./css/theme.css');
 
 angular.module('openstore', [uirouter, uibootstrap, fileupload])
 .config(function($stateProvider, $urlRouterProvider, $locationProvider, $compileProvider) {
@@ -75,6 +77,8 @@ angular.module('openstore', [uirouter, uibootstrap, fileupload])
     });
 
     $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|mailto|scope|openstore):/);
+
+    window.jQuery('.swipebox').swipebox();
 })
 .controller('indexCtrl', require('./app/controllers/indexCtrl'))
 .controller('appsCtrl', require('./app/controllers/appsCtrl'))

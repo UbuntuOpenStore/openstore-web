@@ -185,3 +185,35 @@ body {
 .clear {
     clear: both;
 }
+
+.screenshot {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 300px;
+    max-height: 300px;
+    margin: 5px;
+    border: 1px solid #999999;
+    border-radius: 8px;
+}
+
+.screenshot-scroll {
+    max-height: 330px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.screenshot-scroll div {
+    display: inline-block;
+}
+
+#swipebox-container {
+  img {
+    border-radius: 8px;
+  }
+}
+
+#swipebox-overlay {
+  background-color: rgba(13, 13, 13, 0.8) !important;
+}

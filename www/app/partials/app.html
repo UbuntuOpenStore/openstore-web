@@ -51,6 +51,24 @@
     </div>
 
     <div class="col-md-6">
+        <div class="screenshots" ng-if="app.screenshots.length > 0">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Screenshots</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 screenshot-scroll">
+                    <div ng-repeat="screenshot in app.screenshots">
+                        <a ng-href="{{screenshot}}" class="swipebox" rel="nofollow">
+                            <img ng-src="{{screenshot}}" alt="" class="screenshot" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <h3>Package Contents</h3>
         <div data-role="well">
             <div ng-repeat="(name, hook) in app.manifest.hooks">
