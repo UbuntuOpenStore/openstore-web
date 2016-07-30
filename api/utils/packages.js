@@ -140,6 +140,10 @@ function updateInfo(pkg, data, body, file, url, callback) {
         callback(pkg);
     }
 
+    pkg.description = pkg.description ? pkg.description : '';
+    pkg.changelog = pkg.changelog ? pkg.changelog : '';
+    pkg.tagline = pkg.tagline ? pkg.tagline : '';
+
     pkg.description = sanitizeHtml(pkg.description, {
       allowedTags: [],
       allowedAttributes: [],
