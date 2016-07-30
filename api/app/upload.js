@@ -36,7 +36,7 @@ function uploadToSmartfile(url, share, filepath, filename, callback) {
 }
 
 function uploadIcon(url, share, pkg, filepath, callback) {
-    var iconname = pkg.name + path.extname(filepath);
+    var iconname = pkg.id + path.extname(filepath);
 
     if (path.extname(filepath) == '.png') {
         lwip.open(filepath, function(err, image) {
@@ -66,7 +66,6 @@ function uploadIcon(url, share, pkg, filepath, callback) {
             if (err) {
                 console.warn('failed to convert svg: ' + err)
             }
-            console.log(pngIcon);
 
             uploadToSmartfile(url, share, pngIcon, iconname, function(err, url) {
                 fs.unlink(filepath);
