@@ -113,6 +113,32 @@ function updateInfo(pkg, data, body, file, url, callback) {
             pkg.tagline = body.tagline;
         }
 
+        if (body.screenshots) {
+            pkg.screenshots = body.screenshots;
+        }
+        else {
+            pkg.screenshots = [];
+        }
+
+        pkg.description = pkg.description ? pkg.description : '';
+        pkg.changelog = pkg.changelog ? pkg.changelog : '';
+        pkg.tagline = pkg.tagline ? pkg.tagline : '';
+
+        pkg.description = sanitizeHtml(pkg.description, {
+          allowedTags: [],
+          allowedAttributes: [],
+        }).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/\r/g, '');
+
+        pkg.changelog = sanitizeHtml(pkg.changelog, {
+          allowedTags: [],
+          allowedAttributes: [],
+        }).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/\r/g, '');
+
+        pkg.tagline = sanitizeHtml(pkg.tagline, {
+          allowedTags: [],
+          allowedAttributes: [],
+        }).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/\r/g, '');
+
         if (body.maintainer !== undefined) {
             pkg.maintainer = body.maintainer;
 
@@ -128,36 +154,32 @@ function updateInfo(pkg, data, body, file, url, callback) {
                 callback(pkg);
             })
         }
-
-        if (body.screenshots) {
-            pkg.screenshots = body.screenshots;
-        }
         else {
-            pkg.screenshots = [];
+            callback(pkg);
         }
     }
     else {
+        pkg.description = pkg.description ? pkg.description : '';
+        pkg.changelog = pkg.changelog ? pkg.changelog : '';
+        pkg.tagline = pkg.tagline ? pkg.tagline : '';
+
+        pkg.description = sanitizeHtml(pkg.description, {
+          allowedTags: [],
+          allowedAttributes: [],
+        }).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/\r/g, '');
+
+        pkg.changelog = sanitizeHtml(pkg.changelog, {
+          allowedTags: [],
+          allowedAttributes: [],
+        }).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/\r/g, '');
+
+        pkg.tagline = sanitizeHtml(pkg.tagline, {
+          allowedTags: [],
+          allowedAttributes: [],
+        }).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/\r/g, '');
+
         callback(pkg);
     }
-
-    pkg.description = pkg.description ? pkg.description : '';
-    pkg.changelog = pkg.changelog ? pkg.changelog : '';
-    pkg.tagline = pkg.tagline ? pkg.tagline : '';
-
-    pkg.description = sanitizeHtml(pkg.description, {
-      allowedTags: [],
-      allowedAttributes: [],
-    }).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/\r/g, '');
-
-    pkg.changelog = sanitizeHtml(pkg.changelog, {
-      allowedTags: [],
-      allowedAttributes: [],
-    }).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/\r/g, '');
-
-    pkg.tagline = sanitizeHtml(pkg.tagline, {
-      allowedTags: [],
-      allowedAttributes: [],
-    }).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/\r/g, '');
 }
 
 function reparse() {

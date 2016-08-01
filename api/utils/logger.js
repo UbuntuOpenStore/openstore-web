@@ -20,4 +20,12 @@ else {
     logger.debug('No papertrail token');
 }
 
+process.on('uncaughtException', function(err) {
+    logger.error('uncaughtException: ' + err);
+
+    if (err && err.stack) {
+        logger.error(err.stack);
+    }
+});
+
 module.exports = logger;
