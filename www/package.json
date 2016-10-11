@@ -13,12 +13,12 @@
     "bootstrap": "^3.3.6",
     "html-webpack-plugin": "^2.14.0",
     "jquery": "^2.2.2",
-    "ng-file-upload": "^12.0.4"
+    "ng-file-upload": "^12.0.4",
+    "font-awesome": "^4.5.0"
   },
   "devDependencies": {
     "css-loader": "^0.23.1",
     "file-loader": "^0.8.5",
-    "font-awesome": "^4.5.0",
     "jshint": "^2.9.1",
     "jshint-loader": "^0.8.3",
     "style-loader": "^0.13.0",
@@ -27,7 +27,7 @@
   },
   "scripts": {
     "devserver": "webpack-dev-server --progress --colors -d --host 0.0.0.0 --watch-poll",
-    "server": "NODE_ENV=production webpack-dev-server --progress --colors --host 0.0.0.0 --watch-poll",
+    "server": "NODE_ENV=production webpack-dev-server --progress --colors --host 0.0.0.0 --port 8082 --watch-poll",
     "postinstall": "webpack --progress --colors"
   }
 }
