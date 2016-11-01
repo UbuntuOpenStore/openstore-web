@@ -1,0 +1,10 @@
+binutils
+python3-apt
+python3-debian
+python3-lxml
+python3-magic
+python3-simplejson
+python3-xdg
+python3-yaml
+squashfs-tools
+http://launchpadlibrarian.net/281607853/click-reviewers-tools_0.45_all.deb
