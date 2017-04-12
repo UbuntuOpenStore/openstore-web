@@ -259,6 +259,11 @@ function setup(app) {
                             delete req.body.maintainer;
                         }
 
+                        var exec = require('child_process').exec;
+                        exec(config.clickreview.command + ' --json ' + req.file.path, {PYTHONPATH: config.clickreview.pythonpath}, function callback(error, stdout, stderr){
+                            console.log(error, stdout, stderr);
+                        });
+
                         pkg.updated_date = moment().toISOString();
                         packages.updateInfo(pkg, null, req.body, req.file, null, function(pkg) {
                             parseFile(pkg, req.file.path, function(err) {
@@ -277,7 +282,7 @@ function setup(app) {
                     }
                 }
             }
-            else {
+            else { //No file uploaded
                 //Admins may edit any package, but trusted users may only edit packages they maintain
                 if (helpers.isAdminOrTrustedOwner(req, pkg)) {
                     pkg.updated_date = moment().toISOString();

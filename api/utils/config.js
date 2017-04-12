@@ -20,11 +20,17 @@ var config = {
         host: process.env.PAPERTRAIL_HOST,
         port: process.env.PAPERTRAIL_PORT,
     },
+    clickreview: {
+        //Heroku command: /app/.apt/usr/bin/click-review
+        command: process.env.CLICK_REVIEW_COMMAND || 'click-review',
+        //Heroku pythonpath: /app/.apt/usr/lib/python3/dist-packages/
+        pythonpath: process.env.CLICK_REVIEW_PYTHONPATH || '',
+    }
 };
 
 //Mongo uri from docker
 if (process.env.MONGO_PORT) {
-  config.mongo.uri = process.env.MONGO_PORT.replace('tcp', 'mongodb');
+    config.mongo.uri = process.env.MONGO_PORT.replace('tcp', 'mongodb');
 }
 
 module.exports = config;
