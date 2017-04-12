@@ -8,7 +8,7 @@ var indexCtrl = function($scope, $rootScope, $state, $uibModal, $location, $sce,
     var defaultTitle = 'OpenStore';
     var defaultOg = {
         title: defaultTitle,
-        description: 'OpenStore for Ubuntu Touch',
+        description: 'OpenStore for Ubuntu',
         image: url + 'assets/img/logo.png',
         url: url + 'apps',
     };
