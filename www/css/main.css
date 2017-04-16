@@ -217,3 +217,7 @@ body {
 #swipebox-overlay {
   background-color: rgba(13, 13, 13, 0.8) !important;
 }
+
+.ubports {
+    height: 20px;
+}
