@@ -107,6 +107,25 @@ function uploadClick(url, share, pkg, filepath, iconpath, callback) {
     });
 }
 
+//TODO Refactor this whole module
+function uploadPackage(url, share, pkg, filepath, iconpath) {
+    return new Promise((resolve, reject) => {
+        uploadClick(url, share, pkg, filepath, iconpath, (err, pkgUrl, imgUrl) => {
+            if (err) {
+                reject(err);
+            }
+            else {
+                pkg.package = pkgUrl;
+                pkg.icon = imgUrl;
+
+                resolve(pkg);
+            }
+        });
+    });
+}
+
+
 exports.uploadToSmartfile = uploadToSmartfile;
 exports.uploadIcon = uploadIcon;
 exports.uploadClick = uploadClick;
+exports.uploadPackage = uploadPackage;

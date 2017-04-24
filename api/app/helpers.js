@@ -37,13 +37,35 @@ function isAdminOrTrusted(req, res, next) {
     }
 }
 
+function isAdminUser(req) {
+    var ok = false;
+    if (req.isAuthenticated()) {
+        if (req.user.role == 'admin') {
+            ok = true;
+        }
+    }
+
+    return ok;
+}
+
+function isAdminOrTrustedUser(req) {
+    var ok = false;
+    if (req.isAuthenticated()) {
+        if (req.user.role == 'admin' || req.user.role == 'trusted') {
+            ok = true;
+        }
+    }
+
+    return ok;
+}
+
 function isAdminOrTrustedOwner(req, pkg) {
     var ok = false;
     if (req.isAuthenticated()) {
         if (req.user.role == 'admin') {
             ok = true;
         }
-        else if (req.user.role == 'trusted' && pkg.maintainer == req.user._id) {
+        else if (req.user.role == 'trusted' && pkg && pkg.maintainer == req.user._id) {
             ok = true;
         }
     }
@@ -56,3 +78,5 @@ exports.error = error;
 exports.isAdmin = isAdmin;
 exports.isAdminOrTrusted = isAdminOrTrusted;
 exports.isAdminOrTrustedOwner = isAdminOrTrustedOwner;
+exports.isAdminUser = isAdminUser;
+exports.isAdminOrTrustedUser = isAdminOrTrustedUser;

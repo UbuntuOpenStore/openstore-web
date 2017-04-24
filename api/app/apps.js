@@ -1,98 +1,31 @@
-var db = require('../db');
-var config = require('../utils/config');
-var packages = require('../utils/packages');
-var logger = require('../utils/logger');
-var helpers = require('./helpers');
-var upload = require('./upload');
-var parse = require('click-parser');
-var passport = require('passport');
-var multer  = require('multer');
-var cluster = require('cluster');
-var fs = require('fs');
-var moment = require('moment');
-var crypto = require('crypto');
+'use strict';
 
-var mupload = multer({dest: '/tmp'});
+const db = require('../db');
+const config = require('../utils/config');
+const packages = require('../utils/packages');
+const logger = require('../utils/logger');
+const helpers = require('./helpers');
+const upload = require('./upload');
+const parse = require('../utils/click-parser-async');
+const checksum = require('../utils/checksum');
+const reviewPackage = require('../utils/review-package');
 
-function parseFileHelper(pkg, filepath, callback) {
-    parse(filepath, true, function(err, data) {
-        if (err) {
-            callback(err);
-        }
-        else if (!data.name || !data.version || !data.architecture) {
-            callback('Malformed manifest');
-        }
-        else if (pkg.id && pkg.id != data.name) {
-            callback('Uploaded manifest does not match package to update');
-        }
-        else {
-            packages.updateInfo(pkg, data, null, null, null, function(pkg) {
-                if (pkg._id) {
-                    upload.uploadClick(
-                        config.smartfile.url,
-                        config.smartfile.share,
-                        pkg,
-                        filepath,
-                        data.icon,
-                        function(err, url, imgurl) {
-                            pkg.package = url;
-                            pkg.icon = imgurl;
-                            pkg.save(callback);
-                        }
-                    );
-                }
-                else { //trying to create a new package, check if one already exists
-                    db.Package.findOne({id: data.name}).or([{deleted: false}, {deleted: {'$exists': false}}]).exec(function(err, p) {
-                        if (err) {
-                            callback(err);
-                        }
-                        else if (p) {
-                            callback('Package with id "' + data.name + '" already exists');
-                        }
-                        else {
-                            upload.uploadClick(
-                                config.smartfile.url,
-                                config.smartfile.share,
-                                pkg,
-                                filepath,
-                                data.icon,
-                                function(err, url, imgurl) {
-                                    pkg.package = url;
-                                    pkg.icon = imgurl;
-                                    pkg.save(callback);
-                                }
-                            );
-                        }
-                    });
-                }
-            });
-        }
-    });
-}
+const passport = require('passport');
+const multer  = require('multer');
+const cluster = require('cluster');
+const fs = require('fs');
+const moment = require('moment');
+const crypto = require('crypto');
+const exec = require('child_process').exec;
+const bluebird = require('bluebird');
 
-function parseFile(pkg, filepath, callback) {
-    var hash = crypto.createHash('sha512');
+bluebird.promisifyAll(fs);
+const mupload = multer({dest: '/tmp'});
 
-    var input = fs.createReadStream(filepath);
-    input.on('readable', function() {
-        var data = input.read();
-        if (data)
-            hash.update(data);
-        else {
-            pkg.download_sha512 = hash.digest('hex');
-        }
-    });
-
-    input.on('error', function() {
-        logger.error('error reading file for sha512');
-        pkg.download_sha512 = '';
-        parseFileHelper(pkg, filepath, callback)
-    });
-
-    input.on('end', function() {
-        parseFileHelper(pkg, filepath, callback)
-    });
-}
+const NEEDS_MANUAL_REVIEW = 'This app needs to be reviewed manually';
+const MALFORMED_MANIFEST = 'Your package manifest is malformed';
+const DUPLICATE_PACKAGE = 'A package with the same name already exists';
+const PERMISSION_DENIED = 'You do not have permission to update this app';
 
 function setup(app) {
     app.get('/api/health', function(req, res) {
@@ -102,7 +35,7 @@ function setup(app) {
     });
 
     app.get(['/api/apps', '/api/apps/:id', '/repo/repolist.json'], function(req, res) {
-        var query = {};
+        var query = {published: true};
 
         if (req.params.id) {
             query.id = req.params.id;
@@ -142,16 +75,7 @@ function setup(app) {
             ];
         }
 
-        var q = {
-            $and: [
-                query,
-                {
-                    $or: [{deleted: false}, {deleted: {'$exists': false}}],
-                },
-            ]
-        }
-
-        db.Package.find(q).sort('name').exec(function(err, pkgs) {
+        db.Package.find(query).sort('name').exec(function(err, pkgs) {
             if (err) {
                 helpers.error(res, err);
             }
@@ -185,7 +109,7 @@ function setup(app) {
     });
 
     app.get('/api/download/:id/:click', function(req, res) {
-        db.Package.findOne({id: req.params.id}).or([{deleted: false}, {deleted: {'$exists': false}}]).exec(function(err, pkg) {
+        db.Package.findOne({id: req.params.id, published: trye}).exec(function(err, pkg) {
             if (err) {
                 helpers.error(res, err);
             }
@@ -209,126 +133,157 @@ function setup(app) {
         });
     });
 
-    app.post('/api/apps', passport.authenticate('localapikey', {session: false}), helpers.isAdminOrTrusted, mupload.single('file'), function(req, res) {
-        var pkg = new db.Package();
-        pkg.published_date = moment().toISOString();
-        pkg.updated_date = moment().toISOString();
+    app.get('/api/manage/apps', passport.authenticate('localapikey', {session: false}), function(req, res) {
+        let query = null;
+        if (helpers.isAdminUser(req)) {
+            query = db.Package.find({});
+        }
+        else {
+            query = db.Package.find({maintainer: req.user._id});
+        }
 
+        query.sort('name').then((pkgs) => {
+            let result = pkgs.map((pkg) => {
+                return packages.toJson(pkg, req);
+            });
+
+            helpers.success(res, result);
+        }).catch((err) => {
+            logger.error('Error fetching packages:', err);
+            helpers.error(res, 'Could not fetch app list at this time');
+        });
+    });
+
+    app.get('/api/manage/apps/:id', passport.authenticate('localapikey', {session: false}), function(req, res) {
+        let query = null;
+        if (helpers.isAdminUser(req)) {
+            query = db.Package.findOne({id: req.params.id});
+        }
+        else {
+            query = db.Package.findOne({id: req.params.id, maintainer: req.user._id});
+        }
+
+        query.then((pkg) => {
+            helpers.success(res, packages.toJson(pkg, req));
+        }).catch((err) => {
+            helpers.error(res, 'App not found', 404);
+        });
+    });
+
+    app.post(['/api/apps', '/api/manage/apps'], passport.authenticate('localapikey', {session: false}), mupload.single('file'), function(req, res) {
         if (!req.file) {
             helpers.error(res, 'No file upload specified');
         }
-        else if (req.file.originalname.indexOf('.click') == -1 && req.file.originalname.indexOf('.snap') == -1) {
+        else if (
+            !req.file.originalname.endsWith('.click') &&
+            !req.file.originalname.endsWith('.snap')
+        ) {
             helpers.error(res, 'The file must be a click or snap package');
             fs.unlink(req.file.path);
         }
         else {
-            if ((req.body && !req.body.maintainer) || req.user.role != 'admin') {
-                req.body.maintainer = req.user._id;
+            let filePath = req.file.path;
+            //Rename the file so click-review doesn't freak out
+            if (req.file.originalname.endsWith('.click')) {
+                filePath += '.click';
+            }
+            else {
+                filePath += '.snap';
             }
 
-            packages.updateInfo(pkg, null, req.body, req.file, null, function(pkg) {
-                parseFile(pkg, req.file.path, function(err) {
-                    if (err) {
-                        helpers.error(res, err);
+            fs.renameAsync(req.file.path, filePath).then(() => {
+                if (helpers.isAdminOrTrustedUser(req)) {
+                    return false; //Admin & trusted users can upload apps without manual review
+                }
+                else {
+                    return reviewPackage(filePath);
+                }
+            }).then((needsManualReview) => {
+                if (needsManualReview) {
+                    throw NEEDS_MANUAL_REVIEW;
+                }
+
+                let parsePromise = parse(filePath, true);
+                let existingPromise = parsePromise.then((parseData) => {
+                    if (!parseData.name || !parseData.version || !parseData.architecture) {
+                        throw MALFORMED_MANIFEST;
                     }
-                    else {
-                        helpers.success(res, packages.toJson(pkg, req));
-                    }
+
+                    return db.Package.findOne({id: parseData.name});
                 });
+
+                return Promise.all([
+                    parsePromise,
+                    existingPromise,
+                    checksum(filePath),
+                ]);
+            }).then((results) => {
+                let parseData = results[0];
+                let existing = results[1];
+                let checksum = results[2];
+
+                if (existing) {
+                    console.log(existing);
+                    throw DUPLICATE_PACKAGE;
+                }
+
+                if (req.body && !req.body.maintainer) {
+                    req.body.maintainer = req.user._id;
+                }
+
+                let pkg = new db.Package();
+                packages.updateInfo(pkg, parseData, req.body, filePath);
+
+                return upload.uploadPackage(
+                    config.smartfile.url,
+                    config.smartfile.share,
+                    pkg,
+                    filePath,
+                    parseData.icon
+                );
+            }).then((pkg) => {
+                return pkg.save();
+            }).then((pkg) => {
+                helpers.success(res, packages.toJson(pkg, req));
+            }).catch((err) => {
+                if (err == NEEDS_MANUAL_REVIEW || err == MALFORMED_MANIFEST || err == DUPLICATE_PACKAGE) {
+                    helpers.error(res, err, 400);
+                }
+                else {
+                    logger.error('Error parsing new package:', err);
+                    helpers.error(res, 'There was an error creating your app, please try again later');
+                }
             });
         }
     });
 
-    app.put('/api/apps/:id', passport.authenticate('localapikey', {session: false}), mupload.single('file'), function(req, res) {
-        db.Package.findOne({id: req.params.id}).or([{deleted: false}, {deleted: {'$exists': false}}]).exec(function(err, pkg) {
-            if (err) {
-                helpers.error(res, err);
-            }
-            else if (!pkg) {
-                helpers.error(res, 'No package found with id "' + req.params.id + '"', 404);
-            }
-            else if (req.file) {
-                if (req.file.originalname.indexOf('.click') == -1 && req.file.originalname.indexOf('.snap') == -1) {
-                    helpers.error(res, 'The file must be a click or snap package');
-                    fs.unlink(req.file.path);
+    app.put(['/api/apps/:id', '/api/manage/apps/:id'], passport.authenticate('localapikey', {session: false}), mupload.single('file'), function(req, res) {
+        /*letpackagePromise = db.Package.findOne({id: req.params.id})
+
+        return packagePromise.then((pkg) => {
+            if (helpers.isAdminUser(req) || req.user._id == pkg.maintainer) {
+                if (req.file) {
+                    //TODO
                 }
                 else {
-                    //Admins may edit any package, but trusted users may only edit packages they maintain
-                    if (helpers.isAdminOrTrustedOwner(req, pkg)) {
-                        if (req.body && req.body.maintainer && req.user.role != 'admin') {
-                            delete req.body.maintainer;
-                        }
-
-                        var exec = require('child_process').exec;
-                        exec(config.clickreview.command + ' --json ' + req.file.path, {PYTHONPATH: config.clickreview.pythonpath}, function callback(error, stdout, stderr){
-                            console.log(error, stdout, stderr);
-                        });
-
-                        pkg.updated_date = moment().toISOString();
-                        packages.updateInfo(pkg, null, req.body, req.file, null, function(pkg) {
-                            parseFile(pkg, req.file.path, function(err) {
-                                if (err) {
-                                    helpers.error(res, err);
-                                }
-                                else {
-                                    helpers.success(res, packages.toJson(pkg, req));
-                                }
-                            });
-                        });
-                    }
-                    else {
-                        helpers.error(res, 'Forbidden', 403);
-                        fs.unlink(req.file.path);
-                    }
+                    packages.updateInfo(pkg, null, req.body, null);
+                    return pkg.save();
                 }
-            }
-            else { //No file uploaded
-                //Admins may edit any package, but trusted users may only edit packages they maintain
-                if (helpers.isAdminOrTrustedOwner(req, pkg)) {
-                    pkg.updated_date = moment().toISOString();
-
-                    packages.updateInfo(pkg, null, req.body, null, null, function(pkg) {
-                        pkg.save(function(err) {
-                            if (err) {
-                                helpers.error(res, err);
-                            }
-                            else {
-                                helpers.success(res, packages.toJson(pkg, req));
-                            }
-                        });
-                    });
-
-                }
-                else {
-                    helpers.error(res, 'Forbidden', 403);
-                }
-            }
-        });
-    });
-
-    app.delete('/api/apps/:id', passport.authenticate('localapikey', {session: false}), function(req, res) {
-        db.Package.findOne({id: req.params.id}).or([{deleted: false}, {deleted: {'$exists': false}}]).exec(function(err, pkg) {
-            if (err) {
-                helpers.error(res, err);
             }
             else {
-                //Admins may delete any package, but trusted users may only delete packages they maintain
-                if (helpers.isAdminOrTrustedOwner(req, pkg)) {
-                    pkg.deleted = true;
-                    pkg.save(function(err) {
-                        if (err) {
-                            helpers.error(res, err);
-                        }
-                        else {
-                            helpers.success(res, null);
-                        }
-                    });
-                }
-                else {
-                    helpers.error(res, 'Forbidden', 403);
-                }
+                throw PERMISSION_DENIED;
             }
-        });
+        }).then((pkg) => {
+            helpers.success(res, packages.toJson(pkg, req));
+        }).catch((err) => {
+            if (err == PERMISSION_DENIED || err == NEEDS_MANUAL_REVIEW || err == MALFORMED_MANIFEST) {
+                helpers.error(res, err, 400);
+            }
+            else {
+                logger.error('Error updating package:', err);
+                helpers.error(res, 'There was an error updating your app, please try again later');
+            }
+        });*/
     });
 }
 

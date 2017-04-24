@@ -46,7 +46,7 @@ var manageAppCtrl = function($scope, $location, $timeout, $state, Upload, info, 
                 };
             }
             else {
-                return api.apps.get($state.params.name);
+                return api.manage.get($scope.user.apikey, $state.params.name);
             }
         }
     }).then(function(pkg) {
@@ -89,14 +89,14 @@ var manageAppCtrl = function($scope, $location, $timeout, $state, Upload, info, 
 
         var upload = null;
         if (pkg.id) {
-            upload = api.apps.update($scope.user.apikey, pkg.id, data, $scope.file);
+            upload = api.manage.update($scope.user.apikey, pkg.id, data, $scope.file);
         }
         else {
             if (!data.maintainer) {
                 data.maintainer = $scope.user._id;
             }
 
-            upload = api.apps.create($scope.user.apikey, data, $scope.file);
+            upload = api.manage.create($scope.user.apikey, data, $scope.file);
         }
 
         upload.error(function(data, status) {

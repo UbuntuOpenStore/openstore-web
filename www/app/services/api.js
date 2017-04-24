@@ -22,11 +22,21 @@ var api = function($http, Upload) {
             get: function(id) {
                 return $http.get(process.env.API + '/api/apps/' + id).then(success);
             },
+        },
+
+        manage: {
+            getAll: function(key) {
+                return $http.get(process.env.API + '/api/manage/apps' + '?apikey=' + key).then(success);
+            },
+
+            get: function(key, id) {
+                return $http.get(process.env.API + '/api/manage/apps/' + id + '?apikey=' + key).then(success);
+            },
 
             create: function(key, data, file) {
                 return Upload.upload({
                     method: 'POST',
-                    url: process.env.API + '/api/apps?apikey=' + key,
+                    url: process.env.API + '/api/manage/apps?apikey=' + key,
                     fields: data,
                     file: file,
                 })
@@ -38,7 +48,7 @@ var api = function($http, Upload) {
             update: function(key, id, data, file) {
                 return Upload.upload({
                     method: 'PUT',
-                    url: process.env.API + '/api/apps/' + id + '?apikey=' + key,
+                    url: process.env.API + '/api/manage/apps/' + id + '?apikey=' + key,
                     fields: data,
                     file: file,
                 })
@@ -48,7 +58,7 @@ var api = function($http, Upload) {
             },
 
             remove: function(key, id) {
-                return $http.delete(process.env.API + '/api/apps/' + id, {
+                return $http.delete(process.env.API + '/api/manage/apps/' + id, {
                     params: {
                         apikey: key
                     },

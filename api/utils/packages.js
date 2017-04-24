@@ -6,7 +6,7 @@ var parse = require('click-parser');
 var fs = require('fs');
 var sanitizeHtml = require('sanitize-html');
 
-function updateInfo(pkg, data, body, file, url, callback) {
+function updateInfo(pkg, data, body, file, url) {
     if (data) {
         var manifest = {
             architecture: data.architecture,
@@ -142,7 +142,7 @@ function updateInfo(pkg, data, body, file, url, callback) {
         if (body.maintainer !== undefined) {
             pkg.maintainer = body.maintainer;
 
-            db.User.findOne({_id: pkg.maintainer}, function(err, user) {
+            /*db.User.findOne({_id: pkg.maintainer}, function(err, user) {
                 if (err) {
                     logger.error(err);
                     pkg.maintainer_name = '';
@@ -152,11 +152,11 @@ function updateInfo(pkg, data, body, file, url, callback) {
                 }
 
                 callback(pkg);
-            })
+            })*/
         }
-        else {
+        /*else {
             callback(pkg);
-        }
+        }*/
     }
     else {
         pkg.description = pkg.description ? pkg.description : '';
@@ -178,8 +178,10 @@ function updateInfo(pkg, data, body, file, url, callback) {
           allowedAttributes: [],
         }).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/\r/g, '');
 
-        callback(pkg);
+        //callback(pkg);
     }
+
+    return pkg;
 }
 
 function reparse() {

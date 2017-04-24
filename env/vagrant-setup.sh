@@ -2,6 +2,7 @@
 
 apt-get install -y nginx
 ln -s /srv/openstore/env/proxy.conf /etc/nginx/conf.d/proxy.conf
+rm /etc/nginx/sites-enabled/default
 service nginx restart
 
 sed -i 's/#force_color_prompt/force_color_prompt/g' /home/vagrant/.bashrc

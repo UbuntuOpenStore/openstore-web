@@ -15,7 +15,6 @@ var packageSchema = mongoose.Schema({
     author: String,
     category: String,
     changelog: String,
-    deleted: Boolean,
     description: String,
     download_sha512: String,
     downloads: {},
@@ -37,6 +36,7 @@ var packageSchema = mongoose.Schema({
     types: [String],
     updated_date: String,
     version: String,
+    published: Boolean,
 });
 
 var Package = mongoose.model('Package', packageSchema);
