@@ -29,7 +29,10 @@ module.exports = {
     },
 
     devServer: {
-        historyApiFallback: true,
+        historyApiFallback: {
+            disableDotRule: true,
+            verbose: true,
+        },
         port: 8081,
     },
     resolve: {
