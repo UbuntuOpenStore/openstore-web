@@ -27,6 +27,7 @@ const MALFORMED_MANIFEST = 'Your package manifest is malformed';
 const DUPLICATE_PACKAGE = 'A package with the same name already exists';
 const PERMISSION_DENIED = 'You do not have permission to update this app';
 const BAD_FILE = 'The file must be a click or snap package';
+const WRONG_PACKAGE = 'The uploaded package does not match the name of the package you are editing';
 
 function setup(app) {
     app.get('/api/health', function(req, res) {
@@ -218,6 +219,10 @@ function setup(app) {
             throw MALFORMED_MANIFEST;
         }
 
+        if (pkg.id && parseData.name != pkg.id) {
+            throw WRONG_PACKAGE;
+        }
+
         packages.updateInfo(pkg, parseData, req.body, req.file);
 
         return upload.uploadPackage(
@@ -286,8 +291,6 @@ function setup(app) {
     app.put(['/api/apps/:id', '/api/manage/apps/:id'], passport.authenticate('localapikey', {session: false}), mupload.single('file'), function(req, res) {
         let packagePromise = db.Package.findOne({id: req.params.id});
 
-        //TODO verify that the uploaded package is the same
-
         return packagePromise.then((pkg) => {
             if (helpers.isAdminUser(req) || req.user._id == pkg.maintainer) {
                 if (req.file) {
@@ -317,7 +320,7 @@ function setup(app) {
         }).then((pkg) => {
             helpers.success(res, packages.toJson(pkg, req));
         }).catch((err) => {
-            if (err == PERMISSION_DENIED || err == BAD_FILE || err == NEEDS_MANUAL_REVIEW || err == MALFORMED_MANIFEST) {
+            if (err == PERMISSION_DENIED || err == BAD_FILE || err == NEEDS_MANUAL_REVIEW || err == MALFORMED_MANIFEST || err == WRONG_PACKAGE) {
                 helpers.error(res, err, 400);
             }
             else {

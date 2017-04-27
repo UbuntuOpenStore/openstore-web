@@ -106,6 +106,7 @@ var manageAppCtrl = function($scope, $location, $timeout, $state, Upload, info, 
             $scope.error = null;
 
             $location.path('/manage/' + response.data.id);
+            //TODO popup message that everything was saved
         });
     };
 
