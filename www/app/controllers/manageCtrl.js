@@ -26,22 +26,6 @@ var manageCtrl = function($scope, $location, $timeout, info, api) {
             return refresh();
         }
     });
-
-    $scope.remove = function(pkg) {
-        bootbox.confirm('Are you sure you want to remove package "' + pkg.id + '"?', function(result) {
-            if (result) {
-                $timeout(function() {
-                    api.apps.remove($scope.user.apikey, pkg.id).then(function() {
-                        $scope.loading = true;
-
-                        return refresh();
-                    }, function(res) {
-                        console.log('failed to delete', res);
-                    });
-                });
-            }
-        });
-    };
 };
 
 manageCtrl.$inject = ['$scope', '$location', '$timeout', 'info', 'api'];

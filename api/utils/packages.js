@@ -89,6 +89,10 @@ function updateInfo(pkg, data, body, file, url) {
     }
 
     if (body) {
+        if (body.published !== undefined) {
+            pkg.published = (body.published == 'true');
+        }
+
         if (body.category || body.category === '') {
             pkg.category = body.category;
         }
@@ -259,6 +263,7 @@ function toJson(pkg, req) {
         name: pkg.name ? pkg.name : '',
         package: pkg.package ? pkg.package : '',
         permissions: pkg.permissions ? pkg.permissions: [],
+        published: !!pkg.published,
         screenshots: pkg.screenshots ? pkg.screenshots : [],
         snappy_meta: pkg.snappy_meta ? pkg.snappy_meta : {},
         source: pkg.source ? pkg.source : '',

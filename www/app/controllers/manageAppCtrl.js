@@ -36,13 +36,7 @@ var manageAppCtrl = function($scope, $location, $timeout, $state, Upload, info, 
 
             if ($state.params.name == 'create') {
                 return {
-                    category: '',
-                    changelog: '',
-                    description: '',
-                    license: '',
-                    source: '',
-                    tagline: '',
-                    screenshots: [],
+                    published: false,
                 };
             }
             else {
@@ -52,6 +46,7 @@ var manageAppCtrl = function($scope, $location, $timeout, $state, Upload, info, 
     }).then(function(pkg) {
         $scope.loading = false;
         $scope.pkg = pkg;
+        $scope.published = pkg ? pkg.published : false;
 
         $timeout(function() {
             var uploadcareWidget = window.uploadcare.MultipleWidget('#uploadcare');
@@ -77,6 +72,7 @@ var manageAppCtrl = function($scope, $location, $timeout, $state, Upload, info, 
     $scope.save = function(pkg) {
         $scope.saving = true;
         var data = {
+            published: pkg.published,
             category: pkg.category,
             changelog: pkg.changelog,
             description: pkg.description,
@@ -104,12 +100,12 @@ var manageAppCtrl = function($scope, $location, $timeout, $state, Upload, info, 
             $scope.error = data.message;
             $scope.saving = false;
         })
-        .success(function() {
+        .success(function(response) {
             $scope.saving = false;
             $scope.file = null;
             $scope.error = null;
 
-            $location.path('/manage');
+            $location.path('/manage/' + response.data.id);
         });
     };
 

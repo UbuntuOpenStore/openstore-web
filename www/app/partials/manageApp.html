@@ -2,9 +2,8 @@
     <h1>
         <a href="/manage"><i class="fa fa-chevron-left"></i></a>
 
-        Package
         <span ng-if="pkg.id">Edit: {{pkg.name}}</span>
-        <span ng-if="!pkg.id">Create</span>
+        <span ng-if="!pkg.id">New Package</span>
         <i ng-if="loading" class="fa fa-spinner fa-spin"></i>
     </h1>
 
@@ -24,10 +23,21 @@
             </div>
         </div>
 
+        <div class="form-group" ng-if="pkg.id">
+            <label for="id" class="col-sm-2 control-label">Publish</label>
+            <div class="col-sm-10">
+                <span ng-if="published">Published</span>
+                <span ng-if="!published">Not published</span>
+
+                <button class="secondary" data-role="button" ng-if="pkg.published" ng-click="pkg.published = false">Unpublish</button>
+                <button class="primary" data-role="button" ng-if="!pkg.published" ng-click="pkg.published = true">Publish</button>
+            </div>
+        </div>
+
         <div class="form-group">
             <label for="id" class="col-sm-2 control-label">Upload Package</label>
             <div class="col-sm-10">
-                <div class="information" data-role="button" ngf-select ngf-multiple="false" ngf-change="setFile($files)">
+                <div class="information clickable" data-role="button" ngf-select ngf-multiple="false" ngf-change="setFile($files)">
                     <i class="fa fa-file-archive-o"></i>
                     File
                 </div>
@@ -35,79 +45,81 @@
             </div>
         </div>
 
-        <div class="form-group">
-            <label class="col-sm-2 control-label">Screenshots</label>
-            <div class="col-sm-10">
-                <input id="uploadcare" type="hidden" data-images-only="true" data-multiple="true" data-multiple-max="5" />
+        <div ng-show="pkg.id">
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Screenshots</label>
+                <div class="col-sm-10">
+                    <input id="uploadcare" type="hidden" data-images-only="true" data-multiple="true" data-multiple-max="5" />
+                </div>
             </div>
-        </div>
 
-        <div class="form-group">
-            <label class="col-sm-2 control-label">Package Info</label>
-            <div class="col-sm-10">
-                ID: {{pkg.id}}
-                <br/> Name: {{pkg.name}}
-                <br/> Author: {{pkg.author}}
-                <br/> Version: {{pkg.version}}
-                <br/> Architecture: {{pkg.architecture}}
-                <br/> Framework: {{pkg.framework}}
-                <br/> File Size: {{pkg.filesize | bytes}}
-                <br/> Types: {{pkg.types.join(', ')}}
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Package Info</label>
+                <div class="col-sm-10">
+                    ID: {{pkg.id}}
+                    <br/> Name: {{pkg.name}}
+                    <br/> Author: {{pkg.author}}
+                    <br/> Version: {{pkg.version}}
+                    <br/> Architecture: {{pkg.architecture}}
+                    <br/> Framework: {{pkg.framework}}
+                    <br/> File Size: {{pkg.filesize | bytes}}
+                    <br/> Types: {{pkg.types.join(', ')}}
+                </div>
             </div>
-        </div>
 
-        <div class="form-group">
-            <label for="tagline" class="col-sm-2 control-label">Tag Line</label>
-            <div class="col-sm-10">
-                <input type="text" class="form-control" id="tagline" placeholder="Tag Line" ng-model="pkg.tagline" />
+            <div class="form-group">
+                <label for="tagline" class="col-sm-2 control-label">Tag Line</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="tagline" placeholder="Tag Line" ng-model="pkg.tagline" />
+                </div>
             </div>
-        </div>
 
-        <div class="form-group">
-            <label for="description" class="col-sm-2 control-label">Description</label>
-            <div class="col-sm-10">
-                <textarea class="form-control" id="description" placeholder="Description" ng-model="pkg.description" rows="4"></textarea>
+            <div class="form-group">
+                <label for="description" class="col-sm-2 control-label">Description</label>
+                <div class="col-sm-10">
+                    <textarea class="form-control" id="description" placeholder="Description" ng-model="pkg.description" rows="4"></textarea>
+                </div>
             </div>
-        </div>
 
-        <div class="form-group">
-            <label for="changelog" class="col-sm-2 control-label">Changelog</label>
-            <div class="col-sm-10">
-                <textarea class="form-control" id="changelog" placeholder="Changelog" ng-model="pkg.changelog" rows="4"></textarea>
+            <div class="form-group">
+                <label for="changelog" class="col-sm-2 control-label">Changelog</label>
+                <div class="col-sm-10">
+                    <textarea class="form-control" id="changelog" placeholder="Changelog" ng-model="pkg.changelog" rows="4"></textarea>
+                </div>
             </div>
-        </div>
 
-        <div class="form-group">
-            <label for="source" class="col-sm-2 control-label">Source URL</label>
-            <div class="col-sm-10">
-                <input type="text" class="form-control" id="source" placeholder="Source URL" ng-model="pkg.source" />
+            <div class="form-group">
+                <label for="source" class="col-sm-2 control-label">Source URL</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="source" placeholder="Source URL" ng-model="pkg.source" />
+                </div>
             </div>
-        </div>
 
-        <div class="form-group">
-            <label for="license" class="col-sm-2 control-label">License</label>
-            <div class="col-sm-10">
-                <select id="license" class="form-control" ng-options="l for l in licenses" ng-model="pkg.license">
-                    <option value="">Choose a license</option>
-                </select>
+            <div class="form-group">
+                <label for="license" class="col-sm-2 control-label">License</label>
+                <div class="col-sm-10">
+                    <select id="license" class="form-control" ng-options="l for l in licenses" ng-model="pkg.license">
+                        <option value="">Choose a license</option>
+                    </select>
+                </div>
             </div>
-        </div>
 
-        <div class="form-group">
-            <label for="category" class="col-sm-2 control-label">Category</label>
-            <div class="col-sm-10">
-                <select id="category" class="form-control" ng-options="c for c in categories" ng-model="pkg.category">
-                    <option value="">Choose a category</option>
-                </select>
+            <div class="form-group">
+                <label for="category" class="col-sm-2 control-label">Category</label>
+                <div class="col-sm-10">
+                    <select id="category" class="form-control" ng-options="c for c in categories" ng-model="pkg.category">
+                        <option value="">Choose a category</option>
+                    </select>
+                </div>
             </div>
-        </div>
 
-        <div class="form-group" ng-if="users && user.role == 'admin'">
-            <label for="maintainer" class="col-sm-2 control-label">Maintainer</label>
-            <div class="col-sm-10">
-                <select id="maintainer" class="form-control" ng-options="u._id as u.name for u in users" ng-model="pkg.maintainer">
-                    <option value="">Choose a maintainer</option>
-                </select>
+            <div class="form-group" ng-if="users && user.role == 'admin'">
+                <label for="maintainer" class="col-sm-2 control-label">Maintainer</label>
+                <div class="col-sm-10">
+                    <select id="maintainer" class="form-control" ng-options="u._id as u.name for u in users" ng-model="pkg.maintainer">
+                        <option value="">Choose a maintainer</option>
+                    </select>
+                </div>
             </div>
         </div>
     </form>
@@ -127,7 +139,7 @@
             </span>
             <span ng-show="!pkg.id">
                 <i class="fa" ng-class="{'fa-spinner fa-spin': saving, 'fa-plus': !saving}"></i>
-                Create
+                Submit
             </span>
         </button>
     </div>

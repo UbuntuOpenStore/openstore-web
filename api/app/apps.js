@@ -26,6 +26,7 @@ const NEEDS_MANUAL_REVIEW = 'This app needs to be reviewed manually';
 const MALFORMED_MANIFEST = 'Your package manifest is malformed';
 const DUPLICATE_PACKAGE = 'A package with the same name already exists';
 const PERMISSION_DENIED = 'You do not have permission to update this app';
+const BAD_FILE = 'The file must be a click or snap package';
 
 function setup(app) {
     app.get('/api/health', function(req, res) {
@@ -170,6 +171,64 @@ function setup(app) {
         });
     });
 
+    function fileName(req) {
+        let filePath = req.file.path;
+        //Rename the file so click-review doesn't freak out
+        if (req.file.originalname.endsWith('.click')) {
+            filePath += '.click';
+        }
+        else {
+            filePath += '.snap';
+        }
+
+        return filePath;
+    }
+
+    function checkPackage(req) {
+        if (
+            !req.file.originalname.endsWith('.click') &&
+            !req.file.originalname.endsWith('.snap')
+        ) {
+            fs.unlink(req.file.path);
+            throw BAD_FILE;
+        }
+        else {
+            return fs.renameAsync(req.file.path, fileName(req)).then(() => {
+                if (helpers.isAdminOrTrustedUser(req)) {
+                    return false; //Admin & trusted users can upload apps without manual review
+                }
+                else {
+                    return reviewPackage(fileName(req));
+                }
+            }).then((needsManualReview) => {
+                if (needsManualReview) {
+                    throw NEEDS_MANUAL_REVIEW;
+                };
+            });
+        }
+    }
+
+    function updateAndUpload(results) {
+        let pkg = results[0];
+        let parseData = results[1];
+        pkg.download_sha512 = results[2];
+        let req = results[3];
+
+        if (!parseData.name || !parseData.version || !parseData.architecture) {
+            throw MALFORMED_MANIFEST;
+        }
+
+        packages.updateInfo(pkg, parseData, req.body, req.file);
+
+        return upload.uploadPackage(
+            config.smartfile.url,
+            config.smartfile.share,
+            pkg,
+            fileName(req),
+            parseData.icon
+        );
+    }
+
     app.post(['/api/apps', '/api/manage/apps'], passport.authenticate('localapikey', {session: false}), mupload.single('file'), function(req, res) {
         if (!req.file) {
             helpers.error(res, 'No file upload specified');
@@ -178,70 +237,37 @@ function setup(app) {
             !req.file.originalname.endsWith('.click') &&
             !req.file.originalname.endsWith('.snap')
         ) {
-            helpers.error(res, 'The file must be a click or snap package');
+            helpers.error(res, BAD_FILE);
             fs.unlink(req.file.path);
         }
         else {
-            let filePath = req.file.path;
-            //Rename the file so click-review doesn't freak out
-            if (req.file.originalname.endsWith('.click')) {
-                filePath += '.click';
-            }
-            else {
-                filePath += '.snap';
+            if (req.body && !req.body.maintainer) {
+                req.body.maintainer = req.user._id;
             }
 
-            fs.renameAsync(req.file.path, filePath).then(() => {
-                if (helpers.isAdminOrTrustedUser(req)) {
-                    return false; //Admin & trusted users can upload apps without manual review
-                }
-                else {
-                    return reviewPackage(filePath);
-                }
-            }).then((needsManualReview) => {
-                if (needsManualReview) {
-                    throw NEEDS_MANUAL_REVIEW;
-                }
-
-                let parsePromise = parse(filePath, true);
+            checkPackage(req).then(() => {
+                let parsePromise = parse(fileName(req), true);
                 let existingPromise = parsePromise.then((parseData) => {
                     if (!parseData.name || !parseData.version || !parseData.architecture) {
                         throw MALFORMED_MANIFEST;
                     }
 
                     return db.Package.findOne({id: parseData.name});
+                }).then((existing) => {
+                    if (existing) {
+                        throw DUPLICATE_PACKAGE;
+                    }
                 });
 
                 return Promise.all([
+                    new db.Package(),
                     parsePromise,
+                    checksum(fileName(req)),
+                    req,
                     existingPromise,
-                    checksum(filePath),
                 ]);
-            }).then((results) => {
-                let parseData = results[0];
-                let existing = results[1];
-                let checksum = results[2];
-
-                if (existing) {
-                    console.log(existing);
-                    throw DUPLICATE_PACKAGE;
-                }
-
-                if (req.body && !req.body.maintainer) {
-                    req.body.maintainer = req.user._id;
-                }
-
-                let pkg = new db.Package();
-                packages.updateInfo(pkg, parseData, req.body, filePath);
-
-                return upload.uploadPackage(
-                    config.smartfile.url,
-                    config.smartfile.share,
-                    pkg,
-                    filePath,
-                    parseData.icon
-                );
-            }).then((pkg) => {
+            }).then(updateAndUpload)
+            .then((pkg) => {
                 return pkg.save();
             }).then((pkg) => {
                 helpers.success(res, packages.toJson(pkg, req));
@@ -258,12 +284,27 @@ function setup(app) {
     });
 
     app.put(['/api/apps/:id', '/api/manage/apps/:id'], passport.authenticate('localapikey', {session: false}), mupload.single('file'), function(req, res) {
-        /*letpackagePromise = db.Package.findOne({id: req.params.id})
+        let packagePromise = db.Package.findOne({id: req.params.id});
+
+        //TODO verify that the uploaded package is the same
 
         return packagePromise.then((pkg) => {
             if (helpers.isAdminUser(req) || req.user._id == pkg.maintainer) {
                 if (req.file) {
-                    //TODO
+                    return checkPackage(req).then(() => {
+                        let filePath = fileName(req);
+                        let parsePromise = parse(filePath, true);
+
+                        return Promise.all([
+                            packagePromise,
+                            parsePromise,
+                            checksum(filePath),
+                            req,
+                        ]);
+                    }).then(updateAndUpload)
+                    .then((pkg) => {
+                        return pkg.save();
+                    });
                 }
                 else {
                     packages.updateInfo(pkg, null, req.body, null);
@@ -276,14 +317,14 @@ function setup(app) {
         }).then((pkg) => {
             helpers.success(res, packages.toJson(pkg, req));
         }).catch((err) => {
-            if (err == PERMISSION_DENIED || err == NEEDS_MANUAL_REVIEW || err == MALFORMED_MANIFEST) {
+            if (err == PERMISSION_DENIED || err == BAD_FILE || err == NEEDS_MANUAL_REVIEW || err == MALFORMED_MANIFEST) {
                 helpers.error(res, err, 400);
             }
             else {
                 logger.error('Error updating package:', err);
                 helpers.error(res, 'There was an error updating your app, please try again later');
             }
-        });*/
+        });
     });
 }
 

@@ -56,17 +56,6 @@ var api = function($http, Upload) {
                     console.error(data, status);
                 });
             },
-
-            remove: function(key, id) {
-                return $http.delete(process.env.API + '/api/manage/apps/' + id, {
-                    params: {
-                        apikey: key
-                    },
-                    headers: {
-                        'Content-Type': 'application/json'
-                    }
-                });
-            },
         },
 
         users: {
