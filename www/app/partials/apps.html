@@ -6,24 +6,10 @@
         </a>
     </div>
 
-    <div class="row toggle-row">
-        <div class="col-sm-12">
-            <div class="pull-right">
-                <a href="/" data-role="button" class="primary" ng-class="{secondary: type == 'snappy', primary: type != 'snappy'}">
-                    Phone Apps
-                </a>
-
-                <a href="/?type=snappy" data-role="button" ng-class="{primary: type == 'snappy', secondary: type != 'snappy'}">
-                    Snaps
-                </a>
-            </div>
-        </div>
-    </div>
-
     <div class="row app-list" data-role="list">
         <div class="col-sm-4" ng-repeat="app in apps|orderBy:'name'" ng-class="{clear: $index % 3 == 0}">
             <div data-role="listitem" class="listitem">
-                <a class="clickable" ui-sref="app({name: app.id})">
+                <a class="clickable" ng-href="{{getUrl(app)}}">
                     <div class="pull-left">
                         <div class="icon ubuntu-shape">
                             <img ng-src="{{app.icon}}" alt="{{app.name}}" />

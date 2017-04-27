@@ -49,12 +49,7 @@
                         <span class="icon-bar"></span>
                     </button>
 
-                    <a class="navbar-brand ng-cloak" href="/apps" ng-if="$state.current.name == 'app'">
-                        <i class="fa fa-angle-left"></i>
-                        <img src="/img/logo-grey.svg" />
-                        OpenStore
-                    </a>
-                    <a class="navbar-brand" href="/" ng-if="$state.current.name != 'app'">
+                    <a class="navbar-brand" ng-href="{{$state.current.data.back || '/'}}">
                         <i class="fa fa-angle-left" ng-if="$state.current.name != 'main'"></i>
                         <img src="/img/logo-grey.svg" />
                         OpenStore
@@ -68,6 +63,9 @@
                         </li>
                         <li>
                             <a href="/">Browse</a>
+                        </li>
+                        <li>
+                            <a href="/snaps">Browse Snaps</a>
                         </li>
                         <li>
                             <a href="/docs">Docs</a>

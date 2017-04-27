@@ -6,7 +6,7 @@ var appsCtrl = function($scope, $rootScope, $state, api) {
 
     $scope.type = 'click';
     var query = {};
-    if ($state.params.type == 'snappy') {
+    if ($state.is('snaps')) {
         $scope.type = 'snappy';
 
         query = {
@@ -20,12 +20,28 @@ var appsCtrl = function($scope, $rootScope, $state, api) {
             $scope.app = app;
             $scope.tab = 'contents';
             $scope.manifest = false;
+
+            if ($state.is('snap') && $scope.app.types.indexOf('snappy') == -1) {
+                $state.go('app', {name: $scope.app.id});
+            }
+            else if ($state.is('app') && $scope.app.types.indexOf('snappy') > -1) {
+                $state.go('snap', {name: $scope.app.id});
+            }
         });
     }
     else {
         api.apps.getAll(query).then(function(apps) {
             $scope.apps = apps;
         });
+    }
+
+    $scope.getUrl = function(app) {
+        var url = '/app/' + app.id;
+        if (app.types.indexOf('snappy') > -1) {
+            url = '/snap/' + app.id;
+        }
+
+        return url;
     }
 
     $scope.$watch('app', function() {

@@ -26,7 +26,7 @@ angular.module('openstore', [uirouter, uibootstrap, fileupload])
     $locationProvider.html5Mode(true);
 
     $stateProvider.state('main', {
-        url: '/?type',
+        url: '/',
         templateUrl: '/app/partials/apps.html',
         controller: 'appsCtrl'
     })
@@ -50,10 +50,21 @@ angular.module('openstore', [uirouter, uibootstrap, fileupload])
         templateUrl: '/app/partials/apps.html',
         controller: 'appsCtrl'
     })
+    .state('snaps', {
+        url: '/snaps',
+        templateUrl: '/app/partials/apps.html',
+        controller: 'appsCtrl'
+    })
     .state('app', {
         url: '/app/:name',
         templateUrl: '/app/partials/app.html',
         controller: 'appsCtrl'
+    })
+    .state('snap', {
+        url: '/snap/:name',
+        templateUrl: '/app/partials/app.html',
+        controller: 'appsCtrl',
+        data: {back: '/snaps'},
     })
     .state('login', {
         url: '/login',
