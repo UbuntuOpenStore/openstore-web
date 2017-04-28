@@ -65,6 +65,7 @@ var manageAppCtrl = function($scope, $location, $timeout, $state, Upload, info, 
 
     $scope.save = function(pkg) {
         $scope.saving = true;
+        $scope.success = false;
         var data = {
             published: pkg.published,
             category: pkg.category,
@@ -93,11 +94,13 @@ var manageAppCtrl = function($scope, $location, $timeout, $state, Upload, info, 
             console.error(data, status);
             $scope.error = data.message;
             $scope.saving = false;
+            $scope.success = false;
         })
         .success(function(response) {
             $scope.saving = false;
             $scope.file = null;
             $scope.error = null;
+            $scope.success = true;
 
             $location.path('/manage/' + response.data.id);
             //TODO popup message that everything was saved
