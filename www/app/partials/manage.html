@@ -1,11 +1,6 @@
 <div class="manage">
     <div class="row">
         <div class="col-sm-12">
-            <h3>
-                Packages
-                <i class="fa fa-spinner fa-spin" ng-if="loading"></i>
-            </h3>
-
             <div class="pull-right">
                 <!--TODO make an admin menu, this is out of place here-->
                 <a href="/users" data-role="button" class="secondary clickable" ng-if="user.role == 'admin'">
@@ -18,6 +13,11 @@
                     New Package
                 </a>
             </div>
+
+            <h3>
+                Packages
+                <i class="fa fa-spinner fa-spin" ng-if="loading"></i>
+            </h3>
         </div>
     </div>
 
