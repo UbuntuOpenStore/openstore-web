@@ -32,7 +32,7 @@ function setup() {
         res.redirect(301, config.server.host + '/app/openstore.openstore-team')
     });
 
-    app.get('/app/:name', function(req, res) { //For populating opengraph data, etc for bots that don't execute javascript (like twitter cards)
+    app.get(['/app/:name', '/snap/:name'], function(req, res) { //For populating opengraph data, etc for bots that don't execute javascript (like twitter cards)
         if (opengraph.match(req)) {
             res.header('Content-Type', 'text/html');
             db.Package.findOne({id: req.params.name}, function(err, pkg) {
@@ -69,7 +69,7 @@ function setup() {
         }
     });
 
-    app.all(['/', '/docs', '/submit', '/apps', '/manage', '/users', '/manage/:name', '/login'], function(req, res) { //For html5mode on frontend
+    app.all(['/', '/docs', '/submit', '/apps', '/snaps', '/manage', '/users', '/manage/:name', '/login'], function(req, res) { //For html5mode on frontend
         res.sendFile('index.html', {root: __dirname + '/../../www'});
     });
 

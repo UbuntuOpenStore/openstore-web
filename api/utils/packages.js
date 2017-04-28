@@ -272,8 +272,11 @@ function toJson(pkg, req) {
         version: pkg.version ? pkg.version : '',
     };
 
-    if (req.isAuthenticated() && req.user && (req.user.role == 'admin' || req.user.role == 'trusted')) {
-        json.maintainer = pkg.maintainer ? pkg.maintainer : null;
+    if (req.isAuthenticated() && req.user && req.user._id == pkg.maintainer) {
+        if (req.user.role == 'admin' || req.user.role == 'trusted') {
+            json.maintainer = pkg.maintainer ? pkg.maintainer : null;
+        }
+
         json.downloads = pkg.downloads;
         json.totalDownloads = 0;
 

@@ -111,7 +111,7 @@ function setup(app) {
     });
 
     app.get('/api/download/:id/:click', function(req, res) {
-        db.Package.findOne({id: req.params.id, published: trye}).exec(function(err, pkg) {
+        db.Package.findOne({id: req.params.id, published: true}).exec(function(err, pkg) {
             if (err) {
                 helpers.error(res, err);
             }

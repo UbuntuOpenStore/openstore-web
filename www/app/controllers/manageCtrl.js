@@ -16,15 +16,8 @@ var manageCtrl = function($scope, $location, $timeout, info, api) {
     api.auth.me().then(function(user) {
         $scope.user = user;
 
-        if (!$scope.user || ($scope.user.role != 'admin' && $scope.user.role != 'trusted')) {
-            $scope.user = null;
-            $location.path('/auth/logout');
-        }
-        else {
-            $scope.loading = true;
-
-            return refresh();
-        }
+        $scope.loading = true;
+        return refresh();
     });
 };
 
