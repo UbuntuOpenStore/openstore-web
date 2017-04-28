@@ -1,4 +1,5 @@
 var config = {
+    data_dir: process.env.DATA_DIR || '/tmp',
     server: {
         ip: process.env.NODEJS_IP || '0.0.0.0',
         port: process.env.PORT || process.env.NODEJS_PORT || 8080,

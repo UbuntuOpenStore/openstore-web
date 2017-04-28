@@ -18,6 +18,8 @@ const moment = require('moment');
 const crypto = require('crypto');
 const exec = require('child_process').exec;
 const bluebird = require('bluebird');
+const path = require('path');
+const mime = require('mime');
 
 bluebird.promisifyAll(fs);
 const mupload = multer({dest: '/tmp'});
@@ -132,6 +134,36 @@ function setup(app) {
                     }
                 });
             }
+        });
+    });
+
+    app.get(['/api/icon/:version/:id', '/api/icon/:id'], function(req, res) {
+        var id = req.params.id;
+        if (id.indexOf('.png') == (id.length - 4)) {
+            id = id.replace('.png', '');
+        }
+
+        db.Package.findOne({id: id}).then((pkg) => {
+            if (!pkg || !pkg.icon) {
+                throw '404';
+            }
+
+            let filename = `${config.data_dir}/${pkg.version}-${pkg.id}`;
+            if (fs.existsSync(filename)) {
+                return filename;
+            }
+            else {
+                return helpers.download(pkg.icon, filename);
+            }
+        }).then((filename) => {
+            res.setHeader('Content-type', mime.lookup(filename));
+            res.setHeader('Cache-Control', 'public, max-age=2592000'); //30 days
+            fs.createReadStream(filename).pipe(res);
+        }).catch((err) => {
+            logger.error('Failed to download icon', err);
+
+            res.status(404);
+            fs.createReadStream(path.join(__dirname, '../404.png')).pipe(res);
         });
     });
 

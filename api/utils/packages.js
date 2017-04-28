@@ -255,7 +255,7 @@ function toJson(pkg, req) {
         download: download,
         filesize: pkg.filesize ? pkg.filesize : 0,
         framework: pkg.framework ? pkg.framework : '',
-        icon: pkg.icon ? pkg.icon : '',
+        icon: `${config.server.host}/api/icon/${pkg.version}/${pkg.id}.png`,
         id: pkg.id ? pkg.id : '',
         license: pkg.license ? pkg.license : '',
         maintainer_name: pkg.maintainer_name ? pkg.maintainer_name : '',

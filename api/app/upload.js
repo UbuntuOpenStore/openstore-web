@@ -50,7 +50,10 @@ function uploadIcon(url, share, pkg, filepath, callback) {
                     }
                     else {
                         uploadToSmartfile(url, share, filepath, iconname, function(err, url) {
-                            fs.unlink(filepath);
+                            if (iconname.indexOf('404.png') > -1) {
+                                fs.unlink(filepath);
+                            }
+
                             callback(err, url);
                         });
                     }

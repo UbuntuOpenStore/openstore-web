@@ -1,4 +1,9 @@
-var logger = require('../utils/logger');
+'use strict';
+
+const logger = require('../utils/logger');
+
+const fs = require('fs');
+const request = require('request');
 
 function success(res, data, message) {
     res.send({
@@ -73,6 +78,31 @@ function isAdminOrTrustedOwner(req, pkg) {
     return ok;
 }
 
+function download(url, filename) {
+    return new Promise((resolve, reject) => {
+        let r = request(url);
+        r.on('error', (err) => {
+            reject(err);
+        })
+        .on('response', (response) => {
+            if (response.statusCode == 200) {
+                let f = fs.createWriteStream(filename);
+                f.on('error', (err) => {
+                    reject(err);
+                })
+                .on('finish', () => {
+                    resolve(filename);
+                });
+
+                r.pipe(f);
+            }
+            else {
+                reject('Failed to download "' + url + '": ' + response.statusCode);
+            }
+        });
+    });
+}
+
 exports.success = success;
 exports.error = error;
 exports.isAdmin = isAdmin;
@@ -80,3 +110,4 @@ exports.isAdminOrTrusted = isAdminOrTrusted;
 exports.isAdminOrTrustedOwner = isAdminOrTrustedOwner;
 exports.isAdminUser = isAdminUser;
 exports.isAdminOrTrustedUser = isAdminOrTrustedUser;
+exports.download = download;
