@@ -28,4 +28,28 @@
             </div>
         </div>
     </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <nav class="center">
+                <ul class="pagination">
+                    <li ng-class="{disabled: page <= 0}">
+                        <a class="clickable" ng-click="setPage(page - 1)">
+                            <span>&laquo;</span>
+                        </a>
+                    </li>
+
+                    <li ng-repeat="p in pages track by $index" ng-class="{active: page == $index}">
+                        <a class="clickable" ng-click="setPage($index)" ng-bind="$index + 1"></a>
+                    </li>
+
+                    <li ng-class="{disabled: page >= (pages.length - 1)}">
+                        <a class="clickable" ng-click="setPage(page + 1)">
+                            <span>&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
 </div>

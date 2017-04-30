@@ -222,3 +222,7 @@ body {
     height: 20px;
     margin-top: -3px;
 }
+
+.center {
+  text-align: center;
+}

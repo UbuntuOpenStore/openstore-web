@@ -30,6 +30,7 @@ const DUPLICATE_PACKAGE = 'A package with the same name already exists';
 const PERMISSION_DENIED = 'You do not have permission to update this app';
 const BAD_FILE = 'The file must be a click or snap package';
 const WRONG_PACKAGE = 'The uploaded package does not match the name of the package you are editing';
+const APP_NOT_FOUND = 'App not found';
 
 function setup(app) {
     app.get('/api/health', function(req, res) {
@@ -38,37 +39,32 @@ function setup(app) {
         });
     });
 
-    app.get(['/api/apps', '/api/apps/:id', '/repo/repolist.json'], function(req, res) {
-        var query = {published: true};
+    app.get(['/api/apps', '/repo/repolist.json', '/api/v1/apps'], function(req, res) {
+        let query = {published: true};
 
-        if (req.params.id) {
-            query.id = req.params.id;
+        if (req.query.types && Array.isArray(req.query.types)) {
+            query['types'] = {
+                $in: req.query.types,
+            };
+        }
+        else if (req.query.types) {
+            query['types'] = req.query.types;
         }
         else {
-            if (req.query.types && Array.isArray(req.query.types)) {
-                query['types'] = {
-                    $in: req.query.types,
-                };
-            }
-            else if (req.query.types) {
-                query['types'] = req.query.types;
-            }
-            else {
-                query['types'] = {
-                    $in: ['app', 'webapp', 'scope'],
-                };
-            }
+            query['types'] = {
+                $in: ['app', 'webapp', 'scope'],
+            };
         }
 
         if (req.query.frameworks) {
-            var frameworks = req.query.frameworks.split(',');
+            let frameworks = req.query.frameworks.split(',');
             query.framework = {
                 $in: frameworks
             };
         }
 
         if (req.query.architecture) {
-            var architectures = [req.query.architecture];
+            let architectures = [req.query.architecture];
             if (req.query.architecture != 'all') {
                 architectures.push('all');
             }
@@ -79,38 +75,94 @@ function setup(app) {
             ];
         }
 
-        db.Package.find(query).sort('name').exec(function(err, pkgs) {
-            if (err) {
-                helpers.error(res, err);
+        db.Package.count(query).then((count) => {
+            let findQuery = db.Package.find(query);
+            findQuery.sort('name');
+            if (req.query.limit) {
+                findQuery.limit(parseInt(req.query.limit));
+            }
+
+            if (req.query.skip) {
+                findQuery.skip(parseInt(req.query.skip));
+            }
+
+            return Promise.all([
+                findQuery,
+                count,
+            ]);
+        }).then((results) => {
+            let pkgs = results[0];
+            let count = results[1];
+
+            let formatted = [];
+            pkgs.forEach(function(pkg) {
+                formatted.push(packages.toJson(pkg, req));
+            });
+
+            if (req.originalUrl == '/repo/repolist.json') {
+                res.send({
+                    success: true,
+                    message: null,
+                    packages: formatted,
+                });
+            }
+            else if (req.originalUrl.substring(0, 12) == '/api/v1/apps') {
+                helpers.success(res, {
+                    count: count,
+                    packages: formatted,
+                });
             }
             else {
-                var result = [];
-                pkgs.forEach(function(pkg) {
-                    result.push(packages.toJson(pkg, req));
-                });
-
-                if (req.params.id) {
-                    if (result.length > 0) {
-                        result = result[0];
-                    }
-                    else {
-                        return helpers.error(res, 'App not found', 404);
-                    }
-                }
-
-                if (req.originalUrl == '/repo/repolist.json') {
-                    res.send({
-                        success: true,
-                        message: null,
-                        packages: result,
-                    });
-                }
-                else {
-                    helpers.success(res, result);
-                }
+                helpers.success(res, formatted);
             }
-        });
+        }).catch((err) => {
+            logger.error('Error fetching packages:', err);
+            helpers.error(res, 'Could not fetch app list at this time');
+        });;
     });
+
+    app.get(['/api/apps/:id', '/api/v1/apps/:id'], function(req, res) {
+        let query = {
+            published: true,
+            id: req.params.id,
+        };
+
+        if (req.query.frameworks) {
+            let frameworks = req.query.frameworks.split(',');
+            query.framework = {
+                $in: frameworks
+            };
+        }
+
+        if (req.query.architecture) {
+            let architectures = [req.query.architecture];
+            if (req.query.architecture != 'all') {
+                architectures.push('all');
+            }
+
+            query.$or = [
+                {architecture: {$in: architectures}},
+                {architectures: {$in: architectures}},
+            ];
+        }
+
+        db.Package.findOne(query).then((pkg) => {
+            if (!pkg) {
+                throw APP_NOT_FOUND;
+            }
+
+            helpers.success(res, packages.toJson(pkg, req));
+        }).catch((err) => {
+            if (err == APP_NOT_FOUND) {
+                helpers.error(res, err, 404);
+            }
+            else {
+                logger.error('Error fetching packages:', err);
+                helpers.error(res, 'Could not fetch app list at this time');
+            }
+        });;
+    });
+
 
     app.get('/api/download/:id/:click', function(req, res) {
         db.Package.findOne({id: req.params.id, published: true}).exec(function(err, pkg) {
@@ -167,7 +219,7 @@ function setup(app) {
         });
     });
 
-    app.get('/api/manage/apps', passport.authenticate('localapikey', {session: false}), function(req, res) {
+    app.get('/api/v1/manage/apps', passport.authenticate('localapikey', {session: false}), function(req, res) {
         let query = null;
         if (helpers.isAdminUser(req)) {
             query = db.Package.find({});
@@ -176,6 +228,7 @@ function setup(app) {
             query = db.Package.find({maintainer: req.user._id});
         }
 
+        //TODO paging
         query.sort('name').then((pkgs) => {
             let result = pkgs.map((pkg) => {
                 return packages.toJson(pkg, req);
@@ -188,7 +241,7 @@ function setup(app) {
         });
     });
 
-    app.get('/api/manage/apps/:id', passport.authenticate('localapikey', {session: false}), function(req, res) {
+    app.get('/api/v1/manage/apps/:id', passport.authenticate('localapikey', {session: false}), function(req, res) {
         let query = null;
         if (helpers.isAdminUser(req)) {
             query = db.Package.findOne({id: req.params.id});
@@ -266,7 +319,7 @@ function setup(app) {
         );
     }
 
-    app.post(['/api/apps', '/api/manage/apps'], passport.authenticate('localapikey', {session: false}), mupload.single('file'), function(req, res) {
+    app.post(['/api/apps', '/api/v1/manage/apps'], passport.authenticate('localapikey', {session: false}), mupload.single('file'), function(req, res) {
         if (!req.file) {
             helpers.error(res, 'No file upload specified');
         }
@@ -320,7 +373,7 @@ function setup(app) {
         }
     });
 
-    app.put(['/api/apps/:id', '/api/manage/apps/:id'], passport.authenticate('localapikey', {session: false}), mupload.single('file'), function(req, res) {
+    app.put(['/api/apps/:id', '/api/v1/manage/apps/:id'], passport.authenticate('localapikey', {session: false}), mupload.single('file'), function(req, res) {
         let packagePromise = db.Package.findOne({id: req.params.id});
 
         return packagePromise.then((pkg) => {

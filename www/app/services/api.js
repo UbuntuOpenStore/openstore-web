@@ -14,29 +14,29 @@ var api = function($http, Upload) {
 
         apps: {
             getAll: function(query) {
-                return $http.get(process.env.API + '/api/apps', {
+                return $http.get(process.env.API + '/api/v1/apps', {
                     params: query,
                 }).then(success);
             },
 
             get: function(id) {
-                return $http.get(process.env.API + '/api/apps/' + id).then(success);
+                return $http.get(process.env.API + '/api/v1/apps/' + id).then(success);
             },
         },
 
         manage: {
             getAll: function(key) {
-                return $http.get(process.env.API + '/api/manage/apps' + '?apikey=' + key).then(success);
+                return $http.get(process.env.API + '/api/v1/manage/apps' + '?apikey=' + key).then(success);
             },
 
             get: function(key, id) {
-                return $http.get(process.env.API + '/api/manage/apps/' + id + '?apikey=' + key).then(success);
+                return $http.get(process.env.API + '/api/v1/manage/apps/' + id + '?apikey=' + key).then(success);
             },
 
             create: function(key, data, file) {
                 return Upload.upload({
                     method: 'POST',
-                    url: process.env.API + '/api/manage/apps?apikey=' + key,
+                    url: process.env.API + '/api/v1/manage/apps?apikey=' + key,
                     fields: data,
                     file: file,
                 })
@@ -48,7 +48,7 @@ var api = function($http, Upload) {
             update: function(key, id, data, file) {
                 return Upload.upload({
                     method: 'PUT',
-                    url: process.env.API + '/api/manage/apps/' + id + '?apikey=' + key,
+                    url: process.env.API + '/api/v1/manage/apps/' + id + '?apikey=' + key,
                     fields: data,
                     file: file,
                 })

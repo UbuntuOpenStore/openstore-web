@@ -5,13 +5,41 @@ var appsCtrl = function($scope, $rootScope, $state, api) {
     $scope.manifest = false;
 
     $scope.type = 'click';
-    var query = {};
+    $scope.query = {
+        limit: 1,
+        skip: 0,
+    };
+    $scope.pages = [];
+    $scope.page = 0;
+    $scope.setPage = function(page) {
+        if (page < 0) {
+            page = 0;
+        }
+        else if (page > ($scope.pages.length - 1)) {
+            page = $scope.pages.length - 1;
+        }
+
+        $scope.page = page;
+
+        $scope.query.skip = page * $scope.query.limit;
+        refresh();
+    };
+
     if ($state.is('snaps')) {
         $scope.type = 'snappy';
 
-        query = {
+        $scope.query = {
             types: 'snappy',
         };
+    }
+
+    function refresh() {
+        api.apps.getAll($scope.query).then(function(data) {
+            $scope.count = data.count;
+            $scope.apps = data.packages;
+
+            $scope.pages = Array(Math.ceil(data.count / $scope.query.limit));
+        });
     }
 
     //TODO split app into it's own controller
@@ -30,9 +58,7 @@ var appsCtrl = function($scope, $rootScope, $state, api) {
         });
     }
     else {
-        api.apps.getAll(query).then(function(apps) {
-            $scope.apps = apps;
-        });
+        refresh();
     }
 
     $scope.getUrl = function(app) {
