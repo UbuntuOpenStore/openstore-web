@@ -8,12 +8,12 @@ const exec = require('child_process').exec;
 function reviewPackage(file) {
     return new Promise((resolve, reject) => {
         let command = `${config.clickreview.command} --json ${file}`;
-        exec(command, {PYTHONPATH: config.clickreview.pythonpath}, function callback(err, stdout, stderr) {
+        exec(command, {env: {PYTHONPATH: config.clickreview.pythonpath}}, function callback(err, stdout, stderr) {
             if (err) {
                 logger.error('Error processing package for review: ' + err);
+                logger.error(`Command: ${command}, PYTHONPATH: ${config.clickreview.pythonpath}`);
                 logger.error(stdout);
                 logger.error(stderr);
-                logger.error(`Command: ${command}, PYTHONPATH: ${config.clickreview.pythonpath}`);
                 resolve(true);
             }
             else {
