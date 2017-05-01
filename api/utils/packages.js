@@ -145,22 +145,7 @@ function updateInfo(pkg, data, body, file, url) {
 
         if (body.maintainer !== undefined) {
             pkg.maintainer = body.maintainer;
-
-            /*db.User.findOne({_id: pkg.maintainer}, function(err, user) {
-                if (err) {
-                    logger.error(err);
-                    pkg.maintainer_name = '';
-                }
-                else {
-                    pkg.maintainer_name = user.name;
-                }
-
-                callback(pkg);
-            })*/
         }
-        /*else {
-            callback(pkg);
-        }*/
     }
     else {
         pkg.description = pkg.description ? pkg.description : '';
@@ -181,8 +166,6 @@ function updateInfo(pkg, data, body, file, url) {
           allowedTags: [],
           allowedAttributes: [],
         }).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/\r/g, '');
-
-        //callback(pkg);
     }
 
     return pkg;
