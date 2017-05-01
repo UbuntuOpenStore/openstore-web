@@ -6,7 +6,7 @@ var appsCtrl = function($scope, $rootScope, $state, api) {
 
     $scope.type = 'click';
     $scope.query = {
-        limit: 1,
+        limit: 30,
         skip: 0,
     };
     $scope.pages = [];
