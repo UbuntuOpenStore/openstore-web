@@ -241,7 +241,6 @@ function toJson(pkg, req) {
         icon: `${config.server.host}/api/icon/${pkg.version}/${pkg.id}.png`,
         id: pkg.id ? pkg.id : '',
         license: pkg.license ? pkg.license : '',
-        maintainer_name: pkg.maintainer_name ? pkg.maintainer_name : '',
         manifest: pkg.manifest ? pkg.manifest : {},
         name: pkg.name ? pkg.name : '',
         package: pkg.package ? pkg.package : '',
@@ -255,7 +254,7 @@ function toJson(pkg, req) {
         version: pkg.version ? pkg.version : '',
     };
 
-    if (req.isAuthenticated() && req.user && req.user._id == pkg.maintainer) {
+    if (req.isAuthenticated() && req.user && (req.user._id == pkg.maintainer || req.user.role == 'admin')) {
         if (req.user.role == 'admin' || req.user.role == 'trusted') {
             json.maintainer = pkg.maintainer ? pkg.maintainer : null;
         }
