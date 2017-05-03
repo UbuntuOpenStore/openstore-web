@@ -1,3 +1,5 @@
+'use strict';
+
 var db = require('../db');
 var config = require('./config');
 var logger = require('./logger');
@@ -56,7 +58,12 @@ function updateInfo(pkg, data, body, file, url) {
             }
 
             if (Object.keys(app.scopeIni).length > 0) {
-                hook.scope = app.scopeIni;
+                hook.scope = {};
+
+                for (let key in app.scopeIni) {
+                    //Remove any ini properties with a `.` as mongo will reject them
+                    hook.scope[key.replace('.', '__')] = app.scopeIni[key];
+                }
             }
 
             manifest.hooks[app.name] = hook;
