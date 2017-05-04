@@ -1,0 +1,21 @@
+{
+    "highlighted_id": "com.ubuntu.telegram",
+    "categories": [
+        {
+            "name": "Hack with us",
+            "tagline": "Best tools for your Ubuntu phone",
+            "referral": "",
+            "ids": ["com.ubuntu.terminal", "ut-tweak-tool.sverzegnassi", "com.ubuntu.filemanager", "qmlviewer.timsueberkrueb", "seabass.mikhael", "wifiscanner.mzanetti"]
+        }, {
+            "name": "Games",
+            "tagline": "Our preferred games",
+            "referral": "Games",
+            "ids": ["fishyshooter.briketa", "fishtank.bhdouglass"]
+        }, {
+            "name": "Communication Apps",
+            "tagline": "",
+            "referral": "Communication",
+            "ids": ["vuk.maxvanceffer", "loquiim.nfsprodriver"]
+        }
+    ]
+}

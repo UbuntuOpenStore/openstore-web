@@ -9,6 +9,7 @@ const upload = require('./upload');
 const parse = require('../utils/click-parser-async');
 const checksum = require('../utils/checksum');
 const reviewPackage = require('../utils/review-package');
+const discover = require('./discover.json');
 
 const passport = require('passport');
 const multer  = require('multer');
@@ -36,6 +37,10 @@ function setup(app) {
         helpers.success(res, {
             id: cluster.worker.id
         });
+    });
+
+    app.get(['/api/apps/discover', '/api/v1/apps/discover'], function(req, res) {
+        helpers.success(res, discover);
     });
 
     app.get(['/api/apps', '/repo/repolist.json', '/api/v1/apps'], function(req, res) {
