@@ -4,6 +4,7 @@ var request = require('request');
 var fs = require('fs');
 var path = require('path');
 var gm = require('gm').subClass({imageMagick: true});
+var jimp = require('jimp');
 
 function uploadToSmartfile(url, share, filepath, filename, callback) {
     request.post({
@@ -39,12 +40,12 @@ function uploadIcon(url, share, pkg, filepath, callback) {
     var iconname = pkg.id + path.extname(filepath);
 
     if (path.extname(filepath) == '.png') {
-        lwip.open(filepath, function(err, image) {
+        jimp.read(filepath, function(err, image) {
             if (err) {
                 callback(err);
             }
             else {
-                image.batch().resize(92, 92).writeFile(filepath, function(err) {
+                image.resize(92, 92).write(filepath, function(err) {
                     if (err) {
                         callback(err);
                     }
