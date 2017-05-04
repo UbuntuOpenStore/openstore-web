@@ -8,7 +8,7 @@
   "dependencies": {
     "angular": "^1.5.2",
     "angular-ui-bootstrap": "^1.2.5",
-    "angular-ui-router": "^0.2.18",
+    "angular-ui-router": "^0.3.2",
     "bootbox": "^4.4.0",
     "bootstrap": "^3.3.6",
     "font-awesome": "^4.5.0",
