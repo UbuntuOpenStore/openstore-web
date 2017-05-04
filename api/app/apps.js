@@ -14,7 +14,6 @@ const passport = require('passport');
 const multer  = require('multer');
 const cluster = require('cluster');
 const fs = require('fs');
-const moment = require('moment');
 const crypto = require('crypto');
 const exec = require('child_process').exec;
 const bluebird = require('bluebird');

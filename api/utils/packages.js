@@ -1,14 +1,21 @@
 'use strict';
 
-var db = require('../db');
-var config = require('./config');
-var logger = require('./logger');
-var request = require('request');
-var parse = require('click-parser');
-var fs = require('fs');
-var sanitizeHtml = require('sanitize-html');
+const db = require('../db');
+const config = require('./config');
+const logger = require('./logger');
+const request = require('request');
+const parse = require('click-parser');
+const fs = require('fs');
+const sanitizeHtml = require('sanitize-html');
+const moment = require('moment');
+
 
 function updateInfo(pkg, data, body, file, url) {
+    pkg.updated_date = moment().toISOString();
+    if (!pkg.published_date) {
+        pkg.published_date = moment().toISOString();
+    }
+
     if (data) {
         var manifest = {
             architecture: data.architecture,
@@ -252,12 +259,14 @@ function toJson(pkg, req) {
         name: pkg.name ? pkg.name : '',
         package: pkg.package ? pkg.package : '',
         permissions: pkg.permissions ? pkg.permissions: [],
+        published_date: pkg.published_date ? pkg.published_date : '',
         published: !!pkg.published,
         screenshots: pkg.screenshots ? pkg.screenshots : [],
         snappy_meta: pkg.snappy_meta ? pkg.snappy_meta : {},
         source: pkg.source ? pkg.source : '',
         tagline: pkg.tagline ? pkg.tagline : '',
         types: pkg.types ? pkg.types : [],
+        updated_date: pkg.published_date ? pkg.updated_date : '',
         version: pkg.version ? pkg.version : '',
     };
 
