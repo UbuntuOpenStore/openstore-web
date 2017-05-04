@@ -43,6 +43,34 @@ function setup(app) {
         helpers.success(res, discover);
     });
 
+    app.get(['/api/categories', '/api/v1/categories'], function(req, res) {
+        //TODO cache the aggregation
+        db.Package.aggregate([
+            {
+                $group: {
+                    _id: '$category',
+                },
+            },  {
+                $sort: {'_id': 1},
+            }
+        ], (err, data) => {
+            if (err) {
+                logger.error('Error fetching categories:', err);
+                helpers.error(res, 'Could not fetch category list at this time');
+            }
+            else {
+                let categories = [];
+                data.forEach((category) => {
+                    if (category._id) {
+                        categories.push(category._id);
+                    }
+                });
+
+                helpers.success(res, categories);
+            }
+        });
+    });
+
     app.get(['/api/apps', '/repo/repolist.json', '/api/v1/apps'], function(req, res) {
         let query = {published: true};
 
