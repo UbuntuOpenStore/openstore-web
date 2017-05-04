@@ -9,13 +9,9 @@
 
     <form class="form-horizontal" role="form" ng-show="!loading">
         <div class="form-group" ng-if="pkg.id">
-            <label for="id" class="col-sm-2 control-label">Status</label>
+            <label for="id" class="col-sm-2 control-label">Publish</label>
             <div class="col-sm-10">
-                <button class="secondary" data-role="button" ng-if="pkg.published" ng-click="pkg.published = false">Unpublish</button>
-                <button class="primary" data-role="button" ng-if="!pkg.published" ng-click="pkg.published = true">Publish</button>
-
-                <span ng-if="!published">Not published</span>
-                <span ng-if="published">Published</span>
+                <i class="clickable toggle fa fa-3x" ng-class="{'fa-toggle-off': !pkg.published, 'fa-toggle-on': pkg.published}" ng-click="pkg.published = !pkg.published"></i>
             </div>
         </div>
 
