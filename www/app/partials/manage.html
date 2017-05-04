@@ -18,6 +18,13 @@
                 Packages
                 <i class="fa fa-spinner fa-spin" ng-if="loading"></i>
             </h3>
+
+            <div class="input-group search-box">
+                <input type="text" ng-model="search" class="form-control search" />
+                <span class="input-group-addon">
+                    <i class="fa fa-search"></i>
+                </span>
+            </div>
         </div>
     </div>
 
@@ -35,7 +42,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr ng-repeat="pkg in packages|orderBy:'name'">
+                    <tr ng-repeat="pkg in filteredPackages|orderBy:'name'">
                         <td>
                             <a ng-href="/manage/{{pkg.id}}" class="clickable">
                                 <div class="icon ubuntu-shape">
