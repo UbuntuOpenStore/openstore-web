@@ -102,7 +102,12 @@
                     <br/> Architecture: {{pkg.architecture}}
                     <br/> Framework: {{pkg.framework}}
                     <br/> File Size: {{pkg.filesize | bytes}}
-                    <br/> Type(s): {{pkg.types.join(', ')}}
+                    <br/>
+                    <span ng-if="pkg.types.length != 1">Types</span>
+                    <span ng-if="pkg.types.length == 1">Type</span>
+                    : {{pkg.types.join(', ')}}
+
+                    <br/> Public Link: <a ng-href="{{getUrl(pkg)}}" target="_blank">{{getUrl(pkg)}}</a>
                 </div>
             </div>
 

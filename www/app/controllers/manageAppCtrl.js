@@ -63,6 +63,10 @@ var manageAppCtrl = function($scope, $location, $timeout, $state, Upload, info, 
         });
     });
 
+    $scope.getUrl = function() {
+        return $location.absUrl().replace('manage', 'app');
+    }
+
     $scope.save = function(pkg) {
         $scope.saving = true;
         $scope.success = false;
