@@ -1,3 +1,13 @@
+'use strict';
+
+const fs = require('fs');
+
+//Allow the smartfile api key/pass to be set when testing locally
+let configFile = {};
+if (fs.existsSync(__dirname + '/config.json')) {
+    configFile = JSON.parse(fs.readFileSync(__dirname + '/config.json'));
+}
+
 var config = {
     data_dir: process.env.DATA_DIR || '/tmp',
     server: {
@@ -12,8 +22,8 @@ var config = {
         database: process.env.MONGODB_DB || 'openappstore',
     },
     smartfile: {
-        key: process.env.SMARTFILE_KEY || '',
-        password: process.env.SMARTFILE_PASS || '',
+        key: configFile.SMARTFILE_KEY || process.env.SMARTFILE_KEY || '',
+        password: configFile.SMARTFILE_PASS || process.env.SMARTFILE_PASS || '',
         url: process.env.SMARTFILE_URL || 'https://app.smartfile.com/api/2/path/data/test/',
         share: process.env.SMARTFILE_SHARE || 'https://file.ac/MjgQmGAVzEU/',
     },

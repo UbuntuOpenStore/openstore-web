@@ -3,3 +3,4 @@ npm-debug.log
 .vagrant
 bundle.js
 scripts
+config.json

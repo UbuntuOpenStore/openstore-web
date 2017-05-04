@@ -1,5 +1,4 @@
 var config = require('../utils/config');
-var lwip = require('lwip');
 var request = require('request');
 var fs = require('fs');
 var path = require('path');
