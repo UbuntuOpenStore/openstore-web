@@ -222,7 +222,7 @@ function fixMaintainer() {
                             logger.info(pkg.id + ' ' + pkg.maintainer_name);
                         }
                         else {
-                            logger.warning(pkg.id + ' has no maintainer');
+                            logger.error(pkg.id + ' has no maintainer');
                         }
                     });
                 }
