@@ -84,7 +84,7 @@ function setup(app) {
         }
         else {
             query['types'] = {
-                $in: ['app', 'webapp', 'scope'],
+                $in: ['app', 'webapp', 'scope', 'webapp+'],
             };
         }
 

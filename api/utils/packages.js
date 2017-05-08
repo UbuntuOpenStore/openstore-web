@@ -186,7 +186,7 @@ function updateInfo(pkg, data, body, file, url) {
 }
 
 function reparse() {
-    db.Package.find({'$or': [{deleted: false}, {deleted: {'$exists': false}}]}, function(err, pkgs) {
+    db.Package.find({}, function(err, pkgs) {
         if (err) {
             logger.error(err);
         }

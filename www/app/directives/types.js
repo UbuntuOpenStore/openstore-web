@@ -11,6 +11,7 @@ var types = function() {
 				app: 'App',
 				scope: 'Scope',
 				webapp: 'Web App',
+				'webapp+': 'Web App+',
 				snappy: 'Snappy App',
 			};
 		}
