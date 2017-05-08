@@ -340,15 +340,16 @@ function setup(app) {
             throw WRONG_PACKAGE;
         }
 
-        packages.updateInfo(pkg, parseData, req.body, req.file);
+        return packages.updateInfo(pkg, parseData, req.body, req.file).then((pkg) => {
+            return upload.uploadPackage(
+                config.smartfile.url,
+                config.smartfile.share,
+                pkg,
+                fileName(req),
+                parseData.icon
+            );
+        });
 
-        return upload.uploadPackage(
-            config.smartfile.url,
-            config.smartfile.share,
-            pkg,
-            fileName(req),
-            parseData.icon
-        );
     }
 
     app.post(['/api/apps', '/api/v1/manage/apps'], passport.authenticate('localapikey', {session: false}), mupload.single('file'), function(req, res) {
@@ -421,19 +422,17 @@ function setup(app) {
                             checksum(filePath),
                             req,
                         ]);
-                    }).then(updateAndUpload)
-                    .then((pkg) => {
-                        return pkg.save();
-                    });
+                    }).then(updateAndUpload);
                 }
                 else {
-                    packages.updateInfo(pkg, null, req.body, null);
-                    return pkg.save();
+                    return packages.updateInfo(pkg, null, req.body, null);
                 }
             }
             else {
                 throw PERMISSION_DENIED;
             }
+        }).then((pkg) => {
+            return pkg.save();
         }).then((pkg) => {
             helpers.success(res, packages.toJson(pkg, req));
         }).catch((err) => {

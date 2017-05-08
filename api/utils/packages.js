@@ -11,178 +11,224 @@ const moment = require('moment');
 
 
 function updateInfo(pkg, data, body, file, url) {
-    pkg.updated_date = moment().toISOString();
-    if (!pkg.published_date) {
-        pkg.published_date = moment().toISOString();
-    }
+    let maintainer = body ? body.maintainer : pkg.maintainer;
+    return db.User.findOne({_id: maintainer}).then((user) => {
+        if (user) {
+            pkg.maintainer_name = user.name ? user.name : user.username;
+        }
 
-    if (data) {
-        var manifest = {
-            architecture: data.architecture,
-            changelog: data.changelog,
-            description: data.description,
-            framework: data.framework,
-            hooks: {},
-            maintainer: data.maintainer,
-            name: data.name,
-            title: data.title,
-            version: data.version,
-        };
+        pkg.updated_date = moment().toISOString();
+        if (!pkg.published_date) {
+            pkg.published_date = moment().toISOString();
+        }
 
-        data.apps.forEach(function(app) {
-            var hook = {};
+        if (data) {
+            var manifest = {
+                architecture: data.architecture,
+                changelog: data.changelog,
+                description: data.description,
+                framework: data.framework,
+                hooks: {},
+                maintainer: data.maintainer,
+                name: data.name,
+                title: data.title,
+                version: data.version,
+            };
 
-            if (Object.keys(app.apparmor).length > 0) {
-                hook.apparmor = app.apparmor;
-            }
+            data.apps.forEach(function(app) {
+                var hook = {};
 
-            if (Object.keys(app.desktop).length > 0) {
-                hook.desktop = app.desktop;
-            }
-
-            if (Object.keys(app.contentHub).length > 0) {
-                hook['content-hub'] = app.contentHub;
-            }
-
-            if (Object.keys(app.urlDispatcher).length > 0) {
-                hook.urls = app.urlDispatcher;
-            }
-
-            if (Object.keys(app.accountService).length > 0) {
-                hook['account-application'] = app.accountService;
-            }
-
-            if (Object.keys(app.accountApplication).length > 0) {
-                hook['account-service'] = app.accountApplication;
-            }
-
-            if (Object.keys(app.pushHelper).length > 0) {
-                hook['push-helper'] = app.pushHelper;
-            }
-
-            if (Object.keys(app.webappProperties).length > 0) {
-                hook['webapp-properties'] = app.webappProperties;
-            }
-
-            if (Object.keys(app.scopeIni).length > 0) {
-                hook.scope = {};
-
-                for (let key in app.scopeIni) {
-                    //Remove any ini properties with a `.` as mongo will reject them
-                    hook.scope[key.replace('.', '__')] = app.scopeIni[key];
+                if (Object.keys(app.apparmor).length > 0) {
+                    hook.apparmor = app.apparmor;
                 }
+
+                if (Object.keys(app.desktop).length > 0) {
+                    hook.desktop = app.desktop;
+                }
+
+                if (Object.keys(app.contentHub).length > 0) {
+                    hook['content-hub'] = app.contentHub;
+                }
+
+                if (Object.keys(app.urlDispatcher).length > 0) {
+                    hook.urls = app.urlDispatcher;
+                }
+
+                if (Object.keys(app.accountService).length > 0) {
+                    hook['account-application'] = app.accountService;
+                }
+
+                if (Object.keys(app.accountApplication).length > 0) {
+                    hook['account-service'] = app.accountApplication;
+                }
+
+                if (Object.keys(app.pushHelper).length > 0) {
+                    hook['push-helper'] = app.pushHelper;
+                }
+
+                if (Object.keys(app.webappProperties).length > 0) {
+                    hook['webapp-properties'] = app.webappProperties;
+                }
+
+                if (Object.keys(app.scopeIni).length > 0) {
+                    hook.scope = {};
+
+                    for (let key in app.scopeIni) {
+                        //Remove any ini properties with a `.` as mongo will reject them
+                        hook.scope[key.replace('.', '__')] = app.scopeIni[key];
+                    }
+                }
+
+                manifest.hooks[app.name] = hook;
+            });
+
+            pkg.architecture = data.architecture;
+            pkg.architectures = data.architecture;
+            pkg.author = data.maintainer;
+            pkg.framework = data.framework;
+            pkg.id = data.name;
+            pkg.manifest = manifest;
+            pkg.name = data.title;
+            pkg.types = data.types;
+            pkg.version = data.version;
+            pkg.snappy_meta = data.snappy_meta;
+
+            //Don't overwrite the description if it already exists
+            pkg.description = pkg.description ? pkg.description : data.description;
+
+            //Don't overwrite the tagline if it already exists
+            pkg.tagline = pkg.tagline ? pkg.tagline : data.description;
+        }
+
+        if (file && file.size) {
+            pkg.filesize = file.size;
+        }
+
+        if (url) {
+            pkg.package = url;
+        }
+
+        if (body) {
+            if (body.published !== undefined) {
+                pkg.published = (body.published == 'true');
             }
 
-            manifest.hooks[app.name] = hook;
-        });
+            if (body.category || body.category === '') {
+                pkg.category = body.category;
+            }
 
-        pkg.architecture = data.architecture;
-        pkg.architectures = data.architecture;
-        pkg.author = data.maintainer;
-        pkg.framework = data.framework;
-        pkg.id = data.name;
-        pkg.manifest = manifest;
-        pkg.name = data.title;
-        pkg.types = data.types;
-        pkg.version = data.version;
-        pkg.snappy_meta = data.snappy_meta;
+            if (body.changelog || body.changelog === '') {
+                pkg.changelog = body.changelog;
+            }
 
-        //Don't overwrite the description if it already exists
-        pkg.description = pkg.description ? pkg.description : data.description;
+            if (body.description || body.description === '') {
+                pkg.description = body.description;
+            }
 
-        //Don't overwrite the tagline if it already exists
-        pkg.tagline = pkg.tagline ? pkg.tagline : data.description;
-    }
+            if (body.license || body.license === '') {
+                pkg.license = body.license;
+            }
 
-    if (file && file.size) {
-        pkg.filesize = file.size;
-    }
+            if (body.source || body.source === '') {
+                pkg.source = body.source;
+            }
 
-    if (url) {
-        pkg.package = url;
-    }
+            if (body.tagline || body.tagline === '') {
+                pkg.tagline = body.tagline;
+            }
 
-    if (body) {
-        if (body.published !== undefined) {
-            pkg.published = (body.published == 'true');
-        }
+            if (body.screenshots) {
+                pkg.screenshots = body.screenshots;
+            }
+            else {
+                pkg.screenshots = [];
+            }
 
-        if (body.category || body.category === '') {
-            pkg.category = body.category;
-        }
+            pkg.description = pkg.description ? pkg.description : '';
+            pkg.changelog = pkg.changelog ? pkg.changelog : '';
+            pkg.tagline = pkg.tagline ? pkg.tagline : '';
 
-        if (body.changelog || body.changelog === '') {
-            pkg.changelog = body.changelog;
-        }
+            pkg.description = sanitizeHtml(pkg.description, {
+              allowedTags: [],
+              allowedAttributes: [],
+            }).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/\r/g, '');
 
-        if (body.description || body.description === '') {
-            pkg.description = body.description;
-        }
+            pkg.changelog = sanitizeHtml(pkg.changelog, {
+              allowedTags: [],
+              allowedAttributes: [],
+            }).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/\r/g, '');
 
-        if (body.license || body.license === '') {
-            pkg.license = body.license;
-        }
+            pkg.tagline = sanitizeHtml(pkg.tagline, {
+              allowedTags: [],
+              allowedAttributes: [],
+            }).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/\r/g, '');
 
-        if (body.source || body.source === '') {
-            pkg.source = body.source;
-        }
-
-        if (body.tagline || body.tagline === '') {
-            pkg.tagline = body.tagline;
-        }
-
-        if (body.screenshots) {
-            pkg.screenshots = body.screenshots;
+            if (body.maintainer !== undefined) {
+                pkg.maintainer = body.maintainer;
+            }
         }
         else {
-            pkg.screenshots = [];
+            pkg.description = pkg.description ? pkg.description : '';
+            pkg.changelog = pkg.changelog ? pkg.changelog : '';
+            pkg.tagline = pkg.tagline ? pkg.tagline : '';
+
+            pkg.description = sanitizeHtml(pkg.description, {
+              allowedTags: [],
+              allowedAttributes: [],
+            }).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/\r/g, '');
+
+            pkg.changelog = sanitizeHtml(pkg.changelog, {
+              allowedTags: [],
+              allowedAttributes: [],
+            }).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/\r/g, '');
+
+            pkg.tagline = sanitizeHtml(pkg.tagline, {
+              allowedTags: [],
+              allowedAttributes: [],
+            }).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/\r/g, '');
         }
 
-        pkg.description = pkg.description ? pkg.description : '';
-        pkg.changelog = pkg.changelog ? pkg.changelog : '';
-        pkg.tagline = pkg.tagline ? pkg.tagline : '';
+        return pkg;
+    });
+}
 
-        pkg.description = sanitizeHtml(pkg.description, {
-          allowedTags: [],
-          allowedAttributes: [],
-        }).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/\r/g, '');
-
-        pkg.changelog = sanitizeHtml(pkg.changelog, {
-          allowedTags: [],
-          allowedAttributes: [],
-        }).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/\r/g, '');
-
-        pkg.tagline = sanitizeHtml(pkg.tagline, {
-          allowedTags: [],
-          allowedAttributes: [],
-        }).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/\r/g, '');
-
-        if (body.maintainer !== undefined) {
-            pkg.maintainer = body.maintainer;
+function fixMaintainer() {
+    db.User.find({}, function(err, users) {
+        if (err) {
+            logger.error(err);
         }
-    }
-    else {
-        pkg.description = pkg.description ? pkg.description : '';
-        pkg.changelog = pkg.changelog ? pkg.changelog : '';
-        pkg.tagline = pkg.tagline ? pkg.tagline : '';
+        else {
+            db.Package.find({}, function(err, pkgs) {
+                if (err) {
+                    logger.error(err);
+                }
+                else {
+                    pkgs.forEach(function(pkg) {
+                        if (pkg.maintainer) {
+                            users.forEach(function(user) {
+                                if (user._id == pkg.maintainer) {
+                                    pkg.maintainer_name = user.name ? user.name : user.username;
+                                    pkg.save(function(err) {
+                                        if (err) {
+                                            logger.error(err);
+                                        }
+                                        else {
+                                            logger.debug(pkg.id + ' saved');
+                                        }
+                                    });
+                                }
+                            });
 
-        pkg.description = sanitizeHtml(pkg.description, {
-          allowedTags: [],
-          allowedAttributes: [],
-        }).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/\r/g, '');
-
-        pkg.changelog = sanitizeHtml(pkg.changelog, {
-          allowedTags: [],
-          allowedAttributes: [],
-        }).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/\r/g, '');
-
-        pkg.tagline = sanitizeHtml(pkg.tagline, {
-          allowedTags: [],
-          allowedAttributes: [],
-        }).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/\r/g, '');
-    }
-
-    return pkg;
+                            logger.info(pkg.id + ' ' + pkg.maintainer_name);
+                        }
+                        else {
+                            logger.warning(pkg.id + ' has no maintainer');
+                        }
+                    });
+                }
+            });
+        }
+    });
 }
 
 function reparse() {
@@ -255,6 +301,8 @@ function toJson(pkg, req) {
         icon: `${config.server.host}/api/icon/${pkg.version}/${pkg.id}.png`,
         id: pkg.id ? pkg.id : '',
         license: pkg.license ? pkg.license : '',
+        maintainer: pkg.maintainer ? pkg.maintainer : null,
+        maintainer_name: pkg.maintainer_name ? pkg.maintainer_name : null,
         manifest: pkg.manifest ? pkg.manifest : {},
         name: pkg.name ? pkg.name : '',
         package: pkg.package ? pkg.package : '',
@@ -271,10 +319,6 @@ function toJson(pkg, req) {
     };
 
     if (req.isAuthenticated() && req.user && (req.user._id == pkg.maintainer || req.user.role == 'admin')) {
-        if (req.user.role == 'admin' || req.user.role == 'trusted') {
-            json.maintainer = pkg.maintainer ? pkg.maintainer : null;
-        }
-
         json.downloads = pkg.downloads;
         json.totalDownloads = 0;
 
@@ -289,5 +333,6 @@ function toJson(pkg, req) {
 }
 
 exports.updateInfo = updateInfo;
+exports.fixMaintainer = fixMaintainer;
 exports.reparse = reparse;
 exports.toJson = toJson;

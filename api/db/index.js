@@ -24,6 +24,7 @@ var packageSchema = mongoose.Schema({
     id: {type: String, index: true},
     license: String,
     maintainer: String,
+    maintainer_name: String,
     manifest: {},
     name: String,
     package: String,
