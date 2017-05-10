@@ -24,6 +24,8 @@ const mime = require('mime');
 bluebird.promisifyAll(fs);
 const mupload = multer({dest: '/tmp'});
 
+discover.highlight.image = config.server.host + discover.highlight.image;
+
 const NEEDS_MANUAL_REVIEW = 'This app needs to be reviewed manually';
 const MALFORMED_MANIFEST = 'Your package manifest is malformed';
 const DUPLICATE_PACKAGE = 'A package with the same name already exists';

@@ -1,5 +1,8 @@
 {
-    "highlighted_id": "com.ubuntu.telegram",
+    "highlight": {
+        "id": "com.ubuntu.telegram",
+        "image": "/img/banners/telegram.jpg"
+    },
     "categories": [
         {
             "name": "Hack with us",
