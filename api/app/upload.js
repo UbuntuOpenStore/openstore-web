@@ -2,7 +2,6 @@ var config = require('../utils/config');
 var request = require('request');
 var fs = require('fs');
 var path = require('path');
-var gm = require('gm').subClass({imageMagick: true});
 var jimp = require('jimp');
 
 function uploadToSmartfile(url, share, filepath, filename, callback) {
@@ -59,22 +58,6 @@ function uploadIcon(url, share, pkg, filepath, callback) {
                     }
                 });
             }
-        });
-    }
-    else if (path.extname(filepath) == '.svg') {
-        var pngIcon = filepath.replace('.svg', '.png');
-        iconname = iconname.replace('.svg', '.png');
-
-        gm(filepath).write(pngIcon, function(err) {
-            if (err) {
-                console.warn('failed to convert svg: ' + err)
-            }
-
-            uploadToSmartfile(url, share, pngIcon, iconname, function(err, url) {
-                fs.unlink(filepath);
-                fs.unlink(pngIcon);
-                callback(err, url);
-            });
         });
     }
     else {

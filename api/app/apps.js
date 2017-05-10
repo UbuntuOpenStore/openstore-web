@@ -222,17 +222,15 @@ function setup(app) {
     });
 
     app.get(['/api/icon/:version/:id', '/api/icon/:id'], function(req, res) {
-        var id = req.params.id;
-        if (id.indexOf('.png') == (id.length - 4)) {
-            id = id.replace('.png', '');
-        }
+        var id = req.params.id.replace('.png', '').replace('.svg', '');
 
         db.Package.findOne({id: id}).then((pkg) => {
             if (!pkg || !pkg.icon) {
                 throw '404';
             }
 
-            let filename = `${config.data_dir}/${pkg.version}-${pkg.id}`;
+            let ext = path.extname(pkg.icon);
+            let filename = `${config.data_dir}/${pkg.version}-${pkg.id}${ext}`;
             if (fs.existsSync(filename)) {
                 return filename;
             }

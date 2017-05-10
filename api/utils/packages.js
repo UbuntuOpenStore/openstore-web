@@ -8,6 +8,7 @@ const parse = require('click-parser');
 const fs = require('fs');
 const sanitizeHtml = require('sanitize-html');
 const moment = require('moment');
+const path = require('path');
 
 
 function updateInfo(pkg, data, body, file, url) {
@@ -287,6 +288,7 @@ function toJson(pkg, req) {
     }
     var download =  config.server.host + '/api/download/' + pkg.id + '/' + pkg.id + '_' + pkg.version + '_' + pkg.architecture + extension;
 
+    let ext = path.extname(pkg.icon);
     var json = {
         architecture: pkg.architecture ? pkg.architecture : '',
         architectures: pkg.architectures ? pkg.architectures : [],
@@ -298,7 +300,7 @@ function toJson(pkg, req) {
         download: download,
         filesize: pkg.filesize ? pkg.filesize : 0,
         framework: pkg.framework ? pkg.framework : '',
-        icon: `${config.server.host}/api/icon/${pkg.version}/${pkg.id}.png`,
+        icon: `${config.server.host}/api/icon/${pkg.version}/${pkg.id}${ext}`,
         id: pkg.id ? pkg.id : '',
         license: pkg.license ? pkg.license : '',
         maintainer: pkg.maintainer ? pkg.maintainer : null,
