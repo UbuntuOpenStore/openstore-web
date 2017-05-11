@@ -28,7 +28,7 @@
     "node-uuid": "^1.4.7",
     "passport": "^0.3.2",
     "passport-localapikey": "^0.0.3",
-    "passport-ubuntu": "^0.1.2",
+    "passport-ubuntu": "^0.2.0",
     "request": "^2.67.0",
     "sanitize-html": "^1.11.4",
     "squashfs-nodejs": "^1.0.5",
