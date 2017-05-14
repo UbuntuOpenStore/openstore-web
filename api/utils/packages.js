@@ -146,7 +146,9 @@ function updateInfo(pkg, data, body, file, url) {
             }
 
             if (body.keywords) {
-                pkg.keywords = body.keywords;
+                pkg.keywords = body.keywords.map((keyword) => {
+                    return keyword.trim();
+                });
             }
             else {
                 pkg.keywords = [];

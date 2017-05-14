@@ -8,6 +8,7 @@ var manageAppCtrl = function($scope, $location, $timeout, $state, Upload, info, 
     $scope.licenses = info.licenses;
     $scope.users = [];
     $scope.trustedAdminUsers = [];
+    $scope.keywords = '';
 
     api.auth.me().then(function(user) {
         $scope.user = user;
@@ -41,6 +42,7 @@ var manageAppCtrl = function($scope, $location, $timeout, $state, Upload, info, 
         $scope.loading = false;
         $scope.pkg = pkg;
         $scope.published = pkg ? pkg.published : false;
+        $scope.keywords = pkg ? pkg.keywords.join(', ') : [];
 
         $timeout(function() {
             var uploadcareWidget = window.uploadcare.MultipleWidget('#uploadcare');
@@ -70,6 +72,12 @@ var manageAppCtrl = function($scope, $location, $timeout, $state, Upload, info, 
     $scope.save = function(pkg) {
         $scope.saving = true;
         $scope.success = false;
+
+        var keywords = $scope.keywords.split(',');
+        for (var i = 0; i < keywords.length; i++) {
+            keywords[i] = keywords[i].trim();
+        }
+
         var data = {
             published: pkg.published,
             category: pkg.category,
@@ -80,6 +88,7 @@ var manageAppCtrl = function($scope, $location, $timeout, $state, Upload, info, 
             source: pkg.source,
             tagline: pkg.tagline,
             screenshots: pkg.screenshots,
+            keywords: keywords,
         };
 
         var upload = null;
