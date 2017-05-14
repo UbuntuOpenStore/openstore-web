@@ -109,9 +109,21 @@ function setup(app) {
             ];
         }
 
+        if (req.query.search) {
+            query['$text'] = {$search: req.query.search};
+        }
+
         db.Package.count(query).then((count) => {
             let findQuery = db.Package.find(query);
-            findQuery.sort('name');
+
+            if (req.query.search) {
+                findQuery.sort({score : {$meta : 'textScore'}});
+                findQuery.select({score : {$meta : 'textScore'}});
+            }
+            else {
+                findQuery.sort('name');
+            }
+
             if (req.query.limit) {
                 findQuery.limit(parseInt(req.query.limit));
             }

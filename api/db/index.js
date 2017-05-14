@@ -22,13 +22,15 @@ var packageSchema = mongoose.Schema({
     framework: String,
     icon: String,
     id: {type: String, index: true},
+    keywords: [String],
     license: String,
-    maintainer: String,
     maintainer_name: String,
+    maintainer: String,
     manifest: {},
     name: String,
     package: String,
     published_date: String,
+    published: Boolean,
     screenshots: [String],
     snappy_meta: {},
     source: String,
@@ -36,7 +38,22 @@ var packageSchema = mongoose.Schema({
     types: [String],
     updated_date: String,
     version: String,
-    published: Boolean,
+});
+
+packageSchema.index({
+  name: 'text',
+  description: 'text',
+  keywords: 'text',
+  author: 'text',
+},
+{
+  weights: {
+    name: 10,
+    description: 5,
+    keywords: 3,
+    author: 1,
+  },
+  name: 'searchIndex',
 });
 
 var Package = mongoose.model('Package', packageSchema);

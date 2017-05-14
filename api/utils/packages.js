@@ -145,6 +145,13 @@ function updateInfo(pkg, data, body, file, url) {
                 pkg.screenshots = [];
             }
 
+            if (body.keywords) {
+                pkg.keywords = body.keywords;
+            }
+            else {
+                pkg.keywords = [];
+            }
+
             pkg.description = pkg.description ? pkg.description : '';
             pkg.changelog = pkg.changelog ? pkg.changelog : '';
             pkg.tagline = pkg.tagline ? pkg.tagline : '';
@@ -302,9 +309,10 @@ function toJson(pkg, req) {
         framework: pkg.framework ? pkg.framework : '',
         icon: `${config.server.host}/api/icon/${pkg.version}/${pkg.id}${ext}`,
         id: pkg.id ? pkg.id : '',
+        keywords: pkg.keywords ? pkg.keywords : [],
         license: pkg.license ? pkg.license : '',
-        maintainer: pkg.maintainer ? pkg.maintainer : null,
         maintainer_name: pkg.maintainer_name ? pkg.maintainer_name : null,
+        maintainer: pkg.maintainer ? pkg.maintainer : null,
         manifest: pkg.manifest ? pkg.manifest : {},
         name: pkg.name ? pkg.name : '',
         package: pkg.package ? pkg.package : '',

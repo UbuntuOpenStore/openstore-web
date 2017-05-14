@@ -14,8 +14,11 @@
    viewBox="0 0 512.00001 512.00001"
    id="svg5962"
    version="1.1"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="open-store-icon.svg">
+   inkscape:version="0.92.1 r"
+   sodipodi:docname="logo.svg"
+   inkscape:export-filename="/home/brian/dev/web/openstore-web/www/img/logo.png"
+   inkscape:export-xdpi="48"
+   inkscape:export-ydpi="48">
   <defs
      id="defs5964" />
   <sodipodi:namedview
@@ -36,10 +39,10 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      units="px"
-     inkscape:window-width="1861"
-     inkscape:window-height="1176"
-     inkscape:window-x="59"
-     inkscape:window-y="24"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata5967">
@@ -49,7 +52,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
