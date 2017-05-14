@@ -142,7 +142,7 @@
 }
 
 .navbar {
-    background-color: #424242;
+    background-color: #292929;
     border-radius: 0px !important;
     background-image: none !important;
 }
@@ -156,7 +156,7 @@
 }
 
 .navbar a:focus {
-    background-color: #424242 !important;
+    background-color: #292929 !important;
 }
 
 .navbar-toggle {
@@ -166,7 +166,7 @@
 }
 
 .navbar-toggle .icon-bar {
-    background-color: #424242;
+    background-color: #292929;
 }
 
 .toggle {

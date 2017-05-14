@@ -144,7 +144,7 @@ body {
 }
 
 .navbar a.navbar-brand:hover {
-    background-color: #424242 !important;
+    background-color: #292929 !important;
 }
 
 .disclaimer {
@@ -155,7 +155,7 @@ body {
 }
 
 .footer {
-    border-top: 1px solid #424242;
+    border-top: 1px solid #292929;
     padding-top: 10px;
     margin-top: 10px;
     font-size: 12px;

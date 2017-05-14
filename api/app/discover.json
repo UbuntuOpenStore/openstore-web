@@ -13,7 +13,7 @@
             "name": "Games",
             "tagline": "Our preferred games",
             "referral": "Games",
-            "ids": ["fishyshooter.briketa", "fishtank.bhdouglass"]
+            "ids": ["com.ubuntu.developer.mzanetti.machines-vs-machines", "fishyshooter.briketa", "fishtank.bhdouglass", "uu.mzanetti"]
         }, {
             "name": "Communication Apps",
             "tagline": "",
