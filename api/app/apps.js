@@ -421,6 +421,10 @@ function setup(app) {
     app.put(['/api/apps/:id', '/api/v1/manage/apps/:id'], passport.authenticate('localapikey', {session: false}), mupload.single('file'), function(req, res) {
         let packagePromise = db.Package.findOne({id: req.params.id});
 
+        if (req.body && (!req.body.maintainer || req.body.maintainer == 'null')) {
+            req.body.maintainer = req.user._id;
+        }
+
         return packagePromise.then((pkg) => {
             if (helpers.isAdminUser(req) || req.user._id == pkg.maintainer) {
                 if (req.file) {
