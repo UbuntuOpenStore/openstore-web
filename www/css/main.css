@@ -227,6 +227,17 @@ body {
   text-align: center;
 }
 
+
+
 .search-box {
     width: 250px;
+}
+
+.search-wrapper .search-box {
+    width: 100%;
+}
+
+.search-wrapper {
+    margin-top: 5px;
+    margin-bottom: 15px;
 }

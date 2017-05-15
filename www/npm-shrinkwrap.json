@@ -529,6 +529,11 @@
       "resolved": "https://registry.npmjs.org/date-now/-/date-now-0.1.4.tgz",
       "dev": true
     },
+    "debounce": {
+      "version": "1.0.2",
+      "from": "debounce@latest",
+      "resolved": "https://registry.npmjs.org/debounce/-/debounce-1.0.2.tgz"
+    },
     "decamelize": {
       "version": "1.2.0",
       "from": "decamelize@>=1.1.2 <2.0.0",

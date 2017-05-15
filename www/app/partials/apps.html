@@ -6,6 +6,17 @@
         </a>
     </div>
 
+    <div class="row search-wrapper">
+        <div class="col-sm-4 col-sm-offset-4">
+            <div class="input-group search-box">
+                <input type="text" ng-model="query.search" class="form-control search" />
+                <span class="input-group-addon">
+                    <i class="fa fa-search"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+
     <div class="row app-list" data-role="list">
         <div class="col-sm-4" ng-repeat="app in apps|orderBy:'name'" ng-class="{clear: $index % 3 == 0}">
             <div data-role="listitem" class="listitem">

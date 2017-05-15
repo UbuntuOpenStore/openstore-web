@@ -1,3 +1,5 @@
+var debounce = require('debounce');
+
 var appsCtrl = function($scope, $rootScope, $state, api) {
     $scope.apps = [];
     $scope.app = null;
@@ -8,6 +10,7 @@ var appsCtrl = function($scope, $rootScope, $state, api) {
     $scope.query = {
         limit: 30,
         skip: 0,
+        search: '',
     };
     $scope.pages = [];
     $scope.page = 0;
@@ -33,7 +36,7 @@ var appsCtrl = function($scope, $rootScope, $state, api) {
         };
     }
 
-    function refresh() {
+    function _refresh() {
         api.apps.getAll($scope.query).then(function(data) {
             $scope.count = data.count;
             $scope.apps = data.packages;
@@ -41,6 +44,11 @@ var appsCtrl = function($scope, $rootScope, $state, api) {
             $scope.pages = Array(Math.ceil(data.count / $scope.query.limit));
         });
     }
+    var refresh = debounce(_refresh, 300);
+
+    $scope.$watch('query.search', function() {
+        refresh();
+    });
 
     //TODO split app into it's own controller
     if ($state.params.name) {
