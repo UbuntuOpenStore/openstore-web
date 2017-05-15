@@ -34,33 +34,32 @@
                 <thead>
                     <tr>
                         <th>Icon</th>
-                        <th>Name</th>
-                        <th ng-if="user.role == 'admin'">Author</th>
-                        <th>Status</th>
-                        <th>Version</th>
-                        <th>Actions</th>
+                        <th class="hidden-xs hidden-sm">Name</th>
+                        <th class="hidden-xs hidden-sm" ng-if="user.role == 'admin'">Author</th>
+                        <th class="hidden-xs hidden-sm">Status</th>
+                        <th class="hidden-xs hidden-sm">Version</th>
+                        <th class="visible-xs visible-sm">App</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr ng-repeat="pkg in filteredPackages|orderBy:'name'">
+                    <tr ng-repeat="pkg in filteredPackages|orderBy:'name'" class="clickable" ng-click="goTo(pkg.id)">
                         <td>
-                            <a ng-href="/manage/{{pkg.id}}" class="clickable">
-                                <div class="icon ubuntu-shape">
-                                    <img ng-src="{{pkg.icon}}" alt="{{pgk.name}}" />
-                                </div>
-                            </a>
+                            <div class="icon ubuntu-shape">
+                                <img ng-src="{{pkg.icon}}" alt="{{pgk.name}}" />
+                            </div>
                         </td>
-                        <td ng-bind="pkg.name"></td>
-                        <td ng-if="user.role == 'admin'" ng-bind="pkg.author"></td>
-                        <td>
-                            <span ng-if="pkg.published">Published</span>
-                            <span ng-if="!pkg.published">Not published</span>
+                        <td class="hidden-xs hidden-sm" ng-bind="pkg.name"></td>
+                        <td class="hidden-xs hidden-sm" ng-if="user.role == 'admin'" ng-bind="pkg.author"></td>
+                        <td class="hidden-xs hidden-sm">
+                            <span ng-if="pkg.published" class="text-success">Published</span>
+                            <span ng-if="!pkg.published" class="text-muted">Not published</span>
                         </td>
-                        <td ng-bind="pkg.version"></td>
-                        <td>
-                            <a ng-href="/manage/{{pkg.id}}" data-role="button" class="primary" title="Edit">
-                                <i class="fa fa-fw fa-edit"></i>
-                            </a>
+                        <td class="hidden-xs hidden-sm" ng-bind="pkg.version"></td>
+                        <td class="visible-xs visible-sm">
+                            <div>{{pkg.name}}</div>
+                            <div ng-if="user.role == 'admin'">{{pkg.author}}</div>
+                            <span ng-if="pkg.published" class="text-success">Published</span>
+                            <span ng-if="!pkg.published" class="text-muted">Not published</span>
                         </td>
                     </tr>
                 </tbody>

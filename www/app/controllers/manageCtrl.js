@@ -1,11 +1,15 @@
 var bootbox = require('bootbox');
 
-var manageCtrl = function($scope, $location, $timeout, info, api) {
+var manageCtrl = function($scope, $timeout, $state, info, api) {
     $scope.loading = true;
     $scope.user = null;
     $scope.packages = [];
     $scope.filteredPackages = [];
     $scope.search = '';
+
+    $scope.goTo = function(id) {
+        $state.go('manageapp', {name: id});
+    };
 
     function filter() {
         //TODO server side paging/searching
@@ -38,6 +42,6 @@ var manageCtrl = function($scope, $location, $timeout, info, api) {
     });
 };
 
-manageCtrl.$inject = ['$scope', '$location', '$timeout', 'info', 'api'];
+manageCtrl.$inject = ['$scope', '$timeout', '$state', 'info', 'api'];
 
 module.exports = manageCtrl;
