@@ -7,7 +7,6 @@ var manageAppCtrl = function($scope, $location, $timeout, $state, Upload, info, 
     $scope.categories = info.categories;
     $scope.licenses = info.licenses;
     $scope.users = [];
-    $scope.trustedAdminUsers = [];
     $scope.keywords = '';
     $scope.name = '';
 
@@ -18,16 +17,28 @@ var manageAppCtrl = function($scope, $location, $timeout, $state, Upload, info, 
 
         if ($scope.user.role == 'admin') {
             api.users.getAll($scope.user.apikey).then(function(users) {
-                $scope.users = users;
-
-                var trustedAdminUsers = [];
-                for (var index in users) {
-                    if (users[index].role == 'admin' || users[index].role == 'trusted') {
-                        trustedAdminUsers.push(users[index]);
+                users.sort(function(a, b) {
+                    if (a.role == 'admin' && b.role != 'admin') {
+                        return -1;
                     }
-                }
+                    else if (a.role != 'admin' && b.role == 'admin') {
+                        return 1;
+                    }
+                    else if (a.name < b.name) {
+                        return 1;
+                    }
+                    else if (a.name > b.name) {
+                        return -1;
+                    }
 
-                $scope.trustedAdminUsers = trustedAdminUsers;
+                    return 0;
+                });
+
+                users.forEach(function(user) {
+                    user.name = user.name + ' - ' + (user.role || 'community');
+                });
+
+                $scope.users = users;
             });
         }
 
