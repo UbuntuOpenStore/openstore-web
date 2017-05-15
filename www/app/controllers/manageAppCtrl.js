@@ -9,6 +9,7 @@ var manageAppCtrl = function($scope, $location, $timeout, $state, Upload, info, 
     $scope.users = [];
     $scope.trustedAdminUsers = [];
     $scope.keywords = '';
+    $scope.name = '';
 
     api.auth.me().then(function(user) {
         $scope.user = user;
@@ -43,6 +44,7 @@ var manageAppCtrl = function($scope, $location, $timeout, $state, Upload, info, 
         $scope.pkg = pkg;
         $scope.published = pkg ? pkg.published : false;
         $scope.keywords = pkg ? pkg.keywords.join(', ') : [];
+        $scope.name = pkg ? pkg.name : '';
 
         $timeout(function() {
             var uploadcareWidget = window.uploadcare.MultipleWidget('#uploadcare');
@@ -79,6 +81,7 @@ var manageAppCtrl = function($scope, $location, $timeout, $state, Upload, info, 
         }
 
         var data = {
+            name: pkg.name,
             published: pkg.published,
             category: pkg.category,
             changelog: pkg.changelog,
@@ -114,6 +117,7 @@ var manageAppCtrl = function($scope, $location, $timeout, $state, Upload, info, 
             $scope.file = null;
             $scope.error = null;
             $scope.success = true;
+            $scope.name = pkg.name;
 
             $location.path('/manage/' + response.data.id);
             //TODO popup message that everything was saved

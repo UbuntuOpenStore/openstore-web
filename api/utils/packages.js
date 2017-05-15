@@ -89,15 +89,13 @@ function updateInfo(pkg, data, body, file, url) {
             pkg.framework = data.framework;
             pkg.id = data.name;
             pkg.manifest = manifest;
-            pkg.name = data.title;
             pkg.types = data.types;
             pkg.version = data.version;
             pkg.snappy_meta = data.snappy_meta;
 
-            //Don't overwrite the description if it already exists
+            //Don't overwrite the these if they already exists
+            pkg.name = pkg.name ? pkg.name : data.title;
             pkg.description = pkg.description ? pkg.description : data.description;
-
-            //Don't overwrite the tagline if it already exists
             pkg.tagline = pkg.tagline ? pkg.tagline : data.description;
         }
 
@@ -110,6 +108,10 @@ function updateInfo(pkg, data, body, file, url) {
         }
 
         if (body) {
+            if (body.name) {
+                pkg.name = body.name;
+            }
+
             if (body.published !== undefined) {
                 pkg.published = (body.published == 'true');
             }
