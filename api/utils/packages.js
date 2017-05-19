@@ -297,7 +297,7 @@ function toJson(pkg, req) {
     if (pkg.types.indexOf('snappy') >= 0) {
         extension = '.snap';
     }
-    var download =  config.server.host + '/api/download/' + pkg.id + '/' + pkg.id + '_' + pkg.version + '_' + pkg.architecture + extension;
+    var download =  config.server.host + '/api/download/' + pkg.id + '/' + pkg.id + '_latest_' + pkg.architecture + extension;
 
     let ext = path.extname(pkg.icon);
     var json = {
