@@ -38,6 +38,7 @@
                         <th class="hidden-xs hidden-sm" ng-if="user.role == 'admin'">Author</th>
                         <th class="hidden-xs hidden-sm">Status</th>
                         <th class="hidden-xs hidden-sm">Version</th>
+                        <th class="hidden-xs hidden-sm">Downloads</th>
                         <th class="visible-xs visible-sm">App</th>
                     </tr>
                 </thead>
@@ -55,11 +56,15 @@
                             <span ng-if="!pkg.published" class="text-muted">Not published</span>
                         </td>
                         <td class="hidden-xs hidden-sm" ng-bind="pkg.version"></td>
+                        <td class="hidden-xs hidden-sm">{{pkg.totalDownloads || 'None'}}</td>
                         <td class="visible-xs visible-sm">
                             <div>{{pkg.name}}</div>
                             <div ng-if="user.role == 'admin'">{{pkg.author}}</div>
+
                             <span ng-if="pkg.published" class="text-success">Published</span>
                             <span ng-if="!pkg.published" class="text-muted">Not published</span>
+
+                            <div>Downloads: {{pkg.totalDownloads || 'None'}}</div>
                         </td>
                     </tr>
                 </tbody>
