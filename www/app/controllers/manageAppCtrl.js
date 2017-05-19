@@ -24,10 +24,10 @@ var manageAppCtrl = function($scope, $location, $timeout, $state, Upload, info, 
                     else if (a.role != 'admin' && b.role == 'admin') {
                         return 1;
                     }
-                    else if (a.name < b.name) {
+                    else if (a.name > b.name) {
                         return 1;
                     }
-                    else if (a.name > b.name) {
+                    else if (a.name < b.name) {
                         return -1;
                     }
 
