@@ -13,7 +13,13 @@ function parseReview(review) {
         for (let level in review[key]) {
             for (let label in review[key][level]) {
                 if (review[key][level][label].manual_review) {
-                    manualReview = true;
+                    if (review[key][level][label].text.indexOf('OK') == -1) {
+                        manualReview = review[key][level][label].text;
+                        manualReview = manualReview.replace('(NEEDS REVIEW)', '');
+                    }
+                    else {
+                        manualReview = true;
+                    }
                 }
             }
         }
@@ -32,7 +38,20 @@ function reviewPackage(file) {
                     logger.error(stderr);
                 }
 
-                resolve(true);
+                var error = true;
+                try {
+                    let review = JSON.parse(stdout);
+                    error = parseReview(review);
+                    if (!error) {
+                        //If we don't find a manual review flag, but this still failed (for example, "Could not find compiled binaries for architecture 'armhf'")
+                        error = true;
+                    }
+                }
+                catch (e) {
+                    error = true;
+                }
+
+                resolve(error);
             }
             else {
                 let review = JSON.parse(stdout);

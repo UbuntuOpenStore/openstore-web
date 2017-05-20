@@ -332,7 +332,15 @@ function setup(app) {
                 }
             }).then((needsManualReview) => {
                 if (needsManualReview) {
-                    throw NEEDS_MANUAL_REVIEW;
+                    var error = NEEDS_MANUAL_REVIEW;
+                    if (needsManualReview === true) {
+                        error = `${NEEDS_MANUAL_REVIEW}, please check you app using the click-review command`;
+                    }
+                    else {
+                        error = `${NEEDS_MANUAL_REVIEW} (Error: ${needsManualReview})`;
+                    }
+
+                    throw error;
                 };
             });
         }
@@ -407,7 +415,7 @@ function setup(app) {
             }).then((pkg) => {
                 helpers.success(res, packages.toJson(pkg, req));
             }).catch((err) => {
-                if (err == NEEDS_MANUAL_REVIEW || err == MALFORMED_MANIFEST || err == DUPLICATE_PACKAGE) {
+                if (err.indexOf(NEEDS_MANUAL_REVIEW) === 0 || err == MALFORMED_MANIFEST || err == DUPLICATE_PACKAGE) {
                     helpers.error(res, err, 400);
                 }
                 else {
@@ -452,7 +460,7 @@ function setup(app) {
         }).then((pkg) => {
             helpers.success(res, packages.toJson(pkg, req));
         }).catch((err) => {
-            if (err == PERMISSION_DENIED || err == BAD_FILE || err == NEEDS_MANUAL_REVIEW || err == MALFORMED_MANIFEST || err == WRONG_PACKAGE) {
+            if (err == PERMISSION_DENIED || err == BAD_FILE || err.indexOf(NEEDS_MANUAL_REVIEW) === 0 || err == MALFORMED_MANIFEST || err == WRONG_PACKAGE) {
                 helpers.error(res, err, 400);
             }
             else {
