@@ -1,24 +1,43 @@
 {
     "highlight": {
-        "id": "com.ubuntu.telegram",
-        "image": "/img/banners/telegram.svg"
+        "id": "navigator.costales",
+        "image": "/img/banners/unav.svg"
     },
     "categories": [
         {
-            "name": "Hack with us",
-            "tagline": "Best tools for your Ubuntu phone",
+            "name": "New Apps",
+            "tagline": "The latest apps in the OpenStore",
             "referral": "",
-            "ids": ["com.ubuntu.terminal", "ut-tweak-tool.sverzegnassi", "com.ubuntu.filemanager", "qmlviewer.timsueberkrueb", "seabass.mikhael", "wifiscanner.mzanetti"]
+            "ids": [
+                "myfinance.fulvio",
+                "balls2.briketa",
+                "ubports",
+                "gearsystem.rpattison",
+                "laines.rpattison",
+                "gearboy.rpattison"
+            ]
         }, {
-            "name": "Games",
-            "tagline": "Our preferred games",
-            "referral": "Games",
-            "ids": ["com.ubuntu.developer.mzanetti.machines-vs-machines", "fishyshooter.briketa", "fishtank.bhdouglass", "uu.mzanetti"]
+            "name": "Top Apps",
+            "tagline": "The best apps from the Ubuntu Store",
+            "referral": "",
+            "ids": [
+                "com.ubuntu.developer.majster-pl.utorch",
+                "apu.johangm90",
+                "com.ubuntu.developer.mzanetti.machines-vs-machines",
+                "instantfx.sverzegnassi",
+                "com.mikeasoft.podbird"
+            ]
         }, {
-            "name": "Communication Apps",
-            "tagline": "",
-            "referral": "Communication",
-            "ids": ["vuk.maxvanceffer", "loquiim.nfsprodriver"]
+            "name": "Exclusives",
+            "tagline": "New apps only available in the OpenStore",
+            "referral": "",
+            "ids": [
+                "keepweb.cibersheep",
+                "myfinance.fulvio",
+                "scummvm.michael-sheldon",
+                "sheepcounter.cibersheep",
+                "terrartisan.bhdouglass"
+            ]
         }
     ]
 }
