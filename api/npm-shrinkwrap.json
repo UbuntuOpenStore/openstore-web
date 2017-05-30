@@ -165,9 +165,9 @@
       "resolved": "https://registry.npmjs.org/chalk/-/chalk-1.1.1.tgz"
     },
     "click-parser": {
-      "version": "3.1.1",
-      "from": "click-parser@3.1.1",
-      "resolved": "https://registry.npmjs.org/click-parser/-/click-parser-3.1.1.tgz",
+      "version": "3.1.2",
+      "from": "click-parser@3.1.2",
+      "resolved": "https://registry.npmjs.org/click-parser/-/click-parser-3.1.2.tgz",
       "dependencies": {
         "minimist": {
           "version": "1.2.0",
@@ -517,9 +517,9 @@
       "resolved": "https://registry.npmjs.org/get-caller-file/-/get-caller-file-1.0.2.tgz"
     },
     "glob": {
-      "version": "7.1.1",
+      "version": "7.1.2",
       "from": "glob@>=7.0.5 <8.0.0",
-      "resolved": "https://registry.npmjs.org/glob/-/glob-7.1.1.tgz"
+      "resolved": "https://registry.npmjs.org/glob/-/glob-7.1.2.tgz"
     },
     "global": {
       "version": "4.3.2",
@@ -694,9 +694,9 @@
       "resolved": "https://registry.npmjs.org/jpeg-js/-/jpeg-js-0.2.0.tgz"
     },
     "js-yaml": {
-      "version": "3.8.3",
+      "version": "3.8.4",
       "from": "js-yaml@>=3.6.0 <4.0.0",
-      "resolved": "https://registry.npmjs.org/js-yaml/-/js-yaml-3.8.3.tgz"
+      "resolved": "https://registry.npmjs.org/js-yaml/-/js-yaml-3.8.4.tgz"
     },
     "jsbn": {
       "version": "0.1.0",
@@ -1344,9 +1344,9 @@
       "resolved": "https://registry.npmjs.org/tar/-/tar-2.2.1.tgz"
     },
     "tar-stream": {
-      "version": "1.5.2",
+      "version": "1.5.4",
       "from": "tar-stream@>=1.1.5 <2.0.0",
-      "resolved": "https://registry.npmjs.org/tar-stream/-/tar-stream-1.5.2.tgz"
+      "resolved": "https://registry.npmjs.org/tar-stream/-/tar-stream-1.5.4.tgz"
     },
     "tinycolor2": {
       "version": "1.4.1",
