@@ -38,6 +38,8 @@ var packageSchema = mongoose.Schema({
     types: [String],
     updated_date: String,
     version: String,
+    support_url: String,
+    donate_url: String,
 });
 
 packageSchema.index({

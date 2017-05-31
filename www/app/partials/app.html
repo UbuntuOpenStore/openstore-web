@@ -18,7 +18,7 @@
             <a href="/docs#install" class="primary" data-role="button" ng-show="app.id == 'openstore.openstore-team'">Install</a>
             <a href="/docs#snap-store" class="primary" data-role="button" ng-show="app.types.indexOf('snappy') >= 0">Install</a>
             <a ng-href="{{app.download}}" class="secondary" data-role="button" target="_blank">Download</a>
-            <a ng-href="{{app.source}}" class="information" data-role="button" ng-if="app.source">Source</a>
+            <a ng-href="{{app.donate_url}}" class="information" data-role="button" ng-if="app.donate_url" target="_blank" rel="noopener noreferrer">Donate!</a>
 
             <p class="small-note" ng-hide="app.id == 'openstore.openstore-team' || app.types.indexOf('snappy') >= 0">
                 *You must have the OpenStore app installed on your phone for the "Install" button to work
@@ -45,6 +45,8 @@
             <h4>Info:</h4>
             <p ng-if="app.author">Author: {{app.author}}</p>
             <p ng-if="app.maintainer_name">Packager/Publisher: {{app.maintainer_name}}</p>
+            <p ng-if="app.support_url">Support: <a ng-href="{{app.support_url}}" target="_blank" rel="noopener noreferrer">{{app.support_url}}</a></p>
+            <p ng-if="app.source">Source: <a ng-href="{{app.source}}" target="_blank" rel="noopener noreferrer">{{app.source}}</a></p>
             <p ng-if="app.license">License: {{app.license}}</p>
             <p ng-if="app.framework">Framework: {{app.framework}}</p>
         </div>

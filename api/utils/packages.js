@@ -133,7 +133,30 @@ function updateInfo(pkg, data, body, file, url) {
             }
 
             if (body.source || body.source === '') {
-                pkg.source = body.source;
+                if (body.source.indexOf('https://') === 0 || body.source.indexOf('http://') === 0) {
+                    pkg.source = body.source;
+                }
+                else {
+                    pkg.source = '';
+                }
+            }
+
+            if ((body.support_url || body.support_url === '')) {
+                if (body.support_url.indexOf('https://') === 0 || body.support_url.indexOf('http://') === 0) {
+                    pkg.support_url = body.support_url;
+                }
+                else {
+                    pkg.support_url = '';
+                }
+            }
+
+            if (body.donate_url || body.donate_url === '') {
+                if (body.donate_url.indexOf('https://') === 0 || body.donate_url.indexOf('http://') === 0) {
+                    pkg.donate_url = body.donate_url;
+                }
+                else {
+                    pkg.donate_url = '';
+                }
             }
 
             if (body.tagline || body.tagline === '') {
@@ -326,6 +349,8 @@ function toJson(pkg, req) {
         screenshots: pkg.screenshots ? pkg.screenshots : [],
         snappy_meta: pkg.snappy_meta ? pkg.snappy_meta : {},
         source: pkg.source ? pkg.source : '',
+        support_url: pkg.support_url ? pkg.support_url : '',
+        donate_url: pkg.donate_url ? pkg.donate_url : '',
         tagline: pkg.tagline ? pkg.tagline : '',
         types: pkg.types ? pkg.types : [],
         updated_date: pkg.published_date ? pkg.updated_date : '',
