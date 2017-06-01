@@ -2,6 +2,10 @@
 
 Web viewer and api for the [OpenStore](http://notyetthere.org/openstore-tweakgeek-and-more/).
 
+## Reporting Bugs
+
+Please report any bugs/features/requests in our [bug tracker](https://github.com/UbuntuOpenStore/openstore-meta/issues).
+
 ## Development
 
 * Install [vagrant](http://vagrantup.com/)
