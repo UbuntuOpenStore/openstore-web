@@ -75,6 +75,8 @@ function setup(app) {
 
     app.get(['/api/apps', '/repo/repolist.json', '/api/v1/apps'], function(req, res) {
         let query = {published: true};
+        let limit = req.query.limit ? parseInt(req.query.limit) : 100;
+        let skip = req.query.skip ? parseInt(req.query.skip) : 0;
 
         if (req.query.types && Array.isArray(req.query.types)) {
             query['types'] = {
@@ -124,12 +126,12 @@ function setup(app) {
                 findQuery.sort('name');
             }
 
-            if (req.query.limit) {
-                findQuery.limit(parseInt(req.query.limit));
+            if (limit) {
+                findQuery.limit(limit);
             }
 
-            if (req.query.skip) {
-                findQuery.skip(parseInt(req.query.skip));
+            if (skip) {
+                findQuery.skip(skip);
             }
 
             return Promise.all([
@@ -153,9 +155,49 @@ function setup(app) {
                 });
             }
             else if (req.originalUrl.substring(0, 12) == '/api/v1/apps') {
+                let next = null;
+                let previous = null;
+
+                let url = config.server.host + req.originalUrl;
+                if (formatted.length == limit) {
+                    let nextSkip = skip + limit;
+
+                    //TODO use the url module once the node version is upgraded
+                    if (url.indexOf('skip') == -1) {
+                        if (url.indexOf('?') == -1) {
+                            next = url + '?skip=' + nextSkip;
+                        }
+                        else {
+                            next = url + '&skip=' + nextSkip;
+                        }
+                    }
+                    else {
+                        next = url.replace('skip=' + skip, 'skip=' + nextSkip);
+                    }
+                }
+
+                if (skip > 0) {
+                    let previousSkip = (skip - limit > 0) ? (skip - limit) : 0;
+
+                    //TODO use the url module once the node version is upgraded
+                    if (url.indexOf('skip') == -1) {
+                        if (url.indexOf('?') == -1) {
+                            previous = url + '?skip=' + previousSkip;
+                        }
+                        else {
+                            previous = url + '&skip=' + previousSkip;
+                        }
+                    }
+                    else {
+                        previous = url.replace('skip=' + skip, 'skip=' + previousSkip);
+                    }
+                }
+
                 helpers.success(res, {
                     count: count,
                     packages: formatted,
+                    next: next,
+                    previous: previous,
                 });
             }
             else {
