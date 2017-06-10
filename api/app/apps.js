@@ -75,7 +75,7 @@ function setup(app) {
 
     app.get(['/api/apps', '/repo/repolist.json', '/api/v1/apps'], function(req, res) {
         let query = {published: true};
-        let limit = req.query.limit ? parseInt(req.query.limit) : 100;
+        let limit = req.query.limit ? parseInt(req.query.limit) : 0;
         let skip = req.query.skip ? parseInt(req.query.skip) : 0;
 
         if (req.query.types && Array.isArray(req.query.types)) {
