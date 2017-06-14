@@ -77,6 +77,7 @@ function setup(app) {
         let query = {published: true};
         let limit = req.query.limit ? parseInt(req.query.limit) : 0;
         let skip = req.query.skip ? parseInt(req.query.skip) : 0;
+        let sort = req.query.sort ? req.query.sort : 'relevance';
 
         if (req.query.types && Array.isArray(req.query.types)) {
             query['types'] = {
@@ -119,11 +120,19 @@ function setup(app) {
             let findQuery = db.Package.find(query);
 
             if (req.query.search) {
-                findQuery.sort({score : {$meta : 'textScore'}});
                 findQuery.select({score : {$meta : 'textScore'}});
             }
+
+            if (sort == 'relevance') {
+                if (req.query.search) {
+                    findQuery.sort({score : {$meta : 'textScore'}});
+                }
+                else {
+                    findQuery.sort('name');
+                }
+            }
             else {
-                findQuery.sort('name');
+                findQuery.sort(sort);
             }
 
             if (limit) {
