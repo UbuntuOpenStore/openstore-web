@@ -112,6 +112,10 @@ function setup(app) {
             ];
         }
 
+        if (req.query.category) {
+            query.category = req.query.category;
+        }
+
         if (req.query.search) {
             query['$text'] = {$search: req.query.search};
         }
@@ -119,12 +123,9 @@ function setup(app) {
         db.Package.count(query).then((count) => {
             let findQuery = db.Package.find(query);
 
-            if (req.query.search) {
-                findQuery.select({score : {$meta : 'textScore'}});
-            }
-
             if (sort == 'relevance') {
                 if (req.query.search) {
+                    findQuery.select({score : {$meta : 'textScore'}});
                     findQuery.sort({score : {$meta : 'textScore'}});
                 }
                 else {
