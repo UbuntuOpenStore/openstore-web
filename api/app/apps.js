@@ -10,7 +10,6 @@ const parse = require('../utils/click-parser-async');
 const checksum = require('../utils/checksum');
 const reviewPackage = require('../utils/review-package');
 const discover = require('./discover.json');
-const categoryIcons = require('./category_icons.json');
 
 const passport = require('passport');
 const multer  = require('multer');
@@ -44,69 +43,6 @@ function setup(app) {
 
     app.get(['/api/apps/discover', '/api/v1/apps/discover'], function(req, res) {
         helpers.success(res, discover);
-    });
-
-    app.get(['/api/categories', '/api/v1/categories'], function(req, res) {
-        //TODO cache the aggregation
-        db.Package.aggregate([
-            {
-                $group: {
-                    _id: '$category',
-                },
-            }, {
-                $sort: {'_id': 1},
-            }
-        ], (err, data) => {
-            if (err) {
-                logger.error('Error fetching categories:', err);
-                helpers.error(res, 'Could not fetch category list at this time');
-            }
-            else {
-                let categories = [];
-                data.forEach((category) => {
-                    if (category._id) {
-                        categories.push(category._id);
-                    }
-                });
-
-                helpers.success(res, categories);
-            }
-        });
-    });
-
-    app.get(['/api/v2/categories'], function(req, res) {
-        //TODO cache the aggregation
-        db.Package.aggregate([
-            {
-                $match: {types: {$ne: 'snappy'}}
-            }, {
-                $group: {
-                    _id: '$category',
-                    count: { $sum: 1 },
-                },
-            }, {
-                $sort: {'_id': 1},
-            }
-        ], (err, categories) => {
-            if (err) {
-                logger.error('Error fetching categories:', err);
-                helpers.error(res, 'Could not fetch category list at this time');
-            }
-            else {
-                let data = [];
-                categories.forEach((category) => {
-                    if (category._id) {
-                        data.push({
-                            category: category._id,
-                            count: category.count,
-                            icon: categoryIcons[category._id],
-                        })
-                    }
-                });
-
-                helpers.success(res, data);
-            }
-        });
     });
 
     app.get(['/api/apps', '/repo/repolist.json', '/api/v1/apps'], function(req, res) {

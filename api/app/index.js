@@ -1,6 +1,7 @@
 var config = require('../utils/config');
 var apps = require('./apps');
 var snaps = require('./snaps');
+var categories = require('./categories');
 var auth = require('./auth');
 var users = require('./users');
 var db = require('../db');
@@ -24,6 +25,7 @@ function setup() {
     auth.setup(app);
     apps.setup(app);
     snaps.setup(app);
+    categories.setup(app);
     users.setup(app);
 
     app.use(express.static(__dirname + '/../../www'));
