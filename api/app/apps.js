@@ -10,6 +10,7 @@ const parse = require('../utils/click-parser-async');
 const checksum = require('../utils/checksum');
 const reviewPackage = require('../utils/review-package');
 const discover = require('./discover.json');
+const categoryIcons = require('./category_icons.json');
 
 const passport = require('passport');
 const multer  = require('multer');
@@ -98,6 +99,7 @@ function setup(app) {
                         data.push({
                             category: category._id,
                             count: category.count,
+                            icon: categoryIcons[category._id],
                         })
                     }
                 });
