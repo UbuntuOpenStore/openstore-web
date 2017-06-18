@@ -52,7 +52,7 @@ function setup(app) {
                 $group: {
                     _id: '$category',
                 },
-            },  {
+            }, {
                 $sort: {'_id': 1},
             }
         ], (err, data) => {
@@ -69,6 +69,40 @@ function setup(app) {
                 });
 
                 helpers.success(res, categories);
+            }
+        });
+    });
+
+    app.get(['/api/v2/categories'], function(req, res) {
+        //TODO cache the aggregation
+        db.Package.aggregate([
+            {
+                $match: {types: {$ne: 'snappy'}}
+            }, {
+                $group: {
+                    _id: '$category',
+                    count: { $sum: 1 },
+                },
+            }, {
+                $sort: {'_id': 1},
+            }
+        ], (err, categories) => {
+            if (err) {
+                logger.error('Error fetching categories:', err);
+                helpers.error(res, 'Could not fetch category list at this time');
+            }
+            else {
+                let data = [];
+                categories.forEach((category) => {
+                    if (category._id) {
+                        data.push({
+                            category: category._id,
+                            count: category.count,
+                        })
+                    }
+                });
+
+                helpers.success(res, data);
             }
         });
     });
