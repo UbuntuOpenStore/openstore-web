@@ -7,7 +7,8 @@
     "start": "cd api && npm start",
     "dev": "cd api && npm run dev",
     "webpack-dev": "cd www && npm run devserver",
-    "postinstall": "cd api && npm install && cd ../www && npm install"
+    "postinstall": "cd api && npm install && cd ../www && npm install",
+    "pot": "jspot extract api/app/*.js -k _ -t ./po && mv po/messages.pot po/openstore-web.pot"
   },
   "author": "Brian Douglass",
   "license": "GPL-3.0",
