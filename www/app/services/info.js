@@ -21,7 +21,7 @@ var info = function() {
             'Science & Engineering',
             'Shopping',
             'Sports',
-            'Travel & Local',
+            'Travel & Weather',
             'Universal Accesss/Accessibility',
             'Utilities',
         ],

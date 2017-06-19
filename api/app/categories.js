@@ -29,7 +29,7 @@ let categoryTranslations = {
     'Science & Engineering': gt.gettext('Science & Engineering'),
     'Shopping': gt.gettext('Shopping'),
     'Sports': gt.gettext('Sports'),
-    'Travel & Local': gt.gettext('Travel & Local'),
+    'Travel & Weather': gt.gettext('Travel & Weather'),
     'Universal Accesss/Accessibility': gt.gettext('Universal Accesss/Accessibility'),
     'Utilities': gt.gettext('Utilities'),
 }

@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2017-06-19 04:04:+0000\n"
+"POT-Creation-Date: 2017-06-19 04:20:+0000\n"
 "Project-Id-Version: PACKAGE VERSION\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -90,7 +90,7 @@ msgid "Sports"
 msgstr ""
 
 #: api/app/categories.js:32
-msgid "Travel & Local"
+msgid "Travel & Weather"
 msgstr ""
 
 #: api/app/categories.js:33
