@@ -2,12 +2,11 @@ var info = function() {
     return {
         categories: [
             'Books & Comics',
-            'Business',
-            'Communication',
+            'Business & Finance',
+            'Communication & Social',
             'Developer Tools',
-            'Education',
+            'Education & Reference',
             'Entertainment',
-            'Finance',
             'Food & Drink',
             'Games',
             'Graphics',
@@ -19,15 +18,12 @@ var info = function() {
             'News & Magazines',
             'Personalisation',
             'Productivity',
-            'Reference',
             'Science & Engineering',
             'Shopping',
-            'Social Networking',
             'Sports',
             'Travel & Local',
             'Universal Accesss/Accessibility',
             'Utilities',
-            'Weather',
         ],
 
         licenses: [

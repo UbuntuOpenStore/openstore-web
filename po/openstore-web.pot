@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2017-06-19 05:26:+0000\n"
+"POT-Creation-Date: 2017-06-19 04:04:+0000\n"
 "Project-Id-Version: PACKAGE VERSION\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -9,32 +9,28 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 
-#: api/app/categories.js:11
+#: api/app/categories.js:12
 msgid "Books & Comics"
 msgstr ""
 
-#: api/app/categories.js:12
-msgid "Business"
-msgstr ""
-
 #: api/app/categories.js:13
-msgid "Communication"
+msgid "Business & Finance"
 msgstr ""
 
 #: api/app/categories.js:14
-msgid "Developer Tools"
+msgid "Communication & Social"
 msgstr ""
 
 #: api/app/categories.js:15
-msgid "Education"
+msgid "Developer Tools"
 msgstr ""
 
 #: api/app/categories.js:16
-msgid "Entertainment"
+msgid "Education & Reference"
 msgstr ""
 
 #: api/app/categories.js:17
-msgid "Finance"
+msgid "Entertainment"
 msgstr ""
 
 #: api/app/categories.js:18
@@ -82,37 +78,25 @@ msgid "Productivity"
 msgstr ""
 
 #: api/app/categories.js:29
-msgid "Reference"
-msgstr ""
-
-#: api/app/categories.js:30
 msgid "Science & Engineering"
 msgstr ""
 
-#: api/app/categories.js:31
+#: api/app/categories.js:30
 msgid "Shopping"
 msgstr ""
 
-#: api/app/categories.js:32
-msgid "Social Networking"
-msgstr ""
-
-#: api/app/categories.js:33
+#: api/app/categories.js:31
 msgid "Sports"
 msgstr ""
 
-#: api/app/categories.js:34
+#: api/app/categories.js:32
 msgid "Travel & Local"
 msgstr ""
 
-#: api/app/categories.js:35
+#: api/app/categories.js:33
 msgid "Universal Accesss/Accessibility"
 msgstr ""
 
-#: api/app/categories.js:36
+#: api/app/categories.js:34
 msgid "Utilities"
-msgstr ""
-
-#: api/app/categories.js:37
-msgid "Weather"
 msgstr ""

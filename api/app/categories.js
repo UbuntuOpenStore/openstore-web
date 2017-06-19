@@ -10,12 +10,11 @@ let gt = new Gettext();
 
 let categoryTranslations = {
     'Books & Comics': gt.gettext('Books & Comics'),
-    'Business': gt.gettext('Business'),
-    'Communication': gt.gettext('Communication'),
+    'Business & Finance': gt.gettext('Business & Finance'),
+    'Communication & Social': gt.gettext('Communication & Social'),
     'Developer Tools': gt.gettext('Developer Tools'),
-    'Education': gt.gettext('Education'),
+    'Education & Reference': gt.gettext('Education & Reference'),
     'Entertainment': gt.gettext('Entertainment'),
-    'Finance': gt.gettext('Finance'),
     'Food & Drink': gt.gettext('Food & Drink'),
     'Games': gt.gettext('Games'),
     'Graphics': gt.gettext('Graphics'),
@@ -27,15 +26,12 @@ let categoryTranslations = {
     'News & Magazines': gt.gettext('News & Magazines'),
     'Personalisation': gt.gettext('Personalisation'),
     'Productivity': gt.gettext('Productivity'),
-    'Reference': gt.gettext('Reference'),
     'Science & Engineering': gt.gettext('Science & Engineering'),
     'Shopping': gt.gettext('Shopping'),
-    'Social Networking': gt.gettext('Social Networking'),
     'Sports': gt.gettext('Sports'),
     'Travel & Local': gt.gettext('Travel & Local'),
     'Universal Accesss/Accessibility': gt.gettext('Universal Accesss/Accessibility'),
     'Utilities': gt.gettext('Utilities'),
-    'Weather': gt.gettext('Weather'),
 }
 
 function setup(app) {

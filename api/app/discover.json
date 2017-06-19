@@ -1,40 +1,63 @@
 {
     "highlight": {
-        "id": "navigator.costales",
-        "image": "/img/banners/unav.svg"
+        "id": "com.mikeasoft.podbird",
+        "image": "/img/banners/podbird.svg"
     },
     "categories": [
         {
-            "name": "Top Apps",
-            "tagline": "The best apps from the Ubuntu Store",
-            "referral": "",
-            "ids": [
-                "com.ubuntu.developer.majster-pl.utorch",
-                "apu.johangm90",
-                "com.ubuntu.developer.mzanetti.machines-vs-machines",
-                "instantfx.sverzegnassi",
-                "com.mikeasoft.podbird"
-            ]
-        }, {
             "name": "New Apps",
             "tagline": "The latest apps in the OpenStore",
             "referral": "",
             "ids": [
-                "gearboy.rpattison",
-                "balls2.briketa",
-                "ubports",
-                "gearsystem.rpattison"
+                "astros.aegloszenit",
+                "alieninvasion.johandoe1960",
+                "uhp48mf.mfoucrier",
+                "checkers.costa",
+                "talaan.kugiigi"
             ]
         }, {
-            "name": "Exclusives",
-            "tagline": "New apps only available in the OpenStore",
+            "name": "Awesome Games",
+            "tagline": "The most fun you can possibly have!",
+            "referral": "Games",
+            "ids": [
+                "com.ubuntu.developer.mzanetti.machines-vs-machines",
+                "monsterwars.t-mon",
+                "hexgl.bhdouglass",
+                "8192.neothethird",
+                "balls.briketa",
+                "minimakerfa.mivoligo",
+                "xake.hankamotz"
+            ]
+        }, {
+            "name": "Updated Apps",
+            "tagline": "Updates hot off the press",
             "referral": "",
             "ids": [
-                "keepweb.cibersheep",
-                "myfinance.fulvio",
-                "scummvm.michael-sheldon",
-                "sheepcounter.cibersheep",
-                "terrartisan.bhdouglass"
+                "com.ubuntu.gallery",
+                "terrartisan.bhdouglass",
+                "transport.zubozrout",
+                "myfinance.fulvio"
+            ]
+        }, {
+            "name": "Cool Multimedia Apps",
+            "tagline": "Ubuntu Touch & Chill",
+            "referral": "",
+            "ids": [
+                "com.ubuntu.developer.mzanetti.kodimote",
+                "com.mikeasoft.cutespotify",
+                "apu.johangm90",
+                "audio-recorder.ubuntu-dawndiy",
+                "flas.majster-pl"
+            ]
+        }, {
+            "name": "Hack With Us",
+            "tagline": "Explore what is possible with Ubuntu Touch",
+            "referral": "",
+            "ids": [
+                "ut-tweak-tool.sverzegnassi",
+                "scriptor.newparadigmsoftware",
+                "seabass.mikhael",
+                "wifiscanner.mzanetti"
             ]
         }
     ]
