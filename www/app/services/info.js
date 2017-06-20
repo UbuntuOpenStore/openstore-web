@@ -1,6 +1,7 @@
 var info = function() {
     return {
         categories: [
+            'Accessibility',
             'Books & Comics',
             'Business & Finance',
             'Communication & Social',
@@ -13,7 +14,6 @@ var info = function() {
             'Health & Fitness',
             'Lifestyle',
             'Media & Video',
-            'Medical',
             'Music & Audio',
             'News & Magazines',
             'Personalisation',
@@ -22,7 +22,6 @@ var info = function() {
             'Shopping',
             'Sports',
             'Travel & Weather',
-            'Universal Accesss/Accessibility',
             'Utilities',
         ],
 

@@ -9,6 +9,7 @@ const Gettext = require('node-gettext');
 let gt = new Gettext();
 
 let categoryTranslations = {
+    'Accessibility': gt.gettext('Accessibility'),
     'Books & Comics': gt.gettext('Books & Comics'),
     'Business & Finance': gt.gettext('Business & Finance'),
     'Communication & Social': gt.gettext('Communication & Social'),
@@ -21,7 +22,6 @@ let categoryTranslations = {
     'Health & Fitness': gt.gettext('Health & Fitness'),
     'Lifestyle': gt.gettext('Lifestyle'),
     'Media & Video': gt.gettext('Media & Video'),
-    'Medical': gt.gettext('Medical'),
     'Music & Audio': gt.gettext('Music & Audio'),
     'News & Magazines': gt.gettext('News & Magazines'),
     'Personalisation': gt.gettext('Personalisation'),
@@ -30,7 +30,6 @@ let categoryTranslations = {
     'Shopping': gt.gettext('Shopping'),
     'Sports': gt.gettext('Sports'),
     'Travel & Weather': gt.gettext('Travel & Weather'),
-    'Universal Accesss/Accessibility': gt.gettext('Universal Accesss/Accessibility'),
     'Utilities': gt.gettext('Utilities'),
 }
 

@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2017-06-19 04:20:+0000\n"
+"POT-Creation-Date: 2017-06-20 01:45:+0000\n"
 "Project-Id-Version: PACKAGE VERSION\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -10,55 +10,55 @@ msgstr ""
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 
 #: api/app/categories.js:12
-msgid "Books & Comics"
+msgid "Accessibility"
 msgstr ""
 
 #: api/app/categories.js:13
-msgid "Business & Finance"
+msgid "Books & Comics"
 msgstr ""
 
 #: api/app/categories.js:14
-msgid "Communication & Social"
+msgid "Business & Finance"
 msgstr ""
 
 #: api/app/categories.js:15
-msgid "Developer Tools"
+msgid "Communication & Social"
 msgstr ""
 
 #: api/app/categories.js:16
-msgid "Education & Reference"
+msgid "Developer Tools"
 msgstr ""
 
 #: api/app/categories.js:17
-msgid "Entertainment"
+msgid "Education & Reference"
 msgstr ""
 
 #: api/app/categories.js:18
-msgid "Food & Drink"
+msgid "Entertainment"
 msgstr ""
 
 #: api/app/categories.js:19
-msgid "Games"
+msgid "Food & Drink"
 msgstr ""
 
 #: api/app/categories.js:20
-msgid "Graphics"
+msgid "Games"
 msgstr ""
 
 #: api/app/categories.js:21
-msgid "Health & Fitness"
+msgid "Graphics"
 msgstr ""
 
 #: api/app/categories.js:22
-msgid "Lifestyle"
+msgid "Health & Fitness"
 msgstr ""
 
 #: api/app/categories.js:23
-msgid "Media & Video"
+msgid "Lifestyle"
 msgstr ""
 
 #: api/app/categories.js:24
-msgid "Medical"
+msgid "Media & Video"
 msgstr ""
 
 #: api/app/categories.js:25
@@ -94,9 +94,5 @@ msgid "Travel & Weather"
 msgstr ""
 
 #: api/app/categories.js:33
-msgid "Universal Accesss/Accessibility"
-msgstr ""
-
-#: api/app/categories.js:34
 msgid "Utilities"
 msgstr ""

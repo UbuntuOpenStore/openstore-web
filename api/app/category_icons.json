@@ -1,4 +1,5 @@
 {
+    "Accessibility": null,
     "Books & Comics": null,
     "Business & Finance": null,
     "Communication & Social": null,
@@ -11,7 +12,6 @@
     "Health & Fitness": null,
     "Lifestyle": null,
     "Media & Video": null,
-    "Medical": null,
     "Music & Audio": null,
     "News & Magazines": null,
     "Personalisation": null,
@@ -20,6 +20,5 @@
     "Shopping": null,
     "Sports": null,
     "Travel & Weather": null,
-    "Universal Accesss/Accessibility": null,
     "Utilities": null
 }
