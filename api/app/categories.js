@@ -63,6 +63,8 @@ function setup(app) {
     });
 
     app.get('/api/v2/categories', function(req, res) {
+        //TODO load translation based on the lang parameter
+
         db.Package.aggregate([
             {
                 $match: {types: {$ne: 'snappy'}}
@@ -85,6 +87,7 @@ function setup(app) {
                     if (category._id) {
                         data.push({
                             category: category._id,
+                            translation: categoryTranslations[category._id],
                             count: category.count,
                             icon: config.server.host + categoryIcons[category._id],
                         })
