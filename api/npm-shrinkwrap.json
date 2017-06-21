@@ -368,6 +368,11 @@
       "from": "ee-first@1.1.1",
       "resolved": "https://registry.npmjs.org/ee-first/-/ee-first-1.1.1.tgz"
     },
+    "encoding": {
+      "version": "0.1.12",
+      "from": "encoding@0.1.12",
+      "resolved": "https://registry.npmjs.org/encoding/-/encoding-0.1.12.tgz"
+    },
     "end-of-stream": {
       "version": "1.4.0",
       "from": "end-of-stream@>=1.0.0 <2.0.0",
@@ -516,6 +521,11 @@
       "version": "1.0.2",
       "from": "get-caller-file@>=1.0.1 <2.0.0",
       "resolved": "https://registry.npmjs.org/get-caller-file/-/get-caller-file-1.0.2.tgz"
+    },
+    "gettext-parser": {
+      "version": "1.2.2",
+      "from": "gettext-parser@latest",
+      "resolved": "https://registry.npmjs.org/gettext-parser/-/gettext-parser-1.2.2.tgz"
     },
     "glob": {
       "version": "7.1.2",

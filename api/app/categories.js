@@ -6,33 +6,20 @@ const logger = require('../utils/logger');
 const helpers = require('./helpers');
 const categoryIcons = require('./category_icons.json');
 
+const fs = require('fs');
 const Gettext = require('node-gettext');
+const po = require('gettext-parser').po;
+
 let gt = new Gettext();
 
-let categoryTranslations = {
-    'Accessibility': gt.gettext('Accessibility'),
-    'Books & Comics': gt.gettext('Books & Comics'),
-    'Business & Finance': gt.gettext('Business & Finance'),
-    'Communication & Social': gt.gettext('Communication & Social'),
-    'Developer Tools': gt.gettext('Developer Tools'),
-    'Education & Reference': gt.gettext('Education & Reference'),
-    'Entertainment': gt.gettext('Entertainment'),
-    'Food & Drink': gt.gettext('Food & Drink'),
-    'Games': gt.gettext('Games'),
-    'Graphics': gt.gettext('Graphics'),
-    'Health & Fitness': gt.gettext('Health & Fitness'),
-    'Lifestyle': gt.gettext('Lifestyle'),
-    'Media & Video': gt.gettext('Media & Video'),
-    'Music & Audio': gt.gettext('Music & Audio'),
-    'News & Magazines': gt.gettext('News & Magazines'),
-    'Personalisation': gt.gettext('Personalisation'),
-    'Productivity': gt.gettext('Productivity'),
-    'Science & Engineering': gt.gettext('Science & Engineering'),
-    'Shopping': gt.gettext('Shopping'),
-    'Sports': gt.gettext('Sports'),
-    'Travel & Weather': gt.gettext('Travel & Weather'),
-    'Utilities': gt.gettext('Utilities'),
-}
+let langs = ['ca', 'de', 'eu', 'it', 'sv'];
+langs.forEach((lang) => {
+    let fileName = `../po/openstore-web-${lang}.po`;
+    let content = fs.readFileSync(fileName, 'utf-8');
+    let parsed = po.parse(content);
+
+    gt.addTranslations(lang, 'messages', parsed);
+});
 
 function setup(app) {
     app.get(['/api/categories', '/api/v1/categories'], function(req, res) {
@@ -63,7 +50,47 @@ function setup(app) {
     });
 
     app.get('/api/v2/categories', function(req, res) {
-        //TODO load translation based on the lang parameter
+        let lang = req.query.lang ? req.query.lang : null;
+        if (lang) {
+            if (langs.indexOf(lang) == -1 && lang.indexOf('_') > -1) {
+                lang = lang.split('_')[0];
+            }
+
+            if (langs.indexOf(lang) > -1) {
+                gt.setLocale(lang);
+            }
+            else {
+                gt.setLocale('en_US');
+            }
+        }
+        else {
+            gt.setLocale('en_US');
+        }
+
+        let categoryTranslations = {
+            'Accessibility': gt.gettext('Accessibility'),
+            'Books & Comics': gt.gettext('Books & Comics'),
+            'Business & Finance': gt.gettext('Business & Finance'),
+            'Communication & Social': gt.gettext('Communication & Social'),
+            'Developer Tools': gt.gettext('Developer Tools'),
+            'Education & Reference': gt.gettext('Education & Reference'),
+            'Entertainment': gt.gettext('Entertainment'),
+            'Food & Drink': gt.gettext('Food & Drink'),
+            'Games': gt.gettext('Games'),
+            'Graphics': gt.gettext('Graphics'),
+            'Health & Fitness': gt.gettext('Health & Fitness'),
+            'Lifestyle': gt.gettext('Lifestyle'),
+            'Media & Video': gt.gettext('Media & Video'),
+            'Music & Audio': gt.gettext('Music & Audio'),
+            'News & Magazines': gt.gettext('News & Magazines'),
+            'Personalisation': gt.gettext('Personalisation'),
+            'Productivity': gt.gettext('Productivity'),
+            'Science & Engineering': gt.gettext('Science & Engineering'),
+            'Shopping': gt.gettext('Shopping'),
+            'Sports': gt.gettext('Sports'),
+            'Travel & Weather': gt.gettext('Travel & Weather'),
+            'Utilities': gt.gettext('Utilities'),
+        };
 
         db.Package.aggregate([
             {

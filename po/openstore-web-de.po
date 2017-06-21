@@ -1,0 +1,106 @@
+# German translation for openstore-web
+# Copyright (c) 2017 Rosetta Contributors and Canonical Ltd 2017
+# This file is distributed under the same license as the openstore-web package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openstore-web\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2017-06-21 04:42+0000\n"
+"PO-Revision-Date: 2017-06-21 08:29+0000\n"
+"Last-Translator: Bjarne Roß <Unknown>\n"
+"Language-Team: German <de@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2017-06-21 14:52+0000\n"
+"X-Generator: Launchpad (build 18416)\n"
+
+#: api/app/categories.js:12
+msgid "Accessibility"
+msgstr "Barrierefreiheit"
+
+#: api/app/categories.js:13
+msgid "Books & Comics"
+msgstr "Bücher & Comics"
+
+#: api/app/categories.js:14
+msgid "Business & Finance"
+msgstr "Beruf & Finanzen"
+
+#: api/app/categories.js:15
+msgid "Communication & Social"
+msgstr "Kommunikation & Soziale Netzwerke"
+
+#: api/app/categories.js:16
+msgid "Developer Tools"
+msgstr "Entwicklerwerkzeuge"
+
+#: api/app/categories.js:17
+msgid "Education & Reference"
+msgstr "Bildung & Wissen"
+
+#: api/app/categories.js:18
+msgid "Entertainment"
+msgstr "Unterhaltung"
+
+#: api/app/categories.js:19
+msgid "Food & Drink"
+msgstr "Essen & Trinken"
+
+#: api/app/categories.js:20
+msgid "Games"
+msgstr "Spiele"
+
+#: api/app/categories.js:21
+msgid "Graphics"
+msgstr "Bildbearbeitung"
+
+#: api/app/categories.js:22
+msgid "Health & Fitness"
+msgstr "Gesundheit & Fitness"
+
+#: api/app/categories.js:23
+msgid "Lifestyle"
+msgstr "Mode"
+
+#: api/app/categories.js:24
+msgid "Media & Video"
+msgstr "Medien & Film"
+
+#: api/app/categories.js:25
+msgid "Music & Audio"
+msgstr "Musik & Audio"
+
+#: api/app/categories.js:26
+msgid "News & Magazines"
+msgstr "Nachrichten & Magazine"
+
+#: api/app/categories.js:27
+msgid "Personalisation"
+msgstr "Personalisierung"
+
+#: api/app/categories.js:28
+msgid "Productivity"
+msgstr "Produktivität"
+
+#: api/app/categories.js:29
+msgid "Science & Engineering"
+msgstr "Wissenschaft & Technik"
+
+#: api/app/categories.js:30
+msgid "Shopping"
+msgstr "Einkaufen"
+
+#: api/app/categories.js:31
+msgid "Sports"
+msgstr "Sport"
+
+#: api/app/categories.js:32
+msgid "Travel & Weather"
+msgstr "Reisen & Wetter"
+
+#: api/app/categories.js:33
+msgid "Utilities"
+msgstr "Zubehör"
