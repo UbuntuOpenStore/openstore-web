@@ -280,8 +280,6 @@ function setup(app) {
             res.setHeader('Cache-Control', 'public, max-age=2592000'); //30 days
             fs.createReadStream(filename).pipe(res);
         }).catch((err) => {
-            logger.error('Failed to download icon', err);
-
             res.status(404);
             fs.createReadStream(path.join(__dirname, '../404.png')).pipe(res);
         });
