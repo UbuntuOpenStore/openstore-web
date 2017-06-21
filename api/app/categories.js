@@ -1,6 +1,7 @@
 'use strict';
 
 const db = require('../db');
+const config = require('../utils/config');
 const logger = require('../utils/logger');
 const helpers = require('./helpers');
 const categoryIcons = require('./category_icons.json');
@@ -85,7 +86,7 @@ function setup(app) {
                         data.push({
                             category: category._id,
                             count: category.count,
-                            icon: categoryIcons[category._id],
+                            icon: config.server.host + categoryIcons[category._id],
                         })
                     }
                 });
