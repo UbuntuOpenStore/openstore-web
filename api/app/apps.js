@@ -33,6 +33,7 @@ const PERMISSION_DENIED = 'You do not have permission to update this app';
 const BAD_FILE = 'The file must be a click or snap package';
 const WRONG_PACKAGE = 'The uploaded package does not match the name of the package you are editing';
 const APP_NOT_FOUND = 'App not found';
+const BAD_NAMESPACE = 'You package name is for a domain that you do not have access to';
 
 function setup(app) {
     app.get('/api/health', function(req, res) {
@@ -411,7 +412,18 @@ function setup(app) {
             }
 
             checkPackage(req).then(() => {
-                let parsePromise = parse(fileName(req), true);
+                let parsePromise = parse(fileName(req), true).then((parseData) => {
+                    if (!helpers.isAdminOrTrustedUser(req)) {
+                        if (parseData.name.substring(0, 11) == 'com.ubuntu.' && parseData.name.substring(0, 21) != 'com.ubuntu.developer.') {
+                            throw BAD_NAMESPACE;
+                        }
+                        else if (parseData.name.substring(0, 12) == 'com.ubports.') {
+                            throw BAD_NAMESPACE;
+                        }
+                    }
+
+                    return parseData;
+                });
                 let existingPromise = parsePromise.then((parseData) => {
                     if (!parseData.name || !parseData.version || !parseData.architecture) {
                         throw MALFORMED_MANIFEST;
@@ -437,7 +449,7 @@ function setup(app) {
             }).then((pkg) => {
                 helpers.success(res, packages.toJson(pkg, req));
             }).catch((err) => {
-                if (err.indexOf(NEEDS_MANUAL_REVIEW) === 0 || err == MALFORMED_MANIFEST || err == DUPLICATE_PACKAGE) {
+                if ((err && err.indexOf && err.indexOf(NEEDS_MANUAL_REVIEW) === 0) || err == MALFORMED_MANIFEST || err == DUPLICATE_PACKAGE || err == BAD_NAMESPACE) {
                     helpers.error(res, err, 400);
                 }
                 else {
