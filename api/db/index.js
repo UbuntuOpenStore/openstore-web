@@ -67,6 +67,7 @@ var userSchema = mongoose.Schema({
     name: String,
     role: String,
     ubuntu_id: {type: String, index: true},
+    github_id: String,
     username: String,
 });
 

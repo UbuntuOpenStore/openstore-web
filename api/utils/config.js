@@ -36,6 +36,10 @@ var config = {
         command: process.env.CLICK_REVIEW_COMMAND || 'click-review',
         //Heroku pythonpath: /app/.apt/usr/lib/python3/dist-packages/
         pythonpath: process.env.CLICK_REVIEW_PYTHONPATH || '',
+    },
+    github: {
+        clientID: configFile.GITHUB_CLIENT_ID || process.env.GITHUB_CLIENT_ID || '',
+        clientSecret: configFile.GITHUB_CLIENT_SECRET || process.env.GITHUB_CLIENT_SECRET || '',
     }
 };
 

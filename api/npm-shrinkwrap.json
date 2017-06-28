@@ -920,6 +920,11 @@
       "from": "number-is-nan@>=1.0.0 <2.0.0",
       "resolved": "https://registry.npmjs.org/number-is-nan/-/number-is-nan-1.0.1.tgz"
     },
+    "oauth": {
+      "version": "0.9.15",
+      "from": "oauth@>=0.9.0 <0.10.0",
+      "resolved": "https://registry.npmjs.org/oauth/-/oauth-0.9.15.tgz"
+    },
     "oauth-sign": {
       "version": "0.8.1",
       "from": "oauth-sign@>=0.8.0 <0.9.0",
@@ -995,6 +1000,11 @@
       "from": "passport@>=0.3.2 <0.4.0",
       "resolved": "https://registry.npmjs.org/passport/-/passport-0.3.2.tgz"
     },
+    "passport-github": {
+      "version": "1.1.0",
+      "from": "passport-github@latest",
+      "resolved": "https://registry.npmjs.org/passport-github/-/passport-github-1.1.0.tgz"
+    },
     "passport-localapikey": {
       "version": "0.0.3",
       "from": "passport-localapikey@>=0.0.3 <0.0.4",
@@ -1006,6 +1016,11 @@
           "resolved": "https://registry.npmjs.org/passport/-/passport-0.1.18.tgz"
         }
       }
+    },
+    "passport-oauth2": {
+      "version": "1.4.0",
+      "from": "passport-oauth2@>=1.0.0 <2.0.0",
+      "resolved": "https://registry.npmjs.org/passport-oauth2/-/passport-oauth2-1.4.0.tgz"
     },
     "passport-openid": {
       "version": "0.4.0",
@@ -1411,6 +1426,11 @@
       "version": "0.0.6",
       "from": "typedarray@>=0.0.5 <0.1.0",
       "resolved": "https://registry.npmjs.org/typedarray/-/typedarray-0.0.6.tgz"
+    },
+    "uid2": {
+      "version": "0.0.3",
+      "from": "uid2@>=0.0.0 <0.1.0",
+      "resolved": "https://registry.npmjs.org/uid2/-/uid2-0.0.3.tgz"
     },
     "unpipe": {
       "version": "1.0.0",

@@ -2,7 +2,8 @@ var angular = require('angular');
 
 var indexCtrl = function($scope, $rootScope, $state, $uibModal, $location, $sce, api) {
     $scope.$state = $state;
-    $scope.login = $sce.trustAsResourceUrl(process.env.API + '/auth/ubuntu');
+    $scope.loginUbuntu = $sce.trustAsResourceUrl(process.env.API + '/auth/ubuntu');
+    $scope.loginGitHub = $sce.trustAsResourceUrl(process.env.API + '/auth/github');
 
     var url = $location.protocol() + '://' + $location.host() + '/';
     var defaultTitle = 'OpenStore';
