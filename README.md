@@ -14,7 +14,8 @@ Please report any bugs/features/requests in our [bug tracker](https://github.com
 * Start vagrant:
     * Run: `vagrant up`
 * Install NPM dependencies (it's best to run this in the VM):
-    * Run: `npm install`
+    * Install api dependencies: `cd api; npm install; cd ..`
+    * Install web dependencies: 'cd www; npm install; cd ..'
 * Attach to the docker container (if needed - from inside the vagrant VM):
     * Attach to the api container: `attach_api`
     * Attach to the web container: `attach_web`
