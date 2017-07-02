@@ -1,0 +1,15 @@
+#!/bin/env node
+
+'use strict';
+
+const db = require('../db');
+db.User.findOne({}).then((user) => {
+    user.role = 'admin';
+    return user.save();
+}).then((user) => {
+    console.log(user.name);
+    process.exit(0);
+}).catch((err) => {
+    console.log(err);
+    process.exit(1);
+});

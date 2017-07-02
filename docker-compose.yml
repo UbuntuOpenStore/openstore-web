@@ -1,5 +1,5 @@
 api:
-    build: ./api/
+    build: ./env/api/
     ports:
         - "8080:8080"
     links:
@@ -8,7 +8,7 @@ api:
         - /srv/openstore:/srv/openstore
 
 web:
-    build: ./web/
+    build: ./env/web/
     ports:
         - "8081:8081"
     volumes:

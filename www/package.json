@@ -19,7 +19,7 @@
   "devDependencies": {
     "css-loader": "^0.28.0",
     "file-loader": "https://registry.npmjs.org/file-loader/-/file-loader-0.8.5.tgz",
-    "html-webpack-plugin": "^2.28.0",
+    "html-webpack-plugin": "^2.29.0",
     "style-loader": "https://registry.npmjs.org/style-loader/-/style-loader-0.13.0.tgz",
     "url-loader": "https://registry.npmjs.org/url-loader/-/url-loader-0.5.7.tgz",
     "webpack": "^2.4.1"

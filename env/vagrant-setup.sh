@@ -13,3 +13,6 @@ ln -s /srv/openstore/env/attach_web.sh /usr/local/bin/attach_web
 
 chmod +x /usr/local/bin/attach_api
 chmod +x /usr/local/bin/attach_web
+
+docker exec openstore_api_1 bash -c "cd /srv/openstore/api && npm install"
+docker exec openstore_api_1 bash -c "cd /srv/openstore/www && npm install"

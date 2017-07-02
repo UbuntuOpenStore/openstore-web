@@ -13,7 +13,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.network "forwarded_port", guest: 80, host: 8081
 
     config.vm.provision :docker
-    config.vm.provision :docker_compose, project_name: "openstore", yml: "/vagrant/env/docker-compose.yml", rebuild: true, run: "always"
+    config.vm.provision :docker_compose, project_name: "openstore", yml: "/vagrant/docker-compose.yml", rebuild: true, run: "always"
 
     config.vm.provision "shell", path: "./env/vagrant-setup.sh"
     config.vm.provision "shell", run: "always", inline: "service nginx restart"
