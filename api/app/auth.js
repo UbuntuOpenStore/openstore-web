@@ -1,6 +1,7 @@
 'use strict';
 
 var config = require('../utils/config');
+var logger = require('../utils/logger');
 var db = require('../db');
 var passport = require('passport');
 var bodyParser = require('body-parser');
@@ -124,41 +125,46 @@ function setup(app) {
         user.save(callback);
     }
 
-    passport.use(new GitHubStrategy({
-        clientID: config.github.clientID,
-        clientSecret: config.github.clientSecret,
-        callbackURL: config.server.host + '/auth/github/callback',
-        scope: ['user:email'],
-    },
-    function(accessToken, refreshToken, profile, callback) {
-        db.User.findOne({github_id: profile.id}, function(err, user) {
-            if (err) {
-                callback(err);
-            }
-            else {
-                let emails = profile.emails.filter((email) => email.verified).map((email) => email.value);
-                if (!user && emails) {
-                    db.User.findOne({email: {$in: emails}}, function(err, user) {
-                        if (err) {
-                            callback(err);
-                        }
-                        else {
-                            updateOrCreateGithubUser(user, profile, callback);
-                        }
-                    });
+    if (config.github.clientID && config.github.clientSecret) {
+        passport.use(new GitHubStrategy({
+            clientID: config.github.clientID,
+            clientSecret: config.github.clientSecret,
+            callbackURL: config.server.host + '/auth/github/callback',
+            scope: ['user:email'],
+        },
+        function(accessToken, refreshToken, profile, callback) {
+            db.User.findOne({github_id: profile.id}, function(err, user) {
+                if (err) {
+                    callback(err);
                 }
                 else {
-                    updateOrCreateGithubUser(user, profile, callback);
+                    let emails = profile.emails.filter((email) => email.verified).map((email) => email.value);
+                    if (!user && emails) {
+                        db.User.findOne({email: {$in: emails}}, function(err, user) {
+                            if (err) {
+                                callback(err);
+                            }
+                            else {
+                                updateOrCreateGithubUser(user, profile, callback);
+                            }
+                        });
+                    }
+                    else {
+                        updateOrCreateGithubUser(user, profile, callback);
+                    }
                 }
-            }
-        });
-    }));
+            });
+        }));
 
-    app.get('/auth/github', passport.authenticate('github'));
-    app.get('/auth/github/callback', passport.authenticate('github', {
-        successRedirect: '/manage',
-        failureRedirect: '/'
-    }));
+        app.get('/auth/github', passport.authenticate('github'));
+        app.get('/auth/github/callback', passport.authenticate('github', {
+            successRedirect: '/manage',
+            failureRedirect: '/'
+        }));
+    }
+    else {
+        logger.error('GitHub login is not available, set a client id & secret');
+    }
 
     app.get('/auth/me', function(req, res) {
         if (req.user) {

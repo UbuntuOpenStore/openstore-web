@@ -25,14 +25,33 @@ Please report any bugs/features/requests in our [bug tracker](https://github.com
     * Upgrade your user to an admin (From inside the vagrant VM): `docker exec -it openstore_api_1 node /srv/openstore/api/bin/setup-admin`
 * Profit!
 
-## Contributors ##
+## Configuration
+
+By default there are no credentials stored for the GitHub login or Smartfile upload.
+Smart file is used to store clicks & snaps, it must be enabled for proper functionality.
+In order to use either you need to create a config.json file in `api/utils/`
+like this:
+
+```
+{
+    "SMARTFILE_KEY": "INSERT_KEY",
+    "SMARTFILE_PASS": "INSERT_PASS",
+    "GITHUB_CLIENT_ID": "INSERT_ID",
+    "GITHUB_CLIENT_SECRET": "INSERT_SECRET"
+}
+```
+
+* [Sign up for a Smartfile account](https://app.smartfile.com/dev/)
+* [Create a GitHub OAuth App](https://developer.github.com/apps/building-integrations/setting-up-and-registering-oauth-apps/)
+
+## Contributors
 
 * [Brian Douglass](http://bhdouglass.com/)
 * [Michael Zanetti](http://notyetthere.org/)
 * [Marius Gripsgård](http://mariogrip.com/)
 * [Michał Prędotka](http://mivoligo.com/)
 
-## License ##
+## License
 
 Copyright (C) 2017 [Brian Douglass](http://bhdouglass.com/)
 
