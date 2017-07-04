@@ -14,7 +14,7 @@ let gt = new Gettext();
 
 let langs = ['ca', 'de', 'eu', 'it', 'sv'];
 langs.forEach((lang) => {
-    let fileName = `../po/openstore-web-${lang}.po`;
+    let fileName = `../po/${lang}.po`;
     let content = fs.readFileSync(fileName, 'utf-8');
     let parsed = po.parse(content);
 
