@@ -5,6 +5,7 @@ require('swipebox');
 window.UPLOADCARE_LOCALE = 'en';
 window.UPLOADCARE_TABS = 'file url';
 window.UPLOADCARE_PUBLIC_KEY = process.env.UPLOADCARE_KEY;
+window.UPLOADCARE_LIVE = false; //Prevents upload care from checking for new elements every 100ms (which can cause cpu load when idle)
 window.uploadcare = require('Uploadcare');
 
 var angular = require('angular');
