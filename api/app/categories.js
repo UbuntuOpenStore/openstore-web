@@ -12,7 +12,7 @@ const po = require('gettext-parser').po;
 
 let gt = new Gettext();
 
-let langs = ['ca', 'de', 'eu', 'it', 'sv'];
+let langs = ['ca', 'de', 'eu', 'it', 'nl', 'pt', 'sv'];
 langs.forEach((lang) => {
     let fileName = `../po/${lang}.po`;
     let content = fs.readFileSync(fileName, 'utf-8');

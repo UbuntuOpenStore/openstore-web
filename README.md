@@ -6,6 +6,11 @@ Web viewer and api for the [OpenStore](http://notyetthere.org/openstore-tweakgee
 
 Please report any bugs/features/requests in our [bug tracker](https://github.com/UbuntuOpenStore/openstore-meta/issues).
 
+## Translations
+
+If you would like to help out with translations head over to the OpenStore
+project on the [UBports Weblate instance](https://translate.ubports.com/projects/openstore/openstore-web/).
+
 ## Development
 
 * Install [vagrant](http://vagrantup.com/)
