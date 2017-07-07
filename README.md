@@ -1,6 +1,6 @@
 # OpenStore Web
 
-Web viewer and api for the [OpenStore](http://notyetthere.org/openstore-tweakgeek-and-more/).
+Web viewer and api for the [OpenStore](https://open.uappexplorer.com/).
 
 ## Reporting Bugs
 
