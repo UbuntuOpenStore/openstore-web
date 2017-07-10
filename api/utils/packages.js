@@ -10,6 +10,13 @@ const sanitizeHtml = require('sanitize-html');
 const moment = require('moment');
 const path = require('path');
 
+function sanitize(html) {
+    return sanitizeHtml(html, {
+      allowedTags: [],
+      allowedAttributes: [],
+    }).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/\r/g, '');
+}
+
 
 function updateInfo(pkg, data, body, file, url) {
     let maintainer = body ? body.maintainer : pkg.maintainer;
@@ -183,20 +190,9 @@ function updateInfo(pkg, data, body, file, url) {
             pkg.changelog = pkg.changelog ? pkg.changelog : '';
             pkg.tagline = pkg.tagline ? pkg.tagline : '';
 
-            pkg.description = sanitizeHtml(pkg.description, {
-              allowedTags: [],
-              allowedAttributes: [],
-            }).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/\r/g, '');
-
-            pkg.changelog = sanitizeHtml(pkg.changelog, {
-              allowedTags: [],
-              allowedAttributes: [],
-            }).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/\r/g, '');
-
-            pkg.tagline = sanitizeHtml(pkg.tagline, {
-              allowedTags: [],
-              allowedAttributes: [],
-            }).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/\r/g, '');
+            pkg.description = sanitize(pkg.description);
+            pkg.changelog = sanitize(pkg.changelog);
+            pkg.tagline = sanitize(pkg.tagline);
 
             if (body.maintainer !== undefined) {
                 pkg.maintainer = body.maintainer;
@@ -207,20 +203,9 @@ function updateInfo(pkg, data, body, file, url) {
             pkg.changelog = pkg.changelog ? pkg.changelog : '';
             pkg.tagline = pkg.tagline ? pkg.tagline : '';
 
-            pkg.description = sanitizeHtml(pkg.description, {
-              allowedTags: [],
-              allowedAttributes: [],
-            }).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/\r/g, '');
-
-            pkg.changelog = sanitizeHtml(pkg.changelog, {
-              allowedTags: [],
-              allowedAttributes: [],
-            }).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/\r/g, '');
-
-            pkg.tagline = sanitizeHtml(pkg.tagline, {
-              allowedTags: [],
-              allowedAttributes: [],
-            }).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/\r/g, '');
+            pkg.description = sanitize(pkg.description);
+            pkg.changelog = sanitize(pkg.changelog);
+            pkg.tagline = sanitize(pkg.tagline);
         }
 
         return pkg;
