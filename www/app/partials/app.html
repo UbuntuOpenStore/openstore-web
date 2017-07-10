@@ -48,6 +48,8 @@
             <p ng-if="app.support_url">Support: <a ng-href="{{app.support_url}}" target="_blank" rel="noopener noreferrer">{{app.support_url}}</a></p>
             <p ng-if="app.source">Source: <a ng-href="{{app.source}}" target="_blank" rel="noopener noreferrer">{{app.source}}</a></p>
             <p ng-if="app.license">License: {{app.license}}</p>
+            <p ng-if="app.updated_date">Updated: {{app.updated_date|date}}</p>
+            <p ng-if="app.published_date">Published: {{app.published_date|date}}</p>
             <p ng-if="app.framework">Framework: {{app.framework}}</p>
         </div>
     </div>
