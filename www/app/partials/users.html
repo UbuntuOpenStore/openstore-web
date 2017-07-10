@@ -37,6 +37,7 @@
                         <td>
                             <select ng-model="user.role" ng-change="userChanged(user)" ng-disabled="user.saving" class="form-control">
                                 <option value="">Community User</option>
+                                <option value="disabled">Disabled User</option>
                                 <option value="trusted">Trusted User</option>
                                 <option value="admin">Admin User</option>
                             </select>

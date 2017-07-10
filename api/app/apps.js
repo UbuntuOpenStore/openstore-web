@@ -395,7 +395,7 @@ function setup(app) {
 
     }
 
-    app.post(['/api/apps', '/api/v1/manage/apps'], passport.authenticate('localapikey', {session: false}), mupload.single('file'), function(req, res) {
+    app.post(['/api/apps', '/api/v1/manage/apps'], passport.authenticate('localapikey', {session: false}), mupload.single('file'), helpers.isNotDisabled, function(req, res) {
         if (!req.file) {
             helpers.error(res, 'No file upload specified');
         }
@@ -460,7 +460,7 @@ function setup(app) {
         }
     });
 
-    app.put(['/api/apps/:id', '/api/v1/manage/apps/:id'], passport.authenticate('localapikey', {session: false}), mupload.single('file'), function(req, res) {
+    app.put(['/api/apps/:id', '/api/v1/manage/apps/:id'], passport.authenticate('localapikey', {session: false}), mupload.single('file'), helpers.isNotDisabled, function(req, res) {
         let packagePromise = db.Package.findOne({id: req.params.id});
 
         if (req.body && (!req.body.maintainer || req.body.maintainer == 'null')) {

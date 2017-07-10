@@ -24,6 +24,15 @@ function error(res, message, code) {
     });
 }
 
+function isNotDisabled(req, res, next) {
+    if (req.isAuthenticated() && req.user && req.user.role != 'disabled') {
+        next();
+    }
+    else {
+        error(res, 'Your account has been disabled at this time', 403);
+    }
+}
+
 function isAdmin(req, res, next) {
     if (req.isAuthenticated() && req.user && req.user.role == 'admin') {
         next();
@@ -105,6 +114,7 @@ function download(url, filename) {
 
 exports.success = success;
 exports.error = error;
+exports.isNotDisabled = isNotDisabled;
 exports.isAdmin = isAdmin;
 exports.isAdminOrTrusted = isAdminOrTrusted;
 exports.isAdminOrTrustedOwner = isAdminOrTrustedOwner;
