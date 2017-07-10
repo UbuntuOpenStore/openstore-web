@@ -40,22 +40,23 @@ var packageSchema = mongoose.Schema({
     version: String,
     support_url: String,
     donate_url: String,
+    video_url: String,
 });
 
 packageSchema.index({
-  name: 'text',
-  description: 'text',
-  keywords: 'text',
-  author: 'text',
+    name: 'text',
+    description: 'text',
+    keywords: 'text',
+    author: 'text',
 },
 {
-  weights: {
-    name: 10,
-    description: 5,
-    keywords: 3,
-    author: 1,
-  },
-  name: 'searchIndex',
+    weights: {
+        name: 10,
+        description: 5,
+        keywords: 3,
+        author: 1,
+    },
+    name: 'searchIndex',
 });
 
 var Package = mongoose.model('Package', packageSchema);

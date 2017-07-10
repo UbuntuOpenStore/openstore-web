@@ -166,6 +166,16 @@ function updateInfo(pkg, data, body, file, url) {
                 }
             }
 
+            if (body.video_url || body.video_url === '') {
+                //TODO support regular youtube urls and transform them into embedded urls
+                if (body.video_url.indexOf('https://www.youtube.com/embed/') === 0) {
+                    pkg.video_url = body.video_url;
+                }
+                else {
+                    pkg.video_url = '';
+                }
+            }
+
             if (body.tagline || body.tagline === '') {
                 pkg.tagline = body.tagline;
             }
@@ -336,6 +346,7 @@ function toJson(pkg, req) {
         source: pkg.source ? pkg.source : '',
         support_url: pkg.support_url ? pkg.support_url : '',
         donate_url: pkg.donate_url ? pkg.donate_url : '',
+        video_url: pkg.video_url ? pkg.video_url : '',
         tagline: pkg.tagline ? pkg.tagline : '',
         types: pkg.types ? pkg.types : [],
         updated_date: pkg.published_date ? pkg.updated_date : '',

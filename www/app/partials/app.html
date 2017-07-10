@@ -41,6 +41,10 @@
             <p ng-bind-html="app.changelog | nl2br"></p>
         </div>
 
+        <div class="video" ng-if="app.video_url">
+            <iframe width="560" height="315" src="{{app.video_url}}" frameborder="0" allowfullscreen></iframe>
+        </div>
+
         <div class="info">
             <h4>Info:</h4>
             <p ng-if="app.author">Author: {{app.author}}</p>

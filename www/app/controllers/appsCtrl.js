@@ -1,6 +1,6 @@
 var debounce = require('debounce');
 
-var appsCtrl = function($scope, $rootScope, $state, api) {
+var appsCtrl = function($scope, $rootScope, $state, $sce, api) {
     $scope.apps = [];
     $scope.app = null;
     $scope.tab = 'contents';
@@ -54,6 +54,7 @@ var appsCtrl = function($scope, $rootScope, $state, api) {
     if ($state.params.name) {
         api.apps.get($state.params.name).then(function(app) {
             $scope.app = app;
+            $scope.app.video_url = $scope.app.video_url ? $sce.trustAsResourceUrl($scope.app.video_url) : '';
             $scope.tab = 'contents';
             $scope.manifest = false;
 
@@ -108,6 +109,6 @@ var appsCtrl = function($scope, $rootScope, $state, api) {
     };
 };
 
-appsCtrl.$inject = ['$scope', '$rootScope', '$state', 'api'];
+appsCtrl.$inject = ['$scope', '$rootScope', '$state', '$sce', 'api'];
 
 module.exports = appsCtrl;
