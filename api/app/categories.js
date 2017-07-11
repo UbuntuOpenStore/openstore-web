@@ -3,8 +3,8 @@
 const db = require('../db');
 const config = require('../utils/config');
 const logger = require('../utils/logger');
-const helpers = require('./helpers');
-const categoryIcons = require('./category_icons.json');
+const helpers = require('../utils/helpers');
+const categoryIcons = require('./json/category_icons.json');
 
 const fs = require('fs');
 const Gettext = require('node-gettext');

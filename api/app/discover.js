@@ -2,8 +2,8 @@
 
 const db = require('../db');
 const config = require('../utils/config');
-const discover = require('./discover_apps.json');
-const helpers = require('./helpers');
+const discover = require('./json/discover_apps.json');
+const helpers = require('../utils/helpers');
 
 const shuffle = require('shuffle-array');
 

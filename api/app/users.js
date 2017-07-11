@@ -1,7 +1,7 @@
 var db = require('../db');
 var config = require('../utils/config');
 var logger = require('../utils/logger');
-var helpers = require('./helpers');
+var helpers = require('../utils/helpers');
 var passport = require('passport');
 
 function setup(app) {
