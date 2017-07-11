@@ -15,7 +15,7 @@
     "ansi-styles": {
       "version": "2.2.0",
       "from": "ansi-styles@>=2.1.0 <3.0.0",
-      "resolved": "https://registry.npmjs.org/ansi-styles/-/ansi-styles-2.2.0.tgz"
+      "resolved": "https://registry.npmjs.org/ansi-styles/-/ansi-styles-2.2.1.tgz"
     },
     "append-field": {
       "version": "0.1.0",
