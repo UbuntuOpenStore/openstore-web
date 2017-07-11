@@ -2,6 +2,7 @@ var config = require('../utils/config');
 var apps = require('./apps');
 var snaps = require('./snaps');
 var categories = require('./categories');
+var discover = require('./discover');
 var auth = require('./auth');
 var users = require('./users');
 var db = require('../db');
@@ -23,6 +24,7 @@ function setup() {
     });
 
     auth.setup(app);
+    discover.setup(app);
     apps.setup(app);
     snaps.setup(app);
     categories.setup(app);

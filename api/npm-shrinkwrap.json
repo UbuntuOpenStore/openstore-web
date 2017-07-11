@@ -1269,6 +1269,11 @@
       "from": "set-blocking@>=2.0.0 <3.0.0",
       "resolved": "https://registry.npmjs.org/set-blocking/-/set-blocking-2.0.0.tgz"
     },
+    "shuffle-array": {
+      "version": "1.0.1",
+      "from": "shuffle-array@latest",
+      "resolved": "https://registry.npmjs.org/shuffle-array/-/shuffle-array-1.0.1.tgz"
+    },
     "sliced": {
       "version": "1.0.1",
       "from": "sliced@1.0.1",
