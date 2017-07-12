@@ -40,6 +40,12 @@ var config = {
     github: {
         clientID: configFile.GITHUB_CLIENT_ID || process.env.GITHUB_CLIENT_ID || '',
         clientSecret: configFile.GITHUB_CLIENT_SECRET || process.env.GITHUB_CLIENT_SECRET || '',
+    },
+    backblaze: {
+        bucket: configFile.BACKBLAZE_BUCKET || process.env.BACKBLAZE_BUCKET || '',
+        url: configFile.BACKBLAZE_URL || process.env.BACKBLAZE_URL || '',
+        accountID: configFile.BACKBLAZE_ACCOUNT_ID || process.env.BACKBLAZE_ACCOUNT_ID || '',
+        appKey: configFile.BACKBLAZE_APP_KEY || process.env.BACKBLAZE_APP_KEY || '',
     }
 };
 

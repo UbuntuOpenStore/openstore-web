@@ -378,8 +378,6 @@ function setup(app) {
 
         return packages.updateInfo(pkg, parseData, req.body, req.file).then((pkg) => {
             return upload.uploadPackage(
-                config.smartfile.url,
-                config.smartfile.share,
                 pkg,
                 fileName(req),
                 parseData.icon
@@ -487,7 +485,7 @@ function setup(app) {
         }).then((pkg) => {
             helpers.success(res, packages.toJson(pkg, req));
         }).catch((err) => {
-            if (err == PERMISSION_DENIED || err == BAD_FILE || err.indexOf(NEEDS_MANUAL_REVIEW) === 0 || err == MALFORMED_MANIFEST || err == WRONG_PACKAGE) {
+            if (err == PERMISSION_DENIED || err == BAD_FILE || (err.indexOf && err.indexOf(NEEDS_MANUAL_REVIEW) === 0) || err == MALFORMED_MANIFEST || err == WRONG_PACKAGE) {
                 helpers.error(res, err, 400);
             }
             else {
