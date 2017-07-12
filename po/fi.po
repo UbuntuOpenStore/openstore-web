@@ -2,20 +2,24 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2017-06-20 01:45:+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2017-07-12 16:41+0000\n"
+"Last-Translator: Sami Törmänen <tormanen.sami@gmail.com>\n"
+"Language-Team: Finnish <https://ubpweblate.tnvcomp.com/projects/openstore"
+"/openstore-web/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.15\n"
 
 #: api/app/categories.js:12
 msgid "Accessibility"
-msgstr ""
+msgstr "Helppokäyttöisyys"
 
 #: api/app/categories.js:13
 msgid "Books & Comics"
-msgstr ""
+msgstr "Kirjat & sarjakuvat"
 
 #: api/app/categories.js:14
 msgid "Business & Finance"
@@ -23,11 +27,11 @@ msgstr ""
 
 #: api/app/categories.js:15
 msgid "Communication & Social"
-msgstr ""
+msgstr "Viestintä & sosiaalinen"
 
 #: api/app/categories.js:16
 msgid "Developer Tools"
-msgstr ""
+msgstr "Kehittäjien työkalut"
 
 #: api/app/categories.js:17
 msgid "Education & Reference"
@@ -35,27 +39,27 @@ msgstr ""
 
 #: api/app/categories.js:18
 msgid "Entertainment"
-msgstr ""
+msgstr "Viihde"
 
 #: api/app/categories.js:19
 msgid "Food & Drink"
-msgstr ""
+msgstr "Ruoka & juoma"
 
 #: api/app/categories.js:20
 msgid "Games"
-msgstr ""
+msgstr "Pelit"
 
 #: api/app/categories.js:21
 msgid "Graphics"
-msgstr ""
+msgstr "Grafiikka"
 
 #: api/app/categories.js:22
 msgid "Health & Fitness"
-msgstr ""
+msgstr "Terveys & kuntoilu"
 
 #: api/app/categories.js:23
 msgid "Lifestyle"
-msgstr ""
+msgstr "Elämäntapa"
 
 #: api/app/categories.js:24
 msgid "Media & Video"
@@ -63,19 +67,19 @@ msgstr ""
 
 #: api/app/categories.js:25
 msgid "Music & Audio"
-msgstr ""
+msgstr "Musiikki & ääni"
 
 #: api/app/categories.js:26
 msgid "News & Magazines"
-msgstr ""
+msgstr "Uutiset & lehdet"
 
 #: api/app/categories.js:27
 msgid "Personalisation"
-msgstr ""
+msgstr "Personointi"
 
 #: api/app/categories.js:28
 msgid "Productivity"
-msgstr ""
+msgstr "Tuottavuus"
 
 #: api/app/categories.js:29
 msgid "Science & Engineering"
@@ -83,16 +87,16 @@ msgstr ""
 
 #: api/app/categories.js:30
 msgid "Shopping"
-msgstr ""
+msgstr "Shoppailu"
 
 #: api/app/categories.js:31
 msgid "Sports"
-msgstr ""
+msgstr "Urheilu"
 
 #: api/app/categories.js:32
 msgid "Travel & Weather"
-msgstr ""
+msgstr "Matkustaminen & sää"
 
 #: api/app/categories.js:33
 msgid "Utilities"
-msgstr ""
+msgstr "Apuohjelmat"
