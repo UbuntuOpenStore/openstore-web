@@ -13,7 +13,7 @@
   "author": "Brian Douglass",
   "license": "GPL-3.0",
   "engines": {
-    "node": "4.2.2"
+    "node": "6.11.1"
   },
   "dependencies": {}
 }

@@ -1,4 +1,4 @@
-FROM node:5.11
+FROM node:6.11
 MAINTAINER Brian Douglass
 
 ENV HOST=http://local.open.uappexplorer.com
