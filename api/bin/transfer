@@ -1,0 +1,9 @@
+#!/bin/env node
+
+var upload = require('../utils/upload');
+upload.transferStorage().then(() => {
+    process.exit(0);
+}).catch((err) => {
+    console.log(err);
+    process.exit(1);
+});

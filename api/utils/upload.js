@@ -1,6 +1,10 @@
 'use strict';
 
 const config = require('../utils/config');
+const db = require('../db');
+const helpers = require('../utils/helpers');
+const parse = require('../utils/click-parser-async');
+const logger = require('../utils/logger');
 
 const fs = require('fs');
 const path = require('path');
@@ -85,4 +89,34 @@ function uploadPackage(pkg, filePath, iconPath) {
     });
 }
 
+//This is not how you do promises :/
+function transferStorage() {
+    logger.debug('transferStorage');
+    return db.Package.find({}).then((pkgs) => {
+        pkgs = pkgs.filter((pkg) => {
+            return (pkg.package.indexOf(config.backblaze.url) != 0);
+        });
+
+        logger.debug('going to transfer', pkgs.length);
+        return Promise.all(pkgs.map((pkg) => {
+            var tmpFile = '/tmp/' + pkg.package.replace(/\//g, '_').replace(':', '_');
+            logger.debug('transfering', pkg.id, pkg.package, tmpFile);
+
+            return helpers.download(pkg.package, tmpFile).then(() => {
+                logger.debug('downloaded', tmpFile);
+                return parse(tmpFile, true).then((parsed) => {
+                    logger.debug('parsed', parsed.icon);
+                    return uploadPackage(pkg, tmpFile, parsed.icon).then((pkg) => {
+                        fs.unlink(tmpFile);
+
+                        logger.debug('uploaded', pkg.package);
+                        return pkg.save();
+                    });
+                })
+            });
+        }));
+    });
+}
+
 exports.uploadPackage = uploadPackage;
+exports.transferStorage = transferStorage;
