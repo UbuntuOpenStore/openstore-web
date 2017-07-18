@@ -2,20 +2,24 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2017-06-20 01:45:+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2017-07-18 07:43+0000\n"
+"Last-Translator: t-h-e-p-e-t-e-r <peter.valachovic@gmail.com>\n"
+"Language-Team: Slovak <https://ubpweblate.tnvcomp.com/projects/openstore"
+"/openstore-web/sk/>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 2.15\n"
 
 #: api/app/categories.js:12
 msgid "Accessibility"
-msgstr ""
+msgstr "Príslušenstvo"
 
 #: api/app/categories.js:13
 msgid "Books & Comics"
-msgstr ""
+msgstr "Knihy & Komixy"
 
 #: api/app/categories.js:14
 msgid "Business & Finance"
