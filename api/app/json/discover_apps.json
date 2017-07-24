@@ -1,52 +1,55 @@
 {
     "highlight": {
-        "id": "com.mikeasoft.podbird",
-        "image": "/img/banners/podbird.svg"
+        "id": "uwp.costales",
+        "image": "/img/banners/uwriter.svg"
     },
     "categories": [
         {
             "name": "New Apps",
-            "tagline": "The latest apps in the OpenStore",
+            "tagline": "The newest additions",
             "referral": "",
             "ids": [
-                "astros.aegloszenit",
-                "alieninvasion.johandoe1960",
-                "uhp48mf.mfoucrier",
-                "checkers.costa",
-                "talaan.kugiigi"
-            ]
-        }, {
-            "name": "Awesome Games",
-            "tagline": "The most fun you can possibly have!",
-            "referral": "Games",
-            "ids": [
-                "com.ubuntu.developer.mzanetti.machines-vs-machines",
-                "monsterwars.t-mon",
-                "hexgl.bhdouglass",
-                "8192.neothethird",
-                "balls.briketa",
-                "minimakerfa.mivoligo",
-                "xake.hankamotz"
+                "sverzegnassi.mtcgame",
+                "kiwix",
+                "dountil",
+                "wifisd.luksus",
+                "plex-local.luksus",
+                "pathwind.emanuelesorce"
             ]
         }, {
             "name": "Updated Apps",
-            "tagline": "Updates hot off the press",
+            "tagline": "Freshly updated apps",
             "referral": "",
             "ids": [
-                "com.ubuntu.gallery",
-                "terrartisan.bhdouglass",
-                "transport.zubozrout",
-                "myfinance.fulvio"
+                "utmedia.nfsprodriver",
+                "fishyshooter.briketa",
+                "emanuelesorce.qvbam",
+                "com.ubuntu.developer.derjasper.tankenapp",
+                "8192.neothethird",
+                "loquiim.nfsprodriver"
+            ]
+        }, {
+            "name": "Awesome Games",
+            "tagline": "Entertainment at your fingertips",
+            "referral": "Games",
+            "ids": [
+                "sverzegnassi.mtcgame",
+                "com.ubuntu.developer.mzanetti.machines-vs-machines",
+                "monsterwars.t-mon",
+                "8192.neothethird",
+                "balls.briketa",
+                "minimakerfa.mivoligo"
             ]
         }, {
             "name": "Cool Multimedia Apps",
-            "tagline": "Ubuntu Touch & Chill",
+            "tagline": "",
             "referral": "",
             "ids": [
-                "com.ubuntu.developer.mzanetti.kodimote",
+                "plex-local.luksus",
                 "com.mikeasoft.cutespotify",
-                "apu.johangm90",
+                "uradio.rubenxparra",
                 "audio-recorder.ubuntu-dawndiy",
+                "utmedia.nfsprodriver",
                 "flas.majster-pl"
             ]
         }, {
