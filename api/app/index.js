@@ -3,6 +3,7 @@ var apps = require('./apps');
 var snaps = require('./snaps');
 var categories = require('./categories');
 var discover = require('./discover');
+var updates = require('./updates');
 var auth = require('./auth');
 var users = require('./users');
 var db = require('../db');
@@ -23,8 +24,10 @@ function setup() {
         next();
     });
 
+    //TOOD see if there is a better way to do this
     auth.setup(app);
     discover.setup(app);
+    updates.setup(app);
     apps.setup(app);
     snaps.setup(app);
     categories.setup(app);
