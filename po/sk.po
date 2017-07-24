@@ -2,24 +2,24 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2017-06-20 01:45:+0000\n"
-"PO-Revision-Date: 2017-07-12 16:41+0000\n"
-"Last-Translator: Sami Törmänen <tormanen.sami@gmail.com>\n"
-"Language-Team: Finnish <https://ubpweblate.tnvcomp.com/projects/openstore"
-"/openstore-web/fi/>\n"
-"Language: fi\n"
+"PO-Revision-Date: 2017-07-18 07:43+0000\n"
+"Last-Translator: t-h-e-p-e-t-e-r <peter.valachovic@gmail.com>\n"
+"Language-Team: Slovak <https://ubpweblate.tnvcomp.com/projects/openstore"
+"/openstore-web/sk/>\n"
+"Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Weblate 2.15\n"
 
 #: api/app/categories.js:12
 msgid "Accessibility"
-msgstr "Helppokäyttöisyys"
+msgstr "Príslušenstvo"
 
 #: api/app/categories.js:13
 msgid "Books & Comics"
-msgstr "Kirjat & sarjakuvat"
+msgstr "Knihy & Komixy"
 
 #: api/app/categories.js:14
 msgid "Business & Finance"
@@ -27,11 +27,11 @@ msgstr ""
 
 #: api/app/categories.js:15
 msgid "Communication & Social"
-msgstr "Viestintä & sosiaalinen"
+msgstr ""
 
 #: api/app/categories.js:16
 msgid "Developer Tools"
-msgstr "Kehittäjien työkalut"
+msgstr ""
 
 #: api/app/categories.js:17
 msgid "Education & Reference"
@@ -39,27 +39,27 @@ msgstr ""
 
 #: api/app/categories.js:18
 msgid "Entertainment"
-msgstr "Viihde"
+msgstr ""
 
 #: api/app/categories.js:19
 msgid "Food & Drink"
-msgstr "Ruoka & juoma"
+msgstr ""
 
 #: api/app/categories.js:20
 msgid "Games"
-msgstr "Pelit"
+msgstr ""
 
 #: api/app/categories.js:21
 msgid "Graphics"
-msgstr "Grafiikka"
+msgstr ""
 
 #: api/app/categories.js:22
 msgid "Health & Fitness"
-msgstr "Terveys & kuntoilu"
+msgstr ""
 
 #: api/app/categories.js:23
 msgid "Lifestyle"
-msgstr "Elämäntapa"
+msgstr ""
 
 #: api/app/categories.js:24
 msgid "Media & Video"
@@ -67,19 +67,19 @@ msgstr ""
 
 #: api/app/categories.js:25
 msgid "Music & Audio"
-msgstr "Musiikki & ääni"
+msgstr ""
 
 #: api/app/categories.js:26
 msgid "News & Magazines"
-msgstr "Uutiset & lehdet"
+msgstr ""
 
 #: api/app/categories.js:27
 msgid "Personalisation"
-msgstr "Personointi"
+msgstr ""
 
 #: api/app/categories.js:28
 msgid "Productivity"
-msgstr "Tuottavuus"
+msgstr ""
 
 #: api/app/categories.js:29
 msgid "Science & Engineering"
@@ -87,16 +87,16 @@ msgstr ""
 
 #: api/app/categories.js:30
 msgid "Shopping"
-msgstr "Shoppailu"
+msgstr ""
 
 #: api/app/categories.js:31
 msgid "Sports"
-msgstr "Urheilu"
+msgstr ""
 
 #: api/app/categories.js:32
 msgid "Travel & Weather"
-msgstr "Matkustaminen & sää"
+msgstr ""
 
 #: api/app/categories.js:33
 msgid "Utilities"
-msgstr "Apuohjelmat"
+msgstr ""
