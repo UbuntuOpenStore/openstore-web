@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2017-06-20 01:45:+0000\n"
-"PO-Revision-Date: 2017-07-20 12:36+0000\n"
+"PO-Revision-Date: 2017-07-23 04:04+0000\n"
 "Last-Translator: wangyou <1078360711@qq.com>\n"
 "Language-Team: Chinese (Simplified) "
 "<https://ubpweblate.tnvcomp.com/projects/openstore/openstore-web/zh_Hans/>\n"
@@ -78,9 +78,8 @@ msgid "Personalisation"
 msgstr "个性化"
 
 #: api/app/categories.js:28
-#, fuzzy
 msgid "Productivity"
-msgstr "生产率"
+msgstr "生产能力"
 
 #: api/app/categories.js:29
 msgid "Science & Engineering"
