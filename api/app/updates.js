@@ -14,7 +14,7 @@ function setup(app) {
         }
 
         if (ids.length > 0) {
-            db.Package.find({id: {$in: ids}}).then((pkgs) => {
+            db.Package.find({id: {$in: ids}, published: true}).then((pkgs) => {
                 helpers.success(res, pkgs.reduce((value, pkg) => {
                     value[pkg.id] = pkg.version;
                     return value;
