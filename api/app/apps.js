@@ -385,10 +385,9 @@ function setup(app) {
                 parseData.icon
             );
         });
-
     }
 
-    app.post(['/api/apps', '/api/v1/manage/apps'], passport.authenticate('localapikey', {session: false}), mupload.single('file'), helpers.isNotDisabled, function(req, res) {
+    app.post(['/api/apps', '/api/v1/manage/apps'], passport.authenticate('localapikey', {session: false}), mupload.single('file'), helpers.isNotDisabled, helpers.downloadFileMiddleware, function(req, res) {
         if (!req.file) {
             helpers.error(res, 'No file upload specified');
         }

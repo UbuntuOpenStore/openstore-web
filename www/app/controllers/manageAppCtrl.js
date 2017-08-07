@@ -106,6 +106,7 @@ var manageAppCtrl = function($scope, $location, $timeout, $state, Upload, info, 
             tagline: pkg.tagline,
             screenshots: pkg.screenshots,
             keywords: keywords,
+            downloadUrl: pkg.downloadUrl,
         };
 
         var upload = null;

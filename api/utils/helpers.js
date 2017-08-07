@@ -1,9 +1,11 @@
 'use strict';
 
 const logger = require('../utils/logger');
+const config = require('../utils/config');
 
 const fs = require('fs');
 const request = require('request');
+const path = require('path');
 
 function success(res, data, message) {
     res.send({
@@ -112,6 +114,25 @@ function download(url, filename) {
     });
 }
 
+function downloadFileMiddleware(req, res, next) {
+    if (!req.file && req.body.downloadUrl) {
+        let filename = path.basename(req.body.downloadUrl);
+
+        download(req.body.downloadUrl, `${config.data_dir}/${filename}`).then((tmpfile) => {
+            req.file = {
+                originalname: filename,
+                path: tmpfile,
+            };
+            next();
+        }).catch((err) => {
+            error(res, 'Failed to download remote file', 400);
+        });
+    }
+    else {
+        next();
+    }
+}
+
 exports.success = success;
 exports.error = error;
 exports.isNotDisabled = isNotDisabled;
@@ -121,3 +142,4 @@ exports.isAdminOrTrustedOwner = isAdminOrTrustedOwner;
 exports.isAdminUser = isAdminUser;
 exports.isAdminOrTrustedUser = isAdminOrTrustedUser;
 exports.download = download;
+exports.downloadFileMiddleware = downloadFileMiddleware;
