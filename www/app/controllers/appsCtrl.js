@@ -64,6 +64,13 @@ var appsCtrl = function($scope, $rootScope, $state, $sce, api) {
             else if ($state.is('app') && $scope.app.types.indexOf('snappy') > -1) {
                 $state.go('snap', {name: $scope.app.id});
             }
+        }).catch(function(err) {
+            if (err.status == 404) {
+                $scope.app = false;
+            }
+            else {
+                //TODO more error handling
+            }
         });
     }
     else {
