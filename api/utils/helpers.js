@@ -116,12 +116,13 @@ function download(url, filename) {
 
 function downloadFileMiddleware(req, res, next) {
     if (!req.file && req.body.downloadUrl) {
-        let filename = path.basename(req.body.downloadUrl);
+        let filename = path.basename(req.body.downloadUrl); //TODO strip query params
 
         download(req.body.downloadUrl, `${config.data_dir}/${filename}`).then((tmpfile) => {
             req.file = {
                 originalname: filename,
                 path: tmpfile,
+                size: fs.statSync(tmpfile).size,
             };
             next();
         }).catch((err) => {

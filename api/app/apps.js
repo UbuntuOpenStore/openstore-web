@@ -452,7 +452,7 @@ function setup(app) {
         }
     });
 
-    app.put(['/api/apps/:id', '/api/v1/manage/apps/:id'], passport.authenticate('localapikey', {session: false}), mupload.single('file'), helpers.isNotDisabled, function(req, res) {
+    app.put(['/api/apps/:id', '/api/v1/manage/apps/:id'], passport.authenticate('localapikey', {session: false}), mupload.single('file'), helpers.isNotDisabled, helpers.downloadFileMiddleware, function(req, res) {
         let packagePromise = db.Package.findOne({id: req.params.id});
 
         if (req.body && (!req.body.maintainer || req.body.maintainer == 'null')) {
