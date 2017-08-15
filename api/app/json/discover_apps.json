@@ -8,26 +8,12 @@
             "name": "New Apps",
             "tagline": "The newest additions",
             "referral": "",
-            "ids": [
-                "sverzegnassi.mtcgame",
-                "kiwix",
-                "dountil",
-                "wifisd.luksus",
-                "plex-local.luksus",
-                "pathwind.emanuelesorce"
-            ]
+            "ids": []
         }, {
             "name": "Updated Apps",
             "tagline": "Freshly updated apps",
             "referral": "",
-            "ids": [
-                "utmedia.nfsprodriver",
-                "fishyshooter.briketa",
-                "emanuelesorce.qvbam",
-                "com.ubuntu.developer.derjasper.tankenapp",
-                "8192.neothethird",
-                "loquiim.nfsprodriver"
-            ]
+            "ids": []
         }, {
             "name": "Awesome Games",
             "tagline": "Entertainment at your fingertips",
@@ -57,6 +43,7 @@
             "tagline": "Explore what is possible with Ubuntu Touch",
             "referral": "",
             "ids": [
+                "webapp-creator.jujuyeh",
                 "ut-tweak-tool.sverzegnassi",
                 "scriptor.newparadigmsoftware",
                 "seabass.mikhael",

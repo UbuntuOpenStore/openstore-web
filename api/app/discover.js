@@ -10,23 +10,43 @@ const shuffle = require('shuffle-array');
 function setup(app) {
     discover.highlight.image = config.server.host + discover.highlight.image;
 
-    let promises = [
-        db.Package.findOne({id: discover.highlight.id}),
-    ];
-    promises = promises.concat(discover.categories.map((category) => {
-        return db.Package.find({id: {$in: category.ids}});
-    }));
+    let staticCategories = discover.categories.filter((category) => (category.ids.length > 0));
+    db.Package.findOne({id: discover.highlight.id}).then((highlightedApp) => {
+        discover.highlight.app = highlightedApp;
 
-    Promise.all(promises).then((results) => {
-        discover.highlight.app = results[0];
-
-        discover.categories.forEach((category, index) => {
-            category.apps = results[index + 1];
+        return Promise.all(staticCategories.map((category) => {
+            return db.Package.find({id: {$in: category.ids}});
+        }));
+    }).then((results) => {
+        staticCategories.forEach((category, index) => {
+            category.apps = results[index];
         });
+
+        return db.Package.find({
+            published: true,
+            types: {
+                $in: ['app', 'webapp', 'scope', 'webapp+'],
+            },
+        }).limit(5).sort('-published_date');
+    }).then((newest) => {
+        let category = discover.categories.filter((category) => (category.name == 'New Apps'))[0];
+        category.ids = newest.map((app) => app.id);
+        category.apps = newest;
+
+        return db.Package.find({
+            published: true,
+            types: {
+                $in: ['app', 'webapp', 'scope', 'webapp+'],
+            },
+        }).limit(5).sort('-updated_date');
+    }).then((updated) => {
+        let category = discover.categories.filter((category) => (category.name == 'Updated Apps'))[0];
+        category.ids = updated.map((app) => app.id);
+        category.apps = updated;
     });
 
     app.get(['/api/apps/discover', '/api/v1/apps/discover'], function(req, res) {
-        discover.categories.forEach((category) => {
+        staticCategories.forEach((category) => {
             category.ids = shuffle(category.ids);
             category.apps = shuffle(category.apps);
         });
