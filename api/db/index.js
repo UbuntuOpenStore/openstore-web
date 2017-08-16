@@ -41,6 +41,8 @@ var packageSchema = mongoose.Schema({
     support_url: String,
     donate_url: String,
     video_url: String,
+    revision: Number,
+    revisions: [],
 });
 
 packageSchema.index({

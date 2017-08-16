@@ -241,6 +241,14 @@ function setup(app) {
                 var inc = {};
                 inc['downloads.' + version] = 1;
 
+                var index = 0;
+                pkg.revisions.forEach((revision, idx) => {
+                    if (pkg.revision == revision.revision) {
+                        index = idx;
+                    }
+                });
+                inc['revisions.' + index + '.downloads'] = 1;
+
                 db.Package.update({_id: pkg._id}, {$inc: inc}, function(err) {
                     if (err) {
                         logger.error(err);
