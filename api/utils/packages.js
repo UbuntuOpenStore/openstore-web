@@ -18,7 +18,9 @@ function sanitize(html) {
 }
 
 
-function updateInfo(pkg, data, body, file, url) {
+function updateInfo(pkg, data, body, file, url, updateRevision) {
+    updateRevision = (updateRevision === undefined) ? true : updateRevision;
+
     let maintainer = body ? body.maintainer : pkg.maintainer;
     return db.User.findOne({_id: maintainer}).then((user) => {
         if (user) {
@@ -218,6 +220,21 @@ function updateInfo(pkg, data, body, file, url) {
             pkg.tagline = sanitize(pkg.tagline);
         }
 
+        if (pkg.revision) {
+            pkg.revision++;
+        }
+        else {
+            pkg.revision = 1;
+        }
+
+        if (updateRevision) {
+            pkg.revisions.push({
+                revision: pkg.revision,
+                version: pkg.version,
+                downloads: 0,
+            });
+        }
+
         return pkg;
     });
 }
@@ -286,7 +303,7 @@ function reparse() {
                                     logger.error(pkg.id + ': ' + err);
                                 }
                                 else {
-                                    updateInfo(pkg, data);
+                                    updateInfo(pkg, data, null, null, null, false);
                                     pkg.save(function(err) {
                                         if (err) {
                                             logger.error(pkg.id + ': ' + err);
@@ -351,17 +368,17 @@ function toJson(pkg, req) {
         types: pkg.types ? pkg.types : [],
         updated_date: pkg.published_date ? pkg.updated_date : '',
         version: pkg.version ? pkg.version : '',
+        revision: pkg.revision ? pkg.revision : 1,
     };
 
     if (req.isAuthenticated() && req.user && (req.user._id == pkg.maintainer || req.user.role == 'admin')) {
         json.downloads = pkg.downloads;
-        json.totalDownloads = 0;
+        json.revisions = pkg.revisions;
 
-        if (pkg.downloads) {
-            for (var version in pkg.downloads) {
-                json.totalDownloads += pkg.downloads[version] ? pkg.downloads[version] : 0;
-            }
-        }
+        json.totalDownloads = 0;
+        pkg.revisions.forEach((revision) => {
+            json.totalDownloads += revision.downloads;
+        });
     }
 
     return json;
