@@ -116,7 +116,16 @@ function download(url, filename) {
 
 function downloadFileMiddleware(req, res, next) {
     if (!req.file && req.body.downloadUrl) {
-        let filename = path.basename(req.body.downloadUrl); //TODO strip query params
+        let filename = path.basename(req.body.downloadUrl);
+
+        //Strip extra hashes & params
+        if (filename.indexOf('?') >= 0) {
+            filename = filename.substring(0, filename.indexOf('?'));
+        }
+
+        if (filename.indexOf('#') >= 0) {
+            filename = filename.substring(0, filename.indexOf('#'));
+        }
 
         download(req.body.downloadUrl, `${config.data_dir}/${filename}`).then((tmpfile) => {
             req.file = {
