@@ -4,7 +4,7 @@ const db = require('../db');
 const helpers = require('../utils/helpers');
 
 function setup(app) {
-    function updates(req, res) {
+    function updates(req, res, byRevision) {
         let ids = [];
         if (req.query.apps) {
             ids = req.query.apps.split(',');
@@ -16,7 +16,13 @@ function setup(app) {
         if (ids.length > 0) {
             db.Package.find({id: {$in: ids}, published: true}).then((pkgs) => {
                 helpers.success(res, pkgs.reduce((value, pkg) => {
-                    value[pkg.id] = pkg.version;
+                    if (byRevision) {
+                        value[pkg.id] = pkg.revision;
+                    }
+                    else {
+                        value[pkg.id] = pkg.version;
+                    }
+
                     return value;
                 }, {}));
             }).catch(() => {
@@ -28,8 +34,18 @@ function setup(app) {
         }
     }
 
-    app.get('/api/v1/apps/updates', updates);
-    app.post('/api/v1/apps/updates', updates);
+    function updatesByVersion(req, res) {
+        return updates(req, res, false);
+    }
+    function updatesByRevision(req, res) {
+        return updates(req, res, true);
+    }
+
+    app.get('/api/v1/apps/updates', updatesByVersion);
+    app.post('/api/v1/apps/updates', updatesByVersion);
+
+    app.get('/api/v2/apps/updates', updatesByRevision);
+    app.post('/api/v2/apps/updates', updatesByRevision);
 }
 
 exports.setup = setup;
