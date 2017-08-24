@@ -1,4 +1,4 @@
-#!/bin/env node
+#!/usr/bin/env node
 
 var packages = require('../src/packages');
 packages.reparse();

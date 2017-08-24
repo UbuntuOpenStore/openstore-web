@@ -2,6 +2,7 @@
 
 const db = require('../db');
 const helpers = require('../utils/helpers');
+const logger = require('../utils/logger');
 
 function setup(app) {
     function updates(req, res, byRevision) {
@@ -46,6 +47,35 @@ function setup(app) {
 
     app.get('/api/v2/apps/updates', updatesByRevision);
     app.post('/api/v2/apps/updates', updatesByRevision);
+
+    app.get(['/api/v1/apps/revision/:id', '/api/v2/apps/revision/:id'], function(req, res) {
+        let query = {
+            published: true,
+            id: req.params.id,
+        };
+
+        db.Package.findOne(query).then((pkg) => {
+            if (!pkg) {
+                helpers.error(res, err, 404);
+            }
+            else {
+                let version = req.query.version ? req.query.version : pkg.version;
+                let revision = pkg.revisions.filter((rev) => (rev.version == version))[0];
+                revision = revision ? revision.revision : 0;
+
+                helpers.success(res, {
+                    id: pkg.id,
+                    version: version,
+                    revision: revision,
+                    latest_version: pkg.version,
+                    latest_revision: pkg.revision,
+                });
+            }
+        }).catch((err) => {
+            logger.error('Error finding package for revision:', err);
+            helpers.error(res, 'Could not fetch app revision at this time');
+        });;
+    })
 }
 
 exports.setup = setup;

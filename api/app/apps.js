@@ -224,7 +224,7 @@ function setup(app) {
                 logger.error('Error fetching packages:', err);
                 helpers.error(res, 'Could not fetch app list at this time');
             }
-        });;
+        });
     });
 
     app.get('/api/download/:id/:click', function(req, res) {
