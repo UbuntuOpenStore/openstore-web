@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2017-06-20 01:45:+0000\n"
-"PO-Revision-Date: 2017-07-12 16:41+0000\n"
-"Last-Translator: Sami Törmänen <tormanen.sami@gmail.com>\n"
+"PO-Revision-Date: 2017-08-24 14:43+0000\n"
+"Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://ubpweblate.tnvcomp.com/projects/openstore"
 "/openstore-web/fi/>\n"
 "Language: fi\n"
@@ -23,7 +23,7 @@ msgstr "Kirjat & sarjakuvat"
 
 #: api/app/categories.js:14
 msgid "Business & Finance"
-msgstr ""
+msgstr "Liiketoiminta ja talous"
 
 #: api/app/categories.js:15
 msgid "Communication & Social"
@@ -35,7 +35,7 @@ msgstr "Kehittäjien työkalut"
 
 #: api/app/categories.js:17
 msgid "Education & Reference"
-msgstr ""
+msgstr "Koulutus"
 
 #: api/app/categories.js:18
 msgid "Entertainment"
@@ -63,7 +63,7 @@ msgstr "Elämäntapa"
 
 #: api/app/categories.js:24
 msgid "Media & Video"
-msgstr ""
+msgstr "Media ja video"
 
 #: api/app/categories.js:25
 msgid "Music & Audio"
@@ -83,7 +83,7 @@ msgstr "Tuottavuus"
 
 #: api/app/categories.js:29
 msgid "Science & Engineering"
-msgstr ""
+msgstr "Tieteet ja tekniikka"
 
 #: api/app/categories.js:30
 msgid "Shopping"
