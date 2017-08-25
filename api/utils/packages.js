@@ -101,6 +101,7 @@ function updateInfo(pkg, data, body, file, url, updateRevision) {
             pkg.types = data.types;
             pkg.version = data.version;
             pkg.snappy_meta = data.snappy_meta;
+            pkg.languages = data.languages;
 
             //Don't overwrite the these if they already exists
             pkg.name = pkg.name ? pkg.name : data.title;
@@ -369,6 +370,7 @@ function toJson(pkg, req) {
         updated_date: pkg.published_date ? pkg.updated_date : '',
         version: pkg.version ? pkg.version : '',
         revision: pkg.revision ? pkg.revision : 1,
+        languages: pkg.languages ? pkg.languages.sort() : [],
     };
 
     if (req.isAuthenticated() && req.user && (req.user._id == pkg.maintainer || req.user.role == 'admin')) {

@@ -157,9 +157,13 @@
                     <br/> Framework: {{pkg.framework}}
                     <br/> File Size: {{pkg.filesize | bytes}}
                     <br/>
-                    <span ng-if="pkg.types.length != 1">Types</span>
-                    <span ng-if="pkg.types.length == 1">Type</span>
-                    : {{pkg.types.join(', ')}}
+                    <span ng-if="pkg.types.length != 1">Types:</span>
+                    <span ng-if="pkg.types.length == 1">Type:</span>
+                    {{pkg.types.join(', ')}}
+
+                    <div ng-if="pkg.languages.length > 0">
+                        Translation Languages: {{pkg.languages.join(', ')}}
+                    </div>
 
                     <br/>
                     <span ng-if="pkg.published">

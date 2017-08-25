@@ -43,6 +43,7 @@ var packageSchema = mongoose.Schema({
     video_url: String,
     revision: Number,
     revisions: [],
+    languages: [],
 });
 
 packageSchema.index({

@@ -46,8 +46,8 @@
                 <p ng-bind-html="app.changelog | nl2br"></p>
             </div>
 
-            <div class="video" ng-if="app.video_url">
-                <iframe src="{{app.video_url}}" frameborder="0" allowfullscreen></iframe>
+            <div class="video" ng-if="app && app.video_url">
+                <iframe ng-src="{{app.video_url}}" frameborder="0" allowfullscreen></iframe>
             </div>
 
             <div class="info">
@@ -60,6 +60,9 @@
                 <p ng-if="app.updated_date">Updated: {{app.updated_date|date}}</p>
                 <p ng-if="app.published_date">Published: {{app.published_date|date}}</p>
                 <p ng-if="app.framework">Framework: {{app.framework}}</p>
+                <p ng-if="app.languages.length > 0">
+                    Translation Languages: {{app.languages.join(', ')}}
+                </p>
             </div>
         </div>
 
