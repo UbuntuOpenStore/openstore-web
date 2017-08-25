@@ -12,14 +12,19 @@ var appsCtrl = function($scope, $rootScope, $state, $sce, api) {
         skip: 0,
         search: '',
     };
-    $scope.pages = [];
+
     $scope.page = 0;
+    $scope.paging = {
+        total: 0,
+        pages: [],
+    };
+
     $scope.setPage = function(page) {
         if (page < 0) {
             page = 0;
         }
-        else if (page > ($scope.pages.length - 1)) {
-            page = $scope.pages.length - 1;
+        else if (page > ($scope.paging.total)) {
+            page = $scope.paging.total;
         }
 
         $scope.page = page;
@@ -41,7 +46,31 @@ var appsCtrl = function($scope, $rootScope, $state, $sce, api) {
             $scope.count = data.count;
             $scope.apps = data.packages;
 
-            $scope.pages = Array(Math.ceil(data.count / $scope.query.limit));
+            $scope.paging.total = Math.ceil(data.count / $scope.query.limit) - 1;
+
+            var first = $scope.page - 2;
+            var last = $scope.page + 2;
+
+            if (first < 0) {
+                last += Math.abs(first);
+                first = 0;
+            }
+
+            if (last > $scope.paging.total) {
+                first -= (last - $scope.paging.total);
+                if (first < 0) {
+                    first = 0;
+                }
+
+                last = $scope.paging.total;
+            }
+
+            var pages = [];
+            for (var i = first; i <= last; i++) {
+                pages.push(i);
+            }
+
+            $scope.paging.pages = pages;
         });
     }
     var refresh = debounce(_refresh, 300);
