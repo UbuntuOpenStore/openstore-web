@@ -74,8 +74,43 @@ function setup(app) {
         }).catch((err) => {
             logger.error('Error finding package for revision:', err);
             helpers.error(res, 'Could not fetch app revision at this time');
-        });;
-    })
+        });
+    });
+
+    function revisionsByVersion(req, res) {
+        let versions = [];
+        if (req.query.apps) {
+            versions = req.query.apps.split(',');
+        }
+        else if (req.body && req.body.apps) {
+            versions = req.body.apps;
+        }
+
+        let ids = versions.map((version) => version.split('@')[0]);
+        db.Package.find({published: true, id: {$in: ids}}).then((pkgs) => {
+            helpers.success(res, pkgs.map((pkg) => {
+                let version = versions.filter((v) => (v.split('@')[0] == pkg.id))[0];
+                version = version.split('@')[1];
+
+                let revision = pkg.revisions.filter((rev) => (rev.version == version))[0];
+                revision = revision ? revision.revision : 0;
+
+                return {
+                    id: pkg.id,
+                    version: version,
+                    revision: revision,
+                    latest_version: pkg.version,
+                    latest_revision: pkg.revision,
+                };
+            }));
+        }).catch((err) => {
+            logger.error('Error finding packages for revision:', err);
+            helpers.error(res, 'Could not fetch app revisions at this time');
+        });
+    }
+
+    app.get(['/api/v1/apps/revision/', '/api/v2/apps/revision/'], revisionsByVersion);
+    app.post(['/api/v1/apps/revision/', '/api/v2/apps/revision/'], revisionsByVersion);
 }
 
 exports.setup = setup;
