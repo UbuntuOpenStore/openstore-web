@@ -120,6 +120,8 @@ body {
 .tagline {
     padding-right: 60px;
     display: block;
+    overflow: hidden;
+    height: 40px;
 }
 
 .title {
