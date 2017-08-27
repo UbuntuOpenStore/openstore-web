@@ -2,97 +2,101 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2017-06-20 01:45:+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2017-08-27 16:57+0000\n"
+"Last-Translator: Anne Onyme <anneonyme017@openmailbox.org>\n"
+"Language-Team: French <https://ubpweblate.tnvcomp.com/projects/openstore"
+"/openstore-web/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 2.15\n"
 
 #: api/app/categories.js:12
 msgid "Accessibility"
-msgstr ""
+msgstr "Accessibilité"
 
 #: api/app/categories.js:13
 msgid "Books & Comics"
-msgstr ""
+msgstr "Livres & Bandes dessinées"
 
 #: api/app/categories.js:14
 msgid "Business & Finance"
-msgstr ""
+msgstr "Économie & Finance"
 
 #: api/app/categories.js:15
 msgid "Communication & Social"
-msgstr ""
+msgstr "Communication & Social"
 
 #: api/app/categories.js:16
 msgid "Developer Tools"
-msgstr ""
+msgstr "Outils pour développeurs"
 
 #: api/app/categories.js:17
 msgid "Education & Reference"
-msgstr ""
+msgstr "Éducation & Références"
 
 #: api/app/categories.js:18
 msgid "Entertainment"
-msgstr ""
+msgstr "Divertissement"
 
 #: api/app/categories.js:19
 msgid "Food & Drink"
-msgstr ""
+msgstr "Alimentation"
 
 #: api/app/categories.js:20
 msgid "Games"
-msgstr ""
+msgstr "Jeux"
 
 #: api/app/categories.js:21
 msgid "Graphics"
-msgstr ""
+msgstr "Graphismes"
 
 #: api/app/categories.js:22
 msgid "Health & Fitness"
-msgstr ""
+msgstr "Santé & Condition physique"
 
 #: api/app/categories.js:23
 msgid "Lifestyle"
-msgstr ""
+msgstr "Style de vie"
 
 #: api/app/categories.js:24
 msgid "Media & Video"
-msgstr ""
+msgstr "Médias & Vidéo"
 
 #: api/app/categories.js:25
 msgid "Music & Audio"
-msgstr ""
+msgstr "Musique & Audio"
 
 #: api/app/categories.js:26
 msgid "News & Magazines"
-msgstr ""
+msgstr "Informations & Journaux"
 
 #: api/app/categories.js:27
 msgid "Personalisation"
-msgstr ""
+msgstr "Personnalisation"
 
 #: api/app/categories.js:28
 msgid "Productivity"
-msgstr ""
+msgstr "Productivité"
 
 #: api/app/categories.js:29
 msgid "Science & Engineering"
-msgstr ""
+msgstr "Sciences & Ingénierie"
 
 #: api/app/categories.js:30
 msgid "Shopping"
-msgstr ""
+msgstr "Achats"
 
 #: api/app/categories.js:31
 msgid "Sports"
-msgstr ""
+msgstr "Sports"
 
 #: api/app/categories.js:32
 msgid "Travel & Weather"
-msgstr ""
+msgstr "Voyage & Météo"
 
 #: api/app/categories.js:33
 msgid "Utilities"
-msgstr ""
+msgstr "Utilitaires"
