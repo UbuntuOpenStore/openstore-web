@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2017-06-20 01:45:+0000\n"
-"PO-Revision-Date: 2017-07-18 07:43+0000\n"
+"PO-Revision-Date: 2017-09-07 21:46+0000\n"
 "Last-Translator: t-h-e-p-e-t-e-r <peter.valachovic@gmail.com>\n"
-"Language-Team: Slovak <https://ubpweblate.tnvcomp.com/projects/openstore"
+"Language-Team: Slovak <https://translate.ubports.com/projects/openstore"
 "/openstore-web/sk/>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
@@ -23,80 +23,80 @@ msgstr "Knihy & Komixy"
 
 #: api/app/categories.js:14
 msgid "Business & Finance"
-msgstr ""
+msgstr "Podnikanie a financie"
 
 #: api/app/categories.js:15
 msgid "Communication & Social"
-msgstr ""
+msgstr "Komunikácia a sociálne siete"
 
 #: api/app/categories.js:16
 msgid "Developer Tools"
-msgstr ""
+msgstr "Vývoj"
 
 #: api/app/categories.js:17
 msgid "Education & Reference"
-msgstr ""
+msgstr "Vzdelávanie a referencie"
 
 #: api/app/categories.js:18
 msgid "Entertainment"
-msgstr ""
+msgstr "Zábava"
 
 #: api/app/categories.js:19
 msgid "Food & Drink"
-msgstr ""
+msgstr "Jedlá a nápoje"
 
 #: api/app/categories.js:20
 msgid "Games"
-msgstr ""
+msgstr "Hry"
 
 #: api/app/categories.js:21
 msgid "Graphics"
-msgstr ""
+msgstr "Grafika"
 
 #: api/app/categories.js:22
 msgid "Health & Fitness"
-msgstr ""
+msgstr "Zdravie a fitnes"
 
 #: api/app/categories.js:23
 msgid "Lifestyle"
-msgstr ""
+msgstr "Životný štýl"
 
 #: api/app/categories.js:24
 msgid "Media & Video"
-msgstr ""
+msgstr "Médiá a video"
 
 #: api/app/categories.js:25
 msgid "Music & Audio"
-msgstr ""
+msgstr "Hudba a audio"
 
 #: api/app/categories.js:26
 msgid "News & Magazines"
-msgstr ""
+msgstr "Správy a časopisy"
 
 #: api/app/categories.js:27
 msgid "Personalisation"
-msgstr ""
+msgstr "Prispôsobenie"
 
 #: api/app/categories.js:28
 msgid "Productivity"
-msgstr ""
+msgstr "Produktivita"
 
 #: api/app/categories.js:29
 msgid "Science & Engineering"
-msgstr ""
+msgstr "Veda a technika"
 
 #: api/app/categories.js:30
 msgid "Shopping"
-msgstr ""
+msgstr "Nakupovanie"
 
 #: api/app/categories.js:31
 msgid "Sports"
-msgstr ""
+msgstr "Športy"
 
 #: api/app/categories.js:32
 msgid "Travel & Weather"
-msgstr ""
+msgstr "Cestovanie a počasie"
 
 #: api/app/categories.js:33
 msgid "Utilities"
-msgstr ""
+msgstr "Príslušenstvo"
