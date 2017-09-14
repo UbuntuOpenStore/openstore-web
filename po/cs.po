@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2017-06-20 01:45:+0000\n"
-"PO-Revision-Date: 2017-09-07 21:46+0000\n"
-"Last-Translator: t-h-e-p-e-t-e-r <peter.valachovic@gmail.com>\n"
-"Language-Team: Slovak <https://translate.ubports.com/projects/openstore"
-"/openstore-web/sk/>\n"
-"Language: sk\n"
+"PO-Revision-Date: 2017-09-08 08:07+0000\n"
+"Last-Translator: Milan Korecký <milan.korecky@gmail.com>\n"
+"Language-Team: Czech <https://translate.ubports.com/projects/openstore"
+"/openstore-web/cs/>\n"
+"Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -15,27 +15,27 @@ msgstr ""
 
 #: api/app/categories.js:12
 msgid "Accessibility"
-msgstr "Príslušenstvo"
+msgstr "Přístupnost"
 
 #: api/app/categories.js:13
 msgid "Books & Comics"
-msgstr "Knihy & Komixy"
+msgstr "Knihy a komixy"
 
 #: api/app/categories.js:14
 msgid "Business & Finance"
-msgstr "Podnikanie a financie"
+msgstr "Podnikání a finance"
 
 #: api/app/categories.js:15
 msgid "Communication & Social"
-msgstr "Komunikácia a sociálne siete"
+msgstr "Komunikace a sociální sítě"
 
 #: api/app/categories.js:16
 msgid "Developer Tools"
-msgstr "Vývoj"
+msgstr "Vývojářské pomůcky"
 
 #: api/app/categories.js:17
 msgid "Education & Reference"
-msgstr "Vzdelávanie a referencie"
+msgstr "Vzdělávání a odkazy"
 
 #: api/app/categories.js:18
 msgid "Entertainment"
@@ -43,7 +43,7 @@ msgstr "Zábava"
 
 #: api/app/categories.js:19
 msgid "Food & Drink"
-msgstr "Jedlá a nápoje"
+msgstr "Jídlo a pití"
 
 #: api/app/categories.js:20
 msgid "Games"
@@ -55,15 +55,15 @@ msgstr "Grafika"
 
 #: api/app/categories.js:22
 msgid "Health & Fitness"
-msgstr "Zdravie a fitnes"
+msgstr "Zdraví a fitness"
 
 #: api/app/categories.js:23
 msgid "Lifestyle"
-msgstr "Životný štýl"
+msgstr "Životní styl"
 
 #: api/app/categories.js:24
 msgid "Media & Video"
-msgstr "Médiá a video"
+msgstr "Média a videa"
 
 #: api/app/categories.js:25
 msgid "Music & Audio"
@@ -71,11 +71,11 @@ msgstr "Hudba a audio"
 
 #: api/app/categories.js:26
 msgid "News & Magazines"
-msgstr "Správy a časopisy"
+msgstr "Zprávy a časopisy"
 
 #: api/app/categories.js:27
 msgid "Personalisation"
-msgstr "Prispôsobenie"
+msgstr "Přizpůsobení"
 
 #: api/app/categories.js:28
 msgid "Productivity"
@@ -83,20 +83,20 @@ msgstr "Produktivita"
 
 #: api/app/categories.js:29
 msgid "Science & Engineering"
-msgstr "Veda a technika"
+msgstr "Věda a technika"
 
 #: api/app/categories.js:30
 msgid "Shopping"
-msgstr "Nakupovanie"
+msgstr "Nakupování"
 
 #: api/app/categories.js:31
 msgid "Sports"
-msgstr "Športy"
+msgstr "Sporty"
 
 #: api/app/categories.js:32
 msgid "Travel & Weather"
-msgstr "Cestovanie a počasie"
+msgstr "Cestování a počasí"
 
 #: api/app/categories.js:33
 msgid "Utilities"
-msgstr "Príslušenstvo"
+msgstr "Pomůcky"
