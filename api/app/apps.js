@@ -31,6 +31,7 @@ const BAD_FILE = 'The file must be a click or snap package';
 const WRONG_PACKAGE = 'The uploaded package does not match the name of the package you are editing';
 const APP_NOT_FOUND = 'App not found';
 const BAD_NAMESPACE = 'You package name is for a domain that you do not have access to';
+const EXISTING_VERSION = 'A revision already exists with this version';
 
 function setup(app) {
     app.get('/api/health', function(req, res) {
@@ -383,6 +384,15 @@ function setup(app) {
             throw WRONG_PACKAGE;
         }
 
+        if (pkg.id && pkg.revisions) {
+            //Check for existing revisions with the same version string
+
+            let matches = pkg.revisions.filter((revision) => (revision.version == parseData.version));
+            if (matches.length > 0) {
+                throw EXISTING_VERSION;
+            }
+        }
+
         return packages.updateInfo(pkg, parseData, req.body, req.file).then((pkg) => {
             return upload.uploadPackage(
                 config.smartfile.url,
@@ -493,7 +503,7 @@ function setup(app) {
         }).then((pkg) => {
             helpers.success(res, packages.toJson(pkg, req));
         }).catch((err) => {
-            if (err == PERMISSION_DENIED || err == BAD_FILE || err.indexOf(NEEDS_MANUAL_REVIEW) === 0 || err == MALFORMED_MANIFEST || err == WRONG_PACKAGE) {
+            if (err == PERMISSION_DENIED || err == BAD_FILE || err.indexOf(NEEDS_MANUAL_REVIEW) === 0 || err == MALFORMED_MANIFEST || err == WRONG_PACKAGE || err == EXISTING_VERSION) {
                 helpers.error(res, err, 400);
             }
             else {
