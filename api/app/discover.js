@@ -27,7 +27,7 @@ function setup(app) {
             types: {
                 $in: ['app', 'webapp', 'scope', 'webapp+'],
             },
-        }).limit(5).sort('-published_date');
+        }).limit(8).sort('-published_date');
     }).then((newest) => {
         let category = discover.categories.filter((category) => (category.name == 'New Apps'))[0];
         category.ids = newest.map((app) => app.id);
@@ -38,7 +38,7 @@ function setup(app) {
             types: {
                 $in: ['app', 'webapp', 'scope', 'webapp+'],
             },
-        }).limit(5).sort('-updated_date');
+        }).limit(8).sort('-updated_date');
     }).then((updated) => {
         let category = discover.categories.filter((category) => (category.name == 'Updated Apps'))[0];
         category.ids = updated.map((app) => app.id);
