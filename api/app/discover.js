@@ -27,7 +27,7 @@ function setup(app) {
             types: {
                 $in: ['app', 'webapp', 'scope', 'webapp+'],
             },
-        }).limit(8).sort('-published_date');
+        }).limit(10).sort('-published_date');
     }).then((newest) => {
         let category = discover.categories.filter((category) => (category.name == 'New Apps'))[0];
         category.ids = newest.map((app) => app.id);
@@ -38,7 +38,7 @@ function setup(app) {
             types: {
                 $in: ['app', 'webapp', 'scope', 'webapp+'],
             },
-        }).limit(8).sort('-updated_date');
+        }).limit(10).sort('-updated_date');
     }).then((updated) => {
         let category = discover.categories.filter((category) => (category.name == 'Updated Apps'))[0];
         category.ids = updated.map((app) => app.id);
@@ -47,8 +47,8 @@ function setup(app) {
 
     app.get(['/api/apps/discover', '/api/v1/apps/discover'], function(req, res) {
         staticCategories.forEach((category) => {
-            category.ids = shuffle(category.ids);
-            category.apps = shuffle(category.apps);
+            category.ids = shuffle(category.ids).slice(0, 10);
+            category.apps = shuffle(category.apps).slice(0, 10);
         });
 
         helpers.success(res, discover);
