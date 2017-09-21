@@ -222,18 +222,18 @@ function updateInfo(pkg, data, body, file, url, updateRevision) {
         }
 
         if (updateRevision) {
-            pkg.revisions.push({
-                revision: pkg.revision,
-                version: pkg.version,
-                downloads: 0,
-            });
-
             if (pkg.revision) {
                 pkg.revision++;
             }
             else {
                 pkg.revision = 1;
             }
+
+            pkg.revisions.push({
+                revision: pkg.revision,
+                version: pkg.version,
+                downloads: 0,
+            });
         }
 
         return pkg;
