@@ -30,6 +30,7 @@ function removeDuplicateRevisions(pkg) {
     console.log('new', revisions);
 
     pkg.revisions = revisions;
+    pkg.revision = revisions[revisions.length - 1].revision;
     return pkg.save();
 }
 
