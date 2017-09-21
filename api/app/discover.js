@@ -47,8 +47,8 @@ function setup(app) {
 
     app.get(['/api/apps/discover', '/api/v1/apps/discover'], function(req, res) {
         staticCategories.forEach((category) => {
-            category.ids = shuffle(category.ids).slice(0, 10);
-            category.apps = shuffle(category.apps).slice(0, 10);
+            category.ids = shuffle(category.ids);
+            category.apps = shuffle(category.apps);
         });
 
         helpers.success(res, discover);
