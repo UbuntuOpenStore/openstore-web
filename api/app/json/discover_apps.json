@@ -1,7 +1,7 @@
 {
     "highlight": {
-        "id": "uwp.costales",
-        "image": "/img/banners/uwriter.svg"
+        "id": "webapp-creator.jujuyeh",
+        "image": "/img/banners/webapp-creator.svg"
     },
     "categories": [
         {
@@ -19,33 +19,66 @@
             "tagline": "Entertainment at your fingertips",
             "referral": "Games",
             "ids": [
-                "sverzegnassi.mtcgame",
-                "com.ubuntu.developer.mzanetti.machines-vs-machines",
-                "monsterwars.t-mon",
                 "8192.neothethird",
-                "balls.briketa",
-                "minimakerfa.mivoligo"
+                "balls2.briketa",
+                "xake.hankamotz",
+                "palette.kevinfeyder",
+                "sverzegnassi.mtcgame",
+                "com.ubuntu.developer.robert-ancell.dotty",
+                "fishyshooter.briketa",
+                "gearboy.rpattison",
+                "hexgl.bhdouglass",
+                "com.ubuntu.developer.mzanetti.machines-vs-machines",
+                "minimakerfa.mivoligo",
+                "monsterwars.t-mon",
+                "pathwind.emanuelesorce",
+                "com.ubuntu.sudoku",
+                "swipeout.t-mon",
+                "mastermind.mzanetti",
+                "uu.mzanetti"
             ]
         }, {
-            "name": "Everyone's talking about it",
-            "tagline": "",
+            "name": "Hot Apps",
+            "tagline": "Everyone's talking about it",
             "referral": "",
             "ids": [
-                "openfoodfacts.ubuntouch-fr",
                 "dekko2.dekkoproject",
+                "it.mardy.imaginario",
+                "openfoodfacts.ubuntouch-fr",
                 "uadblock.mariogrip",
-                "it.mardy.imaginario"
+                "instagraph-devs.turan-mahmudov-l",
+                "loquiim.nfsprodriver",
+                "com.ubuntu.telegram",
+                "ubuntu-hangups.timsueberkrueb",
+                "umatriks.larreamikel",
+                "com.mikeasoft.cutespotify",
+                "com.mikeasoft.podbird",
+                "pockit.turan-mahmudov-l",
+                "doniks.shorter",
+                "rssreaderscope.kazord",
+                "com.ubuntu.docviewer",
+                "talaan.kugiigi",
+                "uwp.costales",
+                "navigator.costales",
+                "falcon.bhdouglass",
+                "rockwork.mzanetti"
             ]
         }, {
             "name": "Hack With Us",
             "tagline": "Explore what is possible with Ubuntu Touch",
             "referral": "",
             "ids": [
-                "webapp-creator.jujuyeh",
-                "ut-tweak-tool.sverzegnassi",
-                "scriptor.newparadigmsoftware",
+                "crazy-mark.timsueberkrueb",
+                "logviewer.neothethird",
+                "ontheroad.emanuelesorce",
+                "qmlviewer.timsueberkrueb",
                 "seabass.mikhael",
-                "wifiscanner.mzanetti"
+                "webapp-creator.jujuyeh",
+                "com.ubuntu.terminal",
+                "ut-tweak-tool.sverzegnassi",
+                "wifiscanner.mzanetti",
+                "scriptor.newparadigmsoftware",
+                "com.ubuntu.developer.psasse.touchrules"
             ]
         }
     ]
