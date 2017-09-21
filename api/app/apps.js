@@ -393,7 +393,7 @@ function setup(app) {
             }
         }
 
-        return packages.updateInfo(pkg, parseData, req.body, req.file).then((pkg) => {
+        return packages.updateInfo(pkg, parseData, req.body, req.file, null, true).then((pkg) => {
             return upload.uploadPackage(
                 config.smartfile.url,
                 config.smartfile.share,
@@ -492,7 +492,7 @@ function setup(app) {
                     }).then(updateAndUpload);
                 }
                 else {
-                    return packages.updateInfo(pkg, null, req.body, null);
+                    return packages.updateInfo(pkg, null, req.body, null, null, false);
                 }
             }
             else {

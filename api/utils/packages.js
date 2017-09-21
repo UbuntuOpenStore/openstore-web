@@ -19,7 +19,7 @@ function sanitize(html) {
 
 
 function updateInfo(pkg, data, body, file, url, updateRevision) {
-    updateRevision = (updateRevision === undefined) ? true : updateRevision;
+    updateRevision = (updateRevision === undefined) ? false : updateRevision;
 
     let maintainer = body ? body.maintainer : pkg.maintainer;
     return db.User.findOne({_id: maintainer}).then((user) => {
