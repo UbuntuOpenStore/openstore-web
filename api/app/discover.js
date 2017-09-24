@@ -65,7 +65,6 @@ function setup(app) {
             });
         }
         else { //Cache hit
-            console.log('cache hit');
             return new Promise((resolve) => {
                 resolve(discoverCache);
             });
