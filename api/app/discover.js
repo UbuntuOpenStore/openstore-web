@@ -31,14 +31,14 @@ function setup(app) {
                     types: {
                         $in: ['app', 'webapp', 'scope', 'webapp+'],
                     },
-                }).limit(10).sort('-published_date'),
+                }).limit(8).sort('-published_date'),
 
                 db.Package.find({
                     published: true,
                     types: {
                         $in: ['app', 'webapp', 'scope', 'webapp+'],
                     },
-                }).limit(10).sort('-published_date')
+                }).limit(8).sort('-published_date')
             ]).then((results) => {
                 discover.highlight.app = results[0];
 
@@ -46,13 +46,18 @@ function setup(app) {
                     category.apps = results[1][index];
                 });
 
-                let newCategory = discover.categories.filter((category) => (category.name == 'New Apps'))[0];
-                newCategory.ids = results[2].map((app) => app.id);
-                newCategory.apps = results[2];
+                let category = discover.categories.filter((category) => (category.name == 'New and Updated Apps'))[0];
+                let ids = results[2].map((app) => app.id).concat(results[3].map((app) => app.id));
+                ids = ids.filter(function(item, pos) {
+                    //Only unique ids;
+                    return ids.indexOf(item) == pos;
+                });
+                category.ids = ids.slice(0, 10);
 
-                let usedCategory = discover.categories.filter((category) => (category.name == 'Updated Apps'))[0];
-                usedCategory.ids = results[3].map((app) => app.id);
-                usedCategory.apps = results[3];
+                let apps = results[2].concat(results[3]);
+                category.apps = category.ids.map((id) => {
+                    return apps.filter((app) => (app.id == id))[0];
+                });
 
                 staticCategories.forEach((category) => {
                     category.ids = shuffle(category.ids);
