@@ -5,13 +5,8 @@
     },
     "categories": [
         {
-            "name": "New Apps",
-            "tagline": "The newest additions",
-            "referral": "",
-            "ids": []
-        }, {
-            "name": "Updated Apps",
-            "tagline": "Freshly updated apps",
+            "name": "New and Updated Apps",
+            "tagline": "",
             "referral": "",
             "ids": []
         }, {
