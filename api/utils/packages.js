@@ -355,7 +355,7 @@ function toJson(pkg, req) {
         maintainer: pkg.maintainer ? pkg.maintainer : null,
         manifest: pkg.manifest ? pkg.manifest : {},
         name: pkg.name ? pkg.name : '',
-        package: pkg.package ? pkg.package : '',
+        package: download,
         permissions: pkg.permissions ? pkg.permissions: [],
         published_date: pkg.published_date ? pkg.published_date : '',
         published: !!pkg.published,
