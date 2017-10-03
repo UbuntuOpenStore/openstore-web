@@ -329,58 +329,61 @@ function reparse() {
 }
 
 function toJson(pkg, req) {
-    var extension = '.click';
-    if (pkg.types.indexOf('snappy') >= 0) {
-        extension = '.snap';
-    }
-    var download =  config.server.host + '/api/download/' + pkg.id + '/' + pkg.id + '_latest_' + pkg.architecture + extension;
+    let json = {};
+    if (pkg) {
+        let extension = '.click';
+        if (pkg.types.indexOf('snappy') >= 0) {
+            extension = '.snap';
+        }
+        let download =  config.server.host + '/api/download/' + pkg.id + '/' + pkg.id + '_latest_' + pkg.architecture + extension;
 
-    let ext = path.extname(pkg.icon);
-    var json = {
-        architecture: pkg.architecture ? pkg.architecture : '',
-        architectures: pkg.architectures ? pkg.architectures : [],
-        author: pkg.author ? pkg.author : '',
-        category: pkg.category ? pkg.category : '',
-        changelog: pkg.changelog ? pkg.changelog : '',
-        description: pkg.description ? pkg.description : '',
-        download_sha512: pkg.download_sha512 ? pkg.download_sha512 : '',
-        download: download,
-        filesize: pkg.filesize ? pkg.filesize : 0,
-        framework: pkg.framework ? pkg.framework : '',
-        icon: `${config.server.host}/api/icon/${pkg.version}/${pkg.id}${ext}`,
-        id: pkg.id ? pkg.id : '',
-        keywords: pkg.keywords ? pkg.keywords : [],
-        license: pkg.license ? pkg.license : '',
-        maintainer_name: pkg.maintainer_name ? pkg.maintainer_name : null,
-        maintainer: pkg.maintainer ? pkg.maintainer : null,
-        manifest: pkg.manifest ? pkg.manifest : {},
-        name: pkg.name ? pkg.name : '',
-        package: pkg.package ? pkg.package : '',
-        permissions: pkg.permissions ? pkg.permissions: [],
-        published_date: pkg.published_date ? pkg.published_date : '',
-        published: !!pkg.published,
-        screenshots: pkg.screenshots ? pkg.screenshots : [],
-        snappy_meta: pkg.snappy_meta ? pkg.snappy_meta : {},
-        source: pkg.source ? pkg.source : '',
-        support_url: pkg.support_url ? pkg.support_url : '',
-        donate_url: pkg.donate_url ? pkg.donate_url : '',
-        video_url: pkg.video_url ? pkg.video_url : '',
-        tagline: pkg.tagline ? pkg.tagline : '',
-        types: pkg.types ? pkg.types : [],
-        updated_date: pkg.published_date ? pkg.updated_date : '',
-        version: pkg.version ? pkg.version : '',
-        revision: pkg.revision ? pkg.revision : 1,
-        languages: pkg.languages ? pkg.languages.sort() : [],
-    };
+        let ext = path.extname(pkg.icon);
+        json = {
+            architecture: pkg.architecture ? pkg.architecture : '',
+            architectures: pkg.architectures ? pkg.architectures : [],
+            author: pkg.author ? pkg.author : '',
+            category: pkg.category ? pkg.category : '',
+            changelog: pkg.changelog ? pkg.changelog : '',
+            description: pkg.description ? pkg.description : '',
+            download_sha512: pkg.download_sha512 ? pkg.download_sha512 : '',
+            download: download,
+            filesize: pkg.filesize ? pkg.filesize : 0,
+            framework: pkg.framework ? pkg.framework : '',
+            icon: `${config.server.host}/api/icon/${pkg.version}/${pkg.id}${ext}`,
+            id: pkg.id ? pkg.id : '',
+            keywords: pkg.keywords ? pkg.keywords : [],
+            license: pkg.license ? pkg.license : '',
+            maintainer_name: pkg.maintainer_name ? pkg.maintainer_name : null,
+            maintainer: pkg.maintainer ? pkg.maintainer : null,
+            manifest: pkg.manifest ? pkg.manifest : {},
+            name: pkg.name ? pkg.name : '',
+            package: pkg.package ? pkg.package : '',
+            permissions: pkg.permissions ? pkg.permissions: [],
+            published_date: pkg.published_date ? pkg.published_date : '',
+            published: !!pkg.published,
+            screenshots: pkg.screenshots ? pkg.screenshots : [],
+            snappy_meta: pkg.snappy_meta ? pkg.snappy_meta : {},
+            source: pkg.source ? pkg.source : '',
+            support_url: pkg.support_url ? pkg.support_url : '',
+            donate_url: pkg.donate_url ? pkg.donate_url : '',
+            video_url: pkg.video_url ? pkg.video_url : '',
+            tagline: pkg.tagline ? pkg.tagline : '',
+            types: pkg.types ? pkg.types : [],
+            updated_date: pkg.published_date ? pkg.updated_date : '',
+            version: pkg.version ? pkg.version : '',
+            revision: pkg.revision ? pkg.revision : 1,
+            languages: pkg.languages ? pkg.languages.sort() : [],
+        };
 
-    if (req.isAuthenticated() && req.user && (req.user._id == pkg.maintainer || req.user.role == 'admin')) {
-        json.downloads = pkg.downloads;
-        json.revisions = pkg.revisions;
+        if (req.isAuthenticated() && req.user && (req.user._id == pkg.maintainer || req.user.role == 'admin')) {
+            json.downloads = pkg.downloads;
+            json.revisions = pkg.revisions;
 
-        json.totalDownloads = 0;
-        pkg.revisions.forEach((revision) => {
-            json.totalDownloads += revision.downloads;
-        });
+            json.totalDownloads = 0;
+            pkg.revisions.forEach((revision) => {
+                json.totalDownloads += revision.downloads;
+            });
+        }
     }
 
     return json;
