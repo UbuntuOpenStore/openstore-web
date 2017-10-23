@@ -93,10 +93,13 @@
                         Apparmor profile:
                         <span ng-if="hook.apparmor.template" ng-bind="hook.apparmor.template || 'None'"></span>
                     </p>
-                    <p ng-if="hook.apparmor.policy_groups.length > 0">
+                    <p>
                         Permissions:
                         <ul>
-                            <li ng-repeat="policy in hook.apparmor.policy_groups" ng-bind="policy"></li>
+                            <li ng-repeat="policy in hook.apparmor.policy_groups" ng-bind="policy | permission"></li>
+                            <li ng-if="hook.apparmor.policy_groups.length === 0">
+                                None
+                            </li>
                         </ul>
                     </p>
                     <p ng-if="hook.apparmor.read_path.length > 0">

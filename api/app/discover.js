@@ -78,7 +78,6 @@ function setup(app) {
         }
     }
 
-
     app.get(['/api/apps/discover', '/api/v1/apps/discover'], function(req, res) {
         getDiscover(req).then((discover) => {
             helpers.success(res, discover);
