@@ -18,6 +18,9 @@ project on the [UBports Weblate instance](https://translate.ubports.com/projects
     * Run: `vagrant plugin install vagrant-docker-compose`
 * Start vagrant:
     * Run: `vagrant up`
+* Install NPM dependencies (it's best to run this in the vagrant VM):
+    * Install api dependencies: `cd api; npm install; cd ..`
+    * Install web dependencies: `cd www; npm install; cd ..`
 * Attach to the docker container (if needed - from inside the vagrant VM):
     * Attach to the api container: `attach_api`
     * Attach to the web container: `attach_web`
@@ -55,6 +58,7 @@ like this:
 * [Michael Zanetti](http://notyetthere.org/)
 * [Marius Gripsgård](http://mariogrip.com/)
 * [Michał Prędotka](http://mivoligo.com/)
+* Joan CiberSheep
 
 ## License
 
