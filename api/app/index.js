@@ -24,6 +24,16 @@ function setup() {
         next();
     });
 
+    app.use(function(req, res, next) {
+        let host = config.server.host.replace('https://', '').replace('http://', '')
+        if (req.headers.host != host) {
+            res.redirect(301, config.server.host + req.originalUrl);
+        }
+        else {
+            next();
+        }
+    });
+
     //TOOD see if there is a better way to do this
     auth.setup(app);
     discover.setup(app);
@@ -34,6 +44,11 @@ function setup() {
     users.setup(app);
 
     app.use(express.static(__dirname + '/../../www'));
+
+    app.get('/telegram', function(req, res) {
+        console.log('telegram');
+        res.redirect(301, 'https://telegram.me/joinchat/BMTh8AHtOL2foXLulmqDxw');
+    });
 
     app.get('/app/openstore.mzanetti', function(req, res) {
         res.redirect(301, config.server.host + '/app/openstore.openstore-team')
