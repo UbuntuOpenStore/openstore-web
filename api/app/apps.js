@@ -40,19 +40,26 @@ function setup(app) {
         });
     });
 
-    app.get(['/api/apps', '/repo/repolist.json', '/api/v1/apps'], function(req, res) {
+    function apps(req, res) {
         let query = {published: true};
         let limit = req.query.limit ? parseInt(req.query.limit) : 0;
         let skip = req.query.skip ? parseInt(req.query.skip) : 0;
         let sort = req.query.sort ? req.query.sort : 'relevance';
 
+        let types = []
         if (req.query.types && Array.isArray(req.query.types)) {
-            query['types'] = {
-                $in: req.query.types,
-            };
+            types = req.query.types;
         }
         else if (req.query.types) {
-            query['types'] = req.query.types;
+            types = [ req.query.types ];
+        }
+        else if (req.body && req.body.types) {
+            types = req.body.types;
+        }
+        if (types.length > 0) {
+            query['types'] = {
+                $in: types,
+            };
         }
         else {
             query['types'] = {
@@ -60,16 +67,42 @@ function setup(app) {
             };
         }
 
+        let ids = [];
+        if (req.query.apps) {
+            ids = req.query.apps.split(',');
+        }
+        else if (req.body && req.body.apps) {
+            ids = req.body.apps;
+        }
+        if (ids.length > 0) {
+            query.id = {
+                $in: ids
+            };
+        }
+
+        let frameworks = [];
         if (req.query.frameworks) {
-            let frameworks = req.query.frameworks.split(',');
+            frameworks = req.query.frameworks.split(',');
+        }
+        else if (req.body && req.body.frameworks) {
+            frameworks = req.body.frameworks;
+        }
+        if (frameworks.length > 0) {
             query.framework = {
                 $in: frameworks
             };
         }
 
+        let architecture = ""
         if (req.query.architecture) {
-            let architectures = [req.query.architecture];
-            if (req.query.architecture != 'all') {
+            architecture = req.query.architecture;
+        }
+        else if (req.body && req.body.architecture) {
+            architecture = req.body.architecture;
+        }
+        if (architecture) {
+            let architectures = [architecture];
+            if (architecture != 'all') {
                 architectures.push('all');
             }
 
@@ -82,9 +115,15 @@ function setup(app) {
         if (req.query.category) {
             query.category = req.query.category;
         }
+        else if (req.body && req.body.category) {
+            query.category = req.body.category;
+        }
 
         if (req.query.search) {
             query['$text'] = {$search: req.query.search};
+        }
+        else if (req.body && req.body.search) {
+            query['$text'] = {$search: req.body.search};
         }
 
         db.Package.count(query).then((count) => {
@@ -184,7 +223,10 @@ function setup(app) {
             logger.error('Error fetching packages:', err);
             helpers.error(res, 'Could not fetch app list at this time');
         });;
-    });
+    }
+
+    app.get(['/api/apps', '/repo/repolist.json', '/api/v1/apps', '/api/v2/apps'], apps);
+    app.post(['/api/v2/apps'], apps);
 
     app.get(['/api/apps/:id', '/api/v1/apps/:id'], function(req, res) {
         let query = {
