@@ -37,7 +37,8 @@ project on the [UBports Weblate instance](https://translate.ubports.com/projects
 
 By default there are no credentials stored for the GitHub login or Smartfile upload.
 Smart file is used to store clicks & snaps, it must be enabled for proper functionality.
-In order to use either you need to create a config.json file in `api/utils/`
+Once you've created your Smartfile account, visit your private FTP area and create a directory called `test` in it.
+In order to use either GitHub login or Smartfile upload you need to create a config.json file in `api/utils/`
 like this:
 
 ```

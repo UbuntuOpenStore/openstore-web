@@ -1,6 +1,7 @@
 #!/bin/bash
 
-apt-get install -y nginx
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+apt-get install -y nginx nodejs
 ln -s /srv/openstore/env/proxy.conf /etc/nginx/conf.d/proxy.conf
 rm /etc/nginx/sites-enabled/default
 service nginx restart
