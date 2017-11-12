@@ -126,6 +126,20 @@ function setup(app) {
             query['$text'] = {$search: req.body.search};
         }
 
+        if (
+            (req.query.nsfw === false || (req.query.nsfw && req.query.nsfw.toLowerCase() == 'false')) ||
+            (req.body && (req.body.nsfw === false || (req.query.nsfw && req.query.nsfw.toLowerCase() == 'false')))
+        ) {
+            query.nsfw = {$in: [null, false]};
+        }
+
+        if (
+            (req.query.nsfw === true || (req.query.nsfw && req.query.nsfw.toLowerCase() == 'true')) ||
+            (req.body && (req.body.nsfw === true || (req.query.nsfw && req.query.nsfw.toLowerCase() == 'true')))
+        ) {
+            query.nsfw = true;
+        }
+
         db.Package.count(query).then((count) => {
             let findQuery = db.Package.find(query);
 

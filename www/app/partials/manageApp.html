@@ -120,6 +120,14 @@
             </div>
 
             <div class="form-group">
+                <label for="nsfw" class="col-sm-2 control-label">NSFW</label>
+                <div class="col-sm-10">
+                    <input type="checkbox" id="nsfw" ng-model="pkg.nsfw" />
+                    <label for="nsfw" class="small text-muted">This app contains NSFW material</label>
+                </div>
+            </div>
+
+            <div class="form-group">
                 <label for="license" class="col-sm-2 control-label">License</label>
                 <div class="col-sm-10">
                     <select id="license" class="form-control" ng-options="l for l in licenses" ng-model="pkg.license">

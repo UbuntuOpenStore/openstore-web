@@ -28,6 +28,7 @@ var packageSchema = mongoose.Schema({
     maintainer: String,
     manifest: {},
     name: String,
+    nsfw: Boolean,
     package: String,
     published_date: String,
     published: Boolean,

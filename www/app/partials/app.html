@@ -37,17 +37,28 @@
             </div>
             <div class="clearfix"></div>
 
-            <div class="description" ng-if="app.description">
-                <p ng-bind-html="app.description | nl2br"></p>
-            </div>
+            <div ng-if="!nsfw">
+                <div class="description" ng-if="app.description">
+                    <p ng-bind-html="app.description | nl2br"></p>
+                </div>
 
-            <div class="changelog" ng-if="app.changelog">
-                <h4>Changelog:</h4>
-                <p ng-bind-html="app.changelog | nl2br"></p>
-            </div>
+                <div class="changelog" ng-if="app.changelog">
+                    <h4>Changelog:</h4>
+                    <p ng-bind-html="app.changelog | nl2br"></p>
+                </div>
 
-            <div class="video" ng-if="app && app.video_url">
-                <iframe ng-src="{{app.video_url}}" frameborder="0" allowfullscreen></iframe>
+                <div class="video" ng-if="app && app.video_url">
+                    <iframe ng-src="{{app.video_url}}" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div ng-if="nsfw">
+                <br/>
+                <a class="primary clickable" data-role="button" ng-click="showNSFW()">Show NSFW Content</a>
+                {{nsfw}}
+                <p class="small-note">
+                    *This app contains NSFW content, to view the description and
+                    screenshots, click the above button.
+                </p>
             </div>
 
             <div class="info">
@@ -67,7 +78,7 @@
         </div>
 
         <div class="col-md-6">
-            <div class="screenshots" ng-if="app.screenshots.length > 0">
+            <div class="screenshots" ng-if="app.screenshots.length > 0 && !nsfw">
                 <div class="row">
                     <div class="col-md-12">
                         <h3>Screenshots</h3>

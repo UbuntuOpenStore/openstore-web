@@ -33,7 +33,8 @@
 
                     <div class="listitem-content">
                         <h4 class="title" ng-bind="app.name"></h4>
-                        <span class="tagline" ng-bind="app.tagline"></span>
+                        <span class="tagline" ng-bind="app.tagline" ng-if="!app.nsfw"></span>
+                        <span class="tagline" ng-if="app.nsfw">NSFW content</span>
                     </div>
                 </a>
             </div>

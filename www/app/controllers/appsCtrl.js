@@ -5,6 +5,11 @@ var appsCtrl = function($scope, $rootScope, $state, $sce, api) {
     $scope.app = null;
     $scope.tab = 'contents';
     $scope.manifest = false;
+    $scope.nsfw = false;
+
+    $scope.showNSFW = function() {
+        $scope.nsfw = false;
+    };
 
     $scope.type = 'click';
     $scope.query = {
@@ -86,6 +91,7 @@ var appsCtrl = function($scope, $rootScope, $state, $sce, api) {
             $scope.app.video_url = $scope.app.video_url ? $sce.trustAsResourceUrl($scope.app.video_url) : '';
             $scope.tab = 'contents';
             $scope.manifest = false;
+            $scope.nsfw = $scope.app.nsfw;
 
             if ($state.is('snap') && $scope.app.types.indexOf('snappy') == -1) {
                 $state.go('app', {name: $scope.app.id});

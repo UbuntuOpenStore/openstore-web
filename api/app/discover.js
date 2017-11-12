@@ -29,6 +29,7 @@ function setup(app) {
 
                 db.Package.find({
                     published: true,
+                    nsfw: {$in: [null, false]},
                     types: {
                         $in: ['app', 'webapp', 'scope', 'webapp+'],
                     },
@@ -36,6 +37,7 @@ function setup(app) {
 
                 db.Package.find({
                     published: true,
+                    nsfw: {$in: [null, false]},
                     types: {
                         $in: ['app', 'webapp', 'scope', 'webapp+'],
                     },

@@ -199,6 +199,10 @@ function updateInfo(pkg, data, body, file, url, updateRevision) {
                 pkg.keywords = [];
             }
 
+            if (body.nsfw !== undefined) {
+                pkg.nsfw = body.nsfw;
+            }
+
             pkg.description = pkg.description ? pkg.description : '';
             pkg.changelog = pkg.changelog ? pkg.changelog : '';
             pkg.tagline = pkg.tagline ? pkg.tagline : '';
@@ -357,6 +361,7 @@ function toJson(pkg, req) {
             maintainer: pkg.maintainer ? pkg.maintainer : null,
             manifest: pkg.manifest ? pkg.manifest : {},
             name: pkg.name ? pkg.name : '',
+            nsfw: !!pkg.nsfw,
             package: pkg.package ? pkg.package : '',
             permissions: pkg.permissions ? pkg.permissions: [],
             published_date: pkg.published_date ? pkg.published_date : '',
