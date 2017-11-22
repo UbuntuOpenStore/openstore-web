@@ -36,5 +36,12 @@ module.exports = {
     'object-shorthand': 0,
     'prefer-const': 0,
     'brace-style': [2, 'stroustrup'],
+    'indent': [1 /* warning */, 4],
+    'arrow-body-style': ['error', 'always'],
+    'no-param-reassign': 0,
+    'no-plusplus': 0,
+    'eqeqeq': 0,
+    'space-before-function-paren': 0,
+    'func-names': 0,
   }
 }

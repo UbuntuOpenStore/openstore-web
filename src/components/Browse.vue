@@ -1,0 +1,333 @@
+<template>
+    <div>
+        <div class="row">
+            <h1>Ubuntu Touch Apps</h1>
+        </div>
+
+        <div class="row">
+            <form class="p-form p-form--inline">
+                <div class="p-form__group">
+                    <label for="category" class="p-form__label">Category</label>
+                    <select id="category" class="p-form__control" v-model="query.category">
+                        <option value="">All Categories</option>
+                        <option v-for="category in categories" :value="category.category">{{category.category}}</option>
+                    </select>
+                    <!--TODO make this a fancy dropdown with our icons-->
+                </div>
+
+                <div class="p-form__group">
+                    <label for="type" class="p-form__label">Type:</label>
+                    <select id="type" class="p-form__control" v-model="query.type">
+                        <option value="">All Types</option>
+                        <option value="app">Apps</option>
+                        <option value="webapp">Web Apps</option>
+                        <option value="scope">Scopes</option>
+                    </select>
+                </div>
+
+                <div class="p-form__group">
+                    <label for="sort-by" class="p-form__label">Sort By:</label>
+                    <select id="sort-by" class="p-form__control" v-model="query.sort">
+                        <option value="name">Title (A-Z)</option>
+                        <option value="-name">Title (Z-A)</option>
+                        <option value="-published_date">Newest</option>
+                        <option value="published_date">Oldest</option>
+                        <option value="-updated_date">Latest Update</option>
+                        <option value="updated_date">Oldest Update</option>
+                    </select>
+                </div>
+
+                <!-- TODO hide these by default
+                <div class="p-form__group">
+                    <label for="license" class="p-form__label">License:</label>
+                    <input type="text" id="license" class="p-form__control" />
+                </div>
+
+                <div class="p-form__group">
+                    <label for="framework" class="p-form__label">Framework:</label>
+                    <input type="text" id="framework" class="p-form__control" />
+                </div>
+                -->
+            </form>
+        </div>
+
+        <div class="row">
+            <ul class="p-matrix u-clearfix">
+                <li v-for="app in apps" class="p-matrix__item">
+                    <types class="types" :types="app.types"></types>
+
+                    <img class="p-matrix__img" :src="app.icon" :alt="app.name">
+                    <div class="p-matrix__content">
+                        <h3 class="p-matrix__title"><a class="p-matrix__link" :href="app.url">{{app.name}}</a></h3>
+                        <p class="p-matrix__desc" v-if="app.nsfw">
+                            NSFW content
+                        </p>
+                        <p class="p-matrix__desc" v-else>
+                            {{app.tagline}}
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="row center" v-if="paging.total > 1">
+            <ul class="pagination">
+                <li :class="{disabled: page <= 0}" title="Jump to the first page">
+                    <a @click="setPage(0)">
+                        <i class="fa fa-angle-double-left"></i>
+                    </a>
+                </li>
+
+                <li :class="{disabled: page <= 0}" title="Go back a page">
+                    <a @click="setPage(page - 1)">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                </li>
+
+                <li v-for="p in paging.pages" :class="{active: page == p}">
+                    <a @click="setPage(p)">{{p + 1}}</a>
+                </li>
+
+                <li :class="{disabled: page >= paging.total}" title="Go to the next page">
+                    <a @click="setPage(page + 1)">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </li>
+
+                <li :class="{disabled: page >= paging.total}" title="Jump to the last page">
+                    <a @click="setPage(paging.total)">
+                        <i class="fa fa-angle-double-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</template>
+
+<script>
+import api from '@/api';
+import Types from '@/components/Types';
+
+const DEFAULT_SORT = '-published_date';
+const DEFAULT_TYPE = '';
+const DEFAULT_CATEGORY = '';
+
+export default {
+    name: 'Browse',
+    components: {
+        types: Types,
+    },
+    data() {
+        return {
+            query: {
+                limit: 30,
+                skip: 0,
+                search: '',
+                sort: DEFAULT_SORT,
+                type: DEFAULT_TYPE,
+                category: DEFAULT_CATEGORY,
+            },
+            page: 0,
+            paging: {
+                total: 0,
+                pages: [],
+            },
+            apps: [],
+            categories: [],
+        };
+    },
+    created() {
+        if (this.$route.query.page && parseInt(this.$route.query.page, 10)) {
+            let page = this.$route.query.page - 1;
+            if (page < 0) {
+                page = 0;
+            }
+
+            this.page = page;
+            this.query.skip = this.page * this.query.limit;
+        }
+
+        if (this.$route.query.sort && this.$route.query.sort != this.query.sort) {
+            this.query.sort = this.$route.query.sort;
+        }
+
+        if (this.$route.query.type && this.$route.query.type != this.query.type) {
+            this.query.type = this.$route.query.type;
+        }
+
+        if (this.$route.query.category && this.$route.query.category != this.query.category) {
+            this.query.category = this.$route.query.category;
+        }
+
+        this.refresh();
+        this.refreshCategories();
+    },
+    methods: {
+        setQueryParams() {
+            let params = {};
+            if (this.page !== 0) {
+                params.page = this.page + 1;
+            }
+
+            if (this.query.sort != DEFAULT_SORT) {
+                params.sort = this.query.sort;
+            }
+
+            if (this.query.type != DEFAULT_TYPE) {
+                params.type = this.query.type;
+            }
+
+            if (this.query.category != DEFAULT_CATEGORY) {
+                params.category = this.query.category;
+            }
+
+            this.$router.replace({name: 'browse', query: params});
+        },
+        refresh() {
+            // TODO debounce
+            // TODO loading
+            api.apps.search(this.query).then((data) => {
+                this.apps = data.packages.map((app) => {
+                    let url = `/app/${app.id}`;
+                    if (app.types.indexOf('snappy') > -1) {
+                        url = `/snap/${app.id}`;
+                    }
+
+                    app.url = url;
+                    return app;
+                });
+
+                this.paging.total = Math.ceil(data.count / this.query.limit) - 1;
+                let first = this.page - 2;
+                let last = this.page + 2;
+
+                if (first < 0) {
+                    last += Math.abs(first);
+                    first = 0;
+                }
+
+                if (last > this.paging.total) {
+                    first -= (last - this.paging.total);
+                    if (first < 0) {
+                        first = 0;
+                    }
+
+                    last = this.paging.total;
+                }
+
+                let pages = [];
+                for (let i = first; i <= last; i++) {
+                    pages.push(i);
+                }
+
+                this.paging.pages = pages;
+            });
+        },
+        refreshCategories() {
+            api.categories().then((data) => {
+                this.categories = data;
+
+                let category = this.category;
+                let match = this.categories.reduce((c) => {
+                    return (c.category == this.category);
+                });
+                if (!match) {
+                    category = DEFAULT_CATEGORY;
+                }
+
+                if (this.category != category) {
+                    this.category = category;
+
+                    this.setQueryParams();
+                    this.refresh();
+                }
+            });
+        },
+        setPage(page) {
+            if (page < 0) {
+                page = 0;
+            }
+            else if (page > (this.paging.total)) {
+                page = this.paging.total;
+            }
+
+            if (this.page != page) {
+                this.page = page;
+                this.query.skip = page * this.query.limit;
+
+                this.setQueryParams();
+                this.refresh();
+            }
+        },
+    },
+    watch: {
+        'query.sort': function() {
+            this.setQueryParams();
+            this.refresh();
+        },
+        'query.type': function() {
+            this.setQueryParams();
+            this.refresh();
+        },
+        'query.category': function() {
+            this.setQueryParams();
+            this.refresh();
+        },
+    },
+};
+</script>
+
+<style scoped>
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    #category {
+        width: 210px;
+    }
+
+    #type {
+        width: 120px;
+    }
+
+    #sort-by {
+        width: 160px;
+    }
+
+    .p-matrix__item {
+        position: relative;
+    }
+
+    .types {
+        position: absolute;
+        top: 0;
+        right: 0.2em;
+    }
+
+    .pagination {
+        display: inline-block;
+        padding-left: 0;
+    }
+
+    .pagination li {
+        display: inline;
+        padding: 0 1em;
+    }
+
+    .pagination li.disabled {
+        opacity: 0.5;
+    }
+
+    .pagination li.disabled a {
+        cursor: default;
+    }
+
+    .pagination li.active {
+        font-weight: bold;
+    }
+</style>

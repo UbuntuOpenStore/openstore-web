@@ -1,0 +1,9 @@
+//To update run: ./node_modules/.bin/node-sass --verbose --include-path node_modules static/vanilla.scss static/vanilla.css
+//TODO include this in the webpack build
+
+$color-brand: #292929;
+$color-navigation-background: #292929;
+$grid-max-width: 1200px;
+$shelves-max-width: 1200px;
+
+@import 'vanilla-framework/scss/build.scss';
