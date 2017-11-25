@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "axios": "^0.17.1",
+    "debounce": "^1.1.0",
     "font-awesome": "^4.7.0",
     "node-sass": "^4.7.1",
     "vanilla-framework": "^1.6.2",

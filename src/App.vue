@@ -30,8 +30,6 @@
                         <li class="p-navigation__link" role="menuitem"><a href="#">Log In</a></li>
                         <!--TODO <li class="p-navigation__link" role="menuitem"><a href="#">Manage</a></li>-->
                         <!--TODO <li class="p-navigation__link" role="menuitem"><a href="#">Log Out</a></li>-->
-
-                        <!-- TODO search bar -->
                     </ul>
                 </nav>
             </div>

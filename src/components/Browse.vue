@@ -7,6 +7,11 @@
         <div class="row">
             <form class="p-form p-form--inline">
                 <div class="p-form__group">
+                    <label for="search" class="p-form__label">Search</label>
+                    <input type="text" id="search" class="p-form__control" @input="updateSearch" />
+                </div>
+
+                <div class="p-form__group">
                     <label for="category" class="p-form__label">Category</label>
                     <select id="category" class="p-form__control" v-model="query.category">
                         <option value="">All Categories</option>
@@ -28,6 +33,7 @@
                 <div class="p-form__group">
                     <label for="sort-by" class="p-form__label">Sort By:</label>
                     <select id="sort-by" class="p-form__control" v-model="query.sort">
+                        <option value="relevance">Relevance</option>
                         <option value="name">Title (A-Z)</option>
                         <option value="-name">Title (Z-A)</option>
                         <option value="-published_date">Newest</option>
@@ -105,6 +111,8 @@
 </template>
 
 <script>
+import debounce from 'debounce';
+
 import api from '@/api';
 import Types from '@/components/Types';
 
@@ -159,6 +167,11 @@ export default {
             this.query.category = this.$route.query.category;
         }
 
+        if (this.$route.query.search && this.$route.query.search != this.query.search) {
+            this.query.search = this.$route.query.search;
+            this.query.sort = 'relevance';
+        }
+
         this.refresh();
         this.refreshCategories();
     },
@@ -179,6 +192,10 @@ export default {
 
             if (this.query.category != DEFAULT_CATEGORY) {
                 params.category = this.query.category;
+            }
+
+            if (this.query.search) {
+                params.search = this.query.search;
             }
 
             this.$router.replace({name: 'browse', query: params});
@@ -259,6 +276,18 @@ export default {
                 this.refresh();
             }
         },
+        updateSearch: debounce(function(e) {
+            this.query.search = e.target.value;
+            if (this.query.search) {
+                this.query.sort = 'relevance';
+            }
+            else {
+                this.query.sort = DEFAULT_SORT;
+            }
+
+            this.setQueryParams();
+            this.refresh();
+        }, 300),
     },
     watch: {
         'query.sort': function() {
