@@ -184,7 +184,10 @@ function setup(app) {
                     packages: formatted,
                 });
             }
-            else if (req.originalUrl.substring(0, 12) == '/api/v1/apps') {
+            else if (
+                req.originalUrl.substring(0, 12) == '/api/v1/apps' ||
+                req.originalUrl.substring(0, 12) == '/api/v2/apps'
+            ) {
                 let next = null;
                 let previous = null;
 
