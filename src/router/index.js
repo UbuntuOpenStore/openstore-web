@@ -4,6 +4,7 @@ import Browse from '@/components/Browse';
 import Package from '@/components/Package';
 import Docs from '@/components/Docs';
 import Submit from '@/components/Submit';
+import Login from '@/components/Login';
 
 Vue.use(Router);
 
@@ -34,6 +35,10 @@ export default new Router({
             path: '/submit',
             name: 'submit',
             component: Submit,
+        }, {
+            path: '/login',
+            name: 'login',
+            component: Login,
         },
     ],
 });

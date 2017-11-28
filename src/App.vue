@@ -22,13 +22,27 @@
                         <a href="#main-content">Jump to main content</a>
                     </span>
                     <ul class="p-navigation__links" role="menu">
-                        <li class="p-navigation__link" role="menuitem"><router-link :to="{name: 'submit'}">Submit</router-link></li>
-                        <li class="p-navigation__link" role="menuitem"><router-link :to="{name: 'browse'}">Browse</router-link></li>
-                        <li class="p-navigation__link" role="menuitem"><router-link :to="{name: 'browse_snaps'}">Browse Snaps</router-link></li>
-                        <li class="p-navigation__link" role="menuitem"><router-link :to="{name: 'docs'}">Docs</router-link></li>
-                        <li class="p-navigation__link" role="menuitem"><a href="#">Log In</a></li>
-                        <!--TODO <li class="p-navigation__link" role="menuitem"><a href="#">Manage</a></li>-->
-                        <!--TODO <li class="p-navigation__link" role="menuitem"><a href="#">Log Out</a></li>-->
+                        <li class="p-navigation__link" role="menuitem">
+                            <router-link :to="{name: 'submit'}">Submit</router-link>
+                        </li>
+                        <li class="p-navigation__link" role="menuitem">
+                            <router-link :to="{name: 'browse'}">Browse</router-link>
+                        </li>
+                        <li class="p-navigation__link" role="menuitem">
+                            <router-link :to="{name: 'browse_snaps'}">Browse Snaps</router-link>
+                        </li>
+                        <li class="p-navigation__link" role="menuitem">
+                            <router-link :to="{name: 'docs'}">Docs</router-link>
+                        </li>
+                        <li class="p-navigation__link" role="menuitem" v-if="!user">
+                            <router-link :to="{name: 'login'}">Log In</router-link>
+                        </li>
+                        <li class="p-navigation__link" role="menuitem" v-if="user">
+                            <router-link :to="{name: 'manage'}">Manage</router-link>
+                        </li>
+                        <li class="p-navigation__link" role="menuitem" v-if="user">
+                            <a href="/auth/logout">Log Out</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -65,8 +79,20 @@
 </template>
 
 <script>
+import api from '@/api';
+
 export default {
     name: 'app',
+    data() {
+        return {
+            user: null,
+        };
+    },
+    created() {
+        api.auth.me().then((user) => {
+            this.user = user;
+        });
+    },
 };
 </script>
 
