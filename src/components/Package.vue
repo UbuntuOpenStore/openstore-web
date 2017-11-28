@@ -44,7 +44,13 @@
                 </div>
 
                 <div class="row">
-                    <div class="p-matrix u-clearfix">
+                    <div class="center">
+                        <a :href="openstoreLink" class="p-button--positive" v-if="app.id != 'openstore.openstore-team' && !isSnap" title="Install via the OpenStore app">Install</a>
+                        <router-link :to="{name: 'docs'}" class="p-button--positive" v-if="app.id == 'openstore.openstore-team'">Install</router-link>
+                        <a :href="app.download" class="p-button--positive" target="_blank">Download</a>
+                    </div>
+
+                    <div class="row p-matrix u-clearfix">
                         <div class="p-matrix__item center">
                             <i class="fa fa-2x fa-info-circle text-blue"></i>
                             <br/>
@@ -260,6 +266,9 @@ export default {
 
             return isRestricted;
         },
+        openstoreLink() {
+            return `openstore://${this.app.id}`;
+        },
     },
 };
 </script>
@@ -335,6 +344,10 @@ export default {
     }
 
     .permissions li {
+        margin-top: 0;
+    }
+
+    .p-button--positive {
         margin-top: 0;
     }
 </style>
