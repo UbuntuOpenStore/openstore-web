@@ -23,7 +23,7 @@
                     </span>
                     <ul class="p-navigation__links" role="menu">
                         <li class="p-navigation__link" role="menuitem"><a href="#">Submit</a></li>
-                        <li class="p-navigation__link" role="menuitem"><a href="#">Browse</a></li>
+                        <li class="p-navigation__link" role="menuitem"><router-link :to="{name: 'browse'}">Browse</router-link></li>
                         <li class="p-navigation__link" role="menuitem"><a href="#">Browse Snaps</a></li>
                         <li class="p-navigation__link" role="menuitem"><a href="#">Docs</a></li>
                         <li class="p-navigation__link" role="menuitem"><a href="#">Download</a></li>

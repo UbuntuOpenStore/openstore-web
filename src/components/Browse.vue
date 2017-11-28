@@ -57,7 +57,15 @@
             </form>
         </div>
 
-        <div class="row">
+        <h2 v-if="error" class="center text-red">
+            There was an error trying to load the app list, please refresh and try again.
+        </h2>
+
+        <div v-if="loading" class="center">
+            <i class="fa fa-spinner fa-spin fa-2x"></i>
+        </div>
+
+        <div class="row" v-if="!loading">
             <ul class="p-matrix u-clearfix">
                 <li v-for="app in apps" class="p-matrix__item">
                     <types class="types" :types="app.types"></types>
@@ -80,6 +88,11 @@
                     </div>
                 </li>
             </ul>
+
+            <h3 v-if="apps.length === 0" class="center">
+                No apps found.
+                <span v-if="query.search">Try searching for something else</span>
+            </h3>
         </div>
 
         <div class="row center" v-if="paging.total > 1">
@@ -148,6 +161,8 @@ export default {
             },
             apps: [],
             categories: [],
+            loading: false,
+            error: false,
         };
     },
     created() {
@@ -178,8 +193,6 @@ export default {
             this.query.sort = 'relevance';
         }
 
-        console.log(this.query);
-
         this.refresh();
         this.refreshCategories();
     },
@@ -209,7 +222,7 @@ export default {
             this.$router.replace({name: 'browse', query: params});
         },
         refresh() {
-            // TODO loading spinner
+            this.loading = true;
 
             let query = Object.assign({}, this.query);
             // TODO this is a little wonky, find a better user experience
@@ -245,8 +258,11 @@ export default {
                 }
 
                 this.paging.pages = pages;
+                this.loading = false;
+                this.error = false;
+            }).catch((err) => {
+                this.error = true;
             });
-            // TODO error handling
         },
         refreshCategories() {
             api.categories().then((data) => {
