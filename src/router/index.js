@@ -3,6 +3,7 @@ import Router from 'vue-router';
 import Browse from '@/components/Browse';
 import Package from '@/components/Package';
 import Docs from '@/components/Docs';
+import Submit from '@/components/Submit';
 
 Vue.use(Router);
 
@@ -29,6 +30,10 @@ export default new Router({
             path: '/docs',
             name: 'docs',
             component: Docs,
+        }, {
+            path: '/submit',
+            name: 'submit',
+            component: Submit,
         },
     ],
 });
