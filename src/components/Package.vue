@@ -1,12 +1,22 @@
 <template>
     <div class="row">
         <!-- TODO intelegent back button -->
-        <a href="/">
-            <i class="fa fa-chevron-left"></i>
-        </a>
-        <a href="/">
-            Back
-        </a>
+        <div v-if="isSnap">
+            <a href="/snaps">
+                <i class="fa fa-chevron-left"></i>
+            </a>
+            <a href="/snaps">
+                Back
+            </a>
+        </div>
+        <div v-else>
+            <a href="/">
+                <i class="fa fa-chevron-left"></i>
+            </a>
+            <a href="/">
+                Back
+            </a>
+        </div>
 
         <div class="row no-margin">
             <h2 v-if="missing" class="center">
@@ -53,6 +63,7 @@
                             {{app.license}}
                         </div>
                         <div
+                            v-if="!isSnap"
                             class="p-matrix__item center"
                             :title="restrictedAccess ? 'This app has access to restricted system data, see permissions for more details' : 'This app does not have access to restricted system data, see permissions for more details'"
                         >
@@ -81,7 +92,7 @@
                     <iframe :src="app.video_url" frameborder="0" allowfullscreen></iframe>
                 </div>
 
-                <div class="row screenshots" v-if="app.screenshots && showNSFW">
+                <div class="row screenshots" v-if="app.screenshots.length > 0 && showNSFW">
                     <h3>Screenshots</h3>
                     <!-- TODO lightbox -->
                     <div class="screenshot-scroll">
@@ -108,7 +119,7 @@
                     <p class="pre">{{app.changelog}}</p>
                 </div>
 
-                <div class="row permissions">
+                <div class="row permissions" v-if="!isSnap">
                     <h4>Permissions:</h4>
                     <ul>
                         <li
@@ -161,6 +172,7 @@ export default {
     },
     data() {
         return {
+            isSnap: (this.$route.name == 'snap'),
             app: null,
             showNSFW: true,
             permissions: [],
@@ -191,7 +203,7 @@ export default {
                             permissions = permissions.concat(hook.apparmor.policy_groups);
                         }
 
-                        if (hook.apparmor.template == 'unconfined') {
+                        if (hook.apparmor && hook.apparmor.template == 'unconfined') {
                             permissions.push('unconfined');
                         }
                     });
@@ -206,7 +218,7 @@ export default {
             }).catch((err) => {
                 this.loading = false;
 
-                if (err.response.status) {
+                if (err.response && err.response.status) {
                     this.missing = true;
                 }
                 else {

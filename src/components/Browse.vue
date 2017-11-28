@@ -1,7 +1,8 @@
 <template>
     <div>
         <div class="row">
-            <h1>Ubuntu Touch Apps</h1>
+            <h1 v-if="isSnaps">Snaps</h1>
+            <h1 v-else>Ubuntu Touch Apps</h1>
         </div>
 
         <div class="row">
@@ -20,7 +21,7 @@
                     <!--TODO make this a fancy dropdown with our icons-->
                 </div>
 
-                <div class="p-form__group">
+                <div class="p-form__group" v-if="!isSnaps">
                     <label for="type" class="p-form__label">Type:</label>
                     <select id="type" class="p-form__control" v-model="query.type">
                         <option value="">All Types</option>
@@ -146,6 +147,7 @@ export default {
     },
     data() {
         return {
+            isSnaps: this.$route.name == 'browse_snaps',
             query: {
                 limit: 30,
                 skip: 0,
@@ -231,6 +233,10 @@ export default {
                 delete query.search;
             }
 
+            if (this.isSnaps) {
+                query.type = 'snap';
+            }
+
             api.apps.search(query).then((data) => {
                 this.apps = data.packages;
 
@@ -260,7 +266,8 @@ export default {
                 this.paging.pages = pages;
                 this.loading = false;
                 this.error = false;
-            }).catch((err) => {
+            }).catch(() => {
+                this.loading = false;
                 this.error = true;
             });
         },

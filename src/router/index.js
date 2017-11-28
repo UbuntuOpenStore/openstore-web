@@ -13,6 +13,10 @@ export default new Router({
             name: 'browse',
             component: Browse,
         }, {
+            path: '/snaps',
+            name: 'browse_snaps',
+            component: Browse,
+        }, {
             path: '/app/:id',
             name: 'app',
             component: Package,
