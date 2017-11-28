@@ -8,7 +8,7 @@
             <form class="p-form p-form--inline">
                 <div class="p-form__group">
                     <label for="search" class="p-form__label">Search</label>
-                    <input type="text" id="search" class="p-form__control" @input="updateSearch" />
+                    <input type="text" id="search" class="p-form__control" @input="updateSearch" :value="query.search" />
                 </div>
 
                 <div class="p-form__group">
@@ -64,7 +64,13 @@
 
                     <img class="p-matrix__img" :src="app.icon" :alt="app.name">
                     <div class="p-matrix__content">
-                        <h3 class="p-matrix__title"><a class="p-matrix__link" :href="app.url">{{app.name}}</a></h3>
+                        <h3 class="p-matrix__title" v-if="app.types.indexOf('snappy') > -1">
+                            <router-link class="p-matrix__link" :to="{name: 'snap', params: {id: app.id}}">{{app.name}}</router-link>
+                        </h3>
+                        <h3 class="p-matrix__title" v-if="app.types.indexOf('snappy') == -1">
+                            <router-link class="p-matrix__link" :to="{name: 'app', params: {id: app.id}}">{{app.name}}</router-link>
+                        </h3>
+
                         <p class="p-matrix__desc" v-if="app.nsfw">
                             NSFW content
                         </p>
@@ -172,6 +178,8 @@ export default {
             this.query.sort = 'relevance';
         }
 
+        console.log(this.query);
+
         this.refresh();
         this.refreshCategories();
     },
@@ -201,18 +209,17 @@ export default {
             this.$router.replace({name: 'browse', query: params});
         },
         refresh() {
-            // TODO debounce
-            // TODO loading
-            api.apps.search(this.query).then((data) => {
-                this.apps = data.packages.map((app) => {
-                    let url = `/app/${app.id}`;
-                    if (app.types.indexOf('snappy') > -1) {
-                        url = `/snap/${app.id}`;
-                    }
+            // TODO loading spinner
 
-                    app.url = url;
-                    return app;
-                });
+            let query = Object.assign({}, this.query);
+            // TODO this is a little wonky, find a better user experience
+            if (query.search.substring(0, 7) == 'author:') {
+                query.author = query.search.replace('author:', '');
+                delete query.search;
+            }
+
+            api.apps.search(query).then((data) => {
+                this.apps = data.packages;
 
                 this.paging.total = Math.ceil(data.count / this.query.limit) - 1;
                 let first = this.page - 2;
@@ -239,6 +246,7 @@ export default {
 
                 this.paging.pages = pages;
             });
+            // TODO error handling
         },
         refreshCategories() {
             api.categories().then((data) => {
@@ -326,6 +334,10 @@ export default {
 
     #sort-by {
         width: 160px;
+    }
+
+    .p-matrix__img {
+        border-radius: 8px;
     }
 
     .p-matrix__item {

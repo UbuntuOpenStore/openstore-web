@@ -18,7 +18,10 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   // these devServer options should be customized in /config/index.js
   devServer: {
     clientLogLevel: 'warning',
-    historyApiFallback: true,
+    historyApiFallback: {
+      disableDotRule: true,
+      verbose: true,
+    },
     hot: true,
     host: process.env.HOST || config.dev.host,
     port: process.env.PORT || config.dev.port,

@@ -7,3 +7,71 @@ $grid-max-width: 1200px;
 $shelves-max-width: 1200px;
 
 @import 'vanilla-framework/scss/build.scss';
+
+.center {
+    text-align: center;
+}
+
+.background-green {
+    background-color: #3fb24f;
+}
+
+.background-red {
+    background-color: #fc4949;
+}
+
+.background-orange {
+    background-color: #dd4814;
+}
+
+.background-purple {
+    background-color: #762572;
+}
+
+.background-blue {
+    background-color: #1ab6ef;
+}
+
+.background-lightgrey {
+    background-color: #888888;
+}
+
+.background-darkgrey {
+    background-color: #5d5d5d;
+}
+
+.background-white {
+    background-color: #f5f5f5;
+}
+
+.text-green {
+    color: #3fb24f;
+}
+
+.text-red {
+    color: #fc4949;
+}
+
+.text-orange {
+    color: #dd4814;
+}
+
+.text-purple {
+    color: #762572;
+}
+
+.text-blue {
+    color: #1ab6ef;
+}
+
+.text-lightgrey {
+    color: #888888;
+}
+
+.text-darkgrey {
+    color: #5d5d5d;
+}
+
+.text-white {
+    color: #f5f5f5;
+}
