@@ -147,7 +147,6 @@ export default {
     },
     data() {
         return {
-            isSnaps: this.$route.name == 'browse_snaps',
             query: {
                 limit: 30,
                 skip: 0,
@@ -332,6 +331,16 @@ export default {
         'query.category': function() {
             this.setQueryParams();
             this.refresh();
+        },
+        $route: function(to, from) {
+            if (to.name != from.name) {
+                this.refresh();
+            }
+        },
+    },
+    computed: {
+        isSnaps() {
+            return this.$route.name == 'browse_snaps';
         },
     },
 };
