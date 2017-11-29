@@ -167,37 +167,69 @@ export default {
         };
     },
     created() {
-        if (this.$route.query.page && parseInt(this.$route.query.page, 10)) {
-            let page = this.$route.query.page - 1;
-            if (page < 0) {
-                page = 0;
-            }
-
-            this.page = page;
-            this.query.skip = this.page * this.query.limit;
-        }
-
-        if (this.$route.query.sort && this.$route.query.sort != this.query.sort) {
-            this.query.sort = this.$route.query.sort;
-        }
-
-        if (this.$route.query.type && this.$route.query.type != this.query.type) {
-            this.query.type = this.$route.query.type;
-        }
-
-        if (this.$route.query.category && this.$route.query.category != this.query.category) {
-            this.query.category = this.$route.query.category;
-        }
-
-        if (this.$route.query.search && this.$route.query.search != this.query.search) {
-            this.query.search = this.$route.query.search;
-            this.query.sort = 'relevance';
-        }
-
+        this.getQueryParams();
         this.refresh();
         this.refreshCategories();
     },
     methods: {
+        getQueryParams() {
+            let changed = false;
+
+            let page = 0;
+            if (this.$route.query.page && parseInt(this.$route.query.page, 10)) {
+                page = this.$route.query.page - 1;
+                if (page < 0) {
+                    page = 0;
+                }
+            }
+
+            if (page != this.page) {
+                this.page = page;
+                this.query.skip = this.page * this.query.limit;
+                changed = true;
+            }
+
+            if (this.$route.query.sort != this.query.sort) {
+                let sort = this.$route.query.sort ? this.$route.query.sort : DEFAULT_SORT;
+
+                if (sort != this.query.sort) {
+                    this.query.sort = sort;
+                    changed = true;
+                }
+            }
+
+            if (this.$route.query.type != this.query.type) {
+                let type = this.$route.query.type ? this.$route.query.type : DEFAULT_TYPE;
+
+                if (type != this.query.type) {
+                    this.query.type = type;
+                    changed = true;
+                }
+            }
+
+            if (this.$route.query.category != this.query.category) {
+                let category = this.$route.query.category;
+                if (!category) {
+                    category = DEFAULT_CATEGORY;
+                }
+
+                if (category != this.query.category) {
+                    this.query.category = category;
+                    changed = true;
+                }
+            }
+
+            if (this.$route.query.search != this.query.search) {
+                let search = this.$route.query.search ? this.$route.query.search : '';
+                if (search != this.query.search) {
+                    this.query.search = search;
+                    this.query.sort = 'relevance';
+                    changed = true;
+                }
+            }
+
+            return changed;
+        },
         setQueryParams() {
             let params = {};
             if (this.page !== 0) {
@@ -333,7 +365,9 @@ export default {
             this.refresh();
         },
         $route: function(to, from) {
-            if (to.name != from.name) {
+            let changed = this.getQueryParams();
+
+            if (to.name != from.name || changed) {
                 this.refresh();
             }
         },
