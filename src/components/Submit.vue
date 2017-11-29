@@ -56,11 +56,101 @@
                 manually reviewed app will get a source code review.
             </li>
         </ul>
+
+        <h1 v-if="!user">
+            <router-link :to="{name: 'login'}">
+                Login to submit your app
+            </router-link>
+        </h1>
+        <div v-if="user">
+            <h1>Submit App</h1>
+
+            <form class="p-form p-form--stacked">
+                <div class="p-form__group">
+                    <label for="file" class="p-form__label">App</label>
+                    <input type="file" id="file" class="p-form__control" accept=".snap, .click" @change="fileChange($event.target.files)" :disabled="saving" />
+                </div>
+
+                <h3>OR</h3>
+
+                <div class="p-form__group">
+                    <label for="downloadUrl" class="p-form__label">App from URL</label>
+                    <input type="text" id="downloadUrl" class="p-form__control" placeholder="URL of App from the Web" :disabled="saving" v-model="downloadUrl" />
+                </div>
+
+                <a class="p-button--positive" @click="submit()" :disabled="saving">
+                    <i class="fa" :class="{'fa-plus': !saving, 'fa-spinner fa-spin': saving}"></i>
+                    Submit
+                </a>
+
+                <router-link class="p-button--neutral" :to="{name: 'manage'}" :disabled="saving">
+                    <i class="fa fa-times"></i>
+                    Cancel
+                </router-link>
+
+                <p v-if="error" class="text-red">
+                    {{error}}
+                </p>
+            </form>
+        </div>
     </div>
 </template>
 
 <script>
+import api from '@/api';
+
 export default {
     name: 'Submit',
+    data() {
+        return {
+            user: null,
+            file: null,
+            downloadUrl: '',
+            saving: false,
+            error: false,
+        };
+    },
+    created() {
+        api.auth.me().then((user) => {
+            this.user = user;
+        });
+    },
+    methods: {
+        fileChange(files) {
+            if (files.length > 0) {
+                this.file = files[0];
+            }
+            else {
+                this.file = null;
+            }
+        },
+        submit() {
+            this.saving = true;
+            let promise = null;
+            if (this.file) {
+                let formData = new FormData();
+                formData.append('file', this.file, this.file.name);
+
+                promise = api.manage.create(formData, this.user.apikey);
+            }
+            else {
+                promise = api.manage.create({downloadUrl: this.downloadUrl}, this.user.apikey);
+            }
+
+            promise.then((app) => {
+                this.saving = false;
+                this.$router.push({name: 'manage_package', params: {id: app.id}});
+            }).catch((err) => {
+                if (err.response && err.response.data && err.response.data.message) {
+                    this.error = err.response.data.message;
+                }
+                else {
+                    this.error = 'An unknown error has occured';
+                }
+
+                this.saving = false;
+            });
+        },
+    },
 };
 </script>

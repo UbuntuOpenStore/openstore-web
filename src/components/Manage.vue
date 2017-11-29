@@ -23,7 +23,6 @@
                 <i class="fa fa-spinner fa-spin fa-2x"></i>
             </div>
 
-            <!-- TODO search -->
             <div class="row" v-if="!loading">
                 <!-- TODO mobile friendly -->
                 <table>

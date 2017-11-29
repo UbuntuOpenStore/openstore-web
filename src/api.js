@@ -58,5 +58,9 @@ export default {
         get: (id, key) => {
             return axios.get(`${process.env.API}/api/v2/manage/apps/${id}?apikey=${key}`).then(success);
         },
+
+        create: (data, key) => {
+            return axios.post(`${process.env.API}/api/v2/manage/apps/?apikey=${key}`, data).then(success);
+        },
     },
 };
