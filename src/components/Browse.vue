@@ -90,7 +90,7 @@
                 </li>
             </ul>
 
-            <h3 v-if="apps.length === 0" class="center">
+            <h3 v-if="apps.length === 0 && !error" class="center">
                 No apps found.
                 <span v-if="query.search">Try searching for something else</span>
             </h3>
@@ -220,7 +220,7 @@ export default {
                 params.search = this.query.search;
             }
 
-            this.$router.replace({name: 'browse', query: params});
+            this.$router.push({name: 'browse', query: params});
         },
         refresh() {
             this.loading = true;

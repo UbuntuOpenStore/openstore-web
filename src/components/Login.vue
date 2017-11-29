@@ -21,6 +21,9 @@
 <script>
 export default {
     name: 'Login',
+    created() {
+        this.$router.push({name: 'manage'});
+    },
 };
 </script>
 

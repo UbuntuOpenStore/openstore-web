@@ -5,6 +5,7 @@ import Package from '@/components/Package';
 import Docs from '@/components/Docs';
 import Submit from '@/components/Submit';
 import Login from '@/components/Login';
+import Manage from '@/components/Manage';
 
 Vue.use(Router);
 
@@ -39,6 +40,10 @@ export default new Router({
             path: '/login',
             name: 'login',
             component: Login,
+        }, {
+            path: '/manage',
+            name: 'manage',
+            component: Manage,
         },
     ],
 });
