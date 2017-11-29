@@ -8,6 +8,13 @@
                 Submit App
             </router-link>
 
+            <form class="p-form p-form--inline">
+                <div class="p-form__group">
+                    <label for="search" class="p-form__label">Search</label>
+                    <input type="text" id="search" class="p-form__control" @input="updateSearch" :value="query.search" />
+                </div>
+            </form>
+
             <h2 v-if="error" class="center text-red">
                 There was an error trying to load the app list, please refresh and try again.
             </h2>
@@ -91,6 +98,8 @@
 </template>
 
 <script>
+import debounce from 'debounce';
+
 import api from '@/api';
 
 export default {
@@ -102,6 +111,7 @@ export default {
                 limit: 30,
                 skip: 0,
                 search: '',
+                sort: 'relevance',
             },
             page: 0,
             paging: {
@@ -161,6 +171,10 @@ export default {
                 this.error = true;
             });
         },
+        updateSearch: debounce(function(e) {
+            this.query.search = e.target.value;
+            this.refresh();
+        }, 300),
         setPage(page) {
             if (page < 0) {
                 page = 0;
