@@ -40,9 +40,15 @@
                     <tbody>
                         <tr v-for="app in apps">
                             <td>
-                                <img :src="app.icon" :alt="app.name" class="icon" />
+                                <router-link :to="{name: 'manage_package', params: {id: app.id}}">
+                                    <img :src="app.icon" :alt="app.name" class="icon" />
+                                </router-link>
                             </td>
-                            <td>{{app.name}}</td>
+                            <td>
+                                <router-link :to="{name: 'manage_package', params: {id: app.id}}">
+                                    {{app.name}}
+                                </router-link>
+                            </td>
                             <td v-if="user.role == 'admin'">{{app.author}}</td>
                             <td>
                                 <span v-if="app.published" class="text-green">Published</span>

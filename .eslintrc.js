@@ -43,5 +43,6 @@ module.exports = {
     'eqeqeq': 0,
     'space-before-function-paren': 0,
     'func-names': 0,
+    'newline-per-chained-call': 0,
   }
 }

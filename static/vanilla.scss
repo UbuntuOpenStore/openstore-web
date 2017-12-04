@@ -8,6 +8,12 @@ $shelves-max-width: 1200px;
 
 @import 'vanilla-framework/scss/build.scss';
 
+// Hide the arrow on select boxes
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
 .center {
     text-align: center;
 }

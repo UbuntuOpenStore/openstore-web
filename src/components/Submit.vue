@@ -125,31 +125,33 @@ export default {
             }
         },
         submit() {
-            this.saving = true;
-            let promise = null;
-            if (this.file) {
-                let formData = new FormData();
-                formData.append('file', this.file, this.file.name);
+            if (!this.saving) {
+                this.saving = true;
+                let promise = null;
+                if (this.file) {
+                    let formData = new FormData();
+                    formData.append('file', this.file, this.file.name);
 
-                promise = api.manage.create(formData, this.user.apikey);
-            }
-            else {
-                promise = api.manage.create({downloadUrl: this.downloadUrl}, this.user.apikey);
-            }
-
-            promise.then((app) => {
-                this.saving = false;
-                this.$router.push({name: 'manage_package', params: {id: app.id}});
-            }).catch((err) => {
-                if (err.response && err.response.data && err.response.data.message) {
-                    this.error = err.response.data.message;
+                    promise = api.manage.create(formData, this.user.apikey);
                 }
                 else {
-                    this.error = 'An unknown error has occured';
+                    promise = api.manage.create({downloadUrl: this.downloadUrl}, this.user.apikey);
                 }
 
-                this.saving = false;
-            });
+                promise.then((app) => {
+                    this.saving = false;
+                    this.$router.push({name: 'manage_package', params: {id: app.id}});
+                }).catch((err) => {
+                    if (err.response && err.response.data && err.response.data.message) {
+                        this.error = err.response.data.message;
+                    }
+                    else {
+                        this.error = 'An unknown error has occured';
+                    }
+
+                    this.saving = false;
+                });
+            }
         },
     },
 };

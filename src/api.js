@@ -62,5 +62,15 @@ export default {
         create: (data, key) => {
             return axios.post(`${process.env.API}/api/v2/manage/apps/?apikey=${key}`, data).then(success);
         },
+
+        update: (id, data, key) => {
+            return axios.put(`${process.env.API}/api/v2/manage/apps/${id}?apikey=${key}`, data).then(success);
+        },
+    },
+
+    users: {
+        getAll: (key) => {
+            return axios.get(`${process.env.API}/api/users?apikey=${key}`).then(success);
+        },
     },
 };

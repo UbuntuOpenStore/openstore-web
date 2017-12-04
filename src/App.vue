@@ -96,8 +96,16 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
     .p-footer {
         padding-top: 0;
+    }
+
+    .uploadcare--dialog {
+        margin-top: 0;
+    }
+
+    .uploadcare--dialog div {
+        margin-top: 0;
     }
 </style>

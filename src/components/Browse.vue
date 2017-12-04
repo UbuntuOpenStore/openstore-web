@@ -381,11 +381,6 @@ export default {
 </script>
 
 <style scoped>
-    select {
-        -webkit-appearance: none;
-        -moz-appearance: none;
-    }
-
     .center {
         text-align: center;
     }

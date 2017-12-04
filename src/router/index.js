@@ -6,6 +6,7 @@ import Docs from '@/components/Docs';
 import Submit from '@/components/Submit';
 import Login from '@/components/Login';
 import Manage from '@/components/Manage';
+import ManagePackage from '@/components/ManagePackage';
 
 Vue.use(Router);
 
@@ -44,6 +45,10 @@ export default new Router({
             path: '/manage',
             name: 'manage',
             component: Manage,
+        }, {
+            path: '/manage/:id',
+            name: 'manage_package',
+            component: ManagePackage,
         },
     ],
 });

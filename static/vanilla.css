@@ -4347,6 +4347,10 @@ form + [class*="p-button"] {
     .u-visible--large {
       display: block !important; } }
 
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none; }
+
 .center {
   text-align: center; }
 
