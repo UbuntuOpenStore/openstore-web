@@ -60,6 +60,9 @@
                             <a class="p-footer__link" href="/telegram">Chat with us on Telegram</a>
                         </li>
                         <li class="p-footer__item">
+                            <router-link :to="{name: 'stats'}" class="p-footer__link">App Stats</router-link>
+                        </li>
+                        <li class="p-footer__item">
                             <a class="p-footer__link" href="https://github.com/UbuntuOpenStore">Fork us on Github</a>
                         </li>
                         <li class="p-footer__item">
@@ -69,9 +72,6 @@
                             <a class="p-footer__link" href="https://github.com/UbuntuOpenStore/openstore-meta/issues">Report an Issue</a>
                         </li>
                     </ul>
-                    <span class="u-off-screen">
-                        <a href="#">Go to the top of the page</a>
-                    </span>
                 </nav>
             </div>
         </footer>

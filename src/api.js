@@ -41,6 +41,10 @@ export default {
         get: (id) => {
             return axios.get(`${process.env.API}/api/v2/apps/${id}`).then(success);
         },
+
+        stats: () => {
+            return axios.get(`${process.env.API}/api/v2/apps/stats`).then(success);
+        },
     },
 
     categories: () => {

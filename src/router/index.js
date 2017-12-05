@@ -7,6 +7,7 @@ import Submit from '@/components/Submit';
 import Login from '@/components/Login';
 import Manage from '@/components/Manage';
 import ManagePackage from '@/components/ManagePackage';
+import Stats from '@/components/Stats';
 
 Vue.use(Router);
 
@@ -49,6 +50,10 @@ export default new Router({
             path: '/manage/:id',
             name: 'manage_package',
             component: ManagePackage,
+        }, {
+            path: '/stats/',
+            name: 'stats',
+            component: Stats,
         },
     ],
 });
