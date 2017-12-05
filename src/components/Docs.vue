@@ -25,7 +25,17 @@
 </template>
 
 <script>
+import opengraph from '@/opengraph';
+
 export default {
     name: 'Docs',
+    head: {
+        title: {inner: 'Docs'},
+        meta: function() {
+            return opengraph({
+                title: 'Docs - OpenStore',
+            });
+        },
+    },
 };
 </script>

@@ -167,6 +167,7 @@
 
 <script>
 import api from '@/api';
+import opengraph from '@/opengraph';
 import Types from '@/components/Types';
 
 let restricted = ['bluetooth', 'calendar', 'contacts', 'debug', 'history', 'music_files', 'picture_files', 'video_files', 'unconfined'];
@@ -175,6 +176,23 @@ export default {
     name: 'Package',
     components: {
         types: Types,
+    },
+    head: {
+        title: function() {
+            return {inner: this.app ? this.app.name : ''};
+        },
+        meta: function() {
+            let data = {};
+            if (this.app) {
+                data = {
+                    title: `${this.app.name} - OpenStore`,
+                    description: this.app.tagline,
+                    image: this.app.icon,
+                };
+            }
+
+            return opengraph(data);
+        },
     },
     data() {
         return {
@@ -221,6 +239,7 @@ export default {
                 });
 
                 this.permissions = permissions.sort();
+                this.$emit('updateHead');
             }).catch((err) => {
                 this.loading = false;
 

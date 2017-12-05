@@ -106,9 +106,18 @@
 import debounce from 'debounce';
 
 import api from '@/api';
+import opengraph from '@/opengraph';
 
 export default {
     name: 'Manage',
+    head: {
+        title: {inner: 'Manage Apps'},
+        meta: function() {
+            return opengraph({
+                title: 'Manage - OpenStore',
+            });
+        },
+    },
     data() {
         return {
             user: null,

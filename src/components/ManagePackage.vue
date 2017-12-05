@@ -243,11 +243,34 @@ import Vue from 'vue';
 import uploadcare from 'uploadcare-widget';
 
 import api from '@/api';
+import opengraph from '@/opengraph';
 
 window.UPLOADCARE_PUBLIC_KEY = process.env.UPLOADCARE_KEY;
 
 export default {
     name: 'ManagePackage',
+    head: {
+        title: function() {
+            let title = 'Manage';
+            if (this.app) {
+                title = `Manage ${this.app.name}`;
+            }
+
+            return {inner: title};
+        },
+        meta: function() {
+            let data = {};
+            if (this.app) {
+                data = {
+                    title: `${this.app.name} - OpenStore`,
+                    description: this.app.tagline,
+                    image: this.app.icon,
+                };
+            }
+
+            return opengraph(data);
+        },
+    },
     data() {
         return {
             user: null,
@@ -284,6 +307,8 @@ export default {
             if (data) {
                 this.app = data;
                 this.published = this.app.published;
+
+                this.$emit('updateHead');
             }
 
             if (this.user.role == 'admin') {

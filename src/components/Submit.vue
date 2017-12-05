@@ -98,9 +98,18 @@
 
 <script>
 import api from '@/api';
+import opengraph from '@/opengraph';
 
 export default {
     name: 'Submit',
+    head: {
+        title: {inner: 'Submit App'},
+        meta: function() {
+            return opengraph({
+                title: 'Docs - OpenStore',
+            });
+        },
+    },
     data() {
         return {
             user: null,

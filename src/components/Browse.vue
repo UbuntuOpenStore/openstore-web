@@ -134,6 +134,7 @@
 import debounce from 'debounce';
 
 import api from '@/api';
+import opengraph from '@/opengraph';
 import Types from '@/components/Types';
 
 const DEFAULT_SORT = '-published_date';
@@ -144,6 +145,19 @@ export default {
     name: 'Browse',
     components: {
         types: Types,
+    },
+    head: {
+        title: function() {
+            let title = 'Browse Apps';
+            if (this.$route.name == 'browse_snaps') {
+                title = 'Browse Snaps';
+            }
+
+            return {inner: title};
+        },
+        meta: function() {
+            return opengraph();
+        },
     },
     data() {
         return {
@@ -369,6 +383,10 @@ export default {
 
             if (to.name != from.name || changed) {
                 this.refresh();
+            }
+
+            if (to.name != from.name) {
+                this.$emit('updateHead');
             }
         },
     },

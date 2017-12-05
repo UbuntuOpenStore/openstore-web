@@ -19,10 +19,26 @@
 </template>
 
 <script>
+import api from '@/api';
+import opengraph from '@/opengraph';
+
 export default {
     name: 'Login',
+    head: {
+        title: {inner: 'Login'},
+        meta: function() {
+            return opengraph({
+                title: 'Login - OpenStore',
+            });
+        },
+    },
     created() {
-        this.$router.push({name: 'manage'});
+        api.auth.me().then((user) => {
+            if (user) {
+                // The user is already logged in
+                this.$router.push({name: 'manage'});
+            }
+        });
     },
 };
 </script>
