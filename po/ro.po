@@ -2,97 +2,102 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2017-06-20 01:45:+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2017-12-10 22:38+0000\n"
+"Last-Translator: Brînzariu Cristian <info@ebeton.ro>\n"
+"Language-Team: Romanian <https://translate.ubports.com/projects/openstore"
+"/openstore-web/ro/>\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2;\n"
+"X-Generator: Weblate 2.15\n"
 
 #: api/app/categories.js:12
 msgid "Accessibility"
-msgstr ""
+msgstr "Accesibilitate"
 
 #: api/app/categories.js:13
 msgid "Books & Comics"
-msgstr ""
+msgstr "Cărți și Comicuri"
 
 #: api/app/categories.js:14
 msgid "Business & Finance"
-msgstr ""
+msgstr "Afaceri și Finanțe"
 
 #: api/app/categories.js:15
 msgid "Communication & Social"
-msgstr ""
+msgstr "Comunicare și Socializare"
 
 #: api/app/categories.js:16
 msgid "Developer Tools"
-msgstr ""
+msgstr "Unelte Dezvoltatori"
 
 #: api/app/categories.js:17
 msgid "Education & Reference"
-msgstr ""
+msgstr "Educație și Referințe"
 
 #: api/app/categories.js:18
 msgid "Entertainment"
-msgstr ""
+msgstr "Divertisment"
 
 #: api/app/categories.js:19
 msgid "Food & Drink"
-msgstr ""
+msgstr "Mâncare și Băuturi"
 
 #: api/app/categories.js:20
 msgid "Games"
-msgstr ""
+msgstr "Jocuri"
 
 #: api/app/categories.js:21
 msgid "Graphics"
-msgstr ""
+msgstr "Grafică"
 
 #: api/app/categories.js:22
 msgid "Health & Fitness"
-msgstr ""
+msgstr "Sănătate și Fitness"
 
 #: api/app/categories.js:23
 msgid "Lifestyle"
-msgstr ""
+msgstr "Mod de viață"
 
 #: api/app/categories.js:24
 msgid "Media & Video"
-msgstr ""
+msgstr "Media și Video"
 
 #: api/app/categories.js:25
 msgid "Music & Audio"
-msgstr ""
+msgstr "Muzică și Audio"
 
 #: api/app/categories.js:26
 msgid "News & Magazines"
-msgstr ""
+msgstr "Știri și Reviste"
 
 #: api/app/categories.js:27
 msgid "Personalisation"
-msgstr ""
+msgstr "Personalizare"
 
 #: api/app/categories.js:28
 msgid "Productivity"
-msgstr ""
+msgstr "Productivitate"
 
 #: api/app/categories.js:29
 msgid "Science & Engineering"
-msgstr ""
+msgstr "Știință și Inginerie"
 
 #: api/app/categories.js:30
 msgid "Shopping"
-msgstr ""
+msgstr "Cumpărături"
 
 #: api/app/categories.js:31
 msgid "Sports"
-msgstr ""
+msgstr "Sporturi"
 
 #: api/app/categories.js:32
 msgid "Travel & Weather"
-msgstr ""
+msgstr "Călătorii și Vreme"
 
 #: api/app/categories.js:33
 msgid "Utilities"
-msgstr ""
+msgstr "Utilități"
