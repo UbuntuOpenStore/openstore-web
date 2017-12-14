@@ -5,7 +5,7 @@
             <h1 v-else>Ubuntu Touch Apps</h1>
         </div>
 
-        <div class="row">
+        <div class="row filters">
             <form class="p-form p-form--inline">
                 <div class="p-form__group">
                     <label for="search" class="p-form__label">Search</label>
@@ -71,7 +71,21 @@
                 <li v-for="app in apps" class="p-matrix__item">
                     <types class="types" :types="app.types"></types>
 
-                    <img class="p-matrix__img" :src="app.icon" :alt="app.name">
+                    <img
+                        class="p-matrix__img"
+                        v-if="app.types.indexOf('snappy') > -1"
+                        :src="app.icon"
+                        :alt="app.name"
+                        @click="$router.push({name: 'snap', params: {id: app.id}})"
+                    />
+                    <img
+                        class="p-matrix__img"
+                        v-if="app.types.indexOf('snappy') == -1"
+                        :src="app.icon"
+                        :alt="app.name"
+                        @click="$router.push({name: 'app', params: {id: app.id}})"
+                    />
+
                     <div class="p-matrix__content">
                         <h3 class="p-matrix__title" v-if="app.types.indexOf('snappy') > -1">
                             <router-link class="p-matrix__link" :to="{name: 'snap', params: {id: app.id}}">{{app.name}}</router-link>
@@ -98,7 +112,7 @@
 
         <div class="row center" v-if="paging.total > 1">
             <ul class="pagination">
-                <li :class="{disabled: page <= 0}" title="Jump to the first page">
+                <li :class="{disabled: page <= 0}" class="u-hide--small" title="Jump to the first page">
                     <a @click="setPage(0)">
                         <i class="fa fa-angle-double-left"></i>
                     </a>
@@ -120,7 +134,7 @@
                     </a>
                 </li>
 
-                <li :class="{disabled: page >= paging.total}" title="Jump to the last page">
+                <li :class="{disabled: page >= paging.total}" class="u-hide--small" title="Jump to the last page">
                     <a @click="setPage(paging.total)">
                         <i class="fa fa-angle-double-right"></i>
                     </a>
@@ -399,6 +413,10 @@ export default {
 </script>
 
 <style scoped>
+    h1 {
+        margin-top: 2px;
+    }
+
     .center {
         text-align: center;
     }
@@ -449,5 +467,17 @@ export default {
 
     .pagination li.active {
         font-weight: bold;
+    }
+
+    .filters {
+        margin-top: 2px;
+    }
+
+    .filters .p-form__group {
+        margin-top: 2px;
+    }
+
+    .filters .p-form__control {
+        margin-top: 2px;
     }
 </style>

@@ -29,33 +29,41 @@
                     <thead>
                         <tr>
                             <!-- TODO sorting -->
-                            <th>Icon</th>
-                            <th>Name</th>
+                            <th class="icon-cell">Icon</th>
+                            <th class="u-hide--small">Name</th>
+                            <th class="u-show--small u-hide">App</th>
                             <th v-if="user.role == 'admin'">Author</th>
-                            <th>Status</th>
-                            <th>Version</th>
-                            <th>Downloads</th>
+                            <th class="u-hide--small">Status</th>
+                            <th class="u-hide--small">Version</th>
+                            <th class="u-hide--small">Downloads</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr v-for="app in apps">
-                            <td>
+                            <td class="icon-cell">
                                 <router-link :to="{name: 'manage_package', params: {id: app.id}}">
                                     <img :src="app.icon" :alt="app.name" class="icon" />
                                 </router-link>
                             </td>
-                            <td>
+                            <td class="u-hide--small">
                                 <router-link :to="{name: 'manage_package', params: {id: app.id}}">
                                     {{app.name}}
                                 </router-link>
                             </td>
+                            <td class="u-show--small u-hide">
+                                <router-link :to="{name: 'manage_package', params: {id: app.id}}">
+                                    {{app.name}} v{{app.version}}
+                                </router-link>
+                                <br/>
+                                Downloads: {{app.totalDownloads || 'None'}}
+                            </td>
                             <td v-if="user.role == 'admin'">{{app.author}}</td>
-                            <td>
+                            <td class="u-hide--small">
                                 <span v-if="app.published" class="text-green">Published</span>
                                 <span v-else class="text-lightgrey">Not published</span>
                             </td>
-                            <td>{{app.version}}</td>
-                            <td>{{app.totalDownloads || 'None'}}</td>
+                            <td class="u-hide--small">{{app.version}}</td>
+                            <td class="u-hide--small">{{app.totalDownloads || 'None'}}</td>
                         </tr>
                     </tbody>
                 </table>
@@ -69,7 +77,7 @@
             <div class="row center" v-if="paging.total > 1">
                 <!-- TODO make this a shared component -->
                 <ul class="pagination">
-                    <li :class="{disabled: page <= 0}" title="Jump to the first page">
+                    <li :class="{disabled: page <= 0}" class="u-hide--small" title="Jump to the first page">
                         <a @click="setPage(0)">
                             <i class="fa fa-angle-double-left"></i>
                         </a>
@@ -91,7 +99,7 @@
                         </a>
                     </li>
 
-                    <li :class="{disabled: page >= paging.total}" title="Jump to the last page">
+                    <li :class="{disabled: page >= paging.total}" class="u-hide--small" title="Jump to the last page">
                         <a @click="setPage(paging.total)">
                             <i class="fa fa-angle-double-right"></i>
                         </a>
@@ -209,6 +217,14 @@ export default {
 </script>
 
 <style scoped>
+    h1 {
+        margin-top: 2px;
+    }
+
+    .icon-cell {
+        min-width: 4em;
+    }
+
     .icon {
         width: 32px;
         height: 32px;
@@ -236,5 +252,11 @@ export default {
 
     .pagination li.active {
         font-weight: bold;
+    }
+
+    @media screen and (max-width: 768px) {
+        .u-show--small {
+            display: table-cell !important;
+        }
     }
 </style>

@@ -1,24 +1,24 @@
 <template>
     <div class="row">
         <!-- TODO intelegent back button -->
-        <div v-if="isSnap">
-            <a href="/snaps">
+        <div v-if="isSnap" class="back">
+            <router-link :to="{name: 'browse_snaps'}">
                 <i class="fa fa-chevron-left"></i>
-            </a>
-            <a href="/snaps">
+            </router-link>
+            <router-link :to="{name: 'browse_snaps'}">
                 Back
-            </a>
+            </router-link>
         </div>
-        <div v-else>
-            <a href="/">
+        <div v-else class="back">
+            <router-link :to="{name: 'browse'}">
                 <i class="fa fa-chevron-left"></i>
-            </a>
-            <a href="/">
+            </router-link>
+            <router-link :to="{name: 'browse'}">
                 Back
-            </a>
+            </router-link>
         </div>
 
-        <div class="row no-margin">
+        <div class="row">
             <h2 v-if="missing" class="center">
                 The app you are looking for has been removed or does not exist
             </h2>
@@ -293,12 +293,9 @@ export default {
 </script>
 
 <style scoped>
-    .row {
-        margin-top: 2em;
-    }
-
-    .row.no-margin {
-        margin-top: 0;
+    .back {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
     }
 
     .icon {
@@ -368,5 +365,48 @@ export default {
 
     .p-button--positive {
         margin-top: 0;
+    }
+
+    .p-button--positive {
+        margin-top: 0.25em;
+    }
+
+    /*
+        Copied from vanilla js because on small screen sizes the matrix isn't a matrix.
+        But we don't want to change the matrix breakpoint for the other pages
+    */
+    .p-matrix {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 2em;
+    }
+
+    .p-matrix__item {
+        border-right: 1px dotted #666;
+        border-top: 1px dotted #666;
+        margin-bottom: 0;
+        padding: 1rem;
+        width: 33.333%;
+    }
+
+    .p-matrix__item:empty {
+        display: block;
+    }
+    .p-matrix__item:first-child, .p-matrix__item:nth-child(3n+1) {
+        padding-left: 0;
+    }
+    .p-matrix__item:last-child, .p-matrix__item:nth-child(3n) {
+        padding-right: 0;
+    }
+    .p-matrix__item:nth-child(-n+3) {
+        border-top: 0;
+    }
+    .p-matrix__item:nth-child(2n) {
+        border-right: 1px dotted #666;
+        padding-right: 1rem;
+    }
+    .p-matrix__item:nth-child(3n) {
+        border-right: 0;
+        padding-right: 0;
     }
 </style>

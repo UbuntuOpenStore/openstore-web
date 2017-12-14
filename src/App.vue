@@ -4,17 +4,17 @@
             <div class="row p-navigation__row">
                 <div class="p-navigation__banner">
                     <div class="p-navigation__logo">
-                        <a class="p-navigation__link" href="/">
+                        <router-link :to="{name: 'browse'}" class="p-navigation__link">
                             <img src="./assets/logo.svg" alt="" class="p-navigation__image">
                             &nbsp;
                             OpenStore
-                        </a>
+                        </router-link>
                     </div>
-                    <a href="#navigation" class="p-navigation__toggle--open" title="menu">
-                        <i class="fa fa-menu"></i>
+                    <a href="#navigation" class="p-navigation__toggle--open" title="Menu">
+                        <i class="fa fa-bars"></i>
                     </a>
-                    <a href="#navigation-closed" class="p-navigation__toggle--close" title="close menu">
-                        <i class="fa fa-menu"></i>
+                    <a href="#navigation-closed" class="p-navigation__toggle--close" id="close" title="Close Menu">
+                        <i class="fa fa-times"></i>
                     </a>
                 </div>
                 <nav class="p-navigation__nav" role="menubar">
@@ -92,6 +92,11 @@ export default {
         api.auth.me().then((user) => {
             this.user = user;
         });
+    },
+    watch: {
+        $route: function() {
+            document.getElementById('close').click();
+        },
     },
 };
 </script>

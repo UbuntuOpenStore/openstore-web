@@ -104,7 +104,7 @@
                             <p class="small text-lightgrey">A comma separated list of keywords</p>
                         </div>
 
-                        <div class="p-form__group">
+                        <div class="p-form__group nsfw">
                             <label for="nsfw" class="p-form__label">NSFW</label>
                             <input type="checkbox" id="nsfw" class="p-form__control" :disabled="saving" v-model="app.nsfw" />
                             <div class="small text-lightgrey">This app contains NSFW material</div>
@@ -497,6 +497,10 @@ export default {
 </script>
 
 <style scoped>
+    h1 {
+        margin-top: 2px;
+    }
+
     .revisions p {
         margin: 0;
     }
@@ -515,5 +519,24 @@ export default {
 
     .p-card {
         margin-top: 1em;
+    }
+
+    .p-tabs::before {
+        width: 35px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .nsfw label {
+            display: inline-block;
+        }
+
+        .nsfw input {
+            float: none;
+            margin: 0;
+        }
+
+        .nsfw .small {
+            float: none;
+        }
     }
 </style>
