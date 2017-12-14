@@ -10,17 +10,14 @@
                             OpenStore
                         </router-link>
                     </div>
-                    <a href="#navigation" class="p-navigation__toggle--open" title="Menu">
+                    <a class="p-navigation__toggle--open" :class="{'u-hide': showMenu}" title="Menu" @click="showMenu = true">
                         <i class="fa fa-bars"></i>
                     </a>
-                    <a href="#navigation-closed" class="p-navigation__toggle--close" id="close" title="Close Menu">
+                    <a class="p-navigation__toggle--close" :class="{'u-show': showMenu}" id="close" title="Close Menu" @click="showMenu = false">
                         <i class="fa fa-times"></i>
                     </a>
                 </div>
-                <nav class="p-navigation__nav" role="menubar">
-                    <span class="u-off-screen">
-                        <a href="#main-content">Jump to main content</a>
-                    </span>
+                <nav class="p-navigation__nav" :class="{'u-show': showMenu}" role="menubar">
                     <ul class="p-navigation__links" role="menu">
                         <li class="p-navigation__link" role="menuitem">
                             <router-link :to="{name: 'submit'}">Submit</router-link>
@@ -86,6 +83,7 @@ export default {
     data() {
         return {
             user: null,
+            showMenu: false,
         };
     },
     created() {
@@ -95,7 +93,7 @@ export default {
     },
     watch: {
         $route: function() {
-            document.getElementById('close').click();
+            this.showMenu = false;
         },
     },
 };
