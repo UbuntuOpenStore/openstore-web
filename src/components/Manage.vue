@@ -24,7 +24,6 @@
             </div>
 
             <div class="row" v-if="!loading">
-                <!-- TODO mobile friendly -->
                 <table>
                     <thead>
                         <tr>

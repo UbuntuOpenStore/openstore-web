@@ -422,7 +422,7 @@ export default {
     }
 
     #category {
-        width: 210px;
+        width: 220px;
     }
 
     #type {
@@ -431,6 +431,10 @@ export default {
 
     #sort-by {
         width: 160px;
+    }
+
+    .p-form__group {
+        display: block;
     }
 
     .p-matrix__img {
