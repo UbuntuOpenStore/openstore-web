@@ -54,19 +54,19 @@
                 <nav class="p-footer__nav">
                     <ul class="p-footer__links">
                         <li class="p-footer__item">
-                            <a class="p-footer__link" href="/telegram">Chat with us on Telegram</a>
+                            <a class="p-footer__link" href="/telegram" target="_blank">Chat with us on Telegram</a>
                         </li>
                         <li class="p-footer__item">
                             <router-link :to="{name: 'stats'}" class="p-footer__link">App Stats</router-link>
                         </li>
                         <li class="p-footer__item">
-                            <a class="p-footer__link" href="https://github.com/UbuntuOpenStore">Fork us on Github</a>
+                            <a class="p-footer__link" href="https://github.com/UbuntuOpenStore" target="_blank">Fork us on Github</a>
                         </li>
                         <li class="p-footer__item">
-                            <a class="p-footer__link" href="http://status.uappexplorer.com/">Site Status</a>
+                            <a class="p-footer__link" href="http://status.uappexplorer.com/" target="_blank">Site Status</a>
                         </li>
                         <li class="p-footer__item">
-                            <a class="p-footer__link" href="https://github.com/UbuntuOpenStore/openstore-meta/issues">Report an Issue</a>
+                            <a class="p-footer__link" href="https://github.com/UbuntuOpenStore/openstore-meta/issues" target="_blank">Report an Issue</a>
                         </li>
                     </ul>
                 </nav>
