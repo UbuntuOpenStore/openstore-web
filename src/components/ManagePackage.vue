@@ -305,6 +305,7 @@ export default {
         }).then((data) => {
             this.loading = false;
             if (data) {
+                data.keywords = data.keywords.join(', ');
                 this.app = data;
                 this.published = this.app.published;
 
@@ -388,16 +389,27 @@ export default {
                         if (!Array.isArray(this.app[key]) && typeof this.app[key] !== 'object') {
                             updateData.append(key, this.app[key]);
                         }
+                        else if (key == 'screenshots') {
+                            updateData.append(key, JSON.stringify(this.app[key]));
+                        }
+                        else if (key == 'keywords') {
+                            updateData.append(key, this.app[key].join(','));
+                        }
                     });
                 }
                 else {
                     updateData = this.app;
+                    updateData.keywords = updateData.keywords.split(',').map((keyword) => {
+                        return keyword.trim();
+                    });
+
                     if (this.downloadUrl) {
                         updateData.downloadUrl = this.downloadUrl;
                     }
                 }
 
                 api.manage.update(this.app.id, updateData, this.user.apikey).then((data) => {
+                    data.keywords = data.keywords.join(', ');
                     this.app = data;
                     this.published = this.app.published;
 
