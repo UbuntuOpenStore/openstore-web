@@ -11,7 +11,7 @@
             <form class="p-form p-form--inline">
                 <div class="p-form__group">
                     <label for="search" class="p-form__label">Search</label>
-                    <input type="text" id="search" class="p-form__control" @input="updateSearch" :value="query.search" />
+                    <input type="text" id="search" class="p-form__control" v-model="query.search" />
                 </div>
             </form>
 
@@ -148,7 +148,7 @@ export default {
         api.auth.me().then((user) => {
             if (user) {
                 this.user = user;
-                this.refresh();
+                this.debounceRefresh();
             }
             else {
                 this.$router.push({name: 'login'});
@@ -192,8 +192,7 @@ export default {
                 this.error = true;
             });
         },
-        updateSearch: debounce(function(e) {
-            this.query.search = e.target.value;
+        debounceRefresh: debounce(function() {
             this.refresh();
         }, 300),
         setPage(page) {
@@ -208,8 +207,13 @@ export default {
                 this.page = page;
                 this.query.skip = page * this.query.limit;
 
-                this.refresh();
+                this.debounceRefresh();
             }
+        },
+    },
+    watch: {
+        'query.search': function() {
+            this.debounceRefresh();
         },
     },
 };

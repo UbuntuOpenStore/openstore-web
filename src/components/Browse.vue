@@ -9,7 +9,7 @@
             <form class="p-form p-form--inline">
                 <div class="p-form__group">
                     <label for="search" class="p-form__label">Search</label>
-                    <input type="text" id="search" class="p-form__control" @input="updateSearch" :value="query.search" />
+                    <input type="text" id="search" class="p-form__control" v-model="query.search" />
                 </div>
 
                 <div class="p-form__group">
@@ -196,7 +196,7 @@ export default {
     },
     created() {
         this.getQueryParams();
-        this.refresh();
+        this.debounceRefresh();
         this.refreshCategories();
     },
     methods: {
@@ -330,6 +330,9 @@ export default {
                 this.error = true;
             });
         },
+        debounceRefresh: debounce(function() {
+            this.refresh();
+        }, 300),
         refreshCategories() {
             api.categories().then((data) => {
                 this.categories = data;
@@ -346,7 +349,7 @@ export default {
                     this.category = category;
 
                     this.setQueryParams();
-                    this.refresh();
+                    this.debounceRefresh();
                 }
             });
         },
@@ -363,40 +366,39 @@ export default {
                 this.query.skip = page * this.query.limit;
 
                 this.setQueryParams();
-                this.refresh();
+                this.debounceRefresh();
             }
         },
-        updateSearch: debounce(function(e) {
-            this.query.search = e.target.value;
+    },
+    watch: {
+        'query.sort': function() {
+            this.setQueryParams();
+            this.debounceRefresh();
+        },
+        'query.type': function() {
+            this.setQueryParams();
+            this.debounceRefresh();
+        },
+        'query.category': function() {
+            this.setQueryParams();
+            this.debounceRefresh();
+        },
+        'query.search': function() {
             if (this.query.search) {
                 this.query.sort = 'relevance';
             }
             else {
                 this.query.sort = DEFAULT_SORT;
             }
+            this.setQueryParams();
 
-            this.setQueryParams();
-            this.refresh();
-        }, 300),
-    },
-    watch: {
-        'query.sort': function() {
-            this.setQueryParams();
-            this.refresh();
-        },
-        'query.type': function() {
-            this.setQueryParams();
-            this.refresh();
-        },
-        'query.category': function() {
-            this.setQueryParams();
-            this.refresh();
+            this.debounceRefresh();
         },
         $route: function(to, from) {
             let changed = this.getQueryParams();
 
             if (to.name != from.name || changed) {
-                this.refresh();
+                this.debounceRefresh();
             }
 
             if (to.name != from.name) {
