@@ -56,13 +56,13 @@
                             <br/>
                             v{{app.version}}
 
-                            <span v-if="app.donate_url">
+                            <span v-if="app.donate_url && app.license">
                                 <br/>
                                 {{app.license}}
                             </span>
                         </div>
 
-                        <div class="p-matrix__item center" v-if="!app.donate_url">
+                        <div class="p-matrix__item center" v-if="!app.donate_url && app.license">
                             <i class="fa fa-2x fa-file-text-o text-green"></i>
                             <br/>
 
@@ -135,7 +135,7 @@
                         >
                             {{humanPermission(permission)}}
                         </li>
-                        <li v-if="!permissions">None</li>
+                        <li v-if="permissions.length === 0">None</li>
                     </ul>
                 </div>
 
