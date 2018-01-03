@@ -398,7 +398,7 @@ export default {
                     });
                 }
                 else {
-                    updateData = this.app;
+                    updateData = JSON.parse(JSON.stringify(this.app)); // Quick n dirty clone
                     updateData.keywords = updateData.keywords.split(',').map((keyword) => {
                         return keyword.trim();
                     });
