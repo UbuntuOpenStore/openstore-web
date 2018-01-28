@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="row">
+        <div class="p-strip">
             <h1 v-if="isSnaps">Snaps</h1>
             <h1 v-else>Ubuntu Touch Apps</h1>
         </div>

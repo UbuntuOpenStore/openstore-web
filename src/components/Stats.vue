@@ -1,16 +1,18 @@
 Sta<template>
     <div class="row">
-        <h1>Stats</h1>
+        <div class="p-strip">
+            <h1>Stats</h1>
 
-        <h2 v-if="error" class="center text-red">
-            There was an error trying to load the stats, please refresh and try again.
-        </h2>
+            <h2 v-if="error" class="center text-red">
+                There was an error trying to load the stats, please refresh and try again.
+            </h2>
 
-        <div v-if="loading" class="center">
-            <i class="fa fa-spinner fa-spin fa-2x"></i>
+            <div v-if="loading" class="center">
+                <i class="fa fa-spinner fa-spin fa-2x"></i>
+            </div>
         </div>
 
-        <div v-if="!loading">
+        <div v-if="!loading" class="p-strip">
             <h2>App Types</h2>
             <table>
                 <thead>
@@ -30,7 +32,9 @@ Sta<template>
                     </tr>
                 </tbody>
             </table>
+        </div>
 
+        <div v-if="!loading" class="p-strip">
             <h2>Categories</h2>
             <table>
                 <thead>
