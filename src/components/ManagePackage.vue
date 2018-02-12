@@ -213,6 +213,22 @@
                                 <p>Total: {{app.totalDownloads}}</p>
                             </div>
                         </div>
+
+                        <div class="p-form__group revisions" v-if="app.published_date">
+                            <label class="p-form__label">Published Date</label>
+
+                            <div>
+                                {{app.published_date.replace('T', ' ').replace('Z', '')}}
+                            </div>
+                        </div>
+
+                        <div class="p-form__group revisions" v-if="app.updated_date">
+                            <label class="p-form__label">Updated Date</label>
+
+                            <div>
+                                {{app.updated_date.replace('T', ' ').replace('Z', '')}}
+                            </div>
+                        </div>
                     </div>
                 </div>
 
