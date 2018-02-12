@@ -172,7 +172,7 @@
                             <label for="maintainer" class="p-form__label">Maintainer</label>
                             <select type="text" id="maintainer" class="p-form__control" :disabled="saving" v-model="app.maintainer">
                                 <option value="">Choose a maintainer</option>
-                                <option v-for="user in users" :value="user._id">{{user.name}}</option>
+                                <option v-for="user in users" :value="user._id">{{user.display_name}}</option>
                             </select>
                         </div>
                     </div>
@@ -352,9 +352,15 @@ export default {
             });
 
             users.forEach((user) => {
-                let name = user.name;
-                if (!name) {
-                    name = 'UNKNOWN';
+                let name = 'UNKNOWN';
+                if (user.name && user.email) {
+                    name = `${user.name} (${user.email})`;
+                }
+                else if (user.name && !user.email) {
+                    name = user.name;
+                }
+                else if (!user.name && user.email) {
+                    name = user.email;
                 }
 
                 if (user.role) {
@@ -363,6 +369,8 @@ export default {
                 else {
                     name += ' - community';
                 }
+
+                user.display_name = name;
             });
 
             this.users = users;
