@@ -437,6 +437,9 @@ export default {
                     this.app = data;
                     this.published = this.app.published;
 
+                    this.file = null;
+                    document.getElementById('file').value = '';
+
                     this.saving = false;
                     this.success = true;
                 }).catch((err) => {
