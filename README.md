@@ -1,6 +1,6 @@
 # OpenStore Web
 
-The web client for the [OpenStore](https://open.uappexplorer.com/).
+The web client for the [OpenStore](https://open-store.io/).
 
 ## Reporting Bugs
 
