@@ -63,7 +63,7 @@
                             <a class="p-footer__link" href="https://github.com/UbuntuOpenStore" target="_blank">Fork us on Github</a>
                         </li>
                         <li class="p-footer__item">
-                            <a class="p-footer__link" href="http://status.uappexplorer.com/" target="_blank">Site Status</a>
+                            <a class="p-footer__link" href="https://status.open-store.io/" target="_blank">Site Status</a>
                         </li>
                         <li class="p-footer__item">
                             <a class="p-footer__link" href="https://github.com/UbuntuOpenStore/openstore-meta/issues" target="_blank">Report an Issue</a>
