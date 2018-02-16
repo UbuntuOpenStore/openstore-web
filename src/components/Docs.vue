@@ -21,7 +21,7 @@
                 <li>Run the command:
                     <div class="p-code-snippet">
                         <input class="p-code-snippet__input" value="pkcon install-local --allow-untrusted openstore.openstore-team_latest_armhf.click" readonly="readonly">
-                        <button class="p-code-snippet__action">Copy to clipboard</button>
+                        <button class="p-code-snippet__action" data-clipboard-target=".p-code-snippet__input">Copy to clipboard</button>
                     </div>
                 </li>
             </ol>
@@ -31,6 +31,8 @@
 
 <script>
 import opengraph from '@/opengraph';
+import Clipboard from 'clipboard';
+import Vue from 'vue';
 
 export default {
     name: 'Docs',
@@ -41,6 +43,12 @@ export default {
                 title: 'Docs - OpenStore',
             });
         },
+    },
+    created() {
+        Vue.nextTick().then(() => {
+            /* eslint-disable no-new */
+            new Clipboard('.p-code-snippet__action');
+        });
     },
 };
 </script>
