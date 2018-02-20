@@ -82,6 +82,7 @@
                         <div class="p-form__group">
                             <label for="uploadcare" class="p-form__label">Screenshots</label>
                             <input id="uploadcare" type="hidden" data-images-only="true" data-multiple="true" data-multiple-max="5" data-tabs="file url" />
+                            We've grown to fast! Please bear with us as we sort out our screenshots.
                         </div>
                     </div>
 
@@ -456,6 +457,7 @@ export default {
             }
         },
         setupUploadcare() {
+            /*
             if (this.app) {
                 let uploadcareWidget = uploadcare.MultipleWidget('#uploadcare');
                 if (this.app.screenshots && this.app.screenshots.length > 0) {
@@ -475,6 +477,7 @@ export default {
                     this.app.screenshots = screenshots;
                 });
             }
+            */
         },
     },
     watch: {
