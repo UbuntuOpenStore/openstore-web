@@ -80,9 +80,9 @@
                         </div>
 
                         <div class="p-form__group">
-                            <label for="uploadcare" class="p-form__label">Screenshots</label>
-                            <input id="uploadcare" type="hidden" data-images-only="true" data-multiple="true" data-multiple-max="5" data-tabs="file url" />
-                            We've grown to fast! Please bear with us as we sort out our screenshots.
+                            <label class="p-form__label">Screenshots</label>
+
+
                         </div>
                     </div>
 
@@ -257,12 +257,9 @@
 
 <script>
 import Vue from 'vue';
-import uploadcare from 'uploadcare-widget';
 
 import api from '@/api';
 import opengraph from '@/opengraph';
-
-window.UPLOADCARE_PUBLIC_KEY = process.env.UPLOADCARE_KEY;
 
 export default {
     name: 'ManagePackage',
@@ -377,8 +374,6 @@ export default {
             this.users = users;
 
             return Vue.nextTick();
-        }).then(() => {
-            this.setupUploadcare();
         }).catch(() => {
             this.loading = false;
             this.error = 'An error occured loading your app data';
@@ -453,38 +448,6 @@ export default {
 
                     this.saving = false;
                     this.success = false;
-                });
-            }
-        },
-        setupUploadcare() {
-            /*
-            if (this.app) {
-                let uploadcareWidget = uploadcare.MultipleWidget('#uploadcare');
-                if (this.app.screenshots && this.app.screenshots.length > 0) {
-                    let screenshot = this.app.screenshots[0];
-                    let pos = screenshot.indexOf('/nth');
-                    let value = screenshot.substring(0, pos).replace('https://ucarecdn.com/', '');
-
-                    uploadcareWidget.value(value);
-                }
-
-                uploadcareWidget.onUploadComplete((info) => {
-                    let screenshots = [];
-                    for (let i = 0; i < info.count; i++) {
-                        screenshots.push(`${info.cdnUrl}nth/${i}/-/format/jpeg/-/quality/lightest/`);
-                    }
-
-                    this.app.screenshots = screenshots;
-                });
-            }
-            */
-        },
-    },
-    watch: {
-        tab() {
-            if (this.tab == 'presentation') {
-                Vue.nextTick().then(() => {
-                    this.setupUploadcare();
                 });
             }
         },
