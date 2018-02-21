@@ -15,7 +15,7 @@
                     </li>
                     <li class="p-list__item is-ticked">
                         You app can be pulled without warning at the discretion of our
-                        admins. Where possible we will contact you regarding any such
+                        admins. Where possible, we will contact you regarding any such
                         actions.
                     </li>
                     <li class="p-list__item is-ticked">
@@ -38,12 +38,11 @@
 
                 <ul class="p-list">
                     <li class="p-list__item is-ticked">
-                        Send us a link to a branch for your app to our
+                        Send us a link to a repository for your app to our
                         <a href="https://launchpad.net/~openstore-team">mailing list</a>
                         or our
                         <a href="/telegram">telegram group</a>.
-                        along with some instructions on how to build it if they differ
-                        from the standard (Ubuntu SDK).
+                        along with some instructions on how to build it.
                     </li>
                     <li class="p-list__item is-ticked">
                         Give a short explanation why you can’t publish the app without
