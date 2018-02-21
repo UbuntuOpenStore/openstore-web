@@ -82,10 +82,11 @@
                         <div class="p-form__group">
                             <label class="p-form__label">Screenshots</label>
 
-
+                            <div v-sortable="sortableOptions">
+                                <img v-for="screenshot in app.screenshots" :data-id="screenshot" :src="screenshot" class="screenshot-thumbnail" />
+                            </div>
                         </div>
                     </div>
-
                 </div>
 
                 <div v-if="tab == 'discovery'" class="p-card">
@@ -299,6 +300,16 @@ export default {
             tab: 'presentation',
             categories: [],
             users: [],
+            sortableOptions: {
+                store: {
+                    get: () => {
+                        return this.app.screenshots ? this.app.screenshots : [];
+                    },
+                    set: (sortable) => {
+                        this.app.screenshots = sortable.toArray();
+                    },
+                },
+            },
         };
     },
     created() {
@@ -508,6 +519,12 @@ export default {
 
     .revisions p {
         margin: 0;
+    }
+
+    .screenshot-thumbnail {
+        max-height: 15em;
+        max-width: 15em;
+        margin-right: 1em;
     }
 
     .small {

@@ -16,6 +16,7 @@
     "debounce": "^1.1.0",
     "font-awesome": "^4.7.0",
     "node-sass": "^4.7.1",
+    "sortablejs": "^1.7.0",
     "vanilla-framework": "^1.6.2",
     "vue": "^2.5.2",
     "vue-head": "^2.0.11",
