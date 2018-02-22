@@ -80,10 +80,27 @@
                         </div>
 
                         <div class="p-form__group">
-                            <label class="p-form__label">Screenshots</label>
+                            <label for="screenshots" class="p-form__label">Screenshots</label>
 
-                            <div v-sortable="sortableOptions">
-                                <img v-for="screenshot in app.screenshots" :data-id="screenshot" :src="screenshot" class="screenshot-thumbnail" />
+                            <div>
+                                <!--
+                                    <input type="file" id="screenshots" class="p-form__control" accept="image/*" multiple="multiple" @change="screenshotFilesChanged($event.target.files)" :disabled="saving" />
+                                -->
+
+                                <p>
+                                    Drag &amp; drop to sort screenshots.
+                                </p>
+
+                                <!-- TODO option to remove screenshots -->
+                                <draggable v-model="app.screenshots" class="screenshots">
+                                    <div v-for="screenshot in app.screenshots" class="screenshot-wrapper">
+                                        <a class="screenshot-remove" title="Delete Screenshot" @click="removeScreenshot(screenshot)">
+                                            <i class="fa fa-close"></i>
+                                        </a>
+
+                                        <img :data-id="screenshot" :src="screenshot" class="screenshot-thumbnail" />
+                                    </div>
+                                </draggable>
                             </div>
                         </div>
                     </div>
@@ -258,12 +275,16 @@
 
 <script>
 import Vue from 'vue';
+import draggable from 'vuedraggable';
 
 import api from '@/api';
 import opengraph from '@/opengraph';
 
 export default {
     name: 'ManagePackage',
+    components: {
+        draggable,
+    },
     head: {
         title: function() {
             let title = 'Manage';
@@ -292,6 +313,7 @@ export default {
             app: {},
             published: false,
             file: null,
+            screenshotFiles: [],
             downloadUrl: '',
             loading: false,
             saving: false,
@@ -402,6 +424,20 @@ export default {
             else {
                 this.file = null;
             }
+        },
+        screenshotFilesChanged(files) {
+            // Limit to 5 screenshots when uploading
+            if (files.length > 0) {
+                this.screenshotFiles = files[0];
+            }
+            else {
+                this.screenshotFiles = [];
+            }
+        },
+        removeScreenshot(screenshot) {
+            this.app.screenshots = this.app.screenshots.filter((s) => {
+                return (s != screenshot);
+            })
         },
         save() {
             if (!this.saving) {
@@ -521,10 +557,31 @@ export default {
         margin: 0;
     }
 
+    .screenshots {
+        margin-top: 0.5em;
+    }
+
+    .screenshot-wrapper {
+        display: inline-block;
+        margin-right: 1em;
+        position: relative;
+    }
+
+    .screenshot-remove {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        background-color: #FFFFFF;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        color: #111111;
+    }
+
     .screenshot-thumbnail {
         max-height: 15em;
         max-width: 15em;
-        margin-right: 1em;
+        margin-top: 0;
     }
 
     .small {
