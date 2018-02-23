@@ -24,9 +24,7 @@
                         <a href="/telegram">telegram group</a>.
                     </li>
                     <li class="p-list__item is-ticked">
-                        Apps containing NSFW content must be marked as such when
-                        submitting your app. App icons and app names must not have
-                        NSFW content.
+                        You must read over the content policy detailed below.
                     </li>
                 </ul>
             </div>
@@ -60,6 +58,54 @@
                         Only open source applications allowed for manual review: As the
                         applications might have arbitrary access to the device, every
                         manually reviewed app will get a source code review.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="p-strip">
+            <div class="row">
+                <h1>OpenStore App Content Policy</h1>
+
+                <p>
+                    One of the main goals of the OpenStore is to provide provide a safe app store for people of all ages.
+                    To accomplish this goal we do not allow certain types of app to be published. Failure to follow the guidelines
+                    will result in your app being removed. Any account with serious infractions may be subject to termination.
+                    The OpenStore team thanks you for helping us promote a better enviroment for everyone.
+                </p>
+
+                <h2>Prohibited Apps:</h2>
+
+                <ul class="p-list">
+                    <li class="p-list__item is-ticked">
+                        <b>Sexually Explicit Content</b>:
+                        Apps containing or promoting sexually explicit content are not allowed. This includes, but is not limited to, pornography and services
+                        promoting sexually explicit content.
+                    </li>
+                    <li class="p-list__item is-ticked">
+                        <b>Child Endangerment</b>:
+                        Apps containg or promoting child abuse or child sexual abuse are strictly prohibited.
+                    </li>
+                    <li class="p-list__item is-ticked">
+                        <b>Violence</b>:
+                        Apps containging or promoting gratuitous violence are not allowed. This includes, but is not limited to, violence, terrorisim, bomb/weapon making,
+                        self harm, and grotesque imagery.
+                    </li>
+                    <li class="p-list__item is-ticked">
+                        <b>Harassment, Bullying, or Hate Speech</b>:
+                        App containging or promoting any of the above are strictly prohibited.
+                    </li>
+                    <li class="p-list__item is-ticked">
+                        <b>Gambling</b>:
+                        Apps containing gambling involving real world money transactions are not allowed. This includes, but is not limited to, online casinos, betting, and lotteries.
+                    </li>
+                    <li class="p-list__item is-ticked">
+                        <b>Illegal Activities</b>:
+                        Apps promoting illegal activities (based on USA law) are not allowed.
+                    </li>
+                    <li class="p-list__item is-ticked">
+                        <b>Malware</b>:
+                        Apps that are found to be stealing the users data, trying to escalate their privileges with user consent, or executing malicous process are strictly prohibited.
                     </li>
                 </ul>
             </div>
