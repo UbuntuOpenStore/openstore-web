@@ -80,14 +80,12 @@
                         </div>
 
                         <div class="p-form__group">
-                            <label for="screenshots" class="p-form__label">Screenshots</label>
+                            <label for="screenshots" class="p-form__label">Screenshots (Limit 5)</label>
 
                             <div>
-                                <!--
-                                    <input type="file" id="screenshots" class="p-form__control" accept="image/*" multiple="multiple" @change="screenshotFilesChanged($event.target.files)" :disabled="saving" />
-                                -->
+                                <input type="file" id="screenshots" class="p-form__control" accept="image/*" multiple="multiple" @change="screenshotFilesChanged($event.target.files)" :disabled="saving" />
 
-                                <p>
+                                <p v-if="app.screenshots.length > 0">
                                     Drag &amp; drop to sort screenshots.
                                 </p>
 
@@ -426,9 +424,8 @@ export default {
             }
         },
         screenshotFilesChanged(files) {
-            // Limit to 5 screenshots when uploading
             if (files.length > 0) {
-                this.screenshotFiles = files[0];
+                this.screenshotFiles = files;
             }
             else {
                 this.screenshotFiles = [];
@@ -437,7 +434,7 @@ export default {
         removeScreenshot(screenshot) {
             this.app.screenshots = this.app.screenshots.filter((s) => {
                 return (s != screenshot);
-            })
+            });
         },
         save() {
             if (!this.saving) {
@@ -447,9 +444,24 @@ export default {
 
                 this.app.published = this.published;
                 let updateData = {};
-                if (this.file) {
+
+                if (this.file || this.screenshotFiles.length > 0) {
                     updateData = new FormData();
-                    updateData.append('file', this.file, this.file.name);
+
+                    if (this.file) {
+                        updateData.append('file', this.file, this.file.name);
+                    }
+
+                    if (this.screenshotFiles.length > 0) {
+                        let screenshotLimit = 5 - this.app.screenshots.length;
+                        if (this.screenshotFiles.length < screenshotLimit) {
+                            screenshotLimit = this.screenshotFiles.length;
+                        }
+
+                        for (let i = 0; i < screenshotLimit; i++) {
+                            updateData.append('screenshot_files', this.screenshotFiles[i], this.screenshotFiles[i].name);
+                        }
+                    }
 
                     Object.keys(this.app).forEach((key) => {
                         // Arrays and objects are just extra data send from the api, ignore them
@@ -482,6 +494,7 @@ export default {
 
                     this.file = null;
                     document.getElementById('file').value = '';
+                    document.getElementById('screenshots').value = '';
 
                     this.saving = false;
                     this.success = true;
