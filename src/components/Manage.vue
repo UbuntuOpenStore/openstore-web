@@ -8,7 +8,7 @@
                 Submit App
             </router-link>
 
-            <form class="p-form p-form--inline">
+            <form class="p-form p-form--inline" v-on:submit.prevent>
                 <div class="p-form__group">
                     <label for="search" class="p-form__label">Search</label>
                     <input type="text" id="search" class="p-form__control" v-model="query.search" />
