@@ -84,16 +84,16 @@
                     </li>
                     <li class="p-list__item is-ticked">
                         <b>Child Endangerment</b>:
-                        Apps containg or promoting child abuse or child sexual abuse are strictly prohibited.
+                        Apps containing or promoting child abuse or child sexual abuse are strictly prohibited.
                     </li>
                     <li class="p-list__item is-ticked">
                         <b>Violence</b>:
-                        Apps containging or promoting gratuitous violence are not allowed. This includes, but is not limited to, violence, terrorisim, bomb/weapon making,
+                        Apps containing or promoting gratuitous violence are not allowed. This includes, but is not limited to, violence, terrorism, bomb/weapon making,
                         self harm, and grotesque imagery.
                     </li>
                     <li class="p-list__item is-ticked">
                         <b>Harassment, Bullying, or Hate Speech</b>:
-                        App containging or promoting any of the above are strictly prohibited.
+                        App containing or promoting any of the above are strictly prohibited.
                     </li>
                     <li class="p-list__item is-ticked">
                         <b>Gambling</b>:
@@ -105,7 +105,7 @@
                     </li>
                     <li class="p-list__item is-ticked">
                         <b>Malware</b>:
-                        Apps that are found to be stealing the users data, trying to escalate their privileges with user consent, or executing malicous process are strictly prohibited.
+                        Apps that are found to be stealing the users data, trying to escalate their privileges without user consent, or executing malicious process are strictly prohibited.
                     </li>
                 </ul>
             </div>
