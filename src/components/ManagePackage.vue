@@ -494,11 +494,15 @@ export default {
 
                     this.file = null;
                     document.getElementById('file').value = '';
-                    document.getElementById('screenshots').value = '';
+                    let screenshotsElement = document.getElementById('screenshots');
+                    if (screenshotsElement) {
+                        screenshotsElement.value = '';
+                    }
 
                     this.saving = false;
                     this.success = true;
                 }).catch((err) => {
+                    console.error(err);
                     if (err.response && err.response.data && err.response.data.message) {
                         this.error = err.response.data.message;
                     }
