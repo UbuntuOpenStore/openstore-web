@@ -502,7 +502,6 @@ export default {
                     this.saving = false;
                     this.success = true;
                 }).catch((err) => {
-                    console.error(err);
                     if (err.response && err.response.data && err.response.data.message) {
                         this.error = err.response.data.message;
                     }
