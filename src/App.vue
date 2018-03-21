@@ -26,9 +26,6 @@
                             <router-link :to="{name: 'browse'}">Browse</router-link>
                         </li>
                         <li class="p-navigation__link" role="menuitem">
-                            <router-link :to="{name: 'browse_snaps'}">Browse Snaps</router-link>
-                        </li>
-                        <li class="p-navigation__link" role="menuitem">
                             <router-link :to="{name: 'docs'}">Docs</router-link>
                         </li>
                         <li class="p-navigation__link" role="menuitem" v-if="!user">

@@ -1,15 +1,7 @@
 <template>
     <div class="row">
         <!-- TODO intelegent back button -->
-        <div v-if="isSnap" class="back">
-            <router-link :to="{name: 'browse_snaps'}">
-                <i class="fa fa-chevron-left"></i>
-            </router-link>
-            <router-link :to="{name: 'browse_snaps'}">
-                Back
-            </router-link>
-        </div>
-        <div v-else class="back">
+        <div class="back">
             <router-link :to="{name: 'browse'}">
                 <i class="fa fa-chevron-left"></i>
             </router-link>
@@ -45,7 +37,7 @@
 
                 <div class="row">
                     <div class="center">
-                        <a :href="openstoreLink" class="p-button--positive" v-if="app.id != 'openstore.openstore-team' && !isSnap && canInstall" title="Install via the OpenStore app">Install</a>
+                        <a :href="openstoreLink" class="p-button--positive" v-if="app.id != 'openstore.openstore-team' && canInstall" title="Install via the OpenStore app">Install</a>
                         <router-link :to="{name: 'docs'}" class="p-button--positive" v-if="app.id == 'openstore.openstore-team'">Install</router-link>
                         <a :href="app.download" class="p-button--positive" target="_blank">Download</a>
                     </div>
@@ -69,7 +61,6 @@
                             {{app.license}}
                         </div>
                         <div
-                            v-if="!isSnap"
                             class="p-matrix__item center"
                             :title="restrictedAccess ? 'This app has access to restricted system data, see permissions for more details' : 'This app does not have access to restricted system data, see permissions for more details'"
                         >
@@ -125,7 +116,7 @@
                     <p class="pre">{{app.changelog}}</p>
                 </div>
 
-                <div class="row permissions" v-if="!isSnap">
+                <div class="row permissions">
                     <h4>Permissions:</h4>
                     <ul>
                         <li
@@ -196,7 +187,6 @@ export default {
     },
     data() {
         return {
-            isSnap: (this.$route.name == 'snap'),
             app: null,
             showNSFW: true,
             permissions: [],

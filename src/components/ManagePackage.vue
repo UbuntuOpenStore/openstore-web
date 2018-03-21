@@ -11,10 +11,7 @@
             </h1>
 
             <div v-if="app.published">
-                <router-link :to="{name: 'snap', params: {id: app.id}}" v-if="app.types.indexOf('snappy') > -1" target="_blank">
-                    Public Link <i class="fa fa-external-link"></i>
-                </router-link>
-                <router-link :to="{name: 'app', params: {id: app.id}}" v-if="app.types.indexOf('snappy') == -1" target="_blank">
+                <router-link :to="{name: 'app', params: {id: app.id}}" target="_blank">
                     Public Link <i class="fa fa-external-link"></i>
                 </router-link>
             </div>
@@ -30,7 +27,7 @@
 
                 <div class="p-form__group">
                     <label for="file" class="p-form__label">New revision</label>
-                    <input type="file" id="file" class="p-form__control" accept=".snap, .click" @change="fileChange($event.target.files)" :disabled="saving" />
+                    <input type="file" id="file" class="p-form__control" accept=".click" @change="fileChange($event.target.files)" :disabled="saving" />
                 </div>
 
                 <h3>OR</h3>

@@ -5,7 +5,6 @@
             <span v-if="type == 'scope'" class="label scope-label">Scope</span>
             <span v-if="type == 'webapp'" class="label webapp-label">Web App</span>
             <span v-if="type == 'webapp+'" class="label webapp-label">Web App+</span>
-            <span v-if="type == 'snap' || type == 'snappy'" class="label snap-label">Snap</span>
         </span>
     </span>
 </template>
@@ -44,10 +43,5 @@ export default {
     .webapp-label {
         background-color: #888888;
         border-color: #888888;
-    }
-
-    .snap-label {
-        background-color: #762572;
-        border-color: #762572;
     }
 </style>

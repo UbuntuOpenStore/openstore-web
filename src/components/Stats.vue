@@ -94,7 +94,7 @@ export default {
     },
     methods: {
         humanType(type) {
-            return type.replace('webapp', 'web app').replace('snappy', 'snap').replace(/\w\S*/g, (txt) => {
+            return type.replace('webapp', 'web app').replace(/\w\S*/g, (txt) => {
                 return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase(); // To title Case
             });
         },

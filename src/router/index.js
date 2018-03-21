@@ -8,6 +8,7 @@ import Login from '@/components/Login';
 import Manage from '@/components/Manage';
 import ManagePackage from '@/components/ManagePackage';
 import Stats from '@/components/Stats';
+import NotFound from '@/components/NotFound';
 
 Vue.use(Router);
 
@@ -19,16 +20,8 @@ export default new Router({
             name: 'browse',
             component: Browse,
         }, {
-            path: '/snaps',
-            name: 'browse_snaps',
-            component: Browse,
-        }, {
             path: '/app/:id',
             name: 'app',
-            component: Package,
-        }, {
-            path: '/snap/:id',
-            name: 'snap',
             component: Package,
         }, {
             path: '/docs',
@@ -54,6 +47,10 @@ export default new Router({
             path: '/stats/',
             name: 'stats',
             component: Stats,
+        }, {
+            path: '*',
+            name: 'not_found',
+            component: NotFound,
         },
     ],
 });

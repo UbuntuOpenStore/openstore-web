@@ -122,7 +122,7 @@
                     <form class="p-form p-form--stacked">
                         <div class="p-form__group">
                             <label for="file" class="p-form__label">App</label>
-                            <input type="file" id="file" class="p-form__control" accept=".snap, .click" @change="fileChange($event.target.files)" :disabled="saving" />
+                            <input type="file" id="file" class="p-form__control" accept=".click" @change="fileChange($event.target.files)" :disabled="saving" />
                         </div>
 
                         <h3>OR</h3>

@@ -1,8 +1,7 @@
 <template>
     <div>
         <div class="p-strip">
-            <h1 v-if="isSnaps">Snaps</h1>
-            <h1 v-else>Ubuntu Touch Apps</h1>
+            <h1>Ubuntu Touch Apps</h1>
         </div>
 
         <div class="row filters">
@@ -21,7 +20,7 @@
                     <!--TODO make this a fancy dropdown with our icons-->
                 </div>
 
-                <div class="p-form__group" v-if="!isSnaps">
+                <div class="p-form__group">
                     <label for="type" class="p-form__label">Type:</label>
                     <select id="type" class="p-form__control" v-model="query.type">
                         <option value="">All Types</option>
@@ -73,24 +72,13 @@
 
                     <img
                         class="p-matrix__img"
-                        v-if="app.types.indexOf('snappy') > -1"
-                        :src="app.icon"
-                        :alt="app.name"
-                        @click="$router.push({name: 'snap', params: {id: app.id}})"
-                    />
-                    <img
-                        class="p-matrix__img"
-                        v-if="app.types.indexOf('snappy') == -1"
                         :src="app.icon"
                         :alt="app.name"
                         @click="$router.push({name: 'app', params: {id: app.id}})"
                     />
 
                     <div class="p-matrix__content">
-                        <h3 class="p-matrix__title" v-if="app.types.indexOf('snappy') > -1">
-                            <router-link class="p-matrix__link" :to="{name: 'snap', params: {id: app.id}}">{{app.name}}</router-link>
-                        </h3>
-                        <h3 class="p-matrix__title" v-if="app.types.indexOf('snappy') == -1">
+                        <h3 class="p-matrix__title">
                             <router-link class="p-matrix__link" :to="{name: 'app', params: {id: app.id}}">{{app.name}}</router-link>
                         </h3>
 
@@ -162,12 +150,7 @@ export default {
     },
     head: {
         title: function() {
-            let title = 'Browse Apps';
-            if (this.$route.name == 'browse_snaps') {
-                title = 'Browse Snaps';
-            }
-
-            return {inner: title};
+            return {inner: 'Browse Apps'};
         },
         meta: function() {
             return opengraph();
@@ -292,10 +275,6 @@ export default {
                 delete query.search;
             }
 
-            if (this.isSnaps) {
-                query.type = 'snap';
-            }
-
             api.apps.search(query).then((data) => {
                 this.apps = data.packages;
 
@@ -404,11 +383,6 @@ export default {
             if (to.name != from.name) {
                 this.$emit('updateHead');
             }
-        },
-    },
-    computed: {
-        isSnaps() {
-            return this.$route.name == 'browse_snaps';
         },
     },
 };
