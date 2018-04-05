@@ -147,9 +147,11 @@
                     <p v-if="app.updated_date">Updated: {{app.updated_date | moment("MMMM Do YYYY")}}</p>
                     <p v-if="app.published_date">Published: {{app.published_date | moment("MMMM Do YYYY")}}</p>
                     <p v-if="app.framework">Framework: {{app.framework}}</p>
+                    <!-- TODO add back when the backend is fixed
                     <p v-if="app.languages.length > 0">
                         Translation Languages: {{app.languages.join(', ')}}
                     </p>
+                    -->
                 </div>
             </div>
         </div>
