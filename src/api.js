@@ -33,13 +33,13 @@ export default {
 
     apps: {
         search: (query) => {
-            return axios.get(`${process.env.API}/api/v2/apps`, {
+            return axios.get(`${process.env.API}/api/v3/apps`, {
                 params: query,
             }).then(success);
         },
 
         get: (id) => {
-            return axios.get(`${process.env.API}/api/v2/apps/${id}`).then(success);
+            return axios.get(`${process.env.API}/api/v3/apps/${id}`).then(success);
         },
 
         stats: () => {

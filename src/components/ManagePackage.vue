@@ -222,7 +222,8 @@
 
                             <div>
                                 <p v-for="revision in revisions">
-                                    Revision {{revision.revision}} (v{{revision.version}}): {{revision.downloads}}
+                                    {{revision.channel.charAt(0).toUpperCase()}}{{revision.channel.slice(1)}} Revision
+                                    {{revision.revision}} (v{{revision.version}}): {{revision.downloads}}
                                 </p>
                                 <p>Total: {{app.totalDownloads}}</p>
                             </div>
