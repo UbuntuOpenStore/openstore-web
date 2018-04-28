@@ -7,6 +7,7 @@ import Submit from '@/components/Submit';
 import Login from '@/components/Login';
 import Manage from '@/components/Manage';
 import ManagePackage from '@/components/ManagePackage';
+import ManageRevisions from '@/components/ManageRevisions';
 import Stats from '@/components/Stats';
 import NotFound from '@/components/NotFound';
 
@@ -43,6 +44,10 @@ export default new Router({
             path: '/manage/:id',
             name: 'manage_package',
             component: ManagePackage,
+        }, {
+            path: '/manage/:id/revision',
+            name: 'manage_revisions',
+            component: ManageRevisions,
         }, {
             path: '/stats/',
             name: 'stats',

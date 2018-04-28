@@ -54,21 +54,25 @@ export default {
 
     manage: {
         search: (query, key) => {
-            return axios.get(`${process.env.API}/api/v2/manage/apps?apikey=${key}`, {
+            return axios.get(`${process.env.API}/api/v3/manage?apikey=${key}`, {
                 params: query,
             }).then(success);
         },
 
         get: (id, key) => {
-            return axios.get(`${process.env.API}/api/v2/manage/apps/${id}?apikey=${key}`).then(success);
+            return axios.get(`${process.env.API}/api/v3/manage/${id}?apikey=${key}`).then(success);
         },
 
         create: (data, key) => {
-            return axios.post(`${process.env.API}/api/v2/manage/apps/?apikey=${key}`, data).then(success);
+            return axios.post(`${process.env.API}/api/v3/manage/?apikey=${key}`, data).then(success);
         },
 
         update: (id, data, key) => {
-            return axios.put(`${process.env.API}/api/v2/manage/apps/${id}?apikey=${key}`, data).then(success);
+            return axios.put(`${process.env.API}/api/v3/manage/${id}?apikey=${key}`, data).then(success);
+        },
+
+        revision: (id, data, key) => {
+            return axios.post(`${process.env.API}/api/v3/manage/${id}/revision?apikey=${key}`, data).then(success);
         },
     },
 

@@ -40,11 +40,9 @@
                         <a :href="openstoreLink" class="p-button--positive" v-if="app.id != 'openstore.openstore-team' && canInstall" title="Install via the OpenStore app">Install</a>
                         <router-link :to="{name: 'docs'}" class="p-button--positive" v-if="app.id == 'openstore.openstore-team'">Install</router-link>
 
-                        <span v-for="download in app.downloads">
-                            <a :href="download.download_url" class="p-button--positive" target="_blank">
-                                Download ({{download.channel.charAt(0).toUpperCase()}}{{download.channel.slice(1)}})
-                            </a>
-                        </span>
+                        <a v-for="download in app.downloads" :href="download.download_url" class="p-button--positive" target="_blank">
+                            Download ({{download.channel.charAt(0).toUpperCase()}}{{download.channel.slice(1)}})
+                        </a>
                     </div>
 
                     <div class="row p-matrix u-clearfix">

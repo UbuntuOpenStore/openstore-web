@@ -25,17 +25,10 @@
                     </button>
                 </div>
 
-                <div class="p-form__group">
-                    <label for="file" class="p-form__label">New revision</label>
-                    <input type="file" id="file" class="p-form__control" accept=".click" @change="fileChange($event.target.files)" :disabled="saving" />
-                </div>
-
-                <h3>OR</h3>
-
-                <div class="p-form__group">
-                    <label for="downloadUrl" class="p-form__label">New Revision from URL</label>
-                    <input type="text" id="downloadUrl" class="p-form__control" placeholder="URL of App from the Web" :disabled="saving" v-model="downloadUrl" />
-                </div>
+                <router-link class="p-button--positive" :to="{name: 'manage_revisions', params: {id: app.id}}" :disabled="saving">
+                    <i class="fa fa-plus"></i>
+                    New Revision
+                </router-link>
 
                 <nav class="p-tabs">
                     <ul class="p-tabs__list" role="tablist">
@@ -208,6 +201,10 @@
                                 <span v-if="app.types.length != 1">Types:</span>
                                 <span v-if="app.types.length == 1">Type:</span>
                                 {{app.types.join(', ')}}
+                                <br/>
+                                <span v-if="app.channels.length != 1">Channels:</span>
+                                <span v-if="app.channels.length == 1">Channel:</span>
+                                {{app.channels.join(', ')}}
 
                                 <div v-if="app.languages.length > 0">
                                     Translation Languages: {{app.languages.join(', ')}}
@@ -221,7 +218,7 @@
                             <label class="p-form__label">Download Stats</label>
 
                             <div>
-                                <p v-for="revision in revisions">
+                                <p v-for="revision in revisions" :class="{'strong': revision.revision == app.revision || revision.revision == app.xenial_revision}">
                                     {{revision.channel.charAt(0).toUpperCase()}}{{revision.channel.slice(1)}} Revision
                                     {{revision.revision}} (v{{revision.version}}): {{revision.downloads}}
                                 </p>
@@ -308,9 +305,7 @@ export default {
             user: null,
             app: {},
             published: false,
-            file: null,
             screenshotFiles: [],
-            downloadUrl: '',
             loading: false,
             saving: false,
             error: false,
@@ -413,14 +408,6 @@ export default {
         });
     },
     methods: {
-        fileChange(files) {
-            if (files.length > 0) {
-                this.file = files[0];
-            }
-            else {
-                this.file = null;
-            }
-        },
         screenshotFilesChanged(files) {
             if (files.length > 0) {
                 this.screenshotFiles = files;
@@ -443,12 +430,8 @@ export default {
                 this.app.published = this.published;
                 let updateData = {};
 
-                if (this.file || this.screenshotFiles.length > 0) {
+                if (this.screenshotFiles.length > 0) {
                     updateData = new FormData();
-
-                    if (this.file) {
-                        updateData.append('file', this.file, this.file.name);
-                    }
 
                     if (this.screenshotFiles.length > 0) {
                         let screenshotLimit = 5 - this.app.screenshots.length;
@@ -479,10 +462,6 @@ export default {
                     updateData.keywords = updateData.keywords.split(',').map((keyword) => {
                         return keyword.trim();
                     });
-
-                    if (this.downloadUrl) {
-                        updateData.downloadUrl = this.downloadUrl;
-                    }
                 }
 
                 api.manage.update(this.app.id, updateData, this.user.apikey).then((data) => {
@@ -490,8 +469,6 @@ export default {
                     this.app = data;
                     this.published = this.app.published;
 
-                    this.file = null;
-                    document.getElementById('file').value = '';
                     let screenshotsElement = document.getElementById('screenshots');
                     if (screenshotsElement) {
                         screenshotsElement.value = '';
@@ -631,5 +608,9 @@ export default {
         .nsfw .small {
             float: none;
         }
+    }
+
+    .strong {
+        font-weight: bold;
     }
 </style>
