@@ -43,13 +43,13 @@ export default {
         },
 
         stats: () => {
-            return axios.get(`${process.env.API}/api/v2/apps/stats`).then(success);
+            return axios.get(`${process.env.API}/api/v3/stats`).then(success);
         },
     },
 
     categories: () => {
         // TODO implement caching
-        return axios.get(`${process.env.API}/api/v2/categories`).then(success);
+        return axios.get(`${process.env.API}/api/v3/categories`).then(success);
     },
 
     manage: {
