@@ -15,7 +15,12 @@
                     <select id="channel" class="p-form__control" v-model="channel" :disabled="saving">
                         <option value="vivid">Vivid</option>
                         <option value="xenial">Xenial</option>
+                        <option value="vivid-xenial">Vivid &amp; Xenial</option>
                     </select>
+                    <div class="small text-lightgrey" v-if="channel == 'vivid-xenial'">
+                        Only choose "Vivid &amp; Xenial" if your app is qml only
+                        or a webapp.
+                    </div>
                 </div>
 
                 <div class="divider"></div>
@@ -180,5 +185,12 @@ export default {
 <style scoped>
 .divider {
     border-top: 1px solid #cdcdcd;
+}
+
+.small {
+    float: right;
+    text-align: right;
+    width: 100%;
+    margin-top: 1em;
 }
 </style>
