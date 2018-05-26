@@ -2,7 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Browse from '@/components/Browse';
 import Package from '@/components/Package';
-import Docs from '@/components/Docs';
+import About from '@/components/About';
 import Submit from '@/components/Submit';
 import Login from '@/components/Login';
 import Manage from '@/components/Manage';
@@ -25,9 +25,9 @@ export default new Router({
             name: 'app',
             component: Package,
         }, {
-            path: '/docs',
-            name: 'docs',
-            component: Docs,
+            path: '/about',
+            name: 'about',
+            component: About,
         }, {
             path: '/submit',
             name: 'submit',

@@ -162,7 +162,7 @@ export default {
         title: {inner: 'Submit App'},
         meta: function() {
             return opengraph({
-                title: 'Docs - OpenStore',
+                title: 'Submit App - OpenStore',
             });
         },
     },

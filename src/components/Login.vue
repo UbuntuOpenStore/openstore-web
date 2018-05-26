@@ -15,6 +15,13 @@
                 </button>
             </form>
         </div>
+        <div class="row">
+            <p>
+                Log in to the OpenStore to be able to manage your apps.
+                <br/>
+                An account is not needed to download or install apps.
+            </p>
+        </div>
     </div>
 </template>
 

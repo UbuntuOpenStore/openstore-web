@@ -26,7 +26,7 @@
                             <router-link :to="{name: 'browse'}">Browse</router-link>
                         </li>
                         <li class="p-navigation__link" role="menuitem">
-                            <router-link :to="{name: 'docs'}">Docs</router-link>
+                            <router-link :to="{name: 'about'}">About</router-link>
                         </li>
                         <li class="p-navigation__link" role="menuitem" v-if="!user">
                             <router-link :to="{name: 'login'}">Log In</router-link>
@@ -50,6 +50,9 @@
             <div class="row">
                 <nav class="p-footer__nav">
                     <ul class="p-footer__links">
+                        <li class="p-footer__item">
+                            <router-link :to="{name: 'about'}" class="p-footer__link">About Us</router-link>
+                        </li>
                         <li class="p-footer__item">
                             <a class="p-footer__link" href="/telegram" target="_blank">Chat with us on Telegram</a>
                         </li>
