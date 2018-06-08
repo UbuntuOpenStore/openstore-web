@@ -332,6 +332,10 @@ export default {
                 }
             });
         },
+        resetPage() {
+            this.page = 0;
+            this.query.skip = 0;
+        },
         setPage(page) {
             if (page < 0) {
                 page = 0;
@@ -355,14 +359,17 @@ export default {
             this.debounceRefresh();
         },
         'query.type': function() {
+            this.resetPage();
             this.setQueryParams();
             this.debounceRefresh();
         },
         'query.category': function() {
+            this.resetPage();
             this.setQueryParams();
             this.debounceRefresh();
         },
         'query.search': function() {
+            this.resetPage();
             if (this.query.search) {
                 this.query.sort = 'relevance';
             }
