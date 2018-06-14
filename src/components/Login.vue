@@ -8,6 +8,11 @@
                 Login via GitHub
             </a>
 
+            <a href="/auth/gitlab" class="p-button--positive">
+                <i class="fa fa-gitlab"></i>
+                Login via GitLab
+            </a>
+
             <form action="/auth/ubuntu" method="post">
                 <button class="p-button--neutral">
                     <i class="fa fa-linux"></i>
