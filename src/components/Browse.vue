@@ -43,7 +43,27 @@
                     </select>
                 </div>
 
-                <!-- TODO hide these by default
+                <div class="p-form__group">
+                    <label class="p-form__label">{{moreFilters ? 'Less' : 'More'}} Filters</label>
+                    <button class="p-form__control more-button" @click="moreFilters = !moreFilters">
+                        <i class="fa" :class="{'fa-plus': !moreFilters, 'fa-minus': moreFilters}"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="row filters" v-if="moreFilters">
+            <form class="p-form p-form--inline" v-on:submit.prevent>
+                <div class="p-form__group">
+                    <label for="channel" class="p-form__label">Channel:</label>
+                    <select id="channel" class="p-form__control" v-model="query.channel">
+                        <option value="">All Channels</option>
+                        <option value="vivid">Vivid</option>
+                        <option value="xenial">Xenial</option>
+                    </select>
+                </div>
+
+                <!-- TODO implement these
                 <div class="p-form__group">
                     <label for="license" class="p-form__label">License:</label>
                     <input type="text" id="license" class="p-form__control" />
@@ -142,6 +162,7 @@ import Types from '@/components/Types';
 const DEFAULT_SORT = '-published_date';
 const DEFAULT_TYPE = '';
 const DEFAULT_CATEGORY = '';
+const DEFAULT_CHANNEL = '';
 
 export default {
     name: 'Browse',
@@ -165,6 +186,7 @@ export default {
                 sort: DEFAULT_SORT,
                 type: DEFAULT_TYPE,
                 category: DEFAULT_CATEGORY,
+                channel: DEFAULT_CHANNEL,
             },
             page: 0,
             paging: {
@@ -175,12 +197,17 @@ export default {
             categories: [],
             loading: false,
             error: false,
+            moreFilters: false,
         };
     },
     created() {
         this.getQueryParams();
         this.debounceRefresh();
         this.refreshCategories();
+
+        if (this.query.channel != DEFAULT_CHANNEL) {
+            this.moreFilters = true;
+        }
     },
     methods: {
         getQueryParams() {
@@ -230,6 +257,18 @@ export default {
                 }
             }
 
+            if (this.$route.query.channel != this.query.channel) {
+                let channel = this.$route.query.channel;
+                if (!channel) {
+                    channel = DEFAULT_CHANNEL;
+                }
+
+                if (channel != this.query.channel) {
+                    this.query.channel = channel;
+                    changed = true;
+                }
+            }
+
             if (this.$route.query.search != this.query.search) {
                 let search = this.$route.query.search ? this.$route.query.search : '';
                 if (search != this.query.search) {
@@ -257,6 +296,10 @@ export default {
 
             if (this.query.category != DEFAULT_CATEGORY) {
                 params.category = this.query.category;
+            }
+
+            if (this.query.channel != DEFAULT_CHANNEL) {
+                params.channel = this.query.channel;
             }
 
             if (this.query.search) {
@@ -368,6 +411,11 @@ export default {
             this.setQueryParams();
             this.debounceRefresh();
         },
+        'query.channel': function() {
+            this.resetPage();
+            this.setQueryParams();
+            this.debounceRefresh();
+        },
         'query.search': function() {
             this.resetPage();
             if (this.query.search) {
@@ -406,6 +454,10 @@ export default {
 
     #category {
         width: 220px;
+    }
+
+    #channel {
+        width: 145px;
     }
 
     #type {
@@ -466,5 +518,11 @@ export default {
 
     .filters .p-form__control {
         margin-top: 2px;
+    }
+
+    .more-button {
+        padding-top: 0.65em;
+        padding-bottom: 0.65em;
+        width: 65px;
     }
 </style>
