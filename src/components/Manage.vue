@@ -3,10 +3,23 @@
         <div v-if="user">
             <h1 class="center">Welcome {{user.name}}!</h1>
 
-            <router-link :to="{name: 'submit'}" class="p-button--positive u-float-right">
-                <i class="fa fa-plus"></i>
-                Submit App
-            </router-link>
+            <div class="u-float-right">
+                <router-link :to="{name: 'submit'}" class="p-button--positive">
+                    <i class="fa fa-plus"></i>
+                    Submit App
+                </router-link>
+
+                <button class="p-button--neutral u-float-right" @click="showApikey = !showApikey">
+                    {{showApikey ? 'Hide' : 'Show'}} API Key
+                </button>
+
+                <p v-if="showApikey">
+                    Keep your api key private!
+                    <br/>
+                    {{user.apikey}}
+                </p>
+            </div>
+
 
             <form class="p-form p-form--inline" v-on:submit.prevent>
                 <div class="p-form__group">
@@ -142,6 +155,7 @@ export default {
             apps: [],
             loading: false,
             error: false,
+            showApikey: false,
         };
     },
     created() {
