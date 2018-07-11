@@ -356,23 +356,6 @@ export default {
 
             return [];
         }).then((users) => {
-            users.sort((a, b) => {
-                if (a.role == 'admin' && b.role != 'admin') {
-                    return -1;
-                }
-                else if (a.role != 'admin' && b.role == 'admin') {
-                    return 1;
-                }
-                else if (a.name > b.name) {
-                    return 1;
-                }
-                else if (a.name < b.name) {
-                    return -1;
-                }
-
-                return 0;
-            });
-
             users.forEach((user) => {
                 let name = 'UNKNOWN';
                 if (user.name && user.email) {
@@ -393,6 +376,26 @@ export default {
                 }
 
                 user.display_name = name;
+            });
+
+            users.sort((a, b) => {
+                let aname = a.display_name ? a.display_name.toLowerCase() : '';
+                let bname = b.display_name ? b.display_name.toLowerCase() : '';
+
+                if (a.role == 'admin' && b.role != 'admin') {
+                    return -1;
+                }
+                else if (a.role != 'admin' && b.role == 'admin') {
+                    return 1;
+                }
+                else if (aname > bname) {
+                    return 1;
+                }
+                else if (aname < bname) {
+                    return -1;
+                }
+
+                return 0;
             });
 
             this.users = users;
