@@ -18,7 +18,7 @@ Sta<template>
                 <thead>
                     <tr>
                         <th>App Type</th>
-                        <th>Count</th>
+                        <th class="align-right">Count</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -26,7 +26,7 @@ Sta<template>
                         <td>
                             {{humanType(name)}}
                         </td>
-                        <td>
+                        <td class="align-right">
                             {{count}}
                         </td>
                     </tr>
@@ -40,7 +40,7 @@ Sta<template>
                 <thead>
                     <tr>
                         <th>Category</th>
-                        <th>Count</th>
+                        <th class="align-right">Count</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -48,7 +48,7 @@ Sta<template>
                         <td>
                             {{name || 'Uncategorized'}}
                         </td>
-                        <td>
+                        <td class="align-right">
                             {{count}}
                         </td>
                     </tr>
@@ -101,3 +101,9 @@ export default {
     },
 };
 </script>
+
+<style scoped>
+.align-right {
+    text-align: right;
+}
+</style>

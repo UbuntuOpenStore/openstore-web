@@ -474,6 +474,8 @@ export default {
 
     .p-matrix__img {
         border-radius: 8px;
+        width: 60px;
+        height: 60px;
     }
 
     .p-matrix__item {
