@@ -6,8 +6,7 @@
                     <i class="fa fa-chevron-left"></i>
                 </router-link>
 
-                Edit {{app.name}} v{{app.version}}
-
+                Edit {{app.name}}
             </h1>
 
             <div v-if="app.published">
@@ -206,9 +205,9 @@
                                 <span v-if="app.channels.length == 1">Channel:</span>
                                 {{app.channels.join(', ')}}
 
-                                <div v-if="app.languages.length > 0">
+                                <!--<div v-if="app.languages.length > 0">
                                     Translation Languages: {{app.languages.join(', ')}}
-                                </div>
+                                </div>-->
 
                                 <br/>
                             </div>
@@ -610,6 +609,14 @@ export default {
 
         .nsfw .small {
             float: none;
+        }
+
+        .p-tabs::before {
+            padding-right: 0.5em;
+        }
+
+        .p-tabs__item:last-of-type {
+            margin-right: 2em;
         }
     }
 

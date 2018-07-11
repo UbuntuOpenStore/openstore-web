@@ -132,7 +132,7 @@
                     </a>
                 </li>
 
-                <li v-for="p in paging.pages" :class="{active: page == p}">
+                <li v-for="(index, p) in paging.pages" :class="{active: page == p, 'u-hide--small': index > 2}">
                     <a @click="setPage(p)">{{p + 1}}</a>
                 </li>
 
@@ -491,6 +491,7 @@ export default {
     .pagination {
         display: inline-block;
         padding-left: 0;
+        margin-left: 0;
     }
 
     .pagination li {
@@ -526,5 +527,23 @@ export default {
         padding-top: 0.65em;
         padding-bottom: 0.65em;
         width: 65px;
+    }
+
+    @media screen and (max-width: 768px) {
+        #category {
+            width: 100%;
+        }
+
+        #channel {
+            width: 100%;
+        }
+
+        #type {
+            width: 100%;
+        }
+
+        #sort-by {
+            width: 100%;
+        }
     }
 </style>

@@ -3,7 +3,7 @@
         <div v-if="user">
             <h1 class="center">Welcome {{user.name}}!</h1>
 
-            <div class="u-float-right">
+            <div class="u-float-right buttons">
                 <router-link :to="{name: 'submit'}" class="p-button--positive">
                     <i class="fa fa-plus"></i>
                     Submit App
@@ -101,7 +101,7 @@
                         </a>
                     </li>
 
-                    <li v-for="p in paging.pages" :class="{active: page == p}">
+                    <li v-for="(index, p) in paging.pages" :class="{active: page == p, 'u-hide--small': index > 2}">
                         <a @click="setPage(p)">{{p + 1}}</a>
                     </li>
 
@@ -252,6 +252,7 @@ export default {
     .pagination {
         display: inline-block;
         padding-left: 0;
+        margin-left: 0;
     }
 
     .pagination li {
@@ -274,6 +275,11 @@ export default {
     @media screen and (max-width: 768px) {
         .u-show--small {
             display: table-cell !important;
+        }
+
+        .buttons {
+            width: 100%;
+            margin-bottom: 1em;
         }
     }
 </style>
