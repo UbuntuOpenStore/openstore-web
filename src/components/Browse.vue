@@ -353,6 +353,7 @@ export default {
             });
         },
         debounceRefresh: debounce(function() {
+            this.setQueryParams();
             this.refresh();
         }, 300),
         refreshCategories() {
@@ -391,29 +392,24 @@ export default {
                 this.page = page;
                 this.query.skip = page * this.query.limit;
 
-                this.setQueryParams();
                 this.debounceRefresh();
             }
         },
     },
     watch: {
         'query.sort': function() {
-            this.setQueryParams();
             this.debounceRefresh();
         },
         'query.type': function() {
             this.resetPage();
-            this.setQueryParams();
             this.debounceRefresh();
         },
         'query.category': function() {
             this.resetPage();
-            this.setQueryParams();
             this.debounceRefresh();
         },
         'query.channel': function() {
             this.resetPage();
-            this.setQueryParams();
             this.debounceRefresh();
         },
         'query.search': function() {
@@ -424,7 +420,6 @@ export default {
             else {
                 this.query.sort = DEFAULT_SORT;
             }
-            this.setQueryParams();
 
             this.debounceRefresh();
         },
