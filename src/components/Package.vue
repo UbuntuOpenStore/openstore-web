@@ -2,10 +2,10 @@
     <div class="row">
         <!-- TODO intelegent back button -->
         <div class="back">
-            <router-link :to="{name: 'browse'}">
+            <router-link :to="back">
                 <i class="fa fa-chevron-left"></i>
             </router-link>
-            <router-link :to="{name: 'browse'}">
+            <router-link :to="back">
                 Back
             </router-link>
         </div>
@@ -163,6 +163,7 @@
 <script>
 import api from '@/api';
 import opengraph from '@/opengraph';
+import cache from '@/cache';
 import Types from '@/components/Types';
 
 let restricted = ['bluetooth', 'calendar', 'contacts', 'debug', 'history', 'music_files', 'picture_files', 'video_files', 'unconfined'];
@@ -191,6 +192,7 @@ export default {
     },
     data() {
         return {
+            back: cache.getBack(),
             app: null,
             showNSFW: true,
             permissions: [],

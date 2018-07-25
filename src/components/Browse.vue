@@ -157,6 +157,7 @@ import debounce from 'debounce';
 
 import api from '@/api';
 import opengraph from '@/opengraph';
+import cache from '@/cache';
 import Types from '@/components/Types';
 
 const DEFAULT_SORT = '-published_date';
@@ -202,6 +203,11 @@ export default {
     },
     created() {
         this.getQueryParams();
+        cache.setBack({
+            name: this.$router.currentRoute.name,
+            params: this.$router.currentRoute.params,
+            query: this.$router.currentRoute.query,
+        });
         this.debounceRefresh();
         this.refreshCategories();
 
@@ -307,6 +313,12 @@ export default {
             }
 
             this.$router.push({name: 'browse', query: params});
+
+            cache.setBack({
+                name: this.$router.currentRoute.name,
+                params: this.$router.currentRoute.params,
+                query: this.$router.currentRoute.query,
+            });
         },
         refresh() {
             this.loading = true;
