@@ -1,4 +1,4 @@
-Sta<template>
+<template>
     <div class="row">
         <div class="p-strip">
             <h1>Stats</h1>

@@ -9,6 +9,7 @@ import Manage from '@/components/Manage';
 import ManagePackage from '@/components/ManagePackage';
 import ManageRevisions from '@/components/ManageRevisions';
 import Stats from '@/components/Stats';
+import Feeds from '@/components/Feeds';
 import NotFound from '@/components/NotFound';
 
 Vue.use(Router);
@@ -49,9 +50,13 @@ export default new Router({
             name: 'manage_revisions',
             component: ManageRevisions,
         }, {
-            path: '/stats/',
+            path: '/stats',
             name: 'stats',
             component: Stats,
+        }, {
+            path: '/feeds',
+            name: 'feeds',
+            component: Feeds,
         }, {
             path: '*',
             name: 'not_found',

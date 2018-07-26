@@ -68,6 +68,9 @@
                         <li class="p-footer__item">
                             <a class="p-footer__link" href="https://github.com/UbuntuOpenStore/openstore-meta/issues" target="_blank">Report an Issue</a>
                         </li>
+                        <li class="p-footer__item">
+                            <router-link :to="{name: 'feeds'}" class="p-footer__link">RSS Feeds</router-link>
+                        </li>
                     </ul>
                 </nav>
             </div>
