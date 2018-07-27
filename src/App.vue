@@ -103,7 +103,11 @@ export default {
 </script>
 
 <style>
-    .p-footer {
-        padding-top: 0;
-    }
+.p-footer {
+    padding-top: 0;
+}
+
+.mini-toastr {
+    margin-top: 60px;
+}
 </style>

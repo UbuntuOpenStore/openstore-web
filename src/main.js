@@ -3,8 +3,16 @@ import 'font-awesome/css/font-awesome.min.css';
 import Vue from 'vue';
 import VueHead from 'vue-head';
 import moment from 'vue-moment';
+import VueNotifications from 'vue-notifications';
+import miniToastr from 'mini-toastr';
+
 import App from './App';
 import router from './router';
+
+miniToastr.init();
+function toast({title, message, type, timeout, cb}) {
+    return miniToastr[type](message, title, timeout, cb);
+}
 
 Vue.config.productionTip = false;
 Vue.use(VueHead, {
@@ -12,6 +20,12 @@ Vue.use(VueHead, {
     complement: 'OpenStore',
 });
 Vue.use(moment);
+Vue.use(VueNotifications, {
+    success: toast,
+    error: toast,
+    info: toast,
+    warn: toast,
+});
 
 /* eslint-disable no-new */
 new Vue({

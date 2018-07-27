@@ -46,20 +46,14 @@
                     <i class="fa fa-times"></i>
                     Cancel
                 </router-link>
-
-                <!-- TODO make this a nice popup -->
-                <p v-if="error" class="text-red">
-                    {{error}}
-                </p>
-                <p v-if="success" class="text-green">
-                    Saved!
-                </p>
             </form>
         </div>
     </div>
 </template>
 
 <script>
+import VueNotifications from 'vue-notifications';
+
 import api from '@/api';
 import opengraph from '@/opengraph';
 
@@ -96,8 +90,6 @@ export default {
             downloadUrl: '',
             loading: false,
             saving: false,
-            error: false,
-            success: false,
         };
     },
     created() {
@@ -127,7 +119,10 @@ export default {
             }
         }).catch(() => {
             this.loading = false;
-            this.error = 'An error occured loading your app data';
+            VueNotifications.error({
+                title: 'Error',
+                message: 'An error occured loading your app data',
+            });
         });
     },
     methods: {
@@ -142,8 +137,6 @@ export default {
         save() {
             if (!this.saving) {
                 this.saving = true;
-                this.success = false;
-                this.error = '';
 
                 this.app.published = this.published;
                 let updateData = new FormData();
@@ -162,19 +155,31 @@ export default {
                     document.getElementById('file').value = '';
 
                     this.saving = false;
-                    this.success = true;
+
+                    let channel = 'Xenial';
+                    if (this.channel == 'vivid') {
+                        channel = 'Vivid';
+                    }
+                    else if (this.channel == 'vivid-xenial') {
+                        channel = 'Vivid & Xenial';
+                    }
+                    VueNotifications.success({
+                        title: 'Success',
+                        message: `New revision for ${channel} was created!`,
+                    });
 
                     this.$router.push({name: 'manage_package', params: {id: this.app.id}});
                 }).catch((err) => {
+                    let error = 'An unknown error has occured';
                     if (err.response && err.response.data && err.response.data.message) {
-                        this.error = err.response.data.message;
-                    }
-                    else {
-                        this.error = 'An unknown error has occured';
+                        error = err.response.data.message;
                     }
 
                     this.saving = false;
-                    this.success = false;
+                    VueNotifications.error({
+                        title: 'Error',
+                        message: error,
+                    });
                 });
             }
         },
