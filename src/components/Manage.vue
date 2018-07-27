@@ -101,7 +101,7 @@
                         </a>
                     </li>
 
-                    <li v-for="(index, p) in paging.pages" :class="{active: page == p, 'u-hide--small': index > 2}">
+                    <li v-for="(p, index) in paging.pages" :class="{active: page == p, 'u-hide--small': index > 2}">
                         <a @click="setPage(p)">{{p + 1}}</a>
                     </li>
 
