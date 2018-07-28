@@ -93,10 +93,17 @@
 
                 <div class="row screenshots" v-if="app.screenshots.length > 0 && showNSFW">
                     <h3>Screenshots</h3>
-                    <!-- TODO lightbox -->
+
+                    <lightbox
+                        ref="lightbox"
+                        :images="screenshots"
+                        :show-light-box="false"
+                        :show-thumbs="false"
+                        :show-caption="false"
+                    ></lightbox>
                     <div class="screenshot-scroll">
-                        <div v-for="screenshot in app.screenshots">
-                            <a :href="screenshot" class="swipebox" rel="nofollow">
+                        <div v-for="(screenshot, index) in app.screenshots">
+                            <a :href="screenshot" class="swipebox" rel="nofollow" @click.prevent="showLightBox(index)">
                                 <img :src="screenshot" alt="" class="screenshot" />
                             </a>
                         </div>
@@ -161,6 +168,8 @@
 </template>
 
 <script>
+import LightBox from 'vue-image-lightbox';
+
 import api from '@/api';
 import opengraph from '@/opengraph';
 import cache from '@/cache';
@@ -172,6 +181,7 @@ export default {
     name: 'Package',
     components: {
         types: Types,
+        lightbox: LightBox,
     },
     head: {
         title: function() {
@@ -270,6 +280,9 @@ export default {
 
             return humanPerm;
         },
+        showLightBox(index) {
+            this.$refs.lightbox.showImage(index);
+        },
     },
     computed: {
         restrictedAccess() {
@@ -284,6 +297,19 @@ export default {
         },
         openstoreLink() {
             return `openstore://${this.app.id}`;
+        },
+        screenshots() {
+            let screenshots = [];
+            if (this.app) {
+                screenshots = this.app.screenshots.map((screenshot) => {
+                    return {
+                        thumb: screenshot,
+                        src: screenshot,
+                    };
+                });
+            }
+
+            return screenshots;
         },
     },
 };

@@ -1,9 +1,11 @@
 import 'font-awesome/css/font-awesome.min.css';
+import 'vue-image-lightbox/dist/vue-image-lightbox.min.css';
 
 import Vue from 'vue';
 import VueHead from 'vue-head';
 import moment from 'vue-moment';
 import VueNotifications from 'vue-notifications';
+import VueLazyLoad from 'vue-lazyload';
 import miniToastr from 'mini-toastr';
 
 import App from './App';
@@ -26,6 +28,7 @@ Vue.use(VueNotifications, {
     info: toast,
     warn: toast,
 });
+Vue.use(VueLazyLoad);
 
 /* eslint-disable no-new */
 new Vue({

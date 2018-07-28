@@ -110,4 +110,14 @@ export default {
 .mini-toastr {
     margin-top: 60px;
 }
+
+.vue-lb-button-close {
+    right: 10px;
+    position: fixed;
+    top: 0;
+}
+
+.vue-lb-footer {
+    display: none;
+}
 </style>
