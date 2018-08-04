@@ -37,7 +37,7 @@
 
                 <div class="row">
                     <div class="center">
-                        <a :href="openstoreLink" class="p-button--positive" v-if="app.id != 'openstore.openstore-team' && canInstall" title="Install via the OpenStore app">Install</a>
+                        <a :href="openstoreLink" class="p-button--positive" v-if="app.id != 'openstore.openstore-team'" title="Install via the OpenStore app">Install</a>
 
                         <a v-for="download in app.downloads" :href="download.download_url" class="p-button--positive" target="_blank">
                             Download ({{download.channel.charAt(0).toUpperCase()}}{{download.channel.slice(1)}})
@@ -209,7 +209,6 @@ export default {
             missing: false,
             error: false,
             loading: false,
-            canInstall: (window.navigator.userAgent.indexOf('Ubuntu 15.04 like Android') >= 0),  // Check if the browser is an ubuntu one
         };
     },
     created() {
