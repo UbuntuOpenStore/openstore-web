@@ -111,13 +111,7 @@ export default {
     margin-top: 60px;
 }
 
-.vue-lb-button-close {
-    right: 10px;
-    position: fixed;
-    top: 0;
-}
-
-.vue-lb-footer {
-    display: none;
+.fullscreen-v-img, .fullscreen-v-img div {
+    margin-top: 0;
 }
 </style>
