@@ -105,7 +105,8 @@
                 -->
                     <div class="screenshot-scroll">
                         <div v-for="(screenshot, index) in app.screenshots">
-                            <a :href="screenshot" class="swipebox" rel="nofollow" @click.prevent="showLightBox(index)">
+                            <!-- @click.prevent="showLightBox(index)" -->
+                            <a :href="screenshot" class="swipebox" rel="nofollow">
                                 <img :src="screenshot" alt="" class="screenshot" />
                             </a>
                         </div>
