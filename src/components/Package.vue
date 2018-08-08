@@ -94,6 +94,7 @@
                 <div class="row screenshots" v-if="app.screenshots.length > 0 && showNSFW">
                     <h3>Screenshots</h3>
 
+                    <!--
                     <lightbox
                         ref="lightbox"
                         :images="screenshots"
@@ -101,6 +102,7 @@
                         :show-thumbs="false"
                         :show-caption="false"
                     ></lightbox>
+                -->
                     <div class="screenshot-scroll">
                         <div v-for="(screenshot, index) in app.screenshots">
                             <a :href="screenshot" class="swipebox" rel="nofollow" @click.prevent="showLightBox(index)">
@@ -170,7 +172,9 @@
 <script>
 // Not doing this because it screws with the webpack prod build:
 // import LightBox from 'vue-image-lightbox';
-import LightBox from 'vue-image-lightbox/src/components/script';
+
+// TODO reenable this once the prod build is working
+// import LightBox from 'vue-image-lightbox/src/components/script';
 
 import api from '@/api';
 import opengraph from '@/opengraph';
@@ -183,7 +187,7 @@ export default {
     name: 'Package',
     components: {
         types: Types,
-        lightbox: LightBox,
+        // lightbox: LightBox,
     },
     head: {
         title: function() {
@@ -281,8 +285,8 @@ export default {
 
             return humanPerm;
         },
-        showLightBox(index) {
-            this.$refs.lightbox.showImage(index);
+        showLightBox(/* index */) {
+            // this.$refs.lightbox.showImage(index);
         },
     },
     computed: {
