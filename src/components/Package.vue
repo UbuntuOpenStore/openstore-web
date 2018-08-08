@@ -168,7 +168,9 @@
 </template>
 
 <script>
-import LightBox from 'vue-image-lightbox';
+// Not doing this because it screws with the webpack prod build:
+// import LightBox from 'vue-image-lightbox';
+import LightBox from 'vue-image-lightbox/src/components/script';
 
 import api from '@/api';
 import opengraph from '@/opengraph';

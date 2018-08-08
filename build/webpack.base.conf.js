@@ -50,7 +50,7 @@ module.exports = {
             resolve('src'),
             resolve('test'),
             resolve('node_modules/mini-toastr'),
-            resolve('node_modules/vue-image-lightbox/dist/vue-image-lightbox.min.js'),
+            resolve('node_modules/vue-image-lightbox/src/components/script.js')
         ]
       },
       {
