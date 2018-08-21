@@ -68,10 +68,13 @@
                 <h1>OpenStore App Content Policy</h1>
 
                 <p>
-                    One of the main goals of the OpenStore is to provide provide a safe app store for people of all ages.
-                    To accomplish this goal we do not allow certain types of app to be published. Failure to follow the guidelines
-                    will result in your app being removed. Any account with serious infractions may be subject to termination.
-                    The OpenStore team thanks you for helping us promote a better enviroment for everyone.
+                    One of the main goals of the OpenStore is to provide provide
+                    a safe app store for people of all ages. To accomplish this
+                    goal we do not allow certain types of app to be published.
+                    Failure to follow the guidelines will result in your app being
+                    removed. Any account with serious infractions may be subject
+                    to termination. The OpenStore team thanks you for helping us
+                    promote a better enviroment for everyone.
                 </p>
 
                 <h2>Prohibited Apps:</h2>
@@ -79,17 +82,21 @@
                 <ul class="p-list">
                     <li class="p-list__item is-ticked">
                         <b>Sexually Explicit Content</b>:
-                        Apps containing or promoting sexually explicit content are not allowed. This includes, but is not limited to, pornography and services
-                        promoting sexually explicit content.
+                        Apps containing or promoting sexually explicit content
+                        are not allowed. This includes, but is not limited to,
+                        pornography and services promoting sexually explicit content.
                     </li>
                     <li class="p-list__item is-ticked">
                         <b>Child Endangerment</b>:
-                        Apps containing or promoting child abuse or child sexual abuse are strictly prohibited.
+                        Apps containing or promoting child abuse or child sexual
+                        abuse are strictly prohibited.
                     </li>
                     <li class="p-list__item is-ticked">
                         <b>Violence</b>:
-                        Apps containing or promoting gratuitous violence are not allowed. This includes, but is not limited to, violence, terrorism, bomb/weapon making,
-                        self harm, and grotesque imagery.
+                        Apps containing or promoting gratuitous violence are not
+                        allowed. This includes, but is not limited to, violence,
+                        terrorism, bomb/weapon making, self harm, and grotesque
+                        imagery.
                     </li>
                     <li class="p-list__item is-ticked">
                         <b>Harassment, Bullying, or Hate Speech</b>:
@@ -97,7 +104,9 @@
                     </li>
                     <li class="p-list__item is-ticked">
                         <b>Gambling</b>:
-                        Apps containing gambling involving real world money transactions are not allowed. This includes, but is not limited to, online casinos, betting, and lotteries.
+                        Apps containing gambling involving real world money
+                        transactions are not allowed. This includes, but is not
+                        limited to, online casinos, betting, and lotteries.
                     </li>
                     <li class="p-list__item is-ticked">
                         <b>Illegal Activities</b>:
@@ -105,7 +114,9 @@
                     </li>
                     <li class="p-list__item is-ticked">
                         <b>Malware</b>:
-                        Apps that are found to be stealing the users data, trying to escalate their privileges without user consent, or executing malicious process are strictly prohibited.
+                        Apps that are found to be stealing the users data, trying
+                        to escalate their privileges without user consent, or
+                        executing malicious process are strictly prohibited.
                     </li>
                 </ul>
             </div>
@@ -121,15 +132,29 @@
 
                     <form class="p-form p-form--stacked">
                         <div class="p-form__group">
-                            <label for="file" class="p-form__label">App</label>
-                            <input type="file" id="file" class="p-form__control" accept=".click" @change="fileChange($event.target.files)" :disabled="saving" />
+                            <label for="file" class="p-form__label">App (Vivid Version)</label>
+                            <input
+                                type="file"
+                                id="file"
+                                class="p-form__control"
+                                accept=".click"
+                                @change="fileChange($event.target.files)"
+                                :disabled="saving"
+                            />
                         </div>
 
                         <h3>OR</h3>
 
                         <div class="p-form__group">
-                            <label for="downloadUrl" class="p-form__label">App from URL</label>
-                            <input type="text" id="downloadUrl" class="p-form__control" placeholder="URL of App from the Web" :disabled="saving" v-model="downloadUrl" />
+                            <label for="downloadUrl" class="p-form__label">App from URL (Vivid Version)</label>
+                            <input
+                                type="text"
+                                id="downloadUrl"
+                                class="p-form__control"
+                                placeholder="URL of App from the Web"
+                                :disabled="saving"
+                                v-model="downloadUrl"
+                            />
                         </div>
 
                         <a class="p-button--positive" @click="submit()" :disabled="saving">
@@ -183,7 +208,7 @@ export default {
     methods: {
         fileChange(files) {
             if (files.length > 0) {
-                this.file = files[0];
+                [this.file] = files;
             }
             else {
                 this.file = null;

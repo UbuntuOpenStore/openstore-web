@@ -16,7 +16,7 @@ export default {
                 });
             }
             else {
-                promise = axios.get(`${process.env.API}/auth/me`)
+                promise = axios.get(`${process.env.VUE_APP_API}/auth/me`)
                     .then(success)
                     .then((data) => {
                         user = data;
@@ -33,52 +33,60 @@ export default {
 
     apps: {
         search: (query) => {
-            return axios.get(`${process.env.API}/api/v3/apps`, {
+            return axios.get(`${process.env.VUE_APP_API}/api/v3/apps`, {
                 params: query,
             }).then(success);
         },
 
         get: (id) => {
-            return axios.get(`${process.env.API}/api/v3/apps/${id}`).then(success);
+            return axios.get(`${process.env.VUE_APP_API}/api/v3/apps/${id}`)
+                .then(success);
         },
 
         stats: () => {
-            return axios.get(`${process.env.API}/api/v3/stats`).then(success);
+            return axios.get(`${process.env.VUE_APP_API}/api/v3/stats`)
+                .then(success);
         },
     },
 
     categories: () => {
         // TODO implement caching
-        return axios.get(`${process.env.API}/api/v3/categories`).then(success);
+        return axios.get(`${process.env.VUE_APP_API}/api/v3/categories`)
+            .then(success);
     },
 
     manage: {
         search: (query, key) => {
-            return axios.get(`${process.env.API}/api/v3/manage?apikey=${key}`, {
+            return axios.get(`${process.env.VUE_APP_API}/api/v3/manage?apikey=${key}`, {
                 params: query,
             }).then(success);
         },
 
         get: (id, key) => {
-            return axios.get(`${process.env.API}/api/v3/manage/${id}?apikey=${key}`).then(success);
+            return axios.get(`${process.env.VUE_APP_API}/api/v3/manage/${id}?apikey=${key}`)
+                .then(success);
         },
 
         create: (data, key) => {
-            return axios.post(`${process.env.API}/api/v3/manage/?apikey=${key}`, data).then(success);
+            return axios.post(`${process.env.VUE_APP_API}/api/v3/manage/?apikey=${key}`, data)
+                .then(success);
         },
 
         update: (id, data, key) => {
-            return axios.put(`${process.env.API}/api/v3/manage/${id}?apikey=${key}`, data).then(success);
+            return axios.put(`${process.env.VUE_APP_API}/api/v3/manage/${id}?apikey=${key}`, data)
+                .then(success);
         },
 
         revision: (id, data, key) => {
-            return axios.post(`${process.env.API}/api/v3/manage/${id}/revision?apikey=${key}`, data).then(success);
+            return axios.post(`${process.env.VUE_APP_API}/api/v3/manage/${id}/revision?apikey=${key}`, data)
+                .then(success);
         },
     },
 
     users: {
         getAll: (key) => {
-            return axios.get(`${process.env.API}/api/users?apikey=${key}`).then(success);
+            return axios.get(`${process.env.VUE_APP_API}/api/users?apikey=${key}`)
+                .then(success);
         },
     },
 };

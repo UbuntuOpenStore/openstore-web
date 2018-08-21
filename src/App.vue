@@ -51,25 +51,39 @@
                 <nav class="p-footer__nav">
                     <ul class="p-footer__links">
                         <li class="p-footer__item">
-                            <router-link :to="{name: 'about'}" class="p-footer__link">About Us</router-link>
+                            <router-link :to="{name: 'about'}" class="p-footer__link">
+                                About Us
+                            </router-link>
                         </li>
                         <li class="p-footer__item">
-                            <a class="p-footer__link" href="/telegram" target="_blank">Chat with us on Telegram</a>
+                            <a class="p-footer__link" href="/telegram" target="_blank">
+                                Chat with us on Telegram
+                            </a>
                         </li>
                         <li class="p-footer__item">
-                            <router-link :to="{name: 'stats'}" class="p-footer__link">App Stats</router-link>
+                            <router-link :to="{name: 'stats'}" class="p-footer__link">
+                                App Stats
+                            </router-link>
                         </li>
                         <li class="p-footer__item">
-                            <a class="p-footer__link" href="https://github.com/UbuntuOpenStore" target="_blank">Fork us on Github</a>
+                            <a class="p-footer__link" href="https://github.com/UbuntuOpenStore" target="_blank">
+                                Fork us on Github
+                            </a>
                         </li>
                         <li class="p-footer__item">
-                            <a class="p-footer__link" href="https://status.open-store.io/" target="_blank">Site Status</a>
+                            <a class="p-footer__link" href="https://status.open-store.io/" target="_blank">
+                                Site Status
+                            </a>
                         </li>
                         <li class="p-footer__item">
-                            <a class="p-footer__link" href="https://github.com/UbuntuOpenStore/openstore-meta/issues" target="_blank">Report an Issue</a>
+                            <a class="p-footer__link" href="https://github.com/UbuntuOpenStore/openstore-meta/issues" target="_blank">
+                                Report an Issue
+                            </a>
                         </li>
                         <li class="p-footer__item">
-                            <router-link :to="{name: 'feeds'}" class="p-footer__link">RSS Feeds</router-link>
+                            <router-link :to="{name: 'feeds'}" class="p-footer__link">
+                                RSS Feeds
+                            </router-link>
                         </li>
                     </ul>
                 </nav>
@@ -103,6 +117,10 @@ export default {
 </script>
 
 <style>
+#app {
+    margin: 0;
+}
+
 .p-footer {
     padding-top: 0;
 }

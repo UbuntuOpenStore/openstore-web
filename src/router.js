@@ -1,21 +1,22 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Browse from '@/components/Browse';
-import Package from '@/components/Package';
-import About from '@/components/About';
-import Submit from '@/components/Submit';
-import Login from '@/components/Login';
-import Manage from '@/components/Manage';
-import ManagePackage from '@/components/ManagePackage';
-import ManageRevisions from '@/components/ManageRevisions';
-import Stats from '@/components/Stats';
-import Feeds from '@/components/Feeds';
-import NotFound from '@/components/NotFound';
+import Browse from '@/views/Browse.vue';
+import Package from '@/views/Package.vue';
+import About from '@/views/About.vue';
+import Submit from '@/views/Submit.vue';
+import Login from '@/views/Login.vue';
+import Manage from '@/views/Manage.vue';
+import ManagePackage from '@/views/ManagePackage.vue';
+import ManageRevisions from '@/views/ManageRevisions.vue';
+import Stats from '@/views/Stats.vue';
+import Feeds from '@/views/Feeds.vue';
+import NotFound from '@/views/NotFound.vue';
 
 Vue.use(Router);
 
 export default new Router({
     mode: 'history',
+    base: process.env.BASE_URL,
     routes: [
         {
             path: '/',
