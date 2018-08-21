@@ -27,14 +27,28 @@
 
                 <div class="p-form__group">
                     <label for="file" class="p-form__label">File Upload</label>
-                    <input type="file" id="file" class="p-form__control" accept=".click" @change="fileChange($event.target.files)" :disabled="saving" />
+                    <input
+                        type="file"
+                        id="file"
+                        class="p-form__control"
+                        accept=".click"
+                        @change="fileChange($event.target.files)"
+                        :disabled="saving"
+                    />
                 </div>
 
                 <h3>OR</h3>
 
                 <div class="p-form__group">
                     <label for="downloadUrl" class="p-form__label">URL</label>
-                    <input type="text" id="downloadUrl" class="p-form__control" placeholder="URL of App from the Web" :disabled="saving" v-model="downloadUrl" />
+                    <input
+                        type="text"
+                        id="downloadUrl"
+                        class="p-form__control"
+                        placeholder="URL of App from the Web"
+                        :disabled="saving"
+                        v-model="downloadUrl"
+                    />
                 </div>
 
                 <a class="p-button--positive" @click="save()" :disabled="saving">
@@ -42,7 +56,11 @@
                     Create
                 </a>
 
-                <router-link class="p-button--neutral" :to="{name: 'manage_package', params: {id: app.id}}" :disabled="saving">
+                <router-link
+                    class="p-button--neutral"
+                    :to="{name: 'manage_package', params: {id: app.id}}"
+                    :disabled="saving"
+                >
                     <i class="fa fa-times"></i>
                     Cancel
                 </router-link>
@@ -128,7 +146,7 @@ export default {
     methods: {
         fileChange(files) {
             if (files.length > 0) {
-                this.file = files[0];
+                [this.file] = files;
             }
             else {
                 this.file = null;

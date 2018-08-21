@@ -34,8 +34,17 @@
                     <li>Navigate to the downloads folder</li>
                     <li>Run the command:
                         <div class="p-code-snippet">
-                            <input class="p-code-snippet__input" value="pkcon install-local --allow-untrusted openstore.openstore-team_latest_armhf.click" readonly="readonly">
-                            <button class="p-code-snippet__action" data-clipboard-target=".p-code-snippet__input">Copy to clipboard</button>
+                            <input
+                                class="p-code-snippet__input"
+                            value="pkcon install-local --allow-untrusted openstore.openstore-team_latest_armhf.click"
+                                readonly="readonly"
+                            >
+                            <button
+                                class="p-code-snippet__action"
+                                data-clipboard-target=".p-code-snippet__input"
+                            >
+                                Copy to clipboard
+                            </button>
                         </div>
                     </li>
                 </ol>

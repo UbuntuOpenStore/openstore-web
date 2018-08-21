@@ -171,14 +171,21 @@
                         <div class="p-form__group">
                             <label for="video_url" class="p-form__label">Video URL</label>
                             <input type="text" id="video_url" class="p-form__control" :disabled="saving" v-model="app.video_url" />
-                            <div class="small text-lightgrey">Only YouTube videos are supported at this time. Make sure the url is for the embedded video!</div>
+                            <div class="small text-lightgrey">
+                                Only YouTube videos are supported at this time.
+                                Make sure the url is for the embedded video!
+                            </div>
                         </div>
 
                         <div class="p-form__group" v-if="user.role == 'admin'">
                             <label for="maintainer" class="p-form__label">Maintainer</label>
                             <select type="text" id="maintainer" class="p-form__control" :disabled="saving" v-model="app.maintainer">
                                 <option value="">Choose a maintainer</option>
-                                <option v-for="user in users" :value="user._id">{{user.display_name}}</option>
+                                <option
+                                    v-for="user in users"
+                                    :key="user._id"
+                                    :value="user._id"
+                                >{{user.display_name}}</option>
                             </select>
                         </div>
                     </div>
@@ -217,7 +224,14 @@
                             <label class="p-form__label">Download Stats</label>
 
                             <div>
-                                <p v-for="revision in revisions" :class="{'strong': revision.revision == app.revision || revision.revision == app.xenial_revision}">
+                                <p
+                                    v-for="revision in revisions"
+                                    :class="{
+                                        'strong': revision.revision == app.revision ||
+                                            revision.revision == app.xenial_revision
+                                    }"
+                                    :key="revision.revision"
+                                >
                                     {{revision.channel.charAt(0).toUpperCase()}}{{revision.channel.slice(1)}} Revision
                                     {{revision.revision}} (v{{revision.version}}): {{revision.downloads}}
                                 </p>
@@ -434,7 +448,11 @@ export default {
                         }
 
                         for (let i = 0; i < screenshotLimit; i++) {
-                            updateData.append('screenshot_files', this.screenshotFiles[i], this.screenshotFiles[i].name);
+                            updateData.append(
+                                'screenshot_files',
+                                this.screenshotFiles[i],
+                                this.screenshotFiles[i].name,
+                            );
                         }
                     }
 

@@ -37,9 +37,20 @@
 
                 <div class="row">
                     <div class="center">
-                        <a :href="openstoreLink" class="p-button--positive" v-if="app.id != 'openstore.openstore-team'" title="Install via the OpenStore app">Install</a>
+                        <a
+                            :href="openstoreLink"
+                            class="p-button--positive"
+                            v-if="app.id != 'openstore.openstore-team'"
+                            title="Install via the OpenStore app"
+                        >Install</a>
 
-                        <a v-for="download in app.downloads" :href="download.download_url" class="p-button--positive" target="_blank">
+                        <a
+                            v-for="download in app.downloads"
+                            :href="download.download_url"
+                            :key="download.channel"
+                            class="p-button--positive"
+                            target="_blank"
+                        >
                             Download ({{download.channel.charAt(0).toUpperCase()}}{{download.channel.slice(1)}})
                         </a>
                     </div>
@@ -62,18 +73,19 @@
 
                             {{app.license}}
                         </div>
-                        <div
-                            class="p-matrix__item center"
-                            :title="restrictedAccess ? 'This app has access to restricted system data, see permissions for more details' : 'This app does not have access to restricted system data, see permissions for more details'"
-                        >
-                            <i class="fa fa-2x fa-shield" :class="{'text-red': restrictedAccess}"></i>
+                        <div class="p-matrix__item center" :title="restrictedAccess">
+                            <i class="fa fa-2x fa-shield" :class="{'text-red': isRestrictedAccess}"></i>
                             <br/>
 
                             Permissions
                         </div>
 
                         <div class="p-matrix__item center" v-if="app.donate_url">
-                            <a :href="app.donate_url" target="_blank" rel="noopener noreferrer"><i class="fa fa-2x fa-heart text-red"></i></a>
+                            <a
+                                :href="app.donate_url"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            ><i class="fa fa-2x fa-heart text-red"></i></a>
                             <br/>
 
                             <a :href="app.donate_url" target="_blank" rel="noopener noreferrer">
@@ -95,7 +107,7 @@
                     <h3>Screenshots</h3>
 
                     <div class="screenshot-scroll">
-                        <div v-for="(screenshot, index) in app.screenshots">
+                        <div v-for="screenshot in app.screenshots" :key="screenshot">
                             <img v-img:screenshots :src="screenshot" alt="" class="screenshot" />
                         </div>
                     </div>
@@ -121,6 +133,7 @@
                     <ul>
                         <li
                             v-for="permission in permissions"
+                            :key="permission"
                             :class="{'text-red': isRestricted(permission)}"
                             :title="isRestricted(permission) ? 'Restricted permission' : ''"
                         >
@@ -139,14 +152,31 @@
                         </router-link>
                     </p>
 
-                    <p v-if="app.maintainer_name">Packager/Publisher: {{app.maintainer_name}}</p>
-                    <p v-if="app.support_url">Support: <a :href="app.support_url" target="_blank" rel="noopener noreferrer">{{app.support_url}}</a></p>
-                    <p v-if="app.source">Source: <a :href="app.source" target="_blank" rel="noopener noreferrer">{{app.source}}</a></p>
-                    <p v-if="app.license">License: {{app.license}}</p>
-                    <p v-if="app.category">Category: {{app.category}}</p>
-                    <p v-if="app.updated_date">Updated: {{app.updated_date | moment("MMMM Do YYYY")}}</p>
-                    <p v-if="app.published_date">Published: {{app.published_date | moment("MMMM Do YYYY")}}</p>
-                    <p v-if="app.framework">Framework: {{app.framework}}</p>
+                    <p v-if="app.maintainer_name">
+                        Packager/Publisher: {{app.maintainer_name}}
+                    </p>
+                    <p v-if="app.support_url">
+                        Support:
+                        <a :href="app.support_url" target="_blank" rel="noopener noreferrer">{{app.support_url}}</a>
+                    </p>
+                    <p v-if="app.source">
+                        Source: <a :href="app.source" target="_blank" rel="noopener noreferrer">{{app.source}}</a>
+                    </p>
+                    <p v-if="app.license">
+                        License: {{app.license}}
+                    </p>
+                    <p v-if="app.category">
+                        Category: {{app.category}}
+                    </p>
+                    <p v-if="app.updated_date">
+                        Updated: {{app.updated_date | moment("MMMM Do YYYY")}}
+                    </p>
+                    <p v-if="app.published_date">
+                        Published: {{app.published_date | moment("MMMM Do YYYY")}}
+                    </p>
+                    <p v-if="app.framework">
+                        Framework: {{app.framework}}
+                    </p>
                     <!-- TODO add back when the backend is fixed
                     <p v-if="app.languages.length > 0">
                         Translation Languages: {{app.languages.join(', ')}}
@@ -162,9 +192,19 @@
 import api from '@/api';
 import opengraph from '@/opengraph';
 import cache from '@/cache';
-import Types from '@/components/Types';
+import Types from '@/components/Types.vue';
 
-let restricted = ['bluetooth', 'calendar', 'contacts', 'debug', 'history', 'music_files', 'picture_files', 'video_files', 'unconfined'];
+let restricted = [
+    'bluetooth',
+    'calendar',
+    'contacts',
+    'debug',
+    'history',
+    'music_files',
+    'picture_files',
+    'video_files',
+    'unconfined',
+];
 
 export default {
     name: 'Package',
@@ -269,7 +309,7 @@ export default {
         },
     },
     computed: {
-        restrictedAccess() {
+        isRestrictedAccess() {
             let isRestricted = false;
             this.permissions.forEach((permission) => {
                 if (restricted.indexOf(permission) >= 0) {
@@ -278,6 +318,13 @@ export default {
             });
 
             return isRestricted;
+        },
+        restrictedAccess() {
+            let message = 'This app does not have access to restricted system data, see permissions for more details';
+            if (this.isRestrictedAccess()) {
+                message = 'This app has access to restricted system data, see permissions for more details';
+            }
+            return message;
         },
         openstoreLink() {
             return `openstore://${this.app.id}`;
