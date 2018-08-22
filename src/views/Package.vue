@@ -206,6 +206,12 @@ let restricted = [
     'unconfined',
 ];
 
+function isRestrictedAccess(permissions) {
+    return permissions.some((permission) => {
+        return restricted.includes(permission);
+    });
+}
+
 export default {
     name: 'Package',
     components: {
@@ -310,18 +316,11 @@ export default {
     },
     computed: {
         isRestrictedAccess() {
-            let isRestricted = false;
-            this.permissions.forEach((permission) => {
-                if (restricted.indexOf(permission) >= 0) {
-                    isRestricted = true;
-                }
-            });
-
-            return isRestricted;
+            return isRestrictedAccess(this.permissions);
         },
         restrictedAccess() {
             let message = 'This app does not have access to restricted system data, see permissions for more details';
-            if (this.isRestrictedAccess()) {
+            if (isRestrictedAccess(this.permissions)) {
                 message = 'This app has access to restricted system data, see permissions for more details';
             }
             return message;
