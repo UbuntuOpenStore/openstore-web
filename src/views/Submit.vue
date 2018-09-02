@@ -132,28 +132,32 @@
 
                     <form class="p-form p-form--stacked">
                         <div class="p-form__group">
-                            <label for="file" class="p-form__label">App (Vivid Version)</label>
-                            <input
-                                type="file"
-                                id="file"
-                                class="p-form__control"
-                                accept=".click"
-                                @change="fileChange($event.target.files)"
-                                :disabled="saving"
-                            />
-                        </div>
-
-                        <h3>OR</h3>
-
-                        <div class="p-form__group">
-                            <label for="downloadUrl" class="p-form__label">App from URL (Vivid Version)</label>
+                            <label for="id" class="p-form__label">App Name</label>
                             <input
                                 type="text"
-                                id="downloadUrl"
+                                id="id"
                                 class="p-form__control"
-                                placeholder="URL of App from the Web"
                                 :disabled="saving"
-                                v-model="downloadUrl"
+                                v-model="id"
+                            />
+                            <p class="small text-lightgrey">
+                                This is the unique identifier for your app. It must match
+                                exactly the "name" field in your click's manifest.json
+                                and must be all lowercase letters. For example:
+                                "openstore.openstore-team", where "openstore" is the
+                                app and "openstore-team" is the group or individual
+                                authoring the app.
+                            </p>
+                        </div>
+
+                        <div class="p-form__group">
+                            <label for="name" class="p-form__label">App Title</label>
+                            <input
+                                type="text"
+                                id="name"
+                                class="p-form__control"
+                                :disabled="saving"
+                                v-model="name"
                             />
                         </div>
 
@@ -194,8 +198,8 @@ export default {
     data() {
         return {
             user: null,
-            file: null,
-            downloadUrl: '',
+            id: '',
+            name: '',
             saving: false,
             error: false,
         };
@@ -206,29 +210,10 @@ export default {
         });
     },
     methods: {
-        fileChange(files) {
-            if (files.length > 0) {
-                [this.file] = files;
-            }
-            else {
-                this.file = null;
-            }
-        },
         submit() {
             if (!this.saving) {
                 this.saving = true;
-                let promise = null;
-                if (this.file) {
-                    let formData = new FormData();
-                    formData.append('file', this.file, this.file.name);
-
-                    promise = api.manage.create(formData, this.user.apikey);
-                }
-                else {
-                    promise = api.manage.create({downloadUrl: this.downloadUrl}, this.user.apikey);
-                }
-
-                promise.then((app) => {
+                api.manage.create({id: this.id.toLowerCase(), name: this.name}, this.user.apikey).then((app) => {
                     this.saving = false;
                     this.$router.push({name: 'manage_package', params: {id: app.id}});
                 }).catch((err) => {

@@ -726,7 +726,7 @@ export default {
         }
     }
 
-    .strong {
+    .strong td {
         font-weight: bold;
     }
 </style>
