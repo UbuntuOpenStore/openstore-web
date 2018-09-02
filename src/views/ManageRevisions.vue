@@ -13,8 +13,8 @@
                 <div class="p-form__group">
                     <label for="channel" class="p-form__label">Channel</label>
                     <select id="channel" class="p-form__control" v-model="channel" :disabled="saving">
-                        <option value="vivid">Vivid</option>
                         <option value="xenial">Xenial</option>
+                        <option value="vivid">Vivid</option>
                         <option value="vivid-xenial">Vivid &amp; Xenial</option>
                     </select>
                     <div class="small text-lightgrey" v-if="channel == 'vivid-xenial'">
@@ -103,7 +103,7 @@ export default {
         return {
             user: null,
             app: {},
-            channel: 'vivid',
+            channel: 'xenial',
             file: null,
             downloadUrl: '',
             loading: false,

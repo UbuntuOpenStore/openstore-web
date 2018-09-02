@@ -18,7 +18,14 @@
             <form class="p-form p-form--stacked">
                 <div class="p-form__group">
                     <label for="publish" class="p-form__label">Publish</label>
-                    <button id="switch-on" class="p-switch" type="button" role="switch" :aria-checked="published" @click="published = !published">
+                    <button
+                        id="switch-on"
+                        class="p-switch"
+                        type="button"
+                        role="switch"
+                        :aria-checked="published"
+                        @click="published = !published"
+                    >
                         <span>Yes</span>
                         <span>No</span>
                     </button>
@@ -32,16 +39,30 @@
                 <nav class="p-tabs">
                     <ul class="p-tabs__list" role="tablist">
                         <li class="p-tabs__item" role="presentation">
-                            <a class="p-tabs__link" tabindex="0" role="tab" @click="tab = 'presentation'" :aria-selected="tab == 'presentation'">Presentation</a>
+                            <a
+                                class="p-tabs__link"
+                                tabindex="0"
+                                role="tab"
+                                @click="tab = 'presentation'"
+                                :aria-selected="tab == 'presentation'"
+                            >
+                                Presentation
+                            </a>
                         </li>
                         <li class="p-tabs__item" role="presentation">
-                            <a class="p-tabs__link" tabindex="-1" role="tab" @click="tab = 'discovery'" :aria-selected="tab == 'discovery'">Discovery</a>
+                            <a class="p-tabs__link" tabindex="-1" role="tab" @click="tab = 'discovery'" :aria-selected="tab == 'discovery'">
+                                Discovery
+                            </a>
                         </li>
                         <li class="p-tabs__item" role="presentation">
-                            <a class="p-tabs__link" tabindex="-1" role="tab" @click="tab = 'info'" :aria-selected="tab == 'info'">Info</a>
+                            <a class="p-tabs__link" tabindex="-1" role="tab" @click="tab = 'info'" :aria-selected="tab == 'info'">
+                                Info
+                            </a>
                         </li>
                         <li class="p-tabs__item" role="presentation">
-                            <a class="p-tabs__link" tabindex="-1" role="tab" @click="tab = 'stats'" :aria-selected="tab == 'stats'">Stats</a>
+                            <a class="p-tabs__link" tabindex="-1" role="tab" @click="tab = 'stats'" :aria-selected="tab == 'stats'">
+                                Stats
+                            </a>
                         </li>
                     </ul>
                 </nav>
@@ -49,7 +70,7 @@
                 <div v-if="tab == 'presentation'" class="p-card">
                     <div class="p-card__content">
                         <div class="p-form__group">
-                            <label for="name" class="p-form__label">Name</label>
+                            <label for="name" class="p-form__label">Title</label>
                             <input type="text" id="name" class="p-form__control" :disabled="saving" v-model="app.name" />
                         </div>
 
@@ -60,7 +81,13 @@
 
                         <div class="p-form__group">
                             <label for="description" class="p-form__label">Description</label>
-                            <textarea id="description" rows="4" class="p-form__control" :disabled="saving" v-model="app.description"></textarea>
+                            <textarea
+                                id="description"
+                                rows="4"
+                                class="p-form__control"
+                                :disabled="saving"
+                                v-model="app.description"
+                            ></textarea>
                         </div>
 
                         <div class="p-form__group">
@@ -72,7 +99,15 @@
                             <label for="screenshots" class="p-form__label">Screenshots (Limit 5)</label>
 
                             <div>
-                                <input type="file" id="screenshots" class="p-form__control" accept="image/*" multiple="multiple" @change="screenshotFilesChanged($event.target.files)" :disabled="saving" />
+                                <input
+                                    type="file"
+                                    id="screenshots"
+                                    class="p-form__control"
+                                    accept="image/*"
+                                    multiple="multiple"
+                                    @change="screenshotFilesChanged($event.target.files)"
+                                    :disabled="saving"
+                                />
 
                                 <p v-if="app.screenshots.length > 0">
                                     Drag &amp; drop to sort screenshots.
@@ -80,7 +115,7 @@
 
                                 <!-- TODO option to remove screenshots -->
                                 <draggable v-model="app.screenshots" class="screenshots">
-                                    <div v-for="screenshot in app.screenshots" class="screenshot-wrapper">
+                                    <div v-for="screenshot in app.screenshots" :key="screenshot" class="screenshot-wrapper">
                                         <a class="screenshot-remove" title="Delete Screenshot" @click="removeScreenshot(screenshot)">
                                             <i class="fa fa-close"></i>
                                         </a>
@@ -99,7 +134,13 @@
                             <label for="category" class="p-form__label">Category</label>
                             <select type="text" id="category" class="p-form__control" :disabled="saving" v-model="app.category">
                                 <option value="">Choose a category</option>
-                                <option v-for="category in categories" :value="category.category">{{category.category}}</option>
+                                <option
+                                    v-for="category in categories"
+                                    :key="category.category"
+                                    :value="category.category"
+                                >
+                                    {{category.category}}
+                                </option>
                                 <!--TODO make this a fancy dropdown with our icons-->
                             </select>
                         </div>
@@ -139,7 +180,9 @@
                                 <option value="Artistic License 2.0">Artistic License 2.0</option>
                                 <option value="Common Public License">Common Public License</option>
                                 <option value="Creative Commons - Attribution">Creative Commons - Attribution</option>
-                                <option value="Creative Commons - Attribution Share Alike">Creative Commons - Attribution Share Alike</option>
+                                <option value="Creative Commons - Attribution Share Alike">
+                                    Creative Commons - Attribution Share Alike
+                                </option>
                                 <option value="Eclipse Public License">Eclipse Public License</option>
                                 <option value="Educational Community License">Educational Community License</option>
                                 <option value="Mozilla Public License">Mozilla Public License</option>
@@ -196,46 +239,87 @@
                         <div class="p-form__group">
                             <label class="p-form__label">Package Info</label>
                             <div class="info">
-                                ID: {{app.id}}
-                                <br/> Author: {{app.author}}
-                                <br/> Version: {{app.version}}
-                                <br/> Revision: {{app.revision}}
-                                <br/> Architecture: {{app.architecture}}
-                                <br/> Framework: {{app.framework}}
-                                <br/> File Size: {{filesize}}
-                                <br/>
-                                <span v-if="app.types.length != 1">Types:</span>
-                                <span v-if="app.types.length == 1">Type:</span>
-                                {{app.types.join(', ')}}
-                                <br/>
-                                <span v-if="app.channels.length != 1">Channels:</span>
-                                <span v-if="app.channels.length == 1">Channel:</span>
-                                {{app.channels.join(', ')}}
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td class="name">ID</td>
+                                            <td>{{app.id}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name">Author</td>
+                                            <td>{{app.author}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name">Architecture</td>
+                                            <td>{{app.architecture}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name">Framework</td>
+                                            <td>{{app.framework}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name">File Size</td>
+                                            <td>{{filesize}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name">
+                                                <span v-if="app.types.length != 1">Types</span>
+                                                <span v-if="app.types.length == 1">Type</span>
+                                            </td>
+                                            <td>{{app.types.join(', ')}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name">
+                                                <span v-if="app.channels.length != 1">Channels</span>
+                                                <span v-if="app.channels.length == 1">Channel</span>
+                                            </td>
+                                            <td>{{app.channels.join(', ')}}</td>
+                                        </tr>
 
-                                <!--<div v-if="app.languages.length > 0">
-                                    Translation Languages: {{app.languages.join(', ')}}
-                                </div>-->
-
-                                <br/>
+                                        <!--
+                                        <tr class="name" v-if="app.languages.length > 0">
+                                            <td>Translation Languages</td>
+                                            <td>{{app.languages.join(', ')}}</td>
+                                        </tr>
+                                        -->
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
 
                         <div class="p-form__group revisions">
                             <label class="p-form__label">Download Stats</label>
 
-                            <div>
-                                <p
-                                    v-for="revision in revisions"
-                                    :class="{
-                                        'strong': revision.revision == app.revision ||
-                                            revision.revision == app.xenial_revision
-                                    }"
-                                    :key="revision.revision"
-                                >
-                                    {{revision.channel.charAt(0).toUpperCase()}}{{revision.channel.slice(1)}} Revision
-                                    {{revision.revision}} (v{{revision.version}}): {{revision.downloads}}
-                                </p>
-                                <p>Total: {{app.totalDownloads}}</p>
+                            <div class="downloads">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Revision</th>
+                                            <th>Channel</th>
+                                            <th>Version</th>
+                                            <th>Downloads</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr
+                                            v-for="revision in revisions"
+                                            :class="{
+                                                'strong': revision.revision == app.revision ||
+                                                    revision.revision == app.xenial_revision
+                                            }"
+                                            :key="revision.revision"
+                                        >
+                                            <td>{{revision.revision}}</td>
+                                            <td>{{revision.channel.charAt(0).toUpperCase()}}{{revision.channel.slice(1)}}</td>
+                                            <td>v{{revision.version}}</td>
+                                            <td>{{revision.downloads}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3">Total</td>
+                                            <td>{{app.totalDownloads}}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
 
@@ -601,6 +685,14 @@ export default {
 
     .info {
         margin-top: 0;
+    }
+
+    .info table .name {
+        width: 8em;
+    }
+
+    .downloads table th {
+        min-width: 5em;
     }
 
     .p-card {
