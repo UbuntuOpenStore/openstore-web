@@ -177,6 +177,9 @@
                     <p v-if="app.framework">
                         Framework: {{app.framework}}
                     </p>
+                    <p v-if="app.architecture">
+                        Architecture: {{app.architecture}}
+                    </p>
                     <!-- TODO add back when the backend is fixed
                     <p v-if="app.languages.length > 0">
                         Translation Languages: {{app.languages.join(', ')}}
