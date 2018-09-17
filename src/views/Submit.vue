@@ -170,10 +170,6 @@
                             <i class="fa fa-times"></i>
                             Cancel
                         </router-link>
-
-                        <p v-if="error" class="text-red">
-                            {{error}}
-                        </p>
                     </form>
                 </div>
             </div>
@@ -182,6 +178,8 @@
 </template>
 
 <script>
+import VueNotifications from 'vue-notifications';
+
 import api from '@/api';
 import opengraph from '@/opengraph';
 
@@ -201,7 +199,6 @@ export default {
             id: '',
             name: '',
             saving: false,
-            error: false,
         };
     },
     created() {
@@ -217,12 +214,15 @@ export default {
                     this.saving = false;
                     this.$router.push({name: 'manage_package', params: {id: app.id}});
                 }).catch((err) => {
+                    let error = 'An unknown error has occured';
                     if (err.response && err.response.data && err.response.data.message) {
-                        this.error = err.response.data.message;
+                        error = err.response.data.message;
                     }
-                    else {
-                        this.error = 'An unknown error has occured';
-                    }
+
+                    VueNotifications.error({
+                        title: 'Error',
+                        message: error,
+                    });
 
                     this.saving = false;
                 });
