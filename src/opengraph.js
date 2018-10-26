@@ -2,25 +2,25 @@ export default function(data) {
     data = (data === undefined) ? {} : data;
 
     return [
-        {name: 'description', content: data.description ? data.description : 'OpenStore - The open source app store'},
+        {name: 'description', id: 'description', content: data.description ? data.description : 'OpenStore - The open source app store'},
 
         // Schema.org markup for Google+
-        {itemprop: 'name', content: data.title ? data.title : 'OpenStore'},
-        {itemprop: 'description', content: data.description ? data.description : 'OpenStore for Ubuntu'},
-        {itemprop: 'image', content: data.image ? data.image : 'http://open-store.io/static/logo.png'},
+        {itemprop: 'name', id: 'name', content: data.title ? data.title : 'OpenStore'},
+        {itemprop: 'description', id: 'idescription', content: data.description ? data.description : 'OpenStore for Ubuntu'},
+        {itemprop: 'image', id: 'image', content: data.image ? data.image : 'https://open-store.io/logo.png'},
 
         // Twitter Card data
-        {name: 'twitter:card', content: 'summary'},
-        {name: 'twitter:title', content: data.title ? data.title : 'OpenStore'},
-        {name: 'twitter:description', content: data.description ? data.description : 'OpenStore - The open source app store'},
-        {name: 'twitter:image:src', content: data.image ? data.image : 'http://open-store.io/static/logo.png'},
+        {name: 'twitter:card', id: 'tcard', content: 'summary'},
+        {name: 'twitter:title', id: 'ttitle', content: data.title ? data.title : 'OpenStore'},
+        {name: 'twitter:description', id: 'tdescription', content: data.description ? data.description : 'OpenStore - The open source app store'},
+        {name: 'twitter:image:src', id: 'timage', content: data.image ? data.image : 'https://open-store.io/logo.png'},
 
         // Open Graph data
-        {property: 'og:title', content: data.title ? data.title : 'OpenStore'},
-        {property: 'og:type', content: 'website'},
-        {property: 'og:url', content: window.location.href},
-        {property: 'og:image', content: data.image ? data.image : 'http://open-store.io/static/logo.png'},
-        {property: 'og:description', content: data.description ? data.description : 'OpenStore - The open source app store'},
-        {property: 'og:site_name', content: 'OpenStore'},
+        {property: 'og:title', id: 'otitle', content: data.title ? data.title : 'OpenStore'},
+        {property: 'og:type', id: 'otype', content: 'website'},
+        {property: 'og:url', id: 'ourl', content: window.location.href},
+        {property: 'og:image', id: 'oimage', content: data.image ? data.image : 'https://open-store.io/logo.png'},
+        {property: 'og:description', id: 'odescription', content: data.description ? data.description : 'OpenStore - The open source app store'},
+        {property: 'og:site_name', id: 'ositename', content: 'OpenStore'},
     ];
 }
