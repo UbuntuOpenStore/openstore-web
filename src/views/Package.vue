@@ -210,9 +210,7 @@ let restricted = [
 ];
 
 function isRestrictedAccess(permissions) {
-    return permissions.some((permission) => {
-        return restricted.includes(permission);
-    });
+    return permissions.some((permission) => restricted.includes(permission));
 }
 
 export default {
@@ -277,9 +275,7 @@ export default {
                 }
 
                 // Only unique permissions
-                permissions = permissions.filter((item, pos) => {
-                    return permissions.indexOf(item) == pos;
-                });
+                permissions = permissions.filter((item, pos) => permissions.indexOf(item) == pos);
 
                 this.permissions = permissions.sort();
                 this.$emit('updateHead');
@@ -306,8 +302,9 @@ export default {
             return isRestricted;
         },
         humanPermission(permission) {
+            /* eslint-disable arrow-body-style */
             let humanPerm = permission.replace(/_/g, ' ').replace(/-/g, ' ').replace(/\w\S*/g, (txt) => {
-                return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase(); // To title Case
+                return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
             });
 
             if (permission == 'unconfined') {
@@ -334,12 +331,10 @@ export default {
         screenshots() {
             let screenshots = [];
             if (this.app) {
-                screenshots = this.app.screenshots.map((screenshot) => {
-                    return {
-                        thumb: screenshot,
-                        src: screenshot,
-                    };
-                });
+                screenshots = this.app.screenshots.map((screenshot) => ({
+                    thumb: screenshot,
+                    src: screenshot,
+                }));
             }
 
             return screenshots;

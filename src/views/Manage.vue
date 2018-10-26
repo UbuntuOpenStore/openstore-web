@@ -51,7 +51,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr v-for="app in apps">
+                        <tr v-for="app in apps" :key="app.id">
                             <td class="icon-cell">
                                 <router-link :to="{name: 'manage_package', params: {id: app.id}}">
                                     <img :src="app.icon" :alt="app.name" class="icon" />
@@ -101,7 +101,7 @@
                         </a>
                     </li>
 
-                    <li v-for="(p, index) in paging.pages" :class="{active: page == p, 'u-hide--small': index > 2}">
+                    <li v-for="(p, index) in paging.pages" :class="{active: page == p, 'u-hide--small': index > 2}" :key="p">
                         <a @click="setPage(p)">{{p + 1}}</a>
                     </li>
 

@@ -1,6 +1,6 @@
 <template>
     <span>
-        <span v-for="type in types">
+        <span v-for="type in types" :key="type">
             <span v-if="type == 'app'" class="label app-label">App</span>
             <span v-if="type == 'scope'" class="label scope-label">Scope</span>
             <span v-if="type == 'webapp'" class="label webapp-label">Web App</span>

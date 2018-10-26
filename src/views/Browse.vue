@@ -15,7 +15,13 @@
                     <label for="category" class="p-form__label">Category</label>
                     <select id="category" class="p-form__control" v-model="query.category">
                         <option value="">All Categories</option>
-                        <option v-for="category in categories" :value="category.category">{{category.category}}</option>
+                        <option
+                            v-for="category in categories"
+                            :value="category.category"
+                            :key="category.category"
+                        >
+                            {{category.category}}
+                        </option>
                     </select>
                     <!--TODO make this a fancy dropdown with our icons-->
                 </div>
@@ -87,7 +93,7 @@
 
         <div class="row" v-if="!loading">
             <ul class="p-matrix u-clearfix">
-                <li v-for="app in apps" class="p-matrix__item">
+                <li v-for="app in apps" class="p-matrix__item" :key="app.id">
                     <types class="types" :types="app.types"></types>
 
                     <img
@@ -132,7 +138,7 @@
                     </a>
                 </li>
 
-                <li v-for="(p, index) in paging.pages" :class="{active: page == p, 'u-hide--small': index > 2}">
+                <li v-for="(p, index) in paging.pages" :class="{active: page == p, 'u-hide--small': index > 2}" :key="p">
                     <a @click="setPage(p)">{{p + 1}}</a>
                 </li>
 
@@ -373,9 +379,7 @@ export default {
                 this.categories = data;
 
                 let category = this.category;
-                let match = this.categories.reduce((c) => {
-                    return (c.category == this.category);
-                });
+                let match = this.categories.reduce((c) => (c.category == this.category));
                 if (!match) {
                     category = DEFAULT_CATEGORY;
                 }

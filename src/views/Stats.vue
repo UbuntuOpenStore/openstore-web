@@ -22,7 +22,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr v-for="(count, name) in types" v-if="name != 'push'">
+                    <tr v-for="(count, name) in types" v-if="name != 'push'" :key="name">
                         <td>
                             {{humanType(name)}}
                         </td>
@@ -44,7 +44,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr v-for="(count, name) in categories">
+                    <tr v-for="(count, name) in categories" :key="name">
                         <td>
                             {{name || 'Uncategorized'}}
                         </td>
@@ -94,8 +94,9 @@ export default {
     },
     methods: {
         humanType(type) {
+            /* eslint-disable arrow-body-style */
             return type.replace('webapp', 'web app').replace(/\w\S*/g, (txt) => {
-                return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase(); // To title Case
+                return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
             });
         },
     },

@@ -403,9 +403,7 @@ export default {
             users: [],
             sortableOptions: {
                 store: {
-                    get: () => {
-                        return this.app.screenshots ? this.app.screenshots : [];
-                    },
+                    get: () => (this.app.screenshots ? this.app.screenshots : []),
                     set: (sortable) => {
                         this.app.screenshots = sortable.toArray();
                     },
@@ -473,13 +471,13 @@ export default {
                 if (a.role == 'admin' && b.role != 'admin') {
                     return -1;
                 }
-                else if (a.role != 'admin' && b.role == 'admin') {
+                if (a.role != 'admin' && b.role == 'admin') {
                     return 1;
                 }
-                else if (aname > bname) {
+                if (aname > bname) {
                     return 1;
                 }
-                else if (aname < bname) {
+                if (aname < bname) {
                     return -1;
                 }
 
@@ -511,9 +509,7 @@ export default {
             }
         },
         removeScreenshot(screenshot) {
-            this.app.screenshots = this.app.screenshots.filter((s) => {
-                return (s != screenshot);
-            });
+            this.app.screenshots = this.app.screenshots.filter((s) => (s != screenshot));
         },
         save() {
             if (!this.saving) {
@@ -555,9 +551,7 @@ export default {
                 }
                 else {
                     updateData = JSON.parse(JSON.stringify(this.app)); // Quick n dirty clone
-                    updateData.keywords = updateData.keywords.split(',').map((keyword) => {
-                        return keyword.trim();
-                    });
+                    updateData.keywords = updateData.keywords.split(',').map((keyword) => keyword.trim());
                 }
 
                 api.manage.update(this.app.id, updateData, this.user.apikey).then((data) => {

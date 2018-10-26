@@ -13,7 +13,13 @@
                     <a class="p-navigation__toggle--open" :class="{'u-hide': showMenu}" title="Menu" @click="showMenu = true">
                         <i class="fa fa-bars"></i>
                     </a>
-                    <a class="p-navigation__toggle--close" :class="{'u-show': showMenu}" id="close" title="Close Menu" @click="showMenu = false">
+                    <a
+                        class="p-navigation__toggle--close"
+                        :class="{'u-show': showMenu}"
+                        id="close"
+                        title="Close Menu"
+                        @click="showMenu = false"
+                    >
                         <i class="fa fa-times"></i>
                     </a>
                 </div>

@@ -13,7 +13,9 @@ import App from './App';
 import router from './router';
 
 miniToastr.init();
-function toast({title, message, type, timeout, cb}) {
+function toast({
+    title, message, type, timeout, cb,
+}) {
     return miniToastr[type](message, title, timeout, cb);
 }
 
@@ -36,7 +38,5 @@ Vue.use(VueImg);
 new Vue({
     el: '#app',
     router,
-    render: (h) => {
-        return h(App);
-    },
+    render: (h) => h(App),
 });

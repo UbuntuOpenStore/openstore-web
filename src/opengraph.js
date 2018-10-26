@@ -12,7 +12,11 @@ export default function(data) {
         // Twitter Card data
         {name: 'twitter:card', id: 'tcard', content: 'summary'},
         {name: 'twitter:title', id: 'ttitle', content: data.title ? data.title : 'OpenStore'},
-        {name: 'twitter:description', id: 'tdescription', content: data.description ? data.description : 'OpenStore - The open source app store'},
+        {
+            name: 'twitter:description',
+            id: 'tdescription',
+            content: data.description ? data.description : 'OpenStore - The open source app store',
+        },
         {name: 'twitter:image:src', id: 'timage', content: data.image ? data.image : 'https://open-store.io/logo.png'},
 
         // Open Graph data
@@ -20,7 +24,11 @@ export default function(data) {
         {property: 'og:type', id: 'otype', content: 'website'},
         {property: 'og:url', id: 'ourl', content: window.location.href},
         {property: 'og:image', id: 'oimage', content: data.image ? data.image : 'https://open-store.io/logo.png'},
-        {property: 'og:description', id: 'odescription', content: data.description ? data.description : 'OpenStore - The open source app store'},
+        {
+            property: 'og:description',
+            id: 'odescription',
+            content: data.description ? data.description : 'OpenStore - The open source app store',
+        },
         {property: 'og:site_name', id: 'ositename', content: 'OpenStore'},
     ];
 }
