@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" height="500" width="1e3" version="1.1" viewBox="0 0 264.58333 132.29167">
+ <defs>
+  <linearGradient id="a" gradientUnits="userSpaceOnUse" x2="512" gradientTransform="matrix(1.989 0 0 1 -255.2 0)" y1="44.01" x1="256">
+   <stop stop-color="#eb6536" offset="0"/>
+   <stop stop-color="#fb8640" offset="1"/>
+  </linearGradient>
+ </defs>
+ <g transform="translate(0 -164.7)">
+  <g style="enable-background:new" transform="matrix(.2590 0 0 .2590 65.98 164.5)">
+   <rect style="opacity:0.96;stroke-width:1.41;fill:url(#a)" height="512" width="1018" y="0" x="-255.2"/>
+   <g style="fill:#f1f1f1">
+    <path d="m716.3 525.2 59.91 0.4847l1.4-527.7-606.8 2z"/>
+    <path style="stroke-width:1.674" d="m183.6 136.1c-22.28 5.044-60.35 12.54-50.24 46.44 12.86 43.09 49.12 82.3 79.11 112.3l-0.00082 0.00077c0.03 0.03 0.0593 0.0596 0.0892 0.0892 0.03 0.03 0.0593 0.0596 0.0892 0.0892l0.0008-0.00074c30 30 69.22 66.24 112.3 79.11 33.9 10.12 41.4-27.96 46.44-50.24l-71.82-31.62-28.12 15.2c-10.4-6.7-28.5-23.3-39.7-34.5-11-11.1-27.8-29.1-34.5-39.6l18.06-25.34-31.64-71.95z"/>
+   </g>
+  </g>
+ </g>
+</svg>
