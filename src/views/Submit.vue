@@ -6,22 +6,18 @@
 
                 <ul class="p-list">
                     <li class="p-list__item is-ticked" v-translate>
-                        Apps not requiring manual review can be submitted by logging in
-                        with the "Log In" link above.
+                        Apps not requiring manual review can be submitted by logging in with the "Log In" link above.
                     </li>
                     <li class="p-list__item is-ticked" v-translate>
-                        You are only allowed to publish apps that you have permission to
-                        distribute.
+                        You are only allowed to publish apps that you have permission to distribute.
                     </li>
                     <li class="p-list__item is-ticked" v-translate>
-                        You app can be pulled without warning at the discretion of our
-                        admins. Where possible, we will contact you regarding any such
-                        actions.
+                        You app can be pulled without warning at the discretion of our admins.
+                        Where possible, we will contact you regarding any such actions.
                     </li>
                     <li class="p-list__item is-ticked">
                         <a href="/telegram" v-translate>
-                            Apps requiring manual review must be submitted by contacting an
-                            admin in our telegram group.
+                            Apps requiring manual review must be submitted by contacting an admin in our telegram group.
                         </a>
                     </li>
                     <li class="p-list__item is-ticked" v-translate>
@@ -38,26 +34,21 @@
                 <ul class="p-list">
                     <li class="p-list__item is-ticked">
                         <a href="/telegram">
-                            Send us a link to a repository for your app to our telegram group
-                            along with some instructions on how to build it.
+                            Send us a link to a repository for your app to our telegram group along with some instructions on how to build it.
                         </a>
                     </li>
                     <li class="p-list__item is-ticked" v-translate>
-                        Give a short explanation why you can’t publish the app without
-                        extra privileges. No need to go into details, a one liner like "needs to run
-                        a daemon in the background" will do. List all the special features you have,
-                        if there are more.
+                        Give a short explanation why you can’t publish the app without extra privileges.
+                        No need to go into details, a one liner like "needs to run a daemon in the background" will do.
+                        List all the special features you have, if there are more.
                     </li>
                     <li class="p-list__item is-ticked" v-translate>
-                        If an application could be published without manual review
-                        if it wouldn’t be for that one cool feature, publish a stripped
-                        down version! Not everyone will want to install apps with less
-                        confinement.
+                        If an application could be published without manual review if it wouldn’t be for that one cool feature, publish a stripped down version!
+                        Not everyone will want to install apps with less confinement.
                     </li>
                     <li class="p-list__item is-ticked" v-translate>
-                        Only open source applications allowed for manual review: As the
-                        applications might have arbitrary access to the device, every
-                        manually reviewed app will get a source code review.
+                        Only open source applications allowed for manual review:
+                        As the applications might have arbitrary access to the device, every manually reviewed app will get a source code review.
                     </li>
                 </ul>
             </div>
@@ -68,13 +59,11 @@
                 <h1 v-translate>OpenStore App Content Policy</h1>
 
                 <p v-translate>
-                    One of the main goals of the OpenStore is to provide provide
-                    a safe app store for people of all ages. To accomplish this
-                    goal we do not allow certain types of app to be published.
-                    Failure to follow the guidelines will result in your app being
-                    removed. Any account with serious infractions may be subject
-                    to termination. The OpenStore team thanks you for helping us
-                    promote a better enviroment for everyone.
+                    One of the main goals of the OpenStore is to provide provide a safe app store for people of all ages.
+                    To accomplish this goal we do not allow certain types of app to be published.
+                    Failure to follow the guidelines will result in your app being removed.
+                    Any account with serious infractions may be subject to termination.
+                    The OpenStore team thanks you for helping us promote a better enviroment for everyone.
                 </p>
 
                 <h2 v-translate>Prohibited Apps:</h2>
@@ -83,25 +72,21 @@
                     <li class="p-list__item is-ticked">
                         <b v-translate>Sexually Explicit Content</b>:
                         <span v-translate>
-                            Apps containing or promoting sexually explicit content
-                            are not allowed. This includes, but is not limited to,
-                            pornography and services promoting sexually explicit content.
+                            Apps containing or promoting sexually explicit contentare not allowed.
+                            This includes, but is not limited to, pornography and services promoting sexually explicit content.
                         </span>
                     </li>
                     <li class="p-list__item is-ticked">
                         <b v-translate>Child Endangerment</b>:
                         <span v-translate>
-                            Apps containing or promoting child abuse or child sexual
-                            abuse are strictly prohibited.
+                            Apps containing or promoting child abuse or child sexual abuse are strictly prohibited.
                         </span>
                     </li>
                     <li class="p-list__item is-ticked">
                         <b v-translate>Violence</b>:
                         <span v-translate>
-                            Apps containing or promoting gratuitous violence are not
-                            allowed. This includes, but is not limited to, violence,
-                            terrorism, bomb/weapon making, self harm, and grotesque
-                            imagery.
+                            Apps containing or promoting gratuitous violence are not allowed.
+                            This includes, but is not limited to, violence, terrorism, bomb/weapon making, self harm, and grotesque imagery.
                         </span>
                     </li>
                     <li class="p-list__item is-ticked">
@@ -113,9 +98,8 @@
                     <li class="p-list__item is-ticked">
                         <b v-translate>Gambling</b>:
                         <span v-translate>
-                            Apps containing gambling involving real world money
-                            transactions are not allowed. This includes, but is not
-                            limited to, online casinos, betting, and lotteries.
+                            Apps containing gambling involving real world money transactions are not allowed.
+                            This includes, but is not limited to, online casinos, betting, and lotteries.
                         </span>
                     </li>
                     <li class="p-list__item is-ticked">
@@ -127,9 +111,8 @@
                     <li class="p-list__item is-ticked">
                         <b v-translate>Malware</b>:
                         <span v-translate>
-                            Apps that are found to be stealing the users data, trying
-                            to escalate their privileges without user consent, or
-                            executing malicious process are strictly prohibited.
+                            Apps that are found to be stealing the users data, trying to escalate their privileges without user consent,
+                            or executing malicious process are strictly prohibited.
                         </span>
                     </li>
                 </ul>
@@ -155,12 +138,10 @@
                                 v-model="id"
                             />
                             <p class="small text-lightgrey" v-translate>
-                                This is the unique identifier for your app. It must match
-                                exactly the "name" field in your click's manifest.json
-                                and must be all lowercase letters. For example:
-                                "openstore.openstore-team", where "openstore" is the
-                                app and "openstore-team" is the group or individual
-                                authoring the app.
+                                This is the unique identifier for your app.
+                                It must match exactly the "name" field in your click's manifest.json and must be all lowercase letters.
+                                For example: "openstore.openstore-team", where "openstore" is the app and "openstore-team"
+                                is the group or individual authoring the app.
                             </p>
                         </div>
 

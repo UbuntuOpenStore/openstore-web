@@ -18,8 +18,7 @@
                         <option value="vivid-xenial" v-translate>Vivid and Xenial</option>
                     </select>
                     <div class="small text-lightgrey" v-if="channel == 'vivid-xenial'" v-translate>
-                        Only choose "Vivid and Xenial" if your app is qml only
-                        or a webapp.
+                        Only choose "Vivid and Xenial" if your app is qml only or a webapp.
                     </div>
                 </div>
 

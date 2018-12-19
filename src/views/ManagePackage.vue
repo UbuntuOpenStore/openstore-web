@@ -218,8 +218,7 @@
                             <label for="video_url" class="p-form__label" v-translate>Video URL</label>
                             <input type="text" id="video_url" class="p-form__control" :disabled="saving" v-model="app.video_url" />
                             <div class="small text-lightgrey" v-translate>
-                                Only YouTube videos are supported at this time.
-                                Make sure the url is for the embedded video!
+                                Only YouTube videos are supported at this time. Make sure the url is for the embedded video!
                             </div>
                         </div>
 

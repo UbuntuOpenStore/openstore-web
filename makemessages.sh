@@ -21,3 +21,6 @@ xgettext --language=JavaScript --keyword=npgettext:1c,2,3 \
     --package-name=$(node -e "console.log(require('./package.json').name);") \
     --package-version=$(node -e "console.log(require('./package.json').version);") \
     --output $POT_FILE $GETTEXT_JS_SOURCES
+
+# Clean up the extra spaces in the pot file
+sed -i 's/    //g' $POT_FILE
