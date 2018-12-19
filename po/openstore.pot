@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-19 10:11-0500\n"
+"POT-Creation-Date: 2018-12-19 14:00-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,7 @@ msgstr ""
 msgid "A comma separated list of keywords"
 msgstr ""
 
-#: src/App.vue:34
+#: src/App.vue:34 src/views/About.vue:3
 msgid "About"
 msgstr ""
 
@@ -57,6 +57,20 @@ msgstr ""
 
 #: src/views/ManageRevisions.vue:192
 msgid "An unknown error has occured"
+msgstr ""
+
+#: src/views/About.vue:173
+msgid "And many amazing developers, testers, and users from the OpenStore community!"
+msgstr ""
+
+#: src/views/About.vue:132
+msgid ""
+"Any personal data you decide to give us (e.g. your email address\n"
+"            when registering for an account to upload your apps) goes no\n"
+"            further than us, and will not be used for anything other than\n"
+"            allowing you to maintain your apps and, in rare cases, contact\n"
+"            you in the event there is an issue with your app. Additionally,\n"
+"            this site uses cookies to keep you logged in to your account."
 msgstr ""
 
 #: src/views/Manage.vue:12
@@ -142,6 +156,13 @@ msgid ""
 "                        executing malicious process are strictly prohibited."
 msgstr ""
 
+#: src/views/About.vue:141
+msgid ""
+"Apps uploaded to the OpenStore are subject to our submission\n"
+"            rules and content policy. You can review the rules and policies\n"
+"            before uploading your app."
+msgstr ""
+
 #: src/views/ManagePackage.vue:255
 msgid "Architecture"
 msgstr ""
@@ -164,6 +185,10 @@ msgstr ""
 
 #: src/App.vue:31
 msgid "Browse"
+msgstr ""
+
+#: src/views/About.vue:78
+msgid "Bug Tracker"
 msgstr ""
 
 #: src/views/ManagePackage.vue:347 src/views/ManageRevisions.vue:64
@@ -219,6 +244,18 @@ msgstr ""
 msgid "Choose a maintainer"
 msgstr ""
 
+#: src/views/About.vue:61
+msgid "Contact"
+msgstr ""
+
+#: src/views/About.vue:151
+msgid "Contributors"
+msgstr ""
+
+#: src/views/About.vue:49
+msgid "Copy to clipboard"
+msgstr ""
+
 #: src/views/Stats.vue:20
 msgid "Count"
 msgstr ""
@@ -245,6 +282,10 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:287
 msgid "Download Stats"
+msgstr ""
+
+#: src/views/About.vue:35
+msgid "Download the OpenStore App"
 msgstr ""
 
 #: src/views/Package.vue:257
@@ -284,6 +325,14 @@ msgstr ""
 msgid "Filters"
 msgstr ""
 
+#: src/views/About.vue:63
+msgid ""
+"For any questions you may have or help you may need just chat\n"
+"            with us in our telegram group. You can\n"
+"            also submit issues, bugs, and feature requests to our\n"
+"            GitHub bug tracker."
+msgstr ""
+
 #: src/App.vue:74
 msgid "Fork us on Github"
 msgstr ""
@@ -320,6 +369,10 @@ msgstr ""
 msgid "Go to the next page"
 msgstr ""
 
+#: src/views/About.vue:91
+msgid "GPL v3 License"
+msgstr ""
+
 #: src/views/Submit.vue:109
 msgid "Harassment, Bullying, or Hate Speech"
 msgstr ""
@@ -348,7 +401,7 @@ msgstr ""
 msgid "Info"
 msgstr ""
 
-#: src/views/Package.vue:39
+#: src/views/About.vue:20 src/views/Package.vue:39
 msgid "Install"
 msgstr ""
 
@@ -372,7 +425,7 @@ msgstr ""
 msgid "Latest Update"
 msgstr ""
 
-#: src/views/ManagePackage.vue:167
+#: src/views/About.vue:82 src/views/ManagePackage.vue:167
 msgid "License"
 msgstr ""
 
@@ -422,6 +475,10 @@ msgstr ""
 
 #: src/views/Manage.vue:44
 msgid "Name"
+msgstr ""
+
+#: src/views/About.vue:40
+msgid "Navigate to the downloads folder"
 msgstr ""
 
 #: src/views/Feeds.vue:9
@@ -506,8 +563,32 @@ msgid ""
 "                            Make sure the url is for the embedded video!"
 msgstr ""
 
+#: src/views/About.vue:39
+msgid "Open the terminal app"
+msgstr ""
+
+#: src/views/About.vue:158
+msgid "OpenStore API/Server Contributors"
+msgstr ""
+
 #: src/views/Submit.vue:69
 msgid "OpenStore App Content Policy"
+msgstr ""
+
+#: src/views/About.vue:168
+msgid "OpenStore App Contributors"
+msgstr ""
+
+#: src/views/About.vue:71
+msgid "OpenStore group on Telegram"
+msgstr ""
+
+#: src/views/About.vue:98
+msgid "OpenStore source on GitHub"
+msgstr ""
+
+#: src/views/About.vue:163
+msgid "OpenStore Website Contributors"
 msgstr ""
 
 #: src/views/ManageRevisions.vue:39
@@ -582,6 +663,10 @@ msgstr ""
 msgid "Rules for Submissions Requiring Manual Review"
 msgstr ""
 
+#: src/views/About.vue:42
+msgid "Run the command:"
+msgstr ""
+
 #: src/views/ManagePackage.vue:342
 msgid "Save"
 msgstr ""
@@ -646,6 +731,10 @@ msgstr ""
 msgid "Submit App"
 msgstr ""
 
+#: src/views/About.vue:147
+msgid "Submit your app"
+msgstr ""
+
 #: src/views/ManagePackage.vue:568 src/views/ManageRevisions.vue:186
 msgid "Success"
 msgstr ""
@@ -662,16 +751,80 @@ msgstr ""
 msgid "Tag Line"
 msgstr ""
 
+#: src/views/About.vue:108
+msgid "Terms"
+msgstr ""
+
 #: src/views/Package.vue:13
 msgid "The app you are looking for has been removed or does not exist"
+msgstr ""
+
+#: src/views/About.vue:102
+msgid ""
+"The apps available for download from the OpenStore have their\n"
+"            own licencing and terms. Consult each individual app's page\n"
+"            for more information."
 msgstr ""
 
 #: src/views/ManagePackage.vue:569
 msgid "The changes to %{name} were saved!"
 msgstr ""
 
+#: src/views/About.vue:110
+msgid ""
+"The OpenStore a non-profit volunteer project. Although every\n"
+"            effort is made to ensure that everything in the repository is\n"
+"            safe to install, you use it AT YOUR OWN RISK. Apps uploaded to\n"
+"            the OpenStore will be subject to an automated review process\n"
+"            or a manual review process to check for potential security or\n"
+"            privacy issues. This checking is far from exhaustive though, and\n"
+"            there are no guarantees."
+msgstr ""
+
+#: src/views/About.vue:22
+msgid ""
+"The OpenStore app is installed by default on the\n"
+"            UBports builds of Ubuntu Touch.\n"
+"            But if you need to install the OpenStore manually, follow these steps:"
+msgstr ""
+
+#: src/views/About.vue:154
+msgid "The OpenStore is made possible by many amazing contributors:"
+msgstr ""
+
+#: src/views/About.vue:5
+msgid ""
+"The OpenStore is the official app store for\n"
+"            Ubuntu Touch. It is an open\n"
+"            source project run by a team of volunteers with help from the\n"
+"            community. You can discover and install new apps on your Ubuntu\n"
+"            Touch device. You can also upload and manage your own apps for\n"
+"            publication. The OpenStore encourages the apps published within\n"
+"            to be open source, but also accepts proprietary apps."
+msgstr ""
+
+#: src/views/About.vue:120
+msgid ""
+"The OpenStore respects your privacy. We don't track you or your\n"
+"            device. You do not need an account to download and install apps\n"
+"            and we do not track your downloads. For developer information we\n"
+"            count the number of downloads per app revision. Information about\n"
+"            your device (the cpu architecture, framework versions, OS version,\n"
+"            and OS language) are sent to the server to allow it to filter apps\n"
+"            to only what you can install and present your native language\n"
+"            where possible. This information is not logged or stored and\n"
+"            cannot be used to uniquely identify you."
+msgstr ""
+
 #: src/views/NotFound.vue:5
 msgid "The page you are looking for has been removed or does not exist"
+msgstr ""
+
+#: src/views/About.vue:84
+msgid ""
+"The source code for OpenStore related projects is available\n"
+"            under the GPL v3.\n"
+"            You can find the code on the OpenStore GitHub page."
 msgstr ""
 
 #: src/views/Package.vue:17
@@ -744,6 +897,10 @@ msgstr ""
 msgid "Type:"
 msgstr ""
 
+#: src/views/About.vue:16
+msgid "Ubuntu Touch"
+msgstr ""
+
 #: src/views/Browse.vue:3
 msgid "Ubuntu Touch Apps"
 msgstr ""
@@ -774,6 +931,10 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:217
 msgid "Video URL"
+msgstr ""
+
+#: src/views/About.vue:29
+msgid "View Install Instructions"
 msgstr ""
 
 #: src/views/Submit.vue:100

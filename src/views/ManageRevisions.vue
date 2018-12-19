@@ -184,7 +184,7 @@ export default {
 
                     VueNotifications.success({
                         title: this.$gettext('Success'),
-                        message: this.$gettext('New revision for %{channel} was created!').replace('%{channel}', 'channel'),
+                        message: this.$gettext('New revision for %{channel} was created!').replace('%{channel}', channel),
                     });
 
                     this.$router.push({name: 'manage_package', params: {id: this.app.id}});
