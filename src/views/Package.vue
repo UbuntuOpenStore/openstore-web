@@ -138,7 +138,7 @@
                             :class="{'text-red': isRestricted(permission)}"
                             :title="restrictedLabel(permission)"
                         >
-                            {{humanPermission(permission)}}
+                            {{permissionLabels[permission]}}
                         </li>
                         <li v-if="permissions.length === 0" v-translate>None</li>
                     </ul>
@@ -258,6 +258,36 @@ export default {
                 xenial: this.$gettext('Download Xenial'),
             },
             installTitle: this.$gettext('Install via the OpenStore app'),
+            permissionLabels: {
+                accounts: this.$gettext('Accounts'),
+                audio: this.$gettext('Audio'),
+                bluetooth: this.$gettext('Bluetooth'),
+                calendar: this.$gettext('Calendar'),
+                camera: this.$gettext('Camera'),
+                connectivity: this.$gettext('Connectivity'),
+                contacts: this.$gettext('Contacts'),
+                content_exchange_source: this.$gettext('Content Exchange Source'),
+                content_exchange: this.$gettext('Content Exchange'),
+                debug: this.$gettext('Debug'),
+                history: this.$gettext('History'),
+                'in-app-purchases': this.$gettext('In App Purchases'),
+                'keep-display-on': this.$gettext('Keep Display On'),
+                location: this.$gettext('Location'),
+                microphone: this.$gettext('Microphone'),
+                music_files_read: this.$gettext('Read Music Files'),
+                music_files: this.$gettext('Music Files'),
+                networking: this.$gettext('Networking'),
+                picture_files_read: this.$gettext('Read Picture Files'),
+                picture_files: this.$gettext('Picture Files'),
+                'push-notification-client': this.$gettext('Push Notifications'),
+                sensors: this.$gettext('Sensors'),
+                usermetrics: this.$gettext('User Metrics'),
+                video_files_read: this.$gettext('Read Video Files'),
+                video_files: this.$gettext('Video Files'),
+                video: this.$gettext('Video'),
+                webview: this.$gettext('Webview'),
+                unconfined: this.$gettext('Full System Access'),
+            }
         };
     },
     created() {
@@ -321,21 +351,6 @@ export default {
             }
 
             return '';
-        },
-        humanPermission(permission) {
-            // TODO translate permissions
-
-            /* eslint-disable arrow-body-style */
-            let humanPerm = permission.replace(/_/g, ' ').replace(/-/g, ' ').replace(/\w\S*/g, (txt) => {
-                return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-            });
-
-
-            if (permission == 'unconfined') {
-                humanPerm = this.$gettext('Full System Access');
-            }
-
-            return humanPerm;
         },
     },
     computed: {
