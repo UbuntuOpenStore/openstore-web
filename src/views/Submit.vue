@@ -36,13 +36,11 @@
                 <h1 v-translate>Rules for Submissions Requiring Manual Review</h1>
 
                 <ul class="p-list">
-                    <!-- TODO translate -->
                     <li class="p-list__item is-ticked">
-                        Send us a link to a repository for your app to our
-                        <a href="https://launchpad.net/~openstore-team">mailing list</a>
-                        or our
-                        <a href="/telegram">telegram group</a>.
-                        along with some instructions on how to build it.
+                        <a href="/telegram">
+                            Send us a link to a repository for your app to our telegram group
+                            along with some instructions on how to build it.
+                        </a>
                     </li>
                     <li class="p-list__item is-ticked" v-translate>
                         Give a short explanation why you can’t publish the app without
@@ -79,7 +77,7 @@
                     promote a better enviroment for everyone.
                 </p>
 
-                <h2>Prohibited Apps:</h2>
+                <h2 v-translate>Prohibited Apps:</h2>
 
                 <ul class="p-list">
                     <li class="p-list__item is-ticked">
@@ -230,14 +228,13 @@ export default {
                     this.saving = false;
                     this.$router.push({name: 'manage_package', params: {id: app.id}});
                 }).catch((err) => {
-                    // TODO translate
-                    let error = 'An unknown error has occured';
+                    let error = this.$gettext('An unknown error has occured');
                     if (err.response && err.response.data && err.response.data.message) {
                         error = err.response.data.message;
                     }
 
                     VueNotifications.error({
-                        title: 'Error',
+                        title: this.$gettext('Error'),
                         message: error,
                     });
 

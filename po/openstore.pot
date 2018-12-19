@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-19 14:00-0500\n"
+"POT-Creation-Date: 2018-12-19 14:03-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,7 +55,7 @@ msgstr ""
 msgid "An error occured loading your app data"
 msgstr ""
 
-#: src/views/ManageRevisions.vue:192
+#: src/views/ManageRevisions.vue:192 src/views/Submit.vue:231
 msgid "An unknown error has occured"
 msgstr ""
 
@@ -81,11 +81,11 @@ msgstr ""
 msgid "App"
 msgstr ""
 
-#: src/views/Submit.vue:110
+#: src/views/Submit.vue:108
 msgid "App containing or promoting any of the above are strictly prohibited."
 msgstr ""
 
-#: src/views/Submit.vue:150
+#: src/views/Submit.vue:148
 msgid "App Name"
 msgstr ""
 
@@ -105,20 +105,20 @@ msgstr ""
 msgid "Apps"
 msgstr ""
 
-#: src/views/Submit.vue:116
+#: src/views/Submit.vue:114
 msgid ""
 "Apps containing gambling involving real world money\n"
 "                        transactions are not allowed. This includes, but is not\n"
 "                        limited to, online casinos, betting, and lotteries."
 msgstr ""
 
-#: src/views/Submit.vue:94
+#: src/views/Submit.vue:92
 msgid ""
 "Apps containing or promoting child abuse or child sexual\n"
 "                        abuse are strictly prohibited."
 msgstr ""
 
-#: src/views/Submit.vue:101
+#: src/views/Submit.vue:99
 msgid ""
 "Apps containing or promoting gratuitous violence are not\n"
 "                        allowed. This includes, but is not limited to, violence,\n"
@@ -126,7 +126,7 @@ msgid ""
 "                        imagery."
 msgstr ""
 
-#: src/views/Submit.vue:86
+#: src/views/Submit.vue:84
 msgid ""
 "Apps containing or promoting sexually explicit content\n"
 "                        are not allowed. This includes, but is not limited to,\n"
@@ -139,7 +139,7 @@ msgid ""
 "                    with the \"Log In\" link above."
 msgstr ""
 
-#: src/views/Submit.vue:124
+#: src/views/Submit.vue:122
 msgid "Apps promoting illegal activities (based on USA law) are not allowed."
 msgstr ""
 
@@ -149,7 +149,7 @@ msgid ""
 "                        admin in our telegram group."
 msgstr ""
 
-#: src/views/Submit.vue:130
+#: src/views/Submit.vue:128
 msgid ""
 "Apps that are found to be stealing the users data, trying\n"
 "                        to escalate their privileges without user consent, or\n"
@@ -192,7 +192,7 @@ msgid "Bug Tracker"
 msgstr ""
 
 #: src/views/ManagePackage.vue:347 src/views/ManageRevisions.vue:64
-#: src/views/Submit.vue:186
+#: src/views/Submit.vue:184
 msgid "Cancel"
 msgstr ""
 
@@ -228,7 +228,7 @@ msgstr ""
 msgid "Chat with us on Telegram"
 msgstr ""
 
-#: src/views/Submit.vue:93
+#: src/views/Submit.vue:91
 msgid "Child Endangerment"
 msgstr ""
 
@@ -310,6 +310,7 @@ msgid "Edit"
 msgstr ""
 
 #: src/views/ManagePackage.vue:491 src/views/ManageRevisions.vue:141
+#: src/views/Submit.vue:237
 msgid "Error"
 msgstr ""
 
@@ -349,11 +350,11 @@ msgstr ""
 msgid "Full System Access"
 msgstr ""
 
-#: src/views/Submit.vue:115
+#: src/views/Submit.vue:113
 msgid "Gambling"
 msgstr ""
 
-#: src/views/Submit.vue:46
+#: src/views/Submit.vue:44
 msgid ""
 "Give a short explanation why you can’t publish the app without\n"
 "                    extra privileges. No need to go into details, a one liner like \"needs to run\n"
@@ -373,7 +374,7 @@ msgstr ""
 msgid "GPL v3 License"
 msgstr ""
 
-#: src/views/Submit.vue:109
+#: src/views/Submit.vue:107
 msgid "Harassment, Bullying, or Hate Speech"
 msgstr ""
 
@@ -385,7 +386,7 @@ msgstr ""
 msgid "ID"
 msgstr ""
 
-#: src/views/Submit.vue:52
+#: src/views/Submit.vue:50
 msgid ""
 "If an application could be published without manual review\n"
 "                    if it wouldn’t be for that one cool feature, publish a stripped\n"
@@ -393,7 +394,7 @@ msgid ""
 "                    confinement."
 msgstr ""
 
-#: src/views/Submit.vue:123
+#: src/views/Submit.vue:121
 msgid "Illegal Activities"
 msgstr ""
 
@@ -445,7 +446,7 @@ msgstr ""
 msgid "Log Out"
 msgstr ""
 
-#: src/views/Submit.vue:142
+#: src/views/Submit.vue:140
 msgid "Login to submit your app"
 msgstr ""
 
@@ -465,7 +466,7 @@ msgstr ""
 msgid "Maintainer"
 msgstr ""
 
-#: src/views/Submit.vue:129
+#: src/views/Submit.vue:127
 msgid "Malware"
 msgstr ""
 
@@ -533,7 +534,7 @@ msgstr ""
 msgid "Oldest Update"
 msgstr ""
 
-#: src/views/Submit.vue:71
+#: src/views/Submit.vue:69
 msgid ""
 "One of the main goals of the OpenStore is to provide provide\n"
 "                a safe app store for people of all ages. To accomplish this\n"
@@ -550,7 +551,7 @@ msgid ""
 "                    or a webapp."
 msgstr ""
 
-#: src/views/Submit.vue:58
+#: src/views/Submit.vue:56
 msgid ""
 "Only open source applications allowed for manual review: As the\n"
 "                    applications might have arbitrary access to the device, every\n"
@@ -571,7 +572,7 @@ msgstr ""
 msgid "OpenStore API/Server Contributors"
 msgstr ""
 
-#: src/views/Submit.vue:69
+#: src/views/Submit.vue:67
 msgid "OpenStore App Content Policy"
 msgstr ""
 
@@ -617,6 +618,10 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:43
 msgid "Presentation"
+msgstr ""
+
+#: src/views/Submit.vue:79
+msgid "Prohibited Apps:"
 msgstr ""
 
 #: src/views/ManagePackage.vue:14
@@ -691,7 +696,7 @@ msgstr ""
 msgid "Search"
 msgstr ""
 
-#: src/views/Submit.vue:85
+#: src/views/Submit.vue:83
 msgid "Sexually Explicit Content"
 msgstr ""
 
@@ -723,11 +728,11 @@ msgstr ""
 msgid "Status"
 msgstr ""
 
-#: src/App.vue:28 src/views/Submit.vue:181
+#: src/App.vue:28 src/views/Submit.vue:179
 msgid "Submit"
 msgstr ""
 
-#: src/views/Manage.vue:8 src/views/Submit.vue:146
+#: src/views/Manage.vue:8 src/views/Submit.vue:144
 msgid "Submit App"
 msgstr ""
 
@@ -851,7 +856,7 @@ msgstr ""
 msgid "This app has access to restricted system data, see permissions for more details"
 msgstr ""
 
-#: src/views/Submit.vue:158
+#: src/views/Submit.vue:156
 msgid ""
 "This is the unique identifier for your app. It must match\n"
 "                            exactly the \"name\" field in your click's manifest.json\n"
@@ -937,7 +942,7 @@ msgstr ""
 msgid "View Install Instructions"
 msgstr ""
 
-#: src/views/Submit.vue:100
+#: src/views/Submit.vue:98
 msgid "Violence"
 msgstr ""
 
