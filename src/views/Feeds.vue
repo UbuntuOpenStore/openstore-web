@@ -30,10 +30,12 @@ import opengraph from '@/opengraph';
 export default {
     name: 'Feeds',
     head: {
-        title: {inner: 'Feeds'},
+        title: function() {
+            return {inner: this.$gettext('Feeds')};
+        },
         meta: function() {
             return opengraph({
-                title: 'Feeds - OpenStore',
+                title: `${this.$gettext('Feeds')} - OpenStore`,
             });
         },
     },

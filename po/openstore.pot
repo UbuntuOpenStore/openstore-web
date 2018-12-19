@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-19 14:19-0500\n"
+"POT-Creation-Date: 2018-12-19 15:22-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,8 @@ msgstr ""
 msgid "A comma separated list of keywords"
 msgstr ""
 
-#: src/App.vue:34 src/views/About.vue:3
+#: src/App.vue:34 src/views/About.vue:3 src/views/About.vue:179
+#: src/views/About.vue:183
 msgid "About"
 msgstr ""
 
@@ -55,7 +56,7 @@ msgstr ""
 msgid "An error occured loading your app data"
 msgstr ""
 
-#: src/views/ManageRevisions.vue:191 src/views/Submit.vue:212
+#: src/views/ManageRevisions.vue:191 src/views/Submit.vue:214
 msgid "An unknown error has occured"
 msgstr ""
 
@@ -75,7 +76,7 @@ msgstr ""
 msgid "API Key"
 msgstr ""
 
-#: src/components/Types.vue:3 src/views/Manage.vue:45 src/views/Stats.vue:83
+#: src/components/Types.vue:3 src/views/Manage.vue:45 src/views/Stats.vue:85
 msgid "App"
 msgstr ""
 
@@ -171,6 +172,10 @@ msgstr ""
 
 #: src/App.vue:31
 msgid "Browse"
+msgstr ""
+
+#: src/views/Browse.vue:181
+msgid "Browse Apps"
 msgstr ""
 
 #: src/views/About.vue:73
@@ -296,8 +301,12 @@ msgid "Edit"
 msgstr ""
 
 #: src/views/ManagePackage.vue:490 src/views/ManageRevisions.vue:140
-#: src/views/Submit.vue:218
+#: src/views/Submit.vue:220
 msgid "Error"
+msgstr ""
+
+#: src/views/Feeds.vue:34 src/views/Feeds.vue:38
+msgid "Feeds"
 msgstr ""
 
 #: src/views/ManagePackage.vue:262
@@ -330,7 +339,7 @@ msgstr ""
 msgid "Framework:"
 msgstr ""
 
-#: src/views/Package.vue:327
+#: src/views/Package.vue:335
 msgid "Full System Access"
 msgstr ""
 
@@ -345,11 +354,11 @@ msgid ""
 "List all the special features you have, if there are more."
 msgstr ""
 
-#: src/views/Browse.vue:209 src/views/Manage.vue:163
+#: src/views/Browse.vue:209 src/views/Manage.vue:165
 msgid "Go back a page"
 msgstr ""
 
-#: src/views/Browse.vue:210 src/views/Manage.vue:164
+#: src/views/Browse.vue:210 src/views/Manage.vue:166
 msgid "Go to the next page"
 msgstr ""
 
@@ -387,11 +396,15 @@ msgstr ""
 msgid "Install"
 msgstr ""
 
-#: src/views/Browse.vue:208 src/views/Manage.vue:162
+#: src/views/Package.vue:260
+msgid "Install via the OpenStore app"
+msgstr ""
+
+#: src/views/Browse.vue:208 src/views/Manage.vue:164
 msgid "Jump to the first page"
 msgstr ""
 
-#: src/views/Browse.vue:211 src/views/Manage.vue:165
+#: src/views/Browse.vue:211 src/views/Manage.vue:167
 msgid "Jump to the last page"
 msgstr ""
 
@@ -427,6 +440,10 @@ msgstr ""
 msgid "Log Out"
 msgstr ""
 
+#: src/views/Login.vue:41 src/views/Login.vue:45
+msgid "Login"
+msgstr ""
+
 #: src/views/Submit.vue:123
 msgid "Login to submit your app"
 msgstr ""
@@ -451,8 +468,13 @@ msgstr ""
 msgid "Malware"
 msgstr ""
 
-#: src/App.vue:40
+#: src/App.vue:40 src/views/Manage.vue:142 src/views/ManagePackage.vue:369
+#: src/views/ManagePackage.vue:371
 msgid "Manage"
+msgstr ""
+
+#: src/views/Manage.vue:138
+msgid "Manage Apps"
 msgstr ""
 
 #: src/views/Manage.vue:44
@@ -467,7 +489,8 @@ msgstr ""
 msgid "New Apps"
 msgstr ""
 
-#: src/views/ManagePackage.vue:37
+#: src/views/ManagePackage.vue:37 src/views/ManageRevisions.vue:81
+#: src/views/ManageRevisions.vue:83
 msgid "New Revision"
 msgstr ""
 
@@ -626,6 +649,10 @@ msgstr ""
 msgid "Report an Issue"
 msgstr ""
 
+#: src/views/Package.vue:320
+msgid "Restricted permission"
+msgstr ""
+
 #: src/views/ManagePackage.vue:292
 msgid "Revision"
 msgstr ""
@@ -650,7 +677,7 @@ msgstr ""
 msgid "Save"
 msgstr ""
 
-#: src/components/Types.vue:4 src/views/Stats.vue:84
+#: src/components/Types.vue:4 src/views/Stats.vue:86
 msgid "Scope"
 msgstr ""
 
@@ -694,7 +721,8 @@ msgstr ""
 msgid "Source:"
 msgstr ""
 
-#: src/views/ManagePackage.vue:65 src/views/Stats.vue:3
+#: src/views/ManagePackage.vue:65 src/views/Stats.vue:3 src/views/Stats.vue:69
+#: src/views/Stats.vue:73
 msgid "Stats"
 msgstr ""
 
@@ -706,7 +734,8 @@ msgstr ""
 msgid "Submit"
 msgstr ""
 
-#: src/views/Manage.vue:8 src/views/Submit.vue:127
+#: src/views/Manage.vue:8 src/views/Submit.vue:127 src/views/Submit.vue:185
+#: src/views/Submit.vue:189
 msgid "Submit App"
 msgstr ""
 
@@ -813,11 +842,11 @@ msgstr ""
 msgid "This app contains NSFW material"
 msgstr ""
 
-#: src/views/Package.vue:338
+#: src/views/Package.vue:346
 msgid "This app does not have access to restricted system data, see permissions for more details"
 msgstr ""
 
-#: src/views/Package.vue:340
+#: src/views/Package.vue:348
 msgid "This app has access to restricted system data, see permissions for more details"
 msgstr ""
 
@@ -873,7 +902,7 @@ msgstr ""
 msgid "Ubuntu Touch Apps"
 msgstr ""
 
-#: src/views/Stats.vue:81
+#: src/views/Stats.vue:83
 msgid "Uncategorized"
 msgstr ""
 
@@ -922,11 +951,11 @@ msgstr ""
 msgid "Vivid and Xenial"
 msgstr ""
 
-#: src/components/Types.vue:5 src/views/Stats.vue:85
+#: src/components/Types.vue:5 src/views/Stats.vue:87
 msgid "Web App"
 msgstr ""
 
-#: src/components/Types.vue:6 src/views/Stats.vue:86
+#: src/components/Types.vue:6 src/views/Stats.vue:88
 msgid "Web App+"
 msgstr ""
 

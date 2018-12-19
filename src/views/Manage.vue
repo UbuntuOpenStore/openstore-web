@@ -134,10 +134,12 @@ import opengraph from '@/opengraph';
 export default {
     name: 'Manage',
     head: {
-        title: {inner: 'Manage Apps'},
+        title: function() {
+            return {inner: this.$gettext('Manage Apps')};
+        },
         meta: function() {
             return opengraph({
-                title: 'Manage - OpenStore',
+                title: `${this.$gettext('Manage')} - OpenStore`,
             });
         },
     },

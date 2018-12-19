@@ -175,10 +175,12 @@ import Vue from 'vue';
 export default {
     name: 'About',
     head: {
-        title: {inner: 'About'},
+        title: function() {
+            return {inner: this.$gettext('About')};
+        },
         meta: function() {
             return opengraph({
-                title: 'About - OpenStore',
+                title: `${this.$gettext('About')} - OpenStore`,
             });
         },
     },

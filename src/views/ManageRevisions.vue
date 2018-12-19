@@ -78,9 +78,9 @@ export default {
     name: 'ManageRevisions',
     head: {
         title: function() {
-            let title = 'New Revision';
+            let title = this.$gettext('New Revision');
             if (this.app) {
-                title = `New Revision ${this.app.name}`;
+                title = `${this.$gettext('New Revision')} ${this.app.name}`;
             }
 
             return {inner: title};

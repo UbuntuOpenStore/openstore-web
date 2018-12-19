@@ -101,9 +101,6 @@
 <script>
 import api from '@/api';
 
-// TODO translate titles
-// TODO clean up newlines/spaces in translations
-
 export default {
     name: 'app',
     data() {

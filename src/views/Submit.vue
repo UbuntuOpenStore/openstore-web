@@ -181,10 +181,12 @@ import opengraph from '@/opengraph';
 export default {
     name: 'Submit',
     head: {
-        title: {inner: 'Submit App'},
+        title: function() {
+            return {inner: this.$gettext('Submit App')};
+        },
         meta: function() {
             return opengraph({
-                title: 'Submit App - OpenStore',
+                title: `${this.$gettext('Submit App')} - OpenStore`,
             });
         },
     },

@@ -366,9 +366,9 @@ export default {
     },
     head: {
         title: function() {
-            let title = 'Manage';
+            let title = this.$gettext('Manage');
             if (this.app) {
-                title = `Manage ${this.app.name}`;
+                title = `${this.$gettext('Manage')} ${this.app.name}`;
             }
 
             return {inner: title};

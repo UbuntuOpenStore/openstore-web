@@ -65,10 +65,12 @@ import opengraph from '@/opengraph';
 export default {
     name: 'Stats',
     head: {
-        title: {inner: 'Stats'},
+        title: function() {
+            return {inner: this.$gettext('Stats')};
+        },
         meta: function() {
             return opengraph({
-                title: 'Stats - OpenStore',
+                title: `${this.$gettext('Stats')} - OpenStore`,
             });
         },
     },

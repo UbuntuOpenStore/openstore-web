@@ -178,7 +178,7 @@ export default {
     },
     head: {
         title: function() {
-            return {inner: 'Browse Apps'};
+            return {inner: this.$gettext('Browse Apps')};
         },
         meta: function() {
             return opengraph();

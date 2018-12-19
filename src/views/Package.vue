@@ -41,7 +41,7 @@
                             :href="openstoreLink"
                             class="p-button--positive"
                             v-if="app.id != 'openstore.openstore-team'"
-                            title="Install via the OpenStore app"
+                            :title="installTitle"
                             v-translate
                         >Install</a>
 
@@ -136,7 +136,7 @@
                             v-for="permission in permissions"
                             :key="permission"
                             :class="{'text-red': isRestricted(permission)}"
-                            :title="isRestricted(permission) ? 'Restricted permission' : ''"
+                            :title="restrictedLabel(permission)"
                         >
                             {{humanPermission(permission)}}
                         </li>
@@ -257,6 +257,7 @@ export default {
                 vivid: this.$gettext('Download Vivid'),
                 xenial: this.$gettext('Download Xenial'),
             },
+            installTitle: this.$gettext('Install via the OpenStore app'),
         };
     },
     created() {
@@ -313,6 +314,13 @@ export default {
             }
 
             return isRestricted;
+        },
+        restrictedLabel(permission) {
+            if (this.isRestricted(permission)) {
+                return this.$gettext('Restricted permission');
+            }
+
+            return '';
         },
         humanPermission(permission) {
             // TODO translate permissions
