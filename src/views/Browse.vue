@@ -1,20 +1,20 @@
 <template>
     <div>
         <div class="p-strip">
-            <h1>Ubuntu Touch Apps</h1>
+            <h1 v-translate>Ubuntu Touch Apps</h1>
         </div>
 
         <div class="row filters">
             <form class="p-form p-form--inline" v-on:submit.prevent>
                 <div class="p-form__group">
-                    <label for="search" class="p-form__label">Search</label>
+                    <label for="search" class="p-form__label" v-translate>Search</label>
                     <input type="text" id="search" class="p-form__control" v-model="query.search" />
                 </div>
 
                 <div class="p-form__group">
-                    <label for="category" class="p-form__label">Category</label>
+                    <label for="category" class="p-form__label" v-translate>Category</label>
                     <select id="category" class="p-form__control" v-model="query.category">
-                        <option value="">All Categories</option>
+                        <option value="" v-translate>All Categories</option>
                         <option
                             v-for="category in categories"
                             :value="category.category"
@@ -27,30 +27,30 @@
                 </div>
 
                 <div class="p-form__group">
-                    <label for="type" class="p-form__label">Type:</label>
+                    <label for="type" class="p-form__label" v-translate>Type:</label>
                     <select id="type" class="p-form__control" v-model="query.type">
-                        <option value="">All Types</option>
-                        <option value="app">Apps</option>
-                        <option value="webapp">Web Apps</option>
-                        <option value="scope">Scopes</option>
+                        <option value="" v-translate>All Types</option>
+                        <option value="app" v-translate>Apps</option>
+                        <option value="webapp" v-translate>Web Apps</option>
+                        <option value="scope" v-translate>Scopes</option>
                     </select>
                 </div>
 
                 <div class="p-form__group">
-                    <label for="sort-by" class="p-form__label">Sort By:</label>
+                    <label for="sort-by" class="p-form__label" v-translate>Sort By:</label>
                     <select id="sort-by" class="p-form__control" v-model="query.sort">
-                        <option value="relevance">Relevance</option>
-                        <option value="name">Title (A-Z)</option>
-                        <option value="-name">Title (Z-A)</option>
-                        <option value="-published_date">Newest</option>
-                        <option value="published_date">Oldest</option>
-                        <option value="-updated_date">Latest Update</option>
-                        <option value="updated_date">Oldest Update</option>
+                        <option value="relevance" v-translate>Relevance</option>
+                        <option value="name" v-translate>Title (A-Z)</option>
+                        <option value="-name" v-translate>Title (Z-A)</option>
+                        <option value="-published_date" v-translate>Newest</option>
+                        <option value="published_date" v-translate>Oldest</option>
+                        <option value="-updated_date" v-translate>Latest Update</option>
+                        <option value="updated_date" v-translate>Oldest Update</option>
                     </select>
                 </div>
 
                 <div class="p-form__group">
-                    <label class="p-form__label">{{moreFilters ? 'Less' : 'More'}} Filters</label>
+                    <label class="p-form__label" v-translate>Filters</label>
                     <button class="p-form__control more-button" @click="moreFilters = !moreFilters">
                         <i class="fa" :class="{'fa-plus': !moreFilters, 'fa-minus': moreFilters}"></i>
                     </button>
@@ -61,11 +61,11 @@
         <div class="row filters" v-if="moreFilters">
             <form class="p-form p-form--inline" v-on:submit.prevent>
                 <div class="p-form__group">
-                    <label for="channel" class="p-form__label">Channel:</label>
+                    <label for="channel" class="p-form__label" v-translate>Channel:</label>
                     <select id="channel" class="p-form__control" v-model="query.channel">
-                        <option value="">All Channels</option>
-                        <option value="vivid">Vivid</option>
-                        <option value="xenial">Xenial</option>
+                        <option value="" v-translate>All Channels</option>
+                        <option value="vivid" v-translate>Vivid</option>
+                        <option value="xenial" v-translate>Xenial</option>
                     </select>
                 </div>
 
@@ -83,7 +83,7 @@
             </form>
         </div>
 
-        <h2 v-if="error" class="center text-red">
+        <h2 v-if="error" class="center text-red" v-translate>
             There was an error trying to load the app list, please refresh and try again.
         </h2>
 
@@ -108,7 +108,7 @@
                             <router-link class="p-matrix__link" :to="{name: 'app', params: {id: app.id}}">{{app.name}}</router-link>
                         </h3>
 
-                        <p class="p-matrix__desc" v-if="app.nsfw">
+                        <p class="p-matrix__desc" v-if="app.nsfw" v-translate>
                             NSFW content
                         </p>
                         <p class="p-matrix__desc" v-else>
@@ -119,20 +119,20 @@
             </ul>
 
             <h3 v-if="apps.length === 0 && !error" class="center">
-                No apps found.
-                <span v-if="query.search">Try searching for something else</span>
+                <span v-translate>No apps found.</span>
+                <span v-if="query.search" v-translate>Try searching for something else</span>
             </h3>
         </div>
 
         <div class="row center" v-if="paging.total > 1">
             <ul class="pagination">
-                <li :class="{disabled: page <= 0}" class="u-hide--small" title="Jump to the first page">
+                <li :class="{disabled: page <= 0}" class="u-hide--small" :title="firstPageTitle">
                     <a @click="setPage(0)">
                         <i class="fa fa-angle-double-left"></i>
                     </a>
                 </li>
 
-                <li :class="{disabled: page <= 0}" title="Go back a page">
+                <li :class="{disabled: page <= 0}" :title="backPageTitle">
                     <a @click="setPage(page - 1)">
                         <i class="fa fa-angle-left"></i>
                     </a>
@@ -142,13 +142,13 @@
                     <a @click="setPage(p)">{{p + 1}}</a>
                 </li>
 
-                <li :class="{disabled: page >= paging.total}" title="Go to the next page">
+                <li :class="{disabled: page >= paging.total}" :title="nextPageTitle">
                     <a @click="setPage(page + 1)">
                         <i class="fa fa-angle-right"></i>
                     </a>
                 </li>
 
-                <li :class="{disabled: page >= paging.total}" class="u-hide--small" title="Jump to the last page">
+                <li :class="{disabled: page >= paging.total}" class="u-hide--small" :title="lastPageTitle">
                     <a @click="setPage(paging.total)">
                         <i class="fa fa-angle-double-right"></i>
                     </a>
@@ -205,6 +205,10 @@ export default {
             loading: false,
             error: false,
             moreFilters: false,
+            firstPageTitle: this.$gettext('Jump to the first page'),
+            backPageTitle: this.$gettext('Go back a page'),
+            nextPageTitle: this.$gettext('Go to the next page'),
+            lastPageTitle: this.$gettext('Jump to the last page'),
         };
     },
     created() {
@@ -375,7 +379,8 @@ export default {
             this.refresh();
         }, 300),
         refreshCategories() {
-            api.categories().then((data) => {
+            // TODO refresh categories on a language change
+            api.categories(this.$language.current).then((data) => {
                 this.categories = data;
 
                 let category = this.category;

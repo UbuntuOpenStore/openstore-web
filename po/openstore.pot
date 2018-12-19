@@ -1,0 +1,779 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the openstore-web package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: openstore-web 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-12-19 09:52-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/views/Package.vue:119
+msgid ""
+"*This app contains NSFW content, to view the description and\n"
+"                    screenshots, click the above button."
+msgstr ""
+
+#: src/views/ManagePackage.vue:154
+msgid "A comma separated list of keywords"
+msgstr ""
+
+#: src/App.vue:34
+msgid "About"
+msgstr ""
+
+#: src/App.vue:59
+msgid "About Us"
+msgstr ""
+
+#: src/views/Browse.vue:16
+msgid "All Categories"
+msgstr ""
+
+#: src/views/Browse.vue:65
+msgid "All Channels"
+msgstr ""
+
+#: src/views/Browse.vue:31
+msgid "All Types"
+msgstr ""
+
+#: src/views/Login.vue:26
+msgid "An account is not needed to download or install apps."
+msgstr ""
+
+#: src/views/Manage.vue:12
+msgid "API Key"
+msgstr ""
+
+#: src/components/Types.vue:3 src/views/Manage.vue:45
+msgid "App"
+msgstr ""
+
+#: src/views/Submit.vue:110
+msgid "App containing or promoting any of the above are strictly prohibited."
+msgstr ""
+
+#: src/views/Submit.vue:150
+msgid "App Name"
+msgstr ""
+
+#: src/App.vue:69
+msgid "App Stats"
+msgstr ""
+
+#: src/views/Stats.vue:19
+msgid "App Type"
+msgstr ""
+
+#: src/views/Stats.vue:15
+msgid "App Types"
+msgstr ""
+
+#: src/views/Browse.vue:32
+msgid "Apps"
+msgstr ""
+
+#: src/views/Submit.vue:116
+msgid ""
+"Apps containing gambling involving real world money\n"
+"                        transactions are not allowed. This includes, but is not\n"
+"                        limited to, online casinos, betting, and lotteries."
+msgstr ""
+
+#: src/views/Submit.vue:94
+msgid ""
+"Apps containing or promoting child abuse or child sexual\n"
+"                        abuse are strictly prohibited."
+msgstr ""
+
+#: src/views/Submit.vue:101
+msgid ""
+"Apps containing or promoting gratuitous violence are not\n"
+"                        allowed. This includes, but is not limited to, violence,\n"
+"                        terrorism, bomb/weapon making, self harm, and grotesque\n"
+"                        imagery."
+msgstr ""
+
+#: src/views/Submit.vue:86
+msgid ""
+"Apps containing or promoting sexually explicit content\n"
+"                        are not allowed. This includes, but is not limited to,\n"
+"                        pornography and services promoting sexually explicit content."
+msgstr ""
+
+#: src/views/Submit.vue:7
+msgid ""
+"Apps not requiring manual review can be submitted by logging in\n"
+"                    with the \"Log In\" link above."
+msgstr ""
+
+#: src/views/Submit.vue:124
+msgid "Apps promoting illegal activities (based on USA law) are not allowed."
+msgstr ""
+
+#: src/views/Submit.vue:21
+msgid ""
+"Apps requiring manual review must be submitted by contacting an\n"
+"                        admin in our telegram group."
+msgstr ""
+
+#: src/views/Submit.vue:130
+msgid ""
+"Apps that are found to be stealing the users data, trying\n"
+"                        to escalate their privileges without user consent, or\n"
+"                        executing malicious process are strictly prohibited."
+msgstr ""
+
+#: src/views/ManagePackage.vue:256
+msgid "Architecture"
+msgstr ""
+
+#: src/views/Package.vue:188
+msgid "Architecture:"
+msgstr ""
+
+#: src/views/Manage.vue:46 src/views/ManagePackage.vue:252
+msgid "Author"
+msgstr ""
+
+#: src/views/Package.vue:150
+msgid "Author:"
+msgstr ""
+
+#: src/views/Package.vue:7
+msgid "Back"
+msgstr ""
+
+#: src/App.vue:31
+msgid "Browse"
+msgstr ""
+
+#: src/views/ManagePackage.vue:355 src/views/ManageRevisions.vue:65
+#: src/views/Submit.vue:186
+msgid "Cancel"
+msgstr ""
+
+#: src/views/Browse.vue:14
+msgid "Category"
+msgstr ""
+
+#: src/views/Package.vue:172
+msgid "Category:"
+msgstr ""
+
+#: src/views/ManagePackage.vue:96
+msgid "Changelog"
+msgstr ""
+
+#: src/views/Package.vue:128
+msgid "Changelog:"
+msgstr ""
+
+#: src/views/ManagePackage.vue:278 src/views/ManagePackage.vue:302
+#: src/views/ManageRevisions.vue:14
+msgid "Channel"
+msgstr ""
+
+#: src/views/Browse.vue:63
+msgid "Channel:"
+msgstr ""
+
+#: src/views/ManagePackage.vue:277
+msgid "Channels"
+msgstr ""
+
+#: src/App.vue:64
+msgid "Chat with us on Telegram"
+msgstr ""
+
+#: src/views/Submit.vue:93
+msgid "Child Endangerment"
+msgstr ""
+
+#: src/views/ManagePackage.vue:139
+msgid "Choose a category"
+msgstr ""
+
+#: src/views/ManagePackage.vue:170
+msgid "Choose a license"
+msgstr ""
+
+#: src/views/ManagePackage.vue:229
+msgid "Choose a maintainer"
+msgstr ""
+
+#: src/views/Stats.vue:20
+msgid "Count"
+msgstr ""
+
+#: src/views/ManageRevisions.vue:56
+msgid "Create"
+msgstr ""
+
+#: src/views/ManagePackage.vue:85
+msgid "Description"
+msgstr ""
+
+#: src/views/ManagePackage.vue:55
+msgid "Discovery"
+msgstr ""
+
+#: src/views/Package.vue:92
+msgid "Donate"
+msgstr ""
+
+#: src/views/ManagePackage.vue:213
+msgid "Donate URL"
+msgstr ""
+
+#: src/views/ManagePackage.vue:295
+msgid "Download Stats"
+msgstr ""
+
+#: src/views/Manage.vue:49 src/views/Manage.vue:69
+#: src/views/ManagePackage.vue:304
+msgid "Downloads"
+msgstr ""
+
+#: src/views/ManagePackage.vue:114
+msgid "Drag and drop to sort screenshots."
+msgstr ""
+
+#: src/views/ManagePackage.vue:8
+msgid "Edit"
+msgstr ""
+
+#: src/views/ManagePackage.vue:264
+msgid "File Size"
+msgstr ""
+
+#: src/views/ManageRevisions.vue:29
+msgid "File Upload"
+msgstr ""
+
+#: src/views/Browse.vue:52
+msgid "Filters"
+msgstr ""
+
+#: src/App.vue:74
+msgid "Fork us on Github"
+msgstr ""
+
+#: src/views/ManagePackage.vue:260
+msgid "Framework"
+msgstr ""
+
+#: src/views/Package.vue:184
+msgid "Framework:"
+msgstr ""
+
+#: src/views/Submit.vue:115
+msgid "Gambling"
+msgstr ""
+
+#: src/views/Submit.vue:46
+msgid ""
+"Give a short explanation why you can’t publish the app without\n"
+"                    extra privileges. No need to go into details, a one liner like \"needs to run\n"
+"                    a daemon in the background\" will do. List all the special features you have,\n"
+"                    if there are more."
+msgstr ""
+
+#: src/views/Browse.vue:209 src/views/Manage.vue:164
+msgid "Go back a page"
+msgstr ""
+
+#: src/views/Browse.vue:210 src/views/Manage.vue:165
+msgid "Go to the next page"
+msgstr ""
+
+#: src/views/Submit.vue:109
+msgid "Harassment, Bullying, or Hate Speech"
+msgstr ""
+
+#: src/views/Manage.vue:43
+msgid "Icon"
+msgstr ""
+
+#: src/views/ManagePackage.vue:248
+msgid "ID"
+msgstr ""
+
+#: src/views/Submit.vue:52
+msgid ""
+"If an application could be published without manual review\n"
+"                    if it wouldn’t be for that one cool feature, publish a stripped\n"
+"                    down version! Not everyone will want to install apps with less\n"
+"                    confinement."
+msgstr ""
+
+#: src/views/Submit.vue:123
+msgid "Illegal Activities"
+msgstr ""
+
+#: src/views/ManagePackage.vue:60
+msgid "Info"
+msgstr ""
+
+#: src/views/Package.vue:39
+msgid "Install"
+msgstr ""
+
+#: src/views/Browse.vue:208 src/views/Manage.vue:163
+msgid "Jump to the first page"
+msgstr ""
+
+#: src/views/Browse.vue:211 src/views/Manage.vue:166
+msgid "Jump to the last page"
+msgstr ""
+
+#: src/views/Manage.vue:16
+msgid "Keep your api key private!"
+msgstr ""
+
+#: src/views/ManagePackage.vue:152
+msgid "Keywords"
+msgstr ""
+
+#: src/views/Browse.vue:46
+msgid "Latest Update"
+msgstr ""
+
+#: src/views/ManagePackage.vue:168
+msgid "License"
+msgstr ""
+
+#: src/views/Package.vue:168
+msgid "License:"
+msgstr ""
+
+#: src/App.vue:37
+msgid "Log In"
+msgstr ""
+
+#: src/views/Login.vue:24
+msgid "Log in to the OpenStore to be able to manage your apps."
+msgstr ""
+
+#: src/App.vue:43
+msgid "Log Out"
+msgstr ""
+
+#: src/views/Submit.vue:142
+msgid "Login to submit your app"
+msgstr ""
+
+#: src/views/Login.vue:7
+msgid "Login via GitHub"
+msgstr ""
+
+#: src/views/Login.vue:12
+msgid "Login via GitLab"
+msgstr ""
+
+#: src/views/Login.vue:18
+msgid "Login via Ubuntu"
+msgstr ""
+
+#: src/views/ManagePackage.vue:227
+msgid "Maintainer"
+msgstr ""
+
+#: src/views/Submit.vue:129
+msgid "Malware"
+msgstr ""
+
+#: src/App.vue:40
+msgid "Manage"
+msgstr ""
+
+#: src/views/Manage.vue:44
+msgid "Name"
+msgstr ""
+
+#: src/views/Feeds.vue:9
+msgid "New Apps"
+msgstr ""
+
+#: src/views/ManagePackage.vue:37
+msgid "New Revision"
+msgstr ""
+
+#: src/views/Browse.vue:44
+msgid "Newest"
+msgstr ""
+
+#: src/views/ManagePackage.vue:31
+msgid "No"
+msgstr ""
+
+#: src/views/Browse.vue:121 src/views/Manage.vue:86
+msgid "No apps found."
+msgstr ""
+
+#: src/views/Manage.vue:79 src/views/Package.vue:143
+msgid "None"
+msgstr ""
+
+#: src/views/Manage.vue:74
+msgid "Not published"
+msgstr ""
+
+#: src/views/ManagePackage.vue:158
+msgid "NSFW"
+msgstr ""
+
+#: src/views/Browse.vue:110
+msgid "NSFW content"
+msgstr ""
+
+#: src/views/Browse.vue:45
+msgid "Oldest"
+msgstr ""
+
+#: src/views/Browse.vue:47
+msgid "Oldest Update"
+msgstr ""
+
+#: src/views/Submit.vue:71
+msgid ""
+"One of the main goals of the OpenStore is to provide provide\n"
+"                a safe app store for people of all ages. To accomplish this\n"
+"                goal we do not allow certain types of app to be published.\n"
+"                Failure to follow the guidelines will result in your app being\n"
+"                removed. Any account with serious infractions may be subject\n"
+"                to termination. The OpenStore team thanks you for helping us\n"
+"                promote a better enviroment for everyone."
+msgstr ""
+
+#: src/views/ManageRevisions.vue:20
+msgid ""
+"Only choose \"Vivid and Xenial\" if your app is qml only\n"
+"                    or a webapp."
+msgstr ""
+
+#: src/views/Submit.vue:58
+msgid ""
+"Only open source applications allowed for manual review: As the\n"
+"                    applications might have arbitrary access to the device, every\n"
+"                    manually reviewed app will get a source code review."
+msgstr ""
+
+#: src/views/ManagePackage.vue:220
+msgid ""
+"Only YouTube videos are supported at this time.\n"
+"                            Make sure the url is for the embedded video!"
+msgstr ""
+
+#: src/views/Submit.vue:69
+msgid "OpenStore App Content Policy"
+msgstr ""
+
+#: src/views/ManageRevisions.vue:40
+msgid "OR"
+msgstr ""
+
+#: src/views/ManagePackage.vue:243
+msgid "Package Info"
+msgstr ""
+
+#: src/views/Package.vue:157
+msgid "Packager/Publisher:"
+msgstr ""
+
+#: src/views/NotFound.vue:3
+msgid "Page Not Found"
+msgstr ""
+
+#: src/views/Package.vue:81
+msgid "Permissions"
+msgstr ""
+
+#: src/views/Package.vue:133
+msgid "Permissions:"
+msgstr ""
+
+#: src/views/ManagePackage.vue:43
+msgid "Presentation"
+msgstr ""
+
+#: src/views/ManagePackage.vue:14
+msgid "Public Link"
+msgstr ""
+
+#: src/views/ManagePackage.vue:21
+msgid "Publish"
+msgstr ""
+
+#: src/views/Manage.vue:73
+msgid "Published"
+msgstr ""
+
+#: src/views/ManagePackage.vue:331
+msgid "Published Date"
+msgstr ""
+
+#: src/views/Package.vue:180
+msgid "Published:"
+msgstr ""
+
+#: src/views/Browse.vue:41
+msgid "Relevance"
+msgstr ""
+
+#: src/App.vue:84
+msgid "Report an Issue"
+msgstr ""
+
+#: src/views/ManagePackage.vue:301
+msgid "Revision"
+msgstr ""
+
+#: src/App.vue:89 src/views/Feeds.vue:3
+msgid "RSS Feeds"
+msgstr ""
+
+#: src/views/Submit.vue:4
+msgid "Rules for Submission"
+msgstr ""
+
+#: src/views/Submit.vue:35
+msgid "Rules for Submissions Requiring Manual Review"
+msgstr ""
+
+#: src/views/ManagePackage.vue:350
+msgid "Save"
+msgstr ""
+
+#: src/components/Types.vue:4
+msgid "Scope"
+msgstr ""
+
+#: src/views/Browse.vue:34
+msgid "Scopes"
+msgstr ""
+
+#: src/views/Package.vue:108
+msgid "Screenshots"
+msgstr ""
+
+#: src/views/ManagePackage.vue:101
+msgid "Screenshots (Limit 5)"
+msgstr ""
+
+#: src/views/Browse.vue:9 src/views/Manage.vue:25
+msgid "Search"
+msgstr ""
+
+#: src/views/Submit.vue:85
+msgid "Sexually Explicit Content"
+msgstr ""
+
+#: src/views/Package.vue:118
+msgid "Show NSFW Content"
+msgstr ""
+
+#: src/App.vue:79
+msgid "Site Status"
+msgstr ""
+
+#: src/views/Browse.vue:39
+msgid "Sort By:"
+msgstr ""
+
+#: src/views/ManagePackage.vue:203
+msgid "Source URL"
+msgstr ""
+
+#: src/views/Package.vue:164
+msgid "Source:"
+msgstr ""
+
+#: src/views/ManagePackage.vue:65 src/views/Stats.vue:3
+msgid "Stats"
+msgstr ""
+
+#: src/views/Manage.vue:47
+msgid "Status"
+msgstr ""
+
+#: src/App.vue:28 src/views/Submit.vue:181
+msgid "Submit"
+msgstr ""
+
+#: src/views/Manage.vue:8 src/views/Submit.vue:146
+msgid "Submit App"
+msgstr ""
+
+#: src/views/ManagePackage.vue:208
+msgid "Support URL"
+msgstr ""
+
+#: src/views/Package.vue:160
+msgid "Support:"
+msgstr ""
+
+#: src/views/ManagePackage.vue:80
+msgid "Tag Line"
+msgstr ""
+
+#: src/views/Package.vue:13
+msgid "The app you are looking for has been removed or does not exist"
+msgstr ""
+
+#: src/views/NotFound.vue:5
+msgid "The page you are looking for has been removed or does not exist"
+msgstr ""
+
+#: src/views/Package.vue:17
+msgid "There was an error trying to find this app, please refresh and try again."
+msgstr ""
+
+#: src/views/Browse.vue:85 src/views/Manage.vue:30
+msgid "There was an error trying to load the app list, please refresh and try again."
+msgstr ""
+
+#: src/views/Stats.vue:5
+msgid "There was an error trying to load the stats, please refresh and try again."
+msgstr ""
+
+#: src/views/ManagePackage.vue:160
+msgid "This app contains NSFW material"
+msgstr ""
+
+#: src/views/Submit.vue:158
+msgid ""
+"This is the unique identifier for your app. It must match\n"
+"                            exactly the \"name\" field in your click's manifest.json\n"
+"                            and must be all lowercase letters. For example:\n"
+"                            \"openstore.openstore-team\", where \"openstore\" is the\n"
+"                            app and \"openstore-team\" is the group or individual\n"
+"                            authoring the app."
+msgstr ""
+
+#: src/views/ManagePackage.vue:75
+msgid "Title"
+msgstr ""
+
+#: src/views/Browse.vue:42
+msgid "Title (A-Z)"
+msgstr ""
+
+#: src/views/Browse.vue:43
+msgid "Title (Z-A)"
+msgstr ""
+
+#: src/views/ManagePackage.vue:322
+msgid "Total"
+msgstr ""
+
+#: src/views/ManagePackage.vue:5
+msgid "Translation Languages"
+msgstr ""
+
+#: src/views/Package.vue:4
+msgid "Translation Languages:"
+msgstr ""
+
+#: src/views/Browse.vue:122 src/views/Manage.vue:87
+msgid "Try searching for something else"
+msgstr ""
+
+#: src/views/ManagePackage.vue:271
+msgid "Type"
+msgstr ""
+
+#: src/views/Browse.vue:29
+msgid "Type:"
+msgstr ""
+
+#: src/views/ManagePackage.vue:270
+msgid "Types"
+msgstr ""
+
+#: src/views/Browse.vue:3
+msgid "Ubuntu Touch Apps"
+msgstr ""
+
+#: src/views/Feeds.vue:18
+msgid "Updated Apps"
+msgstr ""
+
+#: src/views/ManagePackage.vue:339
+msgid "Updated Date"
+msgstr ""
+
+#: src/views/Package.vue:176
+msgid "Updated:"
+msgstr ""
+
+#: src/views/ManageRevisions.vue:43
+msgid "URL"
+msgstr ""
+
+#: src/views/Manage.vue:48 src/views/ManagePackage.vue:303
+msgid "Version"
+msgstr ""
+
+#: src/views/ManagePackage.vue:218
+msgid "Video URL"
+msgstr ""
+
+#: src/views/Submit.vue:100
+msgid "Violence"
+msgstr ""
+
+#: src/views/Browse.vue:66 src/views/ManageRevisions.vue:17
+msgid "Vivid"
+msgstr ""
+
+#: src/views/ManageRevisions.vue:18
+msgid "Vivid and Xenial"
+msgstr ""
+
+#: src/components/Types.vue:5
+msgid "Web App"
+msgstr ""
+
+#: src/components/Types.vue:6
+msgid "Web App+"
+msgstr ""
+
+#: src/views/Browse.vue:33
+msgid "Web Apps"
+msgstr ""
+
+#: src/views/Browse.vue:67 src/views/ManageRevisions.vue:16
+msgid "Xenial"
+msgstr ""
+
+#: src/views/ManagePackage.vue:30
+msgid "Yes"
+msgstr ""
+
+#: src/views/Submit.vue:15
+msgid ""
+"You app can be pulled without warning at the discretion of our\n"
+"                    admins. Where possible, we will contact you regarding any such\n"
+"                    actions."
+msgstr ""
+
+#: src/views/Submit.vue:11
+msgid ""
+"You are only allowed to publish apps that you have permission to\n"
+"                    distribute."
+msgstr ""
+
+#: src/views/Submit.vue:26
+msgid "You must read over the content policy detailed below."
+msgstr ""

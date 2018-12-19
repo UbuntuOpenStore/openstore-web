@@ -5,12 +5,14 @@ import VueHead from 'vue-head';
 import moment from 'vue-moment';
 import VueNotifications from 'vue-notifications';
 import VueLazyLoad from 'vue-lazyload';
+import Gettext from 'vue-gettext';
 /* eslint-disable import/extensions */
 import VueImg from 'v-img';
 import miniToastr from 'mini-toastr';
 
 import App from './App';
 import router from './router';
+import translations from './translations.json';
 
 miniToastr.init();
 function toast({
@@ -33,6 +35,12 @@ Vue.use(VueNotifications, {
 });
 Vue.use(VueLazyLoad);
 Vue.use(VueImg);
+Vue.use(Gettext, {
+    availableLanguages: {
+        en_US: 'English',
+    },
+    translations: translations,
+});
 
 /* eslint-disable no-new */
 new Vue({

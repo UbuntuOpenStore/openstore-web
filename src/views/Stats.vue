@@ -1,9 +1,9 @@
 <template>
     <div class="row">
         <div class="p-strip">
-            <h1>Stats</h1>
+            <h1 v-translate>Stats</h1>
 
-            <h2 v-if="error" class="center text-red">
+            <h2 v-if="error" class="center text-red" v-translate>
                 There was an error trying to load the stats, please refresh and try again.
             </h2>
 
@@ -13,12 +13,12 @@
         </div>
 
         <div v-if="!loading" class="p-strip">
-            <h2>App Types</h2>
+            <h2 v-translate>App Types</h2>
             <table>
                 <thead>
                     <tr>
-                        <th>App Type</th>
-                        <th class="align-right">Count</th>
+                        <th v-translate>App Type</th>
+                        <th class="align-right" v-translate>Count</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -94,6 +94,8 @@ export default {
     },
     methods: {
         humanType(type) {
+            // TODO translate
+
             /* eslint-disable arrow-body-style */
             return type.replace('webapp', 'web app').replace(/\w\S*/g, (txt) => {
                 return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();

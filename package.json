@@ -5,18 +5,22 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "makemessages": "./makemessages.sh",
+    "translations": "gettext-compile --output src/translations.json $(find ./po -name *.po)"
   },
   "dependencies": {
     "axios": "^0.18.0",
     "clipboard": "^2.0.1",
     "debounce": "^1.2.0",
+    "easygettext": "^2.7.0",
     "font-awesome": "^4.7.0",
     "mini-toastr": "^0.8.1",
     "node-sass": "^4.9.3",
     "v-img": "^0.2.0",
     "vanilla-framework": "^1.8.0",
     "vue": "^2.5.17",
+    "vue-gettext": "^2.1.1",
     "vue-head": "^2.0.12",
     "vue-lazyload": "^1.2.6",
     "vue-moment": "^4.0.0",

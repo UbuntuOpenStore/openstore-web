@@ -41,7 +41,7 @@ export default {
             .then(success),
     },
 
-    categories: () => axios.get(`${process.env.VUE_APP_API}/api/v3/categories`)
+    categories: (lang) => axios.get(`${process.env.VUE_APP_API}/api/v3/categories?lang=${lang}`)
         .then(success),
 
     manage: {

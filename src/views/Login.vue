@@ -5,26 +5,26 @@
         <div class="row">
             <a href="/auth/github" class="p-button--positive">
                 <i class="fa fa-github"></i>
-                Login via GitHub
+                <span class="ml" v-translate>Login via GitHub</span>
             </a>
 
             <a href="/auth/gitlab" class="p-button--positive">
                 <i class="fa fa-gitlab"></i>
-                Login via GitLab
+                <span class="ml" v-translate>Login via GitLab</span>
             </a>
 
             <form action="/auth/ubuntu" method="post">
                 <button class="p-button--neutral">
                     <i class="fa fa-linux"></i>
-                    Login via Ubuntu
+                    <span class="ml" v-translate>Login via Ubuntu</span>
                 </button>
             </form>
         </div>
         <div class="row">
             <p>
-                Log in to the OpenStore to be able to manage your apps.
+                <span v-translate>Log in to the OpenStore to be able to manage your apps.</span>
                 <br/>
-                An account is not needed to download or install apps.
+                <span v-translate>An account is not needed to download or install apps.</span>
             </p>
         </div>
     </div>

@@ -1,10 +1,10 @@
 <template>
     <span>
         <span v-for="type in types" :key="type">
-            <span v-if="type == 'app'" class="label app-label">App</span>
-            <span v-if="type == 'scope'" class="label scope-label">Scope</span>
-            <span v-if="type == 'webapp'" class="label webapp-label">Web App</span>
-            <span v-if="type == 'webapp+'" class="label webapp-label">Web App+</span>
+            <span v-if="type == 'app'" class="label app-label" v-translate>App</span>
+            <span v-if="type == 'scope'" class="label scope-label" v-translate>Scope</span>
+            <span v-if="type == 'webapp'" class="label webapp-label" v-translate>Web App</span>
+            <span v-if="type == 'webapp+'" class="label webapp-label" v-translate>Web App+</span>
         </span>
     </span>
 </template>

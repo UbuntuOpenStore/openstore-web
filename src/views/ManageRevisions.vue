@@ -1,6 +1,7 @@
 <template>
     <div class="row">
         <div v-if="!loading">
+            <!-- TODO translate-->
             <h1>
                 <router-link :to="{name: 'manage_package', params: {id: app.id}}" title="Back">
                     <i class="fa fa-chevron-left"></i>
@@ -11,14 +12,14 @@
 
             <form class="p-form p-form--stacked">
                 <div class="p-form__group">
-                    <label for="channel" class="p-form__label">Channel</label>
+                    <label for="channel" class="p-form__label" v-translate>Channel</label>
                     <select id="channel" class="p-form__control" v-model="channel" :disabled="saving">
-                        <option value="xenial">Xenial</option>
-                        <option value="vivid">Vivid</option>
-                        <option value="vivid-xenial">Vivid &amp; Xenial</option>
+                        <option value="xenial" v-translate>Xenial</option>
+                        <option value="vivid" v-translate>Vivid</option>
+                        <option value="vivid-xenial" v-translate>Vivid and Xenial</option>
                     </select>
-                    <div class="small text-lightgrey" v-if="channel == 'vivid-xenial'">
-                        Only choose "Vivid &amp; Xenial" if your app is qml only
+                    <div class="small text-lightgrey" v-if="channel == 'vivid-xenial'" v-translate>
+                        Only choose "Vivid and Xenial" if your app is qml only
                         or a webapp.
                     </div>
                 </div>
@@ -26,7 +27,7 @@
                 <div class="divider"></div>
 
                 <div class="p-form__group">
-                    <label for="file" class="p-form__label">File Upload</label>
+                    <label for="file" class="p-form__label" v-translate>File Upload</label>
                     <input
                         type="file"
                         id="file"
@@ -37,10 +38,10 @@
                     />
                 </div>
 
-                <h3>OR</h3>
+                <h3 v-translate>OR</h3>
 
                 <div class="p-form__group">
-                    <label for="downloadUrl" class="p-form__label">URL</label>
+                    <label for="downloadUrl" class="p-form__label" v-translate>URL</label>
                     <input
                         type="text"
                         id="downloadUrl"
@@ -53,7 +54,7 @@
 
                 <a class="p-button--positive" @click="save()" :disabled="saving">
                     <i class="fa" :class="{'fa-save': !saving, 'fa-spinner fa-spin': saving}"></i>
-                    Create
+                    <span class="ml" v-translate>Create</span>
                 </a>
 
                 <router-link
@@ -62,7 +63,7 @@
                     :disabled="saving"
                 >
                     <i class="fa fa-times"></i>
-                    Cancel
+                    <span class="ml" v-translate>Cancel</span>
                 </router-link>
             </form>
         </div>
@@ -137,6 +138,7 @@ export default {
             }
         }).catch(() => {
             this.loading = false;
+            // TODO translations
             VueNotifications.error({
                 title: 'Error',
                 message: 'An error occured loading your app data',
@@ -181,6 +183,8 @@ export default {
                     else if (this.channel == 'vivid-xenial') {
                         channel = 'Vivid & Xenial';
                     }
+
+                    // TODO translate
                     VueNotifications.success({
                         title: 'Success',
                         message: `New revision for ${channel} was created!`,

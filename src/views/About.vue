@@ -1,6 +1,7 @@
 <template>
     <div class="p-strip">
         <div class="row">
+            <!-- TODO translate -->
             <h1>About</h1>
 
             <p>

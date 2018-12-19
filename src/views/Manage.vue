@@ -6,15 +6,15 @@
             <div class="u-float-right buttons">
                 <router-link :to="{name: 'submit'}" class="p-button--positive">
                     <i class="fa fa-plus"></i>
-                    Submit App
+                    <span class="ml" v-translate>Submit App</span>
                 </router-link>
 
                 <button class="p-button--neutral u-float-right" @click="showApikey = !showApikey">
-                    {{showApikey ? 'Hide' : 'Show'}} API Key
+                    <span v-translate>API Key</span>
                 </button>
 
                 <p v-if="showApikey">
-                    Keep your api key private!
+                    <span v-translate>Keep your api key private!</span>
                     <br/>
                     {{user.apikey}}
                 </p>
@@ -23,12 +23,12 @@
 
             <form class="p-form p-form--inline" v-on:submit.prevent>
                 <div class="p-form__group">
-                    <label for="search" class="p-form__label">Search</label>
+                    <label for="search" class="p-form__label" v-translate>Search</label>
                     <input type="text" id="search" class="p-form__control" v-model="query.search" />
                 </div>
             </form>
 
-            <h2 v-if="error" class="center text-red">
+            <h2 v-if="error" class="center text-red" v-translate>
                 There was an error trying to load the app list, please refresh and try again.
             </h2>
 
@@ -41,13 +41,13 @@
                     <thead>
                         <tr>
                             <!-- TODO sorting -->
-                            <th class="icon-cell">Icon</th>
-                            <th class="u-hide--small">Name</th>
-                            <th class="u-show--small u-hide">App</th>
-                            <th v-if="user.role == 'admin'">Author</th>
-                            <th class="u-hide--small">Status</th>
-                            <th class="u-hide--small">Version</th>
-                            <th class="u-hide--small">Downloads</th>
+                            <th class="icon-cell" v-translate>Icon</th>
+                            <th class="u-hide--small" v-translate>Name</th>
+                            <th class="u-show--small u-hide" v-translate>App</th>
+                            <th v-if="user.role == 'admin'" v-translate>Author</th>
+                            <th class="u-hide--small" v-translate>Status</th>
+                            <th class="u-hide--small" v-translate>Version</th>
+                            <th class="u-hide--small" v-translate>Downloads</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -67,35 +67,39 @@
                                     {{app.name}} v{{app.version}}
                                 </router-link>
                                 <br/>
-                                Downloads: {{app.totalDownloads || 'None'}}
+                                <span v-translate>Downloads</span>: {{app.totalDownloads || 'None'}}
                             </td>
                             <td v-if="user.role == 'admin'">{{app.author}}</td>
                             <td class="u-hide--small">
-                                <span v-if="app.published" class="text-green">Published</span>
-                                <span v-else class="text-lightgrey">Not published</span>
+                                <span v-if="app.published" class="text-green" v-translate>Published</span>
+                                <span v-else class="text-lightgrey" v-translate>Not published</span>
                             </td>
                             <td class="u-hide--small">{{app.version}}</td>
-                            <td class="u-hide--small">{{app.totalDownloads || 'None'}}</td>
+                            <td class="u-hide--small">
+                                <span v-if="app.totalDownloads > 0">{{app.totalDownloads}}</span>
+                                <span v-if="app.totalDownloads == 0" v-translate>None</span>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
 
                 <h3 v-if="apps.length === 0 && !error" class="center">
-                    No apps found.
-                    <span v-if="query.search">Try searching for something else</span>
+                    <span v-translate>No apps found.</span>
+                    <span v-if="query.search" v-translate>Try searching for something else</span>
                 </h3>
             </div>
 
             <div class="row center" v-if="paging.total > 1">
                 <!-- TODO make this a shared component -->
+                <!-- TODO translate titles -->
                 <ul class="pagination">
-                    <li :class="{disabled: page <= 0}" class="u-hide--small" title="Jump to the first page">
+                    <li :class="{disabled: page <= 0}" class="u-hide--small" :title="firstPageTitle">
                         <a @click="setPage(0)">
                             <i class="fa fa-angle-double-left"></i>
                         </a>
                     </li>
 
-                    <li :class="{disabled: page <= 0}" title="Go back a page">
+                    <li :class="{disabled: page <= 0}" :title="backPageTitle">
                         <a @click="setPage(page - 1)">
                             <i class="fa fa-angle-left"></i>
                         </a>
@@ -105,13 +109,13 @@
                         <a @click="setPage(p)">{{p + 1}}</a>
                     </li>
 
-                    <li :class="{disabled: page >= paging.total}" title="Go to the next page">
+                    <li :class="{disabled: page >= paging.total}" :title="nextPageTitle">
                         <a @click="setPage(page + 1)">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     </li>
 
-                    <li :class="{disabled: page >= paging.total}" class="u-hide--small" title="Jump to the last page">
+                    <li :class="{disabled: page >= paging.total}" class="u-hide--small" :title="lastPageTitle">
                         <a @click="setPage(paging.total)">
                             <i class="fa fa-angle-double-right"></i>
                         </a>
@@ -156,6 +160,10 @@ export default {
             loading: false,
             error: false,
             showApikey: false,
+            firstPageTitle: this.$gettext('Jump to the first page'),
+            backPageTitle: this.$gettext('Go back a page'),
+            nextPageTitle: this.$gettext('Go to the next page'),
+            lastPageTitle: this.$gettext('Jump to the last page'),
         };
     },
     created() {

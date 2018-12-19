@@ -26,22 +26,22 @@
                 <nav class="p-navigation__nav" :class="{'u-show': showMenu}" role="menubar">
                     <ul class="p-navigation__links" role="menu">
                         <li class="p-navigation__link" role="menuitem">
-                            <router-link :to="{name: 'submit'}">Submit</router-link>
+                            <router-link :to="{name: 'submit'}" v-translate>Submit</router-link>
                         </li>
                         <li class="p-navigation__link" role="menuitem">
-                            <router-link :to="{name: 'browse'}">Browse</router-link>
+                            <router-link :to="{name: 'browse'}" v-translate>Browse</router-link>
                         </li>
                         <li class="p-navigation__link" role="menuitem">
-                            <router-link :to="{name: 'about'}">About</router-link>
+                            <router-link :to="{name: 'about'}" v-translate>About</router-link>
                         </li>
                         <li class="p-navigation__link" role="menuitem" v-if="!user">
-                            <router-link :to="{name: 'login'}">Log In</router-link>
+                            <router-link :to="{name: 'login'}" v-translate>Log In</router-link>
                         </li>
                         <li class="p-navigation__link" role="menuitem" v-if="user">
-                            <router-link :to="{name: 'manage'}">Manage</router-link>
+                            <router-link :to="{name: 'manage'}" v-translate>Manage</router-link>
                         </li>
                         <li class="p-navigation__link" role="menuitem" v-if="user">
-                            <a href="/auth/logout">Log Out</a>
+                            <a href="/auth/logout" v-translate>Log Out</a>
                         </li>
                     </ul>
                 </nav>
@@ -57,37 +57,37 @@
                 <nav class="p-footer__nav">
                     <ul class="p-footer__links">
                         <li class="p-footer__item">
-                            <router-link :to="{name: 'about'}" class="p-footer__link">
+                            <router-link :to="{name: 'about'}" class="p-footer__link" v-translate>
                                 About Us
                             </router-link>
                         </li>
                         <li class="p-footer__item">
-                            <a class="p-footer__link" href="/telegram" target="_blank">
+                            <a class="p-footer__link" href="/telegram" target="_blank" v-translate>
                                 Chat with us on Telegram
                             </a>
                         </li>
                         <li class="p-footer__item">
-                            <router-link :to="{name: 'stats'}" class="p-footer__link">
+                            <router-link :to="{name: 'stats'}" class="p-footer__link" v-translate>
                                 App Stats
                             </router-link>
                         </li>
                         <li class="p-footer__item">
-                            <a class="p-footer__link" href="https://github.com/UbuntuOpenStore" target="_blank">
+                            <a class="p-footer__link" href="https://github.com/UbuntuOpenStore" target="_blank" v-translate>
                                 Fork us on Github
                             </a>
                         </li>
                         <li class="p-footer__item">
-                            <a class="p-footer__link" href="https://status.open-store.io/" target="_blank">
+                            <a class="p-footer__link" href="https://status.open-store.io/" target="_blank" v-translate>
                                 Site Status
                             </a>
                         </li>
                         <li class="p-footer__item">
-                            <a class="p-footer__link" href="https://github.com/UbuntuOpenStore/openstore-meta/issues" target="_blank">
+                            <a class="p-footer__link" href="https://github.com/UbuntuOpenStore/openstore-meta/issues" target="_blank" v-translate>
                                 Report an Issue
                             </a>
                         </li>
                         <li class="p-footer__item">
-                            <router-link :to="{name: 'feeds'}" class="p-footer__link">
+                            <router-link :to="{name: 'feeds'}" class="p-footer__link" v-translate>
                                 RSS Feeds
                             </router-link>
                         </li>
@@ -100,6 +100,9 @@
 
 <script>
 import api from '@/api';
+
+// TODO translate titles
+// TODO clean up newlines/spaces in translations
 
 export default {
     name: 'app',
@@ -137,5 +140,13 @@ export default {
 
 .fullscreen-v-img, .fullscreen-v-img div {
     margin-top: 0;
+}
+
+.ml {
+    margin-left: 0.5em;
+}
+
+.mr {
+    margin-right: 0.5em;
 }
 </style>

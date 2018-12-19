@@ -6,18 +6,20 @@
                     <i class="fa fa-chevron-left"></i>
                 </router-link>
 
-                Edit {{app.name}}
+                <span class="ml" v-translate>Edit</span>
+                {{app.name}}
             </h1>
 
             <div v-if="app.published">
                 <router-link :to="{name: 'app', params: {id: app.id}}" target="_blank">
-                    Public Link <i class="fa fa-external-link"></i>
+                    <span class="mr" v-translate>Public Link</span>
+                    <i class="fa fa-external-link"></i>
                 </router-link>
             </div>
 
             <form class="p-form p-form--stacked">
                 <div class="p-form__group">
-                    <label for="publish" class="p-form__label">Publish</label>
+                    <label for="publish" class="p-form__label" v-translate>Publish</label>
                     <button
                         id="switch-on"
                         class="p-switch"
@@ -26,14 +28,14 @@
                         :aria-checked="published"
                         @click="published = !published"
                     >
-                        <span>Yes</span>
-                        <span>No</span>
+                        <span v-translate>Yes</span>
+                        <span v-translate>No</span>
                     </button>
                 </div>
 
                 <router-link class="p-button--positive" :to="{name: 'manage_revisions', params: {id: app.id}}" :disabled="saving">
                     <i class="fa fa-plus"></i>
-                    New Revision
+                    <span class="ml" v-translate>New Revision</span>
                 </router-link>
 
                 <nav class="p-tabs">
@@ -45,22 +47,23 @@
                                 role="tab"
                                 @click="tab = 'presentation'"
                                 :aria-selected="tab == 'presentation'"
+                                v-translate
                             >
                                 Presentation
                             </a>
                         </li>
                         <li class="p-tabs__item" role="presentation">
-                            <a class="p-tabs__link" tabindex="-1" role="tab" @click="tab = 'discovery'" :aria-selected="tab == 'discovery'">
+                            <a class="p-tabs__link" tabindex="-1" role="tab" @click="tab = 'discovery'" :aria-selected="tab == 'discovery'" v-translate>
                                 Discovery
                             </a>
                         </li>
                         <li class="p-tabs__item" role="presentation">
-                            <a class="p-tabs__link" tabindex="-1" role="tab" @click="tab = 'info'" :aria-selected="tab == 'info'">
+                            <a class="p-tabs__link" tabindex="-1" role="tab" @click="tab = 'info'" :aria-selected="tab == 'info'" v-translate>
                                 Info
                             </a>
                         </li>
                         <li class="p-tabs__item" role="presentation">
-                            <a class="p-tabs__link" tabindex="-1" role="tab" @click="tab = 'stats'" :aria-selected="tab == 'stats'">
+                            <a class="p-tabs__link" tabindex="-1" role="tab" @click="tab = 'stats'" :aria-selected="tab == 'stats'" v-translate>
                                 Stats
                             </a>
                         </li>
@@ -70,17 +73,17 @@
                 <div v-if="tab == 'presentation'" class="p-card">
                     <div class="p-card__content">
                         <div class="p-form__group">
-                            <label for="name" class="p-form__label">Title</label>
+                            <label for="name" class="p-form__label" v-translate>Title</label>
                             <input type="text" id="name" class="p-form__control" :disabled="saving" v-model="app.name" />
                         </div>
 
                         <div class="p-form__group">
-                            <label for="tagline" class="p-form__label">Tag Line</label>
+                            <label for="tagline" class="p-form__label" v-translate>Tag Line</label>
                             <input type="text" id="tagline" class="p-form__control" :disabled="saving" v-model="app.tagline" />
                         </div>
 
                         <div class="p-form__group">
-                            <label for="description" class="p-form__label">Description</label>
+                            <label for="description" class="p-form__label" v-translate>Description</label>
                             <textarea
                                 id="description"
                                 rows="4"
@@ -91,12 +94,12 @@
                         </div>
 
                         <div class="p-form__group">
-                            <label for="changelog" class="p-form__label">Changelog</label>
+                            <label for="changelog" class="p-form__label" v-translate>Changelog</label>
                             <textarea id="changelog" rows="4" class="p-form__control" :disabled="saving" v-model="app.changelog"></textarea>
                         </div>
 
                         <div class="p-form__group">
-                            <label for="screenshots" class="p-form__label">Screenshots (Limit 5)</label>
+                            <label for="screenshots" class="p-form__label" v-translate>Screenshots (Limit 5)</label>
 
                             <div>
                                 <input
@@ -109,8 +112,8 @@
                                     :disabled="saving"
                                 />
 
-                                <p v-if="app.screenshots.length > 0">
-                                    Drag &amp; drop to sort screenshots.
+                                <p v-if="app.screenshots.length > 0" v-translate>
+                                    Drag and drop to sort screenshots.
                                 </p>
 
                                 <!-- TODO option to remove screenshots -->
@@ -133,7 +136,8 @@
                         <div class="p-form__group">
                             <label for="category" class="p-form__label">Category</label>
                             <select type="text" id="category" class="p-form__control" :disabled="saving" v-model="app.category">
-                                <option value="">Choose a category</option>
+                                <!-- TODO translate categories -->
+                                <option value="" v-translate>Choose a category</option>
                                 <option
                                     v-for="category in categories"
                                     :key="category.category"
@@ -146,15 +150,15 @@
                         </div>
 
                         <div class="p-form__group">
-                            <label for="keywords" class="p-form__label">Keywords</label>
+                            <label for="keywords" class="p-form__label" v-translate>Keywords</label>
                             <input type="text" id="keywords" class="p-form__control" :disabled="saving" v-model="app.keywords" />
-                            <p class="small text-lightgrey">A comma separated list of keywords</p>
+                            <p class="small text-lightgrey" v-translate>A comma separated list of keywords</p>
                         </div>
 
                         <div class="p-form__group nsfw">
-                            <label for="nsfw" class="p-form__label">NSFW</label>
+                            <label for="nsfw" class="p-form__label" v-translate>NSFW</label>
                             <input type="checkbox" id="nsfw" class="p-form__control" :disabled="saving" v-model="app.nsfw" />
-                            <div class="small text-lightgrey">This app contains NSFW material</div>
+                            <div class="small text-lightgrey" v-translate>This app contains NSFW material</div>
                         </div>
                     </div>
                 </div>
@@ -162,9 +166,9 @@
                 <div v-if="tab == 'info'" class="p-card">
                     <div class="p-card__content">
                         <div class="p-form__group">
-                            <label for="license" class="p-form__label">License</label>
+                            <label for="license" class="p-form__label" v-translate>License</label>
                             <select type="text" id="license" class="p-form__control" :disabled="saving" v-model="app.license">
-                                <option value="">Choose a license</option>
+                                <option value="" v-translate>Choose a license</option>
                                 <option value="Proprietary">Proprietary</option>
                                 <option value="Apache License">Apache License</option>
                                 <option value="BSD License (Simplified)">BSD License (Simplified)</option>
@@ -197,33 +201,33 @@
                         </div>
 
                         <div class="p-form__group">
-                            <label for="source" class="p-form__label">Source URL</label>
+                            <label for="source" class="p-form__label" v-translate>Source URL</label>
                             <input type="text" id="source" class="p-form__control" :disabled="saving" v-model="app.source" />
                         </div>
 
                         <div class="p-form__group">
-                            <label for="support_url" class="p-form__label">Support URL</label>
+                            <label for="support_url" class="p-form__label" v-translate>Support URL</label>
                             <input type="text" id="support_url" class="p-form__control" :disabled="saving" v-model="app.support_url" />
                         </div>
 
                         <div class="p-form__group">
-                            <label for="donate_url" class="p-form__label">Donate URL</label>
+                            <label for="donate_url" class="p-form__label" v-translate>Donate URL</label>
                             <input type="text" id="donate_url" class="p-form__control" :disabled="saving" v-model="app.donate_url" />
                         </div>
 
                         <div class="p-form__group">
-                            <label for="video_url" class="p-form__label">Video URL</label>
+                            <label for="video_url" class="p-form__label" v-translate>Video URL</label>
                             <input type="text" id="video_url" class="p-form__control" :disabled="saving" v-model="app.video_url" />
-                            <div class="small text-lightgrey">
+                            <div class="small text-lightgrey" v-translate>
                                 Only YouTube videos are supported at this time.
                                 Make sure the url is for the embedded video!
                             </div>
                         </div>
 
                         <div class="p-form__group" v-if="user.role == 'admin'">
-                            <label for="maintainer" class="p-form__label">Maintainer</label>
+                            <label for="maintainer" class="p-form__label" v-translate>Maintainer</label>
                             <select type="text" id="maintainer" class="p-form__control" :disabled="saving" v-model="app.maintainer">
-                                <option value="">Choose a maintainer</option>
+                                <option value="" v-translate>Choose a maintainer</option>
                                 <option
                                     v-for="user in users"
                                     :key="user._id"
@@ -237,48 +241,49 @@
                 <div v-if="tab == 'stats'" class="p-card">
                     <div class="p-card__content">
                         <div class="p-form__group">
-                            <label class="p-form__label">Package Info</label>
+                            <label class="p-form__label" v-translate>Package Info</label>
                             <div class="info">
                                 <table>
                                     <tbody>
                                         <tr>
-                                            <td class="name">ID</td>
+                                            <td class="name" v-translate>ID</td>
                                             <td>{{app.id}}</td>
                                         </tr>
                                         <tr>
-                                            <td class="name">Author</td>
+                                            <td class="name" v-translate>Author</td>
                                             <td>{{app.author}}</td>
                                         </tr>
                                         <tr>
-                                            <td class="name">Architecture</td>
+                                            <td class="name" v-translate>Architecture</td>
                                             <td>{{app.architecture}}</td>
                                         </tr>
                                         <tr>
-                                            <td class="name">Framework</td>
+                                            <td class="name" v-translate>Framework</td>
                                             <td>{{app.framework}}</td>
                                         </tr>
                                         <tr>
-                                            <td class="name">File Size</td>
+                                            <td class="name" v-translate>File Size</td>
                                             <td>{{filesize}}</td>
                                         </tr>
                                         <tr>
+                                            <!-- TODO correct plurals for translation -->
                                             <td class="name">
-                                                <span v-if="app.types.length != 1">Types</span>
-                                                <span v-if="app.types.length == 1">Type</span>
+                                                <span v-if="app.types.length != 1" v-translate>Types</span>
+                                                <span v-if="app.types.length == 1" v-translate>Type</span>
                                             </td>
                                             <td>{{app.types.join(', ')}}</td>
                                         </tr>
                                         <tr>
                                             <td class="name">
-                                                <span v-if="app.channels.length != 1">Channels</span>
-                                                <span v-if="app.channels.length == 1">Channel</span>
+                                                <span v-if="app.channels.length != 1" v-translate>Channels</span>
+                                                <span v-if="app.channels.length == 1" v-translate>Channel</span>
                                             </td>
                                             <td>{{app.channels.join(', ')}}</td>
                                         </tr>
 
                                         <!--
                                         <tr class="name" v-if="app.languages.length > 0">
-                                            <td>Translation Languages</td>
+                                            <td v-translate>Translation Languages</td>
                                             <td>{{app.languages.join(', ')}}</td>
                                         </tr>
                                         -->
@@ -288,16 +293,16 @@
                         </div>
 
                         <div class="p-form__group revisions">
-                            <label class="p-form__label">Download Stats</label>
+                            <label class="p-form__label" v-translate>Download Stats</label>
 
                             <div class="downloads">
                                 <table>
                                     <thead>
                                         <tr>
-                                            <th>Revision</th>
-                                            <th>Channel</th>
-                                            <th>Version</th>
-                                            <th>Downloads</th>
+                                            <th v-translate>Revision</th>
+                                            <th v-translate>Channel</th>
+                                            <th v-translate>Version</th>
+                                            <th v-translate>Downloads</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -315,7 +320,7 @@
                                             <td>{{revision.downloads}}</td>
                                         </tr>
                                         <tr>
-                                            <td colspan="3">Total</td>
+                                            <td colspan="3" v-translate>Total</td>
                                             <td>{{app.totalDownloads}}</td>
                                         </tr>
                                     </tbody>
@@ -324,7 +329,7 @@
                         </div>
 
                         <div class="p-form__group revisions" v-if="app.published_date">
-                            <label class="p-form__label">Published Date</label>
+                            <label class="p-form__label" v-translate>Published Date</label>
 
                             <div>
                                 {{app.published_date.replace('T', ' ').replace('Z', '')}}
@@ -332,7 +337,7 @@
                         </div>
 
                         <div class="p-form__group revisions" v-if="app.updated_date">
-                            <label class="p-form__label">Updated Date</label>
+                            <label class="p-form__label" v-translate>Updated Date</label>
 
                             <div>
                                 {{app.updated_date.replace('T', ' ').replace('Z', '')}}
@@ -343,12 +348,12 @@
 
                 <a class="p-button--positive" @click="save()" :disabled="saving">
                     <i class="fa" :class="{'fa-save': !saving, 'fa-spinner fa-spin': saving}"></i>
-                    Save
+                    <span class="ml" v-translate>Save</span>
                 </a>
 
                 <router-link class="p-button--neutral" :to="{name: 'manage'}" :disabled="saving">
                     <i class="fa fa-times"></i>
-                    Cancel
+                    <span class="ml" v-translate>Cancel</span>
                 </router-link>
             </form>
         </div>
@@ -489,6 +494,8 @@ export default {
             return Vue.nextTick();
         }).catch(() => {
             this.loading = false;
+
+            // TODO translate
             VueNotifications.error({
                 title: 'Error',
                 message: 'An error occured loading your app data',
@@ -565,6 +572,7 @@ export default {
                     }
 
                     this.saving = false;
+                    // TODO translate
                     VueNotifications.success({
                         title: 'Success',
                         message: `The changes to ${this.app.name} were saved!`,

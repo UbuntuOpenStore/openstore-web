@@ -5,17 +5,17 @@
             <router-link :to="back">
                 <i class="fa fa-chevron-left"></i>
             </router-link>
-            <router-link :to="back">
+            <router-link :to="back" v-translate>
                 Back
             </router-link>
         </div>
 
         <div class="row">
-            <h2 v-if="missing" class="center">
+            <h2 v-if="missing" class="center" v-translate>
                 The app you are looking for has been removed or does not exist
             </h2>
 
-            <h2 v-if="error" class="center text-red">
+            <h2 v-if="error" class="center text-red" v-translate>
                 There was an error trying to find this app, please refresh and try again.
             </h2>
 
@@ -42,8 +42,10 @@
                             class="p-button--positive"
                             v-if="app.id != 'openstore.openstore-team'"
                             title="Install via the OpenStore app"
+                            v-translate
                         >Install</a>
 
+                        <!-- TODO translate -->
                         <a
                             v-for="download in app.downloads"
                             :href="download.download_url"
@@ -77,7 +79,7 @@
                             <i class="fa fa-2x fa-shield" :class="{'text-red': isRestrictedAccess}"></i>
                             <br/>
 
-                            Permissions
+                            <span v-translate>Permissions</span>
                         </div>
 
                         <div class="p-matrix__item center" v-if="app.donate_url">
@@ -88,7 +90,7 @@
                             ><i class="fa fa-2x fa-heart text-red"></i></a>
                             <br/>
 
-                            <a :href="app.donate_url" target="_blank" rel="noopener noreferrer">
+                            <a :href="app.donate_url" target="_blank" rel="noopener noreferrer" v-translate>
                                 Donate
                             </a>
                         </div>
@@ -104,7 +106,7 @@
                 </div>
 
                 <div class="row screenshots" v-if="app.screenshots.length > 0 && showNSFW">
-                    <h3>Screenshots</h3>
+                    <h3 v-translate>Screenshots</h3>
 
                     <div class="screenshot-scroll">
                         <div v-for="screenshot in app.screenshots" :key="screenshot">
@@ -114,8 +116,8 @@
                 </div>
 
                 <div class="row" v-if="!showNSFW">
-                    <button class="p-button--neutral" @click="toggleShowNSFW()">Show NSFW Content</button>
-                    <p>
+                    <button class="p-button--neutral" @click="toggleShowNSFW()" v-translate>Show NSFW Content</button>
+                    <p v-translate>
                         *This app contains NSFW content, to view the description and
                         screenshots, click the above button.
                     </p>
@@ -124,12 +126,12 @@
 
             <div class="col-6" v-if="app">
                 <div class="row" v-if="showNSFW && app.changelog">
-                    <h4>Changelog:</h4>
+                    <h4 v-translate>Changelog:</h4>
                     <p class="pre">{{app.changelog}}</p>
                 </div>
 
                 <div class="row permissions">
-                    <h4>Permissions:</h4>
+                    <h4 v-translate>Permissions:</h4>
                     <ul>
                         <li
                             v-for="permission in permissions"
@@ -139,50 +141,58 @@
                         >
                             {{humanPermission(permission)}}
                         </li>
-                        <li v-if="permissions.length === 0">None</li>
+                        <li v-if="permissions.length === 0" v-translate>None</li>
                     </ul>
                 </div>
 
                 <div class="row info">
                     <h4>Info:</h4>
                     <p v-if="app.author">
-                        Author:
+                        <span v-translate>Author:</span>
                         <router-link :to="{name: 'browse', query: {search: 'author:' + app.author}}">
                             {{app.author}}
                         </router-link>
                     </p>
 
                     <p v-if="app.maintainer_name">
-                        Packager/Publisher: {{app.maintainer_name}}
+                        <span v-translate>Packager/Publisher:</span> {{app.maintainer_name}}
                     </p>
                     <p v-if="app.support_url">
-                        Support:
+                        <span v-translate>Support:</span>
                         <a :href="app.support_url" target="_blank" rel="noopener noreferrer">{{app.support_url}}</a>
                     </p>
                     <p v-if="app.source">
-                        Source: <a :href="app.source" target="_blank" rel="noopener noreferrer">{{app.source}}</a>
+                        <span v-translate>Source:</span>
+                        <a :href="app.source" target="_blank" rel="noopener noreferrer">{{app.source}}</a>
                     </p>
                     <p v-if="app.license">
-                        License: {{app.license}}
+                        <span v-translate>License:</span>
+                        {{app.license}}
                     </p>
                     <p v-if="app.category">
-                        Category: {{app.category}}
+                        <span v-translate>Category:</span>
+                        {{app.category}}
                     </p>
                     <p v-if="app.updated_date">
-                        Updated: {{app.updated_date | moment("MMMM Do YYYY")}}
+                        <span v-translate>Updated:</span>
+                        {{app.updated_date | moment("MMMM Do YYYY")}}
                     </p>
                     <p v-if="app.published_date">
-                        Published: {{app.published_date | moment("MMMM Do YYYY")}}
+                        <span v-translate>Published:</span>
+                        {{app.published_date | moment("MMMM Do YYYY")}}
                     </p>
                     <p v-if="app.framework">
-                        Framework: {{app.framework}}
+                        <span v-translate>Framework:</span>
+                        {{app.framework}}
                     </p>
                     <p v-if="app.architecture">
-                        Architecture: {{app.architecture}}
+                        <span v-translate>Architecture:</span>
+                        {{app.architecture}}
                     </p>
                     <!-- TODO add back when the backend is fixed
                     <p v-if="app.languages.length > 0">
-                        Translation Languages: {{app.languages.join(', ')}}
+                        <span v-translate>Translation Languages:</span>
+                        {{app.languages.join(', ')}}
                     </p>
                     -->
                 </div>
@@ -307,6 +317,8 @@ export default {
                 return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
             });
 
+            // TODO translate
+
             if (permission == 'unconfined') {
                 humanPerm = 'Full System Access';
             }
@@ -319,6 +331,7 @@ export default {
             return isRestrictedAccess(this.permissions);
         },
         restrictedAccess() {
+            // TODO translate
             let message = 'This app does not have access to restricted system data, see permissions for more details';
             if (isRestrictedAccess(this.permissions)) {
                 message = 'This app has access to restricted system data, see permissions for more details';
