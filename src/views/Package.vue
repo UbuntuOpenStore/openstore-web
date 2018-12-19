@@ -45,7 +45,6 @@
                             v-translate
                         >Install</a>
 
-                        <!-- TODO translate -->
                         <a
                             v-for="download in app.downloads"
                             :href="download.download_url"
@@ -53,7 +52,7 @@
                             class="p-button--positive"
                             target="_blank"
                         >
-                            Download ({{download.channel.charAt(0).toUpperCase()}}{{download.channel.slice(1)}})
+                            {{downloadLabels[download.channel]}}
                         </a>
                     </div>
 
@@ -254,6 +253,10 @@ export default {
             missing: false,
             error: false,
             loading: false,
+            downloadLabels: {
+                vivid: this.$gettext('Download Vivid'),
+                xenial: this.$gettext('Download Xenial'),
+            },
         };
     },
     created() {
@@ -312,15 +315,16 @@ export default {
             return isRestricted;
         },
         humanPermission(permission) {
+            // TODO translate permissions
+
             /* eslint-disable arrow-body-style */
             let humanPerm = permission.replace(/_/g, ' ').replace(/-/g, ' ').replace(/\w\S*/g, (txt) => {
                 return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
             });
 
-            // TODO translate
 
             if (permission == 'unconfined') {
-                humanPerm = 'Full System Access';
+                humanPerm = this.$gettext('Full System Access');
             }
 
             return humanPerm;
@@ -331,10 +335,9 @@ export default {
             return isRestrictedAccess(this.permissions);
         },
         restrictedAccess() {
-            // TODO translate
-            let message = 'This app does not have access to restricted system data, see permissions for more details';
+            let message = this.$gettext('This app does not have access to restricted system data, see permissions for more details');
             if (isRestrictedAccess(this.permissions)) {
-                message = 'This app has access to restricted system data, see permissions for more details';
+                message = this.$gettext('This app has access to restricted system data, see permissions for more details');
             }
             return message;
         },

@@ -1,13 +1,12 @@
 <template>
     <div class="row">
         <div v-if="!loading">
-            <!-- TODO translate-->
             <h1>
                 <router-link :to="{name: 'manage_package', params: {id: app.id}}" title="Back">
                     <i class="fa fa-chevron-left"></i>
                 </router-link>
 
-                New Revision for {{app.name}}
+                <translate :translate-params="{name: app.name}">New Revision for %{name}</translate>
             </h1>
 
             <form class="p-form p-form--stacked">
@@ -138,10 +137,9 @@ export default {
             }
         }).catch(() => {
             this.loading = false;
-            // TODO translations
             VueNotifications.error({
-                title: 'Error',
-                message: 'An error occured loading your app data',
+                title: this.$gettext('Error'),
+                message: this.$gettext('An error occured loading your app data'),
             });
         });
     },
@@ -176,23 +174,22 @@ export default {
 
                     this.saving = false;
 
-                    let channel = 'Xenial';
+                    let channel = this.$gettext('Xenial');
                     if (this.channel == 'vivid') {
-                        channel = 'Vivid';
+                        channel = this.$gettext('Vivid');
                     }
                     else if (this.channel == 'vivid-xenial') {
-                        channel = 'Vivid & Xenial';
+                        channel = this.$gettext('Vivid & Xenial');
                     }
 
-                    // TODO translate
                     VueNotifications.success({
-                        title: 'Success',
-                        message: `New revision for ${channel} was created!`,
+                        title: this.$gettext('Success'),
+                        message: this.$gettext('New revision for %{channel} was created!').replace('%{channel}', 'channel'),
                     });
 
                     this.$router.push({name: 'manage_package', params: {id: this.app.id}});
                 }).catch((err) => {
-                    let error = 'An unknown error has occured';
+                    let error = this.$gettext('An unknown error has occured');
                     if (err.response && err.response.data && err.response.data.message) {
                         error = err.response.data.message;
                     }

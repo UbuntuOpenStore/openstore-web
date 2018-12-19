@@ -136,7 +136,6 @@
                         <div class="p-form__group">
                             <label for="category" class="p-form__label">Category</label>
                             <select type="text" id="category" class="p-form__control" :disabled="saving" v-model="app.category">
-                                <!-- TODO translate categories -->
                                 <option value="" v-translate>Choose a category</option>
                                 <option
                                     v-for="category in categories"
@@ -266,18 +265,11 @@
                                             <td>{{filesize}}</td>
                                         </tr>
                                         <tr>
-                                            <!-- TODO correct plurals for translation -->
-                                            <td class="name">
-                                                <span v-if="app.types.length != 1" v-translate>Types</span>
-                                                <span v-if="app.types.length == 1" v-translate>Type</span>
-                                            </td>
+                                            <td class="name" v-translate>Type</td>
                                             <td>{{app.types.join(', ')}}</td>
                                         </tr>
                                         <tr>
-                                            <td class="name">
-                                                <span v-if="app.channels.length != 1" v-translate>Channels</span>
-                                                <span v-if="app.channels.length == 1" v-translate>Channel</span>
-                                            </td>
+                                            <td class="name" v-translate>Channels</td>
                                             <td>{{app.channels.join(', ')}}</td>
                                         </tr>
 
@@ -495,14 +487,14 @@ export default {
         }).catch(() => {
             this.loading = false;
 
-            // TODO translate
             VueNotifications.error({
-                title: 'Error',
-                message: 'An error occured loading your app data',
+                title: this.$gettext('Error'),
+                message: this.$gettext('An error occured loading your app data'),
             });
         });
 
-        api.categories().then((data) => {
+        // TODO refresh categories on a language change
+        api.categories(this.$language.current).then((data) => {
             this.categories = data;
         });
     },
@@ -572,10 +564,9 @@ export default {
                     }
 
                     this.saving = false;
-                    // TODO translate
                     VueNotifications.success({
-                        title: 'Success',
-                        message: `The changes to ${this.app.name} were saved!`,
+                        title: this.$gettext('Success'),
+                        message: this.$gettext('The changes to %{name} were saved!').replace('%{name}', this.app.name),
                     });
                 }).catch((err) => {
                     let error = 'An unknown error has occured';

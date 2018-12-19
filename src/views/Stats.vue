@@ -24,7 +24,7 @@
                 <tbody>
                     <tr v-for="(count, name) in types" v-if="name != 'push'" :key="name">
                         <td>
-                            {{humanType(name)}}
+                            {{humanTypeLabel[name]}}
                         </td>
                         <td class="align-right">
                             {{count}}
@@ -46,7 +46,7 @@
                 <tbody>
                     <tr v-for="(count, name) in categories" :key="name">
                         <td>
-                            {{name || 'Uncategorized'}}
+                            {{name || uncategorized}}
                         </td>
                         <td class="align-right">
                             {{count}}
@@ -78,6 +78,13 @@ export default {
             types: [],
             loading: false,
             error: false,
+            uncategorized: this.$gettext('Uncategorized'),
+            humanTypeLabel: {
+                app: this.$gettext('App'),
+                scope: this.$gettext('Scope'),
+                webapp: this.$gettext('Web App'),
+                'webapp+': this.$gettext('Web App+'),
+            },
         };
     },
     created() {
@@ -91,16 +98,6 @@ export default {
             this.loading = false;
             this.error = true;
         });
-    },
-    methods: {
-        humanType(type) {
-            // TODO translate
-
-            /* eslint-disable arrow-body-style */
-            return type.replace('webapp', 'web app').replace(/\w\S*/g, (txt) => {
-                return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-            });
-        },
     },
 };
 </script>

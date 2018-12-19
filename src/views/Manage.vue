@@ -91,7 +91,6 @@
 
             <div class="row center" v-if="paging.total > 1">
                 <!-- TODO make this a shared component -->
-                <!-- TODO translate titles -->
                 <ul class="pagination">
                     <li :class="{disabled: page <= 0}" class="u-hide--small" :title="firstPageTitle">
                         <a @click="setPage(0)">
