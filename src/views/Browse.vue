@@ -379,7 +379,6 @@ export default {
             this.refresh();
         }, 300),
         refreshCategories() {
-            // TODO refresh categories on a language change
             api.categories(this.$language.current).then((data) => {
                 this.categories = data;
 
@@ -454,6 +453,9 @@ export default {
             if (to.name != from.name) {
                 this.$emit('updateHead');
             }
+        },
+        '$language.current': function() {
+            this.refreshCategories();
         },
     },
 };

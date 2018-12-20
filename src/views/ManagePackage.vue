@@ -492,7 +492,6 @@ export default {
             });
         });
 
-        // TODO refresh categories on a language change
         api.categories(this.$language.current).then((data) => {
             this.categories = data;
         });
@@ -626,6 +625,13 @@ export default {
             }
 
             return `${b.toFixed(1)} ${unit}`;
+        },
+    },
+    watch: {
+        '$language.current': function() {
+            api.categories(this.$language.current).then((data) => {
+                this.categories = data;
+            });
         },
     },
 };

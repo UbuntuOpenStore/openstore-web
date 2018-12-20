@@ -57,6 +57,25 @@
                 <nav class="p-footer__nav">
                     <ul class="p-footer__links">
                         <li class="p-footer__item">
+                            <span class="p-footer__link">
+                                <span v-translate>Language</span>:
+                                <select
+                                    class="language-select"
+                                    name="language"
+                                    v-model="$language.current"
+                                >
+                                    <option
+                                        v-for="(language, key) in $language.available"
+                                        :key="key"
+                                        :value="key"
+                                    >
+                                        {{language}}
+                                    </option>
+                                </select>
+                            </span>
+                        </li>
+
+                        <li class="p-footer__item">
                             <router-link :to="{name: 'about'}" class="p-footer__link" v-translate>
                                 About Us
                             </router-link>
@@ -99,6 +118,8 @@
 </template>
 
 <script>
+import Vue from 'vue';
+
 import api from '@/api';
 
 export default {
@@ -110,6 +131,21 @@ export default {
         };
     },
     created() {
+        let language = window.localStorage.getItem('language');
+        if (!language) {
+            language = window.navigator.language.replace('-', '_');
+        }
+
+        if (language && this.$language.available[language]) {
+            Vue.config.language = language;
+        }
+        else {
+            language = language.substring(0, language.indexOf('_'));
+            if (language && this.$language.available[language]) {
+                Vue.config.language = language;
+            }
+        }
+
         api.auth.me().then((user) => {
             this.user = user;
         });
@@ -117,6 +153,9 @@ export default {
     watch: {
         $route: function() {
             this.showMenu = false;
+        },
+        '$language.current': function() {
+            window.localStorage.setItem('language', this.$language.current);
         },
     },
 };
@@ -145,5 +184,10 @@ export default {
 
 .mr {
     margin-right: 0.5em;
+}
+
+.language-select {
+    margin-left: 0.5rem;
+    width: 7rem;
 }
 </style>
