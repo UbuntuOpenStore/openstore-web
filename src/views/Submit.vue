@@ -66,7 +66,9 @@
                     The OpenStore team thanks you for helping us promote a better enviroment for everyone.
                 </p>
 
-                <h2 v-translate>Prohibited Apps:</h2>
+                <h2>
+                    <span v-translate>Prohibited Apps</span>:
+                </h2>
 
                 <ul class="p-list">
                     <li class="p-list__item is-ticked">

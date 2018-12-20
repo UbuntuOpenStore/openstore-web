@@ -125,12 +125,16 @@
 
             <div class="col-6" v-if="app">
                 <div class="row" v-if="showNSFW && app.changelog">
-                    <h4 v-translate>Changelog:</h4>
+                    <h4>
+                        <span v-translate>Changelog</span>:
+                    </h4>
                     <p class="pre">{{app.changelog}}</p>
                 </div>
 
                 <div class="row permissions">
-                    <h4 v-translate>Permissions:</h4>
+                    <h4>
+                        <span v-translate>Permissions</span>:
+                    </h4>
                     <ul>
                         <li
                             v-for="permission in permissions"
@@ -145,52 +149,54 @@
                 </div>
 
                 <div class="row info">
-                    <h4>Info:</h4>
+                    <h4>
+                        <span v-translate>Info</span>:
+                    </h4>
                     <p v-if="app.author">
-                        <span v-translate>Author:</span>
+                        <span v-translate>Author</span>:
                         <router-link :to="{name: 'browse', query: {search: 'author:' + app.author}}">
                             {{app.author}}
                         </router-link>
                     </p>
 
                     <p v-if="app.maintainer_name">
-                        <span v-translate>Packager/Publisher:</span> {{app.maintainer_name}}
+                        <span v-translate>Packager/Publisher</span>: {{app.maintainer_name}}
                     </p>
                     <p v-if="app.support_url">
-                        <span v-translate>Support:</span>
+                        <span v-translate>Support</span>:
                         <a :href="app.support_url" target="_blank" rel="noopener noreferrer">{{app.support_url}}</a>
                     </p>
                     <p v-if="app.source">
-                        <span v-translate>Source:</span>
+                        <span v-translate>Source</span>:
                         <a :href="app.source" target="_blank" rel="noopener noreferrer">{{app.source}}</a>
                     </p>
                     <p v-if="app.license">
-                        <span v-translate>License:</span>
+                        <span v-translate>License</span>:
                         {{app.license}}
                     </p>
                     <p v-if="app.category">
-                        <span v-translate>Category:</span>
+                        <span v-translate>Category</span>:
                         {{app.category}}
                     </p>
                     <p v-if="app.updated_date">
-                        <span v-translate>Updated:</span>
+                        <span v-translate>Updated</span>:
                         {{app.updated_date | moment("MMMM Do YYYY")}}
                     </p>
                     <p v-if="app.published_date">
-                        <span v-translate>Published:</span>
+                        <span v-translate>Published</span>:
                         {{app.published_date | moment("MMMM Do YYYY")}}
                     </p>
                     <p v-if="app.framework">
-                        <span v-translate>Framework:</span>
+                        <span v-translate>Framework</span>:
                         {{app.framework}}
                     </p>
                     <p v-if="app.architecture">
-                        <span v-translate>Architecture:</span>
+                        <span v-translate>Architecture</span>:
                         {{app.architecture}}
                     </p>
                     <!-- TODO add back when the backend is fixed
                     <p v-if="app.languages.length > 0">
-                        <span v-translate>Translation Languages:</span>
+                        <span v-translate>Translation Languages</span>:
                         {{app.languages.join(', ')}}
                     </p>
                     -->
@@ -287,7 +293,7 @@ export default {
                 video: this.$gettext('Video'),
                 webview: this.$gettext('Webview'),
                 unconfined: this.$gettext('Full System Access'),
-            }
+            },
         };
     },
     created() {

@@ -27,7 +27,7 @@
                 </div>
 
                 <div class="p-form__group">
-                    <label for="type" class="p-form__label" v-translate>Type:</label>
+                    <label for="type" class="p-form__label" v-translate>Type</label>
                     <select id="type" class="p-form__control" v-model="query.type">
                         <option value="" v-translate>All Types</option>
                         <option value="app" v-translate>Apps</option>
@@ -37,7 +37,7 @@
                 </div>
 
                 <div class="p-form__group">
-                    <label for="sort-by" class="p-form__label" v-translate>Sort By:</label>
+                    <label for="sort-by" class="p-form__label" v-translate>Sort By</label>
                     <select id="sort-by" class="p-form__control" v-model="query.sort">
                         <option value="relevance" v-translate>Relevance</option>
                         <option value="name" v-translate>Title (A-Z)</option>
@@ -61,7 +61,7 @@
         <div class="row filters" v-if="moreFilters">
             <form class="p-form p-form--inline" v-on:submit.prevent>
                 <div class="p-form__group">
-                    <label for="channel" class="p-form__label" v-translate>Channel:</label>
+                    <label for="channel" class="p-form__label" v-translate>Channel</label>
                     <select id="channel" class="p-form__control" v-model="query.channel">
                         <option value="" v-translate>All Channels</option>
                         <option value="vivid" v-translate>Vivid</option>
@@ -71,12 +71,12 @@
 
                 <!-- TODO implement these
                 <div class="p-form__group">
-                    <label for="license" class="p-form__label">License:</label>
+                    <label for="license" class="p-form__label">License</label>
                     <input type="text" id="license" class="p-form__control" />
                 </div>
 
                 <div class="p-form__group">
-                    <label for="framework" class="p-form__label">Framework:</label>
+                    <label for="framework" class="p-form__label">Framework</label>
                     <input type="text" id="framework" class="p-form__control" />
                 </div>
                 -->
