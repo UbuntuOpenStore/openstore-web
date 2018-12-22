@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-20 00:34-0500\n"
+"POT-Creation-Date: 2018-12-22 01:09-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -346,11 +346,11 @@ msgstr ""
 #: src/views/About.vue:60
 msgid ""
 "For any questions you may have or help you may need just chat with us in our telegram group.\n"
-"You can also submit issues, bugs, and feature requests to our GitHub bug tracker."
+"You can also submit issues, bugs, and feature requests to our GitLab bug tracker."
 msgstr ""
 
 #: src/App.vue:93
-msgid "Fork us on Github"
+msgid "Fork us on GitLab"
 msgstr ""
 
 #: src/views/ManagePackage.vue:258 src/views/Package.vue:189
@@ -629,7 +629,7 @@ msgid "OpenStore group on Telegram"
 msgstr ""
 
 #: src/views/About.vue:92
-msgid "OpenStore source on GitHub"
+msgid "OpenStore source on GitLab"
 msgstr ""
 
 #: src/views/About.vue:149
@@ -886,7 +886,7 @@ msgstr ""
 #: src/views/About.vue:79
 msgid ""
 "The source code for OpenStore related projects is available under the GPL v3.\n"
-"You can find the code on the OpenStore GitHub page."
+"You can find the code on the OpenStore GitLab page."
 msgstr ""
 
 #: src/views/Package.vue:17
