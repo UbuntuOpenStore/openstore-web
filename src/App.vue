@@ -91,8 +91,8 @@
                             </router-link>
                         </li>
                         <li class="p-footer__item">
-                            <a class="p-footer__link" href="https://github.com/UbuntuOpenStore" target="_blank" v-translate>
-                                Fork us on Github
+                            <a class="p-footer__link" href="https://gitlab.com/theopenstore" target="_blank" v-translate>
+                                Fork us on GitLab
                             </a>
                         </li>
                         <li class="p-footer__item">
@@ -101,7 +101,7 @@
                             </a>
                         </li>
                         <li class="p-footer__item">
-                            <a class="p-footer__link" href="https://github.com/UbuntuOpenStore/openstore-meta/issues" target="_blank" v-translate>
+                            <a class="p-footer__link" href="https://gitlab.com/theopenstore/openstore-meta/issues" target="_blank" v-translate>
                                 Report an Issue
                             </a>
                         </li>

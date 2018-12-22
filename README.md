@@ -4,12 +4,12 @@ The web client for the [OpenStore](https://open-store.io/).
 
 ## Reporting Bugs
 
-Please report any bugs/features/requests in our [bug tracker](https://github.com/UbuntuOpenStore/openstore-meta/issues).
+Please report any bugs/features/requests in our [bug tracker](https://gitlab.com/theopenstore/openstore-meta/issues).
 
 ## Development
 
 To get setup with development, checkout the
-[openstore-web-dev repo](https://github.com/UbuntuOpenStore/openstore-web-dev).
+[openstore-web-dev repo](https://gitlab.com/theopenstore/openstore-web-dev).
 
 ## License
 

@@ -60,7 +60,7 @@
 
             <p v-translate>
                 For any questions you may have or help you may need just chat with us in our telegram group.
-                You can also submit issues, bugs, and feature requests to our GitHub bug tracker.
+                You can also submit issues, bugs, and feature requests to our GitLab bug tracker.
             </p>
 
             <a href="/telegram">
@@ -70,7 +70,7 @@
 
             <br/>
 
-            <a href="https://github.com/UbuntuOpenStore">
+            <a href="https://gitlab.com/theopenstore/openstore-meta/issues">
                 <span class="mr" v-translate>Bug Tracker</span>
                 <i class="fa fa-external-link"></i>
             </a>
@@ -79,7 +79,7 @@
 
             <p v-translate>
                 The source code for OpenStore related projects is available under the GPL v3.
-                You can find the code on the OpenStore GitHub page.
+                You can find the code on the OpenStore GitLab page.
             </p>
 
             <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">
@@ -89,8 +89,8 @@
 
             <br/>
 
-            <a href="https://github.com/UbuntuOpenStore/">
-                <span v-translate>OpenStore source on GitHub</span>
+            <a href="https://gitlab.com/theopenstore/">
+                <span v-translate>OpenStore source on GitLab</span>
                 <i class="fa fa-external-link"></i>
             </a>
 
@@ -142,17 +142,17 @@
 
                 <ul class="p-list">
                     <li class="p-list__item">
-                        <a href="https://github.com/UbuntuOpenStore/openstore-api/graphs/contributors" v-translate>
+                        <a href="https://gitlab.com/theopenstore/openstore-api/graphs/master" v-translate>
                             OpenStore API/Server Contributors
                         </a>
                     </li>
                     <li class="p-list__item">
-                        <a href="https://github.com/UbuntuOpenStore/openstore-app/graphs/contributors" v-translate>
+                        <a href="https://gitlab.com/theopenstore/openstore-web/graphs/master" v-translate>
                             OpenStore Website Contributors
                         </a>
                     </li>
                     <li class="p-list__item">
-                        <a href="https://github.com/UbuntuOpenStore/openstore-web/graphs/contributors" v-translate>
+                        <a href="https://gitlab.com/theopenstore/openstore-app/graphs/master" v-translate>
                             OpenStore App Contributors
                         </a>
                     </li>
