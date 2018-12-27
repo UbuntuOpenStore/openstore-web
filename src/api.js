@@ -58,6 +58,9 @@ export default {
         update: (id, data, key) => axios.put(`${process.env.VUE_APP_API}/api/v3/manage/${id}?apikey=${key}`, data)
             .then(success),
 
+        remove: (id, key) => axios.delete(`${process.env.VUE_APP_API}/api/v3/manage/${id}?apikey=${key}`)
+            .then(success),
+
         revision: (id, data, key) => axios.post(`${process.env.VUE_APP_API}/api/v3/manage/${id}/revision?apikey=${key}`, data)
             .then(success),
     },

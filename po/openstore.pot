@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-22 01:09-0500\n"
+"POT-Creation-Date: 2018-12-27 17:06-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,6 +21,10 @@ msgstr ""
 msgid ""
 "*This app contains NSFW content, to view the description and\n"
 "screenshots, click the above button."
+msgstr ""
+
+#: src/views/ManagePackage.vue:595
+msgid "%{name} was successfully deleted"
 msgstr ""
 
 #: src/views/ManagePackage.vue:153
@@ -56,7 +60,7 @@ msgstr ""
 msgid "An account is not needed to download or install apps."
 msgstr ""
 
-#: src/views/ManagePackage.vue:491 src/views/ManageRevisions.vue:141
+#: src/views/ManagePackage.vue:496 src/views/ManageRevisions.vue:141
 msgid "An error occured loading your app data"
 msgstr ""
 
@@ -195,7 +199,7 @@ msgstr ""
 msgid "Camera"
 msgstr ""
 
-#: src/views/ManagePackage.vue:346 src/views/ManageRevisions.vue:63
+#: src/views/ManagePackage.vue:351 src/views/ManageRevisions.vue:63
 #: src/views/Submit.vue:167
 msgid "Cancel"
 msgstr ""
@@ -277,6 +281,10 @@ msgstr ""
 msgid "Debug"
 msgstr ""
 
+#: src/views/ManagePackage.vue:346
+msgid "Delete"
+msgstr ""
+
 #: src/views/ManagePackage.vue:85
 msgid "Description"
 msgstr ""
@@ -322,7 +330,8 @@ msgstr ""
 msgid "Edit"
 msgstr ""
 
-#: src/views/ManagePackage.vue:490 src/views/ManageRevisions.vue:140
+#: src/views/ManagePackage.vue:495 src/views/ManagePackage.vue:582
+#: src/views/ManagePackage.vue:608 src/views/ManageRevisions.vue:140
 #: src/views/Submit.vue:222
 msgid "Error"
 msgstr ""
@@ -503,8 +512,8 @@ msgstr ""
 msgid "Malware"
 msgstr ""
 
-#: src/App.vue:40 src/views/Manage.vue:142 src/views/ManagePackage.vue:369
-#: src/views/ManagePackage.vue:371
+#: src/App.vue:40 src/views/Manage.vue:142 src/views/ManagePackage.vue:374
+#: src/views/ManagePackage.vue:376
 msgid "Manage"
 msgstr ""
 
@@ -806,7 +815,8 @@ msgstr ""
 msgid "Submit your app"
 msgstr ""
 
-#: src/views/ManagePackage.vue:566 src/views/ManageRevisions.vue:185
+#: src/views/ManagePackage.vue:571 src/views/ManagePackage.vue:594
+#: src/views/ManageRevisions.vue:185
 msgid "Success"
 msgstr ""
 
@@ -836,7 +846,7 @@ msgid ""
 "Consult each individual app's page for more information."
 msgstr ""
 
-#: src/views/ManagePackage.vue:567
+#: src/views/ManagePackage.vue:572
 msgid "The changes to %{name} were saved!"
 msgstr ""
 

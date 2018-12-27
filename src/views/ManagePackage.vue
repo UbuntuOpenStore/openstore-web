@@ -342,6 +342,11 @@
                     <span class="ml" v-translate>Save</span>
                 </a>
 
+                <a class="p-button--negative" :class="{hidden: app.revisions.length > 0}" @click="remove()" :disabled="saving">
+                    <i class="fa" :class="{'fa-remove': !saving, 'fa-spinner fa-spin': saving}"></i>
+                    <span class="ml" v-translate>Delete</span>
+                </a>
+
                 <router-link class="p-button--neutral" :to="{name: 'manage'}" :disabled="saving">
                     <i class="fa fa-times"></i>
                     <span class="ml" v-translate>Cancel</span>
@@ -574,12 +579,38 @@ export default {
 
                     this.saving = false;
                     VueNotifications.error({
-                        title: 'Error',
+                        title: this.$gettext('Error'),
                         message: error,
                     });
                 });
             }
         },
+        remove() {
+            if (!this.saving) {
+                this.saving = true;
+
+                api.manage.remove(this.app.id, this.user.apikey).then(() => {
+                    VueNotifications.success({
+                        title: this.$gettext('Success'),
+                        message: this.$gettext('%{name} was successfully deleted').replace('%{name}', this.app.name),
+                    });
+
+                    this.saving = false;
+                    this.$router.push({name: 'manage'});
+                }).catch((err) => {
+                    let error = 'An unknown error has occured';
+                    if (err.response && err.response.data && err.response.data.message) {
+                        error = err.response.data.message;
+                    }
+
+                    this.saving = false;
+                    VueNotifications.error({
+                        title: this.$gettext('Error'),
+                        message: error,
+                    });
+                });
+            }
+        }
     },
     computed: {
         revisions() {
