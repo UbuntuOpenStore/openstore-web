@@ -70,7 +70,7 @@
                     </ul>
                 </nav>
 
-                <div v-if="tab == 'presentation'" class="p-card">
+                <div :class="{hidden: tab != 'presentation'}" class="p-card">
                     <div class="p-card__content">
                         <div class="p-form__group">
                             <label for="name" class="p-form__label" v-translate>Title</label>
@@ -131,7 +131,7 @@
                     </div>
                 </div>
 
-                <div v-if="tab == 'discovery'" class="p-card">
+                <div :class="{hidden: tab != 'discovery'}" class="p-card">
                     <div class="p-card__content">
                         <div class="p-form__group">
                             <label for="category" class="p-form__label">Category</label>
@@ -162,7 +162,7 @@
                     </div>
                 </div>
 
-                <div v-if="tab == 'info'" class="p-card">
+                <div :class="{hidden: tab != 'info'}" class="p-card">
                     <div class="p-card__content">
                         <div class="p-form__group">
                             <label for="license" class="p-form__label" v-translate>License</label>
@@ -236,7 +236,7 @@
                     </div>
                 </div>
 
-                <div v-if="tab == 'stats'" class="p-card">
+                <div :class="{hidden: tab != 'stats'}" class="p-card">
                     <div class="p-card__content">
                         <div class="p-form__group">
                             <label class="p-form__label" v-translate>Package Info</label>
@@ -699,6 +699,10 @@ export default {
 
     .p-tabs::before {
         width: 35px;
+    }
+
+    .hidden {
+        display: none;
     }
 
     @media screen and (max-width: 768px) {
