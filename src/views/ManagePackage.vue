@@ -607,7 +607,7 @@ export default {
                     });
                 });
             }
-        }
+        },
     },
     computed: {
         revisions() {
