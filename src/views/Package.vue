@@ -194,12 +194,10 @@
                         <span v-translate>Architecture</span>:
                         {{app.architecture}}
                     </p>
-                    <!-- TODO add back when the backend is fixed
                     <p v-if="app.languages.length > 0">
                         <span v-translate>Translation Languages</span>:
                         {{app.languages.join(', ')}}
                     </p>
-                    -->
                 </div>
             </div>
         </div>

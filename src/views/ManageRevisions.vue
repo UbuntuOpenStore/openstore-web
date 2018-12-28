@@ -6,7 +6,7 @@
                     <i class="fa fa-chevron-left"></i>
                 </router-link>
 
-                <translate :translate-params="{name: app.name}">New Revision for %{name}</translate>
+                <translate class="ml" :translate-params="{name: app.name}">New Revision for %{name}</translate>
             </h1>
 
             <form class="p-form p-form--stacked">

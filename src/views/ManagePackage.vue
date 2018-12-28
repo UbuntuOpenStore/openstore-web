@@ -116,7 +116,6 @@
                                     Drag and drop to sort screenshots.
                                 </p>
 
-                                <!-- TODO option to remove screenshots -->
                                 <draggable v-model="app.screenshots" class="screenshots">
                                     <div v-for="screenshot in app.screenshots" :key="screenshot" class="screenshot-wrapper">
                                         <a class="screenshot-remove" title="Delete Screenshot" @click="removeScreenshot(screenshot)">
@@ -272,12 +271,10 @@
                                             <td>{{app.channels.join(', ')}}</td>
                                         </tr>
 
-                                        <!--
                                         <tr class="name" v-if="app.languages.length > 0">
                                             <td v-translate>Translation Languages</td>
                                             <td>{{app.languages.join(', ')}}</td>
                                         </tr>
-                                        -->
                                     </tbody>
                                 </table>
                             </div>
