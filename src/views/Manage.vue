@@ -24,7 +24,7 @@
             <form class="p-form p-form--inline" v-on:submit.prevent>
                 <div class="p-form__group">
                     <label for="search" class="p-form__label" v-translate>Search</label>
-                    <input type="text" id="search" class="p-form__control" v-model="query.search" />
+                    <input type="text" id="search" class="p-form__control" :value="query.search" @input="query.search = $event.target.value" />
                 </div>
             </form>
 
