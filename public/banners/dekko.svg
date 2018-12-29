@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg id="turtl-logo" xmlns="http://www.w3.org/2000/svg" height="500" width="1e3" version="1.1">
+ <rect style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;paint-order:markers fill stroke;shape-rendering:auto;solid-color:#000000;image-rendering:auto;fill:#e0e8fd" height="511.4" width="1005" y="-4.653" x="-.6312"/>
+ <path style="color:#000000;stroke-width:15.98;fill:#d0dcfc" d="m1001-6.736v513.4l-517.6-511.4z"/>
+ <path style="opacity:.1;stroke-width:16.23;fill:#888" d="m1.328 55.65 0.041-52.3 1001-1.941 0.023 55.02-471.1 256.1s-15.81 8.616-29.21 8.616c-15.98 0-29.64-7.35-29.64-7.35z"/>
+ <path style="stroke-width:16.23;fill:#f2f6fe" d="m-0.6722 67.65 0.041-72.3 1003-1.941 0.023 75.02-471.1 236.1s-15.81 8.616-29.21 8.616c-15.98 0-29.64-7.35-29.64-7.35z"/>
+ <path style="fill:#ed5d6d;fill-rule:evenodd" d="m31.41 490.5v-81.5l-31.85-31.9v80.34z"/>
+ <path d="m31.41 289.4v-81.4l-31.85-31.9v80.34z" style="fill:#ed5d6d;fill-rule:evenodd"/>
+ <path d="m968 490.5v-81.47l31.86-31.86v80.34z" style="fill:#ea3f52;fill-rule:evenodd"/>
+ <path style="fill:#ea3f52;fill-rule:evenodd" d="m968 289.4v-81.4l31.86-31.86v80.34z"/>
+ <path d="m31.41 385.9v-81.4l-31.85-31.9v80.34z" style="fill:#9fb8f5;fill-rule:evenodd"/>
+ <path style="fill:#9fb8f5;fill-rule:evenodd" d="m31.41 184.9v-81.5l-31.85-31.81v80.34z"/>
+ <path style="fill:#8daaf4;fill-rule:evenodd" d="m968 385.9v-81.47l31.86-31.86v80.34z"/>
+ <path d="m968 184.9v-81.5l31.9-31.81v80.31z" style="fill:#8daaf4;fill-rule:evenodd"/>
+</svg>

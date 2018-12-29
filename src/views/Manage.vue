@@ -20,7 +20,6 @@
                 </p>
             </div>
 
-
             <form class="p-form p-form--inline" v-on:submit.prevent>
                 <div class="p-form__group">
                     <label for="search" class="p-form__label" v-translate>Search</label>
