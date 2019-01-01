@@ -8,68 +8,78 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-28 10:03-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2019-01-01 21:56+0000\n"
+"Last-Translator: Max Libre <libremax@protonmail.com>\n"
+"Language-Team: French <https://translate.ubports.com/projects/openstore/"
+"open-storeio/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 3.1.1\n"
 
 #: src/views/Package.vue:118
 msgid ""
 "*This app contains NSFW content, to view the description and\n"
 "screenshots, click the above button."
 msgstr ""
+"*Cette application inclut des contenus pas convenable pour le trvail, pour "
+"voir la description et\n"
+"copies d'écran, cliquez sur le bouton ci-dessus."
 
 #: src/views/ManagePackage.vue:592
 msgid "%{name} was successfully deleted"
-msgstr ""
+msgstr "%{name} a été supprimé avec succès"
 
 #: src/views/ManagePackage.vue:152
 msgid "A comma separated list of keywords"
-msgstr ""
+msgstr "Une liste de mots-clés séparés par des virgules"
 
 #: src/App.vue:34 src/views/About.vue:3 src/views/About.vue:179
 #: src/views/About.vue:183
 msgid "About"
-msgstr ""
+msgstr "À propos"
 
 #: src/App.vue:78
 msgid "About Us"
-msgstr ""
+msgstr "À notre sujet"
 
 #: src/views/Package.vue:266
 msgid "Accounts"
-msgstr ""
+msgstr "Comptes"
 
 #: src/views/Browse.vue:16
 msgid "All Categories"
-msgstr ""
+msgstr "Toutes les catégories"
 
 #: src/views/Browse.vue:65
 msgid "All Channels"
-msgstr ""
+msgstr "Tous les canaux"
 
 #: src/views/Browse.vue:31
 msgid "All Types"
-msgstr ""
+msgstr "Tous les types"
 
 #: src/views/Login.vue:26
 msgid "An account is not needed to download or install apps."
 msgstr ""
+"Un compte est nécessaire pour télécharger ou installer les applications."
 
 #: src/views/ManagePackage.vue:493 src/views/ManageRevisions.vue:141
 msgid "An error occured loading your app data"
 msgstr ""
+"Une erreur s'est produite lors du chargement des données de votre application"
 
 #: src/views/ManageRevisions.vue:191 src/views/Submit.vue:216
 msgid "An unknown error has occured"
-msgstr ""
+msgstr "Une erreur inconnue s'est produite"
 
 #: src/views/About.vue:159
 msgid "And many amazing developers, testers, and users from the OpenStore community!"
 msgstr ""
+"Et de nombreux et étonnants développeurs, testeurs et utilisateurs de la "
+"communauté OpenStore !"
 
 #: src/views/About.vue:121
 msgid ""
