@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: openstore\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-22 15:52+0100\n"
-"PO-Revision-Date: 2019-01-01 18:26+0000\n"
+"PO-Revision-Date: 2019-01-01 20:36+0000\n"
 "Last-Translator: Joan CiberSheep <cibersheep@gmail.com>\n"
 "Language-Team: Catalan <https://translate.ubports.com/projects/openstore/"
 "open-storeio/ca/>\n"
@@ -446,7 +446,7 @@ msgstr "Icona"
 
 #: src/views/ManagePackage.vue:245
 msgid "ID"
-msgstr ""
+msgstr "Identificació"
 
 #: src/views/Submit.vue:44
 msgid ""
@@ -456,15 +456,15 @@ msgstr ""
 
 #: src/views/Submit.vue:107
 msgid "Illegal Activities"
-msgstr ""
+msgstr "Activitats il·legals"
 
 #: src/views/Package.vue:277
 msgid "In App Purchases"
-msgstr ""
+msgstr "Compres dins l'aplicació"
 
 #: src/views/ManagePackage.vue:60 src/views/Package.vue:152
 msgid "Info"
-msgstr ""
+msgstr "Informació"
 
 #: src/views/About.vue:18 src/views/Package.vue:39
 msgid "Install"
@@ -472,23 +472,23 @@ msgstr "Instal·la-la"
 
 #: src/views/Package.vue:264
 msgid "Install via the OpenStore app"
-msgstr ""
+msgstr "Instal·leu via l'aplicació OpenStore"
 
 #: src/views/Browse.vue:208 src/views/Manage.vue:164
 msgid "Jump to the first page"
-msgstr ""
+msgstr "Salta a la primera pàgina"
 
 #: src/views/Browse.vue:211 src/views/Manage.vue:167
 msgid "Jump to the last page"
-msgstr ""
+msgstr "Salta a la darrera pàgina"
 
 #: src/views/Package.vue:278
 msgid "Keep Display On"
-msgstr ""
+msgstr "Manté la pantalla encesa"
 
 #: src/views/Manage.vue:16
 msgid "Keep your api key private!"
-msgstr ""
+msgstr "No compartiu la vostra clau de l'api!"
 
 #: src/views/ManagePackage.vue:150
 msgid "Keywords"
