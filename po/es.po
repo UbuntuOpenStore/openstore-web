@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-28 10:03-0500\n"
 "PO-Revision-Date: 2019-01-01 21:56+0000\n"
-"Last-Translator: advocatux <advocatux@airpost.net>\n"
+"Last-Translator: Krakakanok <krakakanok@protonmail.com>\n"
 "Language-Team: Spanish <https://translate.ubports.com/projects/openstore/"
 "open-storeio/es/>\n"
 "Language: es\n"
@@ -194,35 +194,38 @@ msgid ""
 "Apps uploaded to the OpenStore are subject to our submission rules and content policy.\n"
 "You can review the rules and policies before uploading your app."
 msgstr ""
+"Las aplicaciones subidas a la OpenStore están sujetas a nuestras reglas de "
+"envío y política de contenido.\n"
+"Puedes revisar las reglas y políticas antes de subir tu aplicación."
 
 #: src/views/ManagePackage.vue:253 src/views/Package.vue:193
 msgid "Architecture"
-msgstr ""
+msgstr "Arquitectura"
 
 #: src/views/Package.vue:267
 msgid "Audio"
-msgstr ""
+msgstr "Sonido"
 
 #: src/views/Manage.vue:46 src/views/ManagePackage.vue:249
 #: src/views/Package.vue:155
 msgid "Author"
-msgstr ""
+msgstr "Autor"
 
 #: src/views/Package.vue:7
 msgid "Back"
-msgstr ""
+msgstr "Atrás"
 
 #: src/views/Package.vue:268
 msgid "Bluetooth"
-msgstr ""
+msgstr "Bluetooth"
 
 #: src/App.vue:31
 msgid "Browse"
-msgstr ""
+msgstr "Buscar"
 
 #: src/views/Browse.vue:181
 msgid "Browse Apps"
-msgstr ""
+msgstr "Buscar Apps"
 
 #: src/views/About.vue:73
 msgid "Bug Tracker"
@@ -230,37 +233,37 @@ msgstr ""
 
 #: src/views/Package.vue:269
 msgid "Calendar"
-msgstr ""
+msgstr "Calendario"
 
 #: src/views/Package.vue:270
 msgid "Camera"
-msgstr ""
+msgstr "Cámara"
 
 #: src/views/ManagePackage.vue:348 src/views/ManageRevisions.vue:63
 #: src/views/Submit.vue:167
 msgid "Cancel"
-msgstr ""
+msgstr "Cancelar"
 
 #: src/views/Browse.vue:14 src/views/Package.vue:177
 msgid "Category"
-msgstr ""
+msgstr "Categoría"
 
 #: src/views/ManagePackage.vue:96 src/views/Package.vue:128
 msgid "Changelog"
-msgstr ""
+msgstr "Registro de cambios"
 
 #: src/views/Browse.vue:63 src/views/ManagePackage.vue:290
 #: src/views/ManageRevisions.vue:13
 msgid "Channel"
-msgstr ""
+msgstr "Canal"
 
 #: src/views/ManagePackage.vue:269
 msgid "Channels"
-msgstr ""
+msgstr "Canales"
 
 #: src/App.vue:83
 msgid "Chat with us on Telegram"
-msgstr ""
+msgstr "Habla con nosotros en Telegram"
 
 #: src/views/Submit.vue:81
 msgid "Child Endangerment"
@@ -268,43 +271,43 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:137
 msgid "Choose a category"
-msgstr ""
+msgstr "Elija una categoría"
 
 #: src/views/ManagePackage.vue:168
 msgid "Choose a license"
-msgstr ""
+msgstr "Elija una licencia"
 
 #: src/views/ManagePackage.vue:226
 msgid "Choose a maintainer"
-msgstr ""
+msgstr "Elija un mantenedor"
 
 #: src/views/Package.vue:271
 msgid "Connectivity"
-msgstr ""
+msgstr "Conectividad"
 
 #: src/views/About.vue:58
 msgid "Contact"
-msgstr ""
+msgstr "Contactar"
 
 #: src/views/Package.vue:272
 msgid "Contacts"
-msgstr ""
+msgstr "Contactos"
 
 #: src/views/Package.vue:274
 msgid "Content Exchange"
-msgstr ""
+msgstr "Intercambio de Contenidos"
 
 #: src/views/Package.vue:273
 msgid "Content Exchange Source"
-msgstr ""
+msgstr "Fuente de Intercambio de Contenidos"
 
 #: src/views/About.vue:137
 msgid "Contributors"
-msgstr ""
+msgstr "Contribuidores"
 
 #: src/views/About.vue:46
 msgid "Copy to clipboard"
-msgstr ""
+msgstr "Copiar al portapapeles"
 
 #: src/views/Stats.vue:20
 msgid "Count"
@@ -324,11 +327,11 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:85
 msgid "Description"
-msgstr ""
+msgstr "Descripción"
 
 #: src/views/ManagePackage.vue:55
 msgid "Discovery"
-msgstr ""
+msgstr "Descubrir"
 
 #: src/views/Package.vue:91
 msgid "Donate"
@@ -466,7 +469,7 @@ msgstr ""
 
 #: src/views/About.vue:18 src/views/Package.vue:39
 msgid "Install"
-msgstr ""
+msgstr "Instalar"
 
 #: src/views/Package.vue:264
 msgid "Install via the OpenStore app"
@@ -503,7 +506,7 @@ msgstr ""
 #: src/views/About.vue:77 src/views/ManagePackage.vue:166
 #: src/views/Package.vue:173
 msgid "License"
-msgstr ""
+msgstr "Licencia"
 
 #: src/views/Package.vue:279
 msgid "Location"
@@ -543,16 +546,16 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:224
 msgid "Maintainer"
-msgstr ""
+msgstr "Mantenedor"
 
 #: src/views/Submit.vue:113
 msgid "Malware"
-msgstr ""
+msgstr "Malware"
 
 #: src/App.vue:40 src/views/Manage.vue:142 src/views/ManagePackage.vue:371
 #: src/views/ManagePackage.vue:373
 msgid "Manage"
-msgstr ""
+msgstr "Administrar"
 
 #: src/views/Manage.vue:138
 msgid "Manage Apps"
@@ -692,7 +695,7 @@ msgstr ""
 
 #: src/views/Package.vue:162
 msgid "Packager/Publisher"
-msgstr ""
+msgstr "Empaquetador/Publicador"
 
 #: src/views/NotFound.vue:3
 msgid "Page Not Found"
@@ -700,7 +703,7 @@ msgstr ""
 
 #: src/views/Package.vue:80 src/views/Package.vue:135
 msgid "Permissions"
-msgstr ""
+msgstr "Permisos"
 
 #: src/views/Package.vue:285
 msgid "Picture Files"
@@ -784,11 +787,11 @@ msgstr ""
 
 #: src/components/Types.vue:4 src/views/Stats.vue:86
 msgid "Scope"
-msgstr ""
+msgstr "Scope"
 
 #: src/views/Browse.vue:34
 msgid "Scopes"
-msgstr ""
+msgstr "Scopes"
 
 #: src/views/Package.vue:107
 msgid "Screenshots"
@@ -800,7 +803,7 @@ msgstr ""
 
 #: src/views/Browse.vue:9 src/views/Manage.vue:25
 msgid "Search"
-msgstr ""
+msgstr "Buscar"
 
 #: src/views/Package.vue:287
 msgid "Sensors"
