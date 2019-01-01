@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: openstore\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-22 15:52+0100\n"
-"PO-Revision-Date: 2019-01-01 18:08+0000\n"
-"Last-Translator: Joan CiberSheep <cibersheep@gmail.com>\n"
+"PO-Revision-Date: 2019-01-01 18:23+0000\n"
+"Last-Translator: Jaume Angrill <txaume@protonmail.com>\n"
 "Language-Team: Catalan <https://translate.ubports.com/projects/openstore/"
 "open-storeio/ca/>\n"
 "Language: ca\n"
@@ -403,11 +403,11 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:257 src/views/Package.vue:189
 msgid "Framework"
-msgstr ""
+msgstr "Marc"
 
 #: src/views/Package.vue:293
 msgid "Full System Access"
-msgstr ""
+msgstr "Accés complet del sistema"
 
 #: src/views/Submit.vue:100
 msgid "Gambling"
