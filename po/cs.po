@@ -8,68 +8,74 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-28 10:03-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2019-01-01 21:56+0000\n"
+"Last-Translator: Milan Korecký <milan.korecky@gmail.com>\n"
+"Language-Team: Czech <https://translate.ubports.com/projects/openstore/"
+"open-storeio/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 3.1.1\n"
 
 #: src/views/Package.vue:118
 msgid ""
 "*This app contains NSFW content, to view the description and\n"
 "screenshots, click the above button."
 msgstr ""
+"*Tato aplikace obsahuje sexuálně orientované materiály, ke shlédnutí obsahu, "
+"popisu a\n"
+"snímků obrazovky, klikněte na výše uvedené tlačítko."
 
 #: src/views/ManagePackage.vue:592
 msgid "%{name} was successfully deleted"
-msgstr ""
+msgstr "%{name} byl úspěšně smazán"
 
 #: src/views/ManagePackage.vue:152
 msgid "A comma separated list of keywords"
-msgstr ""
+msgstr "Seznam klíčových slov oddělených čárkou"
 
 #: src/App.vue:34 src/views/About.vue:3 src/views/About.vue:179
 #: src/views/About.vue:183
 msgid "About"
-msgstr ""
+msgstr "O"
 
 #: src/App.vue:78
 msgid "About Us"
-msgstr ""
+msgstr "O nás"
 
 #: src/views/Package.vue:266
 msgid "Accounts"
-msgstr ""
+msgstr "Účty"
 
 #: src/views/Browse.vue:16
 msgid "All Categories"
-msgstr ""
+msgstr "Všechny kategorie"
 
 #: src/views/Browse.vue:65
 msgid "All Channels"
-msgstr ""
+msgstr "Všechny kanály"
 
 #: src/views/Browse.vue:31
 msgid "All Types"
-msgstr ""
+msgstr "Všechny tipy"
 
 #: src/views/Login.vue:26
 msgid "An account is not needed to download or install apps."
-msgstr ""
+msgstr "Ke stažení či instalaci aplikací není třeba mít zřízen účet."
 
 #: src/views/ManagePackage.vue:493 src/views/ManageRevisions.vue:141
 msgid "An error occured loading your app data"
-msgstr ""
+msgstr "Při nahrávání dat aplikace došlo k chybě"
 
 #: src/views/ManageRevisions.vue:191 src/views/Submit.vue:216
 msgid "An unknown error has occured"
-msgstr ""
+msgstr "Došlo k neznámmé chybě"
 
 #: src/views/About.vue:159
 msgid "And many amazing developers, testers, and users from the OpenStore community!"
-msgstr ""
+msgstr "A spousty úžasných vývojářů, testerů, a uživatelů z OpenStore komunity!"
 
 #: src/views/About.vue:121
 msgid ""
@@ -78,262 +84,296 @@ msgid ""
 "contact you in the event there is an issue with your app.\n"
 "Additionally, this site uses cookies to keep you logged in to your account."
 msgstr ""
+"Veškeré osobní údaje, které se nám rozhodnete poskytnout (např. vaše e-"
+"mailová adresa při registraci k účtu k nahrání vašich aplikací), "
+"neposkytneme dále\n"
+"a nebudou používány k ničemu jinému, než aby vám umožnily udržovat vaše "
+"aplikace. Použijeme he pouze ve vzácných případech, abychom vás mohli "
+"kontaktovat pokud bude něco v nepořádku s vaší aplikací.\n"
+"Tyto stránky používají soubory cookie k tomu, abyste zůstali přihlášeni k "
+"účtu."
 
 #: src/views/Manage.vue:12
 msgid "API Key"
-msgstr ""
+msgstr "API Klíč"
 
 #: src/components/Types.vue:3 src/views/Manage.vue:45 src/views/Stats.vue:85
 msgid "App"
-msgstr ""
+msgstr "Aplikace"
 
 #: src/views/Submit.vue:95
 msgid "App containing or promoting any of the above are strictly prohibited."
 msgstr ""
+"Aplikace obsahující nebo propagující cokoliv z výše uvedeného jsou přísně "
+"zakázané."
 
 #: src/views/Submit.vue:133
 msgid "App Name"
-msgstr ""
+msgstr "Název aplikace"
 
 #: src/App.vue:88
 msgid "App Stats"
-msgstr ""
+msgstr "Statistiky aplikace"
 
 #: src/views/Stats.vue:19
 msgid "App Type"
-msgstr ""
+msgstr "Typ aplikace"
 
 #: src/views/Stats.vue:15
 msgid "App Types"
-msgstr ""
+msgstr "Typy aplikací"
 
 #: src/views/Browse.vue:32
 msgid "Apps"
-msgstr ""
+msgstr "Aplikace"
 
 #: src/views/Submit.vue:101
 msgid ""
 "Apps containing gambling involving real world money transactions are not allowed.\n"
 "This includes, but is not limited to, online casinos, betting, and lotteries."
 msgstr ""
+"Aplikace obsahující hazardní hry, které zahrnují transakce v reálném světě, "
+"nejsou povoleny.\n"
+"To zahrnuje, mimo jiné, online kasina, sázky a loterie."
 
 #: src/views/Submit.vue:82
 msgid "Apps containing or promoting child abuse or child sexual abuse are strictly prohibited."
 msgstr ""
+"Aplikace obsahující nebo podporující zneužívání dětí nebo sexuální "
+"zneužívání dětí jsou přísně zakázány."
 
 #: src/views/Submit.vue:88
 msgid ""
 "Apps containing or promoting gratuitous violence are not allowed.\n"
 "This includes, but is not limited to, violence, terrorism, bomb/weapon making, self harm, and grotesque imagery."
 msgstr ""
+"Aplikace obsahující nebo podporující bezdůvodné násilí nejsou povoleny.\n"
+"To zahrnuje, mimo jiné, násilí, terorismus, tvorbu zbraní / zbraní, "
+"sebepoškozování a groteskní snímky."
 
 #: src/views/Submit.vue:75
 msgid ""
 "Apps containing or promoting sexually explicit contentare not allowed.\n"
 "This includes, but is not limited to, pornography and services promoting sexually explicit content."
 msgstr ""
+"Aplikace obsahující nebo podporující sexuálně explicitní materiály  nejsou "
+"povoleny.\n"
+"To zahrnuje, ale není omezeno na pornografii a služby propagující sexuálně "
+"explicitní obsah."
 
 #: src/views/Submit.vue:7
 msgid "Apps not requiring manual review can be submitted by logging in with the \"Log In\" link above."
 msgstr ""
+"Aplikace, které nevyžadují manuální kontrolu, lze odeslat při přihlášení "
+"pomocí výše uvedeného odkazu \"Přihlásit se\"."
 
 #: src/views/Submit.vue:108
 msgid "Apps promoting illegal activities (based on USA law) are not allowed."
 msgstr ""
+"Aplikace podporující nelegální aktivity (založené na americkém právu) nejsou "
+"povoleny."
 
 #: src/views/Submit.vue:18
 msgid "Apps requiring manual review must be submitted by contacting an admin in our telegram group."
 msgstr ""
+"Aplikace, které vyžadují manuální kontrolu, musí být předloženy ke kontrole "
+"správci naší skupiny na Telegramu."
 
 #: src/views/Submit.vue:114
 msgid ""
 "Apps that are found to be stealing the users data, trying to escalate their privileges without user consent,\n"
 "or executing malicious process are strictly prohibited."
 msgstr ""
+"Aplikace, u kterých je zjištěno, že kradou data uživatelů, snaží se obejít "
+"oprávnění bez souhlasu uživatele,\n"
+"nebo spouští škodlivé procesy jsou přísně zakázány."
 
 #: src/views/About.vue:128
 msgid ""
 "Apps uploaded to the OpenStore are subject to our submission rules and content policy.\n"
 "You can review the rules and policies before uploading your app."
 msgstr ""
+"Aplikace nahrané do OpenStore podléhají našim pravidlům pro odesílání a "
+"politice obsahu.\n"
+"Před nahráním aplikace si můžete zkontrolovat pravidla a zásady."
 
 #: src/views/ManagePackage.vue:253 src/views/Package.vue:193
 msgid "Architecture"
-msgstr ""
+msgstr "Architektura"
 
 #: src/views/Package.vue:267
 msgid "Audio"
-msgstr ""
+msgstr "Zvuk"
 
 #: src/views/Manage.vue:46 src/views/ManagePackage.vue:249
 #: src/views/Package.vue:155
 msgid "Author"
-msgstr ""
+msgstr "Autor"
 
 #: src/views/Package.vue:7
 msgid "Back"
-msgstr ""
+msgstr "Zpět"
 
 #: src/views/Package.vue:268
 msgid "Bluetooth"
-msgstr ""
+msgstr "Bluetooth"
 
 #: src/App.vue:31
 msgid "Browse"
-msgstr ""
+msgstr "Hledat"
 
 #: src/views/Browse.vue:181
 msgid "Browse Apps"
-msgstr ""
+msgstr "Hledat aplikace"
 
 #: src/views/About.vue:73
 msgid "Bug Tracker"
-msgstr ""
+msgstr "Sledování chyb"
 
 #: src/views/Package.vue:269
 msgid "Calendar"
-msgstr ""
+msgstr "Kalendář"
 
 #: src/views/Package.vue:270
 msgid "Camera"
-msgstr ""
+msgstr "Fotoaparát"
 
 #: src/views/ManagePackage.vue:348 src/views/ManageRevisions.vue:63
 #: src/views/Submit.vue:167
 msgid "Cancel"
-msgstr ""
+msgstr "Zrušit"
 
 #: src/views/Browse.vue:14 src/views/Package.vue:177
 msgid "Category"
-msgstr ""
+msgstr "Kategorie"
 
 #: src/views/ManagePackage.vue:96 src/views/Package.vue:128
 msgid "Changelog"
-msgstr ""
+msgstr "Seznam změn"
 
 #: src/views/Browse.vue:63 src/views/ManagePackage.vue:290
 #: src/views/ManageRevisions.vue:13
 msgid "Channel"
-msgstr ""
+msgstr "Kanál"
 
 #: src/views/ManagePackage.vue:269
 msgid "Channels"
-msgstr ""
+msgstr "Kanály"
 
 #: src/App.vue:83
 msgid "Chat with us on Telegram"
-msgstr ""
+msgstr "Spojte se s námi na Telegramu"
 
 #: src/views/Submit.vue:81
 msgid "Child Endangerment"
-msgstr ""
+msgstr "Ohrožení dítěte"
 
 #: src/views/ManagePackage.vue:137
 msgid "Choose a category"
-msgstr ""
+msgstr "Zvolte kategorii"
 
 #: src/views/ManagePackage.vue:168
 msgid "Choose a license"
-msgstr ""
+msgstr "Zvolte licenci"
 
 #: src/views/ManagePackage.vue:226
 msgid "Choose a maintainer"
-msgstr ""
+msgstr "Zvolte údržbu"
 
 #: src/views/Package.vue:271
 msgid "Connectivity"
-msgstr ""
+msgstr "Konektivita"
 
 #: src/views/About.vue:58
 msgid "Contact"
-msgstr ""
+msgstr "Kontaktovat"
 
 #: src/views/Package.vue:272
 msgid "Contacts"
-msgstr ""
+msgstr "Kontakty"
 
 #: src/views/Package.vue:274
 msgid "Content Exchange"
-msgstr ""
+msgstr "Výměna obsahu"
 
 #: src/views/Package.vue:273
 msgid "Content Exchange Source"
-msgstr ""
+msgstr "Zdroj výměny obsahu"
 
 #: src/views/About.vue:137
 msgid "Contributors"
-msgstr ""
+msgstr "Spolupracovali"
 
 #: src/views/About.vue:46
 msgid "Copy to clipboard"
-msgstr ""
+msgstr "Zkopírovat do schránky"
 
 #: src/views/Stats.vue:20
 msgid "Count"
-msgstr ""
+msgstr "Spočítat"
 
 #: src/views/ManageRevisions.vue:54
 msgid "Create"
-msgstr ""
+msgstr "Vytvořit"
 
 #: src/views/Package.vue:275
 msgid "Debug"
-msgstr ""
+msgstr "Ladit"
 
 #: src/views/ManagePackage.vue:343
 msgid "Delete"
-msgstr ""
+msgstr "Vymazat"
 
 #: src/views/ManagePackage.vue:85
 msgid "Description"
-msgstr ""
+msgstr "Popis"
 
 #: src/views/ManagePackage.vue:55
 msgid "Discovery"
-msgstr ""
+msgstr "Objevit"
 
 #: src/views/Package.vue:91
 msgid "Donate"
-msgstr ""
+msgstr "Darovat"
 
 #: src/views/ManagePackage.vue:211
 msgid "Donate URL"
-msgstr ""
+msgstr "Darovat URL"
 
 #: src/views/ManagePackage.vue:283
 msgid "Download Stats"
-msgstr ""
+msgstr "Statistiky stažení"
 
 #: src/views/About.vue:32
 msgid "Download the OpenStore App"
-msgstr ""
+msgstr "Stáhnout aplikaci OpenStore"
 
 #: src/views/Package.vue:261
 msgid "Download Vivid"
-msgstr ""
+msgstr "Stáhnout Vivid"
 
 #: src/views/Package.vue:262
 msgid "Download Xenial"
-msgstr ""
+msgstr "Stáhnout Xenial"
 
 #: src/views/Manage.vue:49 src/views/Manage.vue:69
 #: src/views/ManagePackage.vue:292
 msgid "Downloads"
-msgstr ""
+msgstr "Stahování"
 
 #: src/views/ManagePackage.vue:114
 msgid "Drag and drop to sort screenshots."
-msgstr ""
+msgstr "Vyberte a přetáhněte pro seřazení snímků obrazovky."
 
 #: src/views/ManagePackage.vue:8
 msgid "Edit"
-msgstr ""
+msgstr "Editovat"
 
 #: src/views/ManagePackage.vue:492 src/views/ManagePackage.vue:579
 #: src/views/ManagePackage.vue:605 src/views/ManageRevisions.vue:140
 #: src/views/Submit.vue:222
 msgid "Error"
-msgstr ""
+msgstr "Chyba"
 
 #: src/views/Feeds.vue:34 src/views/Feeds.vue:38
 msgid "Feeds"
@@ -341,15 +381,15 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:261
 msgid "File Size"
-msgstr ""
+msgstr "Velikost souboru"
 
 #: src/views/ManageRevisions.vue:27
 msgid "File Upload"
-msgstr ""
+msgstr "Nahrát soubor"
 
 #: src/views/Browse.vue:52
 msgid "Filters"
-msgstr ""
+msgstr "Filtry"
 
 #: src/views/About.vue:60
 msgid ""
@@ -367,11 +407,11 @@ msgstr ""
 
 #: src/views/Package.vue:293
 msgid "Full System Access"
-msgstr ""
+msgstr "Úplný přístup k systému"
 
 #: src/views/Submit.vue:100
 msgid "Gambling"
-msgstr ""
+msgstr "Hazardní hry"
 
 #: src/views/Submit.vue:39
 msgid ""
@@ -382,31 +422,31 @@ msgstr ""
 
 #: src/views/Browse.vue:209 src/views/Manage.vue:165
 msgid "Go back a page"
-msgstr ""
+msgstr "Zpět o jednu stránku"
 
 #: src/views/Browse.vue:210 src/views/Manage.vue:166
 msgid "Go to the next page"
-msgstr ""
+msgstr "Přejít na následující stránku"
 
 #: src/views/About.vue:85
 msgid "GPL v3 License"
-msgstr ""
+msgstr "GPL v3 Licence"
 
 #: src/views/Submit.vue:94
 msgid "Harassment, Bullying, or Hate Speech"
-msgstr ""
+msgstr "Obtěžování, šikana nebo vyjadřování nenávisti"
 
 #: src/views/Package.vue:276
 msgid "History"
-msgstr ""
+msgstr "Historie"
 
 #: src/views/Manage.vue:43
 msgid "Icon"
-msgstr ""
+msgstr "Ikona"
 
 #: src/views/ManagePackage.vue:245
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #: src/views/Submit.vue:44
 msgid ""
@@ -416,64 +456,64 @@ msgstr ""
 
 #: src/views/Submit.vue:107
 msgid "Illegal Activities"
-msgstr ""
+msgstr "Nelegální chování"
 
 #: src/views/Package.vue:277
 msgid "In App Purchases"
-msgstr ""
+msgstr "Nákupy v aplikaci"
 
 #: src/views/ManagePackage.vue:60 src/views/Package.vue:152
 msgid "Info"
-msgstr ""
+msgstr "Informace"
 
 #: src/views/About.vue:18 src/views/Package.vue:39
 msgid "Install"
-msgstr ""
+msgstr "Instalovat"
 
 #: src/views/Package.vue:264
 msgid "Install via the OpenStore app"
-msgstr ""
+msgstr "Instalovat pomocí OpenStore aplikace"
 
 #: src/views/Browse.vue:208 src/views/Manage.vue:164
 msgid "Jump to the first page"
-msgstr ""
+msgstr "Přeskočit na první stránku"
 
 #: src/views/Browse.vue:211 src/views/Manage.vue:167
 msgid "Jump to the last page"
-msgstr ""
+msgstr "Přeskočit na poslední stránku"
 
 #: src/views/Package.vue:278
 msgid "Keep Display On"
-msgstr ""
+msgstr "Zachovat rozsvícenou obrazovku"
 
 #: src/views/Manage.vue:16
 msgid "Keep your api key private!"
-msgstr ""
+msgstr "Zachovat váš API klíč soukromý!"
 
 #: src/views/ManagePackage.vue:150
 msgid "Keywords"
-msgstr ""
+msgstr "Klíčová slova"
 
 #: src/App.vue:60
 msgid "Language"
-msgstr ""
+msgstr "Jazyk"
 
 #: src/views/Browse.vue:46
 msgid "Latest Update"
-msgstr ""
+msgstr "Poslední aktualizace"
 
 #: src/views/About.vue:77 src/views/ManagePackage.vue:166
 #: src/views/Package.vue:173
 msgid "License"
-msgstr ""
+msgstr "Licence"
 
 #: src/views/Package.vue:279
 msgid "Location"
-msgstr ""
+msgstr "Umístění"
 
 #: src/App.vue:37
 msgid "Log In"
-msgstr ""
+msgstr "Přihlášení"
 
 #: src/views/Login.vue:24
 msgid "Log in to the OpenStore to be able to manage your apps."
@@ -481,11 +521,11 @@ msgstr ""
 
 #: src/App.vue:43
 msgid "Log Out"
-msgstr ""
+msgstr "Odhlášení"
 
 #: src/views/Login.vue:41 src/views/Login.vue:45
 msgid "Login"
-msgstr ""
+msgstr "Přihlásit se"
 
 #: src/views/Submit.vue:125
 msgid "Login to submit your app"
@@ -654,7 +694,7 @@ msgstr ""
 
 #: src/views/Package.vue:162
 msgid "Packager/Publisher"
-msgstr ""
+msgstr "Vytvořil/Publikoval"
 
 #: src/views/NotFound.vue:3
 msgid "Page Not Found"
@@ -662,7 +702,7 @@ msgstr ""
 
 #: src/views/Package.vue:80 src/views/Package.vue:135
 msgid "Permissions"
-msgstr ""
+msgstr "Oprávnění"
 
 #: src/views/Package.vue:285
 msgid "Picture Files"
@@ -746,7 +786,7 @@ msgstr ""
 
 #: src/components/Types.vue:4 src/views/Stats.vue:86
 msgid "Scope"
-msgstr ""
+msgstr "Scope"
 
 #: src/views/Browse.vue:34
 msgid "Scopes"
@@ -762,7 +802,7 @@ msgstr ""
 
 #: src/views/Browse.vue:9 src/views/Manage.vue:25
 msgid "Search"
-msgstr ""
+msgstr "Hledat"
 
 #: src/views/Package.vue:287
 msgid "Sensors"
