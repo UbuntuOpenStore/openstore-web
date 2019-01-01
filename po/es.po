@@ -8,68 +8,75 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-28 10:03-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2019-01-01 21:56+0000\n"
+"Last-Translator: advocatux <advocatux@airpost.net>\n"
+"Language-Team: Spanish <https://translate.ubports.com/projects/openstore/"
+"open-storeio/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.1.1\n"
 
 #: src/views/Package.vue:118
 msgid ""
 "*This app contains NSFW content, to view the description and\n"
 "screenshots, click the above button."
 msgstr ""
+"*Esta aplicación incluye contenido para ADULTOS, para ver\n"
+"la descripción y capturas de pantalla, pulse el botón superior."
 
 #: src/views/ManagePackage.vue:592
 msgid "%{name} was successfully deleted"
-msgstr ""
+msgstr "%{name} se ha eliminado correctamente"
 
 #: src/views/ManagePackage.vue:152
 msgid "A comma separated list of keywords"
-msgstr ""
+msgstr "Una lista de palabras clave separadas por comas"
 
 #: src/App.vue:34 src/views/About.vue:3 src/views/About.vue:179
 #: src/views/About.vue:183
 msgid "About"
-msgstr ""
+msgstr "Acerca de"
 
 #: src/App.vue:78
 msgid "About Us"
-msgstr ""
+msgstr "Acerca de nosotros"
 
 #: src/views/Package.vue:266
 msgid "Accounts"
-msgstr ""
+msgstr "Cuentas"
 
 #: src/views/Browse.vue:16
 msgid "All Categories"
-msgstr ""
+msgstr "Todas las categorías"
 
 #: src/views/Browse.vue:65
 msgid "All Channels"
-msgstr ""
+msgstr "Todos los canales"
 
 #: src/views/Browse.vue:31
 msgid "All Types"
-msgstr ""
+msgstr "Todos los tipos"
 
 #: src/views/Login.vue:26
 msgid "An account is not needed to download or install apps."
-msgstr ""
+msgstr "No es necesaria una cuenta para descargar o instalar aplicaciones."
 
 #: src/views/ManagePackage.vue:493 src/views/ManageRevisions.vue:141
 msgid "An error occured loading your app data"
-msgstr ""
+msgstr "Ha ocurrido un error al cargar los datos de su aplicación"
 
 #: src/views/ManageRevisions.vue:191 src/views/Submit.vue:216
 msgid "An unknown error has occured"
-msgstr ""
+msgstr "Se produjo un error desconocido"
 
 #: src/views/About.vue:159
 msgid "And many amazing developers, testers, and users from the OpenStore community!"
 msgstr ""
+"¡Y muchos desarrolladores, probadores y usuarios increíbles de la comunidad "
+"de OpenStore!"
 
 #: src/views/About.vue:121
 msgid ""
@@ -78,78 +85,109 @@ msgid ""
 "contact you in the event there is an issue with your app.\n"
 "Additionally, this site uses cookies to keep you logged in to your account."
 msgstr ""
+"Cualquier dato personal que decida entregarnos (p.ej. su dirección de correo "
+"electrónico al registrarse para subir sus aplicaciones) no saldrá de "
+"nosotros\n"
+"y no se usará para otra cosa que no sea facilitarle el mantenimiento de sus "
+"aplicaciones y, excepcionalmente,\n"
+"contactarle en el supuesto de que haya algún problema con su aplicación.\n"
+"Además, este sitio usa «cookies» para mantener la sesión en su cuenta."
 
 #: src/views/Manage.vue:12
 msgid "API Key"
-msgstr ""
+msgstr "Clave API"
 
 #: src/components/Types.vue:3 src/views/Manage.vue:45 src/views/Stats.vue:85
 msgid "App"
-msgstr ""
+msgstr "Aplicación"
 
 #: src/views/Submit.vue:95
 msgid "App containing or promoting any of the above are strictly prohibited."
 msgstr ""
+"Cualquier aplicación que contenga o promueva algo de lo anterior está "
+"estrictamente prohibida."
 
 #: src/views/Submit.vue:133
 msgid "App Name"
-msgstr ""
+msgstr "Nombre de la aplicación"
 
 #: src/App.vue:88
 msgid "App Stats"
-msgstr ""
+msgstr "Estadísticas de la aplicación"
 
 #: src/views/Stats.vue:19
 msgid "App Type"
-msgstr ""
+msgstr "Tipo de aplicación"
 
 #: src/views/Stats.vue:15
 msgid "App Types"
-msgstr ""
+msgstr "Tipos de aplicación"
 
 #: src/views/Browse.vue:32
 msgid "Apps"
-msgstr ""
+msgstr "Aplicaciones"
 
 #: src/views/Submit.vue:101
 msgid ""
 "Apps containing gambling involving real world money transactions are not allowed.\n"
 "This includes, but is not limited to, online casinos, betting, and lotteries."
 msgstr ""
+"No se permiten las aplicaciones de juego que impliquen transacciones de "
+"dinero real.\n"
+"Esto incluye pero no se limita a los casinos en línea, apuestas y loterías."
 
 #: src/views/Submit.vue:82
 msgid "Apps containing or promoting child abuse or child sexual abuse are strictly prohibited."
 msgstr ""
+"Las aplicaciones que contengan o promuevan el maltrato infantil o el abuso "
+"sexual infantil están rigurosamente prohibidas."
 
 #: src/views/Submit.vue:88
 msgid ""
 "Apps containing or promoting gratuitous violence are not allowed.\n"
 "This includes, but is not limited to, violence, terrorism, bomb/weapon making, self harm, and grotesque imagery."
 msgstr ""
+"No se permiten las aplicaciones que contengan o promuevan la violencia "
+"gratuita.\n"
+"Esto incluye pero no se limita a la violencia, terrorismo, fabricación de "
+"armas y bombas, auto-lesión e imágenes grotescas."
 
 #: src/views/Submit.vue:75
 msgid ""
 "Apps containing or promoting sexually explicit contentare not allowed.\n"
 "This includes, but is not limited to, pornography and services promoting sexually explicit content."
 msgstr ""
+"No se permiten las aplicaciones que contengan o promuevan contenido "
+"sexualmente explícito.\n"
+"Esto incluye pero no se limita a la pornografía y a los servicios que "
+"promueven contenido sexualmente explícito."
 
 #: src/views/Submit.vue:7
 msgid "Apps not requiring manual review can be submitted by logging in with the \"Log In\" link above."
 msgstr ""
+"Las aplicaciones que no requieren una revisión manual se pueden enviar "
+"iniciando sesión usando el enlace superior («Log In»)."
 
 #: src/views/Submit.vue:108
 msgid "Apps promoting illegal activities (based on USA law) are not allowed."
 msgstr ""
+"No se permiten las aplicaciones que promuevan actividades ilegales (conforme "
+"a la legislación de EEUU)."
 
 #: src/views/Submit.vue:18
 msgid "Apps requiring manual review must be submitted by contacting an admin in our telegram group."
 msgstr ""
+"Las aplicaciones que requieran una revisión manual se deben enviar "
+"contactando con un administrador en nuestro grupo de Telegram."
 
 #: src/views/Submit.vue:114
 msgid ""
 "Apps that are found to be stealing the users data, trying to escalate their privileges without user consent,\n"
 "or executing malicious process are strictly prohibited."
 msgstr ""
+"Están rigurosamente prohibidas las aplicaciones que traten de robar datos de "
+"los usuarios, intenten escalar sus\n"
+"privilegios sin el consentimiento del usuario o ejecuten procesos maliciosos."
 
 #: src/views/About.vue:128
 msgid ""
