@@ -8,7 +8,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-22 15:52+0100\n"
 "PO-Revision-Date: 2019-01-01 21:55+0000\n"
-"Last-Translator: Joan CiberSheep <cibersheep@gmail.com>\n"
+"Last-Translator: Jaume Angrill <txaume@protonmail.com>\n"
 "Language-Team: Catalan <https://translate.ubports.com/projects/openstore/"
 "open-storeio/ca/>\n"
 "Language: ca\n"
@@ -396,6 +396,10 @@ msgid ""
 "For any questions you may have or help you may need just chat with us in our telegram group.\n"
 "You can also submit issues, bugs, and feature requests to our GitLab bug tracker."
 msgstr ""
+"Per a qualsevol consulta que tingueu, o si necessiteu ajuda, podeu xatejar "
+"amb nosaltres al nostre grup de telegrames.\n"
+"També podeu enviar problemes, errors i sol·licituds de funcions al nostre "
+"seguidor d'errors de GitLab."
 
 #: src/App.vue:93
 msgid "Fork us on GitLab"
@@ -1024,6 +1028,8 @@ msgstr ""
 #: src/views/Package.vue:367
 msgid "This app has access to restricted system data, see permissions for more details"
 msgstr ""
+"Aquesta aplicació té accés a dades del sistema restringides, consulteu els "
+"permisos per obtenir més informació"
 
 #: src/views/Submit.vue:141
 msgid ""
@@ -1035,59 +1041,59 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:75
 msgid "Title"
-msgstr ""
+msgstr "Títol"
 
 #: src/views/Browse.vue:42
 msgid "Title (A-Z)"
-msgstr ""
+msgstr "Títol (A-Z)"
 
 #: src/views/Browse.vue:43
 msgid "Title (Z-A)"
-msgstr ""
+msgstr "Títol (Z-A)"
 
 #: src/views/ManagePackage.vue:310
 msgid "Total"
-msgstr ""
+msgstr "Total"
 
 #: src/views/ManagePackage.vue:274 src/views/Package.vue:197
 msgid "Translation Languages"
-msgstr ""
+msgstr "Idiomes de traducció"
 
 #: src/views/Browse.vue:122 src/views/Manage.vue:87
 msgid "Try searching for something else"
-msgstr ""
+msgstr "Intenteu cercar una altra cosa"
 
 #: src/views/Browse.vue:29 src/views/ManagePackage.vue:265
 msgid "Type"
-msgstr ""
+msgstr "Escriviu"
 
 #: src/views/About.vue:14
 msgid "Ubuntu Touch"
-msgstr ""
+msgstr "Ubuntu Touch"
 
 #: src/views/Browse.vue:3
 msgid "Ubuntu Touch Apps"
-msgstr ""
+msgstr "Ubuntu Touch Apps"
 
 #: src/views/Stats.vue:83
 msgid "Uncategorized"
-msgstr ""
+msgstr "Sense categoria"
 
 #: src/views/Package.vue:181
 msgid "Updated"
-msgstr ""
+msgstr "Actualitzat"
 
 #: src/views/Feeds.vue:18
 msgid "Updated Apps"
-msgstr ""
+msgstr "Apps actualitzades"
 
 #: src/views/ManagePackage.vue:327
 msgid "Updated Date"
-msgstr ""
+msgstr "Data actualitzada"
 
 #: src/views/ManageRevisions.vue:41
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: src/views/Package.vue:288
 msgid "User Metrics"
