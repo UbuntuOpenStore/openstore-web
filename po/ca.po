@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: openstore\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-22 15:52+0100\n"
-"PO-Revision-Date: 2019-01-01 20:36+0000\n"
-"Last-Translator: Jaume Angrill <txaume@protonmail.com>\n"
+"PO-Revision-Date: 2019-01-01 21:08+0000\n"
+"Last-Translator: Joan CiberSheep <cibersheep@gmail.com>\n"
 "Language-Team: Catalan <https://translate.ubports.com/projects/openstore/"
 "open-storeio/ca/>\n"
 "Language: ca\n"
@@ -550,7 +550,7 @@ msgstr "Mantenidor"
 
 #: src/views/Submit.vue:113
 msgid "Malware"
-msgstr "Malware"
+msgstr "Programari maliciós"
 
 #: src/App.vue:40 src/views/Manage.vue:142 src/views/ManagePackage.vue:371
 #: src/views/ManagePackage.vue:373
@@ -620,11 +620,11 @@ msgstr "No s'ha publicat"
 
 #: src/views/ManagePackage.vue:156
 msgid "NSFW"
-msgstr "NSFW"
+msgstr "Per adults"
 
 #: src/views/Browse.vue:110
 msgid "NSFW content"
-msgstr "Contingut de NSFW"
+msgstr "Contingut adult"
 
 #: src/views/Browse.vue:45
 msgid "Oldest"
@@ -807,7 +807,7 @@ msgstr "Àmbit"
 
 #: src/views/Browse.vue:34
 msgid "Scopes"
-msgstr "Scopes"
+msgstr "Lents"
 
 #: src/views/Package.vue:107
 msgid "Screenshots"
@@ -831,7 +831,7 @@ msgstr "Contingut Sexual Explícit"
 
 #: src/views/Package.vue:117
 msgid "Show NSFW Content"
-msgstr "Mostra contingut de NSFW"
+msgstr "Mostra el contingut per adults"
 
 #: src/App.vue:98
 msgid "Site Status"
@@ -1089,15 +1089,15 @@ msgstr "Vivid i Xenial"
 
 #: src/components/Types.vue:5 src/views/Stats.vue:87
 msgid "Web App"
-msgstr "Web App"
+msgstr "Aplicació web"
 
 #: src/components/Types.vue:6 src/views/Stats.vue:88
 msgid "Web App+"
-msgstr "Web App+"
+msgstr "Aplicació web+"
 
 #: src/views/Browse.vue:33
 msgid "Web Apps"
-msgstr "Web Apps"
+msgstr "Aplicacions web"
 
 #: src/views/Package.vue:292
 msgid "Webview"
