@@ -8,7 +8,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-22 15:52+0100\n"
 "PO-Revision-Date: 2019-01-01 21:08+0000\n"
-"Last-Translator: Joan CiberSheep <cibersheep@gmail.com>\n"
+"Last-Translator: Jaume Angrill <txaume@protonmail.com>\n"
 "Language-Team: Catalan <https://translate.ubports.com/projects/openstore/"
 "open-storeio/ca/>\n"
 "Language: ca\n"
@@ -907,7 +907,7 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:569
 msgid "The changes to %{name} were saved!"
-msgstr ""
+msgstr "S'han desat els canvis a% {nom}!"
 
 #: src/views/About.vue:103
 msgid ""
@@ -917,16 +917,27 @@ msgid ""
 "a manual review process to check for potential security or privacy issues.\n"
 "This checking is far from exhaustive though, and there are no guarantees."
 msgstr ""
+"L'OpenStore és un projecte voluntari sense ànim de lucre.\n"
+"Tot i que es fa tot el possible per assegurar-vos que tot el repositori "
+"estigui segur d'instal·lar, l'utilitzeu AL VOSTRE PROPI RISC.\n"
+"Les aplicacions penjades a l'OpenStore estaran subjectes a un procés de "
+"revisió automàtica o\n"
+"un procés de revisió manual per comprovar possibles problemes de seguretat o "
+"privadesa.\n"
+"Tanmateix, aquesta comprovació no és exhaustiva i no hi ha garanties."
 
 #: src/views/About.vue:20
 msgid ""
 "The OpenStore app is installed by default on the UBports builds of Ubuntu Touch.\n"
 "But if you need to install the OpenStore manually, follow these steps:"
 msgstr ""
+"L'aplicació OpenStore s'instal·la de manera predeterminada a les "
+"construccions d'Ubuntu Touch de UBports.\n"
+"Però si necessiteu instal·lar OpenStore manualment, seguiu aquests passos:"
 
 #: src/views/About.vue:140
 msgid "The OpenStore is made possible by many amazing contributors:"
-msgstr ""
+msgstr "L'OpenStore és possible gràcies a molts contribuents meravellosos:"
 
 #: src/views/About.vue:5
 msgid ""
@@ -936,6 +947,14 @@ msgid ""
 "You can also upload and manage your own apps for publication.\n"
 "The OpenStore encourages the apps published within to be open source, but also accepts proprietary apps."
 msgstr ""
+"L'OpenStore és la botiga d'aplicacions oficial per a Ubuntu Touch.\n"
+"Es tracta d'un projecte de codi obert dirigit per un equip de voluntaris amb "
+"ajuda de la comunitat.\n"
+"Podeu descobrir i instal·lar noves aplicacions al dispositiu Ubuntu Touch.\n"
+"També podeu carregar i gestionar les vostres pròpies aplicacions per "
+"publicar-les.\n"
+"L'OpenStore encoratja les aplicacions que publiquen a ser de codi obert, "
+"però també accepta aplicacions propietàries."
 
 #: src/views/About.vue:111
 msgid ""
@@ -947,36 +966,60 @@ msgid ""
 "are sent to the server to allow it to filter apps to only what you can install and present your native language where possible.\n"
 "This information is not logged or stored and cannot be used to uniquely identify you."
 msgstr ""
+"L'OpenStore respecta la vostra privadesa.\n"
+"No us seguim ni seguim el vostre dispositiu.\n"
+"No necessiteu un compte per baixar i instal·lar aplicacions i no seguim les "
+"vostres baixades.\n"
+"Per a la informació del desenvolupador, comptem el nombre de descàrregues "
+"per revisió de l'aplicació.\n"
+"Informació sobre el vostre dispositiu (arquitectura del CPU, versions del "
+"marc, versió del sistema operatiu i idioma del sistema operatiu)\n"
+"s'envien al servidor per permetre-li filtrar les aplicacions només al que "
+"podeu instal·lar i presentar el vostre idioma natiu sempre que sigui "
+"possible.\n"
+"Aquesta informació no està registrada ni emmagatzemada i no es pot utilitzar "
+"per identificar-te de manera exclusiva."
 
 #: src/views/NotFound.vue:5
 msgid "The page you are looking for has been removed or does not exist"
-msgstr ""
+msgstr "La pàgina que cerqueu s'ha eliminat o no existeix"
 
 #: src/views/About.vue:79
 msgid ""
 "The source code for OpenStore related projects is available under the GPL v3.\n"
 "You can find the code on the OpenStore GitLab page."
 msgstr ""
+"El codi font dels projectes relacionats amb OpenStore està disponible sota "
+"el GPL v3.\n"
+"Podeu trobar el codi a la pàgina de OpenStore GitLab."
 
 #: src/views/Package.vue:17
 msgid "There was an error trying to find this app, please refresh and try again."
 msgstr ""
+"S'ha produït un error en intentar trobar aquesta aplicació, actualitzeu-la i "
+"torneu-ho a provar."
 
 #: src/views/Browse.vue:85 src/views/Manage.vue:30
 msgid "There was an error trying to load the app list, please refresh and try again."
 msgstr ""
+"S'ha produït un error en intentar carregar la llista d'aplicacions, "
+"actualitzeu-la i torneu-ho a provar."
 
 #: src/views/Stats.vue:5
 msgid "There was an error trying to load the stats, please refresh and try again."
 msgstr ""
+"S'ha produït un error en intentar carregar les estadístiques, actualitzeu-"
+"les i torneu-ho a provar."
 
 #: src/views/ManagePackage.vue:158
 msgid "This app contains NSFW material"
-msgstr ""
+msgstr "Aquesta aplicació conté material NSFW"
 
 #: src/views/Package.vue:365
 msgid "This app does not have access to restricted system data, see permissions for more details"
 msgstr ""
+"Aquesta aplicació no té accés a dades de sistema restringides, consulteu els "
+"permisos per obtenir més detalls"
 
 #: src/views/Package.vue:367
 msgid "This app has access to restricted system data, see permissions for more details"
