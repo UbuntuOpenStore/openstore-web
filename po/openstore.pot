@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-28 10:03-0500\n"
+"POT-Creation-Date: 2019-01-02 00:42-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -84,7 +84,7 @@ msgstr ""
 msgid "API Key"
 msgstr ""
 
-#: src/components/Types.vue:3 src/views/Manage.vue:45 src/views/Stats.vue:85
+#: src/components/Types.vue:3 src/views/Manage.vue:44 src/views/Stats.vue:85
 msgid "App"
 msgstr ""
 
@@ -166,7 +166,7 @@ msgstr ""
 msgid "Audio"
 msgstr ""
 
-#: src/views/Manage.vue:46 src/views/ManagePackage.vue:249
+#: src/views/Manage.vue:45 src/views/ManagePackage.vue:249
 #: src/views/Package.vue:155
 msgid "Author"
 msgstr ""
@@ -317,7 +317,7 @@ msgstr ""
 msgid "Download Xenial"
 msgstr ""
 
-#: src/views/Manage.vue:49 src/views/Manage.vue:69
+#: src/views/Manage.vue:48 src/views/Manage.vue:68
 #: src/views/ManagePackage.vue:292
 msgid "Downloads"
 msgstr ""
@@ -381,11 +381,11 @@ msgid ""
 "List all the special features you have, if there are more."
 msgstr ""
 
-#: src/views/Browse.vue:209 src/views/Manage.vue:165
+#: src/views/Browse.vue:209 src/views/Manage.vue:164
 msgid "Go back a page"
 msgstr ""
 
-#: src/views/Browse.vue:210 src/views/Manage.vue:166
+#: src/views/Browse.vue:210 src/views/Manage.vue:165
 msgid "Go to the next page"
 msgstr ""
 
@@ -401,7 +401,7 @@ msgstr ""
 msgid "History"
 msgstr ""
 
-#: src/views/Manage.vue:43
+#: src/views/Manage.vue:42
 msgid "Icon"
 msgstr ""
 
@@ -435,11 +435,11 @@ msgstr ""
 msgid "Install via the OpenStore app"
 msgstr ""
 
-#: src/views/Browse.vue:208 src/views/Manage.vue:164
+#: src/views/Browse.vue:208 src/views/Manage.vue:163
 msgid "Jump to the first page"
 msgstr ""
 
-#: src/views/Browse.vue:211 src/views/Manage.vue:167
+#: src/views/Browse.vue:211 src/views/Manage.vue:166
 msgid "Jump to the last page"
 msgstr ""
 
@@ -512,12 +512,12 @@ msgstr ""
 msgid "Malware"
 msgstr ""
 
-#: src/App.vue:40 src/views/Manage.vue:142 src/views/ManagePackage.vue:371
+#: src/App.vue:40 src/views/Manage.vue:141 src/views/ManagePackage.vue:371
 #: src/views/ManagePackage.vue:373
 msgid "Manage"
 msgstr ""
 
-#: src/views/Manage.vue:138
+#: src/views/Manage.vue:137
 msgid "Manage Apps"
 msgstr ""
 
@@ -529,7 +529,7 @@ msgstr ""
 msgid "Music Files"
 msgstr ""
 
-#: src/views/Manage.vue:44
+#: src/views/Manage.vue:43
 msgid "Name"
 msgstr ""
 
@@ -566,15 +566,15 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: src/views/Browse.vue:121 src/views/Manage.vue:86
+#: src/views/Browse.vue:121 src/views/Manage.vue:85
 msgid "No apps found."
 msgstr ""
 
-#: src/views/Manage.vue:79 src/views/Package.vue:146
+#: src/views/Manage.vue:78 src/views/Package.vue:146
 msgid "None"
 msgstr ""
 
-#: src/views/Manage.vue:74
+#: src/views/Manage.vue:73
 msgid "Not published"
 msgstr ""
 
@@ -685,7 +685,7 @@ msgstr ""
 msgid "Publish"
 msgstr ""
 
-#: src/views/Manage.vue:73 src/views/Package.vue:185
+#: src/views/Manage.vue:72 src/views/Package.vue:185
 msgid "Published"
 msgstr ""
 
@@ -761,7 +761,7 @@ msgstr ""
 msgid "Screenshots (Limit 5)"
 msgstr ""
 
-#: src/views/Browse.vue:9 src/views/Manage.vue:25
+#: src/views/Browse.vue:9 src/views/Manage.vue:24
 msgid "Search"
 msgstr ""
 
@@ -798,7 +798,7 @@ msgstr ""
 msgid "Stats"
 msgstr ""
 
-#: src/views/Manage.vue:47
+#: src/views/Manage.vue:46
 msgid "Status"
 msgstr ""
 
@@ -903,7 +903,7 @@ msgstr ""
 msgid "There was an error trying to find this app, please refresh and try again."
 msgstr ""
 
-#: src/views/Browse.vue:85 src/views/Manage.vue:30
+#: src/views/Browse.vue:85 src/views/Manage.vue:29
 msgid "There was an error trying to load the app list, please refresh and try again."
 msgstr ""
 
@@ -951,7 +951,7 @@ msgstr ""
 msgid "Translation Languages"
 msgstr ""
 
-#: src/views/Browse.vue:122 src/views/Manage.vue:87
+#: src/views/Browse.vue:122 src/views/Manage.vue:86
 msgid "Try searching for something else"
 msgstr ""
 
@@ -991,7 +991,7 @@ msgstr ""
 msgid "User Metrics"
 msgstr ""
 
-#: src/views/Manage.vue:48 src/views/ManagePackage.vue:291
+#: src/views/Manage.vue:47 src/views/ManagePackage.vue:291
 msgid "Version"
 msgstr ""
 
@@ -1053,16 +1053,16 @@ msgstr ""
 msgid "Yes"
 msgstr ""
 
-#: src/views/Submit.vue:13
-msgid ""
-"You app can be pulled without warning at the discretion of our admins.\n"
-"Where possible, we will contact you regarding any such actions."
-msgstr ""
-
 #: src/views/Submit.vue:10
 msgid "You are only allowed to publish apps that you have permission to distribute."
 msgstr ""
 
 #: src/views/Submit.vue:22
 msgid "You must read over the content policy detailed below."
+msgstr ""
+
+#: src/views/Submit.vue:13
+msgid ""
+"Your app can be pulled without warning at the discretion of our admins.\n"
+"Where possible, we will contact you regarding any such actions."
 msgstr ""

@@ -12,7 +12,7 @@
                         You are only allowed to publish apps that you have permission to distribute.
                     </li>
                     <li class="p-list__item is-ticked" v-translate>
-                        You app can be pulled without warning at the discretion of our admins.
+                        Your app can be pulled without warning at the discretion of our admins.
                         Where possible, we will contact you regarding any such actions.
                     </li>
                     <li class="p-list__item is-ticked">
