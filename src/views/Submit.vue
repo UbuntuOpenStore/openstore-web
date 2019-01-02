@@ -59,7 +59,7 @@
                 <h1 v-translate>OpenStore App Content Policy</h1>
 
                 <p v-translate>
-                    One of the main goals of the OpenStore is to provide provide a safe app store for people of all ages.
+                    One of the main goals of the OpenStore is to provide a safe app store for people of all ages.
                     To accomplish this goal we do not allow certain types of app to be published.
                     Failure to follow the guidelines will result in your app being removed.
                     Any account with serious infractions may be subject to termination.
@@ -74,7 +74,7 @@
                     <li class="p-list__item is-ticked">
                         <b v-translate>Sexually Explicit Content</b>:
                         <span v-translate>
-                            Apps containing or promoting sexually explicit contentare not allowed.
+                            Apps containing or promoting sexually explicit content are not allowed.
                             This includes, but is not limited to, pornography and services promoting sexually explicit content.
                         </span>
                     </li>
