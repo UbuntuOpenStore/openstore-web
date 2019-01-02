@@ -130,7 +130,7 @@ msgstr ""
 
 #: src/views/Submit.vue:75
 msgid ""
-"Apps containing or promoting sexually explicit contentare not allowed.\n"
+"Apps containing or promoting sexually explicit content are not allowed.\n"
 "This includes, but is not limited to, pornography and services promoting sexually explicit content."
 msgstr ""
 
