@@ -717,6 +717,10 @@ export default {
         width: 8em;
     }
 
+    .info table {
+        max-width: 40em
+    }
+
     .downloads table th {
         min-width: 5em;
     }

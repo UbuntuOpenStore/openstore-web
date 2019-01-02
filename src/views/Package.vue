@@ -47,6 +47,7 @@
 
                         <a
                             v-for="download in app.downloads"
+                            v-if="download.channel != 'vivid'"
                             :href="download.download_url"
                             :key="download.channel"
                             class="p-button--positive"
@@ -258,8 +259,7 @@ export default {
             error: false,
             loading: false,
             downloadLabels: {
-                vivid: this.$gettext('Download Vivid'),
-                xenial: this.$gettext('Download Xenial'),
+                xenial: this.$gettext('Download'),
             },
             installTitle: this.$gettext('Install via the OpenStore app'),
             permissionLabels: {

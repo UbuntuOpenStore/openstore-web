@@ -14,12 +14,7 @@
                     <label for="channel" class="p-form__label" v-translate>Channel</label>
                     <select id="channel" class="p-form__control" v-model="channel" :disabled="saving">
                         <option value="xenial" v-translate>Xenial</option>
-                        <option value="vivid" v-translate>Vivid</option>
-                        <option value="vivid-xenial" v-translate>Vivid and Xenial</option>
                     </select>
-                    <div class="small text-lightgrey" v-if="channel == 'vivid-xenial'" v-translate>
-                        Only choose "Vivid and Xenial" if your app is qml only or a webapp.
-                    </div>
                 </div>
 
                 <div class="divider"></div>
@@ -174,12 +169,6 @@ export default {
                     this.saving = false;
 
                     let channel = this.$gettext('Xenial');
-                    if (this.channel == 'vivid') {
-                        channel = this.$gettext('Vivid');
-                    }
-                    else if (this.channel == 'vivid-xenial') {
-                        channel = this.$gettext('Vivid & Xenial');
-                    }
 
                     VueNotifications.success({
                         title: this.$gettext('Success'),
