@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-28 10:03-0500\n"
 "PO-Revision-Date: 2019-01-02 20:43+0000\n"
-"Last-Translator: Anne Onyme <anneonyme017@tutanota.com>\n"
+"Last-Translator: Max Libre <libremax@protonmail.com>\n"
 "Language-Team: French <https://translate.ubports.com/projects/openstore/"
 "open-storeio/fr/>\n"
 "Language: fr\n"
@@ -993,40 +993,66 @@ msgid ""
 "are sent to the server to allow it to filter apps to only what you can install and present your native language where possible.\n"
 "This information is not logged or stored and cannot be used to uniquely identify you."
 msgstr ""
+"L'OpenStore respecte votre vie privée.\n"
+"Nous ne suivons ni vous ni votre appareil.\n"
+"Vous n'avez pas besoin d'un compte pour télécharger et installer des "
+"applications et nous ne suivons pas vos téléchargements.\n"
+"Pour l'information des développeurs, nous comptons le nombre de "
+"téléchargements par révision de l'application.\n"
+"Les informations relatives à votre appareil (l'architecture du processeur, "
+"les versions du cadriciel, la version du système d'exploitation et le langue "
+"du système d'exploitation)\n"
+"sont envoyés au serveur pour lui permettre de filtrer les applications pour "
+"afficher seulement celles que vous pouvez installer et présenter votre "
+"langue maternelle lorsque cela est possible.\n"
+"Ces informations ne sont ni enregistrées ni stockées et ne peuvent être "
+"utilisées pour vous identifier de manière unique."
 
 #: src/views/NotFound.vue:5
 msgid "The page you are looking for has been removed or does not exist"
-msgstr ""
+msgstr "La page que vous recherchez a été supprimée ou n'existe pas"
 
 #: src/views/About.vue:79
 msgid ""
 "The source code for OpenStore related projects is available under the GPL v3.\n"
 "You can find the code on the OpenStore GitLab page."
 msgstr ""
+"Le code source des projets liés à l'OpenStore est disponible sous GPL v3.\n"
+"Vous pouvez trouver le code sur la page GitLab d'OpenStore."
 
 #: src/views/Package.vue:17
 msgid "There was an error trying to find this app, please refresh and try again."
 msgstr ""
+"Il y a eu une erreur lors de la recherche de cette application, veuillez "
+"rafraîchir et réessayer."
 
 #: src/views/Browse.vue:85 src/views/Manage.vue:30
 msgid "There was an error trying to load the app list, please refresh and try again."
 msgstr ""
+"Il y a eu une erreur lors du chargement de la liste des applications, "
+"veuillez rafraîchir et réessayer."
 
 #: src/views/Stats.vue:5
 msgid "There was an error trying to load the stats, please refresh and try again."
 msgstr ""
+"Il y a eu une erreur lors du chargement des statistiques, veuillez "
+"rafraîchir et réessayer."
 
 #: src/views/ManagePackage.vue:158
 msgid "This app contains NSFW material"
-msgstr ""
+msgstr "Cette application contient des contenus pour adultes"
 
 #: src/views/Package.vue:365
 msgid "This app does not have access to restricted system data, see permissions for more details"
 msgstr ""
+"Cette application n'a pas accès aux données à accès restreint du système, "
+"voir permissions pour plus de détails"
 
 #: src/views/Package.vue:367
 msgid "This app has access to restricted system data, see permissions for more details"
 msgstr ""
+"Cette application a accès aux données à accès restreint du système, voir "
+"permissions pour plus de détails"
 
 #: src/views/Submit.vue:141
 msgid ""
@@ -1035,139 +1061,151 @@ msgid ""
 "For example: \"openstore.openstore-team\", where \"openstore\" is the app and \"openstore-team\"\n"
 "is the group or individual authoring the app."
 msgstr ""
+"C'est l'identifiant unique de votre application.\n"
+"Il doit correspondre exactement au champ \"nom\" dans le fichier "
+"manifest.json de votre paquet clic et doit être en minuscules.\n"
+"Par exemple : \"openstore.openstore-team\", où \"openstore\" est "
+"l'application et \"openstore-team\"\n"
+"est le groupe ou l'individu auteur de l'application."
 
 #: src/views/ManagePackage.vue:75
 msgid "Title"
-msgstr ""
+msgstr "Titre"
 
 #: src/views/Browse.vue:42
 msgid "Title (A-Z)"
-msgstr ""
+msgstr "Titre (A-Z)"
 
 #: src/views/Browse.vue:43
 msgid "Title (Z-A)"
-msgstr ""
+msgstr "Titre (Z-A)"
 
 #: src/views/ManagePackage.vue:310
 msgid "Total"
-msgstr ""
+msgstr "Total"
 
 #: src/views/ManagePackage.vue:274 src/views/Package.vue:197
 msgid "Translation Languages"
-msgstr ""
+msgstr "Langues de traduction"
 
 #: src/views/Browse.vue:122 src/views/Manage.vue:87
 msgid "Try searching for something else"
-msgstr ""
+msgstr "Essayez de chercher autre chose"
 
 #: src/views/Browse.vue:29 src/views/ManagePackage.vue:265
 msgid "Type"
-msgstr ""
+msgstr "Type"
 
 #: src/views/About.vue:14
 msgid "Ubuntu Touch"
-msgstr ""
+msgstr "Ubuntu Touch"
 
 #: src/views/Browse.vue:3
 msgid "Ubuntu Touch Apps"
-msgstr ""
+msgstr "Applications Ubuntu Touch"
 
 #: src/views/Stats.vue:83
 msgid "Uncategorized"
-msgstr ""
+msgstr "Non catégorisé"
 
 #: src/views/Package.vue:181
 msgid "Updated"
-msgstr ""
+msgstr "Mis à jour"
 
 #: src/views/Feeds.vue:18
 msgid "Updated Apps"
-msgstr ""
+msgstr "Applications mises à jour"
 
 #: src/views/ManagePackage.vue:327
 msgid "Updated Date"
-msgstr ""
+msgstr "Date mise à jour"
 
 #: src/views/ManageRevisions.vue:41
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: src/views/Package.vue:288
 msgid "User Metrics"
-msgstr ""
+msgstr "Métriques utilisateurs"
 
 #: src/views/Manage.vue:48 src/views/ManagePackage.vue:291
 msgid "Version"
-msgstr ""
+msgstr "Version"
 
 #: src/views/Package.vue:291
 msgid "Video"
-msgstr ""
+msgstr "Vidéo"
 
 #: src/views/Package.vue:290
 msgid "Video Files"
-msgstr ""
+msgstr "Fichiers vidéo"
 
 #: src/views/ManagePackage.vue:216
 msgid "Video URL"
-msgstr ""
+msgstr "URL de vidéo"
 
 #: src/views/About.vue:26
 msgid "View Install Instructions"
-msgstr ""
+msgstr "Voir les instructions d'installation"
 
 #: src/views/Submit.vue:87
 msgid "Violence"
-msgstr ""
+msgstr "Violence"
 
 #: src/views/Browse.vue:66 src/views/ManageRevisions.vue:16
 #: src/views/ManageRevisions.vue:178
 msgid "Vivid"
-msgstr ""
+msgstr "Vivid"
 
 #: src/views/ManageRevisions.vue:181
 msgid "Vivid & Xenial"
-msgstr ""
+msgstr "Vivid & Xenial"
 
 #: src/views/ManageRevisions.vue:17
 msgid "Vivid and Xenial"
-msgstr ""
+msgstr "Vivid et Xenial"
 
 #: src/components/Types.vue:5 src/views/Stats.vue:87
 msgid "Web App"
-msgstr ""
+msgstr "Application Web"
 
 #: src/components/Types.vue:6 src/views/Stats.vue:88
 msgid "Web App+"
-msgstr ""
+msgstr "Application Web+"
 
 #: src/views/Browse.vue:33
 msgid "Web Apps"
-msgstr ""
+msgstr "Applications Web"
 
 #: src/views/Package.vue:292
 msgid "Webview"
-msgstr ""
+msgstr "Vue Web"
 
 #: src/views/Browse.vue:67 src/views/ManageRevisions.vue:15
 #: src/views/ManageRevisions.vue:176
 msgid "Xenial"
-msgstr ""
+msgstr "Xenial"
 
 #: src/views/ManagePackage.vue:30
 msgid "Yes"
-msgstr ""
+msgstr "Oui"
 
 #: src/views/Submit.vue:13
 msgid ""
 "You app can be pulled without warning at the discretion of our admins.\n"
 "Where possible, we will contact you regarding any such actions."
 msgstr ""
+"Votre application peut être retirée sans préavis à la discrétion de nos "
+"administrateurs.\n"
+"Dans la mesure du possible, nous vous contacterons à propos de telles "
+"actions."
 
 #: src/views/Submit.vue:10
 msgid "You are only allowed to publish apps that you have permission to distribute."
 msgstr ""
+"Vous n'êtes autorisé à publier que les applications que vous avez la "
+"permission de distribuer."
 
 #: src/views/Submit.vue:22
 msgid "You must read over the content policy detailed below."
-msgstr ""
+msgstr "Vous devez lire la politique de contenu détaillée ci-dessous."
