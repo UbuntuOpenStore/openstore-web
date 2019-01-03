@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-28 10:03-0500\n"
-"PO-Revision-Date: 2019-01-01 21:56+0000\n"
-"Last-Translator: Milan Korecký <milan.korecky@gmail.com>\n"
+"PO-Revision-Date: 2019-01-03 11:18+0000\n"
+"Last-Translator: Martin Kozub <zubozrout@gmail.com>\n"
 "Language-Team: Czech <https://translate.ubports.com/projects/openstore/"
 "open-storeio/cs/>\n"
 "Language: cs\n"
@@ -377,7 +377,7 @@ msgstr "Chyba"
 
 #: src/views/Feeds.vue:34 src/views/Feeds.vue:38
 msgid "Feeds"
-msgstr ""
+msgstr "Kanály"
 
 #: src/views/ManagePackage.vue:261
 msgid "File Size"
@@ -396,14 +396,19 @@ msgid ""
 "For any questions you may have or help you may need just chat with us in our telegram group.\n"
 "You can also submit issues, bugs, and feature requests to our GitLab bug tracker."
 msgstr ""
+"Máte-li jakékoliv dotazy nebo potřebujete-li pomoct, můžete nás kontaktovat "
+"v naší skupině na službě Telegram.\n"
+"Na naší GitLab stránce můžete také nahlásit nalezené problémy a chyby, či "
+"požádat o nové funkce."
 
 #: src/App.vue:93
+#, fuzzy
 msgid "Fork us on GitLab"
-msgstr ""
+msgstr "Vytvořte si vlastní kopii na GitLabu"
 
 #: src/views/ManagePackage.vue:257 src/views/Package.vue:189
 msgid "Framework"
-msgstr ""
+msgstr "Framework"
 
 #: src/views/Package.vue:293
 msgid "Full System Access"
@@ -419,6 +424,11 @@ msgid ""
 "No need to go into details, a one liner like \"needs to run a daemon in the background\" will do.\n"
 "List all the special features you have, if there are more."
 msgstr ""
+"Poskytněte krátké odůvodnění, proč nemůžete vaši aplikaci publikovat bez "
+"dodatečných oprávnění.\n"
+"Není nutné zacházet do detailu, jednoduché tvrzení jako \"vyžaduje běh "
+"knihovny na pozadí\" postačí.\n"
+"Vypište všechny speciální funkce a požadavky, pokud je jich více."
 
 #: src/views/Browse.vue:209 src/views/Manage.vue:165
 msgid "Go back a page"
@@ -453,6 +463,9 @@ msgid ""
 "If an application could be published without manual review if it wouldn’t be for that one cool feature, publish a stripped down version!\n"
 "Not everyone will want to install apps with less confinement."
 msgstr ""
+"Pokud může být aplikace publikována bez manuální kontroly, ač bez speciální "
+"funkcionality, publikujte raději omezenou verzi.\n"
+"Ne každý bude chtít instalovat aplikaci s většími právy."
 
 #: src/views/Submit.vue:107
 msgid "Illegal Activities"
@@ -517,7 +530,7 @@ msgstr "Přihlášení"
 
 #: src/views/Login.vue:24
 msgid "Log in to the OpenStore to be able to manage your apps."
-msgstr ""
+msgstr "Pro správu vašich aplikací se přihlaste se do OpenStore."
 
 #: src/App.vue:43
 msgid "Log Out"
@@ -529,109 +542,109 @@ msgstr "Přihlásit se"
 
 #: src/views/Submit.vue:125
 msgid "Login to submit your app"
-msgstr ""
+msgstr "Pro nahrání aplikace se přihlaste"
 
 #: src/views/Login.vue:7
 msgid "Login via GitHub"
-msgstr ""
+msgstr "Přihlaste se přes GitHub"
 
 #: src/views/Login.vue:12
 msgid "Login via GitLab"
-msgstr ""
+msgstr "Přihlaste se přes GitLab"
 
 #: src/views/Login.vue:18
 msgid "Login via Ubuntu"
-msgstr ""
+msgstr "Přihlaste se přes Ubuntu"
 
 #: src/views/ManagePackage.vue:224
 msgid "Maintainer"
-msgstr ""
+msgstr "Správce"
 
 #: src/views/Submit.vue:113
 msgid "Malware"
-msgstr ""
+msgstr "Malware"
 
 #: src/App.vue:40 src/views/Manage.vue:142 src/views/ManagePackage.vue:371
 #: src/views/ManagePackage.vue:373
 msgid "Manage"
-msgstr ""
+msgstr "Správa"
 
 #: src/views/Manage.vue:138
 msgid "Manage Apps"
-msgstr ""
+msgstr "Spravovat aplikace"
 
 #: src/views/Package.vue:280
 msgid "Microphone"
-msgstr ""
+msgstr "Mikrofon"
 
 #: src/views/Package.vue:282
 msgid "Music Files"
-msgstr ""
+msgstr "Hudební soubory"
 
 #: src/views/Manage.vue:44
 msgid "Name"
-msgstr ""
+msgstr "Jméno"
 
 #: src/views/About.vue:37
 msgid "Navigate to the downloads folder"
-msgstr ""
+msgstr "Přejít do adresáře se staženými soubory"
 
 #: src/views/Package.vue:283
 msgid "Networking"
-msgstr ""
+msgstr "Síť"
 
 #: src/views/Feeds.vue:9
 msgid "New Apps"
-msgstr ""
+msgstr "Nové aplikace"
 
 #: src/views/ManagePackage.vue:37 src/views/ManageRevisions.vue:81
 #: src/views/ManageRevisions.vue:83
 msgid "New Revision"
-msgstr ""
+msgstr "Nové revize"
 
 #: src/views/ManageRevisions.vue:186
 msgid "New revision for %{channel} was created!"
-msgstr ""
+msgstr "Nová revize pro %{channel} byla vytvořena!"
 
 #: src/views/ManageRevisions.vue:8
 msgid "New Revision for %{name}"
-msgstr ""
+msgstr "Nová revize pro %{name}"
 
 #: src/views/Browse.vue:44
 msgid "Newest"
-msgstr ""
+msgstr "Nejnovější"
 
 #: src/views/ManagePackage.vue:31
 msgid "No"
-msgstr ""
+msgstr "Ne"
 
 #: src/views/Browse.vue:121 src/views/Manage.vue:86
 msgid "No apps found."
-msgstr ""
+msgstr "Žádné aplikace nebyly nalezeny."
 
 #: src/views/Manage.vue:79 src/views/Package.vue:146
 msgid "None"
-msgstr ""
+msgstr "Žádné"
 
 #: src/views/Manage.vue:74
 msgid "Not published"
-msgstr ""
+msgstr "Nepublikováno"
 
 #: src/views/ManagePackage.vue:156
 msgid "NSFW"
-msgstr ""
+msgstr "Pro dospělé"
 
 #: src/views/Browse.vue:110
 msgid "NSFW content"
-msgstr ""
+msgstr "Obsah pro dospělé"
 
 #: src/views/Browse.vue:45
 msgid "Oldest"
-msgstr ""
+msgstr "Nejstarší"
 
 #: src/views/Browse.vue:47
 msgid "Oldest Update"
-msgstr ""
+msgstr "Nejstarší aktualizace"
 
 #: src/views/Submit.vue:60
 msgid ""
