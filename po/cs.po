@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-28 10:03-0500\n"
-"PO-Revision-Date: 2019-01-03 11:18+0000\n"
-"Last-Translator: Martin Kozub <zubozrout@gmail.com>\n"
+"PO-Revision-Date: 2019-01-04 14:18+0000\n"
+"Last-Translator: Milan Korecký <milan.korecky@gmail.com>\n"
 "Language-Team: Czech <https://translate.ubports.com/projects/openstore/"
 "open-storeio/cs/>\n"
 "Language: cs\n"
@@ -402,13 +402,12 @@ msgstr ""
 "požádat o nové funkce."
 
 #: src/App.vue:93
-#, fuzzy
 msgid "Fork us on GitLab"
-msgstr "Vytvořte si vlastní kopii na GitLabu"
+msgstr "Vytvořte si vlastní fork kopii na GitLabu"
 
 #: src/views/ManagePackage.vue:257 src/views/Package.vue:189
 msgid "Framework"
-msgstr "Framework"
+msgstr "Framework šablona"
 
 #: src/views/Package.vue:293
 msgid "Full System Access"
@@ -562,7 +561,7 @@ msgstr "Správce"
 
 #: src/views/Submit.vue:113
 msgid "Malware"
-msgstr "Malware"
+msgstr "Škodlivý kód"
 
 #: src/App.vue:40 src/views/Manage.vue:142 src/views/ManagePackage.vue:371
 #: src/views/ManagePackage.vue:373
@@ -654,56 +653,71 @@ msgid ""
 "Any account with serious infractions may be subject to termination.\n"
 "The OpenStore team thanks you for helping us promote a better enviroment for everyone."
 msgstr ""
+"Jedním z hlavních cílů OpenStore je poskytnout bezpečné prostředí nabídky "
+"aplikací pro všechny věkové kategorie.\n"
+"K dosažení tohoto cíle neumožňujeme publikování určitých typů aplikací.\n"
+"Nedodržení pokynů vede k vymazání aplikace.\n"
+"Každý účet s vážnými přestupky, může být ukončen.\n"
+"Tým OpenStore vám děkuje, že nám pomáháte podporovat lepší prostředí pro "
+"každého."
 
 #: src/views/ManageRevisions.vue:19
 msgid "Only choose \"Vivid and Xenial\" if your app is qml only or a webapp."
 msgstr ""
+"Zvolte pouze \"Vivid a Xenial\", pokud je vaše aplikace pouze qml nebo "
+"webapp."
 
 #: src/views/Submit.vue:48
 msgid ""
 "Only open source applications allowed for manual review:\n"
 "As the applications might have arbitrary access to the device, every manually reviewed app will get a source code review."
 msgstr ""
+"Pouze aplikace s otevřeným zdrojovým kódem jsou povoleny pro manuální "
+"kontrolu:\n"
+"vzhledem k tomu, že aplikace mohou mít libovolná oprávnění v zařízení, u "
+"každé ručně kontrolované aplikace bude ověřen zdrojový kód."
 
 #: src/views/ManagePackage.vue:218
 msgid "Only YouTube videos are supported at this time. Make sure the url is for the embedded video!"
 msgstr ""
+"Momentálně jsou podporována pouze videa YouTube. Ujistěte se, že url je pro "
+"vestavěné video!"
 
 #: src/views/About.vue:36
 msgid "Open the terminal app"
-msgstr ""
+msgstr "Otevřít aplikaci Terminál"
 
 #: src/views/About.vue:144
 msgid "OpenStore API/Server Contributors"
-msgstr ""
+msgstr "OpenStore API/Server přispěvatelé"
 
 #: src/views/Submit.vue:58
 msgid "OpenStore App Content Policy"
-msgstr ""
+msgstr "Zásady obsahu pro OpenStore aplikace"
 
 #: src/views/About.vue:154
 msgid "OpenStore App Contributors"
-msgstr ""
+msgstr "OpenStore App spolupracovníci"
 
 #: src/views/About.vue:66
 msgid "OpenStore group on Telegram"
-msgstr ""
+msgstr "OpenStore chatovací skupina na Telegramu"
 
 #: src/views/About.vue:92
 msgid "OpenStore source on GitLab"
-msgstr ""
+msgstr "Zdrojový kód OpenStore na Gitlabu"
 
 #: src/views/About.vue:149
 msgid "OpenStore Website Contributors"
-msgstr ""
+msgstr "OpenStore Website spolupracovníci"
 
 #: src/views/ManageRevisions.vue:38
 msgid "OR"
-msgstr ""
+msgstr "NEBO"
 
 #: src/views/ManagePackage.vue:240
 msgid "Package Info"
-msgstr ""
+msgstr "Informace balíčku"
 
 #: src/views/Package.vue:162
 msgid "Packager/Publisher"
@@ -711,7 +725,7 @@ msgstr "Vytvořil/Publikoval"
 
 #: src/views/NotFound.vue:3
 msgid "Page Not Found"
-msgstr ""
+msgstr "Stránka nenalezena"
 
 #: src/views/Package.vue:80 src/views/Package.vue:135
 msgid "Permissions"
@@ -719,83 +733,83 @@ msgstr "Oprávnění"
 
 #: src/views/Package.vue:285
 msgid "Picture Files"
-msgstr ""
+msgstr "Soubory s obrázky"
 
 #: src/views/ManagePackage.vue:43
 msgid "Presentation"
-msgstr ""
+msgstr "Představení"
 
 #: src/views/Submit.vue:69
 msgid "Prohibited Apps"
-msgstr ""
+msgstr "Zakázané aplikace"
 
 #: src/views/ManagePackage.vue:14
 msgid "Public Link"
-msgstr ""
+msgstr "Veřejný odkaz"
 
 #: src/views/ManagePackage.vue:21
 msgid "Publish"
-msgstr ""
+msgstr "Uveřejnit"
 
 #: src/views/Manage.vue:73 src/views/Package.vue:185
 msgid "Published"
-msgstr ""
+msgstr "Uveřejněný"
 
 #: src/views/ManagePackage.vue:319
 msgid "Published Date"
-msgstr ""
+msgstr "Datum uveřejnění"
 
 #: src/views/Package.vue:286
 msgid "Push Notifications"
-msgstr ""
+msgstr "Push oznámení"
 
 #: src/views/Package.vue:281
 msgid "Read Music Files"
-msgstr ""
+msgstr "Číst hudební soubory"
 
 #: src/views/Package.vue:284
 msgid "Read Picture Files"
-msgstr ""
+msgstr "Číst soubory s obrázky"
 
 #: src/views/Package.vue:289
 msgid "Read Video Files"
-msgstr ""
+msgstr "Číst soubory s videi"
 
 #: src/views/Browse.vue:41
 msgid "Relevance"
-msgstr ""
+msgstr "Důležitost"
 
 #: src/App.vue:103
 msgid "Report an Issue"
-msgstr ""
+msgstr "Oznámit problém"
 
 #: src/views/Package.vue:354
 msgid "Restricted permission"
-msgstr ""
+msgstr "Omezená oprávnění"
 
 #: src/views/ManagePackage.vue:289
 msgid "Revision"
-msgstr ""
+msgstr "Revize"
 
 #: src/App.vue:108 src/views/Feeds.vue:3
 msgid "RSS Feeds"
-msgstr ""
+msgstr "RSS zprávy"
 
 #: src/views/Submit.vue:4
 msgid "Rules for Submission"
-msgstr ""
+msgstr "Zásady odeslání"
 
 #: src/views/Submit.vue:31
 msgid "Rules for Submissions Requiring Manual Review"
-msgstr ""
+msgstr "Zásady odeslání vyžadující manuální kontrolu"
 
 #: src/views/About.vue:39
 msgid "Run the command:"
-msgstr ""
+msgstr "Spustit příkaz:"
 
 #: src/views/ManagePackage.vue:338
 msgid "Save"
-msgstr ""
+msgstr "Uložit"
 
 #: src/components/Types.vue:4 src/views/Stats.vue:86
 msgid "Scope"
@@ -803,15 +817,15 @@ msgstr "Scope"
 
 #: src/views/Browse.vue:34
 msgid "Scopes"
-msgstr ""
+msgstr "Scopes"
 
 #: src/views/Package.vue:107
 msgid "Screenshots"
-msgstr ""
+msgstr "Snímky obrazovky"
 
 #: src/views/ManagePackage.vue:101
 msgid "Screenshots (Limit 5)"
-msgstr ""
+msgstr "Snímky obrazovky (omezení 5)"
 
 #: src/views/Browse.vue:9 src/views/Manage.vue:25
 msgid "Search"
@@ -819,88 +833,91 @@ msgstr "Hledat"
 
 #: src/views/Package.vue:287
 msgid "Sensors"
-msgstr ""
+msgstr "Senzory"
 
 #: src/views/Submit.vue:74
 msgid "Sexually Explicit Content"
-msgstr ""
+msgstr "Sexuálně orientovaný obsah"
 
 #: src/views/Package.vue:117
 msgid "Show NSFW Content"
-msgstr ""
+msgstr "Zobrazit obsah pro dospělé"
 
 #: src/App.vue:98
 msgid "Site Status"
-msgstr ""
+msgstr "Stav stránky"
 
 #: src/views/Browse.vue:39
 msgid "Sort By"
-msgstr ""
+msgstr "Seřadit podle"
 
 #: src/views/Package.vue:169
 msgid "Source"
-msgstr ""
+msgstr "Zdroj"
 
 #: src/views/ManagePackage.vue:201
 msgid "Source URL"
-msgstr ""
+msgstr "Zdrojový odkaz"
 
 #: src/views/ManagePackage.vue:65 src/views/Stats.vue:3 src/views/Stats.vue:69
 #: src/views/Stats.vue:73
 msgid "Stats"
-msgstr ""
+msgstr "Statistiky"
 
 #: src/views/Manage.vue:47
 msgid "Status"
-msgstr ""
+msgstr "Stav"
 
 #: src/App.vue:28 src/views/Submit.vue:162
 msgid "Submit"
-msgstr ""
+msgstr "Odeslat"
 
 #: src/views/Manage.vue:8 src/views/Submit.vue:129 src/views/Submit.vue:187
 #: src/views/Submit.vue:191
 msgid "Submit App"
-msgstr ""
+msgstr "Odeslat aplikaci"
 
 #: src/views/About.vue:133
 msgid "Submit your app"
-msgstr ""
+msgstr "Odeslat vaší aplikaci"
 
 #: src/views/ManagePackage.vue:568 src/views/ManagePackage.vue:591
 #: src/views/ManageRevisions.vue:185
 msgid "Success"
-msgstr ""
+msgstr "Úspěšné"
 
 #: src/views/Package.vue:165
 msgid "Support"
-msgstr ""
+msgstr "Podpora"
 
 #: src/views/ManagePackage.vue:206
 msgid "Support URL"
-msgstr ""
+msgstr "URL popdpory"
 
 #: src/views/ManagePackage.vue:80
 msgid "Tag Line"
-msgstr ""
+msgstr "Slogan termín"
 
 #: src/views/About.vue:101
 msgid "Terms"
-msgstr ""
+msgstr "Podmínky"
 
 #: src/views/Package.vue:13
 msgid "The app you are looking for has been removed or does not exist"
-msgstr ""
+msgstr "Hledaná aplikace byla odstraněna nebo neexistuje"
 
 #: src/views/About.vue:96
 msgid ""
 "The apps available for download from the OpenStore have their own licencing and terms.\n"
 "Consult each individual app's page for more information."
 msgstr ""
+"Aplikace ke stažení v OpenStore, mají své vlastní licenční ujednání a "
+"podmínky.\n"
+"Další informace naleznete na stránkách jednotlivých aplikací."
 
 #: src/views/ManagePackage.vue:569
 msgid "The changes to %{name} were saved!"
-msgstr ""
+msgstr "Změny %{name} byly uloženy!"
 
 #: src/views/About.vue:103
 msgid ""
@@ -910,16 +927,28 @@ msgid ""
 "a manual review process to check for potential security or privacy issues.\n"
 "This checking is far from exhaustive though, and there are no guarantees."
 msgstr ""
+"OpenStore je neziskový dobrovolnický projekt.\n"
+"Přestože je věnováno velké úsilí k zajištění, aby byl veškerý instalovatelný "
+"obsah repositáře bezpečný, jeho používání je na NA VLASTNÍ RIZIKO uživatele."
+"\n"
+"Aplikace nahrané do OpenStore budou podrobeny automatizovanému procesu "
+"kontroly nebo podrobeny \n"
+"procesu manuální kontroly pokud jde o hrozby týkající se ochrany osobního "
+"soukromí a bezpečnosti.\n"
+"Tato kontrola není zdaleka vyčerpávající a neexistují žádné záruky."
 
 #: src/views/About.vue:20
 msgid ""
 "The OpenStore app is installed by default on the UBports builds of Ubuntu Touch.\n"
 "But if you need to install the OpenStore manually, follow these steps:"
 msgstr ""
+"Aplikace OpenStore je ve výchozím nastavení již nainstalována v obrazech "
+"Ubuntu Touch spravovaných UBports.\n"
+"Pokud však musíte OpenStore nainstalovat ručně, postupujte takto:"
 
 #: src/views/About.vue:140
 msgid "The OpenStore is made possible by many amazing contributors:"
-msgstr ""
+msgstr "OpenStore existuje díky mnoha úžasným přispěvatelům:"
 
 #: src/views/About.vue:5
 msgid ""
@@ -929,6 +958,15 @@ msgid ""
 "You can also upload and manage your own apps for publication.\n"
 "The OpenStore encourages the apps published within to be open source, but also accepts proprietary apps."
 msgstr ""
+"OpenStore je oficiální repozitářem s aplikacemi pro Ubuntu Touch.\n"
+"Jedná se o open-source projekt provozovaný týmem dobrovolníků a s pomocí "
+"členů komunity.\n"
+"Na vašem zařízení s Ubuntu Touch můžete vyhledávat a instalovat nové "
+"aplikace.\n"
+"Můžete nahrávat a spravovat také své vlastní aplikace které chcete zveřejnit."
+"\n"
+"OpenStore podporuje aplikace publikované jako open-source, ale přijímá i "
+"proprietární aplikace."
 
 #: src/views/About.vue:111
 msgid ""
@@ -940,40 +978,65 @@ msgid ""
 "are sent to the server to allow it to filter apps to only what you can install and present your native language where possible.\n"
 "This information is not logged or stored and cannot be used to uniquely identify you."
 msgstr ""
+"OpenStore respektuje vaše soukromí.\n"
+"Nesleduje vás ani vaše zařízení.\n"
+"Nepotřebujete účet ke stahování a instalaci aplikací a vaše stahování "
+"nesledujeme.\n"
+"Pouze pro potřeby vývojářů sledujeme počet stažení v případě revize aplikace."
+"\n"
+"Informace o zařízení (architektura procesoru, framework verze, verze "
+"operačního systému a jazyk OS)\n"
+"jsou odesílány na server, aby umožnily filtrování aplikací pouze na ty, "
+"které je možné instalovat na dané zařízení včetně uvedení vaší jazykové "
+"mutace pokud je k dispozici.\n"
+"Tyto informace nejsou zaznamenávány ani ukládány a nemohou být použity k "
+"jednoznačné vaší identifikaci."
 
 #: src/views/NotFound.vue:5
 msgid "The page you are looking for has been removed or does not exist"
-msgstr ""
+msgstr "Hledaná stránka byla odstraněna anebo neexistuje"
 
 #: src/views/About.vue:79
 msgid ""
 "The source code for OpenStore related projects is available under the GPL v3.\n"
 "You can find the code on the OpenStore GitLab page."
 msgstr ""
+"Zdrojový kód pro projekty vztahující se k OpenStore je k dispozici pod verzí "
+"GPL v3.\n"
+"Kód naleznete na stránce OpenStore GitLab."
 
 #: src/views/Package.vue:17
 msgid "There was an error trying to find this app, please refresh and try again."
 msgstr ""
+"Při pokusu o nalezení této aplikace se vyskytla chyba, obnovte a zkuste to "
+"znovu."
 
 #: src/views/Browse.vue:85 src/views/Manage.vue:30
 msgid "There was an error trying to load the app list, please refresh and try again."
 msgstr ""
+"Došlo k chybě při pokusu o načtení seznamu aplikací, obnovte a zkuste to "
+"znovu."
 
 #: src/views/Stats.vue:5
 msgid "There was an error trying to load the stats, please refresh and try again."
 msgstr ""
+"Při pokusu o načtení statistik došlo k chybě, obnovte a zkuste to znovu."
 
 #: src/views/ManagePackage.vue:158
 msgid "This app contains NSFW material"
-msgstr ""
+msgstr "Tato aplikace obsahuje materiály pro dospělé"
 
 #: src/views/Package.vue:365
 msgid "This app does not have access to restricted system data, see permissions for more details"
 msgstr ""
+"Tato aplikace nemá přístup k omezeným systémovým datům, viz oprávnění pro "
+"další podrobnosti"
 
 #: src/views/Package.vue:367
 msgid "This app has access to restricted system data, see permissions for more details"
 msgstr ""
+"Tato aplikace má přístup k omezeným systémovým údajům, viz oprávnění pro "
+"další podrobnosti"
 
 #: src/views/Submit.vue:141
 msgid ""
@@ -982,139 +1045,150 @@ msgid ""
 "For example: \"openstore.openstore-team\", where \"openstore\" is the app and \"openstore-team\"\n"
 "is the group or individual authoring the app."
 msgstr ""
+"Jedná se o jedinečný identifikátor vaší aplikace.\n"
+"Musí odpovídat přesně poli \"jméno\" ve vašem click's manifestu.json a musí "
+"obsahovat všechna malá písmena.\n"
+"Například: \"openstore.openstore-team\", kde \"openstore\" je název aplikace "
+"a \"openstore-team\"\n"
+"je název skupiny nebo jednotlivce autora aplikace."
 
 #: src/views/ManagePackage.vue:75
 msgid "Title"
-msgstr ""
+msgstr "Název"
 
 #: src/views/Browse.vue:42
 msgid "Title (A-Z)"
-msgstr ""
+msgstr "Název (A-Z)"
 
 #: src/views/Browse.vue:43
 msgid "Title (Z-A)"
-msgstr ""
+msgstr "Název (Z-A)"
 
 #: src/views/ManagePackage.vue:310
 msgid "Total"
-msgstr ""
+msgstr "Celkem"
 
 #: src/views/ManagePackage.vue:274 src/views/Package.vue:197
 msgid "Translation Languages"
-msgstr ""
+msgstr "Jazykové mutace"
 
 #: src/views/Browse.vue:122 src/views/Manage.vue:87
 msgid "Try searching for something else"
-msgstr ""
+msgstr "Zkuste hledat něco jiného"
 
 #: src/views/Browse.vue:29 src/views/ManagePackage.vue:265
 msgid "Type"
-msgstr ""
+msgstr "Typ"
 
 #: src/views/About.vue:14
 msgid "Ubuntu Touch"
-msgstr ""
+msgstr "Ubuntu Touch"
 
 #: src/views/Browse.vue:3
 msgid "Ubuntu Touch Apps"
-msgstr ""
+msgstr "Ubuntu Touch aplikace"
 
 #: src/views/Stats.vue:83
 msgid "Uncategorized"
-msgstr ""
+msgstr "Bez uvedené kategorie"
 
 #: src/views/Package.vue:181
 msgid "Updated"
-msgstr ""
+msgstr "Aktualizováno"
 
 #: src/views/Feeds.vue:18
 msgid "Updated Apps"
-msgstr ""
+msgstr "Aktualizované aplikace"
 
 #: src/views/ManagePackage.vue:327
 msgid "Updated Date"
-msgstr ""
+msgstr "Datum aktualizace"
 
 #: src/views/ManageRevisions.vue:41
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: src/views/Package.vue:288
 msgid "User Metrics"
-msgstr ""
+msgstr "Uživatelské ukazatele"
 
 #: src/views/Manage.vue:48 src/views/ManagePackage.vue:291
 msgid "Version"
-msgstr ""
+msgstr "Verze"
 
 #: src/views/Package.vue:291
 msgid "Video"
-msgstr ""
+msgstr "Video"
 
 #: src/views/Package.vue:290
 msgid "Video Files"
-msgstr ""
+msgstr "Video soubory"
 
 #: src/views/ManagePackage.vue:216
 msgid "Video URL"
-msgstr ""
+msgstr "Video URL"
 
 #: src/views/About.vue:26
 msgid "View Install Instructions"
-msgstr ""
+msgstr "Zobrazit návod instalace"
 
 #: src/views/Submit.vue:87
 msgid "Violence"
-msgstr ""
+msgstr "Násilí"
 
 #: src/views/Browse.vue:66 src/views/ManageRevisions.vue:16
 #: src/views/ManageRevisions.vue:178
 msgid "Vivid"
-msgstr ""
+msgstr "Vivid"
 
 #: src/views/ManageRevisions.vue:181
 msgid "Vivid & Xenial"
-msgstr ""
+msgstr "Vivid a Xenial"
 
 #: src/views/ManageRevisions.vue:17
 msgid "Vivid and Xenial"
-msgstr ""
+msgstr "Vivid a Xenial"
 
 #: src/components/Types.vue:5 src/views/Stats.vue:87
 msgid "Web App"
-msgstr ""
+msgstr "Webová aplikace"
 
 #: src/components/Types.vue:6 src/views/Stats.vue:88
 msgid "Web App+"
-msgstr ""
+msgstr "Webová +aplikace"
 
 #: src/views/Browse.vue:33
 msgid "Web Apps"
-msgstr ""
+msgstr "Webové aplikace"
 
 #: src/views/Package.vue:292
 msgid "Webview"
-msgstr ""
+msgstr "Zobrazení web"
 
 #: src/views/Browse.vue:67 src/views/ManageRevisions.vue:15
 #: src/views/ManageRevisions.vue:176
 msgid "Xenial"
-msgstr ""
+msgstr "Xenial"
 
 #: src/views/ManagePackage.vue:30
 msgid "Yes"
-msgstr ""
+msgstr "Ano"
 
 #: src/views/Submit.vue:13
 msgid ""
 "You app can be pulled without warning at the discretion of our admins.\n"
 "Where possible, we will contact you regarding any such actions."
 msgstr ""
+"Vaše aplikace muže být odstraněna, stažena bez varování dle uvážení našich "
+"administrátoru.\n"
+"Pokud to bude možné, budeme vás v takovém případě předem kontaktovat."
 
 #: src/views/Submit.vue:10
 msgid "You are only allowed to publish apps that you have permission to distribute."
 msgstr ""
+"Máte povoleno publikovat pouze aplikace, u kterých máte oprávnění k jejich "
+"distribuci."
 
 #: src/views/Submit.vue:22
 msgid "You must read over the content policy detailed below."
-msgstr ""
+msgstr "Je vaší povinností seznámit s níže uvedenými obsahovými zásadami."
