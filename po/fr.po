@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-28 10:03-0500\n"
-"PO-Revision-Date: 2019-01-02 20:43+0000\n"
-"Last-Translator: Max Libre <libremax@protonmail.com>\n"
+"PO-Revision-Date: 2019-01-06 00:00+0000\n"
+"Last-Translator: Anne Onyme <anneonyme017@netcourrier.com>\n"
 "Language-Team: French <https://translate.ubports.com/projects/openstore/"
 "open-storeio/fr/>\n"
 "Language: fr\n"
@@ -997,11 +997,11 @@ msgstr ""
 "Nous ne suivons ni vous ni votre appareil.\n"
 "Vous n'avez pas besoin d'un compte pour télécharger et installer des "
 "applications et nous ne suivons pas vos téléchargements.\n"
-"Pour l'information des développeurs, nous comptons le nombre de "
-"téléchargements par révision de l'application.\n"
+"Pour informer les développeurs, nous comptons le nombre de téléchargements "
+"par révision de l'application.\n"
 "Les informations relatives à votre appareil (l'architecture du processeur, "
-"les versions du cadriciel, la version du système d'exploitation et le langue "
-"du système d'exploitation)\n"
+"les versions de l'environnement applicatif, la version du système "
+"d'exploitation et la langue du système d'exploitation)\n"
 "sont envoyés au serveur pour lui permettre de filtrer les applications pour "
 "afficher seulement celles que vous pouvez installer et présenter votre "
 "langue maternelle lorsque cela est possible.\n"
@@ -1017,26 +1017,27 @@ msgid ""
 "The source code for OpenStore related projects is available under the GPL v3.\n"
 "You can find the code on the OpenStore GitLab page."
 msgstr ""
-"Le code source des projets liés à l'OpenStore est disponible sous GPL v3.\n"
-"Vous pouvez trouver le code sur la page GitLab d'OpenStore."
+"Le code source des projets liés à l'OpenStore est disponible sous la licence "
+"GPL v3.\n"
+"Vous pouvez trouver le code sur la page GitLab de l'OpenStore."
 
 #: src/views/Package.vue:17
 msgid "There was an error trying to find this app, please refresh and try again."
 msgstr ""
 "Il y a eu une erreur lors de la recherche de cette application, veuillez "
-"rafraîchir et réessayer."
+"actualiser la page et réessayer."
 
 #: src/views/Browse.vue:85 src/views/Manage.vue:30
 msgid "There was an error trying to load the app list, please refresh and try again."
 msgstr ""
 "Il y a eu une erreur lors du chargement de la liste des applications, "
-"veuillez rafraîchir et réessayer."
+"veuillez actualiser la page et réessayer."
 
 #: src/views/Stats.vue:5
 msgid "There was an error trying to load the stats, please refresh and try again."
 msgstr ""
 "Il y a eu une erreur lors du chargement des statistiques, veuillez "
-"rafraîchir et réessayer."
+"actualiser la page et réessayer."
 
 #: src/views/ManagePackage.vue:158
 msgid "This app contains NSFW material"
@@ -1046,13 +1047,13 @@ msgstr "Cette application contient des contenus pour adultes"
 msgid "This app does not have access to restricted system data, see permissions for more details"
 msgstr ""
 "Cette application n'a pas accès aux données à accès restreint du système, "
-"voir permissions pour plus de détails"
+"regardez les permissions pour plus de détails"
 
 #: src/views/Package.vue:367
 msgid "This app has access to restricted system data, see permissions for more details"
 msgstr ""
-"Cette application a accès aux données à accès restreint du système, voir "
-"permissions pour plus de détails"
+"Cette application a accès aux données à accès restreint du système, regardez "
+"les permissions pour plus de détails"
 
 #: src/views/Submit.vue:141
 msgid ""
@@ -1061,11 +1062,11 @@ msgid ""
 "For example: \"openstore.openstore-team\", where \"openstore\" is the app and \"openstore-team\"\n"
 "is the group or individual authoring the app."
 msgstr ""
-"C'est l'identifiant unique de votre application.\n"
-"Il doit correspondre exactement au champ \"nom\" dans le fichier "
-"manifest.json de votre paquet clic et doit être en minuscules.\n"
-"Par exemple : \"openstore.openstore-team\", où \"openstore\" est "
-"l'application et \"openstore-team\"\n"
+"Il s'agit de l'identifiant unique de votre application.\n"
+"Il doit correspondre exactement au champ « nom » dans le fichier "
+"manifest.json de votre paquet Click et doit être en minuscules.\n"
+"Par exemple : « openstore.openstore-team », où « openstore » est le nom de "
+"l'application et « openstore-team »\n"
 "est le groupe ou l'individu auteur de l'application."
 
 #: src/views/ManagePackage.vue:75
@@ -1102,15 +1103,15 @@ msgstr "Ubuntu Touch"
 
 #: src/views/Browse.vue:3
 msgid "Ubuntu Touch Apps"
-msgstr "Applications Ubuntu Touch"
+msgstr "Applications pour Ubuntu Touch"
 
 #: src/views/Stats.vue:83
 msgid "Uncategorized"
-msgstr "Non catégorisé"
+msgstr "Sans catégorie"
 
 #: src/views/Package.vue:181
 msgid "Updated"
-msgstr "Mis à jour"
+msgstr "Mise à jour"
 
 #: src/views/Feeds.vue:18
 msgid "Updated Apps"
@@ -1118,15 +1119,15 @@ msgstr "Applications mises à jour"
 
 #: src/views/ManagePackage.vue:327
 msgid "Updated Date"
-msgstr "Date mise à jour"
+msgstr "Date de mise à jour"
 
 #: src/views/ManageRevisions.vue:41
 msgid "URL"
-msgstr "URL"
+msgstr "Lien"
 
 #: src/views/Package.vue:288
 msgid "User Metrics"
-msgstr "Métriques utilisateurs"
+msgstr "Statistiques des utilisateurs"
 
 #: src/views/Manage.vue:48 src/views/ManagePackage.vue:291
 msgid "Version"
@@ -1142,11 +1143,11 @@ msgstr "Fichiers vidéo"
 
 #: src/views/ManagePackage.vue:216
 msgid "Video URL"
-msgstr "URL de vidéo"
+msgstr "Lien de la vidéo"
 
 #: src/views/About.vue:26
 msgid "View Install Instructions"
-msgstr "Voir les instructions d'installation"
+msgstr "Consultez les instructions d'installation"
 
 #: src/views/Submit.vue:87
 msgid "Violence"
