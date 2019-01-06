@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: openstore\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-22 15:52+0100\n"
-"PO-Revision-Date: 2019-01-01 21:55+0000\n"
-"Last-Translator: Jaume Angrill <txaume@protonmail.com>\n"
+"PO-Revision-Date: 2019-01-02 00:36+0000\n"
+"Last-Translator: Joan CiberSheep <cibersheep@gmail.com>\n"
 "Language-Team: Catalan <https://translate.ubports.com/projects/openstore/"
 "open-storeio/ca/>\n"
 "Language: ca\n"
@@ -28,7 +28,7 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:592
 msgid "%{name} was successfully deleted"
-msgstr "% {nom} s'ha suprimit correctament"
+msgstr "%{name} s'ha suprimit correctament"
 
 #: src/views/ManagePackage.vue:152
 msgid "A comma separated list of keywords"
@@ -98,7 +98,7 @@ msgstr "Clau API"
 
 #: src/components/Types.vue:3 src/views/Manage.vue:45 src/views/Stats.vue:85
 msgid "App"
-msgstr "App"
+msgstr "Aplicació"
 
 #: src/views/Submit.vue:95
 msgid "App containing or promoting any of the above are strictly prohibited."
@@ -108,7 +108,7 @@ msgstr ""
 
 #: src/views/Submit.vue:133
 msgid "App Name"
-msgstr "Nom de l'app"
+msgstr "Nom de l'aplicació"
 
 #: src/App.vue:88
 msgid "App Stats"
@@ -120,11 +120,11 @@ msgstr "Tipus"
 
 #: src/views/Stats.vue:15
 msgid "App Types"
-msgstr "Tipus d'apps"
+msgstr "Tipus d'aplicacions"
 
 #: src/views/Browse.vue:32
 msgid "Apps"
-msgstr "Apps"
+msgstr "Aplicacions"
 
 #: src/views/Submit.vue:101
 msgid ""
@@ -310,7 +310,7 @@ msgstr "Copia al porta-retalls"
 
 #: src/views/Stats.vue:20
 msgid "Count"
-msgstr "Compta"
+msgstr "Total"
 
 #: src/views/ManageRevisions.vue:54
 msgid "Create"
@@ -330,7 +330,7 @@ msgstr "Descripció"
 
 #: src/views/ManagePackage.vue:55
 msgid "Discovery"
-msgstr "Descobreix-ne"
+msgstr "Descobriu-ne"
 
 #: src/views/Package.vue:91
 msgid "Donate"
@@ -346,7 +346,7 @@ msgstr "Estadístiques de descàrregues"
 
 #: src/views/About.vue:32
 msgid "Download the OpenStore App"
-msgstr "Descarrega l'app de l'OpenStore"
+msgstr "Descarrega l'aplicació de l'OpenStore"
 
 #: src/views/Package.vue:261
 msgid "Download Vivid"
@@ -397,13 +397,13 @@ msgid ""
 "You can also submit issues, bugs, and feature requests to our GitLab bug tracker."
 msgstr ""
 "Per a qualsevol consulta que tingueu, o si necessiteu ajuda, podeu xatejar "
-"amb nosaltres al nostre grup de telegrames.\n"
+"amb nosaltres al nostre grup de Telegram.\n"
 "També podeu enviar problemes, errors i sol·licituds de funcions al nostre "
 "seguidor d'errors de GitLab."
 
 #: src/App.vue:93
 msgid "Fork us on GitLab"
-msgstr ""
+msgstr "Feu-ne un fork al GitLab"
 
 #: src/views/ManagePackage.vue:257 src/views/Package.vue:189
 msgid "Framework"
@@ -423,6 +423,11 @@ msgid ""
 "No need to go into details, a one liner like \"needs to run a daemon in the background\" will do.\n"
 "List all the special features you have, if there are more."
 msgstr ""
+"Doneu una breu explicació de per què no podeu publicar l'aplicació sense "
+"privilegis addicionals.\n"
+"No cal que entreu en detalls, amb una línia com «necessita executar un "
+"dimoni en segon pla» bastarà.\n"
+"Enumereu totes les característiques especials, si són més d'una."
 
 #: src/views/Browse.vue:209 src/views/Manage.vue:165
 msgid "Go back a page"
@@ -457,6 +462,9 @@ msgid ""
 "If an application could be published without manual review if it wouldn’t be for that one cool feature, publish a stripped down version!\n"
 "Not everyone will want to install apps with less confinement."
 msgstr ""
+"Si l'aplicació es pogués publicar sense revisió manual si no fos per aquesta "
+"característica genial, publiqueu-ne una versió reduïda.\n"
+"No tothom voldrà instal·lar aplicacions amb un confinament menor."
 
 #: src/views/Submit.vue:107
 msgid "Illegal Activities"
@@ -476,7 +484,7 @@ msgstr "Instal·la-la"
 
 #: src/views/Package.vue:264
 msgid "Install via the OpenStore app"
-msgstr "Instal·leu via l'aplicació OpenStore"
+msgstr "Instal·leu via l'aplicació de l'OpenStore"
 
 #: src/views/Browse.vue:208 src/views/Manage.vue:164
 msgid "Jump to the first page"
@@ -517,36 +525,36 @@ msgstr "Ubicació"
 
 #: src/App.vue:37
 msgid "Log In"
-msgstr "Iniciar Sessió"
+msgstr "Inicia la sessió"
 
 #: src/views/Login.vue:24
 msgid "Log in to the OpenStore to be able to manage your apps."
 msgstr ""
-"Inicieu sessió a l'OpenStore per poder gestionar les vostres aplicacions."
+"Inicieu una sessió a l'OpenStore per poder gestionar les vostres aplicacions."
 
 #: src/App.vue:43
 msgid "Log Out"
-msgstr "Tancar sessió"
+msgstr "Tanca la sessió"
 
 #: src/views/Login.vue:41 src/views/Login.vue:45
 msgid "Login"
-msgstr "iniciar Sessió"
+msgstr "inicia la sessió"
 
 #: src/views/Submit.vue:125
 msgid "Login to submit your app"
-msgstr "Inicieu sessió per enviar la vostra aplicació"
+msgstr "Inicieu la sessió per enviar la vostra aplicació"
 
 #: src/views/Login.vue:7
 msgid "Login via GitHub"
-msgstr "Inicia sessió a través de GitHub"
+msgstr "Inicia la sessió via GitHub"
 
 #: src/views/Login.vue:12
 msgid "Login via GitLab"
-msgstr "Inicia sessió a través de GitLab"
+msgstr "Inicia la sessió via GitLab"
 
 #: src/views/Login.vue:18
 msgid "Login via Ubuntu"
-msgstr "Inicia sessió a través de Ubuntu"
+msgstr "Inicia la sessió via Ubuntu"
 
 #: src/views/ManagePackage.vue:224
 msgid "Maintainer"
@@ -559,11 +567,11 @@ msgstr "Programari maliciós"
 #: src/App.vue:40 src/views/Manage.vue:142 src/views/ManagePackage.vue:371
 #: src/views/ManagePackage.vue:373
 msgid "Manage"
-msgstr "Administrar"
+msgstr "Administra"
 
 #: src/views/Manage.vue:138
 msgid "Manage Apps"
-msgstr "Administreu les apps"
+msgstr "Administreu les aplicacions"
 
 #: src/views/Package.vue:280
 msgid "Microphone"
@@ -587,20 +595,20 @@ msgstr "Xarxa"
 
 #: src/views/Feeds.vue:9
 msgid "New Apps"
-msgstr "Noves Apps"
+msgstr "Aplicacions noves"
 
 #: src/views/ManagePackage.vue:37 src/views/ManageRevisions.vue:81
 #: src/views/ManageRevisions.vue:83
 msgid "New Revision"
-msgstr "Nova Revisió"
+msgstr "Nova revisió"
 
 #: src/views/ManageRevisions.vue:186
 msgid "New revision for %{channel} was created!"
-msgstr "S'ha creat una nova revisió per% {canal}!"
+msgstr "S'ha creat una nova revisió per %{channel}."
 
 #: src/views/ManageRevisions.vue:8
 msgid "New Revision for %{name}"
-msgstr "Nova revisió per% {nom}"
+msgstr "Nova revisió per %{name}"
 
 #: src/views/Browse.vue:44
 msgid "Newest"
@@ -648,19 +656,18 @@ msgid ""
 msgstr ""
 "Un dels objectius principals de l'OpenStore és proporcionar una botiga "
 "d'aplicacions segura per a persones de totes les edats.\n"
-"Per assolir aquest objectiu, no permetem que es publiquin certs tipus "
+"Per assolir aquest objectiu, no està permès que es publiquin certs tipus "
 "d'aplicacions.\n"
-"Si no segueixes les directrius, es treu la teva aplicació.\n"
-"Qualsevol compte amb infraccions greus pot estar subjecte a la seva "
-"resolució.\n"
-"L'equip d'OpenStore us agraeix per ajudar-nos a promocionar un entorn millor "
-"per a tothom."
+"Si no seguiu aquestes directrius, s'eliminarà la vostra aplicació.\n"
+"Es podrà tancar qualsevol compte amb infraccions greus.\n"
+"L'equip de l'OpenStore us agraeix que ens ajudeu a mantenir un millor entorn "
+"per tothom."
 
 #: src/views/ManageRevisions.vue:19
 msgid "Only choose \"Vivid and Xenial\" if your app is qml only or a webapp."
 msgstr ""
-"Només tria \"Vivid i Xenial\" si la teva aplicació només és qml o una "
-"aplicació web."
+"Trieu «Vivid i Xenial» tan sols si la vostra aplicació només conté qml o és "
+"una aplicació web."
 
 #: src/views/Submit.vue:48
 msgid ""
@@ -674,8 +681,8 @@ msgstr ""
 #: src/views/ManagePackage.vue:218
 msgid "Only YouTube videos are supported at this time. Make sure the url is for the embedded video!"
 msgstr ""
-"Només s'admeten vídeos de YouTube en aquest moment. Assegureu-vos que l'URL "
-"és per al vídeo incrustat!"
+"Només s'admeten vídeos de YouTube de moment. Assegureu-vos que l'URL és per "
+"al vídeo incrustat."
 
 #: src/views/About.vue:36
 msgid "Open the terminal app"
@@ -683,7 +690,7 @@ msgstr "Obriu l'aplicació del terminal"
 
 #: src/views/About.vue:144
 msgid "OpenStore API/Server Contributors"
-msgstr ""
+msgstr "Contribucions a l'API i servei de l'OpenStore"
 
 #: src/views/Submit.vue:58
 msgid "OpenStore App Content Policy"
@@ -691,23 +698,23 @@ msgstr "Política de contingut de l'OpenStore"
 
 #: src/views/About.vue:154
 msgid "OpenStore App Contributors"
-msgstr ""
+msgstr "Contribucions a l'aplicació de l'OpenStore"
 
 #: src/views/About.vue:66
 msgid "OpenStore group on Telegram"
-msgstr "Grup OpenStore a Telegram"
+msgstr "Grup a Telegram de l'OpenStore"
 
 #: src/views/About.vue:92
 msgid "OpenStore source on GitLab"
-msgstr "Font OpenStore a GitLab"
+msgstr "Codi font de l'OpenStore al GitLab"
 
 #: src/views/About.vue:149
 msgid "OpenStore Website Contributors"
-msgstr ""
+msgstr "Contribucions al web de l'OpenStore"
 
 #: src/views/ManageRevisions.vue:38
 msgid "OR"
-msgstr ""
+msgstr "O"
 
 #: src/views/ManagePackage.vue:240
 msgid "Package Info"
@@ -727,7 +734,7 @@ msgstr "Permisos"
 
 #: src/views/Package.vue:285
 msgid "Picture Files"
-msgstr "Arxius d'imatge"
+msgstr "Fitxers d'imatge"
 
 #: src/views/ManagePackage.vue:43
 msgid "Presentation"
@@ -743,31 +750,31 @@ msgstr "Enllaç Públic"
 
 #: src/views/ManagePackage.vue:21
 msgid "Publish"
-msgstr "Publicar"
+msgstr "Publica"
 
 #: src/views/Manage.vue:73 src/views/Package.vue:185
 msgid "Published"
-msgstr "Publicat"
+msgstr "Publicada"
 
 #: src/views/ManagePackage.vue:319
 msgid "Published Date"
-msgstr "Data Publicada"
+msgstr "Data de publicació"
 
 #: src/views/Package.vue:286
 msgid "Push Notifications"
-msgstr ""
+msgstr "Notificacions Push"
 
 #: src/views/Package.vue:281
 msgid "Read Music Files"
-msgstr "Llegir arxius de música"
+msgstr "Llegir fitxers de música"
 
 #: src/views/Package.vue:284
 msgid "Read Picture Files"
-msgstr "Llegir arxius d'imatges"
+msgstr "Llegir fitxers d'imatges"
 
 #: src/views/Package.vue:289
 msgid "Read Video Files"
-msgstr "Llegir arxius de vídeo"
+msgstr "Llegir fitxers de vídeo"
 
 #: src/views/Browse.vue:41
 msgid "Relevance"
@@ -787,11 +794,11 @@ msgstr "Revisió"
 
 #: src/App.vue:108 src/views/Feeds.vue:3
 msgid "RSS Feeds"
-msgstr ""
+msgstr "Sindicació RSS"
 
 #: src/views/Submit.vue:4
 msgid "Rules for Submission"
-msgstr "Normes de presentació"
+msgstr "Normes d'enviament"
 
 #: src/views/Submit.vue:31
 msgid "Rules for Submissions Requiring Manual Review"
@@ -799,7 +806,7 @@ msgstr "Normes d'enviaments que requereixen revisió manual"
 
 #: src/views/About.vue:39
 msgid "Run the command:"
-msgstr "Executeu la ordre:"
+msgstr "Executeu l'ordre:"
 
 #: src/views/ManagePackage.vue:338
 msgid "Save"
@@ -807,7 +814,7 @@ msgstr "Desa"
 
 #: src/components/Types.vue:4 src/views/Stats.vue:86
 msgid "Scope"
-msgstr "Àmbit"
+msgstr "Lent"
 
 #: src/views/Browse.vue:34
 msgid "Scopes"
@@ -815,7 +822,7 @@ msgstr "Lents"
 
 #: src/views/Package.vue:107
 msgid "Screenshots"
-msgstr "Captures de Pantalla"
+msgstr "Captures de pantalla"
 
 #: src/views/ManagePackage.vue:101
 msgid "Screenshots (Limit 5)"
@@ -831,7 +838,7 @@ msgstr "Sensors"
 
 #: src/views/Submit.vue:74
 msgid "Sexually Explicit Content"
-msgstr "Contingut Sexual Explícit"
+msgstr "Contingut sexual explícit"
 
 #: src/views/Package.vue:117
 msgid "Show NSFW Content"
@@ -851,7 +858,7 @@ msgstr "Font"
 
 #: src/views/ManagePackage.vue:201
 msgid "Source URL"
-msgstr "Font URL"
+msgstr "URL de la font"
 
 #: src/views/ManagePackage.vue:65 src/views/Stats.vue:3 src/views/Stats.vue:69
 #: src/views/Stats.vue:73
@@ -864,16 +871,16 @@ msgstr "Estat"
 
 #: src/App.vue:28 src/views/Submit.vue:162
 msgid "Submit"
-msgstr "Enviar"
+msgstr "Envia"
 
 #: src/views/Manage.vue:8 src/views/Submit.vue:129 src/views/Submit.vue:187
 #: src/views/Submit.vue:191
 msgid "Submit App"
-msgstr "Enviar l'App"
+msgstr "Envia l'aplicació"
 
 #: src/views/About.vue:133
 msgid "Submit your app"
-msgstr "Enviar la teva App"
+msgstr "Envieu la vostra aplicació"
 
 #: src/views/ManagePackage.vue:568 src/views/ManagePackage.vue:591
 #: src/views/ManageRevisions.vue:185
@@ -886,11 +893,11 @@ msgstr "Suport"
 
 #: src/views/ManagePackage.vue:206
 msgid "Support URL"
-msgstr "Suport URL"
+msgstr "URL de suport"
 
 #: src/views/ManagePackage.vue:80
 msgid "Tag Line"
-msgstr "Línia d'Etiquetes"
+msgstr "Lema"
 
 #: src/views/About.vue:101
 msgid "Terms"
@@ -898,20 +905,20 @@ msgstr "Termes"
 
 #: src/views/Package.vue:13
 msgid "The app you are looking for has been removed or does not exist"
-msgstr "L'app que cerqueu s'ha eliminat o no existeix"
+msgstr "L'aplicació que cerqueu s'ha eliminat o no existeix"
 
 #: src/views/About.vue:96
 msgid ""
 "The apps available for download from the OpenStore have their own licencing and terms.\n"
 "Consult each individual app's page for more information."
 msgstr ""
-"Les apps disponibles per descarregar des de l'OpenStore tenen les seves "
-"pròpies llicències i termes.\n"
-"Consulta la pàgina de cada app per obtenir més informació."
+"Les aplicacions disponibles per descarregar des de l'OpenStore tenen les "
+"seves pròpies llicències i condicions.\n"
+"Consulteu la pàgina de cadascuna per obtenir-ne més informació."
 
 #: src/views/ManagePackage.vue:569
 msgid "The changes to %{name} were saved!"
-msgstr "S'han desat els canvis a% {nom}!"
+msgstr "S'han desat els canvis a %{name}."
 
 #: src/views/About.vue:103
 msgid ""
@@ -922,26 +929,27 @@ msgid ""
 "This checking is far from exhaustive though, and there are no guarantees."
 msgstr ""
 "L'OpenStore és un projecte voluntari sense ànim de lucre.\n"
-"Tot i que es fa tot el possible per assegurar-vos que tot el repositori "
-"estigui segur d'instal·lar, l'utilitzeu AL VOSTRE PROPI RISC.\n"
+"Tot i que es fa tot el possible per assegurar-mos de que tot el repositori "
+"sigui segur per instal·lar, el seu ús és SOTA EL VOSTRE PROPI RISC.\n"
 "Les aplicacions penjades a l'OpenStore estaran subjectes a un procés de "
 "revisió automàtica o\n"
 "un procés de revisió manual per comprovar possibles problemes de seguretat o "
 "privadesa.\n"
-"Tanmateix, aquesta comprovació no és exhaustiva i no hi ha garanties."
+"Tanmateix, aquesta comprovació no és exhaustiva i no podem donar-ne "
+"garanties."
 
 #: src/views/About.vue:20
 msgid ""
 "The OpenStore app is installed by default on the UBports builds of Ubuntu Touch.\n"
 "But if you need to install the OpenStore manually, follow these steps:"
 msgstr ""
-"L'aplicació OpenStore s'instal·la de manera predeterminada a les "
-"construccions d'Ubuntu Touch de UBports.\n"
-"Però si necessiteu instal·lar OpenStore manualment, seguiu aquests passos:"
+"L'aplicació del'OpenStore s'instal·la de manera predeterminada a les "
+"compilacions del'Ubuntu Touch d'UBports\n"
+"però si necessiteu instal·lar-la manualment, seguiu aquests passos:"
 
 #: src/views/About.vue:140
 msgid "The OpenStore is made possible by many amazing contributors:"
-msgstr "L'OpenStore és possible gràcies a molts contribuents meravellosos:"
+msgstr "L'OpenStore és possible gràcies a moltes contribucions meravelloses:"
 
 #: src/views/About.vue:5
 msgid ""
@@ -951,14 +959,15 @@ msgid ""
 "You can also upload and manage your own apps for publication.\n"
 "The OpenStore encourages the apps published within to be open source, but also accepts proprietary apps."
 msgstr ""
-"L'OpenStore és la botiga d'aplicacions oficial per a Ubuntu Touch.\n"
+"L'OpenStore és la botiga d'aplicacions oficial per a l'Ubuntu Touch.\n"
 "Es tracta d'un projecte de codi obert dirigit per un equip de voluntaris amb "
 "ajuda de la comunitat.\n"
-"Podeu descobrir i instal·lar noves aplicacions al dispositiu Ubuntu Touch.\n"
+"Podeu descobrir i instal·lar noves aplicacions al vostre dispositiu Ubuntu "
+"Touch.\n"
 "També podeu carregar i gestionar les vostres pròpies aplicacions per "
 "publicar-les.\n"
-"L'OpenStore encoratja les aplicacions que publiquen a ser de codi obert, "
-"però també accepta aplicacions propietàries."
+"L'OpenStore encoratja a que les aplicacions que s'hi publiquin siguin de "
+"codi obert però també accepta aplicacions propietàries."
 
 #: src/views/About.vue:111
 msgid ""
@@ -974,15 +983,14 @@ msgstr ""
 "No us seguim ni seguim el vostre dispositiu.\n"
 "No necessiteu un compte per baixar i instal·lar aplicacions i no seguim les "
 "vostres baixades.\n"
-"Per a la informació del desenvolupador, comptem el nombre de descàrregues "
-"per revisió de l'aplicació.\n"
-"Informació sobre el vostre dispositiu (arquitectura del CPU, versions del "
-"marc, versió del sistema operatiu i idioma del sistema operatiu)\n"
-"s'envien al servidor per permetre-li filtrar les aplicacions només al que "
-"podeu instal·lar i presentar el vostre idioma natiu sempre que sigui "
-"possible.\n"
-"Aquesta informació no està registrada ni emmagatzemada i no es pot utilitzar "
-"per identificar-te de manera exclusiva."
+"Per a la informació de desenvolupament, comptem el nombre de descàrregues "
+"per revisió de cada aplicació.\n"
+"S'envia al servidor informació sobre el vostre dispositiu (arquitectura del "
+"CPU, versions de l'entorn de treball, versió del sistema operatiu i idioma)\n"
+"per permetre-hi filtrar les aplicacions que podeu instal·lar i presentar-vos "
+"el vostre idioma natiu sempre que sigui possible.\n"
+"Aquesta informació no queda registrada ni emmagatzemada i no es pot "
+"utilitzar per identificar-vos de manera exclusiva."
 
 #: src/views/NotFound.vue:5
 msgid "The page you are looking for has been removed or does not exist"
@@ -994,26 +1002,26 @@ msgid ""
 "You can find the code on the OpenStore GitLab page."
 msgstr ""
 "El codi font dels projectes relacionats amb OpenStore està disponible sota "
-"el GPL v3.\n"
-"Podeu trobar el codi a la pàgina de OpenStore GitLab."
+"la GPL v3.\n"
+"Podeu trobar-ne el codi a la pàgina de de l'OpenStore al GitLab."
 
 #: src/views/Package.vue:17
 msgid "There was an error trying to find this app, please refresh and try again."
 msgstr ""
-"S'ha produït un error en intentar trobar aquesta aplicació, actualitzeu-la i "
+"S'ha produït un error en intentar trobar aquesta aplicació, actualitzeu i "
 "torneu-ho a provar."
 
 #: src/views/Browse.vue:85 src/views/Manage.vue:30
 msgid "There was an error trying to load the app list, please refresh and try again."
 msgstr ""
 "S'ha produït un error en intentar carregar la llista d'aplicacions, "
-"actualitzeu-la i torneu-ho a provar."
+"actualitzeu i torneu-ho a provar."
 
 #: src/views/Stats.vue:5
 msgid "There was an error trying to load the stats, please refresh and try again."
 msgstr ""
-"S'ha produït un error en intentar carregar les estadístiques, actualitzeu-"
-"les i torneu-ho a provar."
+"S'ha produït un error en intentar carregar les estadístiques, actualitzeu i "
+"torneu-ho a provar."
 
 #: src/views/ManagePackage.vue:158
 msgid "This app contains NSFW material"
@@ -1022,14 +1030,14 @@ msgstr "Aquesta aplicació conté material per adults"
 #: src/views/Package.vue:365
 msgid "This app does not have access to restricted system data, see permissions for more details"
 msgstr ""
-"Aquesta aplicació no té accés a dades de sistema restringides, consulteu els "
-"permisos per obtenir més detalls"
+"Aquesta aplicació no té accés a dades del restringides sistema, consulteu-ne "
+"els permisos per obtenir més detalls"
 
 #: src/views/Package.vue:367
 msgid "This app has access to restricted system data, see permissions for more details"
 msgstr ""
-"Aquesta aplicació té accés a dades del sistema restringides, consulteu els "
-"permisos per obtenir més informació"
+"Aquesta aplicació té accés a dades del restringides sistema, consulteu-ne "
+"els permisos per obtenir més informació"
 
 #: src/views/Submit.vue:141
 msgid ""
@@ -1038,6 +1046,12 @@ msgid ""
 "For example: \"openstore.openstore-team\", where \"openstore\" is the app and \"openstore-team\"\n"
 "is the group or individual authoring the app."
 msgstr ""
+"Aquest és l'identificador únic per la vostra aplicació.\n"
+"Ha de coincidir exactament i en minúscules amb el camp «name» (nom) al "
+"manifest.json del vostre paquet click.\n"
+"Per exemple: \"openstore.openstore-team\", on «openstore» és l'aplicació i "
+"«openstore-team»\n"
+"és el grup o la persona autora de l'aplicació."
 
 #: src/views/ManagePackage.vue:75
 msgid "Title"
@@ -1073,7 +1087,7 @@ msgstr "Ubuntu Touch"
 
 #: src/views/Browse.vue:3
 msgid "Ubuntu Touch Apps"
-msgstr "Ubuntu Touch Apps"
+msgstr "Aplicacions de l'Ubuntu Touch"
 
 #: src/views/Stats.vue:83
 msgid "Uncategorized"
@@ -1081,15 +1095,15 @@ msgstr "Sense categoria"
 
 #: src/views/Package.vue:181
 msgid "Updated"
-msgstr "Actualitzat"
+msgstr "Actualitzada"
 
 #: src/views/Feeds.vue:18
 msgid "Updated Apps"
-msgstr "Apps actualitzades"
+msgstr "Aplicacions actualitzades"
 
 #: src/views/ManagePackage.vue:327
 msgid "Updated Date"
-msgstr "Data actualitzada"
+msgstr "Data d'actualització"
 
 #: src/views/ManageRevisions.vue:41
 msgid "URL"
@@ -1097,7 +1111,7 @@ msgstr "URL"
 
 #: src/views/Package.vue:288
 msgid "User Metrics"
-msgstr ""
+msgstr "Mètriques d'usuari"
 
 #: src/views/Manage.vue:48 src/views/ManagePackage.vue:291
 msgid "Version"
@@ -1109,7 +1123,7 @@ msgstr "Vídeo"
 
 #: src/views/Package.vue:290
 msgid "Video Files"
-msgstr "Arxius del vídeo"
+msgstr "Fitxers de vídeo"
 
 #: src/views/ManagePackage.vue:216
 msgid "Video URL"
@@ -1150,7 +1164,7 @@ msgstr "Aplicacions web"
 
 #: src/views/Package.vue:292
 msgid "Webview"
-msgstr ""
+msgstr "Webview"
 
 #: src/views/Browse.vue:67 src/views/ManageRevisions.vue:15
 #: src/views/ManageRevisions.vue:176
@@ -1159,17 +1173,16 @@ msgstr "Xenial"
 
 #: src/views/ManagePackage.vue:30
 msgid "Yes"
-msgstr "Si"
+msgstr "Sí"
 
 #: src/views/Submit.vue:13
 msgid ""
 "You app can be pulled without warning at the discretion of our admins.\n"
 "Where possible, we will contact you regarding any such actions."
 msgstr ""
-"L'aplicació es pot treure sense previ avís a discreció dels nostres "
-"administradors.\n"
-"Si és possible, ens posarem en contacte amb vostè en relació amb aquestes "
-"accions."
+"La vostra aplicació es pot treure sense previ avís a discreció de la nostra "
+"administració.\n"
+"Si és possible, ens posarem en contacte amb vostè en relació a aquesta acció."
 
 #: src/views/Submit.vue:10
 msgid "You are only allowed to publish apps that you have permission to distribute."
