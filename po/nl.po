@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-28 10:03-0500\n"
-"PO-Revision-Date: 2019-01-03 16:39+0000\n"
+"PO-Revision-Date: 2019-01-13 00:00+0000\n"
 "Last-Translator: Sander <sander.k1007@kpnmail.nl>\n"
 "Language-Team: Dutch <https://translate.ubports.com/projects/openstore/"
 "open-storeio/nl/>\n"
@@ -309,7 +309,7 @@ msgstr "Kopiëren naar klembord"
 
 #: src/views/Stats.vue:20
 msgid "Count"
-msgstr "Tellen"
+msgstr "Aantal"
 
 #: src/views/ManageRevisions.vue:54
 msgid "Create"
@@ -406,7 +406,7 @@ msgstr "'Fork' ons op GitLab"
 
 #: src/views/ManagePackage.vue:257 src/views/Package.vue:189
 msgid "Framework"
-msgstr "Kader"
+msgstr "Framework"
 
 #: src/views/Package.vue:293
 msgid "Full System Access"
@@ -632,7 +632,7 @@ msgstr "Niet gepubliceerd"
 
 #: src/views/ManagePackage.vue:156
 msgid "NSFW"
-msgstr "NSFW"
+msgstr "Inhoud voor volwassenen"
 
 #: src/views/Browse.vue:110
 msgid "NSFW content"
