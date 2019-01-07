@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: openstore\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-22 15:52+0100\n"
-"PO-Revision-Date: 2019-01-02 00:36+0000\n"
+"PO-Revision-Date: 2019-01-13 00:00+0000\n"
 "Last-Translator: Joan CiberSheep <cibersheep@gmail.com>\n"
 "Language-Team: Catalan <https://translate.ubports.com/projects/openstore/"
 "open-storeio/ca/>\n"
@@ -330,7 +330,7 @@ msgstr "Descripció"
 
 #: src/views/ManagePackage.vue:55
 msgid "Discovery"
-msgstr "Descobriu-ne"
+msgstr "Descoberta"
 
 #: src/views/Package.vue:91
 msgid "Donate"
@@ -830,7 +830,7 @@ msgstr "Captures de pantalla (Límit 5)"
 
 #: src/views/Browse.vue:9 src/views/Manage.vue:25
 msgid "Search"
-msgstr "Cercau"
+msgstr "Cerca"
 
 #: src/views/Package.vue:287
 msgid "Sensors"
@@ -850,7 +850,7 @@ msgstr "Estat del lloc"
 
 #: src/views/Browse.vue:39
 msgid "Sort By"
-msgstr "Ordenar per"
+msgstr "Ordena per"
 
 #: src/views/Package.vue:169
 msgid "Source"
@@ -1079,7 +1079,7 @@ msgstr "Intenteu cercar una altra cosa"
 
 #: src/views/Browse.vue:29 src/views/ManagePackage.vue:265
 msgid "Type"
-msgstr "Escriviu"
+msgstr "Tipus"
 
 #: src/views/About.vue:14
 msgid "Ubuntu Touch"
