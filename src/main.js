@@ -38,6 +38,15 @@ Vue.use(VueImg);
 Vue.use(Gettext, {
     availableLanguages: {
         en_US: 'English',
+        ar: 'Arabic',
+        ca: 'Catalan',
+        zh_Hant: 'Chinese (Traditional)',
+        cs: 'Czech',
+        nl: 'Dutch',
+        en_GB: 'English (UK)',
+        fr: 'French',
+        de: 'German',
+        es: 'Spanish',
     },
     translations: translations,
 });

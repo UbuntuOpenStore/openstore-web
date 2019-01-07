@@ -20,7 +20,7 @@
                             :value="category.category"
                             :key="category.category"
                         >
-                            {{category.category}}
+                            {{category.translation}}
                         </option>
                     </select>
                     <!--TODO make this a fancy dropdown with our icons-->

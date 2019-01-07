@@ -6,6 +6,11 @@ The web client for the [OpenStore](https://open-store.io/).
 
 Please report any bugs/features/requests in our [bug tracker](https://gitlab.com/theopenstore/openstore-meta/issues).
 
+## Translations
+
+If you would like to help out with translations head over to the OpenStore
+project on the [UBports Weblate instance](https://translate.ubports.com/projects/openstore/open-storeio/).
+
 ## Development
 
 To get setup with development, checkout the

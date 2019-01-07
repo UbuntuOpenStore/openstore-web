@@ -133,7 +133,7 @@
                 <div :class="{hidden: tab != 'discovery'}" class="p-card">
                     <div class="p-card__content">
                         <div class="p-form__group">
-                            <label for="category" class="p-form__label">Category</label>
+                            <label for="category" class="p-form__label" v-translate>Category</label>
                             <select type="text" id="category" class="p-form__control" :disabled="saving" v-model="app.category">
                                 <option value="" v-translate>Choose a category</option>
                                 <option
@@ -141,7 +141,7 @@
                                     :key="category.category"
                                     :value="category.category"
                                 >
-                                    {{category.category}}
+                                    {{category.translation}}
                                 </option>
                                 <!--TODO make this a fancy dropdown with our icons-->
                             </select>
