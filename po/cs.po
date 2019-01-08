@@ -38,9 +38,8 @@ msgstr "Seznam klíčových slov oddělených čárkou"
 
 #: src/App.vue:34 src/views/About.vue:3 src/views/About.vue:179
 #: src/views/About.vue:183
-#, fuzzy
 msgid "About"
-msgstr "O"
+msgstr "O OpenStore"
 
 #: src/App.vue:78
 msgid "About Us"
