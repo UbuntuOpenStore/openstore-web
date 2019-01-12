@@ -8,68 +8,75 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-02 16:51-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2019-01-13 01:00+0000\n"
+"Last-Translator: Rondy Andersson <rondarius@gmail.com>\n"
+"Language-Team: Swedish <https://translate.ubports.com/projects/openstore/"
+"open-storeio/sv/>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.1.1\n"
 
 #: src/views/Package.vue:119
 msgid ""
 "*This app contains NSFW content, to view the description and\n"
 "screenshots, click the above button."
 msgstr ""
+"*Denna app innehåller NSFW-innehåll, för att se beskrivning och\n"
+"skärmbilder, klicka på knappen här ovanför."
 
 #: src/views/ManagePackage.vue:592
 msgid "%{name} was successfully deleted"
-msgstr ""
+msgstr "%(namn) har framgångsrikt tagits bort"
 
 #: src/views/ManagePackage.vue:152
 msgid "A comma separated list of keywords"
-msgstr ""
+msgstr "En lista med nyckelord, separerade med komma"
 
 #: src/App.vue:34 src/views/About.vue:3 src/views/About.vue:179
 #: src/views/About.vue:183
 msgid "About"
-msgstr ""
+msgstr "Om"
 
 #: src/App.vue:78
 msgid "About Us"
-msgstr ""
+msgstr "Om Oss"
 
 #: src/views/Package.vue:266
 msgid "Accounts"
-msgstr ""
+msgstr "Konton"
 
 #: src/views/Browse.vue:16
 msgid "All Categories"
-msgstr ""
+msgstr "Alla Kategorier"
 
 #: src/views/Browse.vue:65
 msgid "All Channels"
-msgstr ""
+msgstr "Alla Kanaler"
 
 #: src/views/Browse.vue:31
 msgid "All Types"
-msgstr ""
+msgstr "Alla Typer"
 
 #: src/views/Login.vue:26
 msgid "An account is not needed to download or install apps."
-msgstr ""
+msgstr "Behövs inget konto för att ladda ned eller installera appar."
 
 #: src/views/ManagePackage.vue:493 src/views/ManageRevisions.vue:136
 msgid "An error occured loading your app data"
-msgstr ""
+msgstr "Ett fel uppstod vid laddning av dina app data"
 
 #: src/views/ManageRevisions.vue:180 src/views/Submit.vue:216
 msgid "An unknown error has occured"
-msgstr ""
+msgstr "Ett okånt fel har inträffat"
 
 #: src/views/About.vue:159
 msgid "And many amazing developers, testers, and users from the OpenStore community!"
 msgstr ""
+"Och många fantastiska utvecklare, testare, och användare från OpenStores "
+"gemenskap!"
 
 #: src/views/About.vue:121
 msgid ""
