@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-28 10:03-0500\n"
-"PO-Revision-Date: 2019-01-02 15:20+0000\n"
+"PO-Revision-Date: 2019-01-08 14:42+0000\n"
 "Last-Translator: Louies <louies0623@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.ubports.com/projects/"
 "openstore/open-storeio/zh_Hant/>\n"
@@ -779,11 +779,11 @@ msgstr "儲存"
 
 #: src/components/Types.vue:4 src/views/Stats.vue:86
 msgid "Scope"
-msgstr "範圍"
+msgstr "觀查"
 
 #: src/views/Browse.vue:34
 msgid "Scopes"
-msgstr "範圍"
+msgstr "觀查"
 
 #: src/views/Package.vue:107
 msgid "Screenshots"
