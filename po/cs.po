@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-28 10:03-0500\n"
-"PO-Revision-Date: 2019-01-13 00:00+0000\n"
+"PO-Revision-Date: 2019-01-20 00:00+0000\n"
 "Last-Translator: Milan Korecký <milan.korecky@gmail.com>\n"
 "Language-Team: Czech <https://translate.ubports.com/projects/openstore/"
 "open-storeio/cs/>\n"
@@ -117,7 +117,7 @@ msgstr "Statistiky aplikace"
 
 #: src/views/Stats.vue:19
 msgid "App Type"
-msgstr "Typ aplikace"
+msgstr "Druh aplikace"
 
 #: src/views/Stats.vue:15
 msgid "App Types"
@@ -1078,7 +1078,7 @@ msgstr "Zkuste hledat něco jiného"
 
 #: src/views/Browse.vue:29 src/views/ManagePackage.vue:265
 msgid "Type"
-msgstr "Typ"
+msgstr "Druh"
 
 #: src/views/About.vue:14
 msgid "Ubuntu Touch"
