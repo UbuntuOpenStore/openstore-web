@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-02 16:51-0500\n"
-"PO-Revision-Date: 2019-01-25 12:12+0000\n"
-"Last-Translator: Mike <miguel2000@livecom.it>\n"
+"PO-Revision-Date: 2019-01-25 18:07+0000\n"
+"Last-Translator: Sylke Vicious <silkevicious@gmail.com>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/openstore/"
 "open-storeio/it/>\n"
 "Language: it\n"
@@ -129,12 +129,17 @@ msgstr ""
 #: src/views/Submit.vue:82
 msgid "Apps containing or promoting child abuse or child sexual abuse are strictly prohibited."
 msgstr ""
+"App che contengono o promuovono abusi su minori o abusi sessuali su minori "
+"sono severamente proibite."
 
 #: src/views/Submit.vue:88
 msgid ""
 "Apps containing or promoting gratuitous violence are not allowed.\n"
 "This includes, but is not limited to, violence, terrorism, bomb/weapon making, self harm, and grotesque imagery."
 msgstr ""
+"App che contengono o promuovono violenza gratuita non sono permesse.\n"
+"Questo include, ma non è limitato a, violenza, terrorismo, creazione di armi/"
+"bombe, autolesionismo e immagini grottesche."
 
 #: src/views/Submit.vue:75
 msgid ""
@@ -143,15 +148,16 @@ msgid ""
 msgstr ""
 
 #: src/views/Submit.vue:7
-#, fuzzy
 msgid "Apps not requiring manual review can be submitted by logging in with the \"Log In\" link above."
 msgstr ""
-"Appena che non richiedono la revisione manuale possono essere caricate "
-"registradosi con il link \"Accedi\" in alto."
+"App che non richiedono la revisione manuale possono essere caricate "
+"accedendo con il link \"Accedi\" in alto."
 
 #: src/views/Submit.vue:108
 msgid "Apps promoting illegal activities (based on USA law) are not allowed."
 msgstr ""
+"App che promuovono attività illegali (in base alle leggi USA) non sono "
+"permesse."
 
 #: src/views/Submit.vue:18
 msgid "Apps requiring manual review must be submitted by contacting an admin in our telegram group."
