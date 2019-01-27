@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-02 16:51-0500\n"
-"PO-Revision-Date: 2019-01-13 01:00+0000\n"
+"PO-Revision-Date: 2019-01-27 00:01+0000\n"
 "Last-Translator: Rondy Andersson <rondarius@gmail.com>\n"
 "Language-Team: Swedish <https://translate.ubports.com/projects/openstore/"
 "open-storeio/sv/>\n"
@@ -75,7 +75,7 @@ msgstr "Ett okånt fel har inträffat"
 #: src/views/About.vue:159
 msgid "And many amazing developers, testers, and users from the OpenStore community!"
 msgstr ""
-"Och många fantastiska utvecklare, testare, och användare från OpenStores "
+"Och många fantastiska utvecklare, testare och användare från OpenStores "
 "gemenskap!"
 
 #: src/views/About.vue:121
@@ -85,244 +85,278 @@ msgid ""
 "contact you in the event there is an issue with your app.\n"
 "Additionally, this site uses cookies to keep you logged in to your account."
 msgstr ""
+"Oavsett vilken personlig data ni beslutar att ge oss(t.ex din mejl adress "
+"när man registrerar för ett konto för att ladda upp dina appar) kommer inte "
+"längre än till oss,\n"
+"och blir inte använd till något annat än att ge dig tillstånd till att sköta "
+"dina appar, i sällsynta fall, kontakta dig ifall där blir något fel med dina "
+"appar.\n"
+"Dessutom, den här sidan använder kakor för att hålla dig inloggad på ditt "
+"konto."
 
 #: src/views/Manage.vue:12
 msgid "API Key"
-msgstr ""
+msgstr "API nyckel"
 
 #: src/components/Types.vue:3 src/views/Manage.vue:44 src/views/Stats.vue:85
 msgid "App"
-msgstr ""
+msgstr "Applikation"
 
 #: src/views/Submit.vue:95
 msgid "App containing or promoting any of the above are strictly prohibited."
 msgstr ""
+"Applikationer som innehåller eller främjar något av ovanstående är strängt "
+"förbjudet."
 
 #: src/views/Submit.vue:133
 msgid "App Name"
-msgstr ""
+msgstr "App-Namn"
 
 #: src/App.vue:88
 msgid "App Stats"
-msgstr ""
+msgstr "Appstatistik"
 
 #: src/views/Stats.vue:19
 msgid "App Type"
-msgstr ""
+msgstr "App-sort"
 
 #: src/views/Stats.vue:15
 msgid "App Types"
-msgstr ""
+msgstr "App-sorter"
 
 #: src/views/Browse.vue:32
 msgid "Apps"
-msgstr ""
+msgstr "Appar"
 
 #: src/views/Submit.vue:101
 msgid ""
 "Apps containing gambling involving real world money transactions are not allowed.\n"
 "This includes, but is not limited to, online casinos, betting, and lotteries."
 msgstr ""
+"Appar som innehåller hasardspel som inbegriper riktiga pengar är inte "
+"tillåtet.\n"
+"Detta inkluderar, men inte begränsat till, online-kasinon, vadslagning och "
+"lotterier."
 
 #: src/views/Submit.vue:82
 msgid "Apps containing or promoting child abuse or child sexual abuse are strictly prohibited."
 msgstr ""
+"Appar som innehåller eller uppmuntrar barnmisshandel eller sexuellt "
+"utnyttjande av barn är strängt förbjudet."
 
 #: src/views/Submit.vue:88
 msgid ""
 "Apps containing or promoting gratuitous violence are not allowed.\n"
 "This includes, but is not limited to, violence, terrorism, bomb/weapon making, self harm, and grotesque imagery."
 msgstr ""
+"Appar som innehåller eller uppmuntrar meningslöst våld är inte tillåtet.\n"
+"Detta inkluderar, men inte begränsat till, våld, terrorism, bomb/vapen "
+"tillverkning, självstypning och groteska illustrationer."
 
 #: src/views/Submit.vue:75
 msgid ""
 "Apps containing or promoting sexually explicit content are not allowed.\n"
 "This includes, but is not limited to, pornography and services promoting sexually explicit content."
 msgstr ""
+"Appar som innehåller eller uppmuntrar sexuellt innehåll är inte tillåtet.\n"
+"Detta inkluderar, men inte begränsat till, pornografi och tjänster som "
+"uppmuntrar sexuellt innehåll."
 
 #: src/views/Submit.vue:7
 msgid "Apps not requiring manual review can be submitted by logging in with the \"Log In\" link above."
 msgstr ""
+"Appar som inte behöver manuellt gås igenom kan överlämnas genom att man "
+"loggar in med \"Logga in\" länken ovanför."
 
 #: src/views/Submit.vue:108
 msgid "Apps promoting illegal activities (based on USA law) are not allowed."
 msgstr ""
+"Appar som uppmuntrar till illegala aktiviteter (baserat på USA:s lagar) är "
+"inte tillåtet."
 
 #: src/views/Submit.vue:18
 msgid "Apps requiring manual review must be submitted by contacting an admin in our telegram group."
 msgstr ""
+"Appar som kräver att man manuellt går igenom dem, måste lämnas över genom "
+"att man kontaktar en administratör i vår telegram grupp."
 
 #: src/views/Submit.vue:114
 msgid ""
 "Apps that are found to be stealing the users data, trying to escalate their privileges without user consent,\n"
 "or executing malicious process are strictly prohibited."
 msgstr ""
+"Appar som blir upptäckta med att själa användarens data, försöker eskalera "
+"deras privilegier utan användarens medgivande,\n"
+"eller utför skadliga processer är strängt förbjudet."
 
 #: src/views/About.vue:128
 msgid ""
 "Apps uploaded to the OpenStore are subject to our submission rules and content policy.\n"
 "You can review the rules and policies before uploading your app."
 msgstr ""
+"Appar som laddas upp till OpenStore är föremål för våra inlämningsregler och "
+"innehållspolicy.\n"
+"Du kan granska våra regler och riktlinjer innan du laddar upp din app."
 
 #: src/views/ManagePackage.vue:253 src/views/Package.vue:194
 msgid "Architecture"
-msgstr ""
+msgstr "Arkitektur"
 
 #: src/views/Package.vue:267
 msgid "Audio"
-msgstr ""
+msgstr "Ljud"
 
 #: src/views/Manage.vue:45 src/views/ManagePackage.vue:249
 #: src/views/Package.vue:156
 msgid "Author"
-msgstr ""
+msgstr "Författare"
 
 #: src/views/Package.vue:7
 msgid "Back"
-msgstr ""
+msgstr "Bakåt"
 
 #: src/views/Package.vue:268
 msgid "Bluetooth"
-msgstr ""
+msgstr "Blåtand"
 
 #: src/App.vue:31
 msgid "Browse"
-msgstr ""
+msgstr "Bläddra"
 
 #: src/views/Browse.vue:181
 msgid "Browse Apps"
-msgstr ""
+msgstr "Genomsök Appar"
 
 #: src/views/About.vue:73
 msgid "Bug Tracker"
-msgstr ""
+msgstr "Programfels spårare"
 
 #: src/views/Package.vue:269
 msgid "Calendar"
-msgstr ""
+msgstr "Kalender"
 
 #: src/views/Package.vue:270
 msgid "Camera"
-msgstr ""
+msgstr "Kamera"
 
 #: src/views/ManagePackage.vue:348 src/views/ManageRevisions.vue:58
 #: src/views/Submit.vue:167
 msgid "Cancel"
-msgstr ""
+msgstr "Avbryt"
 
 #: src/views/Browse.vue:14 src/views/Package.vue:178
 msgid "Category"
-msgstr ""
+msgstr "Kategori"
 
 #: src/views/ManagePackage.vue:96 src/views/Package.vue:129
 msgid "Changelog"
-msgstr ""
+msgstr "Förändringslogg"
 
 #: src/views/Browse.vue:63 src/views/ManagePackage.vue:290
 #: src/views/ManageRevisions.vue:13
 msgid "Channel"
-msgstr ""
+msgstr "Kanal"
 
 #: src/views/ManagePackage.vue:269
 msgid "Channels"
-msgstr ""
+msgstr "Kanaler"
 
 #: src/App.vue:83
 msgid "Chat with us on Telegram"
-msgstr ""
+msgstr "Chatta med oss på Telegram"
 
 #: src/views/Submit.vue:81
 msgid "Child Endangerment"
-msgstr ""
+msgstr "Framkallande av fara för barn"
 
 #: src/views/ManagePackage.vue:137
 msgid "Choose a category"
-msgstr ""
+msgstr "Välj en kategori"
 
 #: src/views/ManagePackage.vue:168
 msgid "Choose a license"
-msgstr ""
+msgstr "Välj en licens"
 
 #: src/views/ManagePackage.vue:226
 msgid "Choose a maintainer"
-msgstr ""
+msgstr "Välj en vårdare"
 
 #: src/views/Package.vue:271
 msgid "Connectivity"
-msgstr ""
+msgstr "Konnektivitet"
 
 #: src/views/About.vue:58
 msgid "Contact"
-msgstr ""
+msgstr "Kontakt"
 
 #: src/views/Package.vue:272
 msgid "Contacts"
-msgstr ""
+msgstr "Kontakter"
 
 #: src/views/Package.vue:274
 msgid "Content Exchange"
-msgstr ""
+msgstr "Innehållsutbyte"
 
 #: src/views/Package.vue:273
 msgid "Content Exchange Source"
-msgstr ""
+msgstr "Innehållsutbytes källa"
 
 #: src/views/About.vue:137
 msgid "Contributors"
-msgstr ""
+msgstr "Bidragsgivare"
 
 #: src/views/About.vue:46
 msgid "Copy to clipboard"
-msgstr ""
+msgstr "Kopiera till urklipp"
 
 #: src/views/Stats.vue:20
 msgid "Count"
-msgstr ""
+msgstr "Räkna"
 
 #: src/views/ManageRevisions.vue:49
 msgid "Create"
-msgstr ""
+msgstr "Skapa"
 
 #: src/views/Package.vue:275
 msgid "Debug"
-msgstr ""
+msgstr "Avsöka"
 
 #: src/views/ManagePackage.vue:343
 msgid "Delete"
-msgstr ""
+msgstr "Radera"
 
 #: src/views/ManagePackage.vue:85
 msgid "Description"
-msgstr ""
+msgstr "Beskrivning"
 
 #: src/views/ManagePackage.vue:55
 msgid "Discovery"
-msgstr ""
+msgstr "Upptäcka"
 
 #: src/views/Package.vue:92
 msgid "Donate"
-msgstr ""
+msgstr "Donera"
 
 #: src/views/ManagePackage.vue:211
 msgid "Donate URL"
-msgstr ""
+msgstr "Donera URL"
 
 #: src/views/Package.vue:262
 msgid "Download"
-msgstr ""
+msgstr "Ladda ner"
 
 #: src/views/ManagePackage.vue:283
 msgid "Download Stats"
-msgstr ""
+msgstr "Nedladdnings statistik"
 
 #: src/views/About.vue:32
 msgid "Download the OpenStore App"
-msgstr ""
+msgstr "Ladda ner OpenStore appen"
 
 #: src/views/Manage.vue:48 src/views/Manage.vue:68
 #: src/views/ManagePackage.vue:292
 msgid "Downloads"
-msgstr ""
+msgstr "Nedladdningar"
 
 #: src/views/ManagePackage.vue:114
 msgid "Drag and drop to sort screenshots."
