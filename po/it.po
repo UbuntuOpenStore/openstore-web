@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-02 16:51-0500\n"
-"PO-Revision-Date: 2019-01-27 00:00+0000\n"
-"Last-Translator: Mike <miguel2000@livecom.it>\n"
+"PO-Revision-Date: 2019-02-11 20:28+0000\n"
+"Last-Translator: Sylke Vicious <silkevicious@gmail.com>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/openstore/"
 "open-storeio/it/>\n"
 "Language: it\n"
@@ -227,7 +227,7 @@ msgstr "Categoria"
 
 #: src/views/ManagePackage.vue:96 src/views/Package.vue:129
 msgid "Changelog"
-msgstr ""
+msgstr "Elenco cambiamenti"
 
 #: src/views/Browse.vue:63 src/views/ManagePackage.vue:290
 #: src/views/ManageRevisions.vue:13
@@ -317,15 +317,15 @@ msgstr "Dona"
 
 #: src/views/ManagePackage.vue:211
 msgid "Donate URL"
-msgstr ""
+msgstr "URL Donazioni"
 
 #: src/views/Package.vue:262
 msgid "Download"
-msgstr ""
+msgstr "Scarica"
 
 #: src/views/ManagePackage.vue:283
 msgid "Download Stats"
-msgstr ""
+msgstr "Statistiche sugli Scaricamenti"
 
 #: src/views/About.vue:32
 msgid "Download the OpenStore App"
@@ -334,21 +334,21 @@ msgstr ""
 #: src/views/Manage.vue:48 src/views/Manage.vue:68
 #: src/views/ManagePackage.vue:292
 msgid "Downloads"
-msgstr ""
+msgstr "Scaricamenti"
 
 #: src/views/ManagePackage.vue:114
 msgid "Drag and drop to sort screenshots."
-msgstr ""
+msgstr "Trascina e rilascia per ordinare le schermate."
 
 #: src/views/ManagePackage.vue:8
 msgid "Edit"
-msgstr ""
+msgstr "Modifica"
 
 #: src/views/ManagePackage.vue:492 src/views/ManagePackage.vue:579
 #: src/views/ManagePackage.vue:605 src/views/ManageRevisions.vue:135
 #: src/views/Submit.vue:222
 msgid "Error"
-msgstr ""
+msgstr "Errore"
 
 #: src/views/Feeds.vue:34 src/views/Feeds.vue:38
 msgid "Feeds"
@@ -356,15 +356,15 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:261
 msgid "File Size"
-msgstr ""
+msgstr "Dimensione File"
 
 #: src/views/ManageRevisions.vue:22
 msgid "File Upload"
-msgstr ""
+msgstr "Caricamento File"
 
 #: src/views/Browse.vue:52
 msgid "Filters"
-msgstr ""
+msgstr "Filtri"
 
 #: src/views/About.vue:60
 msgid ""
