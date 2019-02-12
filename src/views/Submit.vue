@@ -148,7 +148,7 @@
                         </div>
 
                         <div class="p-form__group">
-                            <label for="name" class="p-form__label">App Title</label>
+                            <label for="name" class="p-form__label" v-translate>App Title</label>
                             <input
                                 type="text"
                                 id="name"
