@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-12 10:14-0500\n"
+"POT-Creation-Date: 2019-02-12 10:20-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -98,6 +98,10 @@ msgstr ""
 
 #: src/App.vue:88
 msgid "App Stats"
+msgstr ""
+
+#: src/views/Submit.vue:150
+msgid "App Title"
 msgstr ""
 
 #: src/views/Stats.vue:19
