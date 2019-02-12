@@ -152,7 +152,7 @@ msgstr ""
 
 #: src/views/Submit.vue:75
 msgid ""
-"Apps containing or promoting sexually explicit contentare not allowed.\n"
+"Apps containing or promoting sexually explicit content are not allowed.\n"
 "This includes, but is not limited to, pornography and services promoting sexually explicit content."
 msgstr ""
 "Apps die seksueel expliciete inhoud bevatten of promoten, zijn niet "
@@ -648,7 +648,7 @@ msgstr "Oudste update"
 
 #: src/views/Submit.vue:60
 msgid ""
-"One of the main goals of the OpenStore is to provide provide a safe app store for people of all ages.\n"
+"One of the main goals of the OpenStore is to provide a safe app store for people of all ages.\n"
 "To accomplish this goal we do not allow certain types of app to be published.\n"
 "Failure to follow the guidelines will result in your app being removed.\n"
 "Any account with serious infractions may be subject to termination.\n"
@@ -1172,7 +1172,7 @@ msgstr "Ja"
 
 #: src/views/Submit.vue:13
 msgid ""
-"You app can be pulled without warning at the discretion of our admins.\n"
+"Your app can be pulled without warning at the discretion of our admins.\n"
 "Where possible, we will contact you regarding any such actions."
 msgstr ""
 "Uw app kan zonder waarschuwing worden ingetrokken naar goeddunken van onze "

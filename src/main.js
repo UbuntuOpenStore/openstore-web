@@ -51,6 +51,19 @@ Vue.use(Gettext, {
     translations: translations,
 });
 
+// Monkey patch the v-translate directive to strip out extra spaces
+let originalBind = Vue.options.directives.translate.bind;
+Vue.options.directives.translate.bind = (el, binding, vnode) => {
+    el.innerHTML = el.innerHTML.replace(/  /g, '');
+    originalBind(el, binding, vnode);
+};
+
+let originalUpdate = Vue.options.directives.translate.update;
+Vue.options.directives.translate.update = (el, binding, vnode) => {
+    el.innerHTML = el.innerHTML.replace(/  /g, '');
+    originalUpdate(el, binding, vnode);
+};
+
 /* eslint-disable no-new */
 new Vue({
     el: '#app',

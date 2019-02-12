@@ -33,7 +33,7 @@
 
                 <ul class="p-list">
                     <li class="p-list__item is-ticked">
-                        <a href="/telegram">
+                        <a href="/telegram" v-translate>
                             Send us a link to a repository for your app to our telegram group along with some instructions on how to build it.
                         </a>
                     </li>

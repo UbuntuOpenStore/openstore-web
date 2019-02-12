@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-02 16:51-0500\n"
+"POT-Creation-Date: 2019-02-12 10:14-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -204,7 +204,8 @@ msgstr ""
 msgid "Cancel"
 msgstr ""
 
-#: src/views/Browse.vue:14 src/views/Package.vue:178
+#: src/views/Browse.vue:14 src/views/ManagePackage.vue:135
+#: src/views/Package.vue:178
 msgid "Category"
 msgstr ""
 
@@ -755,6 +756,10 @@ msgstr ""
 
 #: src/views/Browse.vue:9 src/views/Manage.vue:24
 msgid "Search"
+msgstr ""
+
+#: src/views/Submit.vue:35
+msgid "Send us a link to a repository for your app to our telegram group along with some instructions on how to build it."
 msgstr ""
 
 #: src/views/Package.vue:287
