@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-28 10:03-0500\n"
 "PO-Revision-Date: 2019-02-20 20:13+0000\n"
-"Last-Translator: Florian Leeber <flori@bin.org.in>\n"
+"Last-Translator: Daniel Frost <one@frostinfo.de>\n"
 "Language-Team: German <https://translate.ubports.com/projects/openstore/"
 "open-storeio/de/>\n"
 "Language: de\n"
@@ -62,11 +62,11 @@ msgstr "Alle Typen"
 
 #: src/views/Login.vue:26
 msgid "An account is not needed to download or install apps."
-msgstr "Zum Installieren oder Herunterladen ist kein Konto notwendig."
+msgstr "Zum Installieren oder Herunterladen von Apps ist kein Konto notwendig."
 
 #: src/views/ManagePackage.vue:493 src/views/ManageRevisions.vue:141
 msgid "An error occured loading your app data"
-msgstr "Fehler beim Laden der App-Daten"
+msgstr "Fehler beim Laden deiner App-Daten"
 
 #: src/views/ManageRevisions.vue:191 src/views/Submit.vue:216
 msgid "An unknown error has occured"
@@ -313,7 +313,7 @@ msgstr "Anzahl"
 
 #: src/views/ManageRevisions.vue:54
 msgid "Create"
-msgstr "Erstelle"
+msgstr "Einstellen"
 
 #: src/views/Package.vue:275
 msgid "Debug"
@@ -337,7 +337,7 @@ msgstr "Spenden"
 
 #: src/views/ManagePackage.vue:211
 msgid "Donate URL"
-msgstr "Spenden-URL"
+msgstr "Link für Spenden"
 
 #: src/views/ManagePackage.vue:283
 msgid "Download Stats"
@@ -358,7 +358,7 @@ msgstr "Für Xenial herunterladen"
 #: src/views/Manage.vue:49 src/views/Manage.vue:69
 #: src/views/ManagePackage.vue:292
 msgid "Downloads"
-msgstr "Downloads"
+msgstr "Herunterladen"
 
 #: src/views/ManagePackage.vue:114
 msgid "Drag and drop to sort screenshots."
@@ -384,7 +384,7 @@ msgstr "Dateigröße"
 
 #: src/views/ManageRevisions.vue:27
 msgid "File Upload"
-msgstr "Dateien hochladen"
+msgstr "Datei hochladen"
 
 #: src/views/Browse.vue:52
 msgid "Filters"
@@ -483,7 +483,7 @@ msgstr "Installieren"
 
 #: src/views/Package.vue:264
 msgid "Install via the OpenStore app"
-msgstr "Über die OpenStore App installieren"
+msgstr "Mit der OpenStore App installieren"
 
 #: src/views/Browse.vue:208 src/views/Manage.vue:164
 msgid "Jump to the first page"
@@ -499,7 +499,7 @@ msgstr "Bildschirm angeschaltet lassen"
 
 #: src/views/Manage.vue:16
 msgid "Keep your api key private!"
-msgstr "Halte deinen API Schlüssel geheim!"
+msgstr "Halte deinen API-Schlüssel geheim!"
 
 #: src/views/ManagePackage.vue:150
 msgid "Keywords"
@@ -528,11 +528,11 @@ msgstr "Einloggen"
 
 #: src/views/Login.vue:24
 msgid "Log in to the OpenStore to be able to manage your apps."
-msgstr "In den OpenStore einloggen um deine Apps zu verwalten."
+msgstr "Im OpenStore einloggen um deine Apps zu verwalten."
 
 #: src/App.vue:43
 msgid "Log Out"
-msgstr "Ausloggen"
+msgstr "Abmelden"
 
 #: src/views/Login.vue:41 src/views/Login.vue:45
 msgid "Login"
@@ -856,7 +856,7 @@ msgstr "Quelle"
 
 #: src/views/ManagePackage.vue:201
 msgid "Source URL"
-msgstr "Quellen URL"
+msgstr "Link Quellcode"
 
 #: src/views/ManagePackage.vue:65 src/views/Stats.vue:3 src/views/Stats.vue:69
 #: src/views/Stats.vue:73
@@ -891,7 +891,7 @@ msgstr "Unterstützung"
 
 #: src/views/ManagePackage.vue:206
 msgid "Support URL"
-msgstr "Unterstützungs URL"
+msgstr "Link für Unterstützung"
 
 #: src/views/ManagePackage.vue:80
 msgid "Tag Line"
@@ -1122,7 +1122,7 @@ msgstr "Videodateien"
 
 #: src/views/ManagePackage.vue:216
 msgid "Video URL"
-msgstr "Video URL"
+msgstr "URL für Video"
 
 #: src/views/About.vue:26
 msgid "View Install Instructions"
@@ -1159,7 +1159,7 @@ msgstr "Webapps"
 
 #: src/views/Package.vue:292
 msgid "Webview"
-msgstr "Internetanzeige"
+msgstr "Internetzugriff"
 
 #: src/views/Browse.vue:67 src/views/ManageRevisions.vue:15
 #: src/views/ManageRevisions.vue:176
