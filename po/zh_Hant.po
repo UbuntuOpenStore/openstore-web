@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-28 10:03-0500\n"
-"PO-Revision-Date: 2019-01-08 14:42+0000\n"
-"Last-Translator: Louies <louies0623@gmail.com>\n"
+"PO-Revision-Date: 2019-02-21 18:28+0000\n"
+"Last-Translator: louies0623 <louies0623@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.ubports.com/projects/"
 "openstore/open-storeio/zh_Hant/>\n"
 "Language: zh_Hant\n"
@@ -62,7 +62,7 @@ msgstr "所有類型"
 
 #: src/views/Login.vue:26
 msgid "An account is not needed to download or install apps."
-msgstr "下載或安裝應用程式不需要帳戶。"
+msgstr "下載或安裝應用程式是不須要帳戶的。"
 
 #: src/views/ManagePackage.vue:493 src/views/ManageRevisions.vue:141
 msgid "An error occured loading your app data"
