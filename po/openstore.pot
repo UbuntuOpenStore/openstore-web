@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-12 10:20-0500\n"
+"POT-Creation-Date: 2019-03-02 00:11-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,11 +60,11 @@ msgstr ""
 msgid "An account is not needed to download or install apps."
 msgstr ""
 
-#: src/views/ManagePackage.vue:493 src/views/ManageRevisions.vue:136
+#: src/views/ManagePackage.vue:493 src/views/ManageRevisions.vue:145
 msgid "An error occured loading your app data"
 msgstr ""
 
-#: src/views/ManageRevisions.vue:180 src/views/Submit.vue:216
+#: src/views/ManageRevisions.vue:190 src/views/Submit.vue:216
 msgid "An unknown error has occured"
 msgstr ""
 
@@ -203,7 +203,7 @@ msgstr ""
 msgid "Camera"
 msgstr ""
 
-#: src/views/ManagePackage.vue:348 src/views/ManageRevisions.vue:58
+#: src/views/ManagePackage.vue:348 src/views/ManageRevisions.vue:66
 #: src/views/Submit.vue:167
 msgid "Cancel"
 msgstr ""
@@ -213,7 +213,8 @@ msgstr ""
 msgid "Category"
 msgstr ""
 
-#: src/views/ManagePackage.vue:96 src/views/Package.vue:129
+#: src/views/ManagePackage.vue:96 src/views/ManageRevisions.vue:50
+#: src/views/Package.vue:129
 msgid "Changelog"
 msgstr ""
 
@@ -278,7 +279,7 @@ msgstr ""
 msgid "Count"
 msgstr ""
 
-#: src/views/ManageRevisions.vue:49
+#: src/views/ManageRevisions.vue:57
 msgid "Create"
 msgstr ""
 
@@ -332,7 +333,7 @@ msgid "Edit"
 msgstr ""
 
 #: src/views/ManagePackage.vue:492 src/views/ManagePackage.vue:579
-#: src/views/ManagePackage.vue:605 src/views/ManageRevisions.vue:135
+#: src/views/ManagePackage.vue:605 src/views/ManageRevisions.vue:144
 #: src/views/Submit.vue:222
 msgid "Error"
 msgstr ""
@@ -546,12 +547,12 @@ msgstr ""
 msgid "New Apps"
 msgstr ""
 
-#: src/views/ManagePackage.vue:37 src/views/ManageRevisions.vue:76
-#: src/views/ManageRevisions.vue:78
+#: src/views/ManagePackage.vue:37 src/views/ManageRevisions.vue:84
+#: src/views/ManageRevisions.vue:86
 msgid "New Revision"
 msgstr ""
 
-#: src/views/ManageRevisions.vue:175
+#: src/views/ManageRevisions.vue:185
 msgid "New revision for %{channel} was created!"
 msgstr ""
 
@@ -817,7 +818,7 @@ msgid "Submit your app"
 msgstr ""
 
 #: src/views/ManagePackage.vue:568 src/views/ManagePackage.vue:591
-#: src/views/ManageRevisions.vue:174
+#: src/views/ManageRevisions.vue:184
 msgid "Success"
 msgstr ""
 
@@ -932,6 +933,10 @@ msgid ""
 "is the group or individual authoring the app."
 msgstr ""
 
+#: src/views/ManageRevisions.vue:52
+msgid "This will be added to the beginning of your current changelog"
+msgstr ""
+
 #: src/views/ManagePackage.vue:75
 msgid "Title"
 msgstr ""
@@ -1037,7 +1042,7 @@ msgid "Webview"
 msgstr ""
 
 #: src/views/Browse.vue:67 src/views/ManageRevisions.vue:15
-#: src/views/ManageRevisions.vue:171
+#: src/views/ManageRevisions.vue:181
 msgid "Xenial"
 msgstr ""
 
