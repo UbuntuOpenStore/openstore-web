@@ -45,6 +45,14 @@
                     />
                 </div>
 
+                <div class="divider"></div>
+
+                <div class="p-form__group">
+                    <label for="changelog" class="p-form__label" v-translate>Changelog</label>
+                    <textarea id="changelog" rows="4" class="p-form__control" :disabled="saving" v-model="changelog"></textarea>
+                    <p class="small text-lightgrey" v-translate>This will be added to the beginning of your current changelog</p>
+                </div>
+
                 <a class="p-button--positive" @click="save()" :disabled="saving">
                     <i class="fa" :class="{'fa-save': !saving, 'fa-spinner fa-spin': saving}"></i>
                     <span class="ml" v-translate>Create</span>
@@ -102,6 +110,7 @@ export default {
             downloadUrl: '',
             loading: false,
             saving: false,
+            changelog: '',
         };
     },
     created() {
@@ -161,6 +170,7 @@ export default {
                 }
 
                 updateData.append('channel', this.channel);
+                updateData.append('changelog', this.changelog);
 
                 api.manage.revision(this.app.id, updateData, this.user.apikey).then(() => {
                     this.file = null;
