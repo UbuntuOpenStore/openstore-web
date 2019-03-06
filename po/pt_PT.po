@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-03-02 00:11-0500\n"
-"PO-Revision-Date: 2019-03-06 00:47+0000\n"
+"PO-Revision-Date: 2019-03-07 21:54+0000\n"
 "Last-Translator: Rúben Carneiro <rubencarneiro01@gmail.com>\n"
 "Language-Team: Portuguese (Portugal) <https://translate.ubports.com/projects/"
 "openstore/open-storeio/pt_PT/>\n"
@@ -100,7 +100,7 @@ msgstr "Chave API"
 
 #: src/components/Types.vue:3 src/views/Manage.vue:44 src/views/Stats.vue:85
 msgid "App"
-msgstr "App"
+msgstr "Aplicação"
 
 #: src/views/Submit.vue:95
 msgid "App containing or promoting any of the above are strictly prohibited."
@@ -128,7 +128,7 @@ msgstr "Tipos da App"
 
 #: src/views/Browse.vue:32
 msgid "Apps"
-msgstr "Apps"
+msgstr "Aplicações"
 
 #: src/views/Submit.vue:101
 msgid ""
@@ -409,7 +409,7 @@ msgstr "Empurre-nos no GitLab"
 
 #: src/views/ManagePackage.vue:257 src/views/Package.vue:190
 msgid "Framework"
-msgstr "Framework"
+msgstr "Estrutura"
 
 #: src/views/Package.vue:293
 msgid "Full System Access"
@@ -592,7 +592,7 @@ msgstr "Navegue até a pasta de downloads"
 
 #: src/views/Package.vue:283
 msgid "Networking"
-msgstr "Networking"
+msgstr "Rede de contactos"
 
 #: src/views/Feeds.vue:9
 msgid "New Apps"
@@ -621,7 +621,7 @@ msgstr "Não"
 
 #: src/views/Browse.vue:121 src/views/Manage.vue:85
 msgid "No apps found."
-msgstr "Não foram encontrados apps"
+msgstr "Não foram encontradas aplicações."
 
 #: src/views/Manage.vue:78 src/views/Package.vue:147
 msgid "None"
@@ -1088,7 +1088,7 @@ msgstr "Tipo"
 
 #: src/views/About.vue:14
 msgid "Ubuntu Touch"
-msgstr "Ubuntu Touch"
+msgstr "Sistema Ubuntu Touch"
 
 #: src/views/Browse.vue:3
 msgid "Ubuntu Touch Apps"
@@ -1160,12 +1160,12 @@ msgstr "Aplicativos da web"
 
 #: src/views/Package.vue:292
 msgid "Webview"
-msgstr "Webview"
+msgstr "Vista Web"
 
 #: src/views/Browse.vue:67 src/views/ManageRevisions.vue:15
 #: src/views/ManageRevisions.vue:181
 msgid "Xenial"
-msgstr "Xenial"
+msgstr "Ubuntu Xenial"
 
 #: src/views/ManagePackage.vue:30
 msgid "Yes"
