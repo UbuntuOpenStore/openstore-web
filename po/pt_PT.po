@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-03-02 00:11-0500\n"
-"PO-Revision-Date: 2019-03-07 21:54+0000\n"
+"PO-Revision-Date: 2019-03-17 00:00+0000\n"
 "Last-Translator: Rúben Carneiro <rubencarneiro01@gmail.com>\n"
 "Language-Team: Portuguese (Portugal) <https://translate.ubports.com/projects/"
 "openstore/open-storeio/pt_PT/>\n"
@@ -1092,7 +1092,7 @@ msgstr "Sistema Ubuntu Touch"
 
 #: src/views/Browse.vue:3
 msgid "Ubuntu Touch Apps"
-msgstr "Apps  Ubuntu Touch"
+msgstr "Aplicações  Ubuntu Touch"
 
 #: src/views/Stats.vue:83
 msgid "Uncategorized"
