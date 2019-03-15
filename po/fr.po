@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-28 10:03-0500\n"
-"PO-Revision-Date: 2019-01-06 00:00+0000\n"
-"Last-Translator: Anne Onyme <anneonyme017@netcourrier.com>\n"
+"PO-Revision-Date: 2019-03-17 00:00+0000\n"
+"Last-Translator: Max Libre <libremax@protonmail.com>\n"
 "Language-Team: French <https://translate.ubports.com/projects/openstore/"
 "open-storeio/fr/>\n"
 "Language: fr\n"
@@ -823,7 +823,7 @@ msgstr "Enregistrer"
 
 #: src/components/Types.vue:4 src/views/Stats.vue:86
 msgid "Scope"
-msgstr "Moteur de recherche"
+msgstr "Champ d'agrégation (scope)"
 
 #: src/views/Browse.vue:34
 msgid "Scopes"
