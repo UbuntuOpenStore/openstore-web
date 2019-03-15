@@ -297,8 +297,7 @@
                                         <tr
                                             v-for="revision in revisions"
                                             :class="{
-                                                'strong': revision.revision == app.revision ||
-                                                    revision.revision == app.xenial_revision
+                                                'strong': revision.revision == latestRevision(revision.channel)
                                             }"
                                             :key="revision.revision"
                                         >
@@ -509,6 +508,22 @@ export default {
         },
         removeScreenshot(screenshot) {
             this.app.screenshots = this.app.screenshots.filter((s) => (s != screenshot));
+        },
+        latestRevision(channel) {
+            let revision = -1;
+            if (channel == 'vivid') {
+                // Don't show anything for vivid any more
+                return revision;
+            }
+
+            this.app.revisions.filter((data) => (data.channel == channel))
+                .forEach((data, index) => {
+                    if (revision < data.revision) {
+                        revision = data.revision;
+                    }
+                });
+
+            return revision;
         },
         save() {
             if (!this.saving) {
