@@ -48,40 +48,20 @@
                         <option value="updated_date" v-translate>Oldest Update</option>
                     </select>
                 </div>
-
-                <div class="p-form__group">
-                    <label class="p-form__label" v-translate>Filters</label>
-                    <button class="p-form__control more-button" @click="moreFilters = !moreFilters">
-                        <i class="fa" :class="{'fa-plus': !moreFilters, 'fa-minus': moreFilters}"></i>
-                    </button>
-                </div>
             </form>
         </div>
 
-        <div class="row filters" v-if="moreFilters">
-            <form class="p-form p-form--inline" v-on:submit.prevent>
-                <div class="p-form__group">
-                    <label for="channel" class="p-form__label" v-translate>Channel</label>
-                    <select id="channel" class="p-form__control" v-model="query.channel">
-                        <option value="" v-translate>All Channels</option>
-                        <option value="vivid" v-translate>Vivid</option>
-                        <option value="xenial" v-translate>Xenial</option>
-                    </select>
-                </div>
-
-                <!-- TODO implement these
-                <div class="p-form__group">
-                    <label for="license" class="p-form__label">License</label>
-                    <input type="text" id="license" class="p-form__control" />
-                </div>
-
-                <div class="p-form__group">
-                    <label for="framework" class="p-form__label">Framework</label>
-                    <input type="text" id="framework" class="p-form__control" />
-                </div>
-                -->
-            </form>
+        <!-- TODO implement these
+        <div class="p-form__group">
+            <label for="license" class="p-form__label">License</label>
+            <input type="text" id="license" class="p-form__control" />
         </div>
+
+        <div class="p-form__group">
+            <label for="framework" class="p-form__label">Framework</label>
+            <input type="text" id="framework" class="p-form__control" />
+        </div>
+        -->
 
         <h2 v-if="error" class="center text-red" v-translate>
             There was an error trying to load the app list, please refresh and try again.
@@ -169,7 +149,6 @@ import Types from '@/components/Types';
 const DEFAULT_SORT = '-published_date';
 const DEFAULT_TYPE = '';
 const DEFAULT_CATEGORY = '';
-const DEFAULT_CHANNEL = '';
 
 export default {
     name: 'Browse',
@@ -193,7 +172,6 @@ export default {
                 sort: DEFAULT_SORT,
                 type: DEFAULT_TYPE,
                 category: DEFAULT_CATEGORY,
-                channel: DEFAULT_CHANNEL,
             },
             page: 0,
             paging: {
@@ -204,7 +182,6 @@ export default {
             categories: [],
             loading: false,
             error: false,
-            moreFilters: false,
             firstPageTitle: this.$gettext('Jump to the first page'),
             backPageTitle: this.$gettext('Go back a page'),
             nextPageTitle: this.$gettext('Go to the next page'),
@@ -220,10 +197,6 @@ export default {
         });
         this.debounceRefresh();
         this.refreshCategories();
-
-        if (this.query.channel != DEFAULT_CHANNEL) {
-            this.moreFilters = true;
-        }
     },
     methods: {
         getQueryParams() {
@@ -273,18 +246,6 @@ export default {
                 }
             }
 
-            if (this.$route.query.channel != this.query.channel) {
-                let channel = this.$route.query.channel;
-                if (!channel) {
-                    channel = DEFAULT_CHANNEL;
-                }
-
-                if (channel != this.query.channel) {
-                    this.query.channel = channel;
-                    changed = true;
-                }
-            }
-
             if (this.$route.query.search != this.query.search) {
                 let search = this.$route.query.search ? this.$route.query.search : '';
                 if (search != this.query.search) {
@@ -312,10 +273,6 @@ export default {
 
             if (this.query.category != DEFAULT_CATEGORY) {
                 params.category = this.query.category;
-            }
-
-            if (this.query.channel != DEFAULT_CHANNEL) {
-                params.channel = this.query.channel;
             }
 
             if (this.query.search) {
@@ -428,10 +385,6 @@ export default {
             this.resetPage();
             this.debounceRefresh();
         },
-        'query.channel': function() {
-            this.resetPage();
-            this.debounceRefresh();
-        },
         'query.search': function() {
             this.resetPage();
             if (this.query.search) {
@@ -472,10 +425,6 @@ export default {
 
     #category {
         width: 220px;
-    }
-
-    #channel {
-        width: 145px;
     }
 
     #type {
@@ -549,10 +498,6 @@ export default {
 
     @media screen and (max-width: 768px) {
         #category {
-            width: 100%;
-        }
-
-        #channel {
             width: 100%;
         }
 

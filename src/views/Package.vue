@@ -47,7 +47,6 @@
 
                         <a
                             v-for="download in app.downloads"
-                            v-if="download.channel != 'vivid'"
                             :href="download.download_url"
                             :key="download.channel"
                             class="p-button--positive"
