@@ -104,7 +104,7 @@
             </h3>
         </div>
 
-        <div class="row center" v-if="paging.total > 1">
+        <div class="row center" v-if="paging.total >= 1">
             <ul class="pagination">
                 <li :class="{disabled: page <= 0}" class="u-hide--small" :title="firstPageTitle">
                     <a @click="setPage(0)">
