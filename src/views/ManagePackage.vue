@@ -517,7 +517,7 @@ export default {
             }
 
             this.app.revisions.filter((data) => (data.channel == channel))
-                .forEach((data, index) => {
+                .forEach((data) => {
                     if (revision < data.revision) {
                         revision = data.revision;
                     }
