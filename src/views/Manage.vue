@@ -1,7 +1,9 @@
 <template>
     <div class="row">
         <div v-if="user">
-            <h1 class="center">Welcome {{user.name}}!</h1>
+            <h1 class="center">
+                <translate :translate-params="{name: user.name}">Welcome %{name}!</translate>
+            </h1>
 
             <div class="u-float-right buttons">
                 <router-link :to="{name: 'submit'}" class="p-button--positive">

@@ -39,10 +39,10 @@
                         type="text"
                         id="downloadUrl"
                         class="p-form__control"
-                        placeholder="URL of App from the Web"
                         :disabled="saving"
                         v-model="downloadUrl"
                     />
+                    <p class="small text-lightgrey" v-translate>URL of App from the Web</p>
                 </div>
 
                 <div class="divider"></div>
