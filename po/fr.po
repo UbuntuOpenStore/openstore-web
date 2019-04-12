@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-28 10:03-0500\n"
-"PO-Revision-Date: 2019-04-08 07:55+0000\n"
-"Last-Translator: Vince1171 <vincentvf@live.be>\n"
+"PO-Revision-Date: 2019-04-14 00:00+0000\n"
+"Last-Translator: Anne Onyme <anneonyme017@netcourrier.com>\n"
 "Language-Team: French <https://translate.ubports.com/projects/openstore/"
 "open-storeio/fr/>\n"
 "Language: fr\n"
@@ -79,8 +79,8 @@ msgstr "Une erreur inconnue s'est produite"
 #: src/views/About.vue:159
 msgid "And many amazing developers, testers, and users from the OpenStore community!"
 msgstr ""
-"Et de nombreux développeurs, testeurs et utilisateurs exceptionnels de la "
-"communauté OpenStore !"
+"Et de nombreux/ses développeurs/euses, testeurs/euses et utilisateurs/trices "
+"exceptionnels/elles de la communauté OpenStore !"
 
 #: src/views/About.vue:121
 msgid ""
@@ -109,7 +109,7 @@ msgstr "Application"
 #: src/views/Submit.vue:95
 msgid "App containing or promoting any of the above are strictly prohibited."
 msgstr ""
-"Toute application contenant ou faisant la promotion de l'un des éléments ci-"
+"toute application contenant ou faisant la promotion de l'un des éléments ci-"
 "dessus est strictement interdite."
 
 #: src/views/Submit.vue:133
@@ -137,14 +137,14 @@ msgid ""
 "Apps containing gambling involving real world money transactions are not allowed.\n"
 "This includes, but is not limited to, online casinos, betting, and lotteries."
 msgstr ""
-"Les applications relatives aux jeux d'argent impliquant de vraies "
+"les applications relatives aux jeux d'argent impliquant de vraies "
 "transactions financières ne sont pas autorisées.\n"
 "Cela inclut entre autres les casinos, les paris et les loteries en ligne."
 
 #: src/views/Submit.vue:82
 msgid "Apps containing or promoting child abuse or child sexual abuse are strictly prohibited."
 msgstr ""
-"Les applications contenant ou faisant la promotion de maltraitances ou "
+"les applications contenant ou faisant la promotion de maltraitances ou "
 "d'abus sexuels sur des enfants sont strictement interdites."
 
 #: src/views/Submit.vue:88
@@ -152,7 +152,7 @@ msgid ""
 "Apps containing or promoting gratuitous violence are not allowed.\n"
 "This includes, but is not limited to, violence, terrorism, bomb/weapon making, self harm, and grotesque imagery."
 msgstr ""
-"Les applications contenant ou faisant la promotion de la violence gratuite "
+"les applications contenant ou faisant la promotion de la violence gratuite "
 "ne sont pas autorisées.\n"
 "Cela inclut entre autres les images de violence, de terrorisme, de "
 "fabrication de bombes ou d'armes, d'automutilation et de grotesque."
@@ -162,7 +162,7 @@ msgid ""
 "Apps containing or promoting sexually explicit content are not allowed.\n"
 "This includes, but is not limited to, pornography and services promoting sexually explicit content."
 msgstr ""
-"Les applications contenant ou faisant la promotion de contenus sexuellement "
+"les applications contenant ou faisant la promotion de contenus sexuellement "
 "explicites ne sont pas autorisés.\n"
 "Cela inclut entre autres le contenu pornographique et les services faisant "
 "la promotion de contenus sexuellement explicites."
@@ -176,7 +176,7 @@ msgstr ""
 #: src/views/Submit.vue:108
 msgid "Apps promoting illegal activities (based on USA law) are not allowed."
 msgstr ""
-"Les applications faisant la promotion d'activités illégales (sur la base de "
+"les applications faisant la promotion d'activités illégales (sur la base de "
 "la loi des États-Unis d'Amérique) ne sont pas autorisées."
 
 #: src/views/Submit.vue:18
@@ -190,9 +190,9 @@ msgid ""
 "Apps that are found to be stealing the users data, trying to escalate their privileges without user consent,\n"
 "or executing malicious process are strictly prohibited."
 msgstr ""
-"Les applications volant les données ou essayant de modifier leurs "
+"les applications volant les données ou essayant de modifier leurs "
 "permissions sans le consentement de l'utilisateur ou de l'utilisatrice,\n"
-"ou exécutant des processus malveillants sont formellement interdits."
+"ou exécutant des processus malveillants sont formellement interdites."
 
 #: src/views/About.vue:128
 msgid ""
@@ -309,7 +309,7 @@ msgstr "Source d'échange de contenu"
 
 #: src/views/About.vue:137
 msgid "Contributors"
-msgstr "Contributeurs et contributrices"
+msgstr "Contributeurs/trices"
 
 #: src/views/About.vue:46
 msgid "Copy to clipboard"
@@ -683,7 +683,7 @@ msgid ""
 "As the applications might have arbitrary access to the device, every manually reviewed app will get a source code review."
 msgstr ""
 "Seules les applications libres peuvent passer par la revue manuelle :\n"
-"Étant donné que l'application peut disposer d'accès arbitraires à "
+"étant donné que l'application peut disposer d'accès arbitraires à "
 "l'appareil, chaque application revue manuellement verra son code source "
 "audité."
 
@@ -699,7 +699,7 @@ msgstr "Ouvrir l'application Terminal"
 
 #: src/views/About.vue:144
 msgid "OpenStore API/Server Contributors"
-msgstr "Contributeurs et contributrices de l'API et du serveur de l'OpenStore"
+msgstr "Contributeurs/trices de l'API et du serveur de l'OpenStore"
 
 #: src/views/Submit.vue:58
 msgid "OpenStore App Content Policy"
@@ -707,7 +707,7 @@ msgstr "Politique de contenu des applications de l'OpenStore"
 
 #: src/views/About.vue:154
 msgid "OpenStore App Contributors"
-msgstr "Contributeurs et contributrices de l'application OpenStore"
+msgstr "Contributeurs/trices de l'application OpenStore"
 
 #: src/views/About.vue:66
 msgid "OpenStore group on Telegram"
@@ -719,7 +719,7 @@ msgstr "Code source de l'OpenStore sur GitLab"
 
 #: src/views/About.vue:149
 msgid "OpenStore Website Contributors"
-msgstr "Contributeurs et contributrices du site Internet de l'OpenStore"
+msgstr "Contributeurs/trices du site Internet de l'OpenStore"
 
 #: src/views/ManageRevisions.vue:38
 msgid "OR"
@@ -823,7 +823,7 @@ msgstr "Enregistrer"
 
 #: src/components/Types.vue:4 src/views/Stats.vue:86
 msgid "Scope"
-msgstr "Champ d'agrégation (scope)"
+msgstr "Moteur de recherche"
 
 #: src/views/Browse.vue:34
 msgid "Scopes"
@@ -962,8 +962,8 @@ msgstr ""
 #: src/views/About.vue:140
 msgid "The OpenStore is made possible by many amazing contributors:"
 msgstr ""
-"L'OpenStore est rendu possible grâce à ses nombreux contributeurs "
-"exceptionnels :"
+"L'OpenStore est rendu possible grâce à de nombreuses personnes "
+"exceptionnelles :"
 
 #: src/views/About.vue:5
 msgid ""
