@@ -230,3 +230,10 @@ export default {
     },
 };
 </script>
+
+<style scoped>
+.small {
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+</style>
