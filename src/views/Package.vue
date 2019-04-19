@@ -57,7 +57,7 @@
                     </div>
 
                     <div class="row p-matrix u-clearfix">
-                        <div class="p-matrix__item center">
+                        <div class="p-matrix__item center version">
                             <i class="fa fa-2x fa-info-circle text-blue"></i>
                             <br/>
                             v{{app.version}}
@@ -454,6 +454,10 @@ export default {
 
     .permissions li {
         margin-top: 0;
+    }
+
+    .version {
+        word-wrap: break-word;
     }
 
     .p-button--positive {
