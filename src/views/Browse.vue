@@ -104,6 +104,7 @@
             </h3>
         </div>
 
+        <!-- TODO https://css-tricks.com/creating-a-reusable-pagination-component-in-vue/ -->
         <div class="row center" v-if="paging.total >= 1">
             <ul class="pagination">
                 <li :class="{disabled: page <= 0}" class="u-hide--small" :title="firstPageTitle">
