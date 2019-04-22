@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-02 16:51-0500\n"
-"PO-Revision-Date: 2019-03-31 00:00+0000\n"
+"PO-Revision-Date: 2019-04-24 21:36+0000\n"
 "Last-Translator: Rondy Andersson <rondarius@gmail.com>\n"
 "Language-Team: Swedish <https://translate.ubports.com/projects/openstore/"
 "open-storeio/sv/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.1.1\n"
+"X-Generator: Weblate 3.2.2\n"
 
 #: src/views/Package.vue:119
 msgid ""
@@ -650,20 +650,32 @@ msgid ""
 "Any account with serious infractions may be subject to termination.\n"
 "The OpenStore team thanks you for helping us promote a better enviroment for everyone."
 msgstr ""
+"Ett av de främsta målen av OpenStore är att tillhanda hålla en trygg app "
+"butik för människor i alla åldrar.\n"
+"För att uppnå detta mål tillåter vi inte att vissa appar blir publicerade.\n"
+"Misslyckas man med att följa dessa riktlinjer blir resultat det att din app "
+"blir borttagen.\n"
+"OpenStore teamet tackar er för att ni hjälper oss att verka för en bättre "
+"miljö för alla."
 
 #: src/views/Submit.vue:48
 msgid ""
 "Only open source applications allowed for manual review:\n"
 "As the applications might have arbitrary access to the device, every manually reviewed app will get a source code review."
 msgstr ""
+"Manuell granskning är endast tillåtet på applikationer med öppen källkod.\n"
+"Eftersom applikationer kan ha fullständig tillgång till enheten, görs en "
+"källkods granskning av varje manuellt granskad app."
 
 #: src/views/ManagePackage.vue:218
 msgid "Only YouTube videos are supported at this time. Make sure the url is for the embedded video!"
 msgstr ""
+"Endast Youtube videos stöds för tillfället. Säker ställ att url:en är för "
+"den inbäddade videon!"
 
 #: src/views/About.vue:36
 msgid "Open the terminal app"
-msgstr ""
+msgstr "Öppna terminal appen"
 
 #: src/views/About.vue:144
 msgid "OpenStore API/Server Contributors"
