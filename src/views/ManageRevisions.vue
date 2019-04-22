@@ -76,6 +76,7 @@ import VueNotifications from 'vue-notifications';
 
 import api from '@/api';
 import opengraph from '@/opengraph';
+import utils from '@/utils';
 
 export default {
     name: 'ManageRevisions',
@@ -138,12 +139,14 @@ export default {
 
                 this.$emit('updateHead');
             }
-        }).catch(() => {
+        }).catch((err) => {
             this.loading = false;
             VueNotifications.error({
                 title: this.$gettext('Error'),
                 message: this.$gettext('An error occured loading your app data'),
             });
+
+            utils.captureException(err);
         });
     },
     methods: {
@@ -197,6 +200,8 @@ export default {
                         title: 'Error',
                         message: error,
                     });
+
+                    utils.captureException(err);
                 });
             }
         },

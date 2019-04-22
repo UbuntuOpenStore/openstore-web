@@ -145,6 +145,7 @@ import debounce from 'debounce';
 import api from '@/api';
 import opengraph from '@/opengraph';
 import cache from '@/cache';
+import utils from '@/utils';
 import Types from '@/components/Types';
 
 const DEFAULT_SORT = '-published_date';
@@ -327,9 +328,11 @@ export default {
                 this.paging.pages = pages;
                 this.loading = false;
                 this.error = false;
-            }).catch(() => {
+            }).catch((err) => {
                 this.loading = false;
                 this.error = true;
+
+                utils.captureException(err);
             });
         },
         debounceRefresh: debounce(function() {

@@ -179,6 +179,7 @@ import VueNotifications from 'vue-notifications';
 
 import api from '@/api';
 import opengraph from '@/opengraph';
+import utils from '@/utils';
 
 export default {
     name: 'Submit',
@@ -224,6 +225,8 @@ export default {
                     });
 
                     this.saving = false;
+
+                    utils.captureException(err);
                 });
             }
         },

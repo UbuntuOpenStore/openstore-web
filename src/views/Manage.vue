@@ -131,6 +131,7 @@ import debounce from 'debounce';
 
 import api from '@/api';
 import opengraph from '@/opengraph';
+import utils from '@/utils';
 
 export default {
     name: 'Manage',
@@ -211,9 +212,11 @@ export default {
 
                 this.paging.pages = pages;
                 this.loading = false;
-            }).catch(() => {
+            }).catch((err) => {
                 this.loading = false;
                 this.error = true;
+
+                utils.captureException(err);
             });
         },
         debounceRefresh: debounce(function() {

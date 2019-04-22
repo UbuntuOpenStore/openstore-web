@@ -61,6 +61,7 @@
 <script>
 import api from '@/api';
 import opengraph from '@/opengraph';
+import utils from '@/utils';
 
 export default {
     name: 'Stats',
@@ -96,9 +97,11 @@ export default {
 
             this.categories = stats.categories;
             this.types = stats.types;
-        }).catch(() => {
+        }).catch((err) => {
             this.loading = false;
             this.error = true;
+
+            utils.captureException(err);
         });
     },
 };

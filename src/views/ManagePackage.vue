@@ -359,6 +359,7 @@ import VueNotifications from 'vue-notifications';
 
 import api from '@/api';
 import opengraph from '@/opengraph';
+import utils from '@/utils';
 
 export default {
     name: 'ManagePackage',
@@ -484,13 +485,15 @@ export default {
             this.users = users;
 
             return Vue.nextTick();
-        }).catch(() => {
+        }).catch((err) => {
             this.loading = false;
 
             VueNotifications.error({
                 title: this.$gettext('Error'),
                 message: this.$gettext('An error occured loading your app data'),
             });
+
+            utils.captureException(err);
         });
 
         api.categories(this.$language.current).then((data) => {
@@ -594,6 +597,8 @@ export default {
                         title: this.$gettext('Error'),
                         message: error,
                     });
+
+                    utils.captureException(err);
                 });
             }
         },
@@ -620,6 +625,8 @@ export default {
                         title: this.$gettext('Error'),
                         message: error,
                     });
+
+                    utils.captureException(err);
                 });
             }
         },

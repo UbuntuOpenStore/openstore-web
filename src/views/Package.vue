@@ -208,6 +208,7 @@
 import api from '@/api';
 import opengraph from '@/opengraph';
 import cache from '@/cache';
+import utils from '@/utils';
 import Types from '@/components/Types.vue';
 
 let restricted = [
@@ -335,6 +336,8 @@ export default {
                 else {
                     this.error = true;
                 }
+
+                utils.captureException(err);
             });
         },
         toggleShowNSFW() {
