@@ -64,6 +64,7 @@ Vue.use(Gettext, {
         de: 'German',
         pt_PT: 'Portuguese',
         es: 'Spanish',
+        sv: 'Swedish',
     },
     translations: translations,
 });
