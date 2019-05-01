@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-28 10:03-0500\n"
-"PO-Revision-Date: 2019-04-24 21:35+0000\n"
+"PO-Revision-Date: 2019-05-03 21:02+0000\n"
 "Last-Translator: louies0623 <louies0623@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.ubports.com/projects/"
 "openstore/open-storeio/zh_Hant/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.2.2\n"
+"X-Generator: Weblate 3.6.1\n"
 
 #: src/views/Package.vue:118
 msgid ""
@@ -759,7 +759,7 @@ msgstr "修訂"
 
 #: src/App.vue:108 src/views/Feeds.vue:3
 msgid "RSS Feeds"
-msgstr "RSS訂閱"
+msgstr "RSS 訂閱"
 
 #: src/views/Submit.vue:4
 msgid "Rules for Submission"
@@ -771,7 +771,7 @@ msgstr "需要人工審核的提交規範"
 
 #: src/views/About.vue:39
 msgid "Run the command:"
-msgstr "運行指令:"
+msgstr "執行指令："
 
 #: src/views/ManagePackage.vue:338
 msgid "Save"
