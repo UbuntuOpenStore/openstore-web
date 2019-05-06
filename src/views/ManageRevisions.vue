@@ -73,6 +73,7 @@
 
 <script>
 import VueNotifications from 'vue-notifications';
+import {mapState} from 'vuex';
 
 import api from '@/api';
 import opengraph from '@/opengraph';
@@ -104,7 +105,6 @@ export default {
     },
     data() {
         return {
-            user: null,
             app: {},
             channel: 'xenial',
             file: null,
@@ -117,39 +117,30 @@ export default {
     created() {
         this.loading = true;
 
-        // TODO don't always fetch this
-        api.auth.me().then((user) => {
-            if (user) {
-                this.user = user;
-            }
-            else {
-                this.$router.push({name: 'login'});
-            }
-        }).then(() => {
-            if (this.user) {
+        if (this.isAuthenticated) {
+            this.getApp();
+        }
+    },
+    methods: {
+        async getApp() {
+            this.loading = true;
+            try {
                 // TODO cache this so it only needs to be gotten once between this an ManagePackage
-                return api.manage.get(this.$route.params.id, this.user.apikey);
-            }
-
-            return null;
-        }).then((data) => {
-            this.loading = false;
-            if (data) {
-                this.app = data;
+                this.app = await api.manage.get(this.$route.params.id, this.user.apikey);
 
                 this.$emit('updateHead');
             }
-        }).catch((err) => {
-            this.loading = false;
-            VueNotifications.error({
-                title: this.$gettext('Error'),
-                message: this.$gettext('An error occured loading your app data'),
-            });
+            catch (err) {
+                VueNotifications.error({
+                    title: this.$gettext('Error'),
+                    message: this.$gettext('An error occured loading your app data'),
+                });
 
-            utils.captureException(err);
-        });
-    },
-    methods: {
+                utils.captureException(err);
+            }
+
+            this.loading = false;
+        },
         fileChange(files) {
             if (files.length > 0) {
                 [this.file] = files;
@@ -162,7 +153,6 @@ export default {
             if (!this.saving) {
                 this.saving = true;
 
-                this.app.published = this.published;
                 let updateData = new FormData();
 
                 if (this.file) {
@@ -203,6 +193,14 @@ export default {
 
                     utils.captureException(err);
                 });
+            }
+        },
+    },
+    computed: mapState(['user', 'isAuthenticated']),
+    watch: {
+        isAuthenticated(newValue) {
+            if (newValue) {
+                this.getApp();
             }
         },
     },

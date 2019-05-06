@@ -4,29 +4,9 @@ function success(res) {
     return res.data.data;
 }
 
-let user = null;
-
 export default {
     auth: {
-        me: () => {
-            let promise = null;
-            if (user) {
-                promise = new Promise((resolve) => {
-                    resolve(user);
-                });
-            }
-            else {
-                promise = axios.get(`${process.env.VUE_APP_API}/auth/me`)
-                    .then(success)
-                    .then((data) => {
-                        user = data;
-                        return user;
-                    })
-                    .catch(() => null);
-            }
-
-            return promise;
-        },
+        me: () => axios.get(`${process.env.VUE_APP_API}/auth/me`).then(success),
     },
 
     apps: {
@@ -66,7 +46,53 @@ export default {
     },
 
     users: {
-        getAll: (key) => axios.get(`${process.env.VUE_APP_API}/api/users?apikey=${key}`)
-            .then(success),
+        getAll: async (key) => {
+            let res = await axios.get(`${process.env.VUE_APP_API}/api/users?apikey=${key}`);
+            let users = res.data.data;
+
+            users.forEach((user) => {
+                let name = 'UNKNOWN';
+                if (user.name && user.email) {
+                    name = `${user.name} (${user.email})`;
+                }
+                else if (user.name && !user.email) {
+                    name = user.name;
+                }
+                else if (!user.name && user.email) {
+                    name = user.email;
+                }
+
+                if (user.role) {
+                    name += ` - ${user.role}`;
+                }
+                else {
+                    name += ' - community';
+                }
+
+                user.display_name = name;
+            });
+
+            users.sort((a, b) => {
+                let aname = a.display_name ? a.display_name.toLowerCase() : '';
+                let bname = b.display_name ? b.display_name.toLowerCase() : '';
+
+                if (a.role == 'admin' && b.role != 'admin') {
+                    return -1;
+                }
+                if (a.role != 'admin' && b.role == 'admin') {
+                    return 1;
+                }
+                if (aname > bname) {
+                    return 1;
+                }
+                if (aname < bname) {
+                    return -1;
+                }
+
+                return 0;
+            });
+
+            return users;
+        },
     },
 };

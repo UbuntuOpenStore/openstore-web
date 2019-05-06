@@ -34,13 +34,13 @@
                         <li class="p-navigation__link" role="menuitem">
                             <router-link :to="{name: 'about'}" v-translate>About</router-link>
                         </li>
-                        <li class="p-navigation__link" role="menuitem" v-if="!user">
+                        <li class="p-navigation__link" role="menuitem" v-if="!isAuthenticated">
                             <router-link :to="{name: 'login'}" v-translate>Log In</router-link>
                         </li>
-                        <li class="p-navigation__link" role="menuitem" v-if="user">
+                        <li class="p-navigation__link" role="menuitem" v-if="isAuthenticated">
                             <router-link :to="{name: 'manage'}" v-translate>Manage</router-link>
                         </li>
-                        <li class="p-navigation__link" role="menuitem" v-if="user">
+                        <li class="p-navigation__link" role="menuitem" v-if="isAuthenticated">
                             <a href="/auth/logout" v-translate>Log Out</a>
                         </li>
                     </ul>
@@ -119,18 +119,16 @@
 
 <script>
 import Vue from 'vue';
-
-import api from '@/api';
+import { mapState } from 'vuex';
 
 export default {
     name: 'app',
     data() {
         return {
-            user: null,
             showMenu: false,
         };
     },
-    created() {
+    async created() {
         let language = window.localStorage.getItem('language');
         if (!language) {
             language = window.navigator.language.replace('-', '_');
@@ -146,10 +144,15 @@ export default {
             }
         }
 
-        api.auth.me().then((user) => {
-            this.user = user;
-        });
+        await this.$store.dispatch('getUser');
+        if (this.isAuthenticated && this.$route.name == 'login') {
+            this.$router.push({name: 'manage'});
+        }
+        else if (!this.isAuthenticated && this.$route.path.startsWith('/manage')) {
+            this.$router.push({name: 'login'});
+        }
     },
+    computed: mapState(['isAuthenticated']),
     watch: {
         $route: function() {
             this.showMenu = false;

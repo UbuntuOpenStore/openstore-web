@@ -31,7 +31,6 @@
 </template>
 
 <script>
-import api from '@/api';
 import opengraph from '@/opengraph';
 
 export default {
@@ -47,12 +46,9 @@ export default {
         },
     },
     created() {
-        api.auth.me().then((user) => {
-            if (user) {
-                // The user is already logged in
-                this.$router.push({name: 'manage'});
-            }
-        });
+        if (this.$store.state.isAuthenticated) {
+            this.$router.push({name: 'manage'});
+        }
     },
 };
 </script>

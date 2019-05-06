@@ -127,6 +127,7 @@
 </template>
 
 <script>
+import { mapState } from 'vuex';
 import debounce from 'debounce';
 
 import api from '@/api';
@@ -147,7 +148,6 @@ export default {
     },
     data() {
         return {
-            user: null,
             query: {
                 limit: 30,
                 skip: 0,
@@ -170,15 +170,9 @@ export default {
         };
     },
     created() {
-        api.auth.me().then((user) => {
-            if (user) {
-                this.user = user;
-                this.debounceRefresh();
-            }
-            else {
-                this.$router.push({name: 'login'});
-            }
-        });
+        if (this.isAuthenticated) {
+            this.debounceRefresh();
+        }
     },
     methods: {
         refresh() {
@@ -238,9 +232,15 @@ export default {
             }
         },
     },
+    computed: mapState(['user', 'isAuthenticated']),
     watch: {
         'query.search': function() {
             this.debounceRefresh();
+        },
+        isAuthenticated(newValue) {
+            if (newValue) {
+                this.debounceRefresh();
+            }
         },
     },
 };

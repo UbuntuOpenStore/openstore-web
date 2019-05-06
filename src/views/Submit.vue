@@ -176,6 +176,7 @@
 
 <script>
 import VueNotifications from 'vue-notifications';
+import {mapState} from 'vuex';
 
 import api from '@/api';
 import opengraph from '@/opengraph';
@@ -195,16 +196,10 @@ export default {
     },
     data() {
         return {
-            user: null,
             id: '',
             name: '',
             saving: false,
         };
-    },
-    created() {
-        api.auth.me().then((user) => {
-            this.user = user;
-        });
     },
     methods: {
         submit() {
@@ -231,6 +226,7 @@ export default {
             }
         },
     },
+    computed: mapState(['user']),
 };
 </script>
 

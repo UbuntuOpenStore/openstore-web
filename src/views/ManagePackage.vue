@@ -353,7 +353,7 @@
 </template>
 
 <script>
-import Vue from 'vue';
+import { mapState } from 'vuex';
 import draggable from 'vuedraggable';
 import VueNotifications from 'vue-notifications';
 
@@ -390,7 +390,6 @@ export default {
     },
     data() {
         return {
-            user: null,
             app: {},
             published: false,
             screenshotFiles: [],
@@ -411,96 +410,58 @@ export default {
     },
     created() {
         this.loading = true;
-        api.auth.me().then((user) => {
-            if (user) {
-                this.user = user;
-            }
-            else {
-                this.$router.push({name: 'login'});
-            }
-        }).then(() => {
-            if (this.user) {
-                return api.manage.get(this.$route.params.id, this.user.apikey);
-            }
+        if (this.isAuthenticated) {
+            this.getApp();
+            this.getUsers();
+        }
 
-            return null;
-        }).then((data) => {
-            this.loading = false;
-            if (data) {
-                data.keywords = data.keywords.join(', ');
-                this.app = data;
-                this.published = this.app.published;
-
-                this.$emit('updateHead');
-            }
-
-            if (this.user.role == 'admin') {
-                return api.users.getAll(this.user.apikey);
-            }
-
-            return [];
-        }).then((users) => {
-            users.forEach((user) => {
-                let name = 'UNKNOWN';
-                if (user.name && user.email) {
-                    name = `${user.name} (${user.email})`;
-                }
-                else if (user.name && !user.email) {
-                    name = user.name;
-                }
-                else if (!user.name && user.email) {
-                    name = user.email;
-                }
-
-                if (user.role) {
-                    name += ` - ${user.role}`;
-                }
-                else {
-                    name += ' - community';
-                }
-
-                user.display_name = name;
-            });
-
-            users.sort((a, b) => {
-                let aname = a.display_name ? a.display_name.toLowerCase() : '';
-                let bname = b.display_name ? b.display_name.toLowerCase() : '';
-
-                if (a.role == 'admin' && b.role != 'admin') {
-                    return -1;
-                }
-                if (a.role != 'admin' && b.role == 'admin') {
-                    return 1;
-                }
-                if (aname > bname) {
-                    return 1;
-                }
-                if (aname < bname) {
-                    return -1;
-                }
-
-                return 0;
-            });
-
-            this.users = users;
-
-            return Vue.nextTick();
-        }).catch((err) => {
-            this.loading = false;
-
-            VueNotifications.error({
-                title: this.$gettext('Error'),
-                message: this.$gettext('An error occured loading your app data'),
-            });
-
-            utils.captureException(err);
-        });
-
+        // TODO move to vuex
         api.categories(this.$language.current).then((data) => {
             this.categories = data;
         });
     },
     methods: {
+        async getApp() {
+            this.loading = true;
+
+            try {
+                let data = await api.manage.get(this.$route.params.id, this.user.apikey);
+                if (data) {
+                    data.keywords = data.keywords.join(', ');
+                    this.app = data;
+                    this.published = this.app.published;
+
+                    this.$emit('updateHead');
+                }
+            }
+            catch (err) {
+                VueNotifications.error({
+                    title: this.$gettext('Error'),
+                    message: this.$gettext('An error occured loading your app data'),
+                });
+
+                utils.captureException(err);
+            }
+
+            this.loading = false;
+        },
+        async getUsers() {
+            if (this.user.role == 'admin') {
+                try {
+                    let users = await api.users.getAll(this.user.apikey);
+                    this.users = users;
+                }
+                catch (err) {
+                    console.error(err);
+                    VueNotifications.error({
+                        title: this.$gettext('Error'),
+                        message: this.$gettext('An error occured loading your app data'),
+                    });
+
+                    utils.captureException(err);
+                }
+            }
+        },
         screenshotFilesChanged(files) {
             if (files.length > 0) {
                 this.screenshotFiles = files;
@@ -632,6 +593,7 @@ export default {
         },
     },
     computed: {
+        ...mapState(['user', 'isAuthenticated']),
         revisions() {
             let revisions = this.app ? this.app.revisions : [];
             revisions.sort((a, b) => {
@@ -682,6 +644,12 @@ export default {
             api.categories(this.$language.current).then((data) => {
                 this.categories = data;
             });
+        },
+        isAuthenticated(newValue) {
+            if (newValue) {
+                this.getApp();
+                this.getUsers();
+            }
         },
     },
 };

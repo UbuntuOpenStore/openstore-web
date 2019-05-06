@@ -15,6 +15,7 @@ import * as Integrations from '@sentry/integrations';
 import App from './App';
 import router from './router';
 import translations from './translations.json';
+import store from './store';
 
 let version = process.env.VUE_APP_VERSION || 'dev';
 console.log(`OpenStore version ${version}`);
@@ -85,6 +86,7 @@ Vue.options.directives.translate.update = (el, binding, vnode) => {
 /* eslint-disable no-new */
 new Vue({
     el: '#app',
+    store,
     router,
     render: (h) => h(App),
 });

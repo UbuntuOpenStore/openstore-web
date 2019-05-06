@@ -18,7 +18,7 @@
     "easygettext": "^2.7.0",
     "font-awesome": "^4.7.0",
     "mini-toastr": "^0.8.1",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.12.0",
     "v-img": "^0.2.0",
     "vanilla-framework": "^1.8.0",
     "vue": "^2.5.17",
@@ -28,7 +28,8 @@
     "vue-moment": "^4.0.0",
     "vue-notifications": "^0.9.0",
     "vue-router": "^3.0.1",
-    "vuedraggable": "^2.16.0"
+    "vuedraggable": "^2.16.0",
+    "vuex": "^3.1.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.6.0",
