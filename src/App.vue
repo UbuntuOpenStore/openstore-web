@@ -144,6 +144,8 @@ export default {
             }
         }
 
+        this.$store.dispatch('getCategories', this.$language.current);
+
         await this.$store.dispatch('getUser');
         if (this.isAuthenticated && this.$route.name == 'login') {
             this.$router.push({name: 'manage'});
@@ -159,6 +161,7 @@ export default {
         },
         '$language.current': function() {
             window.localStorage.setItem('language', this.$language.current);
+            this.$store.dispatch('getCategories', this.$language.current);
         },
     },
 };

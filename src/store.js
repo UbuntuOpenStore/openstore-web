@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Vuex from 'vuex';
 
 import api from '@/api';
+import utils from '@/utils';
 
 Vue.use(Vuex);
 
@@ -9,11 +10,15 @@ export default new Vuex.Store({
     state: {
         isAuthenticated: false,
         user: null,
+        categories: [],
     },
     mutations: {
         setUser(state, user) {
             state.user = user;
             state.isAuthenticated = !!user;
+        },
+        setCategories(state, categories) {
+            state.categories = categories;
         },
     },
     actions: {
@@ -26,6 +31,15 @@ export default new Vuex.Store({
                 catch (err) {
                     commit('setUser', null);
                 }
+            }
+        },
+        async getCategories({commit}, lang) {
+            try {
+                let categories = await api.categories(lang);
+                commit('setCategories', categories);
+            }
+            catch (err) {
+                utils.captureException(err);
             }
         },
     },

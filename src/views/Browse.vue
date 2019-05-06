@@ -140,6 +140,7 @@
 </template>
 
 <script>
+import {mapState} from 'vuex';
 import debounce from 'debounce';
 
 import api from '@/api';
@@ -181,7 +182,6 @@ export default {
                 pages: [],
             },
             apps: [],
-            categories: [],
             loading: false,
             error: false,
             firstPageTitle: this.$gettext('Jump to the first page'),
@@ -198,7 +198,6 @@ export default {
             query: this.$router.currentRoute.query,
         });
         this.debounceRefresh();
-        this.refreshCategories();
     },
     methods: {
         getQueryParams() {
@@ -339,24 +338,6 @@ export default {
             this.setQueryParams();
             this.refresh();
         }, 300),
-        refreshCategories() {
-            api.categories(this.$language.current).then((data) => {
-                this.categories = data;
-
-                let category = this.category;
-                let match = this.categories.reduce((c) => (c.category == this.category));
-                if (!match) {
-                    category = DEFAULT_CATEGORY;
-                }
-
-                if (this.category != category) {
-                    this.category = category;
-
-                    this.setQueryParams();
-                    this.debounceRefresh();
-                }
-            });
-        },
         resetPage() {
             this.page = 0;
             this.query.skip = 0;
@@ -377,6 +358,7 @@ export default {
             }
         },
     },
+    computed: mapState(['categories']),
     watch: {
         'query.sort': function() {
             this.debounceRefresh();
@@ -411,8 +393,19 @@ export default {
                 this.$emit('updateHead');
             }
         },
-        '$language.current': function() {
-            this.refreshCategories();
+        categories() {
+            let category = this.category;
+            let match = this.categories.reduce((c) => (c.category == this.category));
+            if (!match) {
+                category = DEFAULT_CATEGORY;
+            }
+
+            if (this.category != category) {
+                this.category = category;
+
+                this.setQueryParams();
+                this.debounceRefresh();
+            }
         },
     },
 };

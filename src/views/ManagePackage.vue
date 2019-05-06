@@ -396,7 +396,6 @@ export default {
             loading: false,
             saving: false,
             tab: 'presentation',
-            categories: [],
             users: [],
             sortableOptions: {
                 store: {
@@ -593,7 +592,7 @@ export default {
         },
     },
     computed: {
-        ...mapState(['user', 'isAuthenticated']),
+        ...mapState(['user', 'isAuthenticated', 'categories']),
         revisions() {
             let revisions = this.app ? this.app.revisions : [];
             revisions.sort((a, b) => {
@@ -640,11 +639,6 @@ export default {
         },
     },
     watch: {
-        '$language.current': function() {
-            api.categories(this.$language.current).then((data) => {
-                this.categories = data;
-            });
-        },
         isAuthenticated(newValue) {
             if (newValue) {
                 this.getApp();
