@@ -129,7 +129,11 @@ export default {
         };
     },
     async created() {
-        let language = window.localStorage.getItem('language');
+        let language = null;
+        if (window.localStorage) {
+            language = window.localStorage.getItem('language');
+        }
+
         if (!language) {
             language = window.navigator.language.replace('-', '_');
         }
@@ -160,8 +164,11 @@ export default {
             this.showMenu = false;
         },
         '$language.current': function() {
-            window.localStorage.setItem('language', this.$language.current);
             this.$store.dispatch('getCategories', this.$language.current);
+
+            if (window.localStorage) {
+                window.localStorage.setItem('language', this.$language.current);
+            }
         },
     },
 };

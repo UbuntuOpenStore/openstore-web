@@ -1,4 +1,5 @@
 import axios from 'axios';
+import * as Sentry from '@sentry/browser';
 
 function success(res) {
     return res.data.data;
@@ -6,7 +7,19 @@ function success(res) {
 
 export default {
     auth: {
-        me: () => axios.get(`${process.env.VUE_APP_API}/auth/me`).then(success),
+        me: async () => {
+            let res = await axios.get(`${process.env.VUE_APP_API}/auth/me`);
+            let user = res.data.data;
+            if (!user.name) {
+                user.name = user.username;
+            }
+
+            Sentry.configureScope((scope) => {
+                scope.setUser({username: user.username});
+            });
+
+            return user;
+        },
     },
 
     apps: {

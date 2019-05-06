@@ -68,6 +68,7 @@ Vue.use(Gettext, {
         sv: 'Swedish',
     },
     translations: translations,
+    silent: true,
 });
 
 // Monkey patch the v-translate directive to strip out extra spaces

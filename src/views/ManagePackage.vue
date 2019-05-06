@@ -112,7 +112,7 @@
                                     :disabled="saving"
                                 />
 
-                                <p v-if="app.screenshots.length > 0" v-translate>
+                                <p v-if="app.screenshots && app.screenshots.length > 0" v-translate>
                                     Drag and drop to sort screenshots.
                                 </p>
 
@@ -413,11 +413,6 @@ export default {
             this.getApp();
             this.getUsers();
         }
-
-        // TODO move to vuex
-        api.categories(this.$language.current).then((data) => {
-            this.categories = data;
-        });
     },
     methods: {
         async getApp() {
