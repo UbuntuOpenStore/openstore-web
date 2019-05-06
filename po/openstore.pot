@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-29 17:00-0400\n"
+"POT-Creation-Date: 2019-05-06 09:49-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgid ""
 "screenshots, click the above button."
 msgstr ""
 
-#: src/views/ManagePackage.vue:612
+#: src/views/ManagePackage.vue:567
 msgid "%{name} was successfully deleted"
 msgstr ""
 
@@ -56,11 +56,12 @@ msgstr ""
 msgid "An account is not needed to download or install apps."
 msgstr ""
 
-#: src/views/ManagePackage.vue:493 src/views/ManageRevisions.vue:146
+#: src/views/ManagePackage.vue:434 src/views/ManagePackage.vue:452
+#: src/views/ManageRevisions.vue:136
 msgid "An error occured loading your app data"
 msgstr ""
 
-#: src/views/ManageRevisions.vue:193 src/views/Submit.vue:217
+#: src/views/ManageRevisions.vue:183 src/views/Submit.vue:212
 msgid "An unknown error has occured"
 msgstr ""
 
@@ -327,9 +328,9 @@ msgstr ""
 msgid "Edit"
 msgstr ""
 
-#: src/views/ManagePackage.vue:492 src/views/ManagePackage.vue:597
-#: src/views/ManagePackage.vue:625 src/views/ManageRevisions.vue:145
-#: src/views/Submit.vue:223
+#: src/views/ManagePackage.vue:433 src/views/ManagePackage.vue:451
+#: src/views/ManagePackage.vue:552 src/views/ManagePackage.vue:580
+#: src/views/ManageRevisions.vue:135 src/views/Submit.vue:218
 msgid "Error"
 msgstr ""
 
@@ -374,11 +375,11 @@ msgid ""
 "List all the special features you have, if there are more."
 msgstr ""
 
-#: src/views/Browse.vue:188 src/views/Manage.vue:167
+#: src/views/Browse.vue:187 src/views/Manage.vue:167
 msgid "Go back a page"
 msgstr ""
 
-#: src/views/Browse.vue:189 src/views/Manage.vue:168
+#: src/views/Browse.vue:188 src/views/Manage.vue:168
 msgid "Go to the next page"
 msgstr ""
 
@@ -428,11 +429,11 @@ msgstr ""
 msgid "Install via the OpenStore app"
 msgstr ""
 
-#: src/views/Browse.vue:187 src/views/Manage.vue:166
+#: src/views/Browse.vue:186 src/views/Manage.vue:166
 msgid "Jump to the first page"
 msgstr ""
 
-#: src/views/Browse.vue:190 src/views/Manage.vue:169
+#: src/views/Browse.vue:189 src/views/Manage.vue:169
 msgid "Jump to the last page"
 msgstr ""
 
@@ -477,7 +478,7 @@ msgstr ""
 msgid "Log Out"
 msgstr ""
 
-#: src/views/Login.vue:41 src/views/Login.vue:45
+#: src/views/Login.vue:40 src/views/Login.vue:44
 msgid "Login"
 msgstr ""
 
@@ -505,12 +506,12 @@ msgstr ""
 msgid "Malware"
 msgstr ""
 
-#: src/App.vue:40 src/views/Manage.vue:144 src/views/ManagePackage.vue:371
+#: src/App.vue:40 src/views/Manage.vue:145 src/views/ManagePackage.vue:371
 #: src/views/ManagePackage.vue:373
 msgid "Manage"
 msgstr ""
 
-#: src/views/Manage.vue:140
+#: src/views/Manage.vue:141
 msgid "Manage Apps"
 msgstr ""
 
@@ -538,12 +539,12 @@ msgstr ""
 msgid "New Apps"
 msgstr ""
 
-#: src/views/ManagePackage.vue:37 src/views/ManageRevisions.vue:85
-#: src/views/ManageRevisions.vue:87
+#: src/views/ManagePackage.vue:37 src/views/ManageRevisions.vue:86
+#: src/views/ManageRevisions.vue:88
 msgid "New Revision"
 msgstr ""
 
-#: src/views/ManageRevisions.vue:188
+#: src/views/ManageRevisions.vue:178
 msgid "New revision for %{channel} was created!"
 msgstr ""
 
@@ -799,8 +800,8 @@ msgstr ""
 msgid "Submit"
 msgstr ""
 
-#: src/views/Manage.vue:10 src/views/Submit.vue:129 src/views/Submit.vue:188
-#: src/views/Submit.vue:192
+#: src/views/Manage.vue:10 src/views/Submit.vue:129 src/views/Submit.vue:189
+#: src/views/Submit.vue:193
 msgid "Submit App"
 msgstr ""
 
@@ -808,8 +809,8 @@ msgstr ""
 msgid "Submit your app"
 msgstr ""
 
-#: src/views/ManagePackage.vue:586 src/views/ManagePackage.vue:611
-#: src/views/ManageRevisions.vue:187
+#: src/views/ManagePackage.vue:541 src/views/ManagePackage.vue:566
+#: src/views/ManageRevisions.vue:177
 msgid "Success"
 msgstr ""
 
@@ -839,7 +840,7 @@ msgid ""
 "Consult each individual app's page for more information."
 msgstr ""
 
-#: src/views/ManagePackage.vue:587
+#: src/views/ManagePackage.vue:542
 msgid "The changes to %{name} were saved!"
 msgstr ""
 
@@ -908,11 +909,11 @@ msgstr ""
 msgid "This app contains NSFW material"
 msgstr ""
 
-#: src/views/Package.vue:367
+#: src/views/Package.vue:368
 msgid "This app does not have access to restricted system data, see permissions for more details"
 msgstr ""
 
-#: src/views/Package.vue:369
+#: src/views/Package.vue:370
 msgid "This app has access to restricted system data, see permissions for more details"
 msgstr ""
 
@@ -1036,7 +1037,7 @@ msgstr ""
 msgid "Welcome %{name}!"
 msgstr ""
 
-#: src/views/ManageRevisions.vue:15 src/views/ManageRevisions.vue:184
+#: src/views/ManageRevisions.vue:15 src/views/ManageRevisions.vue:174
 msgid "Xenial"
 msgstr ""
 
