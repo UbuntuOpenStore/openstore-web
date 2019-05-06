@@ -11,6 +11,7 @@ export default new Vuex.Store({
         isAuthenticated: false,
         user: null,
         categories: [],
+        back: {name: 'browse'},
     },
     mutations: {
         setUser(state, user) {
@@ -19,6 +20,9 @@ export default new Vuex.Store({
         },
         setCategories(state, categories) {
             state.categories = categories;
+        },
+        setBack(state, back) {
+            state.back = back;
         },
     },
     actions: {

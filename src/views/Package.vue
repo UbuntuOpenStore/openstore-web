@@ -205,9 +205,10 @@
 </template>
 
 <script>
+import {mapState} from 'vuex';
+
 import api from '@/api';
 import opengraph from '@/opengraph';
-import cache from '@/cache';
 import utils from '@/utils';
 import Types from '@/components/Types.vue';
 
@@ -251,7 +252,6 @@ export default {
     },
     data() {
         return {
-            back: cache.getBack(),
             app: null,
             showNSFW: true,
             permissions: [],
@@ -360,6 +360,7 @@ export default {
         },
     },
     computed: {
+        ...mapState(['back']),
         isRestrictedAccess() {
             return isRestrictedAccess(this.permissions);
         },

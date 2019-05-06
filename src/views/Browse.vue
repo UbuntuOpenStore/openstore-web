@@ -145,7 +145,6 @@ import debounce from 'debounce';
 
 import api from '@/api';
 import opengraph from '@/opengraph';
-import cache from '@/cache';
 import utils from '@/utils';
 import Types from '@/components/Types';
 
@@ -192,7 +191,7 @@ export default {
     },
     created() {
         this.getQueryParams();
-        cache.setBack({
+        this.$store.commit('setBack', {
             name: this.$router.currentRoute.name,
             params: this.$router.currentRoute.params,
             query: this.$router.currentRoute.query,
@@ -282,7 +281,7 @@ export default {
 
             this.$router.push({name: 'browse', query: params});
 
-            cache.setBack({
+            this.$store.commit('setBack', {
                 name: this.$router.currentRoute.name,
                 params: this.$router.currentRoute.params,
                 query: this.$router.currentRoute.query,
