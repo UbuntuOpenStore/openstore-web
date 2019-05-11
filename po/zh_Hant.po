@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-28 10:03-0500\n"
-"PO-Revision-Date: 2019-05-03 21:02+0000\n"
+"PO-Revision-Date: 2019-05-10 06:02+0000\n"
 "Last-Translator: louies0623 <louies0623@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.ubports.com/projects/"
 "openstore/open-storeio/zh_Hant/>\n"
@@ -723,7 +723,7 @@ msgstr "發佈"
 
 #: src/views/ManagePackage.vue:319
 msgid "Published Date"
-msgstr "發布日期"
+msgstr "發佈日期"
 
 #: src/views/Package.vue:286
 msgid "Push Notifications"
