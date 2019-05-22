@@ -15,10 +15,10 @@
                     <span v-translate>API Key</span>
                 </button>
 
-                <p v-if="showApikey">
+                <p class="apikey" v-if="showApikey">
                     <span v-translate>Keep your api key private!</span>
                     <br/>
-                    {{user.apikey}}
+                    <span>{{user.apikey}}</span>
                 </p>
             </div>
 
@@ -283,6 +283,10 @@ export default {
 
     .pagination li.active {
         font-weight: bold;
+    }
+
+    .apikey {
+        margin-top: 0;
     }
 
     @media screen and (max-width: 768px) {
