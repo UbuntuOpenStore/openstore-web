@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-02 16:51-0500\n"
-"PO-Revision-Date: 2019-05-10 06:02+0000\n"
-"Last-Translator: Mike <miguel2000@livecom.it>\n"
+"PO-Revision-Date: 2019-05-26 08:03+0000\n"
+"Last-Translator: Aurelio Cilia <spacedriver88@gmail.com>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/openstore/"
 "open-storeio/it/>\n"
 "Language: it\n"
@@ -157,6 +157,10 @@ msgid ""
 "Apps containing or promoting sexually explicit content are not allowed.\n"
 "This includes, but is not limited to, pornography and services promoting sexually explicit content."
 msgstr ""
+"Le app che contengono o promuovono contenuti sessualmente espliciti non sono "
+"consentite.\n"
+"Questo include, ma non limitatamente a, pornografia e servizi che promuovono "
+"contenuti sessualmente espliciti."
 
 #: src/views/Submit.vue:7
 msgid "Apps not requiring manual review can be submitted by logging in with the \"Log In\" link above."
@@ -173,18 +177,26 @@ msgstr ""
 #: src/views/Submit.vue:18
 msgid "Apps requiring manual review must be submitted by contacting an admin in our telegram group."
 msgstr ""
+"Le app che richiedono la revisione manuale devono essere inviate contattando "
+"un amministratore nel nostro gruppo di telegram."
 
 #: src/views/Submit.vue:114
 msgid ""
 "Apps that are found to be stealing the users data, trying to escalate their privileges without user consent,\n"
 "or executing malicious process are strictly prohibited."
 msgstr ""
+"Le app che rubando i dati degli utenti, cercando di aumentare i propri "
+"privilegi senza il consenso dell'utente,\n"
+"o l'esecuzione di processi dannosi sono severamente proibiti."
 
 #: src/views/About.vue:128
 msgid ""
 "Apps uploaded to the OpenStore are subject to our submission rules and content policy.\n"
 "You can review the rules and policies before uploading your app."
 msgstr ""
+"Le app caricate sul OpenStore sono soggette alle nostre regole di "
+"sottoscrizione e alla nostra politica sui contenuti.\n"
+"Puoi vedere le regole e la politiche prima di caricare la tua app."
 
 #: src/views/ManagePackage.vue:253 src/views/Package.vue:194
 msgid "Architecture"
@@ -217,7 +229,7 @@ msgstr "Sfoglia App"
 
 #: src/views/About.vue:73
 msgid "Bug Tracker"
-msgstr ""
+msgstr "Bug Tracker"
 
 #: src/views/Package.vue:269
 msgid "Calendar"
