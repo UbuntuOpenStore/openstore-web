@@ -77,8 +77,15 @@
                             </td>
                             <td class="u-hide--small">{{app.version}}</td>
                             <td class="u-hide--small">
+                                <span class="mr" v-translate>Total:</span>
                                 <span v-if="app.totalDownloads > 0">{{app.totalDownloads}}</span>
                                 <span v-if="app.totalDownloads == 0" v-translate>None</span>
+
+                                <div v-if="app.version">
+                                    <span class="mr">v{{app.version}}:</span>
+                                    <span v-if="app.latestDownloads > 0">{{app.latestDownloads}}</span>
+                                    <span v-if="app.latestDownloads == 0" v-translate>None</span>
+                                </div>
                             </td>
                         </tr>
                     </tbody>
@@ -286,6 +293,10 @@ export default {
     }
 
     .apikey {
+        margin-top: 0;
+    }
+
+    td div {
         margin-top: 0;
     }
 
