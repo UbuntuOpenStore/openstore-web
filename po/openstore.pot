@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-13 12:11-0400\n"
+"POT-Creation-Date: 2019-06-01 23:17-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -375,11 +375,11 @@ msgid ""
 "List all the special features you have, if there are more."
 msgstr ""
 
-#: src/views/Browse.vue:187 src/views/Manage.vue:167
+#: src/views/Browse.vue:187 src/views/Manage.vue:174
 msgid "Go back a page"
 msgstr ""
 
-#: src/views/Browse.vue:188 src/views/Manage.vue:168
+#: src/views/Browse.vue:188 src/views/Manage.vue:175
 msgid "Go to the next page"
 msgstr ""
 
@@ -429,11 +429,11 @@ msgstr ""
 msgid "Install via the OpenStore app"
 msgstr ""
 
-#: src/views/Browse.vue:186 src/views/Manage.vue:166
+#: src/views/Browse.vue:186 src/views/Manage.vue:173
 msgid "Jump to the first page"
 msgstr ""
 
-#: src/views/Browse.vue:189 src/views/Manage.vue:169
+#: src/views/Browse.vue:189 src/views/Manage.vue:176
 msgid "Jump to the last page"
 msgstr ""
 
@@ -506,12 +506,12 @@ msgstr ""
 msgid "Malware"
 msgstr ""
 
-#: src/App.vue:40 src/views/Manage.vue:145 src/views/ManagePackage.vue:371
+#: src/App.vue:40 src/views/Manage.vue:152 src/views/ManagePackage.vue:371
 #: src/views/ManagePackage.vue:373
 msgid "Manage"
 msgstr ""
 
-#: src/views/Manage.vue:141
+#: src/views/Manage.vue:148
 msgid "Manage Apps"
 msgstr ""
 
@@ -560,11 +560,11 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: src/views/Browse.vue:101 src/views/Manage.vue:87
+#: src/views/Browse.vue:101 src/views/Manage.vue:94
 msgid "No apps found."
 msgstr ""
 
-#: src/views/Manage.vue:80 src/views/Package.vue:146
+#: src/views/Manage.vue:81 src/views/Manage.vue:86 src/views/Package.vue:146
 msgid "None"
 msgstr ""
 
@@ -945,11 +945,15 @@ msgstr ""
 msgid "Total"
 msgstr ""
 
+#: src/views/Manage.vue:79
+msgid "Total:"
+msgstr ""
+
 #: src/views/ManagePackage.vue:274 src/views/Package.vue:197
 msgid "Translation Languages"
 msgstr ""
 
-#: src/views/Browse.vue:102 src/views/Manage.vue:88
+#: src/views/Browse.vue:102 src/views/Manage.vue:95
 msgid "Try searching for something else"
 msgstr ""
 
