@@ -319,7 +319,7 @@
                             <label class="p-form__label" v-translate>Published Date</label>
 
                             <div>
-                                {{app.published_date.replace('T', ' ').replace('Z', '')}}
+                                {{app.published_date | moment("YYYY-MM-DD kk:mm")}}
                             </div>
                         </div>
 
@@ -327,7 +327,7 @@
                             <label class="p-form__label" v-translate>Updated Date</label>
 
                             <div>
-                                {{app.updated_date.replace('T', ' ').replace('Z', '')}}
+                                {{app.updated_date | moment("YYYY-MM-DD kk:mm")}}
                             </div>
                         </div>
                     </div>
