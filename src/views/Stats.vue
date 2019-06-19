@@ -55,6 +55,28 @@
                 </tbody>
             </table>
         </div>
+
+        <div v-if="!loading" class="p-strip">
+            <h2>Frameworks</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Framework</th>
+                        <th class="align-right">Count</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="(count, name) in frameworks" :key="name">
+                        <td>
+                            {{name}}
+                        </td>
+                        <td class="align-right">
+                            {{count}}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </template>
 
@@ -97,6 +119,7 @@ export default {
 
             this.categories = stats.categories;
             this.types = stats.types;
+            this.frameworks = stats.frameworks;
         }).catch((err) => {
             this.loading = false;
             this.error = true;
