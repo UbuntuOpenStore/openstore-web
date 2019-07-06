@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-28 10:03-0500\n"
-"PO-Revision-Date: 2019-05-10 06:02+0000\n"
-"Last-Translator: Christian <christian-pauly@posteo.de>\n"
+"PO-Revision-Date: 2019-07-07 09:48+0000\n"
+"Last-Translator: Rüdiger Kupper <ruediger.kupper+launchpad@gmail.com>\n"
 "Language-Team: German <https://translate.ubports.com/projects/openstore/"
 "open-storeio/de/>\n"
 "Language: de\n"
@@ -70,7 +70,7 @@ msgstr "Fehler beim Laden deiner App-Daten"
 
 #: src/views/ManageRevisions.vue:191 src/views/Submit.vue:216
 msgid "An unknown error has occured"
-msgstr "unbekannter Fehler"
+msgstr "Ein unbekannter Fehler ist aufgetreten"
 
 #: src/views/About.vue:159
 msgid "And many amazing developers, testers, and users from the OpenStore community!"
