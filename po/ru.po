@@ -8,19 +8,25 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-01 23:17-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2019-07-15 03:49+0000\n"
+"Last-Translator: Moshe Lazar <wersewikkov@gmail.com>\n"
+"Language-Team: Russian <https://translate.ubports.com/projects/openstore/"
+"open-storeio/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.6.1\n"
 
 #: src/views/Package.vue:118
 msgid ""
 "*This app contains NSFW content, to view the description and\n"
 "screenshots, click the above button."
 msgstr ""
+"*Это приложение содержит контент для взрослых, чтобы просмотреть описание и\n"
+"скриншоты, нажмите на кнопку выше."
 
 #: src/views/ManagePackage.vue:567
 msgid "%{name} was successfully deleted"
@@ -33,11 +39,11 @@ msgstr ""
 #: src/App.vue:34 src/views/About.vue:3 src/views/About.vue:179
 #: src/views/About.vue:183
 msgid "About"
-msgstr ""
+msgstr "О OpenStore"
 
 #: src/App.vue:78
 msgid "About Us"
-msgstr ""
+msgstr "О нас"
 
 #: src/views/Package.vue:266
 msgid "Accounts"
@@ -45,7 +51,7 @@ msgstr ""
 
 #: src/views/Browse.vue:16
 msgid "All Categories"
-msgstr ""
+msgstr "Все категории"
 
 #: src/views/Browse.vue:31
 msgid "All Types"
@@ -54,15 +60,17 @@ msgstr ""
 #: src/views/Login.vue:26
 msgid "An account is not needed to download or install apps."
 msgstr ""
+"Вам не нужно иметь учетную запись для загрузки или установки приложений."
 
 #: src/views/ManagePackage.vue:434 src/views/ManagePackage.vue:452
 #: src/views/ManageRevisions.vue:136
 msgid "An error occured loading your app data"
-msgstr ""
+msgstr "При загрузке данных приложения произошла ошибка"
 
 #: src/views/ManageRevisions.vue:183 src/views/Submit.vue:212
+#, fuzzy
 msgid "An unknown error has occured"
-msgstr ""
+msgstr "Произошла неизвестная ошибка"
 
 #: src/views/About.vue:159
 msgid "And many amazing developers, testers, and users from the OpenStore community!"
@@ -78,11 +86,11 @@ msgstr ""
 
 #: src/views/Manage.vue:14
 msgid "API Key"
-msgstr ""
+msgstr "API Ключ"
 
 #: src/components/Types.vue:3 src/views/Manage.vue:46 src/views/Stats.vue:86
 msgid "App"
-msgstr ""
+msgstr "Приложение"
 
 #: src/views/Submit.vue:95
 msgid "App containing or promoting any of the above are strictly prohibited."
@@ -90,7 +98,7 @@ msgstr ""
 
 #: src/views/Submit.vue:133
 msgid "App Name"
-msgstr ""
+msgstr "Название приложения"
 
 #: src/App.vue:88
 msgid "App Stats"
@@ -102,25 +110,30 @@ msgstr ""
 
 #: src/views/Stats.vue:19
 msgid "App Type"
-msgstr ""
+msgstr "Тип приложения"
 
 #: src/views/Stats.vue:15
 msgid "App Types"
-msgstr ""
+msgstr "Типы приложений"
 
 #: src/views/Browse.vue:32
 msgid "Apps"
-msgstr ""
+msgstr "Приложения"
 
 #: src/views/Submit.vue:101
 msgid ""
 "Apps containing gambling involving real world money transactions are not allowed.\n"
 "This includes, but is not limited to, online casinos, betting, and lotteries."
 msgstr ""
+"Приложения, содержащие азартные игры, связанные с реальными денежными "
+"транзакциями, не допускаются.\n"
+"Это включает в себя, помимо прочего, онлайн-казино, ставки и лотереи."
 
 #: src/views/Submit.vue:82
 msgid "Apps containing or promoting child abuse or child sexual abuse are strictly prohibited."
 msgstr ""
+"Приложения, содержащие или пропагандирующие жестокое обращение с детьми или "
+"сексуальное насилие над детьми, строго запрещены."
 
 #: src/views/Submit.vue:88
 msgid ""
