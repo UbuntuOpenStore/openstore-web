@@ -16,5 +16,5 @@ deploy:
     - npm install
     - npm run translations
     - npm run lint
-    - rsync -av --delete --exclude node_modules --exclude ".*" . root@ssh.open-store.io:/srv/openstore-web/$VERSION
+    - rsync -av --delete --exclude node_modules . root@ssh.open-store.io:/srv/openstore-web/$VERSION
     - ssh root@ssh.open-store.io "/srv/openstore-web/$VERSION/deploy/post-deploy.sh $VERSION"
