@@ -1,15 +1,16 @@
 #!/bin/bash
 
 VERSION=$1
+export VUE_APP_VERSION=$VERSION
+source /srv/openstore/env.sh
 
 set -x
 set -e
 
-export VUE_APP_VERSION=$VERSION
-source /srv/openstore/env.sh
-
 cd /srv/openstore-web/$VERSION
+# TODO use a cached node_modules
 npm install
+npm install --only=dev
 npm run build
 
 rm -f /srv/openstore-web/current
