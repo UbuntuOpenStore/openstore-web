@@ -1,15 +1,9 @@
 deploy:
-  image: node:10
+  image: theopenstore/ci
   before_script:
-    # TODO create a custom docker image
-    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
-    - 'which rsync || ( apt-get update -y && apt-get install rsync -y )'
     - eval $(ssh-agent -s)
     - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
-    - mkdir -p ~/.ssh
-    - chmod 700 ~/.ssh
     - echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
-    - chmod 644 ~/.ssh/known_hosts
   script:
     - VERSION=$(date +"%Y-%m-%d_%H-%M-%S")
     - echo $VERSION
