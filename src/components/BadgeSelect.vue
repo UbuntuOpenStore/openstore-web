@@ -85,7 +85,7 @@ export default {
             return `${process.env.VUE_APP_DOMAIN}/badges/${this.selected}.svg`;
         },
         svgHtml() {
-            return `<a href="${this.appUrl}"></a><img src="${this.svgUrl}" alt="OpenStore" /></a>`;
+            return `<a href="${this.appUrl}"><img src="${this.svgUrl}" alt="OpenStore" /></a>`;
         },
         svgMarkdown() {
             return `[![OpenStore](${this.svgUrl})](${this.appUrl})`;
@@ -94,7 +94,7 @@ export default {
             return `${process.env.VUE_APP_DOMAIN}/badges/${this.selected}.png`;
         },
         pngHtml() {
-            return `<a href="${this.appUrl}"></a><img src="${this.pngUrl}" alt="OpenStore" /></a>`;
+            return `<a href="${this.appUrl}"><img src="${this.pngUrl}" alt="OpenStore" /></a>`;
         },
         pngMarkdown() {
             return `[![OpenStore](${this.pngUrl})](${this.appUrl})`;
