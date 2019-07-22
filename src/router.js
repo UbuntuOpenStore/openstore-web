@@ -3,6 +3,7 @@ import Router from 'vue-router';
 import Browse from '@/views/Browse.vue';
 import Package from '@/views/Package.vue';
 import About from '@/views/About.vue';
+import Badge from '@/views/Badge.vue';
 import Submit from '@/views/Submit.vue';
 import Login from '@/views/Login.vue';
 import Manage from '@/views/Manage.vue';
@@ -30,6 +31,10 @@ export default new Router({
             path: '/about',
             name: 'about',
             component: About,
+        }, {
+            path: '/badge',
+            name: 'badge',
+            component: Badge,
         }, {
             path: '/submit',
             name: 'submit',

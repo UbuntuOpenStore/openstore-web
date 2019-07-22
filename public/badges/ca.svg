@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 182 56"
+   style="enable-background:new 0 0 182 56;"
+   xml:space="preserve"
+   sodipodi:docname="[CA]-open-store-black.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   inkscape:export-filename="C:\Users\Gebruiker\Pictures\OpenStore\open-store-badges-master\CA\[CA]-open-store-black@2x.png"
+   inkscape:export-xdpi="192"
+   inkscape:export-ydpi="192"><metadata
+   id="metadata24"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+   id="defs22" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1680"
+   inkscape:window-height="1003"
+   id="namedview20"
+   showgrid="false"
+   inkscape:zoom="5.2994157"
+   inkscape:cx="74.176657"
+   inkscape:cy="50.390101"
+   inkscape:window-x="1276"
+   inkscape:window-y="-4"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Black-badge" />
+<style
+   type="text/css"
+   id="style2">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#252525;stroke:#CDCDCD;}
+	.st1{fill:#82BEA0;}
+	.st2{fill:#FA6441;}
+	.st3{fill:#FFFFFF;}
+	.st4{font-family:'Ubuntu';}
+	.st5{font-size:12px;}
+	.st6{font-size:24px;}
+</style>
+<title
+   id="title4">[FR]-snap-store-black</title>
+<desc
+   id="desc6">Created with Sketch.</desc>
+<g
+   id="g17">
+	<g
+   id="Black-badge">
+		<path
+   id="Rectangle-path"
+   class="st0"
+   d="M2,0h178c1.1,0,2,0.9,2,2v52c0,1.1-0.9,2-2,2H2c-1.1,0-2-0.9-2-2V2C0,0.9,0.9,0,2,0z" />
+		
+		<text
+   transform="translate(50,17)"
+   class="st3 st4 st5"
+   id="text12"
+   style="font-size:12px;font-family:Ubuntu;fill:#ffffff"
+   dy="0"
+   dx="0"
+   rotate="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"><tspan
+     style="letter-spacing:-0.25px"
+     id="tspan23">Descarregueu-la des de l'</tspan></text>
+
+
+
+		<text
+   transform="translate(50,41)"
+   class="st3 st4 st6"
+   id="text14"
+   style="font-size:24px;font-family:Ubuntu;fill:#ffffff">OpenStore</text>
+
+
+
+	<g
+   id="g61"
+   transform="scale(0.109375)"
+   style="stroke-width:9.14285755"><g
+     transform="translate(396,-510.64792)"
+     id="layer1"
+     inkscape:label="Layer 1"
+     style="stroke-width:9.14285755"><path
+       inkscape:connector-curvature="0"
+       id="path2996"
+       d="m -168.59375,614.14792 -1.09017,2.31661 c -9.9759,21.13501 -19.46128,42.83725 -28.86628,64.53843 -9.40259,21.70122 -19.1827,45.06146 -28.86625,69.0351 -2.69911,6.88463 -5.44336,14.05924 -8.16859,21.10706 h 61.41185 c 4.97743,-13.13851 9.87186,-25.89339 14.42935,-37.86033 7.02218,-17.82625 13.26517,-32.25924 18.92624,-45.61219 5.41765,12.90428 10.90019,26.6892 17.8361,44.52956 4.75638,12.233 9.60795,25.4309 14.5732,38.94296 h 62.766943 c -2.87426,-7.05589 -5.797541,-14.22527 -8.577369,-21.10706 -9.404127,-23.98776 -18.231117,-47.31916 -27.639873,-69.0351 -9.405279,-21.70111 -19.026931,-43.407 -29.002541,-64.53843 l -1.09017,-2.31661 z m -102.12594,170.19994 c -19.31108,0 -34.85457,15.55065 -34.85457,34.86187 0,19.3112 15.54349,34.85458 34.85457,34.85458 H -9.2802985 c 19.3111375,0 34.8545615,-15.54338 34.8545615,-34.85458 0,-19.31122 -15.543424,-34.86187 -34.8545615,-34.86187 z m 0,17.42728 h 152.50758 c 9.65568,0 17.4273,7.77917 17.4273,17.43459 0,9.65579 -7.77162,17.42727 -17.4273,17.42727 h -152.50758 c -9.65565,0 -17.42726,-7.77148 -17.42726,-17.42727 0,-9.65542 7.77161,-17.43459 17.42726,-17.43459 z m -0.53752,65.49956 c -5.2212,14.84394 -10.59032,30.27062 -16.20842,46.29335 l -2.18029,5.57987 h 64.40976 l 13.33918,-36.76234 c 1.82805,-5.00719 3.70443,-10.04591 5.45079,-15.11088 h -64.2735 c -0.18213,0 -0.35578,10e-4 -0.53752,0 z m 195.114331,0 c 1.725842,5.13119 3.470656,10.18485 5.314483,15.11088 4.251187,11.35922 8.287881,22.9393 12.25664,34.58241 l 0.946297,2.17993 h 3.406733 64.538468 L 8.0107029,913.56805 C 2.3833234,897.51986 -3.1737917,882.09886 -8.6064894,867.2747 c -0.2269658,0.003 -0.4459965,0 -0.6738091,0 z"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:12.0041132px;line-height:125%;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Medium';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#f7f7f7;fill-opacity:1;stroke:none;stroke-width:9.14285755;enable-background:new" /></g><g
+     style="display:none;stroke-width:9.14285755"
+     inkscape:label="guides"
+     id="layer2"><path
+       style="display:inline;fill:#0000ff;fill-opacity:0.08118083;stroke:#0000ff;stroke-width:9.14285755;enable-background:new"
+       d="m 166.05406,17.999974 h 179.89189 c 145.29729,0 166.05406,20.73726 166.05406,165.899046 v 144.20253 c 0,145.16118 -20.75677,165.89848 -166.05406,165.89848 H 166.05406 C 20.756747,494.00003 -7.5e-6,473.26273 -7.5e-6,328.10155 V 183.89902 C -7.5e-6,38.737234 20.756747,17.999974 166.05406,17.999974 Z"
+       id="path3774"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssssssss" /><circle
+       r="143.99997"
+       cy="256"
+       cx="256"
+       id="path4118"
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#0000ff;fill-opacity:0.08118083;stroke:#0000ff;stroke-width:9.14285755;stroke-miterlimit:4;stroke-dasharray:none;marker:none;enable-background:accumulate" /><rect
+       y="120"
+       x="120"
+       height="272"
+       width="272"
+       id="rect4152"
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#0000ff;fill-opacity:0.08118083;stroke:#0000ff;stroke-width:9.14285755;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate" /><rect
+       y="136"
+       x="104"
+       height="240"
+       width="304"
+       id="rect4154"
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#0000ff;fill-opacity:0.08118083;stroke:#0000ff;stroke-width:9.14285755;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate" /><rect
+       y="104"
+       x="136"
+       height="304"
+       width="240"
+       id="rect4156"
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#0000ff;fill-opacity:0.08118083;stroke:#0000ff;stroke-width:9.14285755;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate" /></g></g></g>
+</g>
+</svg>

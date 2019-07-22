@@ -67,6 +67,11 @@
                                 Stats
                             </a>
                         </li>
+                        <li class="p-tabs__item" role="presentation">
+                            <a class="p-tabs__link" tabindex="-1" role="tab" @click="tab = 'badge'" :aria-selected="tab == 'badge'" v-translate>
+                                Badge
+                            </a>
+                        </li>
                     </ul>
                 </nav>
 
@@ -333,6 +338,12 @@
                     </div>
                 </div>
 
+                <div :class="{hidden: tab != 'badge'}" class="p-card">
+                    <div class="p-card__content">
+                        <badge-select :app-id="app.id" />
+                    </div>
+                </div>
+
                 <a class="p-button--positive" @click="save()" :disabled="saving">
                     <i class="fa" :class="{'fa-save': !saving, 'fa-spinner fa-spin': saving}"></i>
                     <span class="ml" v-translate>Save</span>
@@ -360,12 +371,11 @@ import VueNotifications from 'vue-notifications';
 import api from '@/api';
 import opengraph from '@/opengraph';
 import utils from '@/utils';
+import BadgeSelect from '@/components/BadgeSelect';
 
 export default {
     name: 'ManagePackage',
-    components: {
-        draggable,
-    },
+    components: {draggable, BadgeSelect},
     head: {
         title: function() {
             let title = this.$gettext('Manage');

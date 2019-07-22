@@ -16,6 +16,17 @@
                 <i class="fa fa-external-link"></i>
             </a>
 
+            <h2 v-translate>Badges</h2>
+
+            <p v-translate>
+                Promote your app on the OpenStore!
+            </p>
+
+            <router-link :to="{name: 'badge'}">
+                <span class="mr" v-translate>Get your badge</span>
+                <i class="fa fa-external-link"></i>
+            </router-link>
+
             <h2 v-translate>Install</h2>
 
             <p v-translate>
@@ -38,20 +49,10 @@
                     <li v-translate>Navigate to the downloads folder</li>
                     <li>
                         <span v-translate>Run the command:</span>
-                        <div class="p-code-snippet">
-                            <input
-                                class="p-code-snippet__input"
+                        <copy-line
                             value="pkcon install-local --allow-untrusted openstore.openstore-team_latest_armhf.click"
-                                readonly="readonly"
-                            >
-                            <button
-                                class="p-code-snippet__action"
-                                data-clipboard-target=".p-code-snippet__input"
-                                v-translate
-                            >
-                                Copy to clipboard
-                            </button>
-                        </div>
+                            element-id="install"
+                        />
                     </li>
                 </ol>
             </p>
@@ -168,12 +169,15 @@
 </template>
 
 <script>
-import opengraph from '@/opengraph';
-import Clipboard from 'clipboard';
 import Vue from 'vue';
+import Clipboard from 'clipboard';
+
+import opengraph from '@/opengraph';
+import CopyLine from '@/components/CopyLine';
 
 export default {
     name: 'About',
+    components: {CopyLine},
     head: {
         title: function() {
             return {inner: this.$gettext('About')};
