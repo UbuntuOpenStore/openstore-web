@@ -8,7 +8,7 @@ function success(res) {
 export default {
     auth: {
         me: async () => {
-            let res = await axios.get(`${process.env.VUE_APP_API}/auth/me`);
+            let res = await axios.get(`${process.env.VUE_APP_DOMAIN}/auth/me`);
             let user = res.data.data;
             if (!user.name) {
                 user.name = user.username;
@@ -23,44 +23,44 @@ export default {
     },
 
     apps: {
-        search: (query) => axios.get(`${process.env.VUE_APP_API}/api/v3/apps`, {
+        search: (query) => axios.get(`${process.env.VUE_APP_DOMAIN}/api/v3/apps`, {
             params: query,
         }).then(success),
 
-        get: (id) => axios.get(`${process.env.VUE_APP_API}/api/v3/apps/${id}?channel=xenial`)
+        get: (id) => axios.get(`${process.env.VUE_APP_DOMAIN}/api/v3/apps/${id}?channel=xenial`)
             .then(success),
 
-        stats: () => axios.get(`${process.env.VUE_APP_API}/api/v3/stats`)
+        stats: () => axios.get(`${process.env.VUE_APP_DOMAIN}/api/v3/stats`)
             .then(success),
     },
 
-    categories: (lang) => axios.get(`${process.env.VUE_APP_API}/api/v3/categories?lang=${lang}`)
+    categories: (lang) => axios.get(`${process.env.VUE_APP_DOMAIN}/api/v3/categories?lang=${lang}`)
         .then(success),
 
     manage: {
-        search: (query, key) => axios.get(`${process.env.VUE_APP_API}/api/v3/manage?apikey=${key}`, {
+        search: (query, key) => axios.get(`${process.env.VUE_APP_DOMAIN}/api/v3/manage?apikey=${key}`, {
             params: query,
         }).then(success),
 
-        get: (id, key) => axios.get(`${process.env.VUE_APP_API}/api/v3/manage/${id}?apikey=${key}`)
+        get: (id, key) => axios.get(`${process.env.VUE_APP_DOMAIN}/api/v3/manage/${id}?apikey=${key}`)
             .then(success),
 
-        create: (data, key) => axios.post(`${process.env.VUE_APP_API}/api/v3/manage/?apikey=${key}`, data)
+        create: (data, key) => axios.post(`${process.env.VUE_APP_DOMAIN}/api/v3/manage/?apikey=${key}`, data)
             .then(success),
 
-        update: (id, data, key) => axios.put(`${process.env.VUE_APP_API}/api/v3/manage/${id}?apikey=${key}`, data)
+        update: (id, data, key) => axios.put(`${process.env.VUE_APP_DOMAIN}/api/v3/manage/${id}?apikey=${key}`, data)
             .then(success),
 
-        remove: (id, key) => axios.delete(`${process.env.VUE_APP_API}/api/v3/manage/${id}?apikey=${key}`)
+        remove: (id, key) => axios.delete(`${process.env.VUE_APP_DOMAIN}/api/v3/manage/${id}?apikey=${key}`)
             .then(success),
 
-        revision: (id, data, key) => axios.post(`${process.env.VUE_APP_API}/api/v3/manage/${id}/revision?apikey=${key}`, data)
+        revision: (id, data, key) => axios.post(`${process.env.VUE_APP_DOMAIN}/api/v3/manage/${id}/revision?apikey=${key}`, data)
             .then(success),
     },
 
     users: {
         getAll: async (key) => {
-            let res = await axios.get(`${process.env.VUE_APP_API}/api/users?apikey=${key}`);
+            let res = await axios.get(`${process.env.VUE_APP_DOMAIN}/api/users?apikey=${key}`);
             let users = res.data.data;
 
             users.forEach((user) => {

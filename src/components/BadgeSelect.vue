@@ -55,9 +55,6 @@
 </template>
 
 <script>
-import Clipboard from 'clipboard';
-import Vue from 'vue';
-
 import CopyLine from '@/components/CopyLine';
 import languages from '@/badge-languages.json';
 
@@ -71,18 +68,12 @@ export default {
             selected: 'en_US',
         };
     },
-    mounted() {
-        Vue.nextTick().then(() => {
-            /* eslint-disable no-new */
-            new Clipboard('.p-code-snippet__action');
-        });
-    },
     computed: {
         appUrl() {
             return `${process.env.VUE_APP_DOMAIN}/app/${this.appId}`;
         },
         svgUrl() {
-            return `${process.env.VUE_APP_DOMAIN}/badges/${this.selected}.svg`;
+            return `${process.env.VUE_APP_BADGE_BASE}/${this.selected}.svg`;
         },
         svgHtml() {
             return `<a href="${this.appUrl}"><img src="${this.svgUrl}" alt="OpenStore" /></a>`;
@@ -91,7 +82,7 @@ export default {
             return `[![OpenStore](${this.svgUrl})](${this.appUrl})`;
         },
         pngUrl() {
-            return `${process.env.VUE_APP_DOMAIN}/badges/${this.selected}.png`;
+            return `${process.env.VUE_APP_BADGE_BASE}/${this.selected}.png`;
         },
         pngHtml() {
             return `<a href="${this.appUrl}"><img src="${this.pngUrl}" alt="OpenStore" /></a>`;
