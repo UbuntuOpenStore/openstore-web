@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-01 23:17-0400\n"
 "PO-Revision-Date: 2019-08-05 07:49+0000\n"
-"Last-Translator: vokaliz <vokaliz@protonmail.com>\n"
+"Last-Translator: Moshe Lazar <wersewikkov@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/openstore/"
 "open-storeio/ru/>\n"
 "Language: ru\n"
@@ -74,6 +74,8 @@ msgstr "Произошла неизвестная ошибка"
 #: src/views/About.vue:159
 msgid "And many amazing developers, testers, and users from the OpenStore community!"
 msgstr ""
+"И множество замечательных разработчиков, тестеров и пользователей из "
+"сообщества OpenStore!"
 
 #: src/views/About.vue:121
 msgid ""
