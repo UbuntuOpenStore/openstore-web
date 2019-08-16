@@ -1,4 +1,6 @@
 deploy:
+  only:
+    - master
   image: theopenstore/ci
   before_script:
     - eval $(ssh-agent -s)
