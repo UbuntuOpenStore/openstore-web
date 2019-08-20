@@ -149,6 +149,20 @@
                 </div>
 
                 <div class="row info">
+                  <h4>
+                    <span v-translate>Stats</span>:
+                  </h4>
+                  <p v-if="app.latestDownloads">
+                    <span v-translate>Downloads of the latest version</span>:
+                    {{app.latestDownloads}}
+                  </p>
+                  <p v-if="app.totalDownloads">
+                    <span v-translate>Total downloads</span>:
+                    {{app.totalDownloads}}
+                  </p>
+                </div>
+
+                <div class="row info">
                     <h4>
                         <span v-translate>Info</span>:
                     </h4>
