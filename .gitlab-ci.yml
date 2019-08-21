@@ -8,6 +8,7 @@ test:
   before_script:
     - npm install
   script:
+    - npm run translations
     - npm run lint
 
 deploy:
