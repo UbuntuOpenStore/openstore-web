@@ -1,4 +1,17 @@
+stages:
+  - test
+  - deploy
+
+test:
+  stage: test
+  image: theopenstore/ci
+  before_script:
+    - npm install
+  script:
+    - npm run lint
+
 deploy:
+  stage: deploy
   only:
     - master
   image: theopenstore/ci
@@ -6,11 +19,10 @@ deploy:
     - eval $(ssh-agent -s)
     - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
     - echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+    - npm install
   script:
     - VERSION=$(date +"%Y-%m-%d_%H-%M-%S")
     - echo $VERSION
-    - npm install
     - npm run translations
-    - npm run lint
     - rsync -av --delete --exclude node_modules --exclude ".git" . root@ssh.open-store.io:/srv/openstore-web/$VERSION
     - ssh root@ssh.open-store.io "/srv/openstore-web/$VERSION/deploy/post-deploy.sh $VERSION"
