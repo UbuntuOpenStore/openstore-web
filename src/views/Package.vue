@@ -160,6 +160,10 @@
                     <span v-translate>Total downloads</span>:
                     {{app.totalDownloads}}
                   </p>
+                  <p v-else>
+                    <span v-translate>Total downloads</span>:
+                    0
+                  </p>
                 </div>
 
                 <div class="row info">
