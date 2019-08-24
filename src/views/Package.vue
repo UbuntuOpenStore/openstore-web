@@ -152,17 +152,14 @@
                   <h4>
                     <span v-translate>Stats</span>:
                   </h4>
-                  <p v-if="app.latestDownloads">
+
+                  <p v-if="app.latestDownloads > 0">
                     <span v-translate>Downloads of the latest version</span>:
                     {{app.latestDownloads}}
                   </p>
-                  <p v-if="app.totalDownloads">
+                  <p>
                     <span v-translate>Total downloads</span>:
                     {{app.totalDownloads}}
-                  </p>
-                  <p v-else>
-                    <span v-translate>Total downloads</span>:
-                    0
                   </p>
                 </div>
 
@@ -442,7 +439,11 @@ export default {
         display: block;
     }
 
-    .info p {
+    .info:first-child {
+        margin-top: 1em;
+    }
+
+    p + p {
         margin-top: 0.25em;
     }
 
