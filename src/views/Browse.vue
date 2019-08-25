@@ -439,6 +439,10 @@ export default {
         border-radius: 8px;
         width: 60px;
         height: 60px;
+        max-width: 60px;
+        max-height: 60px;
+        min-width: 60px;
+        min-height: 60px;
     }
 
     .p-matrix__item {
