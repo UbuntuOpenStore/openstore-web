@@ -196,8 +196,8 @@ export default {
     },
     data() {
         return {
-            id: '',
-            name: '',
+            id: this.$route.query.appId ? this.$route.query.appId : '',
+            name: this.$route.query.name ? this.$route.query.name : '',
             saving: false,
         };
     },
