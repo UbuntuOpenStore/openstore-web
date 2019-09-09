@@ -142,7 +142,17 @@
                             :class="{'text-red': isRestricted(permission)}"
                             :title="restrictedLabel(permission)"
                         >
-                            {{permissionLabels[permission]}}
+                            <span v-if="permission.type == 'write'">
+                                <span v-translate>Unrestricted write access to:</span>
+                                {{permission.path}}
+                            </span>
+                            <span v-if="permission.type == 'read'">
+                                <span v-translate>Unrestricted read access to:</span>
+                                {{permission.path}}
+                            </span>
+                            <span v-if="!permission.type">
+                                {{permissionLabels[permission]}}
+                            </span>
                         </li>
                         <li v-if="permissions.length === 0" v-translate>None</li>
                     </ul>
@@ -239,10 +249,6 @@ let restricted = [
     'unconfined',
 ];
 
-function isRestrictedAccess(permissions) {
-    return permissions.some((permission) => restricted.includes(permission));
-}
-
 export default {
     name: 'Package',
     components: {
@@ -327,12 +333,32 @@ export default {
                 let permissions = [];
                 if (this.app && this.app.manifest && this.app.manifest.hooks) {
                     Object.values(this.app.manifest.hooks).forEach((hook) => {
-                        if (hook.apparmor && hook.apparmor.policy_groups) {
-                            permissions = permissions.concat(hook.apparmor.policy_groups);
-                        }
+                        if (hook.apparmor) {
+                            if (hook.apparmor.policy_groups) {
+                                permissions = permissions.concat(hook.apparmor.policy_groups);
+                            }
 
-                        if (hook.apparmor && hook.apparmor.template == 'unconfined') {
-                            permissions.push('unconfined');
+                            if (hook.apparmor.template == 'unconfined') {
+                                permissions.push('unconfined');
+                            }
+
+                            if (hook.apparmor.write_path) {
+                                hook.apparmor.write_path.forEach((path) => {
+                                    permissions.push({
+                                        type: 'write',
+                                        path: path.replace('/home/phablet', '~')
+                                    });
+                                });
+                            }
+
+                            if (hook.apparmor.read_path) {
+                                hook.apparmor.read_path.forEach((path) => {
+                                    permissions.push({
+                                        type: 'read',
+                                        path: path.replace('/home/phablet', '~')
+                                    });
+                                });
+                            }
                         }
                     });
                 }
@@ -360,7 +386,7 @@ export default {
         },
         isRestricted(permission) {
             let isRestricted = false;
-            if (restricted.indexOf(permission) >= 0) {
+            if (restricted.indexOf(permission) >= 0 || permission.type) {
                 isRestricted = true;
             }
 
@@ -377,11 +403,11 @@ export default {
     computed: {
         ...mapState(['back']),
         isRestrictedAccess() {
-            return isRestrictedAccess(this.permissions);
+            return this.permissions.some((permission) => (restricted.includes(permission) || permission.type));
         },
         restrictedAccess() {
             let message = this.$gettext('This app does not have access to restricted system data, see permissions for more details');
-            if (isRestrictedAccess(this.permissions)) {
+            if (this.isRestrictedAccess) {
                 message = this.$gettext('This app has access to restricted system data, see permissions for more details');
             }
             return message;
