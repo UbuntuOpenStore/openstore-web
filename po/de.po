@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2019-07-07 09:48+0000\n"
-"Last-Translator: Rüdiger Kupper <ruediger.kupper+launchpad@gmail.com>\n"
-"Language-Team: German <https://translate.ubports.com/projects/openstore/open-"
-"storeio/de/>\n"
+"PO-Revision-Date: 2019-10-06 11:53+0000\n"
+"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
+"Language-Team: German <https://translate.ubports.com/projects/openstore/"
+"open-storeio/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 3.8\n"
 
 #: src/views/Package.vue:118
 msgid ""
@@ -231,11 +231,11 @@ msgstr "Zurück"
 
 #: src/views/Badge.vue:28 src/views/Badge.vue:32 src/views/ManagePackage.vue:70
 msgid "Badge"
-msgstr ""
+msgstr "Abzeichen"
 
 #: src/views/About.vue:18
 msgid "Badges"
-msgstr ""
+msgstr "Abzeichen"
 
 #: src/views/Package.vue:268
 msgid "Bluetooth"
@@ -438,7 +438,7 @@ msgstr "Glücksspiel"
 
 #: src/views/About.vue:25
 msgid "Get your badge"
-msgstr ""
+msgstr "Holen Sie sich Ihr Abzeichen"
 
 #: src/views/Submit.vue:39
 msgid ""
@@ -727,7 +727,7 @@ msgstr "OpenStore App Mitwirkende"
 
 #: src/views/Badge.vue:3
 msgid "OpenStore Badges"
-msgstr ""
+msgstr "OpenStore-Abzeichen"
 
 #: src/views/About.vue:67
 msgid "OpenStore group on Telegram"
@@ -775,7 +775,7 @@ msgstr "Verbotene Apps"
 
 #: src/views/About.vue:20
 msgid "Promote your app on the OpenStore!"
-msgstr ""
+msgstr "Bewerben Sie Ihre App im OpenStore!"
 
 #: src/views/Badge.vue:5
 msgid ""
@@ -1120,7 +1120,7 @@ msgstr ""
 
 #: src/views/ManageRevisions.vue:52
 msgid "This will be added to the beginning of your current changelog"
-msgstr ""
+msgstr "Dies wird am Anfang Ihres aktuellen Änderungsprotokolls hinzugefügt"
 
 #: src/views/ManagePackage.vue:80
 msgid "Title"
@@ -1232,8 +1232,9 @@ msgid "Webview"
 msgstr "Internetzugriff"
 
 #: src/views/Manage.vue:4
+#, fuzzy
 msgid "Welcome %{name}!"
-msgstr ""
+msgstr "Willkommen %{name}!"
 
 #: src/views/ManageRevisions.vue:15 src/views/ManageRevisions.vue:174
 msgid "Xenial"
