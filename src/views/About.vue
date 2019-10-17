@@ -84,14 +84,14 @@
             </p>
 
             <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">
-                <span v-translate>GPL v3 License</span>
+                <span class="mr" v-translate>GPL v3 License</span>
                 <i class="fa fa-external-link"></i>
             </a>
 
             <br/>
 
             <a href="https://gitlab.com/theopenstore/">
-                <span v-translate>OpenStore source on GitLab</span>
+                <span class="mr" v-translate>OpenStore source on GitLab</span>
                 <i class="fa fa-external-link"></i>
             </a>
 
@@ -131,6 +131,8 @@
                 Apps uploaded to the OpenStore are subject to our submission rules and content policy.
                 You can review the rules and policies before uploading your app.
             </p>
+
+            <br/>
 
             <router-link :to="{name: 'submit'}" v-translate>
                 Submit your app

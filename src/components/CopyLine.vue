@@ -22,6 +22,7 @@
 export default {
     name: 'Badge',
     props: ['value', 'elementId', 'noIcon'],
+    // TODO look at https://github.com/euvl/v-clipboard/blob/master/README.md
     computed: {
         target() {
             return `#${this.elementId}`;
