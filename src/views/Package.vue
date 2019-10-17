@@ -45,15 +45,38 @@
                             v-translate
                         >Install</a>
 
-                        <a
-                            v-for="download in app.downloads"
-                            :href="download.download_url"
-                            :key="download.channel"
-                            class="p-button--positive"
-                            target="_blank"
-                        >
-                            {{downloadLabels[download.channel]}}
-                        </a>
+                        <span class="p-contextual-menu--left ml">
+                            <button
+                                class="p-contextual-menu__toggle p-button--positive"
+                                aria-controls="#download-menu"
+                                :aria-expanded="showDownloadMenu ? 'true' : 'false'"
+                                aria-haspopup="true"
+                                @click="showDownloadMenu = !showDownloadMenu"
+                            >
+                                Download
+                            </button>
+                            <span
+                                class="p-contextual-menu__dropdown"
+                                id="download-menu"
+                                :aria-hidden="showDownloadMenu ? 'false' : 'true'"
+                                aria-label="submenu"
+                            >
+                                <span class="p-contextual-menu__group">
+                                    <a
+                                        v-for="download in app.downloads"
+                                        :href="download.download_url"
+                                        :key="download.channel"
+                                        class="p-contextual-menu__link"
+                                        target="_blank"
+                                        @click="showDownloadMenu = false"
+                                    >
+                                        {{downloadLabels[download.channel]}}
+                                        v{{download.version}}
+                                        ({{download.architecture}})
+                                    </a>
+                                </span>
+                            </span>
+                        </span>
                     </div>
 
                     <div class="row p-matrix u-clearfix">
@@ -275,6 +298,7 @@ export default {
         return {
             app: null,
             showNSFW: true,
+            showDownloadMenu: false,
             permissions: [],
             missing: false,
             error: false,
@@ -515,6 +539,11 @@ export default {
 
     .p-button--positive {
         margin-top: 0.25em;
+    }
+
+    .p-contextual-menu__dropdown {
+        min-width: 200px;
+        max-width: 400px;
     }
 
     /*
