@@ -8,65 +8,72 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-08 23:33-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2019-10-20 18:55+0000\n"
+"Last-Translator: Henrik Holm <hbir@post10.tele.dk>\n"
+"Language-Team: Danish <https://translate.ubports.com/projects/openstore/"
+"open-storeio/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.8\n"
 
 #: src/views/Package.vue:118
 msgid ""
 "*This app contains NSFW content, to view the description and\n"
 "screenshots, click the above button."
 msgstr ""
+"Denne app indeholder NSFW indhold, for at se beskrivelse og\n"
+"skærmbilleder, klik på knappen ovenover."
 
 #: src/views/ManagePackage.vue:577
 msgid "%{name} was successfully deleted"
-msgstr ""
+msgstr "%[name] blev slettet uden fejl"
 
 #: src/views/ManagePackage.vue:157
 msgid "A comma separated list of keywords"
-msgstr ""
+msgstr "En komma separeret liste af nøgleord"
 
 #: src/App.vue:34 src/views/About.vue:3 src/views/About.vue:183
 #: src/views/About.vue:187
 msgid "About"
-msgstr ""
+msgstr "Om"
 
 #: src/App.vue:78
 msgid "About Us"
-msgstr ""
+msgstr "Om os"
 
 #: src/views/Package.vue:287
 msgid "Accounts"
-msgstr ""
+msgstr "Konti"
 
 #: src/views/Browse.vue:16
 msgid "All Categories"
-msgstr ""
+msgstr "Alle kategorier"
 
 #: src/views/Browse.vue:31
 msgid "All Types"
-msgstr ""
+msgstr "Alle typer"
 
 #: src/views/Login.vue:26
 msgid "An account is not needed to download or install apps."
-msgstr ""
+msgstr "En konto er ikke nødvendig for at hente eller installere apps."
 
 #: src/views/ManagePackage.vue:444 src/views/ManagePackage.vue:462
 #: src/views/ManageRevisions.vue:136
 msgid "An error occured loading your app data"
-msgstr ""
+msgstr "En fejl opstod under indlæsning af dine app data"
 
 #: src/views/ManageRevisions.vue:183 src/views/Submit.vue:212
 msgid "An unknown error has occured"
-msgstr ""
+msgstr "En ukendt fejl er opstået"
 
 #: src/views/About.vue:160
 msgid "And many amazing developers, testers, and users from the OpenStore community!"
 msgstr ""
+"Og mange fantastiske udviklere, testere og brugere fra OpenStore "
+"fællesskabet!"
 
 #: src/views/About.vue:122
 msgid ""
@@ -75,58 +82,75 @@ msgid ""
 "contact you in the event there is an issue with your app.\n"
 "Additionally, this site uses cookies to keep you logged in to your account."
 msgstr ""
+"Personlig data du afgiver til os (f.eks. din email adresse når du registrere "
+"dig til en konto for at uploade dine apps) kommer ikke længere end til os,\n"
+"og vil ikke blive brugt til andet, end at tillade dig at vedligeholde dine "
+"apps og i sjældne tilfælde,\n"
+"kontakte dig i tilfælde af, at der er problemer med din app.\n"
+"Yderligere, denne side bruger cookies for at holde dig logget ind på din "
+"konto."
 
 #: src/views/Manage.vue:14
 msgid "API Key"
-msgstr ""
+msgstr "API Nøgle"
 
 #: src/components/Types.vue:3 src/views/Manage.vue:46 src/views/Stats.vue:108
 msgid "App"
-msgstr ""
+msgstr "App"
 
 #: src/views/Submit.vue:95
 msgid "App containing or promoting any of the above are strictly prohibited."
 msgstr ""
+"App der indeholder eller promoverer noget af ovenstående er strengt forbudt."
 
 #: src/views/Submit.vue:133
 msgid "App Name"
-msgstr ""
+msgstr "App Navn"
 
 #: src/App.vue:88
+#, fuzzy
 msgid "App Stats"
-msgstr ""
+msgstr "App Stats"
 
 #: src/views/Submit.vue:150
 msgid "App Title"
-msgstr ""
+msgstr "App Titel"
 
 #: src/views/Stats.vue:19
 msgid "App Type"
-msgstr ""
+msgstr "App Type"
 
 #: src/views/Stats.vue:15
 msgid "App Types"
-msgstr ""
+msgstr "App Typer"
 
 #: src/views/Browse.vue:32
 msgid "Apps"
-msgstr ""
+msgstr "Apps"
 
 #: src/views/Submit.vue:101
 msgid ""
 "Apps containing gambling involving real world money transactions are not allowed.\n"
 "This includes, but is not limited to, online casinos, betting, and lotteries."
 msgstr ""
+"Apps indeholdende spil med rigtige penge transaktioner er ikke tilladt.\n"
+"Dette inkludere, men er ikke begrænset til, online kasinoer, vædemål og "
+"lotterier."
 
 #: src/views/Submit.vue:82
 msgid "Apps containing or promoting child abuse or child sexual abuse are strictly prohibited."
 msgstr ""
+"Apps der indeholder eller promoverer børnemishandling eller seksuelt misbrug "
+"af børn er strengt forbudt."
 
 #: src/views/Submit.vue:88
 msgid ""
 "Apps containing or promoting gratuitous violence are not allowed.\n"
 "This includes, but is not limited to, violence, terrorism, bomb/weapon making, self harm, and grotesque imagery."
 msgstr ""
+"Apps der indeholder eller promoverer utilladelig vold er ikke tilladt.\n"
+"Dette inkludere, men er ikke begrænset til, vold, terrorisme, bombe/våben "
+"produktion, udførelse af selvskade og groteske billeder."
 
 #: src/views/Submit.vue:75
 msgid ""
@@ -139,8 +163,11 @@ msgid "Apps not requiring manual review can be submitted by logging in with the 
 msgstr ""
 
 #: src/views/Submit.vue:108
+#, fuzzy
 msgid "Apps promoting illegal activities (based on USA law) are not allowed."
 msgstr ""
+"Apps der promoverer illegale aktiviteter (i.h.t. Amerikansk lovgivning) er "
+"ikke tilladt."
 
 #: src/views/Submit.vue:18
 msgid "Apps requiring manual review must be submitted by contacting an admin in our telegram group."
@@ -160,20 +187,20 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:258 src/views/Package.vue:218
 msgid "Architecture"
-msgstr ""
+msgstr "Arkitektur"
 
 #: src/views/Package.vue:288
 msgid "Audio"
-msgstr ""
+msgstr "Lyd"
 
 #: src/views/Manage.vue:47 src/views/ManagePackage.vue:254
 #: src/views/Package.vue:180
 msgid "Author"
-msgstr ""
+msgstr "Forfatter"
 
 #: src/views/Package.vue:7
 msgid "Back"
-msgstr ""
+msgstr "Tilbage"
 
 #: src/views/Badge.vue:28 src/views/Badge.vue:32 src/views/ManagePackage.vue:70
 msgid "Badge"
@@ -185,54 +212,56 @@ msgstr ""
 
 #: src/views/Package.vue:289
 msgid "Bluetooth"
-msgstr ""
+msgstr "Bluetooth"
 
 #: src/App.vue:31
+#, fuzzy
 msgid "Browse"
-msgstr ""
+msgstr "Browse"
 
 #: src/views/Browse.vue:162
+#, fuzzy
 msgid "Browse Apps"
-msgstr ""
+msgstr "Browse Apps"
 
 #: src/views/About.vue:74
 msgid "Bug Tracker"
-msgstr ""
+msgstr "Fejl søger"
 
 #: src/views/Package.vue:290
 msgid "Calendar"
-msgstr ""
+msgstr "Kalender"
 
 #: src/views/Package.vue:291
 msgid "Camera"
-msgstr ""
+msgstr "Kamera"
 
 #: src/views/ManagePackage.vue:358 src/views/ManageRevisions.vue:66
 #: src/views/Submit.vue:167
 msgid "Cancel"
-msgstr ""
+msgstr "Annuller"
 
 #: src/views/Browse.vue:14 src/views/ManagePackage.vue:140
 #: src/views/Package.vue:202
 msgid "Category"
-msgstr ""
+msgstr "Kategori"
 
 #: src/views/ManagePackage.vue:101 src/views/ManageRevisions.vue:50
 #: src/views/Package.vue:128
 msgid "Changelog"
-msgstr ""
+msgstr "Ændringslog"
 
 #: src/views/ManagePackage.vue:295 src/views/ManageRevisions.vue:13
 msgid "Channel"
-msgstr ""
+msgstr "Kanal"
 
 #: src/views/ManagePackage.vue:274
 msgid "Channels"
-msgstr ""
+msgstr "Kanaler"
 
 #: src/App.vue:83
 msgid "Chat with us on Telegram"
-msgstr ""
+msgstr "Chat med os på Telegram"
 
 #: src/views/Submit.vue:81
 msgid "Child Endangerment"
@@ -240,11 +269,11 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:142
 msgid "Choose a category"
-msgstr ""
+msgstr "Vælg kategori"
 
 #: src/views/ManagePackage.vue:173
 msgid "Choose a license"
-msgstr ""
+msgstr "Vælg en licens"
 
 #: src/views/ManagePackage.vue:231
 msgid "Choose a maintainer"
