@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2019-05-10 06:02+0000\n"
+"PO-Revision-Date: 2019-10-28 15:36+0000\n"
 "Last-Translator: louies0623 <louies0623@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.ubports.com/projects/"
 "openstore/open-storeio/zh_Hant/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 3.8\n"
 
 #: src/views/Package.vue:118
 msgid ""
@@ -110,9 +110,8 @@ msgid "App Stats"
 msgstr "應用程式統計"
 
 #: src/views/Submit.vue:150
-#, fuzzy
 msgid "App Title"
-msgstr "名稱"
+msgstr "App 名稱"
 
 #: src/views/Stats.vue:19
 msgid "App Type"
@@ -212,11 +211,11 @@ msgstr "返回"
 
 #: src/views/Badge.vue:28 src/views/Badge.vue:32 src/views/ManagePackage.vue:70
 msgid "Badge"
-msgstr ""
+msgstr "標章"
 
 #: src/views/About.vue:18
 msgid "Badges"
-msgstr ""
+msgstr "標章"
 
 #: src/views/Package.vue:268
 msgid "Bluetooth"
@@ -346,7 +345,6 @@ msgid "Donate URL"
 msgstr "贊助網址"
 
 #: src/views/Package.vue:262
-#, fuzzy
 msgid "Download"
 msgstr "下載"
 
@@ -418,7 +416,7 @@ msgstr "賭博"
 
 #: src/views/About.vue:25
 msgid "Get your badge"
-msgstr ""
+msgstr "獲取您的標章"
 
 #: src/views/Submit.vue:39
 msgid ""
@@ -700,7 +698,7 @@ msgstr "OpenStore 應用程式貢獻者"
 
 #: src/views/Badge.vue:3
 msgid "OpenStore Badges"
-msgstr ""
+msgstr "OpenStore 標章"
 
 #: src/views/About.vue:67
 msgid "OpenStore group on Telegram"
@@ -1091,9 +1089,8 @@ msgid "Total"
 msgstr "總計"
 
 #: src/views/Manage.vue:79
-#, fuzzy
 msgid "Total:"
-msgstr "總計"
+msgstr "總計:"
 
 #: src/views/ManagePackage.vue:279 src/views/Package.vue:197
 msgid "Translation Languages"
@@ -1185,7 +1182,7 @@ msgstr "網路視圖"
 
 #: src/views/Manage.vue:4
 msgid "Welcome %{name}!"
-msgstr ""
+msgstr "您好 %{name}!"
 
 #: src/views/ManageRevisions.vue:15 src/views/ManageRevisions.vue:174
 msgid "Xenial"
