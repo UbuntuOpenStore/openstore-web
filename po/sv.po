@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2019-04-24 21:36+0000\n"
-"Last-Translator: Rondy Andersson <rondarius@gmail.com>\n"
+"PO-Revision-Date: 2019-11-09 21:36+0000\n"
+"Last-Translator: Rondy Andersson <rondarius@vivaldi.net>\n"
 "Language-Team: Swedish <https://translate.ubports.com/projects/openstore/"
 "open-storeio/sv/>\n"
 "Language: sv\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.2.2\n"
+"X-Generator: Weblate 3.8\n"
 
 #: src/views/Package.vue:118
 msgid ""
@@ -117,9 +117,8 @@ msgid "App Stats"
 msgstr "Appstatistik"
 
 #: src/views/Submit.vue:150
-#, fuzzy
 msgid "App Title"
-msgstr "App-typ"
+msgstr "App Titel"
 
 #: src/views/Stats.vue:19
 msgid "App Type"
@@ -233,11 +232,11 @@ msgstr "Bakåt"
 
 #: src/views/Badge.vue:28 src/views/Badge.vue:32 src/views/ManagePackage.vue:70
 msgid "Badge"
-msgstr ""
+msgstr "Märke"
 
 #: src/views/About.vue:18
 msgid "Badges"
-msgstr ""
+msgstr "Märken"
 
 #: src/views/Package.vue:268
 msgid "Bluetooth"
@@ -253,7 +252,7 @@ msgstr "Genomsök Appar"
 
 #: src/views/About.vue:74
 msgid "Bug Tracker"
-msgstr "Programfels spårare"
+msgstr "Bug Spårare"
 
 #: src/views/Package.vue:269
 msgid "Calendar"
@@ -435,11 +434,11 @@ msgstr "Tillgång till hela systemet"
 
 #: src/views/Submit.vue:100
 msgid "Gambling"
-msgstr "Spelande"
+msgstr "Gambling"
 
 #: src/views/About.vue:25
 msgid "Get your badge"
-msgstr ""
+msgstr "Få ditt märke"
 
 #: src/views/Submit.vue:39
 msgid ""
@@ -491,7 +490,7 @@ msgid ""
 msgstr ""
 "Om en applikation kunde bli publicerad utan en manuell genomgång om det inte "
 "vore för den där coola funktionen, publicera en avskalad version.\n"
-"Inte alla vill installera applikationer med mindre inskränkning."
+"Inte alla vill installera applikationer med färre inskränkning."
 
 #: src/views/Submit.vue:107
 msgid "Illegal Activities"
@@ -499,7 +498,7 @@ msgstr "Olagliga aktiviteter"
 
 #: src/views/Package.vue:277
 msgid "In App Purchases"
-msgstr "I App inköp"
+msgstr "I App Köp"
 
 #: src/views/ManagePackage.vue:60 src/views/Package.vue:152
 msgid "Info"
@@ -568,7 +567,7 @@ msgstr "Logga in"
 
 #: src/views/Submit.vue:125
 msgid "Login to submit your app"
-msgstr "Logga in för att överlämna din applikation"
+msgstr "Logga in för att överlämna din app"
 
 #: src/views/Login.vue:7
 msgid "Login via GitHub"
@@ -584,7 +583,7 @@ msgstr "Logga in via Ubuntu"
 
 #: src/views/ManagePackage.vue:229
 msgid "Maintainer"
-msgstr "Ansvarige"
+msgstr "Vårdare"
 
 #: src/views/Submit.vue:113
 msgid "Malware"
@@ -597,7 +596,7 @@ msgstr "Hantera"
 
 #: src/views/Manage.vue:148
 msgid "Manage Apps"
-msgstr "Hantera applikationer"
+msgstr "Hantera appar"
 
 #: src/views/Package.vue:280
 msgid "Microphone"
@@ -621,12 +620,12 @@ msgstr "Nätverkssamarbete"
 
 #: src/views/Feeds.vue:9
 msgid "New Apps"
-msgstr "Nya appar"
+msgstr "Nya Appar"
 
 #: src/views/ManagePackage.vue:37 src/views/ManageRevisions.vue:86
 #: src/views/ManageRevisions.vue:88
 msgid "New Revision"
-msgstr "Ny revidering"
+msgstr "Ny Revidering"
 
 #: src/views/ManageRevisions.vue:178
 msgid "New revision for %{channel} was created!"
@@ -715,67 +714,67 @@ msgstr "Öppna terminal appen"
 
 #: src/views/About.vue:145
 msgid "OpenStore API/Server Contributors"
-msgstr ""
+msgstr "OpenStore API/Server Bidragsgivare"
 
 #: src/views/Submit.vue:58
 msgid "OpenStore App Content Policy"
-msgstr ""
+msgstr "OpenStore App Innehålls Policy"
 
 #: src/views/About.vue:155
 msgid "OpenStore App Contributors"
-msgstr ""
+msgstr "OpenStore App Bidragsgivare"
 
 #: src/views/Badge.vue:3
 msgid "OpenStore Badges"
-msgstr ""
+msgstr "OpenStore Märken"
 
 #: src/views/About.vue:67
 msgid "OpenStore group on Telegram"
-msgstr ""
+msgstr "OpenStore grupp på Telegram"
 
 #: src/views/About.vue:93
 msgid "OpenStore source on GitLab"
-msgstr ""
+msgstr "OpenStore källkod på GitLab"
 
 #: src/views/About.vue:150
 msgid "OpenStore Website Contributors"
-msgstr ""
+msgstr "OpenStore Hemsida Bidragsgivare"
 
 #: src/views/ManageRevisions.vue:33
 msgid "OR"
-msgstr ""
+msgstr "ELLER"
 
 #: src/views/ManagePackage.vue:245
 msgid "Package Info"
-msgstr ""
+msgstr "Paket info"
 
 #: src/views/Package.vue:162
 msgid "Packager/Publisher"
-msgstr ""
+msgstr "Paketerare/Utgivare"
 
 #: src/views/NotFound.vue:3
 msgid "Page Not Found"
-msgstr ""
+msgstr "Sidan hittades inte"
 
 #: src/views/Package.vue:80 src/views/Package.vue:135
 msgid "Permissions"
-msgstr ""
+msgstr "Tillstånd"
 
 #: src/views/Package.vue:285
 msgid "Picture Files"
-msgstr ""
+msgstr "Bild filer"
 
 #: src/views/ManagePackage.vue:43
 msgid "Presentation"
-msgstr ""
+msgstr "Presentation"
 
 #: src/views/Submit.vue:69
 msgid "Prohibited Apps"
-msgstr ""
+msgstr "Förbjudna Appar"
 
 #: src/views/About.vue:20
 msgid "Promote your app on the OpenStore!"
-msgstr ""
+msgstr "Marknadsför din app på OpenStore!"
 
 #: src/views/Badge.vue:5
 msgid ""
@@ -784,175 +783,180 @@ msgid ""
 "are available in several different languages and in both PNG and SVG\n"
 "formats."
 msgstr ""
+"Marknadsför din app på OpenStore! Lägg til dessa märken på din websida,\n"
+"kod förråd, sociala medier, eller varhelst på internet. Märkena\n"
+"är tillgängliga i olika språk och i både PNG och SVG format."
 
 #: src/views/ManagePackage.vue:14
 msgid "Public Link"
-msgstr ""
+msgstr "Offentlig Länk"
 
 #: src/views/ManagePackage.vue:21
 msgid "Publish"
-msgstr ""
+msgstr "Publicera"
 
 #: src/views/Manage.vue:74 src/views/Package.vue:185
 msgid "Published"
-msgstr ""
+msgstr "Publicerad"
 
 #: src/views/ManagePackage.vue:323
 msgid "Published Date"
-msgstr ""
+msgstr "Publicerad Datum"
 
 #: src/views/Package.vue:286
 msgid "Push Notifications"
-msgstr ""
+msgstr "Push meddelanden"
 
 #: src/views/Package.vue:281
 msgid "Read Music Files"
-msgstr ""
+msgstr "Läs Musik Filer"
 
 #: src/views/Package.vue:284
 msgid "Read Picture Files"
-msgstr ""
+msgstr "Läs Bild Filer"
 
 #: src/views/Package.vue:289
 msgid "Read Video Files"
-msgstr ""
+msgstr "Läs Film Filer"
 
 #: src/views/Browse.vue:41
 msgid "Relevance"
-msgstr ""
+msgstr "Relevans"
 
 #: src/App.vue:103
 msgid "Report an Issue"
-msgstr ""
+msgstr "Rapportera ett problem"
 
 #: src/views/Package.vue:356
 msgid "Restricted permission"
-msgstr ""
+msgstr "Begränsade tillstånd"
 
 #: src/views/ManagePackage.vue:294
 msgid "Revision"
-msgstr ""
+msgstr "Revision"
 
 #: src/App.vue:108 src/views/Feeds.vue:3
 msgid "RSS Feeds"
-msgstr ""
+msgstr "RSS Flöden"
 
 #: src/views/Submit.vue:4
 msgid "Rules for Submission"
-msgstr ""
+msgstr "Regler för inlämning"
 
 #: src/views/Submit.vue:31
 msgid "Rules for Submissions Requiring Manual Review"
-msgstr ""
+msgstr "Regler för Inlämningar som Kräver Manuell Granskning"
 
 #: src/views/About.vue:50
 msgid "Run the command:"
-msgstr ""
+msgstr "Kör kommandot:"
 
 #: src/views/ManagePackage.vue:348
 msgid "Save"
-msgstr ""
+msgstr "Spara"
 
 #: src/components/Types.vue:4 src/views/Stats.vue:109
 msgid "Scope"
-msgstr ""
+msgstr "Scope"
 
 #: src/views/Browse.vue:34
 msgid "Scopes"
-msgstr ""
+msgstr "Scopes"
 
 #: src/views/Package.vue:107
 msgid "Screenshots"
-msgstr ""
+msgstr "Skärmdumpar"
 
 #: src/views/ManagePackage.vue:106
 msgid "Screenshots (Limit 5)"
-msgstr ""
+msgstr "Skärmdumpar (Begränsning 5)"
 
 #: src/views/Browse.vue:9 src/views/Manage.vue:26
 msgid "Search"
-msgstr ""
+msgstr "Sök"
 
 #: src/views/Submit.vue:35
 msgid ""
 "Send us a link to a repository for your app to our telegram group along with "
 "some instructions on how to build it."
 msgstr ""
+"Sänd oss en länk till ett kod förråd för din app, till vår telegram grupp "
+"tillsammans med några instruktioner om hur man bygger den."
 
 #: src/views/Package.vue:287
 msgid "Sensors"
-msgstr ""
+msgstr "Sensorer"
 
 #: src/views/Submit.vue:74
 msgid "Sexually Explicit Content"
-msgstr ""
+msgstr "Uttryckligt Sexuellt Innehåll"
 
 #: src/views/Package.vue:117
 msgid "Show NSFW Content"
-msgstr ""
+msgstr "Visa NSFW Innehåll"
 
 #: src/App.vue:98
 msgid "Site Status"
-msgstr ""
+msgstr "Sajt status"
 
 #: src/views/Browse.vue:39
 msgid "Sort By"
-msgstr ""
+msgstr "Sortera Efter"
 
 #: src/views/Package.vue:169
 msgid "Source"
-msgstr ""
+msgstr "Källa"
 
 #: src/views/ManagePackage.vue:206
 msgid "Source URL"
-msgstr ""
+msgstr "Källa URL"
 
 #: src/views/ManagePackage.vue:65 src/views/Stats.vue:3 src/views/Stats.vue:92
 #: src/views/Stats.vue:96
 msgid "Stats"
-msgstr ""
+msgstr "Stats"
 
 #: src/views/Manage.vue:48
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 #: src/App.vue:28 src/views/Submit.vue:162
 msgid "Submit"
-msgstr ""
+msgstr "Lämna in"
 
 #: src/views/Manage.vue:10 src/views/Submit.vue:129 src/views/Submit.vue:189
 #: src/views/Submit.vue:193
 msgid "Submit App"
-msgstr ""
+msgstr "Lämna in App"
 
 #: src/views/About.vue:134
 msgid "Submit your app"
-msgstr ""
+msgstr "Lämna in din app"
 
 #: src/views/ManagePackage.vue:551 src/views/ManagePackage.vue:576
 #: src/views/ManageRevisions.vue:177
 msgid "Success"
-msgstr ""
+msgstr "Framgång"
 
 #: src/views/Package.vue:165
 msgid "Support"
-msgstr ""
+msgstr "Support"
 
 #: src/views/ManagePackage.vue:211
 msgid "Support URL"
-msgstr ""
+msgstr "Support URL"
 
 #: src/views/ManagePackage.vue:85
 msgid "Tag Line"
-msgstr ""
+msgstr "Tagg tråd"
 
 #: src/views/About.vue:102
 msgid "Terms"
-msgstr ""
+msgstr "Villkor"
 
 #: src/views/Package.vue:13
 msgid "The app you are looking for has been removed or does not exist"
-msgstr ""
+msgstr "Appen som du letar efter har blivit borttagen eller så finns den inte"
 
 #: src/views/About.vue:97
 msgid ""
@@ -960,10 +964,13 @@ msgid ""
 "and terms.\n"
 "Consult each individual app's page for more information."
 msgstr ""
+"Apparna som finns tillgängliga för nedladdning från OpenStore har sina egna "
+"licenser och villkor.\n"
+"Konsultera varje individuell apps sida för mer information."
 
 #: src/views/ManagePackage.vue:552
 msgid "The changes to %{name} were saved!"
-msgstr ""
+msgstr "Förändringarna  till %[name] blev sparade!"
 
 #: src/views/About.vue:104
 msgid ""
