@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-08 23:33-0400\n"
-"PO-Revision-Date: 2019-10-28 15:36+0000\n"
-"Last-Translator: Henrik Holm <hbir@post10.tele.dk>\n"
+"PO-Revision-Date: 2019-11-15 20:36+0000\n"
+"Last-Translator: Bjørn curtis Knutson <b.knutson@tutanota.com>\n"
 "Language-Team: Danish <https://translate.ubports.com/projects/openstore/"
 "open-storeio/da/>\n"
 "Language: da\n"
@@ -153,14 +153,21 @@ msgstr ""
 "produktion, udførelse af selvskade og groteske billeder."
 
 #: src/views/Submit.vue:75
+#, fuzzy
 msgid ""
 "Apps containing or promoting sexually explicit content are not allowed.\n"
 "This includes, but is not limited to, pornography and services promoting sexually explicit content."
 msgstr ""
+"Programmer der indeholder eller reklamere for sexuelt indhold , er ikke "
+"tilladt .\n"
+"dette inkludere , men er ikke begrænset til pornografi og services der "
+"reklamere for sexuelle indhold"
 
 #: src/views/Submit.vue:7
 msgid "Apps not requiring manual review can be submitted by logging in with the \"Log In\" link above."
 msgstr ""
+"Apps der ikke kræver manuel genemsyn , kan indsendes , ved at logge ind med "
+"\"Log ind\" ikonet oven for."
 
 #: src/views/Submit.vue:108
 #, fuzzy
@@ -172,6 +179,8 @@ msgstr ""
 #: src/views/Submit.vue:18
 msgid "Apps requiring manual review must be submitted by contacting an admin in our telegram group."
 msgstr ""
+"Apps der behøver manuel gennemgang , skal indsendes ved at kontakte en admin "
+", igennem vores telegram gruppe."
 
 #: src/views/Submit.vue:114
 msgid ""
