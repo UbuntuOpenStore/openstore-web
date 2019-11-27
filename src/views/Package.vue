@@ -37,15 +37,19 @@
 
                 <div class="row">
                     <div class="center">
+                        <span v-if="app.downloads.length === 0" v-translate>
+                            No longer available
+                        </span>
+
                         <a
                             :href="openstoreLink"
                             class="p-button--positive"
-                            v-if="app.id != 'openstore.openstore-team'"
+                            v-if="app.id != 'openstore.openstore-team' && app.downloads.length > 0"
                             :title="installTitle"
                             v-translate
                         >Install</a>
 
-                        <span class="p-contextual-menu--left ml">
+                        <span class="p-contextual-menu--left ml" v-if="app.downloads.length > 0">
                             <button
                                 class="p-contextual-menu__toggle p-button--positive"
                                 aria-controls="#download-menu"
@@ -54,6 +58,10 @@
                                 @click="showDownloadMenu = !showDownloadMenu"
                             >
                                 Download
+                                <i
+                                    class="fa"
+                                    :class="{'fa-caret-down': !showDownloadMenu, 'fa-caret-up': showDownloadMenu}"
+                                ></i>
                             </button>
                             <span
                                 class="p-contextual-menu__dropdown"
@@ -182,18 +190,18 @@
                 </div>
 
                 <div class="row info">
-                  <h4>
-                    <span v-translate>Stats</span>:
-                  </h4>
+                    <h4>
+                        <span v-translate>Stats</span>:
+                    </h4>
 
-                  <p v-if="app.latestDownloads > 0">
-                    <span v-translate>Downloads of the latest version</span>:
-                    {{app.latestDownloads}}
-                  </p>
-                  <p>
-                    <span v-translate>Total downloads</span>:
-                    {{app.totalDownloads}}
-                  </p>
+                    <p v-if="app.latestDownloads > 0">
+                        <span v-translate>Downloads of the latest version</span>:
+                        {{app.latestDownloads}}
+                    </p>
+                    <p>
+                        <span v-translate>Total downloads</span>:
+                        {{app.totalDownloads}}
+                    </p>
                 </div>
 
                 <div class="row info">
@@ -370,7 +378,7 @@ export default {
                                 hook.apparmor.write_path.forEach((path) => {
                                     permissions.push({
                                         type: 'write',
-                                        path: path.replace('/home/phablet', '~')
+                                        path: path.replace('/home/phablet', '~'),
                                     });
                                 });
                             }
@@ -379,7 +387,7 @@ export default {
                                 hook.apparmor.read_path.forEach((path) => {
                                     permissions.push({
                                         type: 'read',
-                                        path: path.replace('/home/phablet', '~')
+                                        path: path.replace('/home/phablet', '~'),
                                     });
                                 });
                             }
@@ -542,7 +550,7 @@ export default {
     }
 
     .p-contextual-menu__dropdown {
-        min-width: 200px;
+        min-width: 210px;
         max-width: 400px;
     }
 

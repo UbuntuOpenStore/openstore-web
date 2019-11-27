@@ -264,12 +264,8 @@
                                             <td>{{app.framework}}</td>
                                         </tr>
                                         <tr>
-                                            <td class="name" v-translate>File Size</td>
-                                            <td>{{filesize}}</td>
-                                        </tr>
-                                        <tr>
                                             <td class="name" v-translate>Type</td>
-                                            <td>{{app.types.join(', ')}}</td>
+                                            <td>{{app.types && app.types.join(', ')}}</td>
                                         </tr>
                                         <tr>
                                             <td class="name" v-translate>Channels</td>
@@ -294,6 +290,7 @@
                                         <tr>
                                             <th v-translate>Revision</th>
                                             <th v-translate>Channel</th>
+                                            <th v-translate>Architecture</th>
                                             <th v-translate>Version</th>
                                             <th v-translate>Downloads</th>
                                         </tr>
@@ -302,12 +299,13 @@
                                         <tr
                                             v-for="revision in revisions"
                                             :class="{
-                                                'strong': revision.revision == latestRevision(revision.channel)
+                                                'strong': revision.revision == latestRevision(revision.channel, revision.architecture)
                                             }"
                                             :key="revision.revision"
                                         >
                                             <td>{{revision.revision}}</td>
                                             <td>{{revision.channel.charAt(0).toUpperCase()}}{{revision.channel.slice(1)}}</td>
+                                            <td>{{revision.architecture}}</td>
                                             <td>v{{revision.version}}</td>
                                             <td>{{revision.downloads}}</td>
                                         </tr>
@@ -477,14 +475,14 @@ export default {
         removeScreenshot(screenshot) {
             this.app.screenshots = this.app.screenshots.filter((s) => (s != screenshot));
         },
-        latestRevision(channel) {
+        latestRevision(channel, arch) {
             let revision = -1;
             if (channel == 'vivid') {
                 // Don't show anything for vivid any more
                 return revision;
             }
 
-            this.app.revisions.filter((data) => (data.channel == channel))
+            this.app.revisions.filter((data) => (data.channel == channel && data.architecture == arch))
                 .forEach((data) => {
                     if (revision < data.revision) {
                         revision = data.revision;
@@ -612,35 +610,6 @@ export default {
             });
 
             return revisions;
-        },
-        filesize() {
-            let b = this.app ? this.app.filesize : 0;
-            let unit = 'B';
-
-            if (!b) {
-                b = 0;
-            }
-            else if (b > 1024) {
-                b /= 1024;
-                unit = 'KB';
-
-                if (b > 1024) {
-                    b /= 1024;
-                    unit = 'MB';
-
-                    if (b > 1024) {
-                        b /= 1024;
-                        unit = 'GB';
-
-                        if (b > 1024) {
-                            b /= 1024;
-                            unit = 'TB';
-                        }
-                    }
-                }
-            }
-
-            return `${b.toFixed(1)} ${unit}`;
         },
     },
     watch: {

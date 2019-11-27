@@ -9,40 +9,60 @@
                 <translate class="ml" :translate-params="{name: app.name}">New Revision for %{name}</translate>
             </h1>
 
+
             <form class="p-form p-form--stacked">
+                <div class="p-form__group">
+                    <label class="p-form__label" v-translate>Upload Revision via:</label>
+                    <button
+                        id="switch-on"
+                        class="p-switch"
+                        type="button"
+                        role="switch"
+                        :aria-checked="fileUpload"
+                        @click="fileUpload = !fileUpload"
+                    >
+                        <span v-translate>File</span>
+                        <span v-translate>URL</span>
+                    </button>
+                </div>
+
+                <!--
                 <div class="p-form__group">
                     <label for="channel" class="p-form__label" v-translate>Channel</label>
                     <select id="channel" class="p-form__control" v-model="channel" :disabled="saving">
                         <option value="xenial" v-translate>Xenial</option>
                     </select>
                 </div>
+                -->
 
                 <div class="divider"></div>
 
-                <div class="p-form__group">
-                    <label for="file" class="p-form__label" v-translate>File Upload</label>
-                    <input
-                        type="file"
-                        id="file"
-                        class="p-form__control"
-                        accept=".click"
-                        @change="fileChange($event.target.files)"
-                        :disabled="saving"
-                    />
+                <div v-for="revision in revisions" :key="revision.key">
+                    <div class="p-form__group" v-if="fileUpload">
+                        <label class="p-form__label" v-translate>File Upload</label>
+                        <input
+                            type="file"
+                            class="p-form__control file"
+                            accept=".click"
+                            @change="fileChange(revision, $event.target.files)"
+                            :disabled="saving"
+                        />
+                    </div>
+                    <div class="p-form__group" v-else>
+                        <label class="p-form__label" v-translate>URL</label>
+                        <input
+                            type="text"
+                            class="p-form__control"
+                            :disabled="saving"
+                            v-model="revision.downloadUrl"
+                        />
+                        <p class="small text-lightgrey" v-translate>URL of App from the Web</p>
+                    </div>
                 </div>
 
-                <h3 v-translate>OR</h3>
-
-                <div class="p-form__group">
-                    <label for="downloadUrl" class="p-form__label" v-translate>URL</label>
-                    <input
-                        type="text"
-                        id="downloadUrl"
-                        class="p-form__control"
-                        :disabled="saving"
-                        v-model="downloadUrl"
-                    />
-                    <p class="small text-lightgrey" v-translate>URL of App from the Web</p>
+                <div class="p-form__group" v-if="canAdd">
+                    <label class="p-form__label" v-translate>Add Another Architecture</label>
+                    <a class="p-button--positive" @click="addRevision()">Add</a>
                 </div>
 
                 <div class="divider"></div>
@@ -53,7 +73,7 @@
                     <p class="small text-lightgrey" v-translate>This will be added to the beginning of your current changelog</p>
                 </div>
 
-                <a class="p-button--positive" @click="save()" :disabled="saving">
+                <a class="p-button--positive" @click="save()" :disabled="saving || !canCreate">
                     <i class="fa" :class="{'fa-save': !saving, 'fa-spinner fa-spin': saving}"></i>
                     <span class="ml" v-translate>Create</span>
                 </a>
@@ -78,6 +98,14 @@ import {mapState} from 'vuex';
 import api from '@/api';
 import opengraph from '@/opengraph';
 import utils from '@/utils';
+
+function newRevision() {
+    return {
+        key: Math.random(),
+        file: null,
+        downloadUrl: null,
+    };
+}
 
 export default {
     name: 'ManageRevisions',
@@ -107,11 +135,11 @@ export default {
         return {
             app: {},
             channel: 'xenial',
-            file: null,
-            downloadUrl: '',
             loading: false,
             saving: false,
             changelog: '',
+            fileUpload: true,
+            revisions: [newRevision()],
         };
     },
     created() {
@@ -141,62 +169,88 @@ export default {
 
             this.loading = false;
         },
-        fileChange(files) {
+        addRevision() {
+            this.revisions.push(newRevision());
+        },
+        fileChange(revision, files) {
             if (files.length > 0) {
-                [this.file] = files;
+                revision.file = files[0];
             }
             else {
-                this.file = null;
+                revision.file = null;
             }
         },
-        save() {
-            if (!this.saving) {
+        async save() {
+            if (!this.saving && this.canCreate) {
                 this.saving = true;
 
-                let updateData = new FormData();
+                let first = true;
+                /* eslint-disable no-await-in-loop */
+                for (let i = 0; i < this.revisions.length; i++) {
+                    let revision = this.revisions[i];
+                    let updateData = new FormData();
 
-                if (this.file) {
-                    updateData.append('file', this.file, this.file.name);
-                }
-                else {
-                    updateData.append('downloadUrl', this.downloadUrl);
-                }
-
-                updateData.append('channel', this.channel);
-                updateData.append('changelog', this.changelog);
-
-                api.manage.revision(this.app.id, updateData, this.user.apikey).then(() => {
-                    this.file = null;
-                    document.getElementById('file').value = '';
-
-                    this.saving = false;
-
-                    let channel = this.$gettext('Xenial');
-
-                    VueNotifications.success({
-                        title: this.$gettext('Success'),
-                        message: this.$gettext('New revision for %{channel} was created!').replace('%{channel}', channel),
-                    });
-
-                    this.$router.push({name: 'manage_package', params: {id: this.app.id}});
-                }).catch((err) => {
-                    let error = this.$gettext('An unknown error has occured');
-                    if (err.response && err.response.data && err.response.data.message) {
-                        error = err.response.data.message;
+                    if (revision.file) {
+                        updateData.append('file', revision.file, revision.file.name);
+                    }
+                    else {
+                        updateData.append('downloadUrl', revision.downloadUrl);
                     }
 
-                    this.saving = false;
-                    VueNotifications.error({
-                        title: 'Error',
-                        message: error,
-                    });
+                    updateData.append('channel', 'xenial');
 
-                    utils.captureException(err);
+                    if (first) {
+                        updateData.append('changelog', this.changelog);
+                        first = false;
+                    }
+
+                    try {
+                        await api.manage.revision(this.app.id, updateData, this.user.apikey);
+                    }
+                    catch (err) {
+                        let error = this.$gettext('An unknown error has occured');
+                        if (err.response && err.response.data && err.response.data.message) {
+                            error = err.response.data.message;
+                        }
+
+                        this.saving = false;
+                        VueNotifications.error({
+                            title: 'Error',
+                            message: error,
+                        });
+
+                        utils.captureException(err);
+
+                        return;
+                    }
+                }
+
+                this.saving = false;
+
+                let channel = this.$gettext('Xenial');
+                let message = this.$gettext('New revision for %{channel} was created!').replace('%{channel}', channel);
+                if (this.revisions.length > 0) {
+                    message = this.$gettext('New revisions for %{channel} were created!').replace('%{channel}', channel);
+                }
+
+                VueNotifications.success({
+                    title: this.$gettext('Success'),
+                    message: message,
                 });
+
+                this.$router.push({name: 'manage_package', params: {id: this.app.id}});
             }
         },
     },
-    computed: mapState(['user', 'isAuthenticated']),
+    computed: {
+        ...mapState(['user', 'isAuthenticated']),
+        canAdd() {
+            return this.revisions.length < 3;
+        },
+        canCreate() {
+            return this.revisions.filter((revision) => (!revision.file && !revision.downloadUrl)).length === 0;
+        },
+    },
     watch: {
         isAuthenticated(newValue) {
             if (newValue) {
