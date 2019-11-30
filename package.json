@@ -5,6 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build-staging": "vue-cli-service build --mode staging",
     "lint": "vue-cli-service lint",
     "makemessages": "./makemessages.sh",
     "translations": "gettext-compile --output src/translations.json $(find ./po -name *.po)"

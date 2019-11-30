@@ -14,7 +14,7 @@ cd $BASE/$VERSION
 # TODO use a cached node_modules
 npm install
 npm install --only=dev
-npm run build
+npm run build$ENV
 
 rm -f $BASE/current
 ln -s $BASE/$VERSION $BASE/current
