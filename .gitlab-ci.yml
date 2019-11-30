@@ -31,7 +31,7 @@ deploy:
 deploy:
   stage: deploy
   only:
-    - master
+    - staging
   image: theopenstore/ci
   before_script:
     - eval $(ssh-agent -s)
