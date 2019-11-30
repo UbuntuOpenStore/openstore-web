@@ -1,5 +1,5 @@
 <template>
-    <div id="app">
+    <div id="app" :class="{staging: env == 'staging'}">
         <header id="navigation" class="p-navigation">
             <div class="row p-navigation__row">
                 <div class="p-navigation__banner">
@@ -8,6 +8,7 @@
                             <img src="./assets/logo.svg" alt="" class="p-navigation__image">
                             &nbsp;
                             OpenStore
+                            <span v-if="env">{{env}}</span>
                         </router-link>
                     </div>
                     <a class="p-navigation__toggle--open" :class="{'u-hide': showMenu}" title="Menu" @click="showMenu = true">
@@ -126,6 +127,7 @@ export default {
     data() {
         return {
             showMenu: false,
+            env: process.env.VUE_APP_ENV || '',
         };
     },
     async created() {
@@ -177,6 +179,10 @@ export default {
 <style>
 #app {
     margin: 0;
+}
+
+.staging .p-navigation {
+    background-color: #FF0000;
 }
 
 .p-footer {
