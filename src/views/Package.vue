@@ -57,7 +57,7 @@
                                 aria-haspopup="true"
                                 @click="showDownloadMenu = !showDownloadMenu"
                             >
-                                Download
+                                <span class="mr" v-translate>Download</span>
                                 <i
                                     class="fa"
                                     :class="{'fa-caret-down': !showDownloadMenu, 'fa-caret-up': showDownloadMenu}"
@@ -73,12 +73,12 @@
                                     <a
                                         v-for="download in app.downloads"
                                         :href="download.download_url"
-                                        :key="download.channel"
+                                        :key="download.revision"
                                         class="p-contextual-menu__link"
                                         target="_blank"
                                         @click="showDownloadMenu = false"
                                     >
-                                        {{downloadLabels[download.channel]}}
+                                        <span class="mr" v-translate>Download</span>
                                         v{{download.version}}
                                         ({{download.architecture}})
                                     </a>
@@ -311,11 +311,8 @@ export default {
             missing: false,
             error: false,
             loading: false,
-            downloadLabels: {
-                xenial: this.$gettext('Download'),
-            },
             installTitle: this.$gettext('Install via the OpenStore app'),
-            permissionLabels: {
+            permissionLabels: { // TODO make these update with the language chane
                 accounts: this.$gettext('Accounts'),
                 audio: this.$gettext('Audio'),
                 bluetooth: this.$gettext('Bluetooth'),
@@ -550,8 +547,12 @@ export default {
     }
 
     .p-contextual-menu__dropdown {
-        min-width: 210px;
-        max-width: 400px;
+        min-width: 250px;
+        max-width: 600px;
+    }
+
+    button * {
+        margin-top: 0;
     }
 
     /*
