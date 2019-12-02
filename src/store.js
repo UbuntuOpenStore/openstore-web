@@ -11,6 +11,7 @@ export default new Vuex.Store({
         isAuthenticated: false,
         user: null,
         categories: [],
+        allCategories: [],
         back: {name: 'browse'},
     },
     mutations: {
@@ -20,6 +21,9 @@ export default new Vuex.Store({
         },
         setCategories(state, categories) {
             state.categories = categories;
+        },
+        setAllCategories(state, allCategories) {
+            state.allCategories = allCategories;
         },
         setBack(state, back) {
             state.back = back;
@@ -39,8 +43,13 @@ export default new Vuex.Store({
         },
         async getCategories({commit}, lang) {
             try {
-                let categories = await api.categories(lang);
+                let [categories, allCategories] = await Promise.all([
+                    api.categories(lang),
+                    api.categories(lang, true),
+                ]);
+
                 commit('setCategories', categories);
+                commit('setAllCategories', allCategories);
             }
             catch (err) {
                 utils.captureException(err);

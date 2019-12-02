@@ -394,7 +394,7 @@ export default {
         },
         categories() {
             let category = this.category;
-            let match = this.categories.reduce((c) => (c.category == this.category));
+            let match = this.categories.find((c) => (c.category == this.category));
             if (!match) {
                 category = DEFAULT_CATEGORY;
             }

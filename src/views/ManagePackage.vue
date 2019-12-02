@@ -142,7 +142,7 @@
                             <select type="text" id="category" class="p-form__control" :disabled="saving" v-model="app.category">
                                 <option value="" v-translate>Choose a category</option>
                                 <option
-                                    v-for="category in categories"
+                                    v-for="category in allCategories"
                                     :key="category.category"
                                     :value="category.category"
                                 >
@@ -595,7 +595,7 @@ export default {
         },
     },
     computed: {
-        ...mapState(['user', 'isAuthenticated', 'categories']),
+        ...mapState(['user', 'isAuthenticated', 'allCategories']),
         revisions() {
             let revisions = this.app ? this.app.revisions : [];
             revisions.sort((a, b) => {

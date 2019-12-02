@@ -34,8 +34,14 @@ export default {
             .then(success),
     },
 
-    categories: (lang) => axios.get(`${process.env.VUE_APP_DOMAIN}/api/v3/categories?lang=${lang}`)
-        .then(success),
+    categories: (lang, all=false) => {
+        let url = `${process.env.VUE_APP_DOMAIN}/api/v3/categories?lang=${lang}`;
+        if (all) {
+            url += '&all=true';
+        }
+
+        return axios.get(url).then(success);
+    },
 
     manage: {
         search: (query, key) => axios.get(`${process.env.VUE_APP_DOMAIN}/api/v3/manage?apikey=${key}`, {
