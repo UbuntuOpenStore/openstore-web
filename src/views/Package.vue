@@ -312,7 +312,7 @@ export default {
             error: false,
             loading: false,
             installTitle: this.$gettext('Install via the OpenStore app'),
-            permissionLabels: { // TODO make these update with the language chane
+            permissionLabels: { // TODO make these update with the language change
                 accounts: this.$gettext('Accounts'),
                 audio: this.$gettext('Audio'),
                 bluetooth: this.$gettext('Bluetooth'),

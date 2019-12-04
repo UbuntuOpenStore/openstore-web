@@ -193,8 +193,11 @@ export default {
                     if (revision.file) {
                         updateData.append('file', revision.file, revision.file.name);
                     }
-                    else {
+                    else if (revision.downloadUrl) {
                         updateData.append('downloadUrl', revision.downloadUrl);
+                    }
+                    else {
+                        continue;
                     }
 
                     updateData.append('channel', 'xenial');
@@ -248,7 +251,7 @@ export default {
             return this.revisions.length < 3;
         },
         canCreate() {
-            return this.revisions.filter((revision) => (!revision.file && !revision.downloadUrl)).length === 0;
+            return this.revisions.filter((revision) => (revision.file || revision.downloadUrl)).length > 0;
         },
     },
     watch: {
