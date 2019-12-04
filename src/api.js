@@ -34,7 +34,7 @@ export default {
             .then(success),
     },
 
-    categories: (lang, all=false) => {
+    categories: (lang, all = false) => {
         let url = `${process.env.VUE_APP_DOMAIN}/api/v3/categories?lang=${lang}`;
         if (all) {
             url += '&all=true';
