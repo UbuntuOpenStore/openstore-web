@@ -28,7 +28,7 @@ deploy:
     - rsync -av --delete --exclude node_modules --exclude ".git" . root@ssh.open-store.io:/srv/openstore-web/$VERSION
     - ssh root@ssh.open-store.io "/srv/openstore-web/$VERSION/deploy/post-deploy.sh $VERSION"
 
-deploy:
+deploy_staging:
   stage: deploy
   only:
     - staging
