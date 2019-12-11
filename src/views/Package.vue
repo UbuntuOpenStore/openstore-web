@@ -49,7 +49,7 @@
                             v-translate
                         >Install</a>
 
-                        <span class="p-contextual-menu--left ml" v-if="app.downloads.length > 0">
+                        <span class="download-button p-contextual-menu--left ml" v-if="app.downloads.length > 0">
                             <button
                                 class="p-contextual-menu__toggle p-button--positive"
                                 aria-controls="#download-menu"
@@ -592,5 +592,12 @@ export default {
     .p-matrix__item:nth-child(3n) {
         border-right: 0;
         padding-right: 0;
+    }
+
+    @media screen and (max-width: 768px) {
+        .download-button {
+            width: 100%;
+            margin-left: 0;
+        }
     }
 </style>
