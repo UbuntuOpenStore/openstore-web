@@ -23,11 +23,11 @@ export default {
     },
 
     apps: {
-        search: (query) => axios.get(`${process.env.VUE_APP_DOMAIN}/api/v3/apps`, {
+        search: (query) => axios.get(`${process.env.VUE_APP_DOMAIN}/api/v4/apps`, {
             params: query,
         }).then(success),
 
-        get: (id) => axios.get(`${process.env.VUE_APP_DOMAIN}/api/v3/apps/${id}?channel=xenial`)
+        get: (id) => axios.get(`${process.env.VUE_APP_DOMAIN}/api/v4/apps/${id}?channel=xenial`)
             .then(success),
 
         stats: () => axios.get(`${process.env.VUE_APP_DOMAIN}/api/v3/stats`)
