@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2019-03-17 00:00+0000\n"
-"Last-Translator: Rúben Carneiro <rubencarneiro01@gmail.com>\n"
+"PO-Revision-Date: 2019-12-09 22:38+0000\n"
+"Last-Translator: Ivo Xavier <ivofernandes12@gmail.com>\n"
 "Language-Team: Portuguese (Portugal) <https://translate.ubports.com/projects/"
 "openstore/open-storeio/pt_PT/>\n"
 "Language: pt_PT\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.1.1\n"
+"X-Generator: Weblate 3.8\n"
 
 #: src/views/Package.vue:118
 msgid ""
@@ -85,14 +85,14 @@ msgid ""
 "contact you in the event there is an issue with your app.\n"
 "Additionally, this site uses cookies to keep you logged in to your account."
 msgstr ""
-"Qualquer dado pessoal que você decidir nos fornecer (por exemplo, seu "
-"endereço de e-mail ao se registar em uma conta para enviar seus aplicativos) "
+"Qualquer dado pessoal que você decidir nos fornecer (por exemplo, o seu "
+"endereço de e-mail ao se registar numa conta para enviar as suas aplicações) "
 "não vai além de nós,\n"
-"e não será usado para nada além de permitir que você mantenha seus "
-"aplicativos e, em casos raros,\n"
-"entrar em contacto com você no caso de haver um problema com seu "
-"aplicativo.\n"
-"Além disso, este site usa cookies para manter você ligado em sua conta."
+"e não será usado para nada além de permitir que você mantenha as suas "
+"aplicações e, em casos raros,\n"
+"entrar em contacto com você no caso de haver algum problema com a sua "
+"aplicação.\n"
+"Além disso, este site usa cookies para manter você ligado na sua conta."
 
 #: src/views/Manage.vue:14
 msgid "API Key"
@@ -208,10 +208,10 @@ msgid ""
 "content policy.\n"
 "You can review the rules and policies before uploading your app."
 msgstr ""
-"Os aplicativos enviados para o OpenStore estão sujeitos às nossas regras de "
+"As aplicações enviadas para o OpenStore estão sujeitos às nossas regras de "
 "envio e política de conteúdo.\n"
-"Você pode analisar as regras e políticas antes de fazer o upload do seu "
-"aplicativo."
+"Você pode analisar as regras e políticas antes de fazer o upload da sua "
+"aplicação."
 
 #: src/views/ManagePackage.vue:258 src/views/Package.vue:193
 msgid "Architecture"
@@ -232,11 +232,11 @@ msgstr "Retroceder"
 
 #: src/views/Badge.vue:28 src/views/Badge.vue:32 src/views/ManagePackage.vue:70
 msgid "Badge"
-msgstr ""
+msgstr "Emblema"
 
 #: src/views/About.vue:18
 msgid "Badges"
-msgstr ""
+msgstr "Emblemas"
 
 #: src/views/Package.vue:268
 msgid "Bluetooth"
@@ -375,7 +375,7 @@ msgstr "Estatísticas de download"
 
 #: src/views/About.vue:43
 msgid "Download the OpenStore App"
-msgstr "Descarregue o aplicativo OpenStore"
+msgstr "Descarregue a aplicação da OpenStore"
 
 #: src/views/Manage.vue:50 src/views/Manage.vue:70
 #: src/views/ManagePackage.vue:297
@@ -438,7 +438,7 @@ msgstr "Jogos de azar"
 
 #: src/views/About.vue:25
 msgid "Get your badge"
-msgstr ""
+msgstr "Obtém o teu emblema"
 
 #: src/views/Submit.vue:39
 msgid ""
@@ -448,8 +448,8 @@ msgid ""
 "background\" will do.\n"
 "List all the special features you have, if there are more."
 msgstr ""
-"Dê uma breve explicação do motivo pelo qual você não pode publicar o "
-"aplicativo sem privilégios extras.\n"
+"Dê uma breve explicação do motivo pelo qual você não pode publicar a sua "
+"aplicação sem privilégios extras.\n"
 "Não há necessidade de entrar em detalhes, um forro como \"precisa executar "
 "um daemon no fundo\" vai fazer.\n"
 "Liste todos os recursos especiais que você tem, se houver mais."
@@ -488,9 +488,9 @@ msgid ""
 "for that one cool feature, publish a stripped down version!\n"
 "Not everyone will want to install apps with less confinement."
 msgstr ""
-"Se um aplicativo puder ser publicado sem revisão manual, se não for esse "
+"Se uma aplicação puder ser publicada sem revisão manual, se não for esse "
 "recurso interessante, publique uma versão simplificada!\n"
-"Nem todo mundo vai querer instalar aplicativos com menos confinamento."
+"Nem toda gente vai querer instalar aplicações com menos confinamento."
 
 #: src/views/Submit.vue:107
 msgid "Illegal Activities"
@@ -498,7 +498,7 @@ msgstr "Atividades Ilegais"
 
 #: src/views/Package.vue:277
 msgid "In App Purchases"
-msgstr "Compras dentro do aplicativo"
+msgstr "Compras dentro da aplicação"
 
 #: src/views/ManagePackage.vue:60 src/views/Package.vue:152
 msgid "Info"
@@ -567,7 +567,7 @@ msgstr "Entrar"
 
 #: src/views/Submit.vue:125
 msgid "Login to submit your app"
-msgstr "Faça o login para enviar seu aplicativo"
+msgstr "Faça o login para enviar a sua aplicação"
 
 #: src/views/Login.vue:7
 msgid "Login via GitHub"
@@ -682,11 +682,11 @@ msgid ""
 "The OpenStore team thanks you for helping us promote a better enviroment for "
 "everyone."
 msgstr ""
-"Um dos principais objetivos do OpenStore é fornecer uma loja de aplicativos "
+"Um dos principais objetivos da OpenStore é fornecer uma loja de aplicações "
 "segura para pessoas de todas as idades.\n"
 "Para atingir esse objetivo, não permitimos a publicação de determinados "
-"tipos de aplicativo.\n"
-"O não cumprimento das diretrizes resultará na remoção do seu aplicativo.\n"
+"tipos de aplicações\n"
+"O não cumprimento das diretrizes resultará na remoção da sua aplicação.\n"
 "Qualquer conta com infrações graves pode estar sujeita a rescisão.\n"
 "A equipe do OpenStore agradece por nos ajudar a promover um ambiente melhor "
 "para todos."
@@ -711,7 +711,7 @@ msgstr ""
 
 #: src/views/About.vue:47
 msgid "Open the terminal app"
-msgstr "Abra o aplicativo do terminal"
+msgstr "Abra a aplicação do terminal"
 
 #: src/views/About.vue:145
 msgid "OpenStore API/Server Contributors"
@@ -727,7 +727,7 @@ msgstr "Contribuidores do OpenStore App"
 
 #: src/views/Badge.vue:3
 msgid "OpenStore Badges"
-msgstr ""
+msgstr "Emblemas OpenStore"
 
 #: src/views/About.vue:67
 msgid "OpenStore group on Telegram"
@@ -775,7 +775,7 @@ msgstr "Apps proibidos"
 
 #: src/views/About.vue:20
 msgid "Promote your app on the OpenStore!"
-msgstr ""
+msgstr "Promova a sua app na OpenStore!"
 
 #: src/views/Badge.vue:5
 msgid ""
@@ -784,6 +784,9 @@ msgid ""
 "are available in several different languages and in both PNG and SVG\n"
 "formats."
 msgstr ""
+"Promova a sua app na OpenStore! Adicione estes emblemas à sua página web,\n"
+"repositório, rede social ou em algum lado na internet. Estes emblemas\n"
+"estão disponíveis em diversas linguagens em ambos formatos PNG e SVG."
 
 #: src/views/ManagePackage.vue:14
 msgid "Public Link"
@@ -855,11 +858,11 @@ msgstr "Guardar"
 
 #: src/components/Types.vue:4 src/views/Stats.vue:109
 msgid "Scope"
-msgstr "Escopo"
+msgstr "Scope"
 
 #: src/views/Browse.vue:34
 msgid "Scopes"
-msgstr "Escopos"
+msgstr "Scopes"
 
 #: src/views/Package.vue:107
 msgid "Screenshots"
@@ -1190,7 +1193,7 @@ msgstr "URL"
 
 #: src/views/ManageRevisions.vue:44
 msgid "URL of App from the Web"
-msgstr ""
+msgstr "URL da app na Web"
 
 #: src/views/Package.vue:288
 msgid "User Metrics"
@@ -1238,7 +1241,7 @@ msgstr "Vista Web"
 
 #: src/views/Manage.vue:4
 msgid "Welcome %{name}!"
-msgstr ""
+msgstr "Bem-vindo(a) %{name}!"
 
 #: src/views/ManageRevisions.vue:15 src/views/ManageRevisions.vue:174
 msgid "Xenial"
