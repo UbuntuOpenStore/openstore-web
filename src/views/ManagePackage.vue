@@ -476,12 +476,16 @@ export default {
             this.app.screenshots = this.app.screenshots.filter((s) => (s != screenshot));
         },
         latestRevision(channel, arch) {
-            let revision = -1;
             if (channel == 'vivid') {
                 // Don't show anything for vivid any more
-                return revision;
+                return -1;
             }
 
+            if (!this.app.architectures.includes(arch)) {
+                return -1;
+            }
+
+            let revision = -1;
             this.app.revisions.filter((data) => (data.channel == channel && data.architecture == arch))
                 .forEach((data) => {
                     if (revision < data.revision) {
