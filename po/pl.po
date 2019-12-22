@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-30 00:38-0500\n"
-"PO-Revision-Date: 2019-12-22 01:01+0000\n"
+"PO-Revision-Date: 2020-01-19 19:40+0000\n"
 "Last-Translator: Daniel Frańczak <danielfranczak5@wp.pl>\n"
 "Language-Team: Polish <https://translate.ubports.com/projects/openstore/"
 "open-storeio/pl/>\n"
@@ -631,7 +631,7 @@ msgstr "Utworzono nowe wersje dla %{channel}!"
 
 #: src/views/Browse.vue:44
 msgid "Newest"
-msgstr "Najnowsze"
+msgstr "Najnowsza"
 
 #: src/views/ManagePackage.vue:31
 msgid "No"
@@ -651,23 +651,23 @@ msgstr "Żaden"
 
 #: src/views/Manage.vue:75
 msgid "Not published"
-msgstr ""
+msgstr "Nieopublikowana"
 
 #: src/views/ManagePackage.vue:161
 msgid "NSFW"
-msgstr ""
+msgstr "Nieodpowiednia zawartość"
 
 #: src/views/Browse.vue:90
 msgid "NSFW content"
-msgstr ""
+msgstr "Nieodpowiednia zawartość"
 
 #: src/views/Browse.vue:45
 msgid "Oldest"
-msgstr ""
+msgstr "Najstarsza"
 
 #: src/views/Browse.vue:47
 msgid "Oldest Update"
-msgstr ""
+msgstr "Najstarsza aktualizacja"
 
 #: src/views/Submit.vue:60
 msgid ""
@@ -677,52 +677,65 @@ msgid ""
 "Any account with serious infractions may be subject to termination.\n"
 "The OpenStore team thanks you for helping us promote a better enviroment for everyone."
 msgstr ""
+"Jednym z głównych celów OpenStore jest zapewnienie bezpiecznego sklepu z "
+"aplikacjami dla osób w każdym wieku.\n"
+"Aby osiągnąć ten cel, nie zezwalamy na publikowanie niektórych rodzajów "
+"aplikacji.\n"
+"Nieprzestrzeganie tych wytycznych spowoduje usunięcie Twojej aplikacji.\n"
+"Każde konto z poważnymi wykroczeniami może zostać rozwiązane.\n"
+"Zespół OpenStore dziękuje za pomoc w promowaniu lepszego środowiska dla "
+"wszystkich."
 
 #: src/views/Submit.vue:48
 msgid ""
 "Only open source applications allowed for manual review:\n"
 "As the applications might have arbitrary access to the device, every manually reviewed app will get a source code review."
 msgstr ""
+"Tylko aplikacje open source są dozwolone do ręcznego przeglądu:\n"
+"Ponieważ aplikacje mogą mieć dowolny dostęp do urządzenia, każda ręcznie "
+"sprawdzona aplikacja otrzyma przegląd kodu źródłowego."
 
 #: src/views/ManagePackage.vue:223
 msgid "Only YouTube videos are supported at this time. Make sure the url is for the embedded video!"
 msgstr ""
+"Obecnie obsługiwane są tylko filmy z YouTube. Upewnij się, że adres URL "
+"zawiera osadzone wideo!"
 
 #: src/views/About.vue:47
 msgid "Open the terminal app"
-msgstr ""
+msgstr "Otwórz aplikację Terminal"
 
 #: src/views/About.vue:147
 msgid "OpenStore API/Server Contributors"
-msgstr ""
+msgstr "OpenStore API/Współtwórcy serwerów"
 
 #: src/views/Submit.vue:58
 msgid "OpenStore App Content Policy"
-msgstr ""
+msgstr "Polityka treści aplikacji OpenStore"
 
 #: src/views/About.vue:157
 msgid "OpenStore App Contributors"
-msgstr ""
+msgstr "Współtwórcy aplikacji OpenStore"
 
 #: src/views/Badge.vue:3
 msgid "OpenStore Badges"
-msgstr ""
+msgstr "Plakietki OpenStore"
 
 #: src/views/About.vue:67
 msgid "OpenStore group on Telegram"
-msgstr ""
+msgstr "Grupa OpenStore na Telegramie"
 
 #: src/views/About.vue:93
 msgid "OpenStore source on GitLab"
-msgstr ""
+msgstr "Kod źródłowy OpenStore na GitLab"
 
 #: src/views/About.vue:152
 msgid "OpenStore Website Contributors"
-msgstr ""
+msgstr "Współtwórcy witryny OpenStore"
 
 #: src/views/ManagePackage.vue:245
 msgid "Package Info"
-msgstr ""
+msgstr "Informacje o pakiecie"
 
 #: src/views/Package.vue:218
 msgid "Packager/Publisher"
@@ -730,7 +743,7 @@ msgstr "Programista/Wydawca"
 
 #: src/views/NotFound.vue:3
 msgid "Page Not Found"
-msgstr ""
+msgstr "Strona nie znaleziona"
 
 #: src/views/Package.vue:111 src/views/Package.vue:166
 msgid "Permissions"
@@ -738,19 +751,19 @@ msgstr "Uprawnienia"
 
 #: src/views/Package.vue:338
 msgid "Picture Files"
-msgstr ""
+msgstr "Pliki obrazów"
 
 #: src/views/ManagePackage.vue:43
 msgid "Presentation"
-msgstr ""
+msgstr "Prezentacja"
 
 #: src/views/Submit.vue:69
 msgid "Prohibited Apps"
-msgstr ""
+msgstr "Zabronione aplikacje"
 
 #: src/views/About.vue:20
 msgid "Promote your app on the OpenStore!"
-msgstr ""
+msgstr "Promuj swoją aplikację w sklepie OpenStore!"
 
 #: src/views/Badge.vue:5
 msgid ""
@@ -759,74 +772,78 @@ msgid ""
 "are available in several different languages and in both PNG and SVG\n"
 "formats."
 msgstr ""
+"Promuj swoją aplikację w sklepie OpenStore! Dodaj te plakietki do swojej "
+"witryny, \n"
+"repozytorium, mediów społecznościowych lub dowolnego miejsca w Internecie. \n"
+"Plakietki dostępne są w kilku różnych językach oraz w formatach PNG i SVG."
 
 #: src/views/ManagePackage.vue:14
 msgid "Public Link"
-msgstr ""
+msgstr "Link publiczny"
 
 #: src/views/ManagePackage.vue:21
 msgid "Publish"
-msgstr ""
+msgstr "Publikuj"
 
 #: src/views/Manage.vue:74 src/views/Package.vue:241
 msgid "Published"
-msgstr ""
+msgstr "Opublikowane"
 
 #: src/views/ManagePackage.vue:321
 msgid "Published Date"
-msgstr ""
+msgstr "Data publikacji"
 
 #: src/views/Package.vue:339
 msgid "Push Notifications"
-msgstr ""
+msgstr "Powiadomienia push"
 
 #: src/views/Package.vue:334
 msgid "Read Music Files"
-msgstr ""
+msgstr "Czyta pliki muzyczne"
 
 #: src/views/Package.vue:337
 msgid "Read Picture Files"
-msgstr ""
+msgstr "Czyta pliki obrazów"
 
 #: src/views/Package.vue:342
 msgid "Read Video Files"
-msgstr ""
+msgstr "Czyta pliki wideo"
 
 #: src/views/Browse.vue:41
 msgid "Relevance"
-msgstr ""
+msgstr "Trafność"
 
 #: src/App.vue:103
 msgid "Report an Issue"
-msgstr ""
+msgstr "Zgłoś problem"
 
 #: src/views/Package.vue:429
 msgid "Restricted permission"
-msgstr ""
+msgstr "Ograniczone pozwolenie"
 
 #: src/views/ManagePackage.vue:290
 msgid "Revision"
-msgstr ""
+msgstr "Zmiana"
 
 #: src/App.vue:108 src/views/Feeds.vue:3
 msgid "RSS Feeds"
-msgstr ""
+msgstr "Kanały RSS"
 
 #: src/views/Submit.vue:4
 msgid "Rules for Submission"
-msgstr ""
+msgstr "Zasady składania wniosków"
 
 #: src/views/Submit.vue:31
 msgid "Rules for Submissions Requiring Manual Review"
-msgstr ""
+msgstr "Zasady dotyczące zgłoszeń wymagających ręcznego przeglądu"
 
 #: src/views/About.vue:50
 msgid "Run the command:"
-msgstr ""
+msgstr "Uruchom polecenie:"
 
 #: src/views/ManagePackage.vue:346
 msgid "Save"
-msgstr ""
+msgstr "Zapisz"
 
 #: src/components/Types.vue:4 src/views/Stats.vue:109
 msgid "Scope"
@@ -834,15 +851,15 @@ msgstr "Scope"
 
 #: src/views/Browse.vue:34
 msgid "Scopes"
-msgstr ""
+msgstr "Scopes"
 
 #: src/views/Package.vue:138
 msgid "Screenshots"
-msgstr ""
+msgstr "Zrzuty ekranu"
 
 #: src/views/ManagePackage.vue:106
 msgid "Screenshots (Limit 5)"
-msgstr ""
+msgstr "Zrzuty ekranu (limit 5)"
 
 #: src/views/Browse.vue:9 src/views/Manage.vue:26
 msgid "Search"
@@ -851,91 +868,95 @@ msgstr "Wyszukaj"
 #: src/views/Submit.vue:35
 msgid "Send us a link to a repository for your app to our telegram group along with some instructions on how to build it."
 msgstr ""
+"Wyślij nam link do repozytorium Twojej aplikacji na naszą grupę na "
+"Telegramie wraz z instrukcjami, jak ją zbudować."
 
 #: src/views/Package.vue:340
 msgid "Sensors"
-msgstr ""
+msgstr "Czujniki"
 
 #: src/views/Submit.vue:74
 msgid "Sexually Explicit Content"
-msgstr ""
+msgstr "Treści o charakterze jednoznacznie seksualnym"
 
 #: src/views/Package.vue:148
 msgid "Show NSFW Content"
-msgstr ""
+msgstr "Pokaż nieodpowiednią zawartość"
 
 #: src/App.vue:98
 msgid "Site Status"
-msgstr ""
+msgstr "Status strony"
 
 #: src/views/Browse.vue:39
 msgid "Sort By"
-msgstr ""
+msgstr "Sortuj według"
 
 #: src/views/Package.vue:225
 msgid "Source"
-msgstr ""
+msgstr "Kod źródłowy"
 
 #: src/views/ManagePackage.vue:206
 msgid "Source URL"
-msgstr ""
+msgstr "Źródłowy adres URL"
 
 #: src/views/ManagePackage.vue:65 src/views/Package.vue:193
 #: src/views/Stats.vue:3 src/views/Stats.vue:92 src/views/Stats.vue:96
 msgid "Stats"
-msgstr ""
+msgstr "Statystyki"
 
 #: src/views/Manage.vue:48
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 #: src/App.vue:28 src/views/Submit.vue:162
 msgid "Submit"
-msgstr ""
+msgstr "Prześlij"
 
 #: src/views/Manage.vue:10 src/views/Submit.vue:129 src/views/Submit.vue:189
 #: src/views/Submit.vue:193
 msgid "Submit App"
-msgstr ""
+msgstr "Prześlij aplikację"
 
 #: src/views/About.vue:136
 msgid "Submit your app"
-msgstr ""
+msgstr "Prześlij swoją aplikację"
 
 #: src/views/ManagePackage.vue:549 src/views/ManagePackage.vue:574
 #: src/views/ManageRevisions.vue:237
 msgid "Success"
-msgstr ""
+msgstr "Sukces"
 
 #: src/views/Package.vue:221
 msgid "Support"
-msgstr ""
+msgstr "Wsparcie"
 
 #: src/views/ManagePackage.vue:211
 msgid "Support URL"
-msgstr ""
+msgstr "Wsparcie URL"
 
 #: src/views/ManagePackage.vue:85
 msgid "Tag Line"
-msgstr ""
+msgstr "Linia tekstu"
 
 #: src/views/About.vue:102
 msgid "Terms"
-msgstr ""
+msgstr "Warunki"
 
 #: src/views/Package.vue:13
 msgid "The app you are looking for has been removed or does not exist"
-msgstr ""
+msgstr "Aplikacja, której szukasz, została usunięta lub nie istnieje"
 
 #: src/views/About.vue:97
 msgid ""
 "The apps available for download from the OpenStore have their own licencing and terms.\n"
 "Consult each individual app's page for more information."
 msgstr ""
+"Aplikacje dostępne do pobrania z OpenStore mają własne licencje i warunki.\n"
+"Więcej informacji można znaleźć na stronie każdej aplikacji."
 
 #: src/views/ManagePackage.vue:550
 msgid "The changes to %{name} were saved!"
-msgstr ""
+msgstr "Zmiany w %{name} zostały zapisane!"
 
 #: src/views/About.vue:104
 msgid ""
@@ -945,16 +966,27 @@ msgid ""
 "a manual review process to check for potential security or privacy issues.\n"
 "This checking is far from exhaustive though, and there are no guarantees."
 msgstr ""
+"OpenStore to projekt wolontariatu non-profit.\n"
+"Chociaż dokładamy wszelkich starań, aby wszystko z repozytorium było "
+"bezpieczne w instalacji, należy z niego korzystać NA WŁASNE RYZYKO.\n"
+"Aplikacje przesłane do OpenStore będą podlegać automatycznemu procesowi "
+"sprawdzania lub\n"
+" ręcznemu procesowi sprawdzania pod kątem potencjalnych problemów z "
+"bezpieczeństwem lub prywatnością.\n"
+"Ta kontrola nie jest jednak wyczerpująca i nie ma żadnych gwarancji."
 
 #: src/views/About.vue:31
 msgid ""
 "The OpenStore app is installed by default on the UBports builds of Ubuntu Touch.\n"
 "But if you need to install the OpenStore manually, follow these steps:"
 msgstr ""
+"Aplikacja OpenStore jest domyślnie instalowana w kompilacjach UBports na "
+"Ubuntu Touch.\n"
+"Ale jeśli musisz ręcznie zainstalować OpenStore, wykonaj następujące kroki:"
 
 #: src/views/About.vue:143
 msgid "The OpenStore is made possible by many amazing contributors:"
-msgstr ""
+msgstr "OpenStore jest stworzony dzięki wielu niesamowitym współautorom:"
 
 #: src/views/About.vue:5
 msgid ""
@@ -964,6 +996,14 @@ msgid ""
 "You can also upload and manage your own apps for publication.\n"
 "The OpenStore encourages the apps published within to be open source, but also accepts proprietary apps."
 msgstr ""
+"OpenStore to oficjalny sklep z aplikacjami dla Ubuntu Touch.\n"
+"Jest to projekt typu open source prowadzony przez zespół wolontariuszy z "
+"pomocą społeczności.\n"
+"Możesz odkrywać i instalować nowe aplikacje na urządzeniu Ubuntu Touch.\n"
+"Możesz także przesyłać własne aplikacje i zarządzać nimi w celu ich "
+"publikacji.\n"
+"OpenStore zachęca do publikowania aplikacji  typu open source, ale akceptuje "
+"również aplikacje zastrzeżone."
 
 #: src/views/About.vue:112
 msgid ""
@@ -975,40 +1015,66 @@ msgid ""
 "are sent to the server to allow it to filter apps to only what you can install and present your native language where possible.\n"
 "This information is not logged or stored and cannot be used to uniquely identify you."
 msgstr ""
+"OpenStore szanuje Twoją prywatność.\n"
+"Nie śledzimy Ciebie ani Twojego urządzenia.\n"
+"Nie potrzebujesz konta, aby pobierać i instalować aplikacje, a my nie "
+"śledzimy twoich pobrań.\n"
+"Aby uzyskać informacje dla programistów, liczymy liczbę pobrań na wersję "
+"aplikacji.\n"
+"Informacje o twoim urządzeniu (architekturze procesora, wersjach środowiska, "
+"wersji systemu operacyjnego i języku systemu operacyjnego) \n"
+"są wysyłane do serwera, aby umożliwić filtrowanie aplikacji tylko do tego, "
+"co możesz zainstalować, gdzie to możliwe i pokazać aplikację w twoim języku."
+"\n"
+"Informacje te nie są rejestrowane ani przechowywane i nie można ich użyć do "
+"jednoznacznej identyfikacji użytkownika."
 
 #: src/views/NotFound.vue:5
 msgid "The page you are looking for has been removed or does not exist"
-msgstr ""
+msgstr "Strona, której szukasz, została usunięta lub nie istnieje"
 
 #: src/views/About.vue:80
 msgid ""
 "The source code for OpenStore related projects is available under the GPL v3.\n"
 "You can find the code on the OpenStore GitLab page."
 msgstr ""
+"Kod źródłowy dla projektów związanych z OpenStore jest dostępny na licencji "
+"GPL v3.\n"
+"Kod OpenStore możesz znaleźć na stronie GitLab."
 
 #: src/views/Package.vue:17
 msgid "There was an error trying to find this app, please refresh and try again."
 msgstr ""
+"Podczas próby znalezienia tej aplikacji wystąpił błąd. Odśwież stronę i "
+"spróbuj ponownie."
 
 #: src/views/Browse.vue:65 src/views/Manage.vue:31
 msgid "There was an error trying to load the app list, please refresh and try again."
 msgstr ""
+"Wystąpił błąd podczas próby załadowania listy aplikacji. Odśwież stronę i "
+"spróbuj ponownie."
 
 #: src/views/Stats.vue:5
 msgid "There was an error trying to load the stats, please refresh and try again."
 msgstr ""
+"Podczas próby załadowania statystyk wystąpił błąd. Odśwież stronę i spróbuj "
+"ponownie."
 
 #: src/views/ManagePackage.vue:163
 msgid "This app contains NSFW material"
-msgstr ""
+msgstr "Ta aplikacja zawiera nieodpowiednie treści"
 
 #: src/views/Package.vue:441
 msgid "This app does not have access to restricted system data, see permissions for more details"
 msgstr ""
+"Ta aplikacja nie ma dostępu do ograniczonych danych systemowych, zobacz "
+"uprawnienia, aby uzyskać więcej informacji"
 
 #: src/views/Package.vue:443
 msgid "This app has access to restricted system data, see permissions for more details"
 msgstr ""
+"Ta aplikacja ma dostęp do ograniczonych danych systemowych, zobacz "
+"uprawnienia, aby uzyskać więcej informacji"
 
 #: src/views/Submit.vue:141
 msgid ""
@@ -1017,26 +1083,32 @@ msgid ""
 "For example: \"openstore.openstore-team\", where \"openstore\" is the app and \"openstore-team\"\n"
 "is the group or individual authoring the app."
 msgstr ""
+"To unikalny identyfikator Twojej aplikacji.\n"
+"Musi dokładnie pasować do pola \"nazwa\" w plikach click manifest.json i "
+"musi zawierać wszystkie małe litery.\n"
+"Na przykład: \"openstore.openstore-team\", gdzie \"openstore\" to aplikacja, "
+"a \"openstore-team\" \n"
+"to grupa lub osoba tworząca aplikację."
 
 #: src/views/ManageRevisions.vue:72
 msgid "This will be added to the beginning of your current changelog"
-msgstr ""
+msgstr "Zostanie to dodane na początku bieżącego dziennika zmian"
 
 #: src/views/ManagePackage.vue:80
 msgid "Title"
-msgstr ""
+msgstr "Tytuł"
 
 #: src/views/Browse.vue:42
 msgid "Title (A-Z)"
-msgstr ""
+msgstr "Tytuł (A-Z)"
 
 #: src/views/Browse.vue:43
 msgid "Title (Z-A)"
-msgstr ""
+msgstr "Tytuł (Z-A)"
 
 #: src/views/ManagePackage.vue:312
 msgid "Total"
-msgstr ""
+msgstr "Całkowity"
 
 #: src/views/Package.vue:201
 msgid "Total downloads"
@@ -1044,130 +1116,135 @@ msgstr "Liczba pobrań wszystkich wersji"
 
 #: src/views/Manage.vue:79
 msgid "Total:"
-msgstr ""
+msgstr "Całkowity:"
 
 #: src/views/ManagePackage.vue:275 src/views/Package.vue:253
 msgid "Translation Languages"
-msgstr ""
+msgstr "Języki tłumaczenia"
 
 #: src/views/Browse.vue:102 src/views/Manage.vue:95
 msgid "Try searching for something else"
-msgstr ""
+msgstr "Spróbuj wyszukać coś innego"
 
 #: src/views/Browse.vue:29 src/views/ManagePackage.vue:266
 msgid "Type"
-msgstr ""
+msgstr "Typ"
 
 #: src/views/About.vue:14
 msgid "Ubuntu Touch"
-msgstr ""
+msgstr "Ubuntu Touch"
 
 #: src/views/Browse.vue:3
 msgid "Ubuntu Touch Apps"
-msgstr ""
+msgstr "Aplikacje Ubuntu Touch"
 
 #: src/views/Stats.vue:106
 msgid "Uncategorized"
-msgstr ""
+msgstr "Bez kategorii"
 
 #: src/views/Package.vue:180
 msgid "Unrestricted read access to:"
-msgstr ""
+msgstr "Nieograniczony dostęp do odczytu do:"
 
 #: src/views/Package.vue:176
 msgid "Unrestricted write access to:"
-msgstr ""
+msgstr "Nieograniczony dostęp do zapisu do:"
 
 #: src/views/Package.vue:237
 msgid "Updated"
-msgstr ""
+msgstr "Zaktualizowano"
 
 #: src/views/Feeds.vue:18
 msgid "Updated Apps"
-msgstr ""
+msgstr "Zaktualizowane aplikacje"
 
 #: src/views/ManagePackage.vue:329
 msgid "Updated Date"
-msgstr ""
+msgstr "Data zaktualizowania"
 
 #: src/views/ManageRevisions.vue:14
 msgid "Upload Revision via:"
-msgstr ""
+msgstr "Prześlij wersję przez:"
 
 #: src/views/ManageRevisions.vue:24 src/views/ManageRevisions.vue:51
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: src/views/ManageRevisions.vue:58
 msgid "URL of App from the Web"
-msgstr ""
+msgstr "URL aplikacji z sieci"
 
 #: src/views/Package.vue:341
 msgid "User Metrics"
-msgstr ""
+msgstr "Dane użytkownika"
 
 #: src/views/Manage.vue:49 src/views/ManagePackage.vue:293
 msgid "Version"
-msgstr ""
+msgstr "Wersja"
 
 #: src/views/Package.vue:344
 msgid "Video"
-msgstr ""
+msgstr "Wideo"
 
 #: src/views/Package.vue:343
 msgid "Video Files"
-msgstr ""
+msgstr "Pliki wideo"
 
 #: src/views/ManagePackage.vue:221
 msgid "Video URL"
-msgstr ""
+msgstr "URL wideo"
 
 #: src/views/About.vue:37
 msgid "View Install Instructions"
-msgstr ""
+msgstr "Zobacz instrukcje instalacji"
 
 #: src/views/Submit.vue:87
 msgid "Violence"
-msgstr ""
+msgstr "Przemoc"
 
 #: src/components/Types.vue:5 src/views/Stats.vue:110
 msgid "Web App"
-msgstr ""
+msgstr "Web App"
 
 #: src/components/Types.vue:6 src/views/Stats.vue:111
 msgid "Web App+"
-msgstr ""
+msgstr "Web App+"
 
 #: src/views/Browse.vue:33
 msgid "Web Apps"
-msgstr ""
+msgstr "Web Apps"
 
 #: src/views/Package.vue:345
 msgid "Webview"
-msgstr ""
+msgstr "Webview"
 
 #: src/views/Manage.vue:4
 msgid "Welcome %{name}!"
-msgstr ""
+msgstr "Witaj %{name}!"
 
 #: src/views/ManageRevisions.vue:8 src/views/ManageRevisions.vue:230
 msgid "Xenial"
-msgstr ""
+msgstr "Xenial"
 
 #: src/views/ManagePackage.vue:30
 msgid "Yes"
-msgstr ""
+msgstr "Tak"
 
 #: src/views/Submit.vue:10
 msgid "You are only allowed to publish apps that you have permission to distribute."
 msgstr ""
+"Możesz publikować tylko aplikacje, do których masz uprawnienia "
+"rozpowszechniania ich."
 
 #: src/views/Submit.vue:22
 msgid "You must read over the content policy detailed below."
-msgstr ""
+msgstr "Musisz zapoznać się z polityką treści wyszczególnioną poniżej."
 
 #: src/views/Submit.vue:13
 msgid ""
 "Your app can be pulled without warning at the discretion of our admins.\n"
 "Where possible, we will contact you regarding any such actions."
 msgstr ""
+"Twoja aplikacja może zostać zdjęta bez ostrzeżenia według uznania naszych "
+"administratorów.\n"
+"W miarę możliwości skontaktujemy się z Tobą w sprawie takich działań."
