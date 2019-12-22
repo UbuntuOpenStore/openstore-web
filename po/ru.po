@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2019-12-15 01:01+0000\n"
-"Last-Translator: Dmitriy Pushkov <ezze@ezze.org>\n"
+"PO-Revision-Date: 2019-12-22 01:01+0000\n"
+"Last-Translator: kalinovka <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/openstore/"
 "open-storeio/ru/>\n"
 "Language: ru\n"
@@ -200,6 +200,9 @@ msgid ""
 "privileges without user consent,\n"
 "or executing malicious process are strictly prohibited."
 msgstr ""
+"Приложения, которые замечены в краже пользовательских данных, попытках "
+"повышения своих привилегий без согласия пользователя или запуске вредоносных "
+"процессов, будут запрещены и подлежат удалению."
 
 #: src/views/About.vue:129
 msgid ""
@@ -207,35 +210,38 @@ msgid ""
 "content policy.\n"
 "You can review the rules and policies before uploading your app."
 msgstr ""
+"Приложения, размещаемые в OpenStore, подчиняются нашим правилам размещения и "
+"управления контентом.\n"
+"Вы можете ознакомиться с ними до загрузки своего приложения."
 
 #: src/views/ManagePackage.vue:258 src/views/Package.vue:193
 msgid "Architecture"
-msgstr ""
+msgstr "Архитектура"
 
 #: src/views/Package.vue:267
 msgid "Audio"
-msgstr ""
+msgstr "Аудио"
 
 #: src/views/Manage.vue:47 src/views/ManagePackage.vue:254
 #: src/views/Package.vue:155
 msgid "Author"
-msgstr ""
+msgstr "Автор"
 
 #: src/views/Package.vue:7
 msgid "Back"
-msgstr ""
+msgstr "Назад"
 
 #: src/views/Badge.vue:28 src/views/Badge.vue:32 src/views/ManagePackage.vue:70
 msgid "Badge"
-msgstr ""
+msgstr "Эмблема"
 
 #: src/views/About.vue:18
 msgid "Badges"
-msgstr ""
+msgstr "Эмблемы"
 
 #: src/views/Package.vue:268
 msgid "Bluetooth"
-msgstr ""
+msgstr "Bluetoоth"
 
 #: src/App.vue:31
 msgid "Browse"
@@ -247,58 +253,58 @@ msgstr ""
 
 #: src/views/About.vue:74
 msgid "Bug Tracker"
-msgstr ""
+msgstr "Багтрекер"
 
 #: src/views/Package.vue:269
 msgid "Calendar"
-msgstr ""
+msgstr "Календарь"
 
 #: src/views/Package.vue:270
 msgid "Camera"
-msgstr ""
+msgstr "Камера"
 
 #: src/views/ManagePackage.vue:358 src/views/ManageRevisions.vue:66
 #: src/views/Submit.vue:167
 msgid "Cancel"
-msgstr ""
+msgstr "Отмена"
 
 #: src/views/Browse.vue:14 src/views/ManagePackage.vue:140
 #: src/views/Package.vue:177
 msgid "Category"
-msgstr ""
+msgstr "Категория"
 
 #: src/views/ManagePackage.vue:101 src/views/ManageRevisions.vue:50
 #: src/views/Package.vue:128
 msgid "Changelog"
-msgstr ""
+msgstr "Список изменений"
 
 #: src/views/ManagePackage.vue:295 src/views/ManageRevisions.vue:13
 msgid "Channel"
-msgstr ""
+msgstr "Канал"
 
 #: src/views/ManagePackage.vue:274
 msgid "Channels"
-msgstr ""
+msgstr "Каналы"
 
 #: src/App.vue:83
 msgid "Chat with us on Telegram"
-msgstr ""
+msgstr "Напишите нам в Telegram"
 
 #: src/views/Submit.vue:81
 msgid "Child Endangerment"
-msgstr ""
+msgstr "Ограничения для детей"
 
 #: src/views/ManagePackage.vue:142
 msgid "Choose a category"
-msgstr ""
+msgstr "Выберите категорию"
 
 #: src/views/ManagePackage.vue:173
 msgid "Choose a license"
-msgstr ""
+msgstr "Выберите лицензию"
 
 #: src/views/ManagePackage.vue:231
 msgid "Choose a maintainer"
-msgstr ""
+msgstr "Выберите разработчика"
 
 #: src/views/Package.vue:271
 msgid "Connectivity"
@@ -310,7 +316,7 @@ msgstr ""
 
 #: src/views/Package.vue:272
 msgid "Contacts"
-msgstr ""
+msgstr "Контакты"
 
 #: src/views/Package.vue:274
 msgid "Content Exchange"
@@ -326,7 +332,7 @@ msgstr ""
 
 #: src/components/CopyLine.vue:9
 msgid "Copy to clipboard"
-msgstr ""
+msgstr "Скопировать в буфер обмена"
 
 #: src/views/Stats.vue:20
 msgid "Count"
@@ -334,27 +340,27 @@ msgstr ""
 
 #: src/views/ManageRevisions.vue:57
 msgid "Create"
-msgstr ""
+msgstr "Создать"
 
 #: src/views/Package.vue:275
 msgid "Debug"
-msgstr ""
+msgstr "Отладить"
 
 #: src/views/ManagePackage.vue:353
 msgid "Delete"
-msgstr ""
+msgstr "Удалить"
 
 #: src/views/ManagePackage.vue:90
 msgid "Description"
-msgstr ""
+msgstr "Описание"
 
 #: src/views/ManagePackage.vue:55
 msgid "Discovery"
-msgstr ""
+msgstr "Открытие"
 
 #: src/views/Package.vue:91
 msgid "Donate"
-msgstr ""
+msgstr "Пожертвовать"
 
 #: src/views/ManagePackage.vue:216
 msgid "Donate URL"
@@ -362,20 +368,20 @@ msgstr ""
 
 #: src/views/Package.vue:262
 msgid "Download"
-msgstr ""
+msgstr "Скачать"
 
 #: src/views/ManagePackage.vue:288
 msgid "Download Stats"
-msgstr ""
+msgstr "Количество закачек"
 
 #: src/views/About.vue:43
 msgid "Download the OpenStore App"
-msgstr ""
+msgstr "Скачать приложение OpenStore App"
 
 #: src/views/Manage.vue:50 src/views/Manage.vue:70
 #: src/views/ManagePackage.vue:297
 msgid "Downloads"
-msgstr ""
+msgstr "Загрузки"
 
 #: src/views/ManagePackage.vue:119
 msgid "Drag and drop to sort screenshots."
@@ -383,21 +389,21 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:8
 msgid "Edit"
-msgstr ""
+msgstr "Редактировать"
 
 #: src/views/ManagePackage.vue:443 src/views/ManagePackage.vue:461
 #: src/views/ManagePackage.vue:562 src/views/ManagePackage.vue:590
 #: src/views/ManageRevisions.vue:135 src/views/Submit.vue:218
 msgid "Error"
-msgstr ""
+msgstr "Ошибка"
 
 #: src/views/Feeds.vue:34 src/views/Feeds.vue:38
 msgid "Feeds"
-msgstr ""
+msgstr "Ленты новостей"
 
 #: src/views/ManagePackage.vue:266
 msgid "File Size"
-msgstr ""
+msgstr "Размер файла"
 
 #: src/views/ManageRevisions.vue:22
 msgid "File Upload"
@@ -421,11 +427,11 @@ msgstr ""
 
 #: src/views/Package.vue:293
 msgid "Full System Access"
-msgstr ""
+msgstr "Полный доступ к системе"
 
 #: src/views/Submit.vue:100
 msgid "Gambling"
-msgstr ""
+msgstr "Азартные игры"
 
 #: src/views/About.vue:25
 msgid "Get your badge"
