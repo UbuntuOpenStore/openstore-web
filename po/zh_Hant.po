@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2019-10-28 15:36+0000\n"
+"PO-Revision-Date: 2020-01-19 19:40+0000\n"
 "Last-Translator: louies0623 <louies0623@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.ubports.com/projects/"
 "openstore/open-storeio/zh_Hant/>\n"
@@ -746,7 +746,7 @@ msgstr "已禁止的應用程式"
 
 #: src/views/About.vue:20
 msgid "Promote your app on the OpenStore!"
-msgstr ""
+msgstr "在 OpenStore 上推廣您的應用程式!"
 
 #: src/views/Badge.vue:5
 msgid ""
@@ -755,6 +755,10 @@ msgid ""
 "are available in several different languages and in both PNG and SVG\n"
 "formats."
 msgstr ""
+"在OpenStore上推廣您的應用程式！ 將這些徽章添加到您的網站上，\n"
+" 代碼存儲庫，社交媒體或網路上的任何地方。 徽章\n"
+" 提供幾種不同的語言以及 PNG 和 SVG \n"
+" 格式。"
 
 #: src/views/ManagePackage.vue:14
 msgid "Public Link"
@@ -848,7 +852,7 @@ msgstr "搜尋"
 msgid ""
 "Send us a link to a repository for your app to our telegram group along with "
 "some instructions on how to build it."
-msgstr ""
+msgstr "將您的應用程式存儲庫的連結發送給我們的 Telegram 群組，以及有關怎樣建構它的說明。"
 
 #: src/views/Package.vue:287
 msgid "Sensors"
@@ -1070,7 +1074,7 @@ msgstr ""
 
 #: src/views/ManageRevisions.vue:52
 msgid "This will be added to the beginning of your current changelog"
-msgstr ""
+msgstr "這將會被添加到目前變更日誌的開頭"
 
 #: src/views/ManagePackage.vue:80
 msgid "Title"
@@ -1134,7 +1138,7 @@ msgstr "網址"
 
 #: src/views/ManageRevisions.vue:44
 msgid "URL of App from the Web"
-msgstr ""
+msgstr "來自網頁的應用程式 URL"
 
 #: src/views/Package.vue:288
 msgid "User Metrics"
