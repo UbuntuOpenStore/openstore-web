@@ -8,69 +8,77 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-30 00:38-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-01-27 00:21+0000\n"
+"Last-Translator: Mladen B <mladen074@gmail.com>\n"
+"Language-Team: Serbian <https://translate.ubports.com/projects/openstore/"
+"open-storeio/sr/>\n"
 "Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.8\n"
 
 #: src/views/Package.vue:149
 msgid ""
 "*This app contains NSFW content, to view the description and\n"
 "screenshots, click the above button."
 msgstr ""
+"*Ова апликација поседује садржај који није прикладан ако сте на радном "
+"месту\n"
+"Да бисте видели опис и слике екрана, кликните на дугме изнад."
 
 #: src/views/ManagePackage.vue:575
 msgid "%{name} was successfully deleted"
-msgstr ""
+msgstr "Успешно обрисано: %{name}"
 
 #: src/views/ManagePackage.vue:157
 msgid "A comma separated list of keywords"
-msgstr ""
+msgstr "Листа кључних речи одвојена зарезима"
 
 #: src/App.vue:34 src/views/About.vue:3 src/views/About.vue:185
 #: src/views/About.vue:189
 msgid "About"
-msgstr ""
+msgstr "О програму"
 
 #: src/App.vue:78
 msgid "About Us"
-msgstr ""
+msgstr "О нама"
 
 #: src/views/Package.vue:319
 msgid "Accounts"
-msgstr ""
+msgstr "Налози"
 
 #: src/views/ManageRevisions.vue:63
 msgid "Add Another Architecture"
-msgstr ""
+msgstr "Додај другу архитектуру"
 
 #: src/views/Browse.vue:16
 msgid "All Categories"
-msgstr ""
+msgstr "Све категорије"
 
 #: src/views/Browse.vue:31
 msgid "All Types"
-msgstr ""
+msgstr "Сви типови"
 
 #: src/views/Login.vue:26
 msgid "An account is not needed to download or install apps."
-msgstr ""
+msgstr "Није потребан налог за преузимање или инсталирање апликација."
 
 #: src/views/ManagePackage.vue:442 src/views/ManagePackage.vue:460
 #: src/views/ManageRevisions.vue:164
 msgid "An error occured loading your app data"
-msgstr ""
+msgstr "Десила се грешка током учитавања података ваше апликације"
 
 #: src/views/ManageRevisions.vue:211 src/views/Submit.vue:212
 msgid "An unknown error has occured"
-msgstr ""
+msgstr "Десила се непозната грешка"
 
 #: src/views/About.vue:162
 msgid "And many amazing developers, testers, and users from the OpenStore community!"
 msgstr ""
+"И многи други сјајни програмери, тестери и корисници из OpenStore заједнице!"
 
 #: src/views/About.vue:122
 msgid ""
@@ -82,39 +90,41 @@ msgstr ""
 
 #: src/views/Manage.vue:14
 msgid "API Key"
-msgstr ""
+msgstr "API кључ"
 
 #: src/components/Types.vue:3 src/views/Manage.vue:46 src/views/Stats.vue:108
 msgid "App"
-msgstr ""
+msgstr "Апликација"
 
 #: src/views/Submit.vue:95
 msgid "App containing or promoting any of the above are strictly prohibited."
 msgstr ""
+"Апликације које садже или промовише било шта од наведеног су строго "
+"забрањене."
 
 #: src/views/Submit.vue:133
 msgid "App Name"
-msgstr ""
+msgstr "Назив апликације"
 
 #: src/App.vue:88
 msgid "App Stats"
-msgstr ""
+msgstr "Статистика апликације"
 
 #: src/views/Submit.vue:150
 msgid "App Title"
-msgstr ""
+msgstr "Наслов апликације"
 
 #: src/views/Stats.vue:19
 msgid "App Type"
-msgstr ""
+msgstr "Тип апликације"
 
 #: src/views/Stats.vue:15
 msgid "App Types"
-msgstr ""
+msgstr "Типови апликација"
 
 #: src/views/Browse.vue:32
 msgid "Apps"
-msgstr ""
+msgstr "Апликације"
 
 #: src/views/Submit.vue:101
 msgid ""
@@ -165,79 +175,79 @@ msgstr ""
 #: src/views/ManagePackage.vue:258 src/views/ManagePackage.vue:292
 #: src/views/Package.vue:249
 msgid "Architecture"
-msgstr ""
+msgstr "Архитектура"
 
 #: src/views/Package.vue:320
 msgid "Audio"
-msgstr ""
+msgstr "Звук"
 
 #: src/views/Manage.vue:47 src/views/ManagePackage.vue:254
 #: src/views/Package.vue:211
 msgid "Author"
-msgstr ""
+msgstr "Аутор"
 
 #: src/views/Package.vue:7
 msgid "Back"
-msgstr ""
+msgstr "Назад"
 
 #: src/views/Badge.vue:28 src/views/Badge.vue:32 src/views/ManagePackage.vue:70
 msgid "Badge"
-msgstr ""
+msgstr "Беџ"
 
 #: src/views/About.vue:18
 msgid "Badges"
-msgstr ""
+msgstr "Беџеви"
 
 #: src/views/Package.vue:321
 msgid "Bluetooth"
-msgstr ""
+msgstr "Bluetooth"
 
 #: src/App.vue:31
 msgid "Browse"
-msgstr ""
+msgstr "Преглед"
 
 #: src/views/Browse.vue:162
 msgid "Browse Apps"
-msgstr ""
+msgstr "Преглед апликација"
 
 #: src/views/About.vue:74
 msgid "Bug Tracker"
-msgstr ""
+msgstr "Пријава кварова"
 
 #: src/views/Package.vue:322
 msgid "Calendar"
-msgstr ""
+msgstr "Календар"
 
 #: src/views/Package.vue:323
 msgid "Camera"
-msgstr ""
+msgstr "Камера"
 
 #: src/views/ManagePackage.vue:356 src/views/ManageRevisions.vue:86
 #: src/views/Submit.vue:167
 msgid "Cancel"
-msgstr ""
+msgstr "Одустани"
 
 #: src/views/Browse.vue:14 src/views/ManagePackage.vue:140
 #: src/views/Package.vue:233
 msgid "Category"
-msgstr ""
+msgstr "Категорија"
 
 #: src/views/ManagePackage.vue:101 src/views/ManageRevisions.vue:70
 #: src/views/Package.vue:159
 msgid "Changelog"
-msgstr ""
+msgstr "Листа измена"
 
 #: src/views/ManagePackage.vue:291 src/views/ManageRevisions.vue:4
 msgid "Channel"
-msgstr ""
+msgstr "Канал"
 
 #: src/views/ManagePackage.vue:270
 msgid "Channels"
-msgstr ""
+msgstr "Канали"
 
 #: src/App.vue:83
 msgid "Chat with us on Telegram"
-msgstr ""
+msgstr "Ћаскајте са нама путем Telegram-a"
 
 #: src/views/Submit.vue:81
 msgid "Child Endangerment"
@@ -245,51 +255,51 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:142
 msgid "Choose a category"
-msgstr ""
+msgstr "Одаберите категорију"
 
 #: src/views/ManagePackage.vue:173
 msgid "Choose a license"
-msgstr ""
+msgstr "Одаберите лиценцу"
 
 #: src/views/ManagePackage.vue:231
 msgid "Choose a maintainer"
-msgstr ""
+msgstr "Одаберите особу за одржавање"
 
 #: src/views/Package.vue:324
 msgid "Connectivity"
-msgstr ""
+msgstr "Повезивост"
 
 #: src/views/About.vue:59
 msgid "Contact"
-msgstr ""
+msgstr "Контакт"
 
 #: src/views/Package.vue:325
 msgid "Contacts"
-msgstr ""
+msgstr "Контакти"
 
 #: src/views/Package.vue:327
 msgid "Content Exchange"
-msgstr ""
+msgstr "Размена садржаја"
 
 #: src/views/Package.vue:326
 msgid "Content Exchange Source"
-msgstr ""
+msgstr "Извор размене садржаја"
 
 #: src/views/About.vue:140
 msgid "Contributors"
-msgstr ""
+msgstr "Сарадници"
 
 #: src/components/CopyLine.vue:9
 msgid "Copy to clipboard"
-msgstr ""
+msgstr "Копирај у клипборд"
 
 #: src/views/Stats.vue:20
 msgid "Count"
-msgstr ""
+msgstr "Количина"
 
 #: src/views/ManageRevisions.vue:77
 msgid "Create"
-msgstr ""
+msgstr "Направи"
 
 #: src/views/Package.vue:328
 msgid "Debug"
@@ -297,11 +307,11 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:351
 msgid "Delete"
-msgstr ""
+msgstr "Обриши"
 
 #: src/views/ManagePackage.vue:90
 msgid "Description"
-msgstr ""
+msgstr "Опис"
 
 #: src/views/ManagePackage.vue:55
 msgid "Discovery"
@@ -309,32 +319,32 @@ msgstr ""
 
 #: src/views/Package.vue:122
 msgid "Donate"
-msgstr ""
+msgstr "Донације"
 
 #: src/views/ManagePackage.vue:216
 msgid "Donate URL"
-msgstr ""
+msgstr "Линк за донације"
 
 #: src/views/Package.vue:315
 msgid "Download"
-msgstr ""
+msgstr "Преузмите"
 
 #: src/views/ManagePackage.vue:284
 msgid "Download Stats"
-msgstr ""
+msgstr "Преузмите статистику"
 
 #: src/views/About.vue:43
 msgid "Download the OpenStore App"
-msgstr ""
+msgstr "Преузмите апликацију OpenStore"
 
 #: src/views/Manage.vue:50 src/views/Manage.vue:70
 #: src/views/ManagePackage.vue:294
 msgid "Downloads"
-msgstr ""
+msgstr "Преузимања"
 
 #: src/views/Package.vue:197
 msgid "Downloads of the latest version"
-msgstr ""
+msgstr "Преузимања последње верзије"
 
 #: src/views/ManagePackage.vue:119
 msgid "Drag and drop to sort screenshots."
@@ -342,13 +352,13 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:8
 msgid "Edit"
-msgstr ""
+msgstr "Измени"
 
 #: src/views/ManagePackage.vue:441 src/views/ManagePackage.vue:459
 #: src/views/ManagePackage.vue:560 src/views/ManagePackage.vue:588
 #: src/views/ManageRevisions.vue:163 src/views/Submit.vue:218
 msgid "Error"
-msgstr ""
+msgstr "Грешка"
 
 #: src/views/Feeds.vue:34 src/views/Feeds.vue:38
 msgid "Feeds"
@@ -356,11 +366,11 @@ msgstr ""
 
 #: src/views/ManageRevisions.vue:23
 msgid "File"
-msgstr ""
+msgstr "Фајл"
 
 #: src/views/ManageRevisions.vue:41
 msgid "File Upload"
-msgstr ""
+msgstr "Слање фајла"
 
 #: src/views/About.vue:61
 msgid ""
@@ -386,7 +396,7 @@ msgstr ""
 
 #: src/views/About.vue:25
 msgid "Get your badge"
-msgstr ""
+msgstr "Узмите Ваш беџ"
 
 #: src/views/Submit.vue:39
 msgid ""
@@ -397,11 +407,11 @@ msgstr ""
 
 #: src/views/Browse.vue:187 src/views/Manage.vue:174
 msgid "Go back a page"
-msgstr ""
+msgstr "Назад на претходну страну"
 
 #: src/views/Browse.vue:188 src/views/Manage.vue:175
 msgid "Go to the next page"
-msgstr ""
+msgstr "Напред на следећу страну"
 
 #: src/views/About.vue:86
 msgid "GPL v3 License"
@@ -417,7 +427,7 @@ msgstr ""
 
 #: src/views/Manage.vue:44
 msgid "Icon"
-msgstr ""
+msgstr "Иконица"
 
 #: src/views/ManagePackage.vue:250
 msgid "ID"
@@ -443,19 +453,19 @@ msgstr ""
 
 #: src/views/About.vue:29 src/views/Package.vue:43
 msgid "Install"
-msgstr ""
+msgstr "Инсталирај"
 
 #: src/views/Package.vue:317
 msgid "Install via the OpenStore app"
-msgstr ""
+msgstr "Инсталирајте кроз OpenStore апликацију"
 
 #: src/views/Browse.vue:186 src/views/Manage.vue:173
 msgid "Jump to the first page"
-msgstr ""
+msgstr "Скок на прву страну"
 
 #: src/views/Browse.vue:189 src/views/Manage.vue:176
 msgid "Jump to the last page"
-msgstr ""
+msgstr "Скок на последњу страну"
 
 #: src/views/Package.vue:331
 msgid "Keep Display On"
@@ -467,28 +477,28 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:155
 msgid "Keywords"
-msgstr ""
+msgstr "Кључне речи"
 
 #: src/App.vue:60 src/components/BadgeSelect.vue:4
 msgid "Language"
-msgstr ""
+msgstr "Језик"
 
 #: src/views/Browse.vue:46
 msgid "Latest Update"
-msgstr ""
+msgstr "Најновија верзија"
 
 #: src/views/About.vue:78 src/views/ManagePackage.vue:171
 #: src/views/Package.vue:229
 msgid "License"
-msgstr ""
+msgstr "Лиценца"
 
 #: src/views/Package.vue:332
 msgid "Location"
-msgstr ""
+msgstr "Локација"
 
 #: src/App.vue:37
 msgid "Log In"
-msgstr ""
+msgstr "Пријава"
 
 #: src/views/Login.vue:24
 msgid "Log in to the OpenStore to be able to manage your apps."
@@ -496,15 +506,15 @@ msgstr ""
 
 #: src/App.vue:43
 msgid "Log Out"
-msgstr ""
+msgstr "Одјава"
 
 #: src/views/Login.vue:40 src/views/Login.vue:44
 msgid "Login"
-msgstr ""
+msgstr "Пријава"
 
 #: src/views/Submit.vue:125
 msgid "Login to submit your app"
-msgstr ""
+msgstr "Пријавите се да бисте предали своју апликацију"
 
 #: src/views/Login.vue:7
 msgid "Login via GitHub"
@@ -520,7 +530,7 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:229
 msgid "Maintainer"
-msgstr ""
+msgstr "Особа за одржавање"
 
 #: src/views/Submit.vue:113
 msgid "Malware"
@@ -537,15 +547,15 @@ msgstr ""
 
 #: src/views/Package.vue:333
 msgid "Microphone"
-msgstr ""
+msgstr "Микрофон"
 
 #: src/views/Package.vue:335
 msgid "Music Files"
-msgstr ""
+msgstr "Музички фајлови"
 
 #: src/views/Manage.vue:45
 msgid "Name"
-msgstr ""
+msgstr "Назив"
 
 #: src/views/About.vue:48
 msgid "Navigate to the downloads folder"
@@ -557,12 +567,12 @@ msgstr ""
 
 #: src/views/Feeds.vue:9
 msgid "New Apps"
-msgstr ""
+msgstr "Нове апликације"
 
 #: src/views/ManagePackage.vue:37 src/views/ManageRevisions.vue:114
 #: src/views/ManageRevisions.vue:116
 msgid "New Revision"
-msgstr ""
+msgstr "Нова ревизија"
 
 #: src/views/ManageRevisions.vue:231
 msgid "New revision for %{channel} was created!"
@@ -578,31 +588,31 @@ msgstr ""
 
 #: src/views/Browse.vue:44
 msgid "Newest"
-msgstr ""
+msgstr "Најновије"
 
 #: src/views/ManagePackage.vue:31
 msgid "No"
-msgstr ""
+msgstr "Не"
 
 #: src/views/Browse.vue:101 src/views/Manage.vue:94
 msgid "No apps found."
-msgstr ""
+msgstr "Нема пронађених апликација."
 
 #: src/views/Package.vue:39
 msgid "No longer available"
-msgstr ""
+msgstr "Није више доступно"
 
 #: src/views/Manage.vue:81 src/views/Manage.vue:86 src/views/Package.vue:187
 msgid "None"
-msgstr ""
+msgstr "Ниједно"
 
 #: src/views/Manage.vue:75
 msgid "Not published"
-msgstr ""
+msgstr "Није објављено"
 
 #: src/views/ManagePackage.vue:161
 msgid "NSFW"
-msgstr ""
+msgstr "Није адекватно ако сте на радном месту"
 
 #: src/views/Browse.vue:90
 msgid "NSFW content"
@@ -610,11 +620,11 @@ msgstr ""
 
 #: src/views/Browse.vue:45
 msgid "Oldest"
-msgstr ""
+msgstr "Најстарије"
 
 #: src/views/Browse.vue:47
 msgid "Oldest Update"
-msgstr ""
+msgstr "Најстарија верзија"
 
 #: src/views/Submit.vue:60
 msgid ""
@@ -673,27 +683,27 @@ msgstr ""
 
 #: src/views/Package.vue:218
 msgid "Packager/Publisher"
-msgstr ""
+msgstr "Пакује/Објављује"
 
 #: src/views/NotFound.vue:3
 msgid "Page Not Found"
-msgstr ""
+msgstr "Страница није пронађена"
 
 #: src/views/Package.vue:111 src/views/Package.vue:166
 msgid "Permissions"
-msgstr ""
+msgstr "Дозволе"
 
 #: src/views/Package.vue:338
 msgid "Picture Files"
-msgstr ""
+msgstr "Слике"
 
 #: src/views/ManagePackage.vue:43
 msgid "Presentation"
-msgstr ""
+msgstr "Презентација"
 
 #: src/views/Submit.vue:69
 msgid "Prohibited Apps"
-msgstr ""
+msgstr "Забрањене апликације"
 
 #: src/views/About.vue:20
 msgid "Promote your app on the OpenStore!"
@@ -709,19 +719,19 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:14
 msgid "Public Link"
-msgstr ""
+msgstr "Јавни линк"
 
 #: src/views/ManagePackage.vue:21
 msgid "Publish"
-msgstr ""
+msgstr "Објави"
 
 #: src/views/Manage.vue:74 src/views/Package.vue:241
 msgid "Published"
-msgstr ""
+msgstr "Објављено"
 
 #: src/views/ManagePackage.vue:321
 msgid "Published Date"
-msgstr ""
+msgstr "Датум објаве"
 
 #: src/views/Package.vue:339
 msgid "Push Notifications"
@@ -745,7 +755,7 @@ msgstr ""
 
 #: src/App.vue:103
 msgid "Report an Issue"
-msgstr ""
+msgstr "Пријавите проблем"
 
 #: src/views/Package.vue:429
 msgid "Restricted permission"
@@ -753,7 +763,7 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:290
 msgid "Revision"
-msgstr ""
+msgstr "Ревизија"
 
 #: src/App.vue:108 src/views/Feeds.vue:3
 msgid "RSS Feeds"
@@ -769,11 +779,11 @@ msgstr ""
 
 #: src/views/About.vue:50
 msgid "Run the command:"
-msgstr ""
+msgstr "Покрени команду:"
 
 #: src/views/ManagePackage.vue:346
 msgid "Save"
-msgstr ""
+msgstr "Сними"
 
 #: src/components/Types.vue:4 src/views/Stats.vue:109
 msgid "Scope"
@@ -785,15 +795,15 @@ msgstr ""
 
 #: src/views/Package.vue:138
 msgid "Screenshots"
-msgstr ""
+msgstr "Снимци екрана"
 
 #: src/views/ManagePackage.vue:106
 msgid "Screenshots (Limit 5)"
-msgstr ""
+msgstr "Снимци екрана (макс. 5)"
 
 #: src/views/Browse.vue:9 src/views/Manage.vue:26
 msgid "Search"
-msgstr ""
+msgstr "Претрага"
 
 #: src/views/Submit.vue:35
 msgid "Send us a link to a repository for your app to our telegram group along with some instructions on how to build it."
@@ -801,7 +811,7 @@ msgstr ""
 
 #: src/views/Package.vue:340
 msgid "Sensors"
-msgstr ""
+msgstr "Сензори"
 
 #: src/views/Submit.vue:74
 msgid "Sexually Explicit Content"
@@ -817,7 +827,7 @@ msgstr ""
 
 #: src/views/Browse.vue:39
 msgid "Sort By"
-msgstr ""
+msgstr "Сортирање по"
 
 #: src/views/Package.vue:225
 msgid "Source"
@@ -852,15 +862,15 @@ msgstr ""
 #: src/views/ManagePackage.vue:549 src/views/ManagePackage.vue:574
 #: src/views/ManageRevisions.vue:237
 msgid "Success"
-msgstr ""
+msgstr "Успех"
 
 #: src/views/Package.vue:221
 msgid "Support"
-msgstr ""
+msgstr "Подршка"
 
 #: src/views/ManagePackage.vue:211
 msgid "Support URL"
-msgstr ""
+msgstr "Линк за подршку"
 
 #: src/views/ManagePackage.vue:85
 msgid "Tag Line"
@@ -868,7 +878,7 @@ msgstr ""
 
 #: src/views/About.vue:102
 msgid "Terms"
-msgstr ""
+msgstr "Услови"
 
 #: src/views/Package.vue:13
 msgid "The app you are looking for has been removed or does not exist"
@@ -925,7 +935,7 @@ msgstr ""
 
 #: src/views/NotFound.vue:5
 msgid "The page you are looking for has been removed or does not exist"
-msgstr ""
+msgstr "Страница коју тражите је уклоњена или не постоји"
 
 #: src/views/About.vue:80
 msgid ""
@@ -971,27 +981,27 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:80
 msgid "Title"
-msgstr ""
+msgstr "Наслов"
 
 #: src/views/Browse.vue:42
 msgid "Title (A-Z)"
-msgstr ""
+msgstr "Наслов (А-Ш)"
 
 #: src/views/Browse.vue:43
 msgid "Title (Z-A)"
-msgstr ""
+msgstr "Наслов (Ш-А)"
 
 #: src/views/ManagePackage.vue:312
 msgid "Total"
-msgstr ""
+msgstr "Укупно"
 
 #: src/views/Package.vue:201
 msgid "Total downloads"
-msgstr ""
+msgstr "Укупно преузимања"
 
 #: src/views/Manage.vue:79
 msgid "Total:"
-msgstr ""
+msgstr "Укупно:"
 
 #: src/views/ManagePackage.vue:275 src/views/Package.vue:253
 msgid "Translation Languages"
@@ -999,7 +1009,7 @@ msgstr ""
 
 #: src/views/Browse.vue:102 src/views/Manage.vue:95
 msgid "Try searching for something else"
-msgstr ""
+msgstr "Пробајте да тражите нешто друго"
 
 #: src/views/Browse.vue:29 src/views/ManagePackage.vue:266
 msgid "Type"
@@ -1055,11 +1065,11 @@ msgstr ""
 
 #: src/views/Manage.vue:49 src/views/ManagePackage.vue:293
 msgid "Version"
-msgstr ""
+msgstr "Верзија"
 
 #: src/views/Package.vue:344
 msgid "Video"
-msgstr ""
+msgstr "Видео"
 
 #: src/views/Package.vue:343
 msgid "Video Files"
@@ -1071,11 +1081,11 @@ msgstr ""
 
 #: src/views/About.vue:37
 msgid "View Install Instructions"
-msgstr ""
+msgstr "Погледајте инструкције за инсталацију"
 
 #: src/views/Submit.vue:87
 msgid "Violence"
-msgstr ""
+msgstr "Насиље"
 
 #: src/components/Types.vue:5 src/views/Stats.vue:110
 msgid "Web App"
@@ -1095,7 +1105,7 @@ msgstr ""
 
 #: src/views/Manage.vue:4
 msgid "Welcome %{name}!"
-msgstr ""
+msgstr "Добродошли %{name}!"
 
 #: src/views/ManageRevisions.vue:8 src/views/ManageRevisions.vue:230
 msgid "Xenial"
@@ -1103,7 +1113,7 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:30
 msgid "Yes"
-msgstr ""
+msgstr "Да"
 
 #: src/views/Submit.vue:10
 msgid "You are only allowed to publish apps that you have permission to distribute."
