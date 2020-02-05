@@ -8,69 +8,76 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-30 00:38-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-02-06 05:33+0000\n"
+"Last-Translator: Ege Öz <ege.oz@tutanota.com>\n"
+"Language-Team: Turkish <https://translate.ubports.com/projects/openstore/"
+"open-storeio/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.8\n"
 
 #: src/views/Package.vue:149
 msgid ""
 "*This app contains NSFW content, to view the description and\n"
 "screenshots, click the above button."
 msgstr ""
+"*Bu uygulama uygunsuz içerik içermektedir, açıklamayı ve\n"
+"ekran görüntülerini görüntülemek için üstteki butonu tıklayın."
 
 #: src/views/ManagePackage.vue:575
 msgid "%{name} was successfully deleted"
-msgstr ""
+msgstr "%{name} başarıyla silindi"
 
 #: src/views/ManagePackage.vue:157
 msgid "A comma separated list of keywords"
-msgstr ""
+msgstr "Virgül ile ayrılmış anahtar sözcük listesi"
 
 #: src/App.vue:34 src/views/About.vue:3 src/views/About.vue:185
 #: src/views/About.vue:189
 msgid "About"
-msgstr ""
+msgstr "Hakkında"
 
 #: src/App.vue:78
 msgid "About Us"
-msgstr ""
+msgstr "Hakkımızda"
 
 #: src/views/Package.vue:319
 msgid "Accounts"
-msgstr ""
+msgstr "Hesaplar"
 
 #: src/views/ManageRevisions.vue:63
 msgid "Add Another Architecture"
-msgstr ""
+msgstr "Mimari Ekle"
 
 #: src/views/Browse.vue:16
 msgid "All Categories"
-msgstr ""
+msgstr "Tüm Kategoriler"
 
 #: src/views/Browse.vue:31
 msgid "All Types"
-msgstr ""
+msgstr "Tüm Türler"
 
 #: src/views/Login.vue:26
 msgid "An account is not needed to download or install apps."
-msgstr ""
+msgstr "Uygulamaları indirmek veya kurmak için bir hesaba ihtiyacınız yoktur."
 
 #: src/views/ManagePackage.vue:442 src/views/ManagePackage.vue:460
 #: src/views/ManageRevisions.vue:164
 msgid "An error occured loading your app data"
-msgstr ""
+msgstr "Uygulama verilerinizi yüklerken bir hata meydana geldi"
 
 #: src/views/ManageRevisions.vue:211 src/views/Submit.vue:212
 msgid "An unknown error has occured"
-msgstr ""
+msgstr "Bilinmeyen bir hata meydana geldi"
 
 #: src/views/About.vue:162
 msgid "And many amazing developers, testers, and users from the OpenStore community!"
 msgstr ""
+"Ve OpenStore topluluğundan birçok harika geliştiriciler, sınayıcılar, ve "
+"kullanıcılar!"
 
 #: src/views/About.vue:122
 msgid ""
@@ -79,52 +86,65 @@ msgid ""
 "contact you in the event there is an issue with your app.\n"
 "Additionally, this site uses cookies to keep you logged in to your account."
 msgstr ""
+"Bize vermeye karar verdiğiniz herhangi kişisel verileriniz (örn. "
+"uygulamanızı yüklemek için kullandığınız e-posta adresiniz) hiçbir yere "
+"devredilmemekte,\n"
+"ve uygulamalarınızın korunumu ve bakımına imkan sağlamakta, ve nadiren,\n"
+"uygulamalarınızda olası bir sorun durumunda sizinle iletişime geçebilmemiz "
+"için kullanılmaktadır.\n"
+"Ayrıca bu websitesi sizin oturumunuzu açık tutmak için çerezlerden "
+"yararlanır."
 
 #: src/views/Manage.vue:14
 msgid "API Key"
-msgstr ""
+msgstr "API Anahtarı"
 
 #: src/components/Types.vue:3 src/views/Manage.vue:46 src/views/Stats.vue:108
 msgid "App"
-msgstr ""
+msgstr "Uygulama"
 
 #: src/views/Submit.vue:95
 msgid "App containing or promoting any of the above are strictly prohibited."
 msgstr ""
+"Yukarıdaki içerikleri destekleyen veya o içeriklere sahip olan uygulamalar "
+"kesinlikle yasaktır."
 
 #: src/views/Submit.vue:133
 msgid "App Name"
-msgstr ""
+msgstr "Uygulama İsmi"
 
 #: src/App.vue:88
 msgid "App Stats"
-msgstr ""
+msgstr "Uygulama İstatistikleri"
 
 #: src/views/Submit.vue:150
 msgid "App Title"
-msgstr ""
+msgstr "Uygulama Başlığı"
 
 #: src/views/Stats.vue:19
 msgid "App Type"
-msgstr ""
+msgstr "Uygulama Türü"
 
 #: src/views/Stats.vue:15
 msgid "App Types"
-msgstr ""
+msgstr "Uygulama  Türleri"
 
 #: src/views/Browse.vue:32
 msgid "Apps"
-msgstr ""
+msgstr "Uygulamalar"
 
 #: src/views/Submit.vue:101
 msgid ""
 "Apps containing gambling involving real world money transactions are not allowed.\n"
 "This includes, but is not limited to, online casinos, betting, and lotteries."
 msgstr ""
+"Gerçek para birimi içeren kumar uygulamaları yasaktır.\n"
+"Buna, bunlarla sınırlı olmamak üzere, online casinolar, bahisler ve "
+"piyangolar da dahildir."
 
 #: src/views/Submit.vue:82
 msgid "Apps containing or promoting child abuse or child sexual abuse are strictly prohibited."
-msgstr ""
+msgstr "Çocukların istismarını içeren uygulamalar kesinlikle yasaktır."
 
 #: src/views/Submit.vue:88
 msgid ""
@@ -141,44 +161,56 @@ msgstr ""
 #: src/views/Submit.vue:7
 msgid "Apps not requiring manual review can be submitted by logging in with the \"Log In\" link above."
 msgstr ""
+"Elle inceleme gerektirmeyen uygulamalar yukarıdaki \"Oturum Aç\" linki ile "
+"oturum açılıp yüklenebilir."
 
 #: src/views/Submit.vue:108
 msgid "Apps promoting illegal activities (based on USA law) are not allowed."
 msgstr ""
+"Yasadışı (ABD yasalarına dayalı) aktiviteleri yücelten uygulamalar yasaktır."
 
 #: src/views/Submit.vue:18
 msgid "Apps requiring manual review must be submitted by contacting an admin in our telegram group."
 msgstr ""
+"Elle inceleme gerektiren uygulamaları yüklemek için Telegram grubumuzdan bir "
+"yönetici ile görüşmelisiniz."
 
 #: src/views/Submit.vue:114
 msgid ""
 "Apps that are found to be stealing the users data, trying to escalate their privileges without user consent,\n"
 "or executing malicious process are strictly prohibited."
 msgstr ""
+"Kullanıcıların verilerini çalan, kullanıcı izni olmadan sistemdeki "
+"ayrıcalığını arttıran veya kötü niyetli işlem çalıştıran uygulamalar "
+"yasaktır."
 
 #: src/views/About.vue:129
 msgid ""
 "Apps uploaded to the OpenStore are subject to our submission rules and content policy.\n"
 "You can review the rules and policies before uploading your app."
 msgstr ""
+"OpenStore' a yüklenen uygulamalar bizim kurallarımız ve içerik politikamıza "
+"tabidir.\n"
+"Uygulamanızı yüklemeden önce kuralları ve içerik politikamızı "
+"inceleyebilirsiniz."
 
 #: src/views/ManagePackage.vue:258 src/views/ManagePackage.vue:292
 #: src/views/Package.vue:249
 msgid "Architecture"
-msgstr ""
+msgstr "Mimari"
 
 #: src/views/Package.vue:320
 msgid "Audio"
-msgstr ""
+msgstr "Ses"
 
 #: src/views/Manage.vue:47 src/views/ManagePackage.vue:254
 #: src/views/Package.vue:211
 msgid "Author"
-msgstr ""
+msgstr "Yazar"
 
 #: src/views/Package.vue:7
 msgid "Back"
-msgstr ""
+msgstr "Geri"
 
 #: src/views/Badge.vue:28 src/views/Badge.vue:32 src/views/ManagePackage.vue:70
 msgid "Badge"
@@ -190,54 +222,54 @@ msgstr ""
 
 #: src/views/Package.vue:321
 msgid "Bluetooth"
-msgstr ""
+msgstr "Bluetooth"
 
 #: src/App.vue:31
 msgid "Browse"
-msgstr ""
+msgstr "Göz At"
 
 #: src/views/Browse.vue:162
 msgid "Browse Apps"
-msgstr ""
+msgstr "Uygulamalara Göz at"
 
 #: src/views/About.vue:74
 msgid "Bug Tracker"
-msgstr ""
+msgstr "Hata Takipçisi"
 
 #: src/views/Package.vue:322
 msgid "Calendar"
-msgstr ""
+msgstr "Takvim"
 
 #: src/views/Package.vue:323
 msgid "Camera"
-msgstr ""
+msgstr "Kamera"
 
 #: src/views/ManagePackage.vue:356 src/views/ManageRevisions.vue:86
 #: src/views/Submit.vue:167
 msgid "Cancel"
-msgstr ""
+msgstr "İptal"
 
 #: src/views/Browse.vue:14 src/views/ManagePackage.vue:140
 #: src/views/Package.vue:233
 msgid "Category"
-msgstr ""
+msgstr "Kategori"
 
 #: src/views/ManagePackage.vue:101 src/views/ManageRevisions.vue:70
 #: src/views/Package.vue:159
 msgid "Changelog"
-msgstr ""
+msgstr "Son Değişiklikler"
 
 #: src/views/ManagePackage.vue:291 src/views/ManageRevisions.vue:4
 msgid "Channel"
-msgstr ""
+msgstr "Kanal"
 
 #: src/views/ManagePackage.vue:270
 msgid "Channels"
-msgstr ""
+msgstr "Kanallar"
 
 #: src/App.vue:83
 msgid "Chat with us on Telegram"
-msgstr ""
+msgstr "Telegram üzerinden bizimle iletişime geçin"
 
 #: src/views/Submit.vue:81
 msgid "Child Endangerment"
@@ -245,11 +277,11 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:142
 msgid "Choose a category"
-msgstr ""
+msgstr "Bir kategori seçin"
 
 #: src/views/ManagePackage.vue:173
 msgid "Choose a license"
-msgstr ""
+msgstr "Bir lisans seçin"
 
 #: src/views/ManagePackage.vue:231
 msgid "Choose a maintainer"
@@ -257,15 +289,15 @@ msgstr ""
 
 #: src/views/Package.vue:324
 msgid "Connectivity"
-msgstr ""
+msgstr "İletişim"
 
 #: src/views/About.vue:59
 msgid "Contact"
-msgstr ""
+msgstr "Kişi"
 
 #: src/views/Package.vue:325
 msgid "Contacts"
-msgstr ""
+msgstr "Kişiler"
 
 #: src/views/Package.vue:327
 msgid "Content Exchange"
@@ -277,78 +309,78 @@ msgstr ""
 
 #: src/views/About.vue:140
 msgid "Contributors"
-msgstr ""
+msgstr "Katkıda Bulunanlar"
 
 #: src/components/CopyLine.vue:9
 msgid "Copy to clipboard"
-msgstr ""
+msgstr "Panoya kopyala"
 
 #: src/views/Stats.vue:20
 msgid "Count"
-msgstr ""
+msgstr "Sayı"
 
 #: src/views/ManageRevisions.vue:77
 msgid "Create"
-msgstr ""
+msgstr "Oluştur"
 
 #: src/views/Package.vue:328
 msgid "Debug"
-msgstr ""
+msgstr "Hata Ayıkla"
 
 #: src/views/ManagePackage.vue:351
 msgid "Delete"
-msgstr ""
+msgstr "Sil"
 
 #: src/views/ManagePackage.vue:90
 msgid "Description"
-msgstr ""
+msgstr "Açıklama"
 
 #: src/views/ManagePackage.vue:55
 msgid "Discovery"
-msgstr ""
+msgstr "Keşfet"
 
 #: src/views/Package.vue:122
 msgid "Donate"
-msgstr ""
+msgstr "Bağış Yap"
 
 #: src/views/ManagePackage.vue:216
 msgid "Donate URL"
-msgstr ""
+msgstr "Bağış URL' i"
 
 #: src/views/Package.vue:315
 msgid "Download"
-msgstr ""
+msgstr "İndir"
 
 #: src/views/ManagePackage.vue:284
 msgid "Download Stats"
-msgstr ""
+msgstr "İndirme İstatistikleri"
 
 #: src/views/About.vue:43
 msgid "Download the OpenStore App"
-msgstr ""
+msgstr "OpenStore Uygulamasını İndir"
 
 #: src/views/Manage.vue:50 src/views/Manage.vue:70
 #: src/views/ManagePackage.vue:294
 msgid "Downloads"
-msgstr ""
+msgstr "İndirilenler"
 
 #: src/views/Package.vue:197
 msgid "Downloads of the latest version"
-msgstr ""
+msgstr "Son sürümün indirmeleri"
 
 #: src/views/ManagePackage.vue:119
 msgid "Drag and drop to sort screenshots."
-msgstr ""
+msgstr "Ekran görüntülerini sıralamak için sürükle ve bırakın."
 
 #: src/views/ManagePackage.vue:8
 msgid "Edit"
-msgstr ""
+msgstr "Düzenle"
 
 #: src/views/ManagePackage.vue:441 src/views/ManagePackage.vue:459
 #: src/views/ManagePackage.vue:560 src/views/ManagePackage.vue:588
 #: src/views/ManageRevisions.vue:163 src/views/Submit.vue:218
 msgid "Error"
-msgstr ""
+msgstr "Hata"
 
 #: src/views/Feeds.vue:34 src/views/Feeds.vue:38
 msgid "Feeds"
@@ -356,11 +388,11 @@ msgstr ""
 
 #: src/views/ManageRevisions.vue:23
 msgid "File"
-msgstr ""
+msgstr "Dosya"
 
 #: src/views/ManageRevisions.vue:41
 msgid "File Upload"
-msgstr ""
+msgstr "Dosya Yükleme"
 
 #: src/views/About.vue:61
 msgid ""
@@ -370,7 +402,7 @@ msgstr ""
 
 #: src/App.vue:93
 msgid "Fork us on GitLab"
-msgstr ""
+msgstr "GitLab üzerinden çatallayın"
 
 #: src/views/ManagePackage.vue:262 src/views/Package.vue:245
 msgid "Framework"
@@ -378,11 +410,11 @@ msgstr ""
 
 #: src/views/Package.vue:346
 msgid "Full System Access"
-msgstr ""
+msgstr "Tüm Sistem Erişimi"
 
 #: src/views/Submit.vue:100
 msgid "Gambling"
-msgstr ""
+msgstr "Bahis"
 
 #: src/views/About.vue:25
 msgid "Get your badge"
@@ -397,27 +429,27 @@ msgstr ""
 
 #: src/views/Browse.vue:187 src/views/Manage.vue:174
 msgid "Go back a page"
-msgstr ""
+msgstr "Bir sayfa geri gidin"
 
 #: src/views/Browse.vue:188 src/views/Manage.vue:175
 msgid "Go to the next page"
-msgstr ""
+msgstr "Bir sayfa ileri gidin"
 
 #: src/views/About.vue:86
 msgid "GPL v3 License"
-msgstr ""
+msgstr "GPL v3 Lisansı"
 
 #: src/views/Submit.vue:94
 msgid "Harassment, Bullying, or Hate Speech"
-msgstr ""
+msgstr "Rahatsızlık, Zorbalık veya Nefret Söylemi"
 
 #: src/views/Package.vue:329
 msgid "History"
-msgstr ""
+msgstr "Geçmiş"
 
 #: src/views/Manage.vue:44
 msgid "Icon"
-msgstr ""
+msgstr "Simge"
 
 #: src/views/ManagePackage.vue:250
 msgid "ID"
@@ -431,92 +463,92 @@ msgstr ""
 
 #: src/views/Submit.vue:107
 msgid "Illegal Activities"
-msgstr ""
+msgstr "Yasadışı Aktiviteler"
 
 #: src/views/Package.vue:330
 msgid "In App Purchases"
-msgstr ""
+msgstr "Uygulama İçi Satın Alımlar"
 
 #: src/views/ManagePackage.vue:60 src/views/Package.vue:208
 msgid "Info"
-msgstr ""
+msgstr "Bilgi"
 
 #: src/views/About.vue:29 src/views/Package.vue:43
 msgid "Install"
-msgstr ""
+msgstr "Kur"
 
 #: src/views/Package.vue:317
 msgid "Install via the OpenStore app"
-msgstr ""
+msgstr "OpenStore uygulaması ile kur"
 
 #: src/views/Browse.vue:186 src/views/Manage.vue:173
 msgid "Jump to the first page"
-msgstr ""
+msgstr "İlk sayfaya atla"
 
 #: src/views/Browse.vue:189 src/views/Manage.vue:176
 msgid "Jump to the last page"
-msgstr ""
+msgstr "Son sayfaya atla"
 
 #: src/views/Package.vue:331
 msgid "Keep Display On"
-msgstr ""
+msgstr "Ekranı Açık Tut"
 
 #: src/views/Manage.vue:18
 msgid "Keep your api key private!"
-msgstr ""
+msgstr "API anahtarınızı gizli tutun!"
 
 #: src/views/ManagePackage.vue:155
 msgid "Keywords"
-msgstr ""
+msgstr "Anahtar sözcükler"
 
 #: src/App.vue:60 src/components/BadgeSelect.vue:4
 msgid "Language"
-msgstr ""
+msgstr "Dil"
 
 #: src/views/Browse.vue:46
 msgid "Latest Update"
-msgstr ""
+msgstr "Son Güncelleme"
 
 #: src/views/About.vue:78 src/views/ManagePackage.vue:171
 #: src/views/Package.vue:229
 msgid "License"
-msgstr ""
+msgstr "Lisans"
 
 #: src/views/Package.vue:332
 msgid "Location"
-msgstr ""
+msgstr "Yer"
 
 #: src/App.vue:37
 msgid "Log In"
-msgstr ""
+msgstr "Oturum Aç"
 
 #: src/views/Login.vue:24
 msgid "Log in to the OpenStore to be able to manage your apps."
-msgstr ""
+msgstr "Uygulamalarınızı yönetebilmek için OpenStore uygulamasına giriş yapın."
 
 #: src/App.vue:43
 msgid "Log Out"
-msgstr ""
+msgstr "Oturumu Kapat"
 
 #: src/views/Login.vue:40 src/views/Login.vue:44
 msgid "Login"
-msgstr ""
+msgstr "Oturum Aç"
 
 #: src/views/Submit.vue:125
 msgid "Login to submit your app"
-msgstr ""
+msgstr "Uygulamanızı yüklemek için oturum açın"
 
 #: src/views/Login.vue:7
 msgid "Login via GitHub"
-msgstr ""
+msgstr "GitHub ile oturum aç"
 
 #: src/views/Login.vue:12
 msgid "Login via GitLab"
-msgstr ""
+msgstr "GitLab ile oturum aç"
 
 #: src/views/Login.vue:18
 msgid "Login via Ubuntu"
-msgstr ""
+msgstr "Ubuntu ile oturum aç"
 
 #: src/views/ManagePackage.vue:229
 msgid "Maintainer"
@@ -524,40 +556,40 @@ msgstr ""
 
 #: src/views/Submit.vue:113
 msgid "Malware"
-msgstr ""
+msgstr "Zararlı Yazılım"
 
 #: src/App.vue:40 src/views/Manage.vue:152 src/views/ManagePackage.vue:379
 #: src/views/ManagePackage.vue:381
 msgid "Manage"
-msgstr ""
+msgstr "Yönet"
 
 #: src/views/Manage.vue:148
 msgid "Manage Apps"
-msgstr ""
+msgstr "Uygulamaları Yönet"
 
 #: src/views/Package.vue:333
 msgid "Microphone"
-msgstr ""
+msgstr "Mikrofon"
 
 #: src/views/Package.vue:335
 msgid "Music Files"
-msgstr ""
+msgstr "Müzik Dosyaları"
 
 #: src/views/Manage.vue:45
 msgid "Name"
-msgstr ""
+msgstr "İsim"
 
 #: src/views/About.vue:48
 msgid "Navigate to the downloads folder"
-msgstr ""
+msgstr "İndirilenler dizinine git"
 
 #: src/views/Package.vue:336
 msgid "Networking"
-msgstr ""
+msgstr "Ağ"
 
 #: src/views/Feeds.vue:9
 msgid "New Apps"
-msgstr ""
+msgstr "Yeni Uygulamalar"
 
 #: src/views/ManagePackage.vue:37 src/views/ManageRevisions.vue:114
 #: src/views/ManageRevisions.vue:116
@@ -578,15 +610,15 @@ msgstr ""
 
 #: src/views/Browse.vue:44
 msgid "Newest"
-msgstr ""
+msgstr "En Yeni"
 
 #: src/views/ManagePackage.vue:31
 msgid "No"
-msgstr ""
+msgstr "Hayır"
 
 #: src/views/Browse.vue:101 src/views/Manage.vue:94
 msgid "No apps found."
-msgstr ""
+msgstr "Uygulama bulunamadı."
 
 #: src/views/Package.vue:39
 msgid "No longer available"
@@ -594,27 +626,27 @@ msgstr ""
 
 #: src/views/Manage.vue:81 src/views/Manage.vue:86 src/views/Package.vue:187
 msgid "None"
-msgstr ""
+msgstr "Hiçbiri"
 
 #: src/views/Manage.vue:75
 msgid "Not published"
-msgstr ""
+msgstr "Yayınlanmadı"
 
 #: src/views/ManagePackage.vue:161
 msgid "NSFW"
-msgstr ""
+msgstr "Uygunsuz İçerik"
 
 #: src/views/Browse.vue:90
 msgid "NSFW content"
-msgstr ""
+msgstr "Uygunsuz içerik"
 
 #: src/views/Browse.vue:45
 msgid "Oldest"
-msgstr ""
+msgstr "En Eski"
 
 #: src/views/Browse.vue:47
 msgid "Oldest Update"
-msgstr ""
+msgstr "En Eski Güncelleme"
 
 #: src/views/Submit.vue:60
 msgid ""
@@ -634,22 +666,24 @@ msgstr ""
 #: src/views/ManagePackage.vue:223
 msgid "Only YouTube videos are supported at this time. Make sure the url is for the embedded video!"
 msgstr ""
+"Şu anda sadece YouTube videoları desteklenmektedir. URL'in gömülü video "
+"olduğundan emin olun!"
 
 #: src/views/About.vue:47
 msgid "Open the terminal app"
-msgstr ""
+msgstr "Uçbirim uygulamasını aç"
 
 #: src/views/About.vue:147
 msgid "OpenStore API/Server Contributors"
-msgstr ""
+msgstr "OpenStore API/Sunucu Katkıda Bulunanlar"
 
 #: src/views/Submit.vue:58
 msgid "OpenStore App Content Policy"
-msgstr ""
+msgstr "OpenStore Uygulama İçerik Politikası"
 
 #: src/views/About.vue:157
 msgid "OpenStore App Contributors"
-msgstr ""
+msgstr "OpenStore Uygulamasına Katkıda Bulunanlar"
 
 #: src/views/Badge.vue:3
 msgid "OpenStore Badges"
@@ -657,43 +691,43 @@ msgstr ""
 
 #: src/views/About.vue:67
 msgid "OpenStore group on Telegram"
-msgstr ""
+msgstr "Telegram' daki OpenStore grubu"
 
 #: src/views/About.vue:93
 msgid "OpenStore source on GitLab"
-msgstr ""
+msgstr "GitLab üzerindeki OpenStore kaynak kodu"
 
 #: src/views/About.vue:152
 msgid "OpenStore Website Contributors"
-msgstr ""
+msgstr "OpenStore Websitesine Katkıda Bulunanlar"
 
 #: src/views/ManagePackage.vue:245
 msgid "Package Info"
-msgstr ""
+msgstr "Paket Bilgisi"
 
 #: src/views/Package.vue:218
 msgid "Packager/Publisher"
-msgstr ""
+msgstr "Paketleyici/Yayımlayıcı"
 
 #: src/views/NotFound.vue:3
 msgid "Page Not Found"
-msgstr ""
+msgstr "Sayfa Bulunamadı"
 
 #: src/views/Package.vue:111 src/views/Package.vue:166
 msgid "Permissions"
-msgstr ""
+msgstr "İzinler"
 
 #: src/views/Package.vue:338
 msgid "Picture Files"
-msgstr ""
+msgstr "Resim Dosyaları"
 
 #: src/views/ManagePackage.vue:43
 msgid "Presentation"
-msgstr ""
+msgstr "Sunum"
 
 #: src/views/Submit.vue:69
 msgid "Prohibited Apps"
-msgstr ""
+msgstr "Yasaklı Uygulamalar"
 
 #: src/views/About.vue:20
 msgid "Promote your app on the OpenStore!"
@@ -709,19 +743,19 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:14
 msgid "Public Link"
-msgstr ""
+msgstr "Ortak Link"
 
 #: src/views/ManagePackage.vue:21
 msgid "Publish"
-msgstr ""
+msgstr "Yayınla"
 
 #: src/views/Manage.vue:74 src/views/Package.vue:241
 msgid "Published"
-msgstr ""
+msgstr "Yayınlandı"
 
 #: src/views/ManagePackage.vue:321
 msgid "Published Date"
-msgstr ""
+msgstr "Yayınlanma Tarihi"
 
 #: src/views/Package.vue:339
 msgid "Push Notifications"
@@ -729,27 +763,27 @@ msgstr ""
 
 #: src/views/Package.vue:334
 msgid "Read Music Files"
-msgstr ""
+msgstr "Müzik Dosyalarını Oku"
 
 #: src/views/Package.vue:337
 msgid "Read Picture Files"
-msgstr ""
+msgstr "Resim Dosyalarını Oku"
 
 #: src/views/Package.vue:342
 msgid "Read Video Files"
-msgstr ""
+msgstr "Video Dosyalarını Oku"
 
 #: src/views/Browse.vue:41
 msgid "Relevance"
-msgstr ""
+msgstr "Alaka"
 
 #: src/App.vue:103
 msgid "Report an Issue"
-msgstr ""
+msgstr "Bir hata bildir"
 
 #: src/views/Package.vue:429
 msgid "Restricted permission"
-msgstr ""
+msgstr "Kısıtlanmış izin"
 
 #: src/views/ManagePackage.vue:290
 msgid "Revision"
@@ -769,11 +803,11 @@ msgstr ""
 
 #: src/views/About.vue:50
 msgid "Run the command:"
-msgstr ""
+msgstr "Komut çalıştır:"
 
 #: src/views/ManagePackage.vue:346
 msgid "Save"
-msgstr ""
+msgstr "Kaydet"
 
 #: src/components/Types.vue:4 src/views/Stats.vue:109
 msgid "Scope"
@@ -785,15 +819,15 @@ msgstr ""
 
 #: src/views/Package.vue:138
 msgid "Screenshots"
-msgstr ""
+msgstr "Ekran Görüntüleri"
 
 #: src/views/ManagePackage.vue:106
 msgid "Screenshots (Limit 5)"
-msgstr ""
+msgstr "Ekran Görüntüleri (en fazla 5 tane)"
 
 #: src/views/Browse.vue:9 src/views/Manage.vue:26
 msgid "Search"
-msgstr ""
+msgstr "Ara"
 
 #: src/views/Submit.vue:35
 msgid "Send us a link to a repository for your app to our telegram group along with some instructions on how to build it."
@@ -801,40 +835,40 @@ msgstr ""
 
 #: src/views/Package.vue:340
 msgid "Sensors"
-msgstr ""
+msgstr "Sensörler"
 
 #: src/views/Submit.vue:74
 msgid "Sexually Explicit Content"
-msgstr ""
+msgstr "Müstehcen İçerik"
 
 #: src/views/Package.vue:148
 msgid "Show NSFW Content"
-msgstr ""
+msgstr "Uygunsuz İçerikleri Göster"
 
 #: src/App.vue:98
 msgid "Site Status"
-msgstr ""
+msgstr "Site Durumu"
 
 #: src/views/Browse.vue:39
 msgid "Sort By"
-msgstr ""
+msgstr "Sırala"
 
 #: src/views/Package.vue:225
 msgid "Source"
-msgstr ""
+msgstr "Kaynak"
 
 #: src/views/ManagePackage.vue:206
 msgid "Source URL"
-msgstr ""
+msgstr "Kaynak URL"
 
 #: src/views/ManagePackage.vue:65 src/views/Package.vue:193
 #: src/views/Stats.vue:3 src/views/Stats.vue:92 src/views/Stats.vue:96
 msgid "Stats"
-msgstr ""
+msgstr "İstatistikler"
 
 #: src/views/Manage.vue:48
 msgid "Status"
-msgstr ""
+msgstr "Durum"
 
 #: src/App.vue:28 src/views/Submit.vue:162
 msgid "Submit"
@@ -852,11 +886,11 @@ msgstr ""
 #: src/views/ManagePackage.vue:549 src/views/ManagePackage.vue:574
 #: src/views/ManageRevisions.vue:237
 msgid "Success"
-msgstr ""
+msgstr "Başarılı"
 
 #: src/views/Package.vue:221
 msgid "Support"
-msgstr ""
+msgstr "Destek"
 
 #: src/views/ManagePackage.vue:211
 msgid "Support URL"
@@ -868,11 +902,11 @@ msgstr ""
 
 #: src/views/About.vue:102
 msgid "Terms"
-msgstr ""
+msgstr "Şartlar"
 
 #: src/views/Package.vue:13
 msgid "The app you are looking for has been removed or does not exist"
-msgstr ""
+msgstr "Aradığınız uygulama yok veya silinmiş"
 
 #: src/views/About.vue:97
 msgid ""
@@ -882,7 +916,7 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:550
 msgid "The changes to %{name} were saved!"
-msgstr ""
+msgstr "%{name} değişikliği kaydedildi!"
 
 #: src/views/About.vue:104
 msgid ""
@@ -987,7 +1021,7 @@ msgstr ""
 
 #: src/views/Package.vue:201
 msgid "Total downloads"
-msgstr ""
+msgstr "Toplam indirmeler"
 
 #: src/views/Manage.vue:79
 msgid "Total:"
