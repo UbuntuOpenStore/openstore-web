@@ -8,16 +8,15 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-30 00:38-0500\n"
-"PO-Revision-Date: 2020-02-05 11:21+0000\n"
-"Last-Translator: Mladen B <mladen074@gmail.com>\n"
-"Language-Team: Serbian <https://translate.ubports.com/projects/openstore/"
-"open-storeio/sr/>\n"
-"Language: sr\n"
+"PO-Revision-Date: 2020-02-06 05:33+0000\n"
+"Last-Translator: Ege Öz <ege.oz@tutanota.com>\n"
+"Language-Team: Turkish <https://translate.ubports.com/projects/openstore/"
+"open-storeio/tr/>\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 3.8\n"
 
 #: src/views/Package.vue:149
@@ -25,60 +24,60 @@ msgid ""
 "*This app contains NSFW content, to view the description and\n"
 "screenshots, click the above button."
 msgstr ""
-"*Ова апликација поседује садржај који није прикладан ако сте на радном "
-"месту\n"
-"Да бисте видели опис и слике екрана, кликните на дугме изнад."
+"*Bu uygulama uygunsuz içerik içermektedir, açıklamayı ve\n"
+"ekran görüntülerini görüntülemek için üstteki butonu tıklayın."
 
 #: src/views/ManagePackage.vue:575
 msgid "%{name} was successfully deleted"
-msgstr "Успешно обрисано: %{name}"
+msgstr "%{name} başarıyla silindi"
 
 #: src/views/ManagePackage.vue:157
 msgid "A comma separated list of keywords"
-msgstr "Листа кључних речи одвојена зарезима"
+msgstr "Virgül ile ayrılmış anahtar sözcük listesi"
 
 #: src/App.vue:34 src/views/About.vue:3 src/views/About.vue:185
 #: src/views/About.vue:189
 msgid "About"
-msgstr "О програму"
+msgstr "Hakkında"
 
 #: src/App.vue:78
 msgid "About Us"
-msgstr "О нама"
+msgstr "Hakkımızda"
 
 #: src/views/Package.vue:319
 msgid "Accounts"
-msgstr "Налози"
+msgstr "Hesaplar"
 
 #: src/views/ManageRevisions.vue:63
 msgid "Add Another Architecture"
-msgstr "Додај другу архитектуру"
+msgstr "Mimari Ekle"
 
 #: src/views/Browse.vue:16
 msgid "All Categories"
-msgstr "Све категорије"
+msgstr "Tüm Kategoriler"
 
 #: src/views/Browse.vue:31
 msgid "All Types"
-msgstr "Сви типови"
+msgstr "Tüm Türler"
 
 #: src/views/Login.vue:26
 msgid "An account is not needed to download or install apps."
-msgstr "Није потребан налог за преузимање или инсталирање апликација."
+msgstr "Uygulamaları indirmek veya kurmak için bir hesaba ihtiyacınız yoktur."
 
 #: src/views/ManagePackage.vue:442 src/views/ManagePackage.vue:460
 #: src/views/ManageRevisions.vue:164
 msgid "An error occured loading your app data"
-msgstr "Десила се грешка током учитавања података ваше апликације"
+msgstr "Uygulama verilerinizi yüklerken bir hata meydana geldi"
 
 #: src/views/ManageRevisions.vue:211 src/views/Submit.vue:212
 msgid "An unknown error has occured"
-msgstr "Десила се непозната грешка"
+msgstr "Bilinmeyen bir hata meydana geldi"
 
 #: src/views/About.vue:162
 msgid "And many amazing developers, testers, and users from the OpenStore community!"
 msgstr ""
-"И многи други сјајни програмери, тестери и корисници из OpenStore заједнице!"
+"Ve OpenStore topluluğundan birçok harika geliştiriciler, sınayıcılar, ve "
+"kullanıcılar!"
 
 #: src/views/About.vue:122
 msgid ""
@@ -87,150 +86,139 @@ msgid ""
 "contact you in the event there is an issue with your app.\n"
 "Additionally, this site uses cookies to keep you logged in to your account."
 msgstr ""
-"Било какви приватни подаци које нам дате (нпр. Ваша емаил адреса током "
-"регистрације налога) не иду даље од нас,\n"
-"и неће бити коришћени низашта друго него да Вам омогуће да одржавате своје "
-"апликације и, у ретким случајевима,\n"
-"да можемо да Вас контактирамо у случају да постоји проблем са Вашом "
-"апликацијом.\n"
-"Уз то, овај сајт користи колачиће да бисте могли остати улоговани на свој "
-"налог."
+"Bize vermeye karar verdiğiniz herhangi kişisel verileriniz (örn. "
+"uygulamanızı yüklemek için kullandığınız e-posta adresiniz) hiçbir yere "
+"devredilmemekte,\n"
+"ve uygulamalarınızın korunumu ve bakımına imkan sağlamakta, ve nadiren,\n"
+"uygulamalarınızda olası bir sorun durumunda sizinle iletişime geçebilmemiz "
+"için kullanılmaktadır.\n"
+"Ayrıca bu websitesi sizin oturumunuzu açık tutmak için çerezlerden "
+"yararlanır."
 
 #: src/views/Manage.vue:14
 msgid "API Key"
-msgstr "API кључ"
+msgstr "API Anahtarı"
 
 #: src/components/Types.vue:3 src/views/Manage.vue:46 src/views/Stats.vue:108
 msgid "App"
-msgstr "Апликација"
+msgstr "Uygulama"
 
 #: src/views/Submit.vue:95
 msgid "App containing or promoting any of the above are strictly prohibited."
 msgstr ""
-"Апликације које садже или промовише било шта од наведеног су строго "
-"забрањене."
+"Yukarıdaki içerikleri destekleyen veya o içeriklere sahip olan uygulamalar "
+"kesinlikle yasaktır."
 
 #: src/views/Submit.vue:133
 msgid "App Name"
-msgstr "Назив апликације"
+msgstr "Uygulama İsmi"
 
 #: src/App.vue:88
 msgid "App Stats"
-msgstr "Статистика апликације"
+msgstr "Uygulama İstatistikleri"
 
 #: src/views/Submit.vue:150
 msgid "App Title"
-msgstr "Наслов апликације"
+msgstr "Uygulama Başlığı"
 
 #: src/views/Stats.vue:19
 msgid "App Type"
-msgstr "Тип апликације"
+msgstr "Uygulama Türü"
 
 #: src/views/Stats.vue:15
 msgid "App Types"
-msgstr "Типови апликација"
+msgstr "Uygulama  Türleri"
 
 #: src/views/Browse.vue:32
 msgid "Apps"
-msgstr "Апликације"
+msgstr "Uygulamalar"
 
 #: src/views/Submit.vue:101
 msgid ""
 "Apps containing gambling involving real world money transactions are not allowed.\n"
 "This includes, but is not limited to, online casinos, betting, and lotteries."
 msgstr ""
-"Апликације које се баве коцкањем и које укључују праве новчане трансакције, "
-"нису дозвољене.\n"
-"Ово укључује, али се не ограничава на, онлајн казино, кладионице и лутрије."
+"Gerçek para birimi içeren kumar uygulamaları yasaktır.\n"
+"Buna, bunlarla sınırlı olmamak üzere, online casinolar, bahisler ve "
+"piyangolar da dahildir."
 
 #: src/views/Submit.vue:82
 msgid "Apps containing or promoting child abuse or child sexual abuse are strictly prohibited."
-msgstr ""
-"Апликације које се баве или промовишу злостављање деце или сексуалну "
-"експлоатацију деце су строго забрањене."
+msgstr "Çocukların istismarını içeren uygulamalar kesinlikle yasaktır."
 
 #: src/views/Submit.vue:88
 msgid ""
 "Apps containing or promoting gratuitous violence are not allowed.\n"
 "This includes, but is not limited to, violence, terrorism, bomb/weapon making, self harm, and grotesque imagery."
 msgstr ""
-"Апликације које промовишу неоправдано насиље су забрањене.\n"
-"Ово уклључује, али се не ограничава на, насиље, тероризам, прављење оружја/"
-"бомби, само-повређивање и гротескне слике."
 
 #: src/views/Submit.vue:75
 msgid ""
 "Apps containing or promoting sexually explicit content are not allowed.\n"
 "This includes, but is not limited to, pornography and services promoting sexually explicit content."
 msgstr ""
-"Апликације које садрже или промовишу сексуално експлицитан садржај нису "
-"дозвољене.\n"
-"Ово уклључује, али се не ограничава на, порнографију и услуге које промовишу "
-"сексуално експлицитан садржај."
 
 #: src/views/Submit.vue:7
 msgid "Apps not requiring manual review can be submitted by logging in with the \"Log In\" link above."
 msgstr ""
-"Апликације које не захтевају мануалну проверу могу да се предају тако што се "
-"улогујете кликом на горњи линк \"Пријава\"."
+"Elle inceleme gerektirmeyen uygulamalar yukarıdaki \"Oturum Aç\" linki ile "
+"oturum açılıp yüklenebilir."
 
 #: src/views/Submit.vue:108
 msgid "Apps promoting illegal activities (based on USA law) are not allowed."
 msgstr ""
-"Апликације које промовишу илегалне активности (у складу са законом у САД) су "
-"забрањене."
+"Yasadışı (ABD yasalarına dayalı) aktiviteleri yücelten uygulamalar yasaktır."
 
 #: src/views/Submit.vue:18
 msgid "Apps requiring manual review must be submitted by contacting an admin in our telegram group."
 msgstr ""
-"Апликације које захтевају мануалну проверу морају да се предају "
-"контактирањем неког од администратора у нашој Telegram групи."
+"Elle inceleme gerektiren uygulamaları yüklemek için Telegram grubumuzdan bir "
+"yönetici ile görüşmelisiniz."
 
 #: src/views/Submit.vue:114
 msgid ""
 "Apps that are found to be stealing the users data, trying to escalate their privileges without user consent,\n"
 "or executing malicious process are strictly prohibited."
 msgstr ""
-"Апликације за које се утврди да краду корисничке податке, покушавају да "
-"остваре веће привилегије\n"
-"без дозволе корисника или извршавају малициозан код, ће бити строго "
-"забрањене."
+"Kullanıcıların verilerini çalan, kullanıcı izni olmadan sistemdeki "
+"ayrıcalığını arttıran veya kötü niyetli işlem çalıştıran uygulamalar "
+"yasaktır."
 
 #: src/views/About.vue:129
 msgid ""
 "Apps uploaded to the OpenStore are subject to our submission rules and content policy.\n"
 "You can review the rules and policies before uploading your app."
 msgstr ""
-"Апликације предате на OpenStore подлежу нашим условима објављивања као и "
-"полисом\n"
-"дозвољеног садржаја. Прегледајте прво та правила и полису пре предаје "
-"апликације."
+"OpenStore' a yüklenen uygulamalar bizim kurallarımız ve içerik politikamıza "
+"tabidir.\n"
+"Uygulamanızı yüklemeden önce kuralları ve içerik politikamızı "
+"inceleyebilirsiniz."
 
 #: src/views/ManagePackage.vue:258 src/views/ManagePackage.vue:292
 #: src/views/Package.vue:249
 msgid "Architecture"
-msgstr "Архитектура"
+msgstr "Mimari"
 
 #: src/views/Package.vue:320
 msgid "Audio"
-msgstr "Звук"
+msgstr "Ses"
 
 #: src/views/Manage.vue:47 src/views/ManagePackage.vue:254
 #: src/views/Package.vue:211
 msgid "Author"
-msgstr "Аутор"
+msgstr "Yazar"
 
 #: src/views/Package.vue:7
 msgid "Back"
-msgstr "Назад"
+msgstr "Geri"
 
 #: src/views/Badge.vue:28 src/views/Badge.vue:32 src/views/ManagePackage.vue:70
 msgid "Badge"
-msgstr "Беџ"
+msgstr ""
 
 #: src/views/About.vue:18
 msgid "Badges"
-msgstr "Беџеви"
+msgstr ""
 
 #: src/views/Package.vue:321
 msgid "Bluetooth"
@@ -238,203 +226,199 @@ msgstr "Bluetooth"
 
 #: src/App.vue:31
 msgid "Browse"
-msgstr "Преглед"
+msgstr "Göz At"
 
 #: src/views/Browse.vue:162
 msgid "Browse Apps"
-msgstr "Преглед апликација"
+msgstr "Uygulamalara Göz at"
 
 #: src/views/About.vue:74
 msgid "Bug Tracker"
-msgstr "Пријава кварова"
+msgstr "Hata Takipçisi"
 
 #: src/views/Package.vue:322
 msgid "Calendar"
-msgstr "Календар"
+msgstr "Takvim"
 
 #: src/views/Package.vue:323
 msgid "Camera"
-msgstr "Камера"
+msgstr "Kamera"
 
 #: src/views/ManagePackage.vue:356 src/views/ManageRevisions.vue:86
 #: src/views/Submit.vue:167
 msgid "Cancel"
-msgstr "Одустани"
+msgstr "İptal"
 
 #: src/views/Browse.vue:14 src/views/ManagePackage.vue:140
 #: src/views/Package.vue:233
 msgid "Category"
-msgstr "Категорија"
+msgstr "Kategori"
 
 #: src/views/ManagePackage.vue:101 src/views/ManageRevisions.vue:70
 #: src/views/Package.vue:159
 msgid "Changelog"
-msgstr "Листа измена"
+msgstr "Son Değişiklikler"
 
 #: src/views/ManagePackage.vue:291 src/views/ManageRevisions.vue:4
 msgid "Channel"
-msgstr "Канал"
+msgstr "Kanal"
 
 #: src/views/ManagePackage.vue:270
 msgid "Channels"
-msgstr "Канали"
+msgstr "Kanallar"
 
 #: src/App.vue:83
 msgid "Chat with us on Telegram"
-msgstr "Ћаскајте са нама путем Telegram-a"
+msgstr "Telegram üzerinden bizimle iletişime geçin"
 
 #: src/views/Submit.vue:81
 msgid "Child Endangerment"
-msgstr "Угрожавање деце"
+msgstr ""
 
 #: src/views/ManagePackage.vue:142
 msgid "Choose a category"
-msgstr "Одаберите категорију"
+msgstr "Bir kategori seçin"
 
 #: src/views/ManagePackage.vue:173
 msgid "Choose a license"
-msgstr "Одаберите лиценцу"
+msgstr "Bir lisans seçin"
 
 #: src/views/ManagePackage.vue:231
 msgid "Choose a maintainer"
-msgstr "Одаберите особу за одржавање"
+msgstr ""
 
 #: src/views/Package.vue:324
 msgid "Connectivity"
-msgstr "Повезивост"
+msgstr "İletişim"
 
 #: src/views/About.vue:59
 msgid "Contact"
-msgstr "Контакт"
+msgstr "Kişi"
 
 #: src/views/Package.vue:325
 msgid "Contacts"
-msgstr "Контакти"
+msgstr "Kişiler"
 
 #: src/views/Package.vue:327
 msgid "Content Exchange"
-msgstr "Размена садржаја"
+msgstr ""
 
 #: src/views/Package.vue:326
 msgid "Content Exchange Source"
-msgstr "Извор размене садржаја"
+msgstr ""
 
 #: src/views/About.vue:140
 msgid "Contributors"
-msgstr "Сарадници"
+msgstr "Katkıda Bulunanlar"
 
 #: src/components/CopyLine.vue:9
 msgid "Copy to clipboard"
-msgstr "Копирај у клипборд"
+msgstr "Panoya kopyala"
 
 #: src/views/Stats.vue:20
 msgid "Count"
-msgstr "Количина"
+msgstr "Sayı"
 
 #: src/views/ManageRevisions.vue:77
 msgid "Create"
-msgstr "Направи"
+msgstr "Oluştur"
 
 #: src/views/Package.vue:328
 msgid "Debug"
-msgstr "Debug"
+msgstr "Hata Ayıkla"
 
 #: src/views/ManagePackage.vue:351
 msgid "Delete"
-msgstr "Обриши"
+msgstr "Sil"
 
 #: src/views/ManagePackage.vue:90
 msgid "Description"
-msgstr "Опис"
+msgstr "Açıklama"
 
 #: src/views/ManagePackage.vue:55
 msgid "Discovery"
-msgstr "Откриће"
+msgstr "Keşfet"
 
 #: src/views/Package.vue:122
 msgid "Donate"
-msgstr "Донације"
+msgstr "Bağış Yap"
 
 #: src/views/ManagePackage.vue:216
 msgid "Donate URL"
-msgstr "Линк за донације"
+msgstr "Bağış URL' i"
 
 #: src/views/Package.vue:315
 msgid "Download"
-msgstr "Преузмите"
+msgstr "İndir"
 
 #: src/views/ManagePackage.vue:284
 msgid "Download Stats"
-msgstr "Преузмите статистику"
+msgstr "İndirme İstatistikleri"
 
 #: src/views/About.vue:43
 msgid "Download the OpenStore App"
-msgstr "Преузмите апликацију OpenStore"
+msgstr "OpenStore Uygulamasını İndir"
 
 #: src/views/Manage.vue:50 src/views/Manage.vue:70
 #: src/views/ManagePackage.vue:294
 msgid "Downloads"
-msgstr "Преузимања"
+msgstr "İndirilenler"
 
 #: src/views/Package.vue:197
 msgid "Downloads of the latest version"
-msgstr "Преузимања последње верзије"
+msgstr "Son sürümün indirmeleri"
 
 #: src/views/ManagePackage.vue:119
 msgid "Drag and drop to sort screenshots."
-msgstr "Превуците и пустите да бисте сортирали снимке екрана."
+msgstr "Ekran görüntülerini sıralamak için sürükle ve bırakın."
 
 #: src/views/ManagePackage.vue:8
 msgid "Edit"
-msgstr "Измени"
+msgstr "Düzenle"
 
 #: src/views/ManagePackage.vue:441 src/views/ManagePackage.vue:459
 #: src/views/ManagePackage.vue:560 src/views/ManagePackage.vue:588
 #: src/views/ManageRevisions.vue:163 src/views/Submit.vue:218
 msgid "Error"
-msgstr "Грешка"
+msgstr "Hata"
 
 #: src/views/Feeds.vue:34 src/views/Feeds.vue:38
 msgid "Feeds"
-msgstr "Извори"
+msgstr ""
 
 #: src/views/ManageRevisions.vue:23
 msgid "File"
-msgstr "Фајл"
+msgstr "Dosya"
 
 #: src/views/ManageRevisions.vue:41
 msgid "File Upload"
-msgstr "Слање фајла"
+msgstr "Dosya Yükleme"
 
 #: src/views/About.vue:61
 msgid ""
 "For any questions you may have or help you may need just chat with us in our telegram group.\n"
 "You can also submit issues, bugs, and feature requests to our GitLab bug tracker."
 msgstr ""
-"Ако имате било какво питање или Вам је потребна помоћ, слободно проћаскајте "
-"са нама у нашој Telegram групи.\n"
-"Такође, можете нам пријавити проблеме, багове, као и послати предлог нових "
-"функционалности на наш GitLab bug tracker."
 
 #: src/App.vue:93
 msgid "Fork us on GitLab"
-msgstr "Форкујте нас на GitLab-у"
+msgstr "GitLab üzerinden çatallayın"
 
 #: src/views/ManagePackage.vue:262 src/views/Package.vue:245
 msgid "Framework"
-msgstr "Фрејмворк"
+msgstr ""
 
 #: src/views/Package.vue:346
 msgid "Full System Access"
-msgstr "Потпуни приступ систему"
+msgstr "Tüm Sistem Erişimi"
 
 #: src/views/Submit.vue:100
 msgid "Gambling"
-msgstr "Коцкање"
+msgstr "Bahis"
 
 #: src/views/About.vue:25
 msgid "Get your badge"
-msgstr "Узмите Ваш беџ"
+msgstr ""
 
 #: src/views/Submit.vue:39
 msgid ""
@@ -442,40 +426,34 @@ msgid ""
 "No need to go into details, a one liner like \"needs to run a daemon in the background\" will do.\n"
 "List all the special features you have, if there are more."
 msgstr ""
-"Напишите кратко објашњење зашто Ваша апликаиција захтева додатне привилегије."
-"\n"
-"Нема потребе да идете превише у детаље, довољно је кратко написати нпр.\n"
-"\"треба да покрене сервис у позадини\". Наведите све посебне функционалности "
-"које\n"
-"постоје, уколико их има више."
 
 #: src/views/Browse.vue:187 src/views/Manage.vue:174
 msgid "Go back a page"
-msgstr "Назад на претходну страну"
+msgstr "Bir sayfa geri gidin"
 
 #: src/views/Browse.vue:188 src/views/Manage.vue:175
 msgid "Go to the next page"
-msgstr "Напред на следећу страну"
+msgstr "Bir sayfa ileri gidin"
 
 #: src/views/About.vue:86
 msgid "GPL v3 License"
-msgstr "GPL v3 лиценца"
+msgstr "GPL v3 Lisansı"
 
 #: src/views/Submit.vue:94
 msgid "Harassment, Bullying, or Hate Speech"
-msgstr "Узнемиравање, малтретирање или говор мржње"
+msgstr "Rahatsızlık, Zorbalık veya Nefret Söylemi"
 
 #: src/views/Package.vue:329
 msgid "History"
-msgstr "Историја"
+msgstr "Geçmiş"
 
 #: src/views/Manage.vue:44
 msgid "Icon"
-msgstr "Иконица"
+msgstr "Simge"
 
 #: src/views/ManagePackage.vue:250
 msgid "ID"
-msgstr "Идентификатор"
+msgstr ""
 
 #: src/views/Submit.vue:44
 msgid ""
@@ -485,190 +463,190 @@ msgstr ""
 
 #: src/views/Submit.vue:107
 msgid "Illegal Activities"
-msgstr "Илегалне активности"
+msgstr "Yasadışı Aktiviteler"
 
 #: src/views/Package.vue:330
 msgid "In App Purchases"
-msgstr "Куповина унутар апликације"
+msgstr "Uygulama İçi Satın Alımlar"
 
 #: src/views/ManagePackage.vue:60 src/views/Package.vue:208
 msgid "Info"
-msgstr "Инфо"
+msgstr "Bilgi"
 
 #: src/views/About.vue:29 src/views/Package.vue:43
 msgid "Install"
-msgstr "Инсталирај"
+msgstr "Kur"
 
 #: src/views/Package.vue:317
 msgid "Install via the OpenStore app"
-msgstr "Инсталирајте кроз OpenStore апликацију"
+msgstr "OpenStore uygulaması ile kur"
 
 #: src/views/Browse.vue:186 src/views/Manage.vue:173
 msgid "Jump to the first page"
-msgstr "Скок на прву страну"
+msgstr "İlk sayfaya atla"
 
 #: src/views/Browse.vue:189 src/views/Manage.vue:176
 msgid "Jump to the last page"
-msgstr "Скок на последњу страну"
+msgstr "Son sayfaya atla"
 
 #: src/views/Package.vue:331
 msgid "Keep Display On"
-msgstr "Одржава екран укључен"
+msgstr "Ekranı Açık Tut"
 
 #: src/views/Manage.vue:18
 msgid "Keep your api key private!"
-msgstr "Заштитите приватност вашег АПИ кључа!"
+msgstr "API anahtarınızı gizli tutun!"
 
 #: src/views/ManagePackage.vue:155
 msgid "Keywords"
-msgstr "Кључне речи"
+msgstr "Anahtar sözcükler"
 
 #: src/App.vue:60 src/components/BadgeSelect.vue:4
 msgid "Language"
-msgstr "Језик"
+msgstr "Dil"
 
 #: src/views/Browse.vue:46
 msgid "Latest Update"
-msgstr "Најновија верзија"
+msgstr "Son Güncelleme"
 
 #: src/views/About.vue:78 src/views/ManagePackage.vue:171
 #: src/views/Package.vue:229
 msgid "License"
-msgstr "Лиценца"
+msgstr "Lisans"
 
 #: src/views/Package.vue:332
 msgid "Location"
-msgstr "Локација"
+msgstr "Yer"
 
 #: src/App.vue:37
 msgid "Log In"
-msgstr "Пријава"
+msgstr "Oturum Aç"
 
 #: src/views/Login.vue:24
 msgid "Log in to the OpenStore to be able to manage your apps."
-msgstr "Улогујте се на OpenStore да бисте управљали Вашим апликацијама."
+msgstr "Uygulamalarınızı yönetebilmek için OpenStore uygulamasına giriş yapın."
 
 #: src/App.vue:43
 msgid "Log Out"
-msgstr "Одјава"
+msgstr "Oturumu Kapat"
 
 #: src/views/Login.vue:40 src/views/Login.vue:44
 msgid "Login"
-msgstr "Пријава"
+msgstr "Oturum Aç"
 
 #: src/views/Submit.vue:125
 msgid "Login to submit your app"
-msgstr "Пријавите се да бисте предали своју апликацију"
+msgstr "Uygulamanızı yüklemek için oturum açın"
 
 #: src/views/Login.vue:7
 msgid "Login via GitHub"
-msgstr "Пријава путем GitHub-a"
+msgstr "GitHub ile oturum aç"
 
 #: src/views/Login.vue:12
 msgid "Login via GitLab"
-msgstr "Пријава путем GitLab-a"
+msgstr "GitLab ile oturum aç"
 
 #: src/views/Login.vue:18
 msgid "Login via Ubuntu"
-msgstr "Пријава путем Ubuntu-a"
+msgstr "Ubuntu ile oturum aç"
 
 #: src/views/ManagePackage.vue:229
 msgid "Maintainer"
-msgstr "Особа за одржавање"
+msgstr ""
 
 #: src/views/Submit.vue:113
 msgid "Malware"
-msgstr "Злонамеран програм"
+msgstr "Zararlı Yazılım"
 
 #: src/App.vue:40 src/views/Manage.vue:152 src/views/ManagePackage.vue:379
 #: src/views/ManagePackage.vue:381
 msgid "Manage"
-msgstr "Управљај"
+msgstr "Yönet"
 
 #: src/views/Manage.vue:148
 msgid "Manage Apps"
-msgstr "Управљај апликацијама"
+msgstr "Uygulamaları Yönet"
 
 #: src/views/Package.vue:333
 msgid "Microphone"
-msgstr "Микрофон"
+msgstr "Mikrofon"
 
 #: src/views/Package.vue:335
 msgid "Music Files"
-msgstr "Музички фајлови"
+msgstr "Müzik Dosyaları"
 
 #: src/views/Manage.vue:45
 msgid "Name"
-msgstr "Назив"
+msgstr "İsim"
 
 #: src/views/About.vue:48
 msgid "Navigate to the downloads folder"
-msgstr "Иди на фолдер за преузимања"
+msgstr "İndirilenler dizinine git"
 
 #: src/views/Package.vue:336
 msgid "Networking"
-msgstr "Мрежа"
+msgstr "Ağ"
 
 #: src/views/Feeds.vue:9
 msgid "New Apps"
-msgstr "Нове апликације"
+msgstr "Yeni Uygulamalar"
 
 #: src/views/ManagePackage.vue:37 src/views/ManageRevisions.vue:114
 #: src/views/ManageRevisions.vue:116
 msgid "New Revision"
-msgstr "Нова ревизија"
+msgstr ""
 
 #: src/views/ManageRevisions.vue:231
 msgid "New revision for %{channel} was created!"
-msgstr "Креирана је нова ревизија за %{channel}!"
+msgstr ""
 
 #: src/views/ManageRevisions.vue:8
 msgid "New Revision for %{name}"
-msgstr "Нова ревизија за %{name}"
+msgstr ""
 
 #: src/views/ManageRevisions.vue:233
 msgid "New revisions for %{channel} were created!"
-msgstr "Креиране су нове ревизије за %{channel}!"
+msgstr ""
 
 #: src/views/Browse.vue:44
 msgid "Newest"
-msgstr "Најновије"
+msgstr "En Yeni"
 
 #: src/views/ManagePackage.vue:31
 msgid "No"
-msgstr "Не"
+msgstr "Hayır"
 
 #: src/views/Browse.vue:101 src/views/Manage.vue:94
 msgid "No apps found."
-msgstr "Нема пронађених апликација."
+msgstr "Uygulama bulunamadı."
 
 #: src/views/Package.vue:39
 msgid "No longer available"
-msgstr "Није више доступно"
+msgstr ""
 
 #: src/views/Manage.vue:81 src/views/Manage.vue:86 src/views/Package.vue:187
 msgid "None"
-msgstr "Ниједно"
+msgstr "Hiçbiri"
 
 #: src/views/Manage.vue:75
 msgid "Not published"
-msgstr "Није објављено"
+msgstr "Yayınlanmadı"
 
 #: src/views/ManagePackage.vue:161
 msgid "NSFW"
-msgstr "Није адекватно ако сте на радном месту"
+msgstr "Uygunsuz İçerik"
 
 #: src/views/Browse.vue:90
 msgid "NSFW content"
-msgstr "Садржај који није прикладан за радно место"
+msgstr "Uygunsuz içerik"
 
 #: src/views/Browse.vue:45
 msgid "Oldest"
-msgstr "Најстарије"
+msgstr "En Eski"
 
 #: src/views/Browse.vue:47
 msgid "Oldest Update"
-msgstr "Најстарија верзија"
+msgstr "En Eski Güncelleme"
 
 #: src/views/Submit.vue:60
 msgid ""
@@ -678,94 +656,82 @@ msgid ""
 "Any account with serious infractions may be subject to termination.\n"
 "The OpenStore team thanks you for helping us promote a better enviroment for everyone."
 msgstr ""
-"Један од главних циљева OpenStore-а је да пружи могућност преузимања "
-"безбедних апликација, за људе свих узраста.\n"
-"Да бисмо постигли тај циљ, објављивање одређених типова апликација не "
-"дозвољавамо.\n"
-"Уколико не будете пратили упутства, може се десити да Ваша апликација буде "
-"уклоњена.\n"
-"Сваки налог са озбиљним прекршајима може бити подложан укидању.\n"
-"OpenStore тим Вам захваљује што нам помажете у промовисању бољег окружења за "
-"све."
 
 #: src/views/Submit.vue:48
 msgid ""
 "Only open source applications allowed for manual review:\n"
 "As the applications might have arbitrary access to the device, every manually reviewed app will get a source code review."
 msgstr ""
-"За ручни преглед дозвољене су само апликације отвореног кода:\n"
-"Како апликације могу имати произвољни приступ уређају, свака ручно "
-"прегледана апликација ће имати прегледан изворни код."
 
 #: src/views/ManagePackage.vue:223
 msgid "Only YouTube videos are supported at this time. Make sure the url is for the embedded video!"
 msgstr ""
-"Тренутно су подржани само YouTube видео снимци. Проверите да ли је линк "
-"намењен за ембедовање!"
+"Şu anda sadece YouTube videoları desteklenmektedir. URL'in gömülü video "
+"olduğundan emin olun!"
 
 #: src/views/About.vue:47
 msgid "Open the terminal app"
-msgstr "Отворите апликацију за терминал"
+msgstr "Uçbirim uygulamasını aç"
 
 #: src/views/About.vue:147
 msgid "OpenStore API/Server Contributors"
-msgstr "Сарадници за OpenStore API/Server"
+msgstr "OpenStore API/Sunucu Katkıda Bulunanlar"
 
 #: src/views/Submit.vue:58
 msgid "OpenStore App Content Policy"
-msgstr "Полиса садржаја за OpenStore"
+msgstr "OpenStore Uygulama İçerik Politikası"
 
 #: src/views/About.vue:157
 msgid "OpenStore App Contributors"
-msgstr "Сарадници за OpenStore апликацију"
+msgstr "OpenStore Uygulamasına Katkıda Bulunanlar"
 
 #: src/views/Badge.vue:3
 msgid "OpenStore Badges"
-msgstr "Беџеви за OpenStore"
+msgstr ""
 
 #: src/views/About.vue:67
 msgid "OpenStore group on Telegram"
-msgstr "Telegram група за OpenStore"
+msgstr "Telegram' daki OpenStore grubu"
 
 #: src/views/About.vue:93
 msgid "OpenStore source on GitLab"
-msgstr "Изворни код за OpenStore на GitLab-у"
+msgstr "GitLab üzerindeki OpenStore kaynak kodu"
 
 #: src/views/About.vue:152
 msgid "OpenStore Website Contributors"
-msgstr "Сарадници за OpenStore веб сајт"
+msgstr "OpenStore Websitesine Katkıda Bulunanlar"
 
 #: src/views/ManagePackage.vue:245
 msgid "Package Info"
-msgstr "Инфо о пакету"
+msgstr "Paket Bilgisi"
 
 #: src/views/Package.vue:218
 msgid "Packager/Publisher"
-msgstr "Пакује/Објављује"
+msgstr "Paketleyici/Yayımlayıcı"
 
 #: src/views/NotFound.vue:3
 msgid "Page Not Found"
-msgstr "Страница није пронађена"
+msgstr "Sayfa Bulunamadı"
 
 #: src/views/Package.vue:111 src/views/Package.vue:166
 msgid "Permissions"
-msgstr "Дозволе"
+msgstr "İzinler"
 
 #: src/views/Package.vue:338
 msgid "Picture Files"
-msgstr "Слике"
+msgstr "Resim Dosyaları"
 
 #: src/views/ManagePackage.vue:43
 msgid "Presentation"
-msgstr "Презентација"
+msgstr "Sunum"
 
 #: src/views/Submit.vue:69
 msgid "Prohibited Apps"
-msgstr "Забрањене апликације"
+msgstr "Yasaklı Uygulamalar"
 
 #: src/views/About.vue:20
 msgid "Promote your app on the OpenStore!"
-msgstr "Промовишите Вашу апликацију на OpenStore!"
+msgstr ""
 
 #: src/views/Badge.vue:5
 msgid ""
@@ -777,172 +743,170 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:14
 msgid "Public Link"
-msgstr "Јавни линк"
+msgstr "Ortak Link"
 
 #: src/views/ManagePackage.vue:21
 msgid "Publish"
-msgstr "Објави"
+msgstr "Yayınla"
 
 #: src/views/Manage.vue:74 src/views/Package.vue:241
 msgid "Published"
-msgstr "Објављено"
+msgstr "Yayınlandı"
 
 #: src/views/ManagePackage.vue:321
 msgid "Published Date"
-msgstr "Датум објаве"
+msgstr "Yayınlanma Tarihi"
 
 #: src/views/Package.vue:339
 msgid "Push Notifications"
-msgstr "Push нотификације"
+msgstr ""
 
 #: src/views/Package.vue:334
 msgid "Read Music Files"
-msgstr "Читање музичких фајлова"
+msgstr "Müzik Dosyalarını Oku"
 
 #: src/views/Package.vue:337
 msgid "Read Picture Files"
-msgstr "Читање слика"
+msgstr "Resim Dosyalarını Oku"
 
 #: src/views/Package.vue:342
 msgid "Read Video Files"
-msgstr "Читање видео снимака"
+msgstr "Video Dosyalarını Oku"
 
 #: src/views/Browse.vue:41
 msgid "Relevance"
-msgstr "Релевантност"
+msgstr "Alaka"
 
 #: src/App.vue:103
 msgid "Report an Issue"
-msgstr "Пријавите проблем"
+msgstr "Bir hata bildir"
 
 #: src/views/Package.vue:429
 msgid "Restricted permission"
-msgstr "Ограничене дозволе"
+msgstr "Kısıtlanmış izin"
 
 #: src/views/ManagePackage.vue:290
 msgid "Revision"
-msgstr "Ревизија"
+msgstr ""
 
 #: src/App.vue:108 src/views/Feeds.vue:3
 msgid "RSS Feeds"
-msgstr "Извори за RSS"
+msgstr ""
 
 #: src/views/Submit.vue:4
 msgid "Rules for Submission"
-msgstr "Правила за објављивање"
+msgstr ""
 
 #: src/views/Submit.vue:31
 msgid "Rules for Submissions Requiring Manual Review"
-msgstr "Правила за објављивања која захтевају мануелни преглед"
+msgstr ""
 
 #: src/views/About.vue:50
 msgid "Run the command:"
-msgstr "Покрени команду:"
+msgstr "Komut çalıştır:"
 
 #: src/views/ManagePackage.vue:346
 msgid "Save"
-msgstr "Сними"
+msgstr "Kaydet"
 
 #: src/components/Types.vue:4 src/views/Stats.vue:109
 msgid "Scope"
-msgstr "Подручје"
+msgstr ""
 
 #: src/views/Browse.vue:34
 msgid "Scopes"
-msgstr "Подручја"
+msgstr ""
 
 #: src/views/Package.vue:138
 msgid "Screenshots"
-msgstr "Снимци екрана"
+msgstr "Ekran Görüntüleri"
 
 #: src/views/ManagePackage.vue:106
 msgid "Screenshots (Limit 5)"
-msgstr "Снимци екрана (макс. 5)"
+msgstr "Ekran Görüntüleri (en fazla 5 tane)"
 
 #: src/views/Browse.vue:9 src/views/Manage.vue:26
 msgid "Search"
-msgstr "Претрага"
+msgstr "Ara"
 
 #: src/views/Submit.vue:35
 msgid "Send us a link to a repository for your app to our telegram group along with some instructions on how to build it."
 msgstr ""
-"Пошаљите нам линк ка репозиторијуму за Вашу апликацију на нашу Telegram "
-"групу, заједно са неким инструкцијама како да то избилдамо."
 
 #: src/views/Package.vue:340
 msgid "Sensors"
-msgstr "Сензори"
+msgstr "Sensörler"
 
 #: src/views/Submit.vue:74
 msgid "Sexually Explicit Content"
-msgstr "Сексуално експлицитан садржај"
+msgstr "Müstehcen İçerik"
 
 #: src/views/Package.vue:148
 msgid "Show NSFW Content"
-msgstr "Прикажи садржај који није прикладан за радно место"
+msgstr "Uygunsuz İçerikleri Göster"
 
 #: src/App.vue:98
 msgid "Site Status"
-msgstr "Статус сајта"
+msgstr "Site Durumu"
 
 #: src/views/Browse.vue:39
 msgid "Sort By"
-msgstr "Сортирање по"
+msgstr "Sırala"
 
 #: src/views/Package.vue:225
 msgid "Source"
-msgstr "Извор"
+msgstr "Kaynak"
 
 #: src/views/ManagePackage.vue:206
 msgid "Source URL"
-msgstr "Линк на извор"
+msgstr "Kaynak URL"
 
 #: src/views/ManagePackage.vue:65 src/views/Package.vue:193
 #: src/views/Stats.vue:3 src/views/Stats.vue:92 src/views/Stats.vue:96
 msgid "Stats"
-msgstr "Статистика"
+msgstr "İstatistikler"
 
 #: src/views/Manage.vue:48
 msgid "Status"
-msgstr "Статус"
+msgstr "Durum"
 
 #: src/App.vue:28 src/views/Submit.vue:162
 msgid "Submit"
-msgstr "Пошаљи"
+msgstr ""
 
 #: src/views/Manage.vue:10 src/views/Submit.vue:129 src/views/Submit.vue:189
 #: src/views/Submit.vue:193
 msgid "Submit App"
-msgstr "Предај апликацију"
+msgstr ""
 
 #: src/views/About.vue:136
 msgid "Submit your app"
-msgstr "Предајте Вашу апликацију"
+msgstr ""
 
 #: src/views/ManagePackage.vue:549 src/views/ManagePackage.vue:574
 #: src/views/ManageRevisions.vue:237
 msgid "Success"
-msgstr "Успех"
+msgstr "Başarılı"
 
 #: src/views/Package.vue:221
 msgid "Support"
-msgstr "Подршка"
+msgstr "Destek"
 
 #: src/views/ManagePackage.vue:211
 msgid "Support URL"
-msgstr "Линк за подршку"
+msgstr ""
 
 #: src/views/ManagePackage.vue:85
 msgid "Tag Line"
-msgstr "Таг линија"
+msgstr ""
 
 #: src/views/About.vue:102
 msgid "Terms"
-msgstr "Услови"
+msgstr "Şartlar"
 
 #: src/views/Package.vue:13
 msgid "The app you are looking for has been removed or does not exist"
-msgstr "Апликација коју тражите је уклоњена или не постоји"
+msgstr "Aradığınız uygulama yok veya silinmiş"
 
 #: src/views/About.vue:97
 msgid ""
@@ -952,7 +916,7 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:550
 msgid "The changes to %{name} were saved!"
-msgstr ""
+msgstr "%{name} değişikliği kaydedildi!"
 
 #: src/views/About.vue:104
 msgid ""
@@ -995,7 +959,7 @@ msgstr ""
 
 #: src/views/NotFound.vue:5
 msgid "The page you are looking for has been removed or does not exist"
-msgstr "Страница коју тражите је уклоњена или не постоји"
+msgstr ""
 
 #: src/views/About.vue:80
 msgid ""
@@ -1041,27 +1005,27 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:80
 msgid "Title"
-msgstr "Наслов"
+msgstr ""
 
 #: src/views/Browse.vue:42
 msgid "Title (A-Z)"
-msgstr "Наслов (А-Ш)"
+msgstr ""
 
 #: src/views/Browse.vue:43
 msgid "Title (Z-A)"
-msgstr "Наслов (Ш-А)"
+msgstr ""
 
 #: src/views/ManagePackage.vue:312
 msgid "Total"
-msgstr "Укупно"
+msgstr ""
 
 #: src/views/Package.vue:201
 msgid "Total downloads"
-msgstr "Укупно преузимања"
+msgstr "Toplam indirmeler"
 
 #: src/views/Manage.vue:79
 msgid "Total:"
-msgstr "Укупно:"
+msgstr ""
 
 #: src/views/ManagePackage.vue:275 src/views/Package.vue:253
 msgid "Translation Languages"
@@ -1069,7 +1033,7 @@ msgstr ""
 
 #: src/views/Browse.vue:102 src/views/Manage.vue:95
 msgid "Try searching for something else"
-msgstr "Пробајте да тражите нешто друго"
+msgstr ""
 
 #: src/views/Browse.vue:29 src/views/ManagePackage.vue:266
 msgid "Type"
@@ -1125,11 +1089,11 @@ msgstr ""
 
 #: src/views/Manage.vue:49 src/views/ManagePackage.vue:293
 msgid "Version"
-msgstr "Верзија"
+msgstr ""
 
 #: src/views/Package.vue:344
 msgid "Video"
-msgstr "Видео"
+msgstr ""
 
 #: src/views/Package.vue:343
 msgid "Video Files"
@@ -1141,11 +1105,11 @@ msgstr ""
 
 #: src/views/About.vue:37
 msgid "View Install Instructions"
-msgstr "Погледајте инструкције за инсталацију"
+msgstr ""
 
 #: src/views/Submit.vue:87
 msgid "Violence"
-msgstr "Насиље"
+msgstr ""
 
 #: src/components/Types.vue:5 src/views/Stats.vue:110
 msgid "Web App"
@@ -1165,7 +1129,7 @@ msgstr ""
 
 #: src/views/Manage.vue:4
 msgid "Welcome %{name}!"
-msgstr "Добродошли %{name}!"
+msgstr ""
 
 #: src/views/ManageRevisions.vue:8 src/views/ManageRevisions.vue:230
 msgid "Xenial"
@@ -1173,7 +1137,7 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:30
 msgid "Yes"
-msgstr "Да"
+msgstr ""
 
 #: src/views/Submit.vue:10
 msgid "You are only allowed to publish apps that you have permission to distribute."
