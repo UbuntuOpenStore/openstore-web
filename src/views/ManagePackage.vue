@@ -281,43 +281,6 @@
                             </div>
                         </div>
 
-                        <div class="p-form__group revisions">
-                            <label class="p-form__label" v-translate>Download Stats</label>
-
-                            <div class="downloads">
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th v-translate>Revision</th>
-                                            <th v-translate>Channel</th>
-                                            <th v-translate>Architecture</th>
-                                            <th v-translate>Version</th>
-                                            <th v-translate>Downloads</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr
-                                            v-for="revision in revisions"
-                                            :class="{
-                                                'strong': revision.revision == latestRevision(revision.channel, revision.architecture)
-                                            }"
-                                            :key="revision.revision"
-                                        >
-                                            <td>{{revision.revision}}</td>
-                                            <td>{{revision.channel.charAt(0).toUpperCase()}}{{revision.channel.slice(1)}}</td>
-                                            <td>{{revision.architecture}}</td>
-                                            <td>v{{revision.version}}</td>
-                                            <td>{{revision.downloads}}</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="3" v-translate>Total</td>
-                                            <td>{{app.totalDownloads}}</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-
                         <div class="p-form__group revisions" v-if="app.published_date">
                             <label class="p-form__label" v-translate>Published Date</label>
 
@@ -331,6 +294,47 @@
 
                             <div>
                                 {{app.updated_date | moment("YYYY-MM-DD kk:mm")}}
+                            </div>
+                        </div>
+
+                        <div class="p-form__group revisions">
+                            <label class="p-form__label" v-translate>Download Stats</label>
+
+                            <div class="downloads">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th v-translate>Revision</th>
+                                            <th v-translate>Channel</th>
+                                            <th v-translate>Arch</th>
+                                            <th v-translate>Version</th>
+                                            <th v-translate>Downloads</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr
+                                            v-for="revision in visibleRevisions"
+                                            :class="{
+                                                'strong': revision.revision == latestRevision(revision.channel, revision.architecture)
+                                            }"
+                                            :key="revision.revision"
+                                        >
+                                            <td>{{revision.revision}}</td>
+                                            <td>{{revision.channel.charAt(0).toUpperCase()}}{{revision.channel.slice(1)}}</td>
+                                            <td>{{revision.architecture}}</td>
+                                            <td>v{{revision.version}}</td>
+                                            <td>{{revision.downloads}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4" v-translate>Total</td>
+                                            <td>{{app.totalDownloads}}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <a class="p-button--neutral" @click="showAllRevisions = true" v-if="!showAllRevisions && revisions.length > 10">
+                                    <span v-translate>Show All Revisions</span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -413,6 +417,7 @@ export default {
                     },
                 },
             },
+            showAllRevisions: false,
         };
     },
     created() {
@@ -604,16 +609,23 @@ export default {
             let revisions = this.app ? this.app.revisions : [];
             revisions.sort((a, b) => {
                 if (a.revision < b.revision) {
-                    return -1;
+                    return 1;
                 }
                 if (a.revision > b.revision) {
-                    return 1;
+                    return -1;
                 }
 
                 return 0;
             });
 
             return revisions;
+        },
+        visibleRevisions() {
+            if (this.showAllRevisions) {
+                return this.revisions;
+            }
+
+            return this.revisions.slice(0, 10);
         },
     },
     watch: {
