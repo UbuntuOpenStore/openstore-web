@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-30 00:38-0500\n"
-"PO-Revision-Date: 2020-01-19 19:40+0000\n"
+"PO-Revision-Date: 2020-02-20 21:21+0000\n"
 "Last-Translator: Daniel Frańczak <danielfranczak5@wp.pl>\n"
 "Language-Team: Polish <https://translate.ubports.com/projects/openstore/"
 "open-storeio/pl/>\n"
@@ -1204,11 +1204,11 @@ msgstr "Przemoc"
 
 #: src/components/Types.vue:5 src/views/Stats.vue:110
 msgid "Web App"
-msgstr "Web App"
+msgstr "Aplikacja internetowa"
 
 #: src/components/Types.vue:6 src/views/Stats.vue:111
 msgid "Web App+"
-msgstr "Web App+"
+msgstr "Aplikacja internetowa+"
 
 #: src/views/Browse.vue:33
 msgid "Web Apps"
