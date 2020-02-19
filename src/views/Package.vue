@@ -275,8 +275,11 @@ let restricted = [
     'debug',
     'history',
     'music_files',
+    'music_files_read',
     'picture_files',
+    'picture_files_read',
     'video_files',
+    'video_files_read',
     'unconfined',
 ];
 
