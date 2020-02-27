@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2019-11-11 07:36+0000\n"
-"Last-Translator: Kai Goldbeck <kaiuwe.goldbeck@mailbox.org>\n"
+"PO-Revision-Date: 2020-02-28 17:21+0000\n"
+"Last-Translator: Daniel Frost <one@frostinfo.de>\n"
 "Language-Team: German <https://translate.ubports.com/projects/openstore/"
 "open-storeio/de/>\n"
 "Language: de\n"
@@ -1219,11 +1219,11 @@ msgstr "Gewalt"
 
 #: src/components/Types.vue:5 src/views/Stats.vue:110
 msgid "Web App"
-msgstr "Webapp"
+msgstr "Web-App"
 
 #: src/components/Types.vue:6 src/views/Stats.vue:111
 msgid "Web App+"
-msgstr "Webapp+"
+msgstr "Web-App+"
 
 #: src/views/Browse.vue:33
 msgid "Web Apps"
