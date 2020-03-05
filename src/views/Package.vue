@@ -378,7 +378,7 @@ export default {
                                 hook.apparmor.write_path.forEach((path) => {
                                     permissions.push({
                                         type: 'write',
-                                        path: path.replace('/home/phablet', '~'),
+                                        path: path.replace('/home/phablet', '~').replace('@{HOME}', '~'),
                                     });
                                 });
                             }
@@ -387,7 +387,7 @@ export default {
                                 hook.apparmor.read_path.forEach((path) => {
                                     permissions.push({
                                         type: 'read',
-                                        path: path.replace('/home/phablet', '~'),
+                                        path: path.replace('/home/phablet', '~').replace('@{HOME}', '~'),
                                     });
                                 });
                             }
