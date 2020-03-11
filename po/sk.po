@@ -8,69 +8,77 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-30 00:38-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-03-12 18:22+0000\n"
+"Last-Translator: dano6 <dano.kutka@gmail.com>\n"
+"Language-Team: Slovak <https://translate.ubports.com/projects/openstore/"
+"open-storeio/sk/>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 3.8\n"
 
 #: src/views/Package.vue:149
 msgid ""
 "*This app contains NSFW content, to view the description and\n"
 "screenshots, click the above button."
 msgstr ""
+"*Táto aplikácia obsahuje materiály určené iba pre dospelých, pre navštívenie "
+"obsahu,\n"
+"popisov a snímok obrazovky, kliknite na vyššie uvedené tlačidlo."
 
 #: src/views/ManagePackage.vue:575
 msgid "%{name} was successfully deleted"
-msgstr ""
+msgstr "%{name} bol úspešne vymazaný"
 
 #: src/views/ManagePackage.vue:157
 msgid "A comma separated list of keywords"
-msgstr ""
+msgstr "Zoznam kľúčových slov oddelených čiarkou"
 
 #: src/App.vue:34 src/views/About.vue:3 src/views/About.vue:185
 #: src/views/About.vue:189
 msgid "About"
-msgstr ""
+msgstr "O OpenStore"
 
 #: src/App.vue:78
 msgid "About Us"
-msgstr ""
+msgstr "O nás"
 
 #: src/views/Package.vue:319
 msgid "Accounts"
-msgstr ""
+msgstr "Účty"
 
 #: src/views/ManageRevisions.vue:63
 msgid "Add Another Architecture"
-msgstr ""
+msgstr "Pridať ďalšiu architektúru"
 
 #: src/views/Browse.vue:16
 msgid "All Categories"
-msgstr ""
+msgstr "Všetky kategórie"
 
 #: src/views/Browse.vue:31
 msgid "All Types"
-msgstr ""
+msgstr "Všetky typy"
 
 #: src/views/Login.vue:26
 msgid "An account is not needed to download or install apps."
 msgstr ""
+"K stiahnutiu alebo inštalácií aplikácií nie je potrebné mať zriadený účet."
 
 #: src/views/ManagePackage.vue:442 src/views/ManagePackage.vue:460
 #: src/views/ManageRevisions.vue:164
 msgid "An error occured loading your app data"
-msgstr ""
+msgstr "Pri nahrávaní dát aplikácie prišlo k chybe"
 
 #: src/views/ManageRevisions.vue:211 src/views/Submit.vue:212
 msgid "An unknown error has occured"
-msgstr ""
+msgstr "Prišlo k neznámej chybe"
 
 #: src/views/About.vue:162
 msgid "And many amazing developers, testers, and users from the OpenStore community!"
 msgstr ""
+"A veľa úžasných vývojárov, testerov a používateľov z OpenStore komunity!"
 
 #: src/views/About.vue:122
 msgid ""
@@ -82,39 +90,41 @@ msgstr ""
 
 #: src/views/Manage.vue:14
 msgid "API Key"
-msgstr ""
+msgstr "API kľúč"
 
 #: src/components/Types.vue:3 src/views/Manage.vue:46 src/views/Stats.vue:108
 msgid "App"
-msgstr ""
+msgstr "Aplikácia"
 
 #: src/views/Submit.vue:95
 msgid "App containing or promoting any of the above are strictly prohibited."
 msgstr ""
+"Aplikácia obsahujúce alebo propagujúce čokoľvek z vyššie uvedeného sú prísne "
+"zakázané."
 
 #: src/views/Submit.vue:133
 msgid "App Name"
-msgstr ""
+msgstr "Názov aplikácie"
 
 #: src/App.vue:88
 msgid "App Stats"
-msgstr ""
+msgstr "Štatistiky aplikácie"
 
 #: src/views/Submit.vue:150
 msgid "App Title"
-msgstr ""
+msgstr "Názov aplikácie"
 
 #: src/views/Stats.vue:19
 msgid "App Type"
-msgstr ""
+msgstr "Druh aplikácie"
 
 #: src/views/Stats.vue:15
 msgid "App Types"
-msgstr ""
+msgstr "Typy aplikácie"
 
 #: src/views/Browse.vue:32
 msgid "Apps"
-msgstr ""
+msgstr "Aplikácie"
 
 #: src/views/Submit.vue:101
 msgid ""
