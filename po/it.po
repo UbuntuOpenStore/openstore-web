@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
 "PO-Revision-Date: 2020-03-19 11:55+0000\n"
-"Last-Translator: Guglielmo Felici <guglielmo.felici@yahoo.it>\n"
+"Last-Translator: Mike <miguel2000@livecom.it>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/openstore/"
 "open-storeio/it/>\n"
 "Language: it\n"
@@ -166,10 +166,10 @@ msgid ""
 "This includes, but is not limited to, pornography and services promoting "
 "sexually explicit content."
 msgstr ""
-"Le app che contengono o promuovono contenuti sessualmente espliciti non sono "
-"consentite.\n"
-"Questo include, ma non limitatamente a, pornografia e servizi che promuovono "
-"contenuti sessualmente espliciti."
+"Non sono permesse app che contengano o promuovano contenuto sessuale  "
+"esplicito.\n"
+"Ciò include ma non limita a, pornografia e servizi di promozione di "
+"contenuti sessuali espliciti. "
 
 #: src/views/Submit.vue:7
 msgid ""
@@ -472,7 +472,7 @@ msgstr "Discorso di molestie, bullismo o odio"
 
 #: src/views/Package.vue:276
 msgid "History"
-msgstr ""
+msgstr "Cronologia"
 
 #: src/views/Manage.vue:44
 msgid "Icon"
