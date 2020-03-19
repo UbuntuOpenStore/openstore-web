@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2020-02-20 21:21+0000\n"
-"Last-Translator: Mike <miguel2000@livecom.it>\n"
+"PO-Revision-Date: 2020-03-19 11:55+0000\n"
+"Last-Translator: Guglielmo Felici <guglielmo.felici@yahoo.it>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/openstore/"
 "open-storeio/it/>\n"
 "Language: it\n"
@@ -191,7 +191,7 @@ msgid ""
 "telegram group."
 msgstr ""
 "Le app che richiedono la revisione manuale devono essere inviate contattando "
-"un amministratore nel nostro gruppo di telegram."
+"un amministratore nel nostro gruppo Telegram."
 
 #: src/views/Submit.vue:114
 msgid ""
@@ -422,7 +422,7 @@ msgstr ""
 
 #: src/App.vue:93
 msgid "Fork us on GitLab"
-msgstr ""
+msgstr "Fai una fork su GitLab"
 
 #: src/views/ManagePackage.vue:262 src/views/Package.vue:189
 msgid "Framework"
@@ -450,8 +450,8 @@ msgid ""
 msgstr ""
 "Fornisci una breve spiegazione del perché non puoi pubblicare l'app senza "
 "ulteriori privilegi.\n"
-"Non c'è bisogno di entrare nei dettagli, un solo tipo come \"ha bisogno di "
-"eseguire un demone in background\" lo farà.\n"
+"Non c'è bisogno di entrare nei dettagli, una sola frase come \"ha bisogno di "
+"eseguire un demone in background\" andrà bene.\n"
 "Elenca tutte le funzioni speciali che hai, se ce ne sono altre."
 
 #: src/views/Browse.vue:187 src/views/Manage.vue:174
@@ -483,13 +483,12 @@ msgid "ID"
 msgstr "ID"
 
 #: src/views/Submit.vue:44
-#, fuzzy
 msgid ""
 "If an application could be published without manual review if it wouldn’t be "
 "for that one cool feature, publish a stripped down version!\n"
 "Not everyone will want to install apps with less confinement."
 msgstr ""
-"Se un applicazione può essere pubblicata senza revisione manuale se non "
+"Se un applicazione potrebbe essere pubblicata senza revisione manuale se non "
 "fosse per quella fantastica funzionalità, pubblica una versione ridotta!\n"
 "Non tutti vorranno installare applicazioni senza restrizioni."
 
@@ -1225,11 +1224,11 @@ msgstr "Violenza"
 
 #: src/components/Types.vue:5 src/views/Stats.vue:110
 msgid "Web App"
-msgstr "Web App"
+msgstr "Applicazione Web"
 
 #: src/components/Types.vue:6 src/views/Stats.vue:111
 msgid "Web App+"
-msgstr "Web App+"
+msgstr "Applicazione web+"
 
 #: src/views/Browse.vue:33
 msgid "Web Apps"
