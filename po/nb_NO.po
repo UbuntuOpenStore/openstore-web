@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-08 23:33-0400\n"
-"PO-Revision-Date: 2019-11-15 20:36+0000\n"
+"PO-Revision-Date: 2020-03-26 18:22+0000\n"
 "Last-Translator: Ari Börde Kröyer <ari.kroyer@online.no>\n"
 "Language-Team: Norwegian Bokmål <https://translate.ubports.com/projects/"
 "openstore/open-storeio/nb_NO/>\n"
@@ -418,7 +418,7 @@ msgstr "Ubegrenset stystemtilgang"
 
 #: src/views/Submit.vue:100
 msgid "Gambling"
-msgstr "Gambling"
+msgstr "Pengespill"
 
 #: src/views/About.vue:25
 msgid "Get your badge"
