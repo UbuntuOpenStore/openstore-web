@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-30 00:38-0500\n"
-"PO-Revision-Date: 2020-02-20 21:21+0000\n"
+"PO-Revision-Date: 2020-04-02 12:22+0000\n"
 "Last-Translator: Daniel Frańczak <danielfranczak5@wp.pl>\n"
 "Language-Team: Polish <https://translate.ubports.com/projects/openstore/"
 "open-storeio/pl/>\n"
@@ -1144,11 +1144,11 @@ msgstr "Bez kategorii"
 
 #: src/views/Package.vue:180
 msgid "Unrestricted read access to:"
-msgstr "Nieograniczony dostęp do odczytu do:"
+msgstr "Nieograniczony dostęp do odczytu:"
 
 #: src/views/Package.vue:176
 msgid "Unrestricted write access to:"
-msgstr "Nieograniczony dostęp do zapisu do:"
+msgstr "Nieograniczony dostęp do zapisu:"
 
 #: src/views/Package.vue:237
 msgid "Updated"
