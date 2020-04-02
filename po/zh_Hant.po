@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2020-01-19 19:40+0000\n"
-"Last-Translator: louies0623 <louies0623@gmail.com>\n"
+"PO-Revision-Date: 2020-04-03 21:22+0000\n"
+"Last-Translator: Muge Niu <mugeniu12138@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.ubports.com/projects/"
 "openstore/open-storeio/zh_Hant/>\n"
 "Language: zh_Hant\n"
@@ -1170,11 +1170,11 @@ msgstr "暴力"
 
 #: src/components/Types.vue:5 src/views/Stats.vue:110
 msgid "Web App"
-msgstr "網路應用程式"
+msgstr "網頁應用"
 
 #: src/components/Types.vue:6 src/views/Stats.vue:111
 msgid "Web App+"
-msgstr "網路應用程式 +"
+msgstr "網頁應用+"
 
 #: src/views/Browse.vue:33
 msgid "Web Apps"
