@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-30 00:38-0500\n"
-"PO-Revision-Date: 2020-04-07 19:23+0000\n"
+"PO-Revision-Date: 2020-04-08 21:23+0000\n"
 "Last-Translator: Muge Niu <mugeniu12138@gmail.com>\n"
 "Language-Team: Chinese (Mandarin) <https://translate.ubports.com/projects/"
 "openstore/open-storeio/cmn/>\n"
@@ -641,7 +641,7 @@ msgstr "最早"
 
 #: src/views/Browse.vue:47
 msgid "Oldest Update"
-msgstr ""
+msgstr "最早的更新"
 
 #: src/views/Submit.vue:60
 msgid ""
@@ -651,80 +651,87 @@ msgid ""
 "Any account with serious infractions may be subject to termination.\n"
 "The OpenStore team thanks you for helping us promote a better enviroment for everyone."
 msgstr ""
+"OpenStore 的主要目标之一是为所有年龄的人提供安全的应用商店。\n"
+"为了实现这一目标，我们不允许发布某些类型的应用。\n"
+"如果不遵守这些规定，你的应用软件将被删除。\n"
+"任何严重违规的话连帐户都有可能被终止。\n"
+"OpenStore 团队感谢您帮助我们为每个人推广更好的环境。"
 
 #: src/views/Submit.vue:48
 msgid ""
 "Only open source applications allowed for manual review:\n"
 "As the applications might have arbitrary access to the device, every manually reviewed app will get a source code review."
 msgstr ""
+"只允许开源软件程式进行人工审核：\n"
+"由于应用软件可能具有对装置的任意存取权限，因此每个手动审核的应用软件都将获得源代码审查。"
 
 #: src/views/ManagePackage.vue:223
 msgid "Only YouTube videos are supported at this time. Make sure the url is for the embedded video!"
-msgstr ""
+msgstr "目前只支持 YouTube 影片。确保网址是用于嵌入影片的!"
 
 #: src/views/About.vue:47
 msgid "Open the terminal app"
-msgstr ""
+msgstr "打开终端机应用程序"
 
 #: src/views/About.vue:147
 msgid "OpenStore API/Server Contributors"
-msgstr ""
+msgstr "OpenStore应用软件接口/服务器贡献者"
 
 #: src/views/Submit.vue:58
 msgid "OpenStore App Content Policy"
-msgstr ""
+msgstr "OpenStore应用软件内容政策"
 
 #: src/views/About.vue:157
 msgid "OpenStore App Contributors"
-msgstr ""
+msgstr "OpenStore应用软件贡献者"
 
 #: src/views/Badge.vue:3
 msgid "OpenStore Badges"
-msgstr ""
+msgstr "OpenStore标记"
 
 #: src/views/About.vue:67
 msgid "OpenStore group on Telegram"
-msgstr ""
+msgstr "Telegram 上的 OpenStore 群組"
 
 #: src/views/About.vue:93
 msgid "OpenStore source on GitLab"
-msgstr ""
+msgstr "GitLab 上的 OpenStore 源码"
 
 #: src/views/About.vue:152
 msgid "OpenStore Website Contributors"
-msgstr ""
+msgstr "OpenStore网站贡献者"
 
 #: src/views/ManagePackage.vue:245
 msgid "Package Info"
-msgstr ""
+msgstr "安装包信息"
 
 #: src/views/Package.vue:218
 msgid "Packager/Publisher"
-msgstr ""
+msgstr "对象包装程序/发布人"
 
 #: src/views/NotFound.vue:3
 msgid "Page Not Found"
-msgstr ""
+msgstr "找不到页面"
 
 #: src/views/Package.vue:111 src/views/Package.vue:166
 msgid "Permissions"
-msgstr ""
+msgstr "权限"
 
 #: src/views/Package.vue:338
 msgid "Picture Files"
-msgstr ""
+msgstr "图片文件"
 
 #: src/views/ManagePackage.vue:43
 msgid "Presentation"
-msgstr ""
+msgstr "介绍"
 
 #: src/views/Submit.vue:69
 msgid "Prohibited Apps"
-msgstr ""
+msgstr "已禁止的应用软件"
 
 #: src/views/About.vue:20
 msgid "Promote your app on the OpenStore!"
-msgstr ""
+msgstr "在OpenStore上推广你的应用！"
 
 #: src/views/Badge.vue:5
 msgid ""
@@ -733,38 +740,42 @@ msgid ""
 "are available in several different languages and in both PNG and SVG\n"
 "formats."
 msgstr ""
+"在OpenStore上推广您的应用程式！ 将这些标记添加到您的网站上，\n"
+" 代码存储库，社交媒体或网路上的任何地方。 标记\n"
+" 提供几种不同的语言以及 PNG 和 SVG \n"
+" 格式。"
 
 #: src/views/ManagePackage.vue:14
 msgid "Public Link"
-msgstr ""
+msgstr "公开连接"
 
 #: src/views/ManagePackage.vue:21
 msgid "Publish"
-msgstr ""
+msgstr "发布"
 
 #: src/views/Manage.vue:74 src/views/Package.vue:241
 msgid "Published"
-msgstr ""
+msgstr "发布"
 
 #: src/views/ManagePackage.vue:321
 msgid "Published Date"
-msgstr ""
+msgstr "发布时间"
 
 #: src/views/Package.vue:339
 msgid "Push Notifications"
-msgstr ""
+msgstr "推送通知"
 
 #: src/views/Package.vue:334
 msgid "Read Music Files"
-msgstr ""
+msgstr "读取音乐文件"
 
 #: src/views/Package.vue:337
 msgid "Read Picture Files"
-msgstr ""
+msgstr "读取图片文件"
 
 #: src/views/Package.vue:342
 msgid "Read Video Files"
-msgstr ""
+msgstr "读取视频文件"
 
 #: src/views/Browse.vue:41
 msgid "Relevance"
