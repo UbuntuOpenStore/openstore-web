@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2020-04-08 21:23+0000\n"
+"PO-Revision-Date: 2020-04-10 20:23+0000\n"
 "Last-Translator: Muge Niu <mugeniu12138@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.ubports.com/projects/"
 "openstore/open-storeio/zh_Hant/>\n"
@@ -818,7 +818,7 @@ msgstr "提交規範"
 
 #: src/views/Submit.vue:31
 msgid "Rules for Submissions Requiring Manual Review"
-msgstr "需要人工審核的提交規範"
+msgstr "人工審核的提交規範"
 
 #: src/views/About.vue:50
 msgid "Run the command:"
@@ -852,7 +852,7 @@ msgstr "搜尋"
 msgid ""
 "Send us a link to a repository for your app to our telegram group along with "
 "some instructions on how to build it."
-msgstr "將您的應用程式存儲庫的連結發送給我們的 Telegram 群組，以及有關怎樣建構它的說明。"
+msgstr "將您的應用程式存儲庫的鏈接以及有關怎樣建構它的說明發送給我們的 Telegram 群組。"
 
 #: src/views/Package.vue:287
 msgid "Sensors"
@@ -1138,7 +1138,7 @@ msgstr "網址"
 
 #: src/views/ManageRevisions.vue:44
 msgid "URL of App from the Web"
-msgstr "來自網頁的應用程式 URL"
+msgstr "來自網頁的應用URL"
 
 #: src/views/Package.vue:288
 msgid "User Metrics"
