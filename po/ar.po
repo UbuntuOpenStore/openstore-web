@@ -78,7 +78,7 @@ msgstr "والعديد من المطورون الرائعون, المجربون,
 #: src/views/About.vue:122
 msgid ""
 "Any personal data you decide to give us (e.g. your email address when "
-"registering for an account to upload your apps) goes no further than us,\n"
+"registering for an account to upload your apps)\ngoes no further than us,\n"
 "and will not be used for anything other than allowing you to maintain your "
 "apps and, in rare cases,\n"
 "contact you in the event there is an issue with your app.\n"
@@ -480,7 +480,7 @@ msgstr "المعرف"
 #: src/views/Submit.vue:44
 msgid ""
 "If an application could be published without manual review if it wouldn’t be "
-"for that one cool feature, publish a stripped down version!\n"
+"for that one cool feature,\npublish a stripped down version!\n"
 "Not everyone will want to install apps with less confinement."
 msgstr ""
 "إذا كان من الممكن نشر تطبيق ما دون مراجعة يدوية إذا لم يكن لهذا الميزة "

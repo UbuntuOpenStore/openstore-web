@@ -79,7 +79,7 @@ msgstr "和许多来自 OpenStore 社区中出色的开发人员、测试人员�
 
 #: src/views/About.vue:122
 msgid ""
-"Any personal data you decide to give us (e.g. your email address when registering for an account to upload your apps) goes no further than us,\n"
+"Any personal data you decide to give us (e.g. your email address when registering for an account to upload your apps)\ngoes no further than us,\n"
 "and will not be used for anything other than allowing you to maintain your apps and, in rare cases,\n"
 "contact you in the event there is an issue with your app.\n"
 "Additionally, this site uses cookies to keep you logged in to your account."
@@ -450,7 +450,7 @@ msgstr "身份证件"
 #: src/views/Submit.vue:44
 #, fuzzy
 msgid ""
-"If an application could be published without manual review if it wouldn’t be for that one cool feature, publish a stripped down version!\n"
+"If an application could be published without manual review if it wouldn’t be for that one cool feature,\npublish a stripped down version!\n"
 "Not everyone will want to install apps with less confinement."
 msgstr ""
 "如果某个应用软件可以在没有人工审核的情况下发布，如果它不适用于那个很酷的功能，请发布一个精简版本！\n"

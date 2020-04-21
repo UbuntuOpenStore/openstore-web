@@ -1,606 +1,635 @@
 <template>
+  <div class="row">
+    <!-- TODO intelegent back button -->
+    <div class="back">
+      <router-link :to="back">
+        <i class="fa fa-chevron-left"></i>
+      </router-link>
+      <router-link :to="back" v-translate>Back</router-link>
+    </div>
+
     <div class="row">
-        <!-- TODO intelegent back button -->
-        <div class="back">
-            <router-link :to="back">
-                <i class="fa fa-chevron-left"></i>
-            </router-link>
-            <router-link :to="back" v-translate>
-                Back
-            </router-link>
+      <h2
+        v-if="missing"
+        class="center"
+        v-translate
+      >The app you are looking for has been removed or does not exist</h2>
+
+      <h2
+        v-if="error"
+        class="center text-red"
+        v-translate
+      >There was an error trying to find this app, please refresh and try again.</h2>
+
+      <div v-if="loading" class="center">
+        <i class="fa fa-spinner fa-spin fa-2x"></i>
+      </div>
+
+      <div class="col-6" v-if="app">
+        <div class="row">
+          <img class="u-float-left icon" :src="app.icon" />
+          <types class="u-float-right types" :types="app.types"></types>
+
+          <h1>{{app.name}}</h1>
+          <h2>{{app.tagline}}</h2>
+          <router-link
+            :to="{name: 'browse', query: {search: 'author:' + app.author}}"
+            v-if="app.author"
+          >{{app.author}}</router-link>
         </div>
 
         <div class="row">
-            <h2 v-if="missing" class="center" v-translate>
-                The app you are looking for has been removed or does not exist
-            </h2>
+          <div class="center">
+            <span v-if="app.downloads.length === 0" v-translate>No longer available</span>
 
-            <h2 v-if="error" class="center text-red" v-translate>
-                There was an error trying to find this app, please refresh and try again.
-            </h2>
+            <a
+              :href="openstoreLink"
+              class="p-button--positive"
+              v-if="app.id != 'openstore.openstore-team' && app.downloads.length > 0"
+              :title="installTitle"
+              v-translate
+            >Install</a>
 
-            <div v-if="loading" class="center">
-                <i class="fa fa-spinner fa-spin fa-2x"></i>
+            <span
+              class="download-button p-contextual-menu--left ml"
+              v-if="app.downloads.length > 0"
+            >
+              <button
+                class="p-contextual-menu__toggle p-button--positive"
+                aria-controls="#download-menu"
+                :aria-expanded="showDownloadMenu ? 'true' : 'false'"
+                aria-haspopup="true"
+                @click="showDownloadMenu = !showDownloadMenu"
+              >
+                <span class="mr" v-translate>Download</span>
+                <i
+                  class="fa"
+                  :class="{'fa-caret-down': !showDownloadMenu, 'fa-caret-up': showDownloadMenu}"
+                ></i>
+              </button>
+              <span
+                class="p-contextual-menu__dropdown"
+                id="download-menu"
+                :aria-hidden="showDownloadMenu ? 'false' : 'true'"
+                aria-label="submenu"
+              >
+                <span class="p-contextual-menu__group">
+                  <a
+                    v-for="download in app.downloads"
+                    :href="download.download_url"
+                    :key="download.revision"
+                    class="p-contextual-menu__link"
+                    target="_blank"
+                    @click="showDownloadMenu = false"
+                  >
+                    <span class="mr" v-translate>Download</span>
+                    v{{download.version}}
+                    ({{download.architecture}})
+                  </a>
+                </span>
+              </span>
+            </span>
+          </div>
+
+          <div class="row p-matrix u-clearfix">
+            <div class="p-matrix__item center version">
+              <i class="fa fa-2x fa-info-circle text-blue"></i>
+              <br />
+
+              v{{app.version}}
+              <span v-if="app.donate_url && app.license">
+                <br />
+                {{app.license}}
+              </span>
             </div>
 
-            <div class="col-6" v-if="app">
-                <div class="row">
-                    <img class="u-float-left icon" :src="app.icon" />
-                    <types class="u-float-right types" :types="app.types"></types>
+            <div class="p-matrix__item center" v-if="!app.donate_url && app.license">
+              <i class="fa fa-2x fa-file-text-o text-green"></i>
+              <br />
+              {{app.license}}
+            </div>
+            <div class="p-matrix__item center" :title="restrictedAccess">
+              <i class="fa fa-2x fa-shield" :class="{'text-red': isRestrictedAccess}"></i>
+              <br />
 
-                    <h1>{{app.name}}</h1>
-                    <h2>{{app.tagline}}</h2>
-                    <router-link :to="{name: 'browse', query: {search: 'author:' + app.author}}" v-if="app.author">
-                        {{app.author}}
-                    </router-link>
-                </div>
-
-                <div class="row">
-                    <div class="center">
-                        <span v-if="app.downloads.length === 0" v-translate>
-                            No longer available
-                        </span>
-
-                        <a
-                            :href="openstoreLink"
-                            class="p-button--positive"
-                            v-if="app.id != 'openstore.openstore-team' && app.downloads.length > 0"
-                            :title="installTitle"
-                            v-translate
-                        >Install</a>
-
-                        <span class="download-button p-contextual-menu--left ml" v-if="app.downloads.length > 0">
-                            <button
-                                class="p-contextual-menu__toggle p-button--positive"
-                                aria-controls="#download-menu"
-                                :aria-expanded="showDownloadMenu ? 'true' : 'false'"
-                                aria-haspopup="true"
-                                @click="showDownloadMenu = !showDownloadMenu"
-                            >
-                                <span class="mr" v-translate>Download</span>
-                                <i
-                                    class="fa"
-                                    :class="{'fa-caret-down': !showDownloadMenu, 'fa-caret-up': showDownloadMenu}"
-                                ></i>
-                            </button>
-                            <span
-                                class="p-contextual-menu__dropdown"
-                                id="download-menu"
-                                :aria-hidden="showDownloadMenu ? 'false' : 'true'"
-                                aria-label="submenu"
-                            >
-                                <span class="p-contextual-menu__group">
-                                    <a
-                                        v-for="download in app.downloads"
-                                        :href="download.download_url"
-                                        :key="download.revision"
-                                        class="p-contextual-menu__link"
-                                        target="_blank"
-                                        @click="showDownloadMenu = false"
-                                    >
-                                        <span class="mr" v-translate>Download</span>
-                                        v{{download.version}}
-                                        ({{download.architecture}})
-                                    </a>
-                                </span>
-                            </span>
-                        </span>
-                    </div>
-
-                    <div class="row p-matrix u-clearfix">
-                        <div class="p-matrix__item center version">
-                            <i class="fa fa-2x fa-info-circle text-blue"></i>
-                            <br/>
-                            v{{app.version}}
-
-                            <span v-if="app.donate_url && app.license">
-                                <br/>
-                                {{app.license}}
-                            </span>
-                        </div>
-
-                        <div class="p-matrix__item center" v-if="!app.donate_url && app.license">
-                            <i class="fa fa-2x fa-file-text-o text-green"></i>
-                            <br/>
-
-                            {{app.license}}
-                        </div>
-                        <div class="p-matrix__item center" :title="restrictedAccess">
-                            <i class="fa fa-2x fa-shield" :class="{'text-red': isRestrictedAccess}"></i>
-                            <br/>
-
-                            <span v-translate>Permissions</span>
-                        </div>
-
-                        <div class="p-matrix__item center" v-if="app.donate_url">
-                            <a
-                                :href="app.donate_url"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            ><i class="fa fa-2x fa-heart text-red"></i></a>
-                            <br/>
-
-                            <a :href="app.donate_url" target="_blank" rel="noopener noreferrer" v-translate>
-                                Donate
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row" v-if="showNSFW">
-                    <p class="pre">{{app.description}}</p>
-                </div>
-
-                <div class="row video" v-if="app.video_url && showNSFW">
-                    <iframe :src="app.video_url" frameborder="0" allowfullscreen></iframe>
-                </div>
-
-                <div class="row screenshots" v-if="app.screenshots.length > 0 && showNSFW">
-                    <h3 v-translate>Screenshots</h3>
-
-                    <div class="screenshot-scroll">
-                        <div v-for="screenshot in app.screenshots" :key="screenshot">
-                            <img v-img:screenshots :src="screenshot" alt="" class="screenshot" />
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row" v-if="!showNSFW">
-                    <button class="p-button--neutral" @click="toggleShowNSFW()" v-translate>Show NSFW Content</button>
-                    <p v-translate>
-                        *This app contains NSFW content, to view the description and
-                        screenshots, click the above button.
-                    </p>
-                </div>
+              <span v-translate>Permissions</span>
             </div>
 
-            <div class="col-6" v-if="app">
-                <div class="row" v-if="showNSFW && app.changelog">
-                    <h4>
-                        <span v-translate>Changelog</span>:
-                    </h4>
-                    <p class="pre">{{app.changelog}}</p>
-                </div>
+            <div class="p-matrix__item center" v-if="app.donate_url">
+              <a :href="app.donate_url" target="_blank" rel="noopener noreferrer">
+                <i class="fa fa-2x fa-heart text-red"></i>
+              </a>
+              <br />
 
-                <div class="row permissions">
-                    <h4>
-                        <span v-translate>Permissions</span>:
-                    </h4>
-                    <ul>
-                        <li
-                            v-for="permission in permissions"
-                            :key="permission"
-                            :class="{'text-red': isRestricted(permission)}"
-                            :title="restrictedLabel(permission)"
-                        >
-                            <span v-if="permission.type == 'write'">
-                                <span v-translate>Unrestricted write access to:</span>
-                                {{permission.path}}
-                            </span>
-                            <span v-if="permission.type == 'read'">
-                                <span v-translate>Unrestricted read access to:</span>
-                                {{permission.path}}
-                            </span>
-                            <span v-if="!permission.type">
-                                {{permissionLabels[permission]}}
-                            </span>
-                        </li>
-                        <li v-if="permissions.length === 0" v-translate>None</li>
-                    </ul>
-                </div>
-
-                <div class="row info">
-                    <h4>
-                        <span v-translate>Stats</span>:
-                    </h4>
-
-                    <p v-if="app.latestDownloads > 0">
-                        <span v-translate>Downloads of the latest version</span>:
-                        {{app.latestDownloads}}
-                    </p>
-                    <p>
-                        <span v-translate>Total downloads</span>:
-                        {{app.totalDownloads}}
-                    </p>
-                </div>
-
-                <div class="row info">
-                    <h4>
-                        <span v-translate>Info</span>:
-                    </h4>
-                    <p v-if="app.author">
-                        <span v-translate>Author</span>:
-                        <router-link :to="{name: 'browse', query: {search: 'author:' + app.author}}">
-                            {{app.author}}
-                        </router-link>
-                    </p>
-
-                    <p v-if="app.maintainer_name">
-                        <span v-translate>Packager/Publisher</span>: {{app.maintainer_name}}
-                    </p>
-                    <p v-if="app.support_url">
-                        <span v-translate>Support</span>:
-                        <a :href="app.support_url" target="_blank" rel="noopener noreferrer">{{app.support_url}}</a>
-                    </p>
-                    <p v-if="app.source">
-                        <span v-translate>Source</span>:
-                        <a :href="app.source" target="_blank" rel="noopener noreferrer">{{app.source}}</a>
-                    </p>
-                    <p v-if="app.license">
-                        <span v-translate>License</span>:
-                        {{app.license}}
-                    </p>
-                    <p v-if="app.category">
-                        <span v-translate>Category</span>:
-                        {{app.category}}
-                    </p>
-                    <p v-if="app.updated_date">
-                        <span v-translate>Updated</span>:
-                        {{app.updated_date | moment("MMMM Do YYYY")}}
-                    </p>
-                    <p v-if="app.published_date">
-                        <span v-translate>Published</span>:
-                        {{app.published_date | moment("MMMM Do YYYY")}}
-                    </p>
-                    <p v-if="app.framework">
-                        <span v-translate>Framework</span>:
-                        {{app.framework}}
-                    </p>
-                    <p v-if="app.architecture">
-                        <span v-translate>Architecture</span>:
-                        {{app.architecture}}
-                    </p>
-                    <p v-if="app.languages.length > 0">
-                        <span v-translate>Translation Languages</span>:
-                        {{app.languages.join(', ')}}
-                    </p>
-                </div>
+              <a :href="app.donate_url" target="_blank" rel="noopener noreferrer" v-translate>Donate</a>
             </div>
+          </div>
         </div>
+
+        <div class="row" v-if="showNSFW">
+          <p class="pre">{{app.description}}</p>
+        </div>
+
+        <div class="row video" v-if="app.video_url && showNSFW">
+          <iframe :src="app.video_url" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="row screenshots" v-if="app.screenshots.length > 0 && showNSFW">
+          <h3 v-translate>Screenshots</h3>
+
+          <div class="screenshot-scroll">
+            <div v-for="screenshot in app.screenshots" :key="screenshot">
+              <img v-img:screenshots :src="screenshot" alt class="screenshot" />
+            </div>
+          </div>
+        </div>
+
+        <div class="row" v-if="!showNSFW">
+          <button class="p-button--neutral" @click="toggleShowNSFW()" v-translate>Show NSFW Content</button>
+          <p v-translate>
+            *This app contains NSFW content, to view the description and
+            screenshots, click the above button.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-6" v-if="app">
+        <div class="row" v-if="showNSFW && app.changelog">
+          <h4>
+            <span v-translate>Changelog</span>:
+          </h4>
+          <p class="pre">{{app.changelog}}</p>
+        </div>
+
+        <div class="row permissions">
+          <h4>
+            <span v-translate>Permissions</span>:
+          </h4>
+          <ul>
+            <li
+              v-for="permission in permissions"
+              :key="permission"
+              :class="{'text-red': isRestricted(permission)}"
+              :title="restrictedLabel(permission)"
+            >
+              <span v-if="permission.type == 'write'">
+                <span v-translate>Unrestricted write access to:</span>
+                {{permission.path}}
+              </span>
+              <span v-if="permission.type == 'read'">
+                <span v-translate>Unrestricted read access to:</span>
+                {{permission.path}}
+              </span>
+              <span v-if="!permission.type">{{permissionLabels[permission]}}</span>
+            </li>
+            <li v-if="permissions.length === 0" v-translate>None</li>
+          </ul>
+        </div>
+
+        <div class="row info">
+          <h4>
+            <span v-translate>Stats</span>:
+          </h4>
+
+          <p v-if="app.latestDownloads > 0">
+            <span v-translate>Downloads of the latest version</span>
+            :
+            {{app.latestDownloads}}
+          </p>
+          <p>
+            <span v-translate>Total downloads</span>
+            :
+            {{app.totalDownloads}}
+          </p>
+        </div>
+
+        <div class="row info">
+          <h4>
+            <span v-translate>Info</span>:
+          </h4>
+          <p v-if="app.author">
+            <span v-translate>Author</span>:
+            <router-link
+              :to="{name: 'browse', query: {search: 'author:' + app.author}}"
+            >{{app.author}}</router-link>
+          </p>
+
+          <p v-if="app.maintainer_name">
+            <span v-translate>Packager/Publisher</span>
+            : {{app.maintainer_name}}
+          </p>
+          <p v-if="app.support_url">
+            <span v-translate>Support</span>:
+            <a
+              :href="app.support_url"
+              target="_blank"
+              rel="noopener noreferrer"
+            >{{app.support_url}}</a>
+          </p>
+          <p v-if="app.source">
+            <span v-translate>Source</span>:
+            <a :href="app.source" target="_blank" rel="noopener noreferrer">{{app.source}}</a>
+          </p>
+          <p v-if="app.license">
+            <span v-translate>License</span>
+            :
+            {{app.license}}
+          </p>
+          <p v-if="app.category">
+            <span v-translate>Category</span>
+            :
+            {{app.category}}
+          </p>
+          <p v-if="app.updated_date">
+            <span v-translate>Updated</span>
+            :
+            {{app.updated_date | moment("MMMM Do YYYY")}}
+          </p>
+          <p v-if="app.published_date">
+            <span v-translate>Published</span>
+            :
+            {{app.published_date | moment("MMMM Do YYYY")}}
+          </p>
+          <p v-if="app.framework">
+            <span v-translate>Framework</span>
+            :
+            {{app.framework}}
+          </p>
+          <p v-if="app.architecture">
+            <span v-translate>Architecture</span>
+            :
+            {{app.architecture}}
+          </p>
+          <p v-if="app.languages.length > 0">
+            <span v-translate>Translation Languages</span>
+            :
+            {{app.languages.join(', ')}}
+          </p>
+        </div>
+      </div>
     </div>
+  </div>
 </template>
 
 <script>
-import {mapState} from 'vuex';
+import { mapState } from 'vuex';
 
 import api from '@/api';
 import opengraph from '@/opengraph';
 import utils from '@/utils';
 import Types from '@/components/Types.vue';
 
-let restricted = [
-    'bluetooth',
-    'calendar',
-    'contacts',
-    'debug',
-    'history',
-    'music_files',
-    'music_files_read',
-    'picture_files',
-    'picture_files_read',
-    'video_files',
-    'video_files_read',
-    'unconfined',
+const restricted = [
+  'bluetooth',
+  'calendar',
+  'contacts',
+  'debug',
+  'history',
+  'music_files',
+  'music_files_read',
+  'picture_files',
+  'picture_files_read',
+  'video_files',
+  'video_files_read',
+  'unconfined',
 ];
 
 export default {
-    name: 'Package',
-    components: {
-        types: Types,
+  name: 'Package',
+  components: {
+    types: Types,
+  },
+  head: {
+    title() {
+      return { inner: this.app ? this.app.name : '' };
     },
-    head: {
-        title: function() {
-            return {inner: this.app ? this.app.name : ''};
-        },
-        meta: function() {
-            let data = {};
-            if (this.app) {
-                data = {
-                    title: `${this.app.name} - OpenStore`,
-                    description: this.app.tagline,
-                    image: this.app.icon,
-                };
-            }
-
-            return opengraph(data);
-        },
-    },
-    data() {
-        return {
-            app: null,
-            showNSFW: true,
-            showDownloadMenu: false,
-            permissions: [],
-            missing: false,
-            error: false,
-            loading: false,
-            installTitle: this.$gettext('Install via the OpenStore app'),
-            permissionLabels: { // TODO make these update with the language change
-                accounts: this.$gettext('Accounts'),
-                audio: this.$gettext('Audio'),
-                bluetooth: this.$gettext('Bluetooth'),
-                calendar: this.$gettext('Calendar'),
-                camera: this.$gettext('Camera'),
-                connectivity: this.$gettext('Connectivity'),
-                contacts: this.$gettext('Contacts'),
-                content_exchange_source: this.$gettext('Content Exchange Source'),
-                content_exchange: this.$gettext('Content Exchange'),
-                debug: this.$gettext('Debug'),
-                history: this.$gettext('History'),
-                'in-app-purchases': this.$gettext('In App Purchases'),
-                'keep-display-on': this.$gettext('Keep Display On'),
-                location: this.$gettext('Location'),
-                microphone: this.$gettext('Microphone'),
-                music_files_read: this.$gettext('Read Music Files'),
-                music_files: this.$gettext('Music Files'),
-                networking: this.$gettext('Networking'),
-                picture_files_read: this.$gettext('Read Picture Files'),
-                picture_files: this.$gettext('Picture Files'),
-                'push-notification-client': this.$gettext('Push Notifications'),
-                sensors: this.$gettext('Sensors'),
-                usermetrics: this.$gettext('User Metrics'),
-                video_files_read: this.$gettext('Read Video Files'),
-                video_files: this.$gettext('Video Files'),
-                video: this.$gettext('Video'),
-                webview: this.$gettext('Webview'),
-                unconfined: this.$gettext('Full System Access'),
-            },
+    meta() {
+      let data = {};
+      if (this.app) {
+        data = {
+          title: `${this.app.name} - OpenStore`,
+          description: this.app.tagline,
+          image: this.app.icon,
         };
-    },
-    created() {
-        this.refresh();
-    },
-    methods: {
-        refresh() {
-            this.loading = true;
+      }
 
-            api.apps.get(this.$route.params.id).then((data) => {
-                this.loading = false;
+      return opengraph(data);
+    },
+  },
+  data() {
+    return {
+      app: null,
+      showNSFW: true,
+      showDownloadMenu: false,
+      permissions: [],
+      missing: false,
+      error: false,
+      loading: false,
+      installTitle: this.$gettext('Install via the OpenStore app'),
+      permissionLabels: {
+        // TODO make these update with the language change
+        accounts: this.$gettext('Accounts'),
+        audio: this.$gettext('Audio'),
+        bluetooth: this.$gettext('Bluetooth'),
+        calendar: this.$gettext('Calendar'),
+        camera: this.$gettext('Camera'),
+        connectivity: this.$gettext('Connectivity'),
+        contacts: this.$gettext('Contacts'),
+        content_exchange_source: this.$gettext('Content Exchange Source'),
+        content_exchange: this.$gettext('Content Exchange'),
+        debug: this.$gettext('Debug'),
+        history: this.$gettext('History'),
+        'in-app-purchases': this.$gettext('In App Purchases'),
+        'keep-display-on': this.$gettext('Keep Display On'),
+        location: this.$gettext('Location'),
+        microphone: this.$gettext('Microphone'),
+        music_files_read: this.$gettext('Read Music Files'),
+        music_files: this.$gettext('Music Files'),
+        networking: this.$gettext('Networking'),
+        picture_files_read: this.$gettext('Read Picture Files'),
+        picture_files: this.$gettext('Picture Files'),
+        'push-notification-client': this.$gettext('Push Notifications'),
+        sensors: this.$gettext('Sensors'),
+        usermetrics: this.$gettext('User Metrics'),
+        video_files_read: this.$gettext('Read Video Files'),
+        video_files: this.$gettext('Video Files'),
+        video: this.$gettext('Video'),
+        webview: this.$gettext('Webview'),
+        unconfined: this.$gettext('Full System Access'),
+      },
+    };
+  },
+  created() {
+    this.refresh();
+  },
+  methods: {
+    refresh() {
+      this.loading = true;
 
-                this.app = data;
-                if (this.app.nsfw) {
-                    this.showNSFW = false;
+      api.apps
+        .get(this.$route.params.id)
+        .then((data) => {
+          this.loading = false;
+
+          this.app = data;
+          if (this.app.nsfw) {
+            this.showNSFW = false;
+          }
+
+          let permissions = [];
+          if (this.app && this.app.manifest && this.app.manifest.hooks) {
+            Object.values(this.app.manifest.hooks).forEach((hook) => {
+              if (hook.apparmor) {
+                if (hook.apparmor.policy_groups) {
+                  permissions = permissions.concat(hook.apparmor.policy_groups);
                 }
 
-                let permissions = [];
-                if (this.app && this.app.manifest && this.app.manifest.hooks) {
-                    Object.values(this.app.manifest.hooks).forEach((hook) => {
-                        if (hook.apparmor) {
-                            if (hook.apparmor.policy_groups) {
-                                permissions = permissions.concat(hook.apparmor.policy_groups);
-                            }
+                if (hook.apparmor.template == 'unconfined') {
+                  permissions.push('unconfined');
+                }
 
-                            if (hook.apparmor.template == 'unconfined') {
-                                permissions.push('unconfined');
-                            }
-
-                            if (hook.apparmor.write_path) {
-                                hook.apparmor.write_path.forEach((path) => {
-                                    permissions.push({
-                                        type: 'write',
-                                        path: path.replace('/home/phablet', '~').replace('@{HOME}', '~'),
-                                    });
-                                });
-                            }
-
-                            if (hook.apparmor.read_path) {
-                                hook.apparmor.read_path.forEach((path) => {
-                                    permissions.push({
-                                        type: 'read',
-                                        path: path.replace('/home/phablet', '~').replace('@{HOME}', '~'),
-                                    });
-                                });
-                            }
-                        }
+                if (hook.apparmor.write_path) {
+                  hook.apparmor.write_path.forEach((path) => {
+                    permissions.push({
+                      type: 'write',
+                      path: path
+                        .replace('/home/phablet', '~')
+                        .replace('@{HOME}', '~'),
                     });
+                  });
                 }
 
-                // Only unique permissions
-                permissions = permissions.filter((item, pos) => permissions.indexOf(item) == pos);
-
-                this.permissions = permissions.sort();
-                this.$emit('updateHead');
-            }).catch((err) => {
-                this.loading = false;
-
-                if (err.response && err.response.status) {
-                    this.missing = true;
+                if (hook.apparmor.read_path) {
+                  hook.apparmor.read_path.forEach((path) => {
+                    permissions.push({
+                      type: 'read',
+                      path: path
+                        .replace('/home/phablet', '~')
+                        .replace('@{HOME}', '~'),
+                    });
+                  });
                 }
-                else {
-                    this.error = true;
-                }
-
-                utils.captureException(err);
+              }
             });
-        },
-        toggleShowNSFW() {
-            this.showNSFW = !this.showNSFW;
-        },
-        isRestricted(permission) {
-            let isRestricted = false;
-            if (restricted.indexOf(permission) >= 0 || permission.type) {
-                isRestricted = true;
-            }
+          }
 
-            return isRestricted;
-        },
-        restrictedLabel(permission) {
-            if (this.isRestricted(permission)) {
-                return this.$gettext('Restricted permission');
-            }
+          // Only unique permissions
+          permissions = permissions.filter(
+            (item, pos) => permissions.indexOf(item) == pos,
+          );
 
-            return '';
-        },
+          this.permissions = permissions.sort();
+          this.$emit('updateHead');
+        })
+        .catch((err) => {
+          this.loading = false;
+
+          if (err.response && err.response.status) {
+            this.missing = true;
+          }
+          else {
+            this.error = true;
+          }
+
+          utils.captureException(err);
+        });
     },
-    computed: {
-        ...mapState(['back']),
-        isRestrictedAccess() {
-            return this.permissions.some((permission) => (restricted.includes(permission) || permission.type));
-        },
-        restrictedAccess() {
-            let message = this.$gettext('This app does not have access to restricted system data, see permissions for more details');
-            if (this.isRestrictedAccess) {
-                message = this.$gettext('This app has access to restricted system data, see permissions for more details');
-            }
-            return message;
-        },
-        openstoreLink() {
-            return `openstore://${this.app.id}`;
-        },
-        screenshots() {
-            let screenshots = [];
-            if (this.app) {
-                screenshots = this.app.screenshots.map((screenshot) => ({
-                    thumb: screenshot,
-                    src: screenshot,
-                }));
-            }
-
-            return screenshots;
-        },
+    toggleShowNSFW() {
+      this.showNSFW = !this.showNSFW;
     },
+    isRestricted(permission) {
+      let isRestricted = false;
+      if (restricted.indexOf(permission) >= 0 || permission.type) {
+        isRestricted = true;
+      }
+
+      return isRestricted;
+    },
+    restrictedLabel(permission) {
+      if (this.isRestricted(permission)) {
+        return this.$gettext('Restricted permission');
+      }
+
+      return '';
+    },
+  },
+  computed: {
+    ...mapState(['back']),
+    isRestrictedAccess() {
+      return this.permissions.some(
+        (permission) => restricted.includes(permission) || permission.type,
+      );
+    },
+    restrictedAccess() {
+      let message = this.$gettext(
+        'This app does not have access to restricted system data, see permissions for more details',
+      );
+      if (this.isRestrictedAccess) {
+        message = this.$gettext(
+          'This app has access to restricted system data, see permissions for more details',
+        );
+      }
+      return message;
+    },
+    openstoreLink() {
+      return `openstore://${this.app.id}`;
+    },
+    screenshots() {
+      let screenshots = [];
+      if (this.app) {
+        screenshots = this.app.screenshots.map((screenshot) => ({
+          thumb: screenshot,
+          src: screenshot,
+        }));
+      }
+
+      return screenshots;
+    },
+  },
 };
 </script>
 
 <style scoped>
-    .back {
-        margin-top: 0.5em;
-        margin-bottom: 0.5em;
-    }
+.back {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
 
-    .icon {
-        width: 92px;
-        height: 92px;
-        margin-right: 1em;
-        border-radius: 8px;
-    }
+.icon {
+  width: 92px;
+  height: 92px;
+  margin-right: 1em;
+  border-radius: 8px;
+}
 
-    h1 {
-        margin-top: 0;
-        font-size: 2em;
-    }
+h1 {
+  margin-top: 0;
+  font-size: 2em;
+}
 
-    h2 {
-        margin-top: 0;
-        font-size: 1.5em;
-    }
+h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+}
 
-    .types {
-        margin-top: 0;
-    }
+.types {
+  margin-top: 0;
+}
 
-    .pre {
-        white-space: pre-line;
-    }
+.pre {
+  white-space: pre-line;
+}
 
-    .p-matrix__item {
-        display: block;
-    }
+.p-matrix__item {
+  display: block;
+}
 
-    .info:first-child {
-        margin-top: 1em;
-    }
+.info:first-child {
+  margin-top: 1em;
+}
 
-    p + p {
-        margin-top: 0.25em;
-    }
+p + p {
+  margin-top: 0.25em;
+}
 
-    .video iframe {
-        width: 100%;
-        height: 315px;
-    }
+.video iframe {
+  width: 100%;
+  height: 315px;
+}
 
-    .screenshot {
-        display: block;
-        width: auto;
-        height: auto;
-        max-width: 300px;
-        max-height: 300px;
-        margin: 5px;
-        border: 1px solid #999999;
-        border-radius: 8px;
-    }
+.screenshot {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 300px;
+  max-height: 300px;
+  margin: 5px;
+  border: 1px solid #999999;
+  border-radius: 8px;
+}
 
-    .screenshot-scroll {
-        max-height: 330px;
-        overflow-x: auto;
-        overflow-y: hidden;
-        white-space: nowrap;
-    }
+.screenshot-scroll {
+  max-height: 330px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
 
-    .screenshot-scroll div {
-        display: inline-block;
-        margin: 0;
-    }
+.screenshot-scroll div {
+  display: inline-block;
+  margin: 0;
+}
 
-    .permissions li {
-        margin-top: 0;
-    }
+.permissions li {
+  margin-top: 0;
+}
 
-    .version {
-        word-wrap: break-word;
-    }
+.version {
+  word-wrap: break-word;
+}
 
-    .p-button--positive {
-        margin-top: 0;
-    }
+.p-button--positive {
+  margin-top: 0;
+}
 
-    .p-button--positive {
-        margin-top: 0.25em;
-    }
+.p-button--positive {
+  margin-top: 0.25em;
+}
 
-    .p-contextual-menu__dropdown {
-        min-width: 250px;
-        max-width: 600px;
-    }
+.p-contextual-menu__dropdown {
+  min-width: 250px;
+  max-width: 600px;
+}
 
-    button * {
-        margin-top: 0;
-    }
+button * {
+  margin-top: 0;
+}
 
-    /*
+/*
         Copied from vanilla js because on small screen sizes the matrix isn't a matrix.
         But we don't want to change the matrix breakpoint for the other pages
     */
-    .p-matrix {
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 2em;
-    }
+.p-matrix {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2em;
+}
 
-    .p-matrix__item {
-        border-right: 1px dotted #666;
-        border-top: 1px dotted #666;
-        margin-bottom: 0;
-        padding: 1rem;
-        width: 33.333%;
-    }
+.p-matrix__item {
+  border-right: 1px dotted #666;
+  border-top: 1px dotted #666;
+  margin-bottom: 0;
+  padding: 1rem;
+  width: 33.333%;
+}
 
-    .p-matrix__item:empty {
-        display: block;
-    }
-    .p-matrix__item:first-child, .p-matrix__item:nth-child(3n+1) {
-        padding-left: 0;
-    }
-    .p-matrix__item:last-child, .p-matrix__item:nth-child(3n) {
-        padding-right: 0;
-    }
-    .p-matrix__item:nth-child(-n+3) {
-        border-top: 0;
-    }
-    .p-matrix__item:nth-child(2n) {
-        border-right: 1px dotted #666;
-        padding-right: 1rem;
-    }
-    .p-matrix__item:nth-child(3n) {
-        border-right: 0;
-        padding-right: 0;
-    }
+.p-matrix__item:empty {
+  display: block;
+}
+.p-matrix__item:first-child,
+.p-matrix__item:nth-child(3n + 1) {
+  padding-left: 0;
+}
+.p-matrix__item:last-child,
+.p-matrix__item:nth-child(3n) {
+  padding-right: 0;
+}
+.p-matrix__item:nth-child(-n + 3) {
+  border-top: 0;
+}
+.p-matrix__item:nth-child(2n) {
+  border-right: 1px dotted #666;
+  padding-right: 1rem;
+}
+.p-matrix__item:nth-child(3n) {
+  border-right: 0;
+  padding-right: 0;
+}
 
-    @media screen and (max-width: 768px) {
-        .download-button {
-            width: 100%;
-            margin-left: 0;
-        }
-    }
+@media screen and (max-width: 768px) {
+  .download-button {
+    width: 100%;
+    margin-left: 0;
+  }
+}
 </style>
