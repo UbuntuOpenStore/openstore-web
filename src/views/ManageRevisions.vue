@@ -100,8 +100,8 @@
 </template>
 
 <script>
-import VueNotifications from 'vue-notifications';
 import { mapState } from 'vuex';
+import miniToastr from 'mini-toastr';
 
 import api from '@/api';
 import opengraph from '@/opengraph';
@@ -170,11 +170,7 @@ export default {
         this.$emit('updateHead');
       }
       catch (err) {
-        VueNotifications.error({
-          title: this.$gettext('Error'),
-          message: this.$gettext('An error occured loading your app data'),
-        });
-
+        miniToastr.error(this.$gettext('An error occured loading your app data'), this.$gettext('Error'));
         utils.captureException(err);
       }
 
@@ -238,11 +234,7 @@ export default {
             }
 
             this.saving = false;
-            VueNotifications.error({
-              title: 'Error',
-              message: error,
-            });
-
+            miniToastr.error(error, this.$gettext('Error'));
             utils.captureException(err);
 
             return;
@@ -261,11 +253,7 @@ export default {
           ).replace('%{channel}', channel);
         }
 
-        VueNotifications.success({
-          title: this.$gettext('Success'),
-          message,
-        });
-
+        miniToastr.success(message, this.$gettext('Success'));
         this.$router.push({
           name: 'manage_package',
           params: { id: this.app.id },

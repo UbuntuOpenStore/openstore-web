@@ -477,7 +477,7 @@
 <script>
 import { mapState } from 'vuex';
 import draggable from 'vuedraggable';
-import VueNotifications from 'vue-notifications';
+import miniToastr from 'mini-toastr';
 
 import api from '@/api';
 import opengraph from '@/opengraph';
@@ -554,11 +554,7 @@ export default {
         }
       }
       catch (err) {
-        VueNotifications.error({
-          title: this.$gettext('Error'),
-          message: this.$gettext('An error occured loading your app data'),
-        });
-
+        miniToastr.error(this.$gettext('An error occured loading your app data'), this.$gettext('Error'));
         utils.captureException(err);
       }
 
@@ -571,12 +567,7 @@ export default {
           this.users = users;
         }
         catch (err) {
-          console.error(err);
-          VueNotifications.error({
-            title: this.$gettext('Error'),
-            message: this.$gettext('An error occured loading your app data'),
-          });
-
+          miniToastr.error(this.$gettext('An error occured loading your app data'), this.$gettext('Error'));
           utils.captureException(err);
         }
       }
@@ -676,12 +667,10 @@ export default {
             }
 
             this.saving = false;
-            VueNotifications.success({
-              title: this.$gettext('Success'),
-              message: this.$gettext(
-                'The changes to %{name} were saved!',
-              ).replace('%{name}', this.app.name),
-            });
+            miniToastr.success(
+              this.$gettext('The changes to %{name} were saved!').replace('%{name}', this.app.name),
+              this.$gettext('Success'),
+            );
           })
           .catch((err) => {
             let error = 'An unknown error has occured';
@@ -694,11 +683,7 @@ export default {
             }
 
             this.saving = false;
-            VueNotifications.error({
-              title: this.$gettext('Error'),
-              message: error,
-            });
-
+            miniToastr.error(error, this.$gettext('Error'));
             utils.captureException(err);
           });
       }
@@ -710,12 +695,10 @@ export default {
         api.manage
           .remove(this.app.id, this.user.apikey)
           .then(() => {
-            VueNotifications.success({
-              title: this.$gettext('Success'),
-              message: this.$gettext(
-                '%{name} was successfully deleted',
-              ).replace('%{name}', this.app.name),
-            });
+            miniToastr.success(
+              this.$gettext('%{name} was successfully deleted').replace('%{name}', this.app.name),
+              this.$gettext('Success'),
+            );
 
             this.saving = false;
             this.$router.push({ name: 'manage' });
@@ -731,11 +714,7 @@ export default {
             }
 
             this.saving = false;
-            VueNotifications.error({
-              title: this.$gettext('Error'),
-              message: error,
-            });
-
+            miniToastr.error(error, this.$gettext('Error'));
             utils.captureException(err);
           });
       }

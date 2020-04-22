@@ -174,8 +174,8 @@
 </template>
 
 <script>
-import VueNotifications from 'vue-notifications';
 import { mapState } from 'vuex';
+import miniToastr from 'mini-toastr';
 
 import api from '@/api';
 import opengraph from '@/opengraph';
@@ -226,13 +226,8 @@ export default {
               error = err.response.data.message;
             }
 
-            VueNotifications.error({
-              title: this.$gettext('Error'),
-              message: error,
-            });
-
+            miniToastr.error(error, this.$gettext('Error'));
             this.saving = false;
-
             utils.captureException(err);
           });
       }
