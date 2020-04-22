@@ -388,13 +388,13 @@
             <div class="p-form__group revisions" v-if="app.published_date">
               <label class="p-form__label" v-translate>Published Date</label>
 
-              <div>{{app.published_date | moment("YYYY-MM-DD kk:mm")}}</div>
+              <div>{{app.published_date | datetime}}</div>
             </div>
 
             <div class="p-form__group revisions" v-if="app.updated_date">
               <label class="p-form__label" v-translate>Updated Date</label>
 
-              <div>{{app.updated_date | moment("YYYY-MM-DD kk:mm")}}</div>
+              <div>{{app.updated_date | datetime}}</div>
             </div>
 
             <div class="p-form__group revisions">

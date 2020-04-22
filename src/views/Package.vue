@@ -243,12 +243,12 @@
           <p v-if="app.updated_date">
             <span v-translate>Updated</span>
             :
-            {{app.updated_date | moment("MMMM Do YYYY")}}
+            {{app.updated_date | date}}
           </p>
           <p v-if="app.published_date">
             <span v-translate>Published</span>
             :
-            {{app.published_date | moment("MMMM Do YYYY")}}
+            {{app.published_date | date}}
           </p>
           <p v-if="app.framework">
             <span v-translate>Framework</span>

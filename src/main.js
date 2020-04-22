@@ -2,7 +2,6 @@ import 'font-awesome/css/font-awesome.min.css';
 
 import Vue from 'vue';
 import VueHead from 'vue-head';
-import vmoment from 'vue-moment'; // TODO replace this with something that doesn't use moment
 import VueNotifications from 'vue-notifications';
 import VueLazyLoad from 'vue-lazyload';
 import Gettext from 'vue-gettext';
@@ -11,6 +10,7 @@ import VueImg from 'v-img';
 import miniToastr from 'mini-toastr';
 import * as Sentry from '@sentry/browser';
 import * as Integrations from '@sentry/integrations';
+import { format } from 'date-fns';
 
 import App from './App';
 import router from './router';
@@ -43,7 +43,6 @@ Vue.use(VueHead, {
   separator: '-',
   complement: 'OpenStore',
 });
-Vue.use(vmoment);
 Vue.use(VueNotifications, {
   success: toast,
   error: toast,
@@ -92,6 +91,14 @@ Vue.options.directives.translate.update = (el, binding, vnode) => {
   el.innerHTML = el.innerHTML.replace(/ {2}/g, '');
   originalUpdate(el, binding, vnode);
 };
+
+Vue.filter('date', (dateStr) => {
+  return format(new Date(dateStr), 'MMMM do yyyy');
+});
+
+Vue.filter('datetime', (dateStr) => {
+  return format(new Date(dateStr), 'yyyy-MM-dd H:mm');
+});
 
 /* eslint-disable no-new */
 new Vue({
