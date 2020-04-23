@@ -17,6 +17,7 @@ import translations from './translations.json';
 import store from './store';
 
 const version = process.env.VUE_APP_VERSION || 'dev';
+/* eslint-disable-next-line no-console */
 console.log(`OpenStore version ${version}`);
 
 if (process.env.VUE_APP_SENTRY) {
