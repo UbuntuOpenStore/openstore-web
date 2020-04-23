@@ -20,6 +20,7 @@
     "debounce": "^1.2.0",
     "easygettext": "^2.12.0",
     "font-awesome": "^4.7.0",
+    "lodash.isequal": "^4.5.0",
     "mini-toastr": "^0.8.1",
     "node-sass": "^4.13.1",
     "v-img": "^0.2.0",

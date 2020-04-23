@@ -151,6 +151,7 @@
 <script>
 import { mapState } from 'vuex';
 import debounce from 'debounce';
+import isEqual from 'lodash.isequal';
 
 import api from '@/api';
 import opengraph from '@/opengraph';
@@ -271,34 +272,36 @@ export default {
       return changed;
     },
     setQueryParams() {
-      const params = {};
+      const queryParams = {};
       if (this.page !== 0) {
-        params.page = this.page + 1;
+        queryParams.page = this.page + 1;
       }
 
       if (this.query.sort != DEFAULT_SORT) {
-        params.sort = this.query.sort;
+        queryParams.sort = this.query.sort;
       }
 
       if (this.query.type != DEFAULT_TYPE) {
-        params.type = this.query.type;
+        queryParams.type = this.query.type;
       }
 
       if (this.query.category != DEFAULT_CATEGORY) {
-        params.category = this.query.category;
+        queryParams.category = this.query.category;
       }
 
       if (this.query.search) {
-        params.search = this.query.search;
+        queryParams.search = this.query.search;
       }
 
-      this.$router.push({ name: 'browse', query: params });
+      if (!isEqual(queryParams, this.$router.currentRoute.query)) {
+        this.$router.push({ name: 'browse', query: queryParams });
 
-      this.$store.commit('setBack', {
-        name: this.$router.currentRoute.name,
-        params: this.$router.currentRoute.params,
-        query: this.$router.currentRoute.query,
-      });
+        this.$store.commit('setBack', {
+          name: this.$router.currentRoute.name,
+          params: this.$router.currentRoute.params,
+          query: this.$router.currentRoute.query,
+        });
+      }
     },
     refresh() {
       this.loading = true;
