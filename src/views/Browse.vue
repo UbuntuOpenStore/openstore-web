@@ -274,7 +274,8 @@ export default {
     setQueryParams() {
       const queryParams = {};
       if (this.page !== 0) {
-        queryParams.page = this.page + 1;
+        // Make this a string because the router stores the query params as a string
+        queryParams.page = `${this.page + 1}`;
       }
 
       if (this.query.sort != DEFAULT_SORT) {
