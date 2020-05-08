@@ -8,66 +8,71 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2020-05-06 04:47+0000\n"
+"Last-Translator: penyotike <penyotike@moimoi.re>\n"
+"Language-Team: Japanese <https://translate.ubports.com/projects/openstore/"
+"open-storeio/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 3.8\n"
 
 #: src/views/Package.vue:118
 msgid ""
 "*This app contains NSFW content, to view the description and\n"
 "screenshots, click the above button."
 msgstr ""
+"*このアプリには、説明を表示するためのNSFWコンテンツが含まれています。\n"
+"スクリーンショットは、上のボタンをクリックしてください。"
 
 #: src/views/ManagePackage.vue:577
 msgid "%{name} was successfully deleted"
-msgstr ""
+msgstr "%{name}は正常に削除されました"
 
 #: src/views/ManagePackage.vue:157
 msgid "A comma separated list of keywords"
-msgstr ""
+msgstr "キーワードのコンマ区切りリスト"
 
 #: src/App.vue:34 src/views/About.vue:3 src/views/About.vue:183
 #: src/views/About.vue:187
 msgid "About"
-msgstr ""
+msgstr "概要"
 
 #: src/App.vue:78
 msgid "About Us"
-msgstr ""
+msgstr "私達について"
 
 #: src/views/Package.vue:266
 msgid "Accounts"
-msgstr ""
+msgstr "アカウント"
 
 #: src/views/Browse.vue:16
 msgid "All Categories"
-msgstr ""
+msgstr "すべてのカテゴリ"
 
 #: src/views/Browse.vue:31
 msgid "All Types"
-msgstr ""
+msgstr "すべてのタイプ"
 
 #: src/views/Login.vue:26
 msgid "An account is not needed to download or install apps."
-msgstr ""
+msgstr "アプリのダウンロードやインストールにアカウントは必要ありません。"
 
 #: src/views/ManagePackage.vue:444 src/views/ManagePackage.vue:462
 #: src/views/ManageRevisions.vue:136
 msgid "An error occured loading your app data"
-msgstr ""
+msgstr "アプリデータの読み込み中にエラーが発生しました"
 
 #: src/views/ManageRevisions.vue:183 src/views/Submit.vue:212
 msgid "An unknown error has occured"
-msgstr ""
+msgstr "不明なエラーが発生しました"
 
 #: src/views/About.vue:160
 msgid ""
 "And many amazing developers, testers, and users from the OpenStore community!"
-msgstr ""
+msgstr "そして、OpenStoreコミュニティの多くの素晴らしい開発者、テスター、ユーザー！"
 
 #: src/views/About.vue:122
 msgid ""
@@ -81,39 +86,39 @@ msgstr ""
 
 #: src/views/Manage.vue:14
 msgid "API Key"
-msgstr ""
+msgstr "APIキー"
 
 #: src/components/Types.vue:3 src/views/Manage.vue:46 src/views/Stats.vue:108
 msgid "App"
-msgstr ""
+msgstr "アプリ"
 
 #: src/views/Submit.vue:95
 msgid "App containing or promoting any of the above are strictly prohibited."
-msgstr ""
+msgstr "上記のいずれかを含むまたは宣伝するアプリは固く禁じられています。"
 
 #: src/views/Submit.vue:133
 msgid "App Name"
-msgstr ""
+msgstr "アプリ名"
 
 #: src/App.vue:88
 msgid "App Stats"
-msgstr ""
+msgstr "アプリの統計"
 
 #: src/views/Submit.vue:150
 msgid "App Title"
-msgstr ""
+msgstr "アプリのタイトル"
 
 #: src/views/Stats.vue:19
 msgid "App Type"
-msgstr ""
+msgstr "アプリの種類"
 
 #: src/views/Stats.vue:15
 msgid "App Types"
-msgstr ""
+msgstr "アプリの種類"
 
 #: src/views/Browse.vue:32
 msgid "Apps"
-msgstr ""
+msgstr "アプリ"
 
 #: src/views/Submit.vue:101
 msgid ""
@@ -121,12 +126,14 @@ msgid ""
 "allowed.\n"
 "This includes, but is not limited to, online casinos, betting, and lotteries."
 msgstr ""
+"現実のお金の取引を伴うギャンブルを含むアプリは許可されていません。\n"
+"これには、オンラインカジノ、賭博、宝くじが含まれますが、これらに限定されません。"
 
 #: src/views/Submit.vue:82
 msgid ""
 "Apps containing or promoting child abuse or child sexual abuse are strictly "
 "prohibited."
-msgstr ""
+msgstr "児童虐待または児童性的虐待を含むまたは宣伝するアプリは固く禁じられています。"
 
 #: src/views/Submit.vue:88
 msgid ""
@@ -134,6 +141,8 @@ msgid ""
 "This includes, but is not limited to, violence, terrorism, bomb/weapon "
 "making, self harm, and grotesque imagery."
 msgstr ""
+"不当な暴力を含むアプリや宣伝するアプリは許可されません。\n"
+"これには、暴力、テロ、爆弾や武器の製造、自傷行為、グロテスクな画像が含まれますが、これらに限定されません。"
 
 #: src/views/Submit.vue:75
 msgid ""
@@ -141,22 +150,24 @@ msgid ""
 "This includes, but is not limited to, pornography and services promoting "
 "sexually explicit content."
 msgstr ""
+"露骨な性的コンテンツを含むまたは宣伝するアプリは許可されません。\n"
+"これには、ポルノや性的に露骨なコンテンツを宣伝するサービスが含まれますが、これらに限定されません。"
 
 #: src/views/Submit.vue:7
 msgid ""
 "Apps not requiring manual review can be submitted by logging in with the "
 "\"Log In\" link above."
-msgstr ""
+msgstr "上の[ログイン]リンクからログインすると、手動による確認が不要なアプリを送信できます。"
 
 #: src/views/Submit.vue:108
 msgid "Apps promoting illegal activities (based on USA law) are not allowed."
-msgstr ""
+msgstr "（米国の法律に基づく）違法行為を宣伝するアプリは許可されていません。"
 
 #: src/views/Submit.vue:18
 msgid ""
 "Apps requiring manual review must be submitted by contacting an admin in our "
 "telegram group."
-msgstr ""
+msgstr "手動審査が必要なアプリは、Telegramグループの管理者に連絡して提出する必要があります。"
 
 #: src/views/Submit.vue:114
 msgid ""
@@ -164,6 +175,8 @@ msgid ""
 "privileges without user consent,\n"
 "or executing malicious process are strictly prohibited."
 msgstr ""
+"ユーザーのデータを盗んだり、ユーザーの同意なしに権限を昇格させようとしたりする、または悪意のあるプロセスを実行するアプリ\n"
+"は固く禁じられています。"
 
 #: src/views/About.vue:129
 msgid ""
@@ -174,115 +187,117 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:258 src/views/Package.vue:193
 msgid "Architecture"
-msgstr ""
+msgstr "アーキテクチャ"
 
 #: src/views/Package.vue:267
 msgid "Audio"
-msgstr ""
+msgstr "音楽"
 
 #: src/views/Manage.vue:47 src/views/ManagePackage.vue:254
 #: src/views/Package.vue:155
 msgid "Author"
-msgstr ""
+msgstr "作者"
 
 #: src/views/Package.vue:7
 msgid "Back"
-msgstr ""
+msgstr "戻る"
 
 #: src/views/Badge.vue:28 src/views/Badge.vue:32 src/views/ManagePackage.vue:70
 msgid "Badge"
-msgstr ""
+msgstr "バッジ"
 
 #: src/views/About.vue:18
 msgid "Badges"
-msgstr ""
+msgstr "バッジ"
 
 #: src/views/Package.vue:268
 msgid "Bluetooth"
-msgstr ""
+msgstr "Bluetooth"
 
 #: src/App.vue:31
 msgid "Browse"
-msgstr ""
+msgstr "ブラウズ"
 
 #: src/views/Browse.vue:162
 msgid "Browse Apps"
-msgstr ""
+msgstr "アプリを閲覧"
 
 #: src/views/About.vue:74
 msgid "Bug Tracker"
-msgstr ""
+msgstr "バグトラッカー"
 
 #: src/views/Package.vue:269
 msgid "Calendar"
-msgstr ""
+msgstr "カレンダー"
 
 #: src/views/Package.vue:270
 msgid "Camera"
-msgstr ""
+msgstr "カメラ"
 
 #: src/views/ManagePackage.vue:358 src/views/ManageRevisions.vue:66
 #: src/views/Submit.vue:167
 msgid "Cancel"
-msgstr ""
+msgstr "キャンセル"
 
 #: src/views/Browse.vue:14 src/views/ManagePackage.vue:140
 #: src/views/Package.vue:177
 msgid "Category"
-msgstr ""
+msgstr "カテゴリー"
 
 #: src/views/ManagePackage.vue:101 src/views/ManageRevisions.vue:50
 #: src/views/Package.vue:128
 msgid "Changelog"
-msgstr ""
+msgstr "変更履歴"
 
 #: src/views/ManagePackage.vue:295 src/views/ManageRevisions.vue:13
 msgid "Channel"
-msgstr ""
+msgstr "チャネル"
 
 #: src/views/ManagePackage.vue:274
 msgid "Channels"
-msgstr ""
+msgstr "チャネル"
 
 #: src/App.vue:83
 msgid "Chat with us on Telegram"
-msgstr ""
+msgstr "Telegramでチャット"
 
 #: src/views/Submit.vue:81
+#, fuzzy
 msgid "Child Endangerment"
-msgstr ""
+msgstr "Child Endangerment"
 
 #: src/views/ManagePackage.vue:142
 msgid "Choose a category"
-msgstr ""
+msgstr "カテゴリを選択"
 
 #: src/views/ManagePackage.vue:173
 msgid "Choose a license"
-msgstr ""
+msgstr "ライセンスを選択"
 
 #: src/views/ManagePackage.vue:231
 msgid "Choose a maintainer"
-msgstr ""
+msgstr "メンテナーを選択"
 
 #: src/views/Package.vue:271
+#, fuzzy
 msgid "Connectivity"
-msgstr ""
+msgstr "接続性"
 
 #: src/views/About.vue:59
 msgid "Contact"
-msgstr ""
+msgstr "連絡先"
 
 #: src/views/Package.vue:272
 msgid "Contacts"
-msgstr ""
+msgstr "連絡先"
 
 #: src/views/Package.vue:274
 msgid "Content Exchange"
-msgstr ""
+msgstr "コンテンツ交換"
 
 #: src/views/Package.vue:273
 msgid "Content Exchange Source"
-msgstr ""
+msgstr "コンテンツ交換ソース"
 
 #: src/views/About.vue:138
 msgid "Contributors"
@@ -290,27 +305,28 @@ msgstr ""
 
 #: src/components/CopyLine.vue:9
 msgid "Copy to clipboard"
-msgstr ""
+msgstr "クリップボードにコピー"
 
 #: src/views/Stats.vue:20
+#, fuzzy
 msgid "Count"
-msgstr ""
+msgstr "カウント"
 
 #: src/views/ManageRevisions.vue:57
 msgid "Create"
-msgstr ""
+msgstr "作成"
 
 #: src/views/Package.vue:275
 msgid "Debug"
-msgstr ""
+msgstr "デバッグ"
 
 #: src/views/ManagePackage.vue:353
 msgid "Delete"
-msgstr ""
+msgstr "削除"
 
 #: src/views/ManagePackage.vue:90
 msgid "Description"
-msgstr ""
+msgstr "説明文"
 
 #: src/views/ManagePackage.vue:55
 msgid "Discovery"
@@ -318,54 +334,54 @@ msgstr ""
 
 #: src/views/Package.vue:91
 msgid "Donate"
-msgstr ""
+msgstr "寄付"
 
 #: src/views/ManagePackage.vue:216
 msgid "Donate URL"
-msgstr ""
+msgstr "寄付URL"
 
 #: src/views/Package.vue:262
 msgid "Download"
-msgstr ""
+msgstr "ダウンロード"
 
 #: src/views/ManagePackage.vue:288
 msgid "Download Stats"
-msgstr ""
+msgstr "ダウンロード状況"
 
 #: src/views/About.vue:43
 msgid "Download the OpenStore App"
-msgstr ""
+msgstr "OpenStoreアプリをダウンロード"
 
 #: src/views/Manage.vue:50 src/views/Manage.vue:70
 #: src/views/ManagePackage.vue:297
 msgid "Downloads"
-msgstr ""
+msgstr "ダウンロード"
 
 #: src/views/ManagePackage.vue:119
 msgid "Drag and drop to sort screenshots."
-msgstr ""
+msgstr "ドラッグアンドドロップでスクリーンショットを並べ替えます。"
 
 #: src/views/ManagePackage.vue:8
 msgid "Edit"
-msgstr ""
+msgstr "編集"
 
 #: src/views/ManagePackage.vue:443 src/views/ManagePackage.vue:461
 #: src/views/ManagePackage.vue:562 src/views/ManagePackage.vue:590
 #: src/views/ManageRevisions.vue:135 src/views/Submit.vue:218
 msgid "Error"
-msgstr ""
+msgstr "エラー"
 
 #: src/views/Feeds.vue:34 src/views/Feeds.vue:38
 msgid "Feeds"
-msgstr ""
+msgstr "フィード"
 
 #: src/views/ManagePackage.vue:266
 msgid "File Size"
-msgstr ""
+msgstr "ファイルサイズ"
 
 #: src/views/ManageRevisions.vue:22
 msgid "File Upload"
-msgstr ""
+msgstr "ファイルのアップロード"
 
 #: src/views/About.vue:61
 msgid ""
@@ -377,25 +393,26 @@ msgstr ""
 
 #: src/App.vue:93
 msgid "Fork us on GitLab"
-msgstr ""
+msgstr "GitLabでフォークしてください"
 
 #: src/views/ManagePackage.vue:262 src/views/Package.vue:189
 msgid "Framework"
-msgstr ""
+msgstr "フレームワーク"
 
 #: src/views/Package.vue:293
 msgid "Full System Access"
-msgstr ""
+msgstr "完全なシステムアクセス"
 
 #: src/views/Submit.vue:100
 msgid "Gambling"
-msgstr ""
+msgstr "ギャンブル"
 
 #: src/views/About.vue:25
 msgid "Get your badge"
-msgstr ""
+msgstr "バッジを取得"
 
 #: src/views/Submit.vue:39
+#, fuzzy
 msgid ""
 "Give a short explanation why you can’t publish the app without extra "
 "privileges.\n"
@@ -403,34 +420,37 @@ msgid ""
 "background\" will do.\n"
 "List all the special features you have, if there are more."
 msgstr ""
+"アプリを公開するのに追加の権限が必要な理由を簡単に説明してください。\n"
+"詳細に説明する必要はありません。「バックグラウンドでデーモンを実行する必要がある」などの1行で十分です。\n"
+"追加の権限が必要な場合、それをリストします。"
 
 #: src/views/Browse.vue:187 src/views/Manage.vue:174
 msgid "Go back a page"
-msgstr ""
+msgstr "ページに戻る"
 
 #: src/views/Browse.vue:188 src/views/Manage.vue:175
 msgid "Go to the next page"
-msgstr ""
+msgstr "次のページ"
 
 #: src/views/About.vue:86
 msgid "GPL v3 License"
-msgstr ""
+msgstr "GPL v3 ライセンス"
 
 #: src/views/Submit.vue:94
 msgid "Harassment, Bullying, or Hate Speech"
-msgstr ""
+msgstr "嫌がらせ、いじめ、差別的発言"
 
 #: src/views/Package.vue:276
 msgid "History"
-msgstr ""
+msgstr "履歴"
 
 #: src/views/Manage.vue:44
 msgid "Icon"
-msgstr ""
+msgstr "アイコン"
 
 #: src/views/ManagePackage.vue:250
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #: src/views/Submit.vue:44
 msgid ""
@@ -441,11 +461,11 @@ msgstr ""
 
 #: src/views/Submit.vue:107
 msgid "Illegal Activities"
-msgstr ""
+msgstr "違法行為"
 
 #: src/views/Package.vue:277
 msgid "In App Purchases"
-msgstr ""
+msgstr "アプリ内購入"
 
 #: src/views/ManagePackage.vue:60 src/views/Package.vue:152
 msgid "Info"
