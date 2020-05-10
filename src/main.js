@@ -89,6 +89,12 @@ Vue.filter('datetime', (dateStr) => {
   return format(new Date(dateStr), 'yyyy-MM-dd H:mm');
 });
 
+Vue.filter('titleCase', (value) => {
+  return value.replace(/_/g, ' ').replace(/\w\S*/g, (txt) => {
+    return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+  });
+});
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

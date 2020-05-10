@@ -40,6 +40,15 @@
 
         <div class="row">
           <div class="center">
+            <span v-for="(count, rating) in app.ratings" :key="rating" :class="{muted: count === 0}" class="rating">
+              <img :src="'/ratings/' + rating.toLowerCase() + '.svg'" :alt="rating.replace('_', ' ')|titleCase" />
+              <span class="count">{{count}}</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="center">
             <span v-if="app.downloads.length === 0" v-translate>No longer available</span>
 
             <a
@@ -585,10 +594,25 @@ button * {
   margin-top: 0;
 }
 
+.rating .count {
+  font-size: 1.5em;
+}
+
+.rating img {
+  height: 2em;
+  margin-bottom: -0.5em;
+  margin-left: 1em;
+  margin-right: 0.25em;
+}
+
+.rating.muted {
+  opacity: 0.5;
+}
+
 /*
-        Copied from vanilla js because on small screen sizes the matrix isn't a matrix.
-        But we don't want to change the matrix breakpoint for the other pages
-    */
+  Copied from vanilla js because on small screen sizes the matrix isn't a matrix.
+  But we don't want to change the matrix breakpoint for the other pages
+*/
 .p-matrix {
   display: flex;
   flex-wrap: wrap;
