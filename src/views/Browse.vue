@@ -87,6 +87,7 @@
             :alt="app.name"
             @click="$router.push({name: 'app', params: {id: app.id}})"
           />
+          <most-rated :ratings="app.ratings" />
 
           <div class="p-matrix__content">
             <h3 class="p-matrix__title">
@@ -156,6 +157,7 @@ import api from '@/api';
 import opengraph from '@/opengraph';
 import utils from '@/utils';
 import Types from '@/components/Types';
+import MostRated from '@/components/MostRated';
 
 const DEFAULT_SORT = '-published_date';
 const DEFAULT_TYPE = '';
@@ -164,7 +166,8 @@ const DEFAULT_CATEGORY = '';
 export default {
   name: 'Browse',
   components: {
-    types: Types,
+    Types,
+    MostRated,
   },
   head: {
     title() {
@@ -473,6 +476,13 @@ h1 {
   position: absolute;
   top: 0;
   right: 0.2em;
+}
+
+.most-rated {
+  margin-top: 0;
+  position: absolute;
+  left: 45px;
+  top: 12px;
 }
 
 .pagination {
