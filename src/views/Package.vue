@@ -41,7 +41,7 @@
         <div class="row">
           <div class="center">
             <span v-for="(count, rating) in app.ratings" :key="rating" :class="{muted: count === 0}" class="rating">
-              <img :src="'/ratings/' + rating.toLowerCase() + '.svg'" :alt="rating.replace('_', ' ')|titleCase" />
+              <svgicon :icon="rating.toLowerCase()" width="1.5em" height="1.5em" original></svgicon>
               <span class="count">{{count}}</span>
             </span>
           </div>
@@ -306,7 +306,7 @@ const restricted = [
 export default {
   name: 'Package',
   components: {
-    types: Types,
+    Types,
   },
   head: {
     title() {
@@ -598,9 +598,8 @@ button * {
   font-size: 1.5em;
 }
 
-.rating img {
-  height: 2em;
-  margin-bottom: -0.5em;
+.rating svg {
+  margin-bottom: -0.25em;
   margin-left: 1em;
   margin-right: 0.25em;
 }
