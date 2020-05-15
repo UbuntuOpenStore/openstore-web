@@ -2,7 +2,6 @@
   <span>
     <span v-for="type in types" :key="type">
       <span v-if="type == 'app'" class="label app-label" v-translate>App</span>
-      <span v-if="type == 'scope'" class="label scope-label" v-translate>Scope</span>
       <span v-if="type == 'webapp'" class="label webapp-label" v-translate>Web App</span>
       <span v-if="type == 'webapp+'" class="label webapp-label" v-translate>Web App+</span>
     </span>
@@ -33,11 +32,6 @@ export default {
 .app-label {
   background-color: #1ab6ef;
   border-color: #1ab6ef;
-}
-
-.scope-label {
-  background-color: #dd4814;
-  border-color: #dd4814;
 }
 
 .webapp-label {

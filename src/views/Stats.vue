@@ -24,7 +24,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr v-for="(count, name) in types" :key="name">
+          <tr v-for="(count, name) in filteredTypes" :key="name">
             <td>{{humanTypeLabel[name]}}</td>
             <td class="align-right">{{count}}</td>
           </tr>
@@ -90,13 +90,12 @@ export default {
   data() {
     return {
       categories: [],
-      types: [],
+      types: {},
       loading: false,
       error: false,
       uncategorized: this.$gettext('Uncategorized'),
       humanTypeLabel: {
         app: this.$gettext('App'),
-        scope: this.$gettext('Scope'),
         webapp: this.$gettext('Web App'),
         'webapp+': this.$gettext('Web App+'),
       },
@@ -120,6 +119,21 @@ export default {
 
         utils.captureException(err);
       });
+  },
+  computed: {
+    filteredTypes() {
+      // Filter out deprecated types
+      return Object.keys(this.types).reduce((acc, type) => {
+        if (this.humanTypeLabel[type]) {
+          return {
+            ...acc,
+            [type]: this.types[type],
+          };
+        }
+
+        return acc;
+      }, {});
+    },
   },
 };
 </script>
