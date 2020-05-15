@@ -10,6 +10,8 @@
         {{app.name}}
       </h1>
 
+      <rating-row :ratings="app.ratings" />
+
       <div v-if="app.published">
         <router-link :to="{name: 'app', params: {id: app.id}}" target="_blank">
           <span class="mr" v-translate>Public Link</span>
@@ -483,10 +485,11 @@ import api from '@/api';
 import opengraph from '@/opengraph';
 import utils from '@/utils';
 import BadgeSelect from '@/components/BadgeSelect';
+import RatingRow from '@/components/RatingRow';
 
 export default {
   name: 'ManagePackage',
-  components: { draggable, BadgeSelect },
+  components: { draggable, BadgeSelect, RatingRow },
   head: {
     title() {
       let title = this.$gettext('Manage');
@@ -853,5 +856,9 @@ h1 {
 
 .strong td {
   font-weight: bold;
+}
+
+.rating-row {
+  margin-left: 3em;
 }
 </style>

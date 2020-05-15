@@ -40,10 +40,7 @@
 
         <div class="row">
           <div class="center">
-            <span v-for="(count, rating) in app.ratings" :key="rating" :class="{muted: count === 0}" class="rating">
-              <svgicon :icon="rating.toLowerCase()" width="1.5em" height="1.5em" original></svgicon>
-              <span class="count">{{count}}</span>
-            </span>
+            <rating-row :ratings="app.ratings" />
           </div>
         </div>
 
@@ -287,6 +284,7 @@ import api from '@/api';
 import opengraph from '@/opengraph';
 import utils from '@/utils';
 import Types from '@/components/Types.vue';
+import RatingRow from '@/components/RatingRow.vue';
 
 const restricted = [
   'bluetooth',
@@ -307,6 +305,7 @@ export default {
   name: 'Package',
   components: {
     Types,
+    RatingRow,
   },
   head: {
     title() {
@@ -592,20 +591,6 @@ p + p {
 
 button * {
   margin-top: 0;
-}
-
-.rating .count {
-  font-size: 1.5em;
-}
-
-.rating svg {
-  margin-bottom: -0.25em;
-  margin-left: 1em;
-  margin-right: 0.25em;
-}
-
-.rating.muted {
-  opacity: 0.5;
 }
 
 /*
