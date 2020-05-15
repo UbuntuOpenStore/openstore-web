@@ -36,7 +36,6 @@
             <option value v-translate>All Types</option>
             <option value="app" v-translate>Apps</option>
             <option value="webapp" v-translate>Web Apps</option>
-            <option value="scope" v-translate>Scopes</option>
           </select>
         </div>
 
