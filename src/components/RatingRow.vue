@@ -1,7 +1,7 @@
 <template>
   <span class="rating-row">
     <span v-for="(count, rating) in ratings" :key="rating" :class="{muted: count === 0}" class="rating">
-      <svgicon :icon="rating.toLowerCase()" width="1.5em" height="1.5em" original></svgicon>
+      <svgicon :icon="rating.toLowerCase()" width="1.5em" height="1.5em" original />
       <span class="count">{{count}}</span>
     </span>
   </span>

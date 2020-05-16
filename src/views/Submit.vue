@@ -158,14 +158,16 @@
             </div>
 
             <a class="p-button--positive" @click="submit()" :disabled="saving">
-              <i class="fa mr" :class="{'fa-plus': !saving, 'fa-spinner fa-spin': saving}"></i>
               <span v-translate>Submit</span>
             </a>
 
             <router-link class="p-button--neutral" :to="{name: 'manage'}" :disabled="saving">
-              <i class="fa fa-times mr"></i>
               <span v-translate>Cancel</span>
             </router-link>
+
+            <span class="saving">
+              <svgicon v-if="saving" class="spin" icon="spinner" width="1.5em" height="1.5em" color="#007aa6" />
+            </span>
           </form>
         </div>
       </div>

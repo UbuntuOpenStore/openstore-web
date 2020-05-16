@@ -7,8 +7,7 @@
 
       <div class="u-float-right buttons">
         <router-link :to="{name: 'submit'}" class="p-button--positive">
-          <i class="fa fa-plus"></i>
-          <span class="ml" v-translate>Submit App</span>
+          <span v-translate>Submit App</span>
         </router-link>
 
         <button class="p-button--neutral u-float-right" @click="showApikey = !showApikey">
@@ -41,8 +40,8 @@
         v-translate
       >There was an error trying to load the app list, please refresh and try again.</h2>
 
-      <div v-if="loading" class="center">
-        <i class="fa fa-spinner fa-spin fa-2x"></i>
+      <div v-if="loading" class="center loading">
+        <svgicon class="spin" icon="spinner" width="3em" height="3em" color="#007aa6" />
       </div>
 
       <div class="row" v-if="!loading">
@@ -104,46 +103,7 @@
         </h3>
       </div>
 
-      <div class="row center" v-if="paging.total >= 1">
-        <!-- TODO make this a shared component -->
-        <ul class="pagination">
-          <li :class="{disabled: page <= 0}" class="u-hide--small" :title="firstPageTitle">
-            <a @click="setPage(0)">
-              <i class="fa fa-angle-double-left"></i>
-            </a>
-          </li>
-
-          <li :class="{disabled: page <= 0}" :title="backPageTitle">
-            <a @click="setPage(page - 1)">
-              <i class="fa fa-angle-left"></i>
-            </a>
-          </li>
-
-          <li
-            v-for="(p, index) in paging.pages"
-            :class="{active: page == p, 'u-hide--small': index > 2}"
-            :key="p"
-          >
-            <a @click="setPage(p)">{{p + 1}}</a>
-          </li>
-
-          <li :class="{disabled: page >= paging.total}" :title="nextPageTitle">
-            <a @click="setPage(page + 1)">
-              <i class="fa fa-angle-right"></i>
-            </a>
-          </li>
-
-          <li
-            :class="{disabled: page >= paging.total}"
-            class="u-hide--small"
-            :title="lastPageTitle"
-          >
-            <a @click="setPage(paging.total)">
-              <i class="fa fa-angle-double-right"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
+      <pagination v-model="page" :total="totalPages" />
     </div>
   </div>
 </template>
@@ -155,9 +115,13 @@ import debounce from 'debounce';
 import api from '@/api';
 import opengraph from '@/opengraph';
 import utils from '@/utils';
+import Pagination from '@/components/Pagination';
 
 export default {
   name: 'Manage',
+  components: {
+    Pagination,
+  },
   head: {
     title() {
       return { inner: this.$gettext('Manage Apps') };
@@ -177,18 +141,11 @@ export default {
         sort: 'relevance',
       },
       page: 0,
-      paging: {
-        total: 0,
-        pages: [],
-      },
+      totalPages: 0,
       apps: [],
       loading: false,
       error: false,
       showApikey: false,
-      firstPageTitle: this.$gettext('Jump to the first page'),
-      backPageTitle: this.$gettext('Go back a page'),
-      nextPageTitle: this.$gettext('Go to the next page'),
-      lastPageTitle: this.$gettext('Jump to the last page'),
     };
   },
   created() {
@@ -204,31 +161,7 @@ export default {
         .then((data) => {
           this.apps = data.packages;
 
-          // TODO share this code with the Browse view
-          this.paging.total = Math.ceil(data.count / this.query.limit) - 1;
-          let first = this.page - 2;
-          let last = this.page + 2;
-
-          if (first < 0) {
-            last += Math.abs(first);
-            first = 0;
-          }
-
-          if (last > this.paging.total) {
-            first -= last - this.paging.total;
-            if (first < 0) {
-              first = 0;
-            }
-
-            last = this.paging.total;
-          }
-
-          const pages = [];
-          for (let i = first; i <= last; i++) {
-            pages.push(i);
-          }
-
-          this.paging.pages = pages;
+          this.totalPages = Math.ceil(data.count / this.query.limit) - 1;
           this.loading = false;
         })
         .catch((err) => {
@@ -241,25 +174,13 @@ export default {
     debounceRefresh: debounce(function() {
       this.refresh();
     }, 300),
-    setPage(page) {
-      let actualPage = page;
-      if (actualPage < 0) {
-        actualPage = 0;
-      }
-      else if (actualPage > this.paging.total) {
-        actualPage = this.paging.total;
-      }
-
-      if (this.page != actualPage) {
-        this.page = actualPage;
-        this.query.skip = actualPage * this.query.limit;
-
-        this.debounceRefresh();
-      }
-    },
   },
   computed: mapState(['user', 'isAuthenticated']),
   watch: {
+    page() {
+      this.query.skip = this.page * this.query.limit;
+      this.debounceRefresh();
+    },
     'query.search': function() {
       this.debounceRefresh();
     },

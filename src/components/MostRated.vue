@@ -1,6 +1,6 @@
 <template>
   <div class="most-rated" v-if="rating">
-    <svgicon :icon="rating" width="1em" height="1em" original></svgicon>
+    <svgicon :icon="rating" width="1em" height="1em" original />
   </div>
 </template>
 

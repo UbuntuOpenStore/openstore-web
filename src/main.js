@@ -1,5 +1,3 @@
-import 'font-awesome/css/font-awesome.min.css';
-
 import Vue from 'vue';
 import VueHead from 'vue-head';
 import VueLazyLoad from 'vue-lazyload';

@@ -1,9 +1,8 @@
 <template>
   <div class="row">
-    <!-- TODO intelegent back button -->
     <div class="back">
       <router-link :to="back">
-        <i class="fa fa-chevron-left"></i>
+        <svgicon icon="back" width="0.75em" height="0.75em" color="#007aa6" />
       </router-link>
       <router-link :to="back" v-translate>Back</router-link>
     </div>
@@ -21,8 +20,8 @@
         v-translate
       >There was an error trying to find this app, please refresh and try again.</h2>
 
-      <div v-if="loading" class="center">
-        <i class="fa fa-spinner fa-spin fa-2x"></i>
+      <div v-if="loading" class="center loading">
+        <svgicon class="spin" icon="spinner" width="3em" height="3em" color="#007aa6" />
       </div>
 
       <div class="col-6" v-if="app">
@@ -68,10 +67,8 @@
                 @click="showDownloadMenu = !showDownloadMenu"
               >
                 <span class="mr" v-translate>Download</span>
-                <i
-                  class="fa"
-                  :class="{'fa-caret-down': !showDownloadMenu, 'fa-caret-up': showDownloadMenu}"
-                ></i>
+                <svgicon icon="toolkit_arrow-up" width="0.75em" height="0.75em" color="#ffffff" v-if="showDownloadMenu" />
+                <svgicon icon="toolkit_arrow-down" width="0.75em" height="0.75em" color="#ffffff" v-if="!showDownloadMenu" />
               </button>
               <span
                 class="p-contextual-menu__dropdown"
@@ -99,7 +96,7 @@
 
           <div class="row p-matrix u-clearfix">
             <div class="p-matrix__item center version">
-              <i class="fa fa-2x fa-info-circle text-blue"></i>
+              <svgicon icon="info" width="2em" height="2em" color="#1ab6ef" />
               <br />
 
               v{{app.version}}
@@ -110,12 +107,14 @@
             </div>
 
             <div class="p-matrix__item center" v-if="!app.donate_url && app.license">
-              <i class="fa fa-2x fa-file-text-o text-green"></i>
+              <svgicon icon="note" width="2em" height="2em" color="#3fb24f" />
               <br />
               {{app.license}}
             </div>
             <div class="p-matrix__item center" :title="restrictedAccess">
-              <i class="fa fa-2x fa-shield" :class="{'text-red': isRestrictedAccess}"></i>
+              <svgicon icon="lock" width="2em" height="2em" color="#3fb24f" v-if="!isRestrictedAccess" />
+              <svgicon icon="security-alert" width="2em" height="2em" color="#fc4949" v-if="isRestrictedAccess && !isTrustedApp" />
+              <svgicon icon="user-admin" width="2em" height="2em" color="#fc4949" v-if="isRestrictedAccess && isTrustedApp" />
               <br />
 
               <span v-translate>Permissions</span>
@@ -123,7 +122,7 @@
 
             <div class="p-matrix__item center" v-if="app.donate_url">
               <a :href="app.donate_url" target="_blank" rel="noopener noreferrer">
-                <i class="fa fa-2x fa-heart text-red"></i>
+                <svgicon icon="thumbs_up-full" width="2em" height="2em" color="#dd4814" />
               </a>
               <br />
 
@@ -492,6 +491,27 @@ export default {
       }
 
       return screenshots;
+    },
+    isTrustedApp() {
+      if (this.app && this.app.id) {
+        if (this.app.id.startsWith('com.ubuntu.') && !this.app.id.startsWith('com.ubuntu.developer.')) {
+          return true;
+        }
+
+        if (this.app.id.startsWith('com.canonical.')) {
+          return true;
+        }
+
+        if (this.app.id.startsWith('ubports.')) {
+          return true;
+        }
+
+        if (this.app.id.startsWith('openstore.')) {
+          return true;
+        }
+      }
+
+      return false;
     },
   },
 };

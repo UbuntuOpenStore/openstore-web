@@ -4,16 +4,10 @@
       <h1 v-translate>RSS Feeds</h1>
 
       <h2>
-        <a href="/rss/new.xml">
-          <i class="fa fa-rss"></i>
-        </a>
         <a href="/rss/new.xml" v-translate>New Apps</a>
       </h2>
 
       <h2>
-        <a href="/rss/updates.xml">
-          <i class="fa fa-rss"></i>
-        </a>
         <a href="/rss/updates.xml" v-translate>Updated Apps</a>
       </h2>
     </div>

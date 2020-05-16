@@ -17,7 +17,7 @@
             title="Menu"
             @click="showMenu = true"
           >
-            <i class="fa fa-bars"></i>
+            <svgicon icon="navigation-menu" width="1.5em" height="1.5em" color="#f7f7f7" />
           </a>
           <a
             class="p-navigation__toggle--close"
@@ -26,7 +26,7 @@
             title="Close Menu"
             @click="showMenu = false"
           >
-            <i class="fa fa-times"></i>
+            <svgicon icon="close" width="1.5em" height="1.5em" color="#f7f7f7" />
           </a>
         </div>
         <nav class="p-navigation__nav" :class="{'u-show': showMenu}" role="menubar">
@@ -84,7 +84,7 @@
                 href="/telegram"
                 target="_blank"
                 v-translate
-              >Chat with us on Telegram</a>
+              >Telegram</a>
             </li>
             <li class="p-footer__item">
               <router-link :to="{name: 'stats'}" class="p-footer__link" v-translate>App Stats</router-link>
@@ -95,7 +95,7 @@
                 href="https://gitlab.com/theopenstore"
                 target="_blank"
                 v-translate
-              >Fork us on GitLab</a>
+              >Source Code</a>
             </li>
             <li class="p-footer__item">
               <a
@@ -193,6 +193,10 @@ export default {
   background-color: #ff0000;
 }
 
+a:visited {
+  color: #007aa6;
+}
+
 .p-footer {
   padding-top: 0;
 }
@@ -217,5 +221,23 @@ export default {
 .language-select {
   margin-left: 0.5rem;
   width: 7rem;
+}
+
+@keyframes spin {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+}
+
+.spin {
+  animation: spin 2s infinite linear;
+}
+
+.loading {
+  margin-top: 1em;
+}
+
+.saving {
+  margin-left: 0.5em;
+  display: inline-block;
 }
 </style>
