@@ -13,7 +13,7 @@
 
       <a href="http://ubuntu-touch.io">
         <span class="mr" v-translate>Ubuntu Touch</span>
-        <i class="fa fa-external-link"></i>
+        <svgicon icon="external-link" width="1em" height="1em" color="#007aa6" />
       </a>
 
       <h2 v-translate>Badges</h2>
@@ -22,7 +22,7 @@
 
       <router-link :to="{name: 'badge'}">
         <span class="mr" v-translate>Get your badge</span>
-        <i class="fa fa-external-link"></i>
+        <svgicon icon="external-link" width="1em" height="1em" color="#007aa6" />
       </router-link>
 
       <h2 v-translate>Install</h2>
@@ -69,14 +69,14 @@
 
       <a href="/telegram">
         <span class="mr" v-translate>OpenStore group on Telegram</span>
-        <i class="fa fa-external-link"></i>
+        <svgicon icon="external-link" width="1em" height="1em" color="#007aa6" />
       </a>
 
       <br />
 
       <a href="https://gitlab.com/theopenstore/openstore-meta/issues">
         <span class="mr" v-translate>Bug Tracker</span>
-        <i class="fa fa-external-link"></i>
+        <svgicon icon="external-link" width="1em" height="1em" color="#007aa6" />
       </a>
 
       <h2 v-translate>License</h2>
@@ -88,14 +88,14 @@
 
       <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">
         <span class="mr" v-translate>GPL v3 License</span>
-        <i class="fa fa-external-link"></i>
+        <svgicon icon="external-link" width="1em" height="1em" color="#007aa6" />
       </a>
 
       <br />
 
       <a href="https://gitlab.com/theopenstore/">
         <span class="mr" v-translate>OpenStore source on GitLab</span>
-        <i class="fa fa-external-link"></i>
+        <svgicon icon="external-link" width="1em" height="1em" color="#007aa6" />
       </a>
 
       <p v-translate>

@@ -9,8 +9,8 @@
         v-translate
       >There was an error trying to load the stats, please refresh and try again.</h2>
 
-      <div v-if="loading" class="center">
-        <i class="fa fa-spinner fa-spin fa-2x"></i>
+      <div v-if="loading" class="center loading">
+        <svgicon class="spin" icon="spinner" width="3em" height="3em" color="#007aa6" />
       </div>
     </div>
 

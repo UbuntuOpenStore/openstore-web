@@ -72,8 +72,8 @@
       v-translate
     >There was an error trying to load the app list, please refresh and try again.</h2>
 
-    <div v-if="loading" class="center">
-      <i class="fa fa-spinner fa-spin fa-2x"></i>
+    <div v-if="loading" class="center loading">
+      <svgicon class="spin" icon="spinner" width="3em" height="3em" color="#007aa6" />
     </div>
 
     <div class="row" v-if="!loading">
@@ -87,6 +87,7 @@
             :alt="app.name"
             @click="$router.push({name: 'app', params: {id: app.id}})"
           />
+          <most-rated :ratings="app.ratings" />
 
           <div class="p-matrix__content">
             <h3 class="p-matrix__title">
@@ -108,42 +109,7 @@
       </h3>
     </div>
 
-    <!-- TODO https://css-tricks.com/creating-a-reusable-pagination-component-in-vue/ -->
-    <div class="row center" v-if="paging.total >= 1">
-      <ul class="pagination">
-        <li :class="{disabled: page <= 0}" class="u-hide--small" :title="firstPageTitle">
-          <a @click="setPage(0)">
-            <i class="fa fa-angle-double-left"></i>
-          </a>
-        </li>
-
-        <li :class="{disabled: page <= 0}" :title="backPageTitle">
-          <a @click="setPage(page - 1)">
-            <i class="fa fa-angle-left"></i>
-          </a>
-        </li>
-
-        <li
-          v-for="(p, index) in paging.pages"
-          :class="{active: page == p, 'u-hide--small': index > 2}"
-          :key="p"
-        >
-          <a @click="setPage(p)">{{p + 1}}</a>
-        </li>
-
-        <li :class="{disabled: page >= paging.total}" :title="nextPageTitle">
-          <a @click="setPage(page + 1)">
-            <i class="fa fa-angle-right"></i>
-          </a>
-        </li>
-
-        <li :class="{disabled: page >= paging.total}" class="u-hide--small" :title="lastPageTitle">
-          <a @click="setPage(paging.total)">
-            <i class="fa fa-angle-double-right"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
+    <pagination v-model="page" :total="totalPages" />
   </div>
 </template>
 
@@ -156,6 +122,8 @@ import api from '@/api';
 import opengraph from '@/opengraph';
 import utils from '@/utils';
 import Types from '@/components/Types';
+import MostRated from '@/components/MostRated';
+import Pagination from '@/components/Pagination';
 
 const DEFAULT_SORT = '-published_date';
 const DEFAULT_TYPE = '';
@@ -164,7 +132,9 @@ const DEFAULT_CATEGORY = '';
 export default {
   name: 'Browse',
   components: {
-    types: Types,
+    Types,
+    MostRated,
+    Pagination,
   },
   head: {
     title() {
@@ -185,17 +155,10 @@ export default {
         category: DEFAULT_CATEGORY,
       },
       page: 0,
-      paging: {
-        total: 0,
-        pages: [],
-      },
+      totalPages: 0,
       apps: [],
       loading: false,
       error: false,
-      firstPageTitle: this.$gettext('Jump to the first page'),
-      backPageTitle: this.$gettext('Go back a page'),
-      nextPageTitle: this.$gettext('Go to the next page'),
-      lastPageTitle: this.$gettext('Jump to the last page'),
     };
   },
   created() {
@@ -318,30 +281,7 @@ export default {
         .then((data) => {
           this.apps = data.packages;
 
-          this.paging.total = Math.ceil(data.count / this.query.limit) - 1;
-          let first = this.page - 2;
-          let last = this.page + 2;
-
-          if (first < 0) {
-            last += Math.abs(first);
-            first = 0;
-          }
-
-          if (last > this.paging.total) {
-            first -= last - this.paging.total;
-            if (first < 0) {
-              first = 0;
-            }
-
-            last = this.paging.total;
-          }
-
-          const pages = [];
-          for (let i = first; i <= last; i++) {
-            pages.push(i);
-          }
-
-          this.paging.pages = pages;
+          this.totalPages = Math.ceil(data.count / this.query.limit) - 1;
           this.loading = false;
           this.error = false;
         })
@@ -360,25 +300,13 @@ export default {
       this.page = 0;
       this.query.skip = 0;
     },
-    setPage(page) {
-      let actualPage = page;
-      if (actualPage < 0) {
-        actualPage = 0;
-      }
-      else if (actualPage > this.paging.total) {
-        actualPage = this.paging.total;
-      }
-
-      if (this.page != actualPage) {
-        this.page = actualPage;
-        this.query.skip = actualPage * this.query.limit;
-
-        this.debounceRefresh();
-      }
-    },
   },
   computed: mapState(['categories']),
   watch: {
+    page() {
+      this.query.skip = this.page * this.query.limit;
+      this.debounceRefresh();
+    },
     'query.sort': function() {
       this.debounceRefresh();
     },
@@ -475,27 +403,11 @@ h1 {
   right: 0.2em;
 }
 
-.pagination {
-  display: inline-block;
-  padding-left: 0;
-  margin-left: 0;
-}
-
-.pagination li {
-  display: inline;
-  padding: 0 1em;
-}
-
-.pagination li.disabled {
-  opacity: 0.5;
-}
-
-.pagination li.disabled a {
-  cursor: default;
-}
-
-.pagination li.active {
-  font-weight: bold;
+.most-rated {
+  margin-top: 0;
+  position: absolute;
+  left: 45px;
+  top: 12px;
 }
 
 .filters {

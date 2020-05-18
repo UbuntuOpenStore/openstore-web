@@ -3,10 +3,10 @@
     <div v-if="!loading">
       <h1>
         <router-link :to="{name: 'manage_package', params: {id: app.id}}" title="Back">
-          <i class="fa fa-chevron-left"></i>
+          <svgicon icon="back" width="0.75em" height="0.75em" color="#007aa6" />
         </router-link>
 
-        <translate class="ml" :translate-params="{name: app.name}">New Revision for %{name}</translate>
+        <translate :translate-params="{name: app.name}">New Revision for %{name}</translate>
       </h1>
 
       <form class="p-form p-form--stacked">
@@ -82,8 +82,7 @@
         </div>
 
         <a class="p-button--positive" @click="save()" :disabled="saving || !canCreate">
-          <i class="fa" :class="{'fa-save': !saving, 'fa-spinner fa-spin': saving}"></i>
-          <span class="ml" v-translate>Create</span>
+          <span v-translate>Create</span>
         </a>
 
         <router-link
@@ -91,9 +90,12 @@
           :to="{name: 'manage_package', params: {id: app.id}}"
           :disabled="saving"
         >
-          <i class="fa fa-times"></i>
-          <span class="ml" v-translate>Cancel</span>
+          <span v-translate>Cancel</span>
         </router-link>
+
+        <span class="saving">
+          <svgicon v-if="saving" class="spin" icon="spinner" width="1.5em" height="1.5em" color="#007aa6" />
+        </span>
       </form>
     </div>
   </div>

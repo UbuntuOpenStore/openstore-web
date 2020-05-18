@@ -1,19 +1,25 @@
 <template>
   <div class="row">
+    <div v-if="loading" class="center loading">
+      <svgicon class="spin" icon="spinner" width="3em" height="3em" color="#007aa6" />
+    </div>
+
     <div v-if="!loading">
       <h1>
         <router-link :to="{name: 'manage'}" title="Back">
-          <i class="fa fa-chevron-left"></i>
+          <svgicon icon="back" width="0.75em" height="0.75em" color="#007aa6" />
         </router-link>
 
-        <span class="ml" v-translate>Edit</span>
+        <span v-translate>Edit</span>
         {{app.name}}
       </h1>
+
+      <rating-row :ratings="app.ratings" />
 
       <div v-if="app.published">
         <router-link :to="{name: 'app', params: {id: app.id}}" target="_blank">
           <span class="mr" v-translate>Public Link</span>
-          <i class="fa fa-external-link"></i>
+          <svgicon icon="external-link" width="1em" height="1em" color="#007aa6" />
         </router-link>
       </div>
 
@@ -38,8 +44,7 @@
           :to="{name: 'manage_revisions', params: {id: app.id}}"
           :disabled="saving"
         >
-          <i class="fa fa-plus"></i>
-          <span class="ml" v-translate>New Revision</span>
+          <span v-translate>New Revision</span>
         </router-link>
 
         <nav class="p-tabs">
@@ -173,7 +178,7 @@
                       title="Delete Screenshot"
                       @click="removeScreenshot(screenshot)"
                     >
-                      <i class="fa fa-close"></i>
+                      <svgicon icon="close" width="1em" height="1em" color="#111111" />
                     </a>
 
                     <img :data-id="screenshot" :src="screenshot" class="screenshot-thumbnail" />
@@ -451,8 +456,7 @@
         </div>
 
         <a class="p-button--positive" @click="save()" :disabled="saving">
-          <i class="fa" :class="{'fa-save': !saving, 'fa-spinner fa-spin': saving}"></i>
-          <span class="ml" v-translate>Save</span>
+          <span v-translate>Save</span>
         </a>
 
         <a
@@ -461,14 +465,16 @@
           @click="remove()"
           :disabled="saving"
         >
-          <i class="fa" :class="{'fa-remove': !saving, 'fa-spinner fa-spin': saving}"></i>
-          <span class="ml" v-translate>Delete</span>
+          <span v-translate>Delete</span>
         </a>
 
         <router-link class="p-button--neutral" :to="{name: 'manage'}" :disabled="saving">
-          <i class="fa fa-times"></i>
-          <span class="ml" v-translate>Cancel</span>
+          <span v-translate>Cancel</span>
         </router-link>
+
+        <span class="saving">
+          <svgicon v-if="saving" class="spin" icon="spinner" width="1.5em" height="1.5em" color="#007aa6" />
+        </span>
       </form>
     </div>
   </div>
@@ -483,10 +489,11 @@ import api from '@/api';
 import opengraph from '@/opengraph';
 import utils from '@/utils';
 import BadgeSelect from '@/components/BadgeSelect';
+import RatingRow from '@/components/RatingRow';
 
 export default {
   name: 'ManagePackage',
-  components: { draggable, BadgeSelect },
+  components: { draggable, BadgeSelect, RatingRow },
   head: {
     title() {
       let title = this.$gettext('Manage');
@@ -853,5 +860,9 @@ h1 {
 
 .strong td {
   font-weight: bold;
+}
+
+.rating-row {
+  margin-left: 2.5em;
 }
 </style>

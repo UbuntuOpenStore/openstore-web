@@ -4,19 +4,19 @@
 
     <div class="row">
       <a href="/auth/github" class="p-button--positive">
-        <i class="fa fa-github"></i>
+        <svgicon icon="github" width="1em" height="1em" color="#ffffff" />
         <span class="ml" v-translate>Login via GitHub</span>
       </a>
 
       <a href="/auth/gitlab" class="p-button--positive">
-        <i class="fa fa-gitlab"></i>
+        <svgicon icon="gitlab" width="1em" height="1em" color="#ffffff" />
         <span class="ml" v-translate>Login via GitLab</span>
       </a>
 
       <form action="/auth/ubuntu" method="post">
         <button class="p-button--neutral">
-          <i class="fa fa-linux"></i>
-          <span class="ml" v-translate>Login via Ubuntu</span>
+          <svgicon icon="ubuntuone" width="1em" height="1em" color="#111111" />
+          <span class="ml" v-translate>Login via Ubuntu One</span>
         </button>
       </form>
     </div>

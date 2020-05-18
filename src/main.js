@@ -1,11 +1,10 @@
-import 'font-awesome/css/font-awesome.min.css';
-
 import Vue from 'vue';
 import VueHead from 'vue-head';
 import VueLazyLoad from 'vue-lazyload';
 import Gettext from 'vue-gettext';
 /* eslint-disable import/extensions */
 import VueImg from 'v-img';
+import VueSVGIcon from 'vue-svgicon';
 import miniToastr from 'mini-toastr';
 import * as Sentry from '@sentry/browser';
 import * as Integrations from '@sentry/integrations';
@@ -15,6 +14,7 @@ import App from './App';
 import router from './router';
 import translations from './translations.json';
 import store from './store';
+import './compiled-icons';
 
 const version = process.env.VUE_APP_VERSION || 'dev';
 /* eslint-disable-next-line no-console */
@@ -40,6 +40,7 @@ Vue.use(VueHead, {
 });
 Vue.use(VueLazyLoad);
 Vue.use(VueImg);
+Vue.use(VueSVGIcon);
 Vue.use(Gettext, {
   availableLanguages: {
     en_US: 'English',
@@ -87,6 +88,12 @@ Vue.filter('date', (dateStr) => {
 
 Vue.filter('datetime', (dateStr) => {
   return format(new Date(dateStr), 'yyyy-MM-dd H:mm');
+});
+
+Vue.filter('titleCase', (value) => {
+  return value.replace(/_/g, ' ').replace(/\w\S*/g, (txt) => {
+    return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+  });
 });
 
 /* eslint-disable no-new */
