@@ -410,6 +410,17 @@ h1 {
   top: 12px;
 }
 
+@media (min-width: 620px) {
+  .most-rated {
+    left: calc(1rem + 45px);
+  }
+
+  .p-matrix__item:nth-child(3n+1) .most-rated {
+    left: 45px;
+  }
+}
+
+
 .filters {
   margin-top: 2px;
 }
