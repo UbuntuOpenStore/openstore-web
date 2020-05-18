@@ -9,6 +9,7 @@ test:
     - npm install
   script:
     - npm run translations
+    - npm run generate-icons
     - npm run lint
 
 deploy:
@@ -44,5 +45,6 @@ deploy_staging:
     - VERSION=$(date +"%Y-%m-%d_%H-%M-%S")
     - echo $VERSION
     - npm run translations
+    - npm run generate-icons
     - rsync -av --delete --exclude node_modules --exclude ".git" . root@ssh.open-store.io:/srv/openstore-web$ENV/$VERSION
     - ssh root@ssh.open-store.io "/srv/openstore-web$ENV/$VERSION/deploy/post-deploy.sh $VERSION $ENV"
