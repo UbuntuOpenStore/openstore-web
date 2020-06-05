@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg id="turtl-logo" xmlns="http://www.w3.org/2000/svg" height="500" width="1e3" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <linearGradient id="SVGID_1_" y2="181.9" gradientUnits="userSpaceOnUse" y1=".2799" gradientTransform="matrix(2.182 0 0 2.182 301.7 -.7526)" x2="90.89" x1="90.89">
+   <stop stop-color="#F6BFD9" offset="0"/>
+   <stop stop-color="#F3A8CA" offset=".9951"/>
+  </linearGradient>
+  <linearGradient id="b" y2="260.8" gradientUnits="userSpaceOnUse" y1="148.8" gradientTransform="matrix(1.601 0 0 2.126 -163.1 -195.6)" x2="306.9" x1="418.8">
+   <stop stop-color="#ed3f31" offset="0"/>
+   <stop stop-color="#d9292d" offset="1"/>
+  </linearGradient>
+  <radialGradient id="a" gradientUnits="userSpaceOnUse" cy="240.8" cx="500" gradientTransform="matrix(-.3805 .8290 -2.134 -.9796 1213 68.51)" r="281.6">
+   <stop offset="0"/>
+   <stop stop-color="#eed7d7" offset="1"/>
+  </radialGradient>
+ </defs>
+ <rect style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;paint-order:normal;shape-rendering:auto;solid-color:#000000;image-rendering:auto" ry="0" height="500" width="1e3" y="0" x="0" fill="#fff"/>
+ <style type="text/css">.st0{fill:url(#SVGID_1_);}
+	.st1{fill:#F094BE;}
+	.st2{fill:#4D3F92;}
+	.st3{fill:#FFFFFF;}</style>
+ <g transform="matrix(1.343 0 0 1 -293.3 0)">
+  <path opacity="0.062" style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;paint-order:fill markers stroke;shape-rendering:auto;solid-color:#000000;image-rendering:auto" d="m460.3-107c-0.0863 0.0151-0.1714 0.0522-0.2538 0.1164l-225.3 175.9v-0.103c-0.6586 0.514-1.507 0.6719-1.507 1.507v364.3c0 0.8355 0.8331 1.014 1.507 1.507l225.3 164.9c0.6741 0.4932 1.509-0.6738 1.509-1.509v-163.4h320.2c0.8354 0 1.507-0.6737 1.507-1.509v-364.2c0-0.8354-0.6718-1.509-1.507-1.509h-320.1v-174.3c0-0.7311-0.6516-1.731-1.255-1.626z" stroke="url(#a)" stroke-width="4.884" fill="none"/>
+  <rect style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;paint-order:stroke fill markers;shape-rendering:auto;solid-color:#000000;image-rendering:auto" ry="1.65" height="401.7" width="596.6" y="49.13" x="368.7" stroke-width="2.894" fill="#dcdcdc"/>
+  <rect style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;paint-order:stroke fill markers;shape-rendering:auto;solid-color:#000000;image-rendering:auto" ry=".6806" height="19.92" width="266.2" y="327.7" x="325" stroke-width="2.684" fill="#333"/>
+  <g stroke-width="2.126" fill="#333" transform="matrix(1.908 0 0 1 -576.6 0)">
+   <rect style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;paint-order:stroke fill markers;shape-rendering:auto;solid-color:#000000;image-rendering:auto" ry=".6806" height="19.92" width="167" y="147.6" x="473.3"/>
+   <rect style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;paint-order:stroke fill markers;shape-rendering:auto;solid-color:#000000;image-rendering:auto" ry=".6806" height="19.92" width="167" y="192.7" x="473.3"/>
+   <rect style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;paint-order:stroke fill markers;shape-rendering:auto;solid-color:#000000;image-rendering:auto" ry=".6806" height="19.92" width="167" y="237.7" x="473.3"/>
+   <rect style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;paint-order:stroke fill markers;shape-rendering:auto;solid-color:#000000;image-rendering:auto" ry=".6806" height="19.92" width="167" y="282.6" x="473.3"/>
+   <rect style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;paint-order:stroke fill markers;shape-rendering:auto;solid-color:#000000;image-rendering:auto" ry=".6806" height="19.92" width="167" y="102.7" x="473.3"/>
+  </g>
+  <rect opacity="0.092" style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;paint-order:markers stroke fill;shape-rendering:auto;solid-color:#000000;image-rendering:auto" ry="4.838" height="606.1" width="88.7" y="-61.14" x="385.9"/>
+  <g transform="translate(-100)">
+   <path style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;paint-order:stroke fill markers;shape-rendering:auto;solid-color:#000000;image-rendering:auto" d="m550.7-121.5c0.6742-0.5262 1.544 0.6884 1.544 1.544v721.6c0 0.8551-0.8536 2.049-1.544 1.544 0 0-232.2-169.5-232.2-170.3v-372.9c0-0.8551 232.2-181.5 232.2-181.5z" stroke-width="2.126" fill="#333"/>
+   <path style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;paint-order:stroke fill markers;shape-rendering:auto;solid-color:#000000;image-rendering:auto" d="m328.4 130.3v216.4l208.3 80.3-0.1-400.3-208.2 103.6z" stroke-width="1.845" fill="url(#b)"/>
+   <g fill-rule="evenodd" fill="#f89b0f" transform="matrix(1.822 0 0 2.419 -242.8 -313.3)">
+    <path d="m366.7 188.2c-5.771 0.5515-12.45 3.354-14.05 9.48-0.2061 0.7744-0.0863 3.195-1.379 2.34-1.256-0.7516-1.968 0.6682-1.883 1.744-0.3383 2.795 2.202 4.649 4.28 5.899 2.273 2.253 5.754 1.931 8.624 1.728 1.727 1.08 4.267 0.6573 4.93-1.427 1.848-2.951 3.962-5.782 6.032-8.53 1.109-3.848-0.1922-8.789-3.814-10.83-0.8713-0.3278-1.812-0.4332-2.738-0.4062z"/>
+    <path d="m367.7 217.8c-3.954 3.868-10.72 3.675-13.78 8.627 0.3947 2.539 3.614 2.071 5.496 2.479 5.269 0.1693 10.91 1.82 14.07 6.344 1.202 1.638 2.719 3.583 3.197 5.381-2.105 1.584-4.315-0.8125-6.399-1.249-5.377-2.444-12.4-3.241-17.2 0.862-2.716 1.661-6.394 3.629-6.278 7.308 2.267 3.263 6.934 2.166 9.831 4.521 3.921 2.025 7.396 4.776 11.14 7.092-8.894 2.292-18.14 3.788-26.37 8.072 4.933 0.9569 9.676-1.437 14.57-1.602 8.14-1.541 15.88-4.627 23.92-6.555 1.327-1.901-1.595-3.076-2.852-3.943-5.731-3.169-11.22-7.077-14.98-12.54 7.401 2.275 14.52 5.4 22.02 7.381 1.954-1.503-0.2487-3.798-1.168-5.234-4.151-6.335-7.843-14.03-15.35-16.96-2.08-0.8049-4.278-1.226-6.422-1.815 3.362-1.431 8.168-2.45 8.998-6.645-0.0807-1.154-1.464-1.606-2.443-1.527z"/>
+   </g>
+  </g>
+  <g stroke-width="2.126" transform="matrix(1.32 0 0 1 71.57 0)" fill="#333">
+   <rect style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;paint-order:stroke fill markers;shape-rendering:auto;solid-color:#000000;image-rendering:auto" ry=".6806" height="19.92" width="167" y="147.6" x="473.3"/>
+   <rect style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;paint-order:stroke fill markers;shape-rendering:auto;solid-color:#000000;image-rendering:auto" ry=".6806" height="19.92" width="167" y="192.7" x="473.3"/>
+   <rect style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;paint-order:stroke fill markers;shape-rendering:auto;solid-color:#000000;image-rendering:auto" ry=".6806" height="19.92" width="167" y="237.7" x="473.3"/>
+   <rect style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;paint-order:stroke fill markers;shape-rendering:auto;solid-color:#000000;image-rendering:auto" ry=".6806" height="19.92" width="167" y="282.6" x="473.3"/>
+   <rect style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;paint-order:stroke fill markers;shape-rendering:auto;solid-color:#000000;image-rendering:auto" ry=".6806" height="19.92" width="167" y="102.7" x="473.3"/>
+  </g>
+ </g>
+</svg>
