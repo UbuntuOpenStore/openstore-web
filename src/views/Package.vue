@@ -605,8 +605,8 @@ p + p {
 }
 
 .p-contextual-menu__dropdown {
-  min-width: 250px;
-  max-width: 600px;
+  min-width: 16em;
+  max-width: 20em;
 }
 
 button * {
