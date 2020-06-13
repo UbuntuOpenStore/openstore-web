@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-30 00:38-0500\n"
-"PO-Revision-Date: 2020-04-07 19:23+0000\n"
-"Last-Translator: dano6 <dano.kutka@gmail.com>\n"
+"PO-Revision-Date: 2020-06-12 15:24+0000\n"
+"Last-Translator: Marek Lach Bc <mareklachbc@tutanota.com>\n"
 "Language-Team: Slovak <https://translate.ubports.com/projects/openstore/"
 "open-storeio/sk/>\n"
 "Language: sk\n"
@@ -188,7 +188,7 @@ msgstr ""
 
 #: src/views/Package.vue:7
 msgid "Back"
-msgstr ""
+msgstr "Späť"
 
 #: src/views/Badge.vue:28 src/views/Badge.vue:32 src/views/ManagePackage.vue:70
 msgid "Badge"
@@ -225,7 +225,7 @@ msgstr ""
 #: src/views/ManagePackage.vue:356 src/views/ManageRevisions.vue:86
 #: src/views/Submit.vue:167
 msgid "Cancel"
-msgstr ""
+msgstr "Zrušiť"
 
 #: src/views/Browse.vue:14 src/views/ManagePackage.vue:140
 #: src/views/Package.vue:233
@@ -311,7 +311,7 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:90
 msgid "Description"
-msgstr ""
+msgstr "Popis"
 
 #: src/views/ManagePackage.vue:55
 msgid "Discovery"
@@ -344,7 +344,7 @@ msgstr ""
 
 #: src/views/Package.vue:197
 msgid "Downloads of the latest version"
-msgstr ""
+msgstr "Počet stiahnutí poslednej verzie"
 
 #: src/views/ManagePackage.vue:119
 msgid "Drag and drop to sort screenshots."
@@ -453,7 +453,7 @@ msgstr ""
 
 #: src/views/About.vue:29 src/views/Package.vue:43
 msgid "Install"
-msgstr ""
+msgstr "Inštalovať"
 
 #: src/views/Package.vue:317
 msgid "Install via the OpenStore app"
@@ -490,7 +490,7 @@ msgstr ""
 #: src/views/About.vue:78 src/views/ManagePackage.vue:171
 #: src/views/Package.vue:229
 msgid "License"
-msgstr ""
+msgstr "Licencia"
 
 #: src/views/Package.vue:332
 msgid "Location"
@@ -683,7 +683,7 @@ msgstr ""
 
 #: src/views/Package.vue:218
 msgid "Packager/Publisher"
-msgstr ""
+msgstr "Autor/Vydavateľ"
 
 #: src/views/NotFound.vue:3
 msgid "Page Not Found"
@@ -691,7 +691,7 @@ msgstr ""
 
 #: src/views/Package.vue:111 src/views/Package.vue:166
 msgid "Permissions"
-msgstr ""
+msgstr "Oprávnenia"
 
 #: src/views/Package.vue:338
 msgid "Picture Files"
@@ -787,7 +787,7 @@ msgstr ""
 
 #: src/components/Types.vue:4 src/views/Stats.vue:109
 msgid "Scope"
-msgstr "Scope"
+msgstr "Rozsah"
 
 #: src/views/Browse.vue:34
 msgid "Scopes"
@@ -803,7 +803,7 @@ msgstr ""
 
 #: src/views/Browse.vue:9 src/views/Manage.vue:26
 msgid "Search"
-msgstr ""
+msgstr "Hľadať"
 
 #: src/views/Submit.vue:35
 msgid "Send us a link to a repository for your app to our telegram group along with some instructions on how to build it."
@@ -997,7 +997,7 @@ msgstr ""
 
 #: src/views/Package.vue:201
 msgid "Total downloads"
-msgstr ""
+msgstr "Celkový počet stiahnutí"
 
 #: src/views/Manage.vue:79
 msgid "Total:"
