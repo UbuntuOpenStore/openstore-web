@@ -1,8 +1,8 @@
 <template>
   <span class="rating-row">
-    <span v-for="(count, rating) in ratings" :key="rating" :class="{muted: count === 0}" class="rating">
-      <svgicon :icon="rating.toLowerCase()" width="1.5em" height="1.5em" original />
-      <span class="count">{{count}}</span>
+    <span v-for="name in order" :key="name" :class="{muted: ratings[name] === 0}" class="rating">
+      <svgicon :icon="name.toLowerCase()" width="1.5em" height="1.5em" original />
+      <span class="count">{{ratings[name]}}</span>
     </span>
   </span>
 </template>
@@ -11,6 +11,17 @@
 export default {
   name: 'MostRated',
   props: ['ratings'],
+  data() {
+    return {
+      order: [
+        'THUMBS_UP',
+        'HAPPY',
+        'NEUTRAL',
+        'THUMBS_DOWN',
+        'BUGGY',
+      ],
+    };
+  },
 };
 </script>
 
