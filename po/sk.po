@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-30 00:38-0500\n"
-"PO-Revision-Date: 2020-06-18 15:25+0000\n"
+"PO-Revision-Date: 2020-06-20 15:25+0000\n"
 "Last-Translator: Marek Ľach <graweeld@googlemail.com>\n"
 "Language-Team: Slovak <https://translate.ubports.com/projects/openstore/"
 "open-storeio/sk/>\n"
@@ -131,6 +131,9 @@ msgid ""
 "Apps containing gambling involving real world money transactions are not allowed.\n"
 "This includes, but is not limited to, online casinos, betting, and lotteries."
 msgstr ""
+"Aplikácie obsahujúce hazard so skutočnými peniazmi, niesú dovolené.\n"
+"To zahrňuje aj, ale nejde výlučne iba o online kasína, stávkovanie, a "
+"lotérie."
 
 #: src/views/Submit.vue:82
 msgid "Apps containing or promoting child abuse or child sexual abuse are strictly prohibited."
@@ -157,14 +160,19 @@ msgstr ""
 #: src/views/Submit.vue:7
 msgid "Apps not requiring manual review can be submitted by logging in with the \"Log In\" link above."
 msgstr ""
+"Aplikácie, ktoré nevyžadujú manuálne kontrolovanie, môžu byť pridané po "
+"prihlásení sa pomocou vyššie uvedeného odkazu \"Prihlásiť sa\"."
 
 #: src/views/Submit.vue:108
 msgid "Apps promoting illegal activities (based on USA law) are not allowed."
 msgstr ""
+"Aplikácie podporujúce nelegálne činnosti (podľa práv v USA) niesú dovolené."
 
 #: src/views/Submit.vue:18
 msgid "Apps requiring manual review must be submitted by contacting an admin in our telegram group."
 msgstr ""
+"Aplikácie, ktoré vyžadujú manuálne kontrolovanie, musia byť predložené pred "
+"správcu v našej skupine na Telegrame."
 
 #: src/views/Submit.vue:114
 msgid ""
@@ -177,20 +185,23 @@ msgid ""
 "Apps uploaded to the OpenStore are subject to our submission rules and content policy.\n"
 "You can review the rules and policies before uploading your app."
 msgstr ""
+"Aplikácie nahrané do OpenStore podliehajú naším pravidlám pre odovzdávanie, "
+"a zásadám o obsahu.\n"
+"Pred nahraním aplikácie si môžete pravidlá a zásady skontrolovať."
 
 #: src/views/ManagePackage.vue:258 src/views/ManagePackage.vue:292
 #: src/views/Package.vue:249
 msgid "Architecture"
-msgstr ""
+msgstr "Architektúra"
 
 #: src/views/Package.vue:320
 msgid "Audio"
-msgstr ""
+msgstr "Zvuk"
 
 #: src/views/Manage.vue:47 src/views/ManagePackage.vue:254
 #: src/views/Package.vue:211
 msgid "Author"
-msgstr ""
+msgstr "Autor"
 
 #: src/views/Package.vue:7
 msgid "Back"
@@ -198,23 +209,23 @@ msgstr "Späť"
 
 #: src/views/Badge.vue:28 src/views/Badge.vue:32 src/views/ManagePackage.vue:70
 msgid "Badge"
-msgstr ""
+msgstr "Značenie"
 
 #: src/views/About.vue:18
 msgid "Badges"
-msgstr ""
+msgstr "Značenia"
 
 #: src/views/Package.vue:321
 msgid "Bluetooth"
-msgstr ""
+msgstr "Bluetooth"
 
 #: src/App.vue:31
 msgid "Browse"
-msgstr ""
+msgstr "Hľadať"
 
 #: src/views/Browse.vue:162
 msgid "Browse Apps"
-msgstr ""
+msgstr "Prehľadávať aplikácie"
 
 #: src/views/About.vue:74
 msgid "Bug Tracker"
@@ -222,11 +233,11 @@ msgstr ""
 
 #: src/views/Package.vue:322
 msgid "Calendar"
-msgstr ""
+msgstr "Kalendár"
 
 #: src/views/Package.vue:323
 msgid "Camera"
-msgstr ""
+msgstr "Fotoaparát"
 
 #: src/views/ManagePackage.vue:356 src/views/ManageRevisions.vue:86
 #: src/views/Submit.vue:167
@@ -236,56 +247,56 @@ msgstr "Zrušiť"
 #: src/views/Browse.vue:14 src/views/ManagePackage.vue:140
 #: src/views/Package.vue:233
 msgid "Category"
-msgstr ""
+msgstr "Kategória"
 
 #: src/views/ManagePackage.vue:101 src/views/ManageRevisions.vue:70
 #: src/views/Package.vue:159
 msgid "Changelog"
-msgstr ""
+msgstr "Zoznam zmien"
 
 #: src/views/ManagePackage.vue:291 src/views/ManageRevisions.vue:4
 msgid "Channel"
-msgstr ""
+msgstr "Kanál"
 
 #: src/views/ManagePackage.vue:270
 msgid "Channels"
-msgstr ""
+msgstr "Kanály"
 
 #: src/App.vue:83
 msgid "Chat with us on Telegram"
-msgstr ""
+msgstr "Chatujte s nami na Telegrame"
 
 #: src/views/Submit.vue:81
 msgid "Child Endangerment"
-msgstr ""
+msgstr "Ohrozenie dieťaťa"
 
 #: src/views/ManagePackage.vue:142
 msgid "Choose a category"
-msgstr ""
+msgstr "Vyberte kategóriu"
 
 #: src/views/ManagePackage.vue:173
 msgid "Choose a license"
-msgstr ""
+msgstr "Vyberte licenciu"
 
 #: src/views/ManagePackage.vue:231
 msgid "Choose a maintainer"
-msgstr ""
+msgstr "Vyberte správcu"
 
 #: src/views/Package.vue:324
 msgid "Connectivity"
-msgstr ""
+msgstr "Pripojenie"
 
 #: src/views/About.vue:59
 msgid "Contact"
-msgstr ""
+msgstr "Kontakt"
 
 #: src/views/Package.vue:325
 msgid "Contacts"
-msgstr ""
+msgstr "Kontakty"
 
 #: src/views/Package.vue:327
 msgid "Content Exchange"
-msgstr ""
+msgstr "Výmena obsahu"
 
 #: src/views/Package.vue:326
 msgid "Content Exchange Source"
@@ -293,19 +304,19 @@ msgstr ""
 
 #: src/views/About.vue:140
 msgid "Contributors"
-msgstr ""
+msgstr "Prispievatelia"
 
 #: src/components/CopyLine.vue:9
 msgid "Copy to clipboard"
-msgstr ""
+msgstr "Kopírovať do schránky"
 
 #: src/views/Stats.vue:20
 msgid "Count"
-msgstr ""
+msgstr "Celkovo"
 
 #: src/views/ManageRevisions.vue:77
 msgid "Create"
-msgstr ""
+msgstr "Vytvoriť"
 
 #: src/views/Package.vue:328
 msgid "Debug"
@@ -313,7 +324,7 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:351
 msgid "Delete"
-msgstr ""
+msgstr "Vymazať"
 
 #: src/views/ManagePackage.vue:90
 msgid "Description"
@@ -321,23 +332,23 @@ msgstr "Popis"
 
 #: src/views/ManagePackage.vue:55
 msgid "Discovery"
-msgstr ""
+msgstr "Objavovať"
 
 #: src/views/Package.vue:122
 msgid "Donate"
-msgstr ""
+msgstr "Darovať"
 
 #: src/views/ManagePackage.vue:216
 msgid "Donate URL"
-msgstr ""
+msgstr "Darovacia URL adresa"
 
 #: src/views/Package.vue:315
 msgid "Download"
-msgstr ""
+msgstr "Stiahnúť"
 
 #: src/views/ManagePackage.vue:284
 msgid "Download Stats"
-msgstr ""
+msgstr "Štatistiky stiahnutí"
 
 #: src/views/About.vue:43
 msgid "Download the OpenStore App"
@@ -346,7 +357,7 @@ msgstr "Stiahnúť aplikáciu OpenStore"
 #: src/views/Manage.vue:50 src/views/Manage.vue:70
 #: src/views/ManagePackage.vue:294
 msgid "Downloads"
-msgstr ""
+msgstr "Sťahovania"
 
 #: src/views/Package.vue:197
 msgid "Downloads of the latest version"
@@ -354,29 +365,29 @@ msgstr "Počet stiahnutí poslednej verzie"
 
 #: src/views/ManagePackage.vue:119
 msgid "Drag and drop to sort screenshots."
-msgstr ""
+msgstr "Uchopte, a pretiahnite pre zoradenie snímkov."
 
 #: src/views/ManagePackage.vue:8
 msgid "Edit"
-msgstr ""
+msgstr "Upraviť"
 
 #: src/views/ManagePackage.vue:441 src/views/ManagePackage.vue:459
 #: src/views/ManagePackage.vue:560 src/views/ManagePackage.vue:588
 #: src/views/ManageRevisions.vue:163 src/views/Submit.vue:218
 msgid "Error"
-msgstr ""
+msgstr "Chyba"
 
 #: src/views/Feeds.vue:34 src/views/Feeds.vue:38
 msgid "Feeds"
-msgstr ""
+msgstr "Zdroje"
 
 #: src/views/ManageRevisions.vue:23
 msgid "File"
-msgstr ""
+msgstr "Súbor"
 
 #: src/views/ManageRevisions.vue:41
 msgid "File Upload"
-msgstr ""
+msgstr "Nahrať súbor"
 
 #: src/views/About.vue:61
 msgid ""
@@ -386,23 +397,23 @@ msgstr ""
 
 #: src/App.vue:93
 msgid "Fork us on GitLab"
-msgstr ""
+msgstr "Forknite nás na GitLabe"
 
 #: src/views/ManagePackage.vue:262 src/views/Package.vue:245
 msgid "Framework"
-msgstr ""
+msgstr "Framework"
 
 #: src/views/Package.vue:346
 msgid "Full System Access"
-msgstr ""
+msgstr "Plný prístup k systému"
 
 #: src/views/Submit.vue:100
 msgid "Gambling"
-msgstr ""
+msgstr "Hazard"
 
 #: src/views/About.vue:25
 msgid "Get your badge"
-msgstr ""
+msgstr "Získajte svoj odznak"
 
 #: src/views/Submit.vue:39
 msgid ""
@@ -413,15 +424,15 @@ msgstr ""
 
 #: src/views/Browse.vue:187 src/views/Manage.vue:174
 msgid "Go back a page"
-msgstr ""
+msgstr "Naspäť o jednu stranu"
 
 #: src/views/Browse.vue:188 src/views/Manage.vue:175
 msgid "Go to the next page"
-msgstr ""
+msgstr "Prejsť na následujúcu stranu"
 
 #: src/views/About.vue:86
 msgid "GPL v3 License"
-msgstr ""
+msgstr "Licencia GPL v3"
 
 #: src/views/Submit.vue:94
 msgid "Harassment, Bullying, or Hate Speech"
@@ -429,11 +440,11 @@ msgstr ""
 
 #: src/views/Package.vue:329
 msgid "History"
-msgstr ""
+msgstr "História"
 
 #: src/views/Manage.vue:44
 msgid "Icon"
-msgstr ""
+msgstr "Ikonka"
 
 #: src/views/ManagePackage.vue:250
 msgid "ID"
@@ -447,15 +458,15 @@ msgstr ""
 
 #: src/views/Submit.vue:107
 msgid "Illegal Activities"
-msgstr ""
+msgstr "Nelegálne činnosti"
 
 #: src/views/Package.vue:330
 msgid "In App Purchases"
-msgstr ""
+msgstr "Nákupy v rámci aplikácie"
 
 #: src/views/ManagePackage.vue:60 src/views/Package.vue:208
 msgid "Info"
-msgstr ""
+msgstr "Informácie"
 
 #: src/views/About.vue:29 src/views/Package.vue:43
 msgid "Install"
@@ -467,31 +478,31 @@ msgstr "Inštalovať cez aplikáciu OpenStore"
 
 #: src/views/Browse.vue:186 src/views/Manage.vue:173
 msgid "Jump to the first page"
-msgstr ""
+msgstr "Preskočiť na prvú stranu"
 
 #: src/views/Browse.vue:189 src/views/Manage.vue:176
 msgid "Jump to the last page"
-msgstr ""
+msgstr "Preskočiť na poslednú stranu"
 
 #: src/views/Package.vue:331
 msgid "Keep Display On"
-msgstr ""
+msgstr "Obrazovku ponechať rozsvietenú"
 
 #: src/views/Manage.vue:18
 msgid "Keep your api key private!"
-msgstr ""
+msgstr "Ponechajte svoj API kľúč v súkromí!"
 
 #: src/views/ManagePackage.vue:155
 msgid "Keywords"
-msgstr ""
+msgstr "Kľúčové slová"
 
 #: src/App.vue:60 src/components/BadgeSelect.vue:4
 msgid "Language"
-msgstr ""
+msgstr "Jazyk"
 
 #: src/views/Browse.vue:46
 msgid "Latest Update"
-msgstr ""
+msgstr "Najnovšia aktualizácia"
 
 #: src/views/About.vue:78 src/views/ManagePackage.vue:171
 #: src/views/Package.vue:229
@@ -500,11 +511,11 @@ msgstr "Licencia"
 
 #: src/views/Package.vue:332
 msgid "Location"
-msgstr ""
+msgstr "Poloha"
 
 #: src/App.vue:37
 msgid "Log In"
-msgstr ""
+msgstr "Prihlásiť sa"
 
 #: src/views/Login.vue:24
 msgid "Log in to the OpenStore to be able to manage your apps."
@@ -512,125 +523,125 @@ msgstr "Prihláste sa do OpenStore, aby ste mohli spravovať svoje aplikácie."
 
 #: src/App.vue:43
 msgid "Log Out"
-msgstr ""
+msgstr "Odhlásiť sa"
 
 #: src/views/Login.vue:40 src/views/Login.vue:44
 msgid "Login"
-msgstr ""
+msgstr "Prihlásenie"
 
 #: src/views/Submit.vue:125
 msgid "Login to submit your app"
-msgstr ""
+msgstr "Prihláste sa, ak chcete nahrať vašu aplikáciu"
 
 #: src/views/Login.vue:7
 msgid "Login via GitHub"
-msgstr ""
+msgstr "Prihlásiť sa pomocou GitHubu"
 
 #: src/views/Login.vue:12
 msgid "Login via GitLab"
-msgstr ""
+msgstr "Prihlásiť sa pomocou GitLabu"
 
 #: src/views/Login.vue:18
 msgid "Login via Ubuntu"
-msgstr ""
+msgstr "Prihlásiť sa pomocou Ubuntu účtu"
 
 #: src/views/ManagePackage.vue:229
 msgid "Maintainer"
-msgstr ""
+msgstr "Správca"
 
 #: src/views/Submit.vue:113
 msgid "Malware"
-msgstr ""
+msgstr "Škodlivý kód"
 
 #: src/App.vue:40 src/views/Manage.vue:152 src/views/ManagePackage.vue:379
 #: src/views/ManagePackage.vue:381
 msgid "Manage"
-msgstr ""
+msgstr "Spravovať"
 
 #: src/views/Manage.vue:148
 msgid "Manage Apps"
-msgstr ""
+msgstr "Spravovať aplikácie"
 
 #: src/views/Package.vue:333
 msgid "Microphone"
-msgstr ""
+msgstr "Mikrofón"
 
 #: src/views/Package.vue:335
 msgid "Music Files"
-msgstr ""
+msgstr "Hudobné súbory"
 
 #: src/views/Manage.vue:45
 msgid "Name"
-msgstr ""
+msgstr "Názov"
 
 #: src/views/About.vue:48
 msgid "Navigate to the downloads folder"
-msgstr ""
+msgstr "Prejsť do zložky so stiahnutými súbormi"
 
 #: src/views/Package.vue:336
 msgid "Networking"
-msgstr ""
+msgstr "Sieť"
 
 #: src/views/Feeds.vue:9
 msgid "New Apps"
-msgstr ""
+msgstr "Nové aplikácie"
 
 #: src/views/ManagePackage.vue:37 src/views/ManageRevisions.vue:114
 #: src/views/ManageRevisions.vue:116
 msgid "New Revision"
-msgstr ""
+msgstr "Nová revízia"
 
 #: src/views/ManageRevisions.vue:231
 msgid "New revision for %{channel} was created!"
-msgstr ""
+msgstr "Nová revízia pre %{channel} bola vytvorená!"
 
 #: src/views/ManageRevisions.vue:8
 msgid "New Revision for %{name}"
-msgstr ""
+msgstr "Nová revízia pre %{name}"
 
 #: src/views/ManageRevisions.vue:233
 msgid "New revisions for %{channel} were created!"
-msgstr ""
+msgstr "Nové revízie pre %{channel} boli vytvorené!"
 
 #: src/views/Browse.vue:44
 msgid "Newest"
-msgstr ""
+msgstr "Najnovšie"
 
 #: src/views/ManagePackage.vue:31
 msgid "No"
-msgstr ""
+msgstr "Nie"
 
 #: src/views/Browse.vue:101 src/views/Manage.vue:94
 msgid "No apps found."
-msgstr ""
+msgstr "Žiadné aplikácie nenájdené."
 
 #: src/views/Package.vue:39
 msgid "No longer available"
-msgstr ""
+msgstr "Už viac nedostupný/á"
 
 #: src/views/Manage.vue:81 src/views/Manage.vue:86 src/views/Package.vue:187
 msgid "None"
-msgstr ""
+msgstr "Žiadné"
 
 #: src/views/Manage.vue:75
 msgid "Not published"
-msgstr ""
+msgstr "Nezverejnené"
 
 #: src/views/ManagePackage.vue:161
 msgid "NSFW"
-msgstr ""
+msgstr "Pre dospelých"
 
 #: src/views/Browse.vue:90
 msgid "NSFW content"
-msgstr ""
+msgstr "Obsah pre dospelých"
 
 #: src/views/Browse.vue:45
 msgid "Oldest"
-msgstr ""
+msgstr "Najstaršie"
 
 #: src/views/Browse.vue:47
 msgid "Oldest Update"
-msgstr ""
+msgstr "Najstaršia aktualizácia"
 
 #: src/views/Submit.vue:60
 msgid ""
@@ -657,11 +668,11 @@ msgstr "Otvoriť aplikáciu  Terminál"
 
 #: src/views/About.vue:147
 msgid "OpenStore API/Server Contributors"
-msgstr ""
+msgstr "Prispievatelia do OpenStore API/Serveru"
 
 #: src/views/Submit.vue:58
 msgid "OpenStore App Content Policy"
-msgstr ""
+msgstr "Zásady obsahu pre OpenStore aplikácie"
 
 #: src/views/About.vue:157
 msgid "OpenStore App Contributors"
@@ -669,7 +680,7 @@ msgstr "Prispievatelia do OpenStore aplikácie"
 
 #: src/views/Badge.vue:3
 msgid "OpenStore Badges"
-msgstr ""
+msgstr "OpenStore označenia"
 
 #: src/views/About.vue:67
 msgid "OpenStore group on Telegram"
@@ -681,7 +692,7 @@ msgstr "Zdrojový kód OpenStore na Gitlabe"
 
 #: src/views/About.vue:152
 msgid "OpenStore Website Contributors"
-msgstr ""
+msgstr "Prispievatelia OpenStore webstránky"
 
 #: src/views/ManagePackage.vue:245
 msgid "Package Info"
