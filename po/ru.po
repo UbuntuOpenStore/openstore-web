@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
 "PO-Revision-Date: 2020-06-21 19:08+0000\n"
-"Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
+"Last-Translator: Moshe Lazar <wersewikkov@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/openstore/"
 "open-storeio/ru/>\n"
 "Language: ru\n"
@@ -30,7 +30,7 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:577
 msgid "%{name} was successfully deleted"
-msgstr "%{name} благополучно удалено"
+msgstr "%{name} было успешно удалено"
 
 #: src/views/ManagePackage.vue:157
 msgid "A comma separated list of keywords"
@@ -55,7 +55,7 @@ msgstr "Все категории"
 
 #: src/views/Browse.vue:31
 msgid "All Types"
-msgstr "Все виды"
+msgstr "Все типы"
 
 #: src/views/Login.vue:26
 msgid "An account is not needed to download or install apps."
@@ -106,8 +106,8 @@ msgstr "Приложение"
 #: src/views/Submit.vue:95
 msgid "App containing or promoting any of the above are strictly prohibited."
 msgstr ""
-"Приложение, содержащее или продвигающее любое из вышеперечисленного, строго "
-"запрещено."
+"Приложение, содержащее или рекламирующее что-либо из вышеперечисленного, "
+"строго запрещено."
 
 #: src/views/Submit.vue:133
 msgid "App Name"
@@ -115,7 +115,7 @@ msgstr "Название приложения"
 
 #: src/App.vue:88
 msgid "App Stats"
-msgstr "Статистика Приложения"
+msgstr "Статистика приложения"
 
 #: src/views/Submit.vue:150
 msgid "App Title"
