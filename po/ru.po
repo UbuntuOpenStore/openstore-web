@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
 "PO-Revision-Date: 2020-06-21 19:08+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/openstore/"
 "open-storeio/ru/>\n"
 "Language: ru\n"
@@ -233,11 +233,11 @@ msgstr "Назад"
 
 #: src/views/Badge.vue:28 src/views/Badge.vue:32 src/views/ManagePackage.vue:70
 msgid "Badge"
-msgstr "Эмблема"
+msgstr "Баннер"
 
 #: src/views/About.vue:18
 msgid "Badges"
-msgstr "Эмблемы"
+msgstr "Баннеры"
 
 #: src/views/Package.vue:268
 msgid "Bluetooth"
@@ -492,7 +492,7 @@ msgid ""
 "for that one cool feature,\npublish a stripped down version!\n"
 "Not everyone will want to install apps with less confinement."
 msgstr ""
-"Если приложение можно опубликовать  без  предварительного изучения , и его "
+"Если приложение можно опубликовать без предварительного изучения, и его "
 "работа не нарушится без этой функции, опубликуйте урезанную версию!\n"
 "Не все захотят устанавливать приложения с ограничениями."
 
@@ -1181,7 +1181,7 @@ msgstr "Попробуйте другие варианты поиска"
 
 #: src/views/Browse.vue:29 src/views/ManagePackage.vue:270
 msgid "Type"
-msgstr ""
+msgstr "Тип"
 
 #: src/views/About.vue:14
 msgid "Ubuntu Touch"
@@ -1189,7 +1189,7 @@ msgstr "Ubuntu Touch"
 
 #: src/views/Browse.vue:3
 msgid "Ubuntu Touch Apps"
-msgstr "Приложения для Ubuntu Touch"
+msgstr "Каталог программ для Ubuntu Touch"
 
 #: src/views/Stats.vue:106
 msgid "Uncategorized"
@@ -1205,11 +1205,11 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:331
 msgid "Updated Date"
-msgstr ""
+msgstr "Дата обновления"
 
 #: src/views/ManageRevisions.vue:36
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: src/views/ManageRevisions.vue:44
 msgid "URL of App from the Web"
