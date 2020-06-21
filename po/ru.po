@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2020-01-19 19:40+0000\n"
-"Last-Translator: Eugene <uralhistory@gmail.com>\n"
+"PO-Revision-Date: 2020-06-21 19:08+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/openstore/"
 "open-storeio/ru/>\n"
 "Language: ru\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
 "4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.8\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #: src/views/Package.vue:118
 msgid ""
@@ -244,9 +244,8 @@ msgid "Bluetooth"
 msgstr "Bluetoоth"
 
 #: src/App.vue:31
-#, fuzzy
 msgid "Browse"
-msgstr "Программы"
+msgstr "Приложения"
 
 #: src/views/Browse.vue:162
 #, fuzzy
@@ -339,7 +338,7 @@ msgstr "Скопировать в буфер обмена"
 
 #: src/views/Stats.vue:20
 msgid "Count"
-msgstr ""
+msgstr "Число"
 
 #: src/views/ManageRevisions.vue:57
 msgid "Create"
@@ -1254,7 +1253,7 @@ msgstr "Веб-приложение+"
 
 #: src/views/Browse.vue:33
 msgid "Web Apps"
-msgstr ""
+msgstr "Веб-приложения"
 
 #: src/views/Package.vue:292
 msgid "Webview"
