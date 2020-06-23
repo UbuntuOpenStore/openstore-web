@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: openstore\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2020-06-23 21:51+0000\n"
+"PO-Revision-Date: 2020-06-23 22:58+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Catalan <https://translate.ubports.com/projects/openstore/"
 "open-storeio/ca/>\n"
@@ -524,7 +524,7 @@ msgstr "Manté la pantalla encesa"
 
 #: src/views/Manage.vue:18
 msgid "Keep your api key private!"
-msgstr "No compartiu la vostra clau de l'api!"
+msgstr "No compartiu la vostra clau de l'API!"
 
 #: src/views/ManagePackage.vue:155
 msgid "Keywords"
@@ -603,7 +603,7 @@ msgstr "Micròfon"
 
 #: src/views/Package.vue:282
 msgid "Music Files"
-msgstr "Arxius de Música"
+msgstr "Fitxers de música"
 
 #: src/views/Manage.vue:45
 msgid "Name"
@@ -656,7 +656,7 @@ msgstr "No s'ha publicat"
 
 #: src/views/ManagePackage.vue:161
 msgid "NSFW"
-msgstr "Per adults"
+msgstr "Per a adults"
 
 #: src/views/Browse.vue:90
 msgid "NSFW content"
@@ -790,7 +790,7 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:14
 msgid "Public Link"
-msgstr "Enllaç Públic"
+msgstr "Enllaç públic"
 
 #: src/views/ManagePackage.vue:21
 msgid "Publish"
@@ -806,7 +806,7 @@ msgstr "Data de publicació"
 
 #: src/views/Package.vue:286
 msgid "Push Notifications"
-msgstr "Notificacions Push"
+msgstr "Notificacions d'inserció"
 
 #: src/views/Package.vue:281
 msgid "Read Music Files"
@@ -1080,8 +1080,8 @@ msgstr ""
 msgid ""
 "There was an error trying to load the app list, please refresh and try again."
 msgstr ""
-"S'ha produït un error en intentar carregar la llista d'aplicacions, "
-"actualitzeu i torneu-ho a provar."
+"S'ha produït un error en intentar carregar la llista d'aplicacions. "
+"Actualitzeu i torneu-ho a provar."
 
 #: src/views/Stats.vue:5
 msgid ""
