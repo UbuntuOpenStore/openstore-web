@@ -332,7 +332,6 @@
             <div class="p-form__group" v-if="user.role == 'admin'">
               <label for="maintainer" class="p-form__label" v-translate>Maintainer</label>
               <select
-                type="text"
                 id="maintainer"
                 class="p-form__control"
                 :disabled="saving"
@@ -344,6 +343,16 @@
                   :key="user._id"
                   :value="user._id"
                 >{{user.display_name}}</option>
+              </select>
+            </div>
+
+            <div class="p-form__group" v-if="user.role == 'admin'">
+              <label for="type_override" class="p-form__label" v-translate>Override Type</label>
+              <select id="type_override" class="p-form__control" v-model="app.type_override" :disabled="saving">
+                <option value v-translate>None</option>
+                <option value="app" v-translate>App</option>
+                <option value="webapp" v-translate>Web App</option>
+                <option value="webapp+" v-translate>Web App+</option>
               </select>
             </div>
           </div>
