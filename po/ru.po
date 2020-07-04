@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2020-01-19 19:40+0000\n"
-"Last-Translator: Eugene <uralhistory@gmail.com>\n"
+"PO-Revision-Date: 2020-06-21 19:08+0000\n"
+"Last-Translator: Moshe Lazar <wersewikkov@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/openstore/"
 "open-storeio/ru/>\n"
 "Language: ru\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
 "4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.8\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #: src/views/Package.vue:118
 msgid ""
@@ -30,7 +30,7 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:577
 msgid "%{name} was successfully deleted"
-msgstr "%{name} благополучно удалено"
+msgstr "%{name} было успешно удалено"
 
 #: src/views/ManagePackage.vue:157
 msgid "A comma separated list of keywords"
@@ -55,7 +55,7 @@ msgstr "Все категории"
 
 #: src/views/Browse.vue:31
 msgid "All Types"
-msgstr "Все виды"
+msgstr "Все типы"
 
 #: src/views/Login.vue:26
 msgid "An account is not needed to download or install apps."
@@ -106,8 +106,8 @@ msgstr "Приложение"
 #: src/views/Submit.vue:95
 msgid "App containing or promoting any of the above are strictly prohibited."
 msgstr ""
-"Приложение, содержащее или продвигающее любое из вышеперечисленного, строго "
-"запрещено."
+"Приложение, содержащее или рекламирующее что-либо из вышеперечисленного, "
+"строго запрещено."
 
 #: src/views/Submit.vue:133
 msgid "App Name"
@@ -115,7 +115,7 @@ msgstr "Название приложения"
 
 #: src/App.vue:88
 msgid "App Stats"
-msgstr "Статистика Приложения"
+msgstr "Статистика приложения"
 
 #: src/views/Submit.vue:150
 msgid "App Title"
@@ -233,20 +233,19 @@ msgstr "Назад"
 
 #: src/views/Badge.vue:28 src/views/Badge.vue:32 src/views/ManagePackage.vue:70
 msgid "Badge"
-msgstr "Эмблема"
+msgstr "Баннер"
 
 #: src/views/About.vue:18
 msgid "Badges"
-msgstr "Эмблемы"
+msgstr "Баннеры"
 
 #: src/views/Package.vue:268
 msgid "Bluetooth"
 msgstr "Bluetoоth"
 
 #: src/App.vue:31
-#, fuzzy
 msgid "Browse"
-msgstr "Программы"
+msgstr "Приложения"
 
 #: src/views/Browse.vue:162
 #, fuzzy
@@ -339,7 +338,7 @@ msgstr "Скопировать в буфер обмена"
 
 #: src/views/Stats.vue:20
 msgid "Count"
-msgstr ""
+msgstr "Число"
 
 #: src/views/ManageRevisions.vue:57
 msgid "Create"
@@ -493,7 +492,7 @@ msgid ""
 "for that one cool feature,\npublish a stripped down version!\n"
 "Not everyone will want to install apps with less confinement."
 msgstr ""
-"Если приложение можно опубликовать  без  предварительного изучения , и его "
+"Если приложение можно опубликовать без предварительного изучения, и его "
 "работа не нарушится без этой функции, опубликуйте урезанную версию!\n"
 "Не все захотят устанавливать приложения с ограничениями."
 
@@ -1182,7 +1181,7 @@ msgstr "Попробуйте другие варианты поиска"
 
 #: src/views/Browse.vue:29 src/views/ManagePackage.vue:270
 msgid "Type"
-msgstr ""
+msgstr "Тип"
 
 #: src/views/About.vue:14
 msgid "Ubuntu Touch"
@@ -1190,7 +1189,7 @@ msgstr "Ubuntu Touch"
 
 #: src/views/Browse.vue:3
 msgid "Ubuntu Touch Apps"
-msgstr "Приложения для Ubuntu Touch"
+msgstr "Каталог программ для Ubuntu Touch"
 
 #: src/views/Stats.vue:106
 msgid "Uncategorized"
@@ -1206,11 +1205,11 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:331
 msgid "Updated Date"
-msgstr ""
+msgstr "Дата обновления"
 
 #: src/views/ManageRevisions.vue:36
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: src/views/ManageRevisions.vue:44
 msgid "URL of App from the Web"
@@ -1254,7 +1253,7 @@ msgstr "Веб-приложение+"
 
 #: src/views/Browse.vue:33
 msgid "Web Apps"
-msgstr ""
+msgstr "Веб-приложения"
 
 #: src/views/Package.vue:292
 msgid "Webview"
