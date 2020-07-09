@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2019-12-22 01:01+0000\n"
-"Last-Translator: Aeris One <pingard.charles@gmail.com>\n"
+"PO-Revision-Date: 2020-07-07 19:22+0000\n"
+"Last-Translator: Max Libre <libremax@protonmail.com>\n"
 "Language-Team: French <https://translate.ubports.com/projects/openstore/"
 "open-storeio/fr/>\n"
 "Language: fr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.8\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #: src/views/Package.vue:118
 msgid ""
@@ -313,7 +313,7 @@ msgstr "Choisissez un mainteneur ou une mainteneuse"
 
 #: src/views/Package.vue:271
 msgid "Connectivity"
-msgstr "Connectivité"
+msgstr "Connexion"
 
 #: src/views/About.vue:59
 msgid "Contact"
@@ -325,7 +325,7 @@ msgstr "Contacts"
 
 #: src/views/Package.vue:274
 msgid "Content Exchange"
-msgstr "Échange de contenu"
+msgstr "Échange de de contenus"
 
 #: src/views/Package.vue:273
 msgid "Content Exchange Source"
@@ -437,7 +437,7 @@ msgstr "Environnement applicatif"
 
 #: src/views/Package.vue:293
 msgid "Full System Access"
-msgstr "Accès complet au système"
+msgstr "Accès intégral au système"
 
 #: src/views/Submit.vue:100
 msgid "Gambling"
@@ -479,7 +479,7 @@ msgstr "Harcèlement, menaces ou discours haineux"
 
 #: src/views/Package.vue:276
 msgid "History"
-msgstr "Histoire"
+msgstr "Historique"
 
 #: src/views/Manage.vue:44
 msgid "Icon"
@@ -506,7 +506,7 @@ msgstr "Activités illégales"
 
 #: src/views/Package.vue:277
 msgid "In App Purchases"
-msgstr "Achats intégrés à l'application"
+msgstr "Achats au moyen de l'application"
 
 #: src/views/ManagePackage.vue:60 src/views/Package.vue:152
 msgid "Info"
@@ -530,7 +530,7 @@ msgstr "Aller à la dernière page"
 
 #: src/views/Package.vue:278
 msgid "Keep Display On"
-msgstr "Maintenir l'affichage allumé"
+msgstr "Maintenir l'affichage actif"
 
 #: src/views/Manage.vue:18
 msgid "Keep your api key private!"
@@ -555,7 +555,7 @@ msgstr "Licence"
 
 #: src/views/Package.vue:279
 msgid "Location"
-msgstr "Position"
+msgstr "Localisation"
 
 #: src/App.vue:37
 msgid "Log In"
@@ -612,7 +612,7 @@ msgstr "Microphone"
 
 #: src/views/Package.vue:282
 msgid "Music Files"
-msgstr "Fichiers musicaux"
+msgstr "Fichiers de musique"
 
 #: src/views/Manage.vue:45
 msgid "Name"
@@ -624,7 +624,7 @@ msgstr "Naviguer vers le dossier des téléchargements"
 
 #: src/views/Package.vue:283
 msgid "Networking"
-msgstr "Mise en réseau"
+msgstr "Connexion au réseau"
 
 #: src/views/Feeds.vue:9
 msgid "New Apps"
@@ -760,7 +760,7 @@ msgstr "Informations sur le paquet"
 
 #: src/views/Package.vue:162
 msgid "Packager/Publisher"
-msgstr "Publication"
+msgstr "Créateur/Publication"
 
 #: src/views/NotFound.vue:3
 msgid "Page Not Found"
@@ -772,7 +772,7 @@ msgstr "Permissions"
 
 #: src/views/Package.vue:285
 msgid "Picture Files"
-msgstr "Fichiers image"
+msgstr "Fichiers photos"
 
 #: src/views/ManagePackage.vue:43
 msgid "Presentation"
@@ -818,19 +818,19 @@ msgstr "Date de publication"
 
 #: src/views/Package.vue:286
 msgid "Push Notifications"
-msgstr "Notifications"
+msgstr "Notifications instantanées"
 
 #: src/views/Package.vue:281
 msgid "Read Music Files"
-msgstr "Lire les fichiers musicaux"
+msgstr "Lire les fichiers de musique"
 
 #: src/views/Package.vue:284
 msgid "Read Picture Files"
-msgstr "Lire les fichiers image"
+msgstr "Lire des fichiers photos"
 
 #: src/views/Package.vue:289
 msgid "Read Video Files"
-msgstr "Lire les fichiers vidéo"
+msgstr "Lire des fichiers vidéos"
 
 #: src/views/Browse.vue:41
 msgid "Relevance"
@@ -1215,7 +1215,7 @@ msgstr "Lien de l'application sur internet"
 
 #: src/views/Package.vue:288
 msgid "User Metrics"
-msgstr "Statistiques des utilisateurs"
+msgstr "Mesures d'utilisation"
 
 #: src/views/Manage.vue:49 src/views/ManagePackage.vue:296
 msgid "Version"
@@ -1227,7 +1227,7 @@ msgstr "Vidéo"
 
 #: src/views/Package.vue:290
 msgid "Video Files"
-msgstr "Fichiers vidéo"
+msgstr "Fichiers vidéos"
 
 #: src/views/ManagePackage.vue:221
 msgid "Video URL"

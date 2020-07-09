@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2020-05-14 16:24+0000\n"
+"PO-Revision-Date: 2020-07-07 19:22+0000\n"
 "Last-Translator: Mike <miguel2000@livecom.it>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/openstore/"
 "open-storeio/it/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.8\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #: src/views/Package.vue:118
 msgid ""
@@ -764,7 +764,7 @@ msgstr "Autorizzazioni"
 
 #: src/views/Package.vue:285
 msgid "Picture Files"
-msgstr "Immagine"
+msgstr "File di immagini"
 
 #: src/views/ManagePackage.vue:43
 msgid "Presentation"
@@ -811,15 +811,15 @@ msgstr "Notifiche Push"
 
 #: src/views/Package.vue:281
 msgid "Read Music Files"
-msgstr "Leggi files musicali"
+msgstr "Leggere file musicali"
 
 #: src/views/Package.vue:284
 msgid "Read Picture Files"
-msgstr "Leggi files multimediali"
+msgstr "Leggere file di immagini"
 
 #: src/views/Package.vue:289
 msgid "Read Video Files"
-msgstr "Leggi files video"
+msgstr "Leggere file video"
 
 #: src/views/Browse.vue:41
 msgid "Relevance"
@@ -1208,7 +1208,7 @@ msgstr "Video"
 
 #: src/views/Package.vue:290
 msgid "Video Files"
-msgstr "Files video"
+msgstr "File video"
 
 #: src/views/ManagePackage.vue:221
 msgid "Video URL"
