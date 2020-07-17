@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: openstore\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2020-06-23 22:58+0000\n"
-"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
+"PO-Revision-Date: 2020-07-15 19:14+0000\n"
+"Last-Translator: Joan CiberSheep <cibersheep@gmail.com>\n"
 "Language-Team: Catalan <https://translate.ubports.com/projects/openstore/"
 "open-storeio/ca/>\n"
 "Language: ca\n"
@@ -97,7 +97,7 @@ msgstr "Clau API"
 
 #: src/components/Types.vue:3 src/views/Manage.vue:46 src/views/Stats.vue:108
 msgid "App"
-msgstr "Aplicació"
+msgstr "App"
 
 #: src/views/Submit.vue:95
 msgid "App containing or promoting any of the above are strictly prohibited."
@@ -317,11 +317,11 @@ msgstr "Contactes"
 
 #: src/views/Package.vue:274
 msgid "Content Exchange"
-msgstr "Intercanvi de contingut"
+msgstr "Intercanvi de continguts"
 
 #: src/views/Package.vue:273
 msgid "Content Exchange Source"
-msgstr "Font d'intercanvi de contingut"
+msgstr "Font d'intercanvi de continguts"
 
 #: src/views/About.vue:138
 msgid "Contributors"
@@ -341,7 +341,7 @@ msgstr "Crea"
 
 #: src/views/Package.vue:275
 msgid "Debug"
-msgstr "Depura"
+msgstr "Depuració"
 
 #: src/views/ManagePackage.vue:353
 msgid "Delete"
@@ -428,7 +428,7 @@ msgstr "Entorn de treball"
 
 #: src/views/Package.vue:293
 msgid "Full System Access"
-msgstr "Accés complet del sistema"
+msgstr "Accés complet al sistema"
 
 #: src/views/Submit.vue:100
 msgid "Gambling"
@@ -496,7 +496,7 @@ msgstr "Activitats il·legals"
 
 #: src/views/Package.vue:277
 msgid "In App Purchases"
-msgstr "Compres dins l'aplicació"
+msgstr "Compres a l'app"
 
 #: src/views/ManagePackage.vue:60 src/views/Package.vue:152
 msgid "Info"
@@ -545,7 +545,7 @@ msgstr "Llicència"
 
 #: src/views/Package.vue:279
 msgid "Location"
-msgstr "Ubicació"
+msgstr "Situació"
 
 #: src/App.vue:37
 msgid "Log In"
@@ -615,7 +615,7 @@ msgstr "Aneu a la carpeta de baixades"
 
 #: src/views/Package.vue:283
 msgid "Networking"
-msgstr "Xarxa"
+msgstr "Connectivitat"
 
 #: src/views/Feeds.vue:9
 msgid "New Apps"
@@ -806,19 +806,19 @@ msgstr "Data de publicació"
 
 #: src/views/Package.vue:286
 msgid "Push Notifications"
-msgstr "Notificacions d'inserció"
+msgstr "Notificacions push"
 
 #: src/views/Package.vue:281
 msgid "Read Music Files"
-msgstr "Llegir fitxers de música"
+msgstr "Llegeix els fitxers de música"
 
 #: src/views/Package.vue:284
 msgid "Read Picture Files"
-msgstr "Llegir fitxers d'imatges"
+msgstr "Llegeix els fitxers d'imatge"
 
 #: src/views/Package.vue:289
 msgid "Read Video Files"
-msgstr "Llegir fitxers de vídeo"
+msgstr "Llegeix els fitxers de vídeo"
 
 #: src/views/Browse.vue:41
 msgid "Relevance"
@@ -1196,7 +1196,7 @@ msgstr "URL de l'aplicació a internet"
 
 #: src/views/Package.vue:288
 msgid "User Metrics"
-msgstr "Mètriques d'usuari"
+msgstr "Mètriques d'usuari/a"
 
 #: src/views/Manage.vue:49 src/views/ManagePackage.vue:296
 msgid "Version"
@@ -1236,7 +1236,7 @@ msgstr "Aplicacions web"
 
 #: src/views/Package.vue:292
 msgid "Webview"
-msgstr "Webview"
+msgstr "Visor web"
 
 #: src/views/Manage.vue:4
 msgid "Welcome %{name}!"

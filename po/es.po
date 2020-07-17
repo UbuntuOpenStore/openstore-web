@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2019-08-11 00:49+0000\n"
-"Last-Translator: advocatux <advocatux@airpost.net>\n"
+"PO-Revision-Date: 2020-07-16 19:20+0000\n"
+"Last-Translator: pietre <pietre.linux@gmail.com>\n"
 "Language-Team: Spanish <https://translate.ubports.com/projects/openstore/"
 "open-storeio/es/>\n"
 "Language: es\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #: src/views/Package.vue:118
 msgid ""
@@ -343,7 +343,7 @@ msgstr "Crear"
 
 #: src/views/Package.vue:275
 msgid "Debug"
-msgstr "Depurar"
+msgstr "Depuración"
 
 #: src/views/ManagePackage.vue:353
 msgid "Delete"
@@ -522,7 +522,7 @@ msgstr "Saltar a la última página"
 
 #: src/views/Package.vue:278
 msgid "Keep Display On"
-msgstr "Mantener la pantalla encendida"
+msgstr "Mantener pantalla encendida"
 
 #: src/views/Manage.vue:18
 msgid "Keep your api key private!"
@@ -765,7 +765,7 @@ msgstr "Permisos"
 
 #: src/views/Package.vue:285
 msgid "Picture Files"
-msgstr "Archivos de imágenes"
+msgstr "Archivos de imagen"
 
 #: src/views/ManagePackage.vue:43
 msgid "Presentation"
@@ -810,7 +810,7 @@ msgstr "Fecha de publicación"
 
 #: src/views/Package.vue:286
 msgid "Push Notifications"
-msgstr "Notificaciones «push»"
+msgstr "Notificaciones push"
 
 #: src/views/Package.vue:281
 msgid "Read Music Files"
@@ -818,11 +818,11 @@ msgstr "Leer archivos de música"
 
 #: src/views/Package.vue:284
 msgid "Read Picture Files"
-msgstr "Leer archivos de imágenes"
+msgstr "Leer archivos de imagen"
 
 #: src/views/Package.vue:289
 msgid "Read Video Files"
-msgstr "Leer archivos de vídeo"
+msgstr "Leer archivos de video"
 
 #: src/views/Browse.vue:41
 msgid "Relevance"
@@ -1208,7 +1208,7 @@ msgstr "Vídeo"
 
 #: src/views/Package.vue:290
 msgid "Video Files"
-msgstr "Archivos de vídeo"
+msgstr "Archivos de video"
 
 #: src/views/ManagePackage.vue:221
 msgid "Video URL"
