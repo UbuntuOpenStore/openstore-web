@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2020-02-28 17:21+0000\n"
+"PO-Revision-Date: 2020-07-20 00:16+0000\n"
 "Last-Translator: Daniel Frost <one@frostinfo.de>\n"
 "Language-Team: German <https://translate.ubports.com/projects/openstore/"
 "open-storeio/de/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.8\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #: src/views/Package.vue:118
 msgid ""
@@ -341,7 +341,7 @@ msgstr "Einstellen"
 
 #: src/views/Package.vue:275
 msgid "Debug"
-msgstr "Fehlerbehandlung"
+msgstr "Fehlersuche"
 
 #: src/views/ManagePackage.vue:353
 msgid "Delete"
@@ -428,7 +428,7 @@ msgstr "Framework"
 
 #: src/views/Package.vue:293
 msgid "Full System Access"
-msgstr "Vollzugriff"
+msgstr "Voller Systemzugriff"
 
 #: src/views/Submit.vue:100
 msgid "Gambling"
@@ -520,7 +520,7 @@ msgstr "Zur letzten Seite springen"
 
 #: src/views/Package.vue:278
 msgid "Keep Display On"
-msgstr "Bildschirm angeschaltet lassen"
+msgstr "Display aktiviert lassen"
 
 #: src/views/Manage.vue:18
 msgid "Keep your api key private!"
@@ -1231,7 +1231,7 @@ msgstr "Webapps"
 
 #: src/views/Package.vue:292
 msgid "Webview"
-msgstr "Internetzugriff"
+msgstr "Webinhalte anzeigen"
 
 #: src/views/Manage.vue:4
 msgid "Welcome %{name}!"
