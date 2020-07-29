@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-30 00:38-0500\n"
-"PO-Revision-Date: 2020-06-20 15:25+0000\n"
-"Last-Translator: Marek Ľach <graweeld@googlemail.com>\n"
+"PO-Revision-Date: 2020-07-29 12:38+0000\n"
+"Last-Translator: dano6 <dano.kutka@gmail.com>\n"
 "Language-Team: Slovak <https://translate.ubports.com/projects/openstore/"
 "open-storeio/sk/>\n"
 "Language: sk\n"
@@ -296,11 +296,11 @@ msgstr "Kontakty"
 
 #: src/views/Package.vue:327
 msgid "Content Exchange"
-msgstr "Výmena obsahu"
+msgstr "Zdieľaný obsah"
 
 #: src/views/Package.vue:326
 msgid "Content Exchange Source"
-msgstr ""
+msgstr "Spravovanie zdieľaného obsahu"
 
 #: src/views/About.vue:140
 msgid "Contributors"
@@ -320,7 +320,7 @@ msgstr "Vytvoriť"
 
 #: src/views/Package.vue:328
 msgid "Debug"
-msgstr ""
+msgstr "Odskúšať"
 
 #: src/views/ManagePackage.vue:351
 msgid "Delete"
@@ -405,7 +405,7 @@ msgstr "Framework"
 
 #: src/views/Package.vue:346
 msgid "Full System Access"
-msgstr "Plný prístup k systému"
+msgstr "Úplný prístup k systému"
 
 #: src/views/Submit.vue:100
 msgid "Gambling"
@@ -462,7 +462,7 @@ msgstr "Nelegálne činnosti"
 
 #: src/views/Package.vue:330
 msgid "In App Purchases"
-msgstr "Nákupy v rámci aplikácie"
+msgstr "Nákupy v aplikácii"
 
 #: src/views/ManagePackage.vue:60 src/views/Package.vue:208
 msgid "Info"
@@ -486,7 +486,7 @@ msgstr "Preskočiť na poslednú stranu"
 
 #: src/views/Package.vue:331
 msgid "Keep Display On"
-msgstr "Obrazovku ponechať rozsvietenú"
+msgstr "Ponechať zapnutý displej"
 
 #: src/views/Manage.vue:18
 msgid "Keep your api key private!"
@@ -511,7 +511,7 @@ msgstr "Licencia"
 
 #: src/views/Package.vue:332
 msgid "Location"
-msgstr "Poloha"
+msgstr "Umiestnenie"
 
 #: src/App.vue:37
 msgid "Log In"
@@ -712,7 +712,7 @@ msgstr "Oprávnenia"
 
 #: src/views/Package.vue:338
 msgid "Picture Files"
-msgstr ""
+msgstr "Subory s obrázkami"
 
 #: src/views/ManagePackage.vue:43
 msgid "Presentation"
@@ -752,19 +752,19 @@ msgstr ""
 
 #: src/views/Package.vue:339
 msgid "Push Notifications"
-msgstr ""
+msgstr "Push Oznámenia"
 
 #: src/views/Package.vue:334
 msgid "Read Music Files"
-msgstr ""
+msgstr "Načítať hudobné súbory"
 
 #: src/views/Package.vue:337
 msgid "Read Picture Files"
-msgstr ""
+msgstr "Načítať súbory s obrázkami"
 
 #: src/views/Package.vue:342
 msgid "Read Video Files"
-msgstr ""
+msgstr "Načítať video súbory"
 
 #: src/views/Browse.vue:41
 msgid "Relevance"
@@ -828,7 +828,7 @@ msgstr ""
 
 #: src/views/Package.vue:340
 msgid "Sensors"
-msgstr ""
+msgstr "Senzory"
 
 #: src/views/Submit.vue:74
 msgid "Sexually Explicit Content"
@@ -1078,7 +1078,7 @@ msgstr ""
 
 #: src/views/Package.vue:341
 msgid "User Metrics"
-msgstr ""
+msgstr "Metriky používateľa"
 
 #: src/views/Manage.vue:49 src/views/ManagePackage.vue:293
 msgid "Version"
@@ -1086,11 +1086,11 @@ msgstr ""
 
 #: src/views/Package.vue:344
 msgid "Video"
-msgstr ""
+msgstr "Video"
 
 #: src/views/Package.vue:343
 msgid "Video Files"
-msgstr ""
+msgstr "Video súbory"
 
 #: src/views/ManagePackage.vue:221
 msgid "Video URL"
@@ -1118,7 +1118,7 @@ msgstr ""
 
 #: src/views/Package.vue:345
 msgid "Webview"
-msgstr ""
+msgstr "Webový režim"
 
 #: src/views/Manage.vue:4
 msgid "Welcome %{name}!"
