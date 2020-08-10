@@ -433,7 +433,10 @@
                                             }"
                       :key="revision.revision"
                     >
-                      <td>{{revision.revision}}</td>
+                      <td>
+                        {{revision.revision}}
+                        <span v-if="revision.download_url" :title="downloadTitle">*</span>
+                      </td>
                       <td>{{revision.channel.charAt(0).toUpperCase()}}{{revision.channel.slice(1)}}</td>
                       <td>{{revision.architecture}}</td>
                       <td>v{{revision.version}}</td>
@@ -543,6 +546,7 @@ export default {
         },
       },
       showAllRevisions: false,
+      downloadTitle: this.$gettext('This revision is still available'),
     };
   },
   created() {
