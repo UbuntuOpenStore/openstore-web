@@ -148,19 +148,19 @@
         <ul class="p-list">
           <li class="p-list__item">
             <a
-              href="https://gitlab.com/theopenstore/openstore-api/graphs/master"
+              href="https://gitlab.com/theopenstore/openstore-api/-/graphs/master"
               v-translate
             >OpenStore API/Server Contributors</a>
           </li>
           <li class="p-list__item">
             <a
-              href="https://gitlab.com/theopenstore/openstore-web/graphs/master"
+              href="https://gitlab.com/theopenstore/openstore-web/-/graphs/master"
               v-translate
             >OpenStore Website Contributors</a>
           </li>
           <li class="p-list__item">
             <a
-              href="https://gitlab.com/theopenstore/openstore-app/graphs/master"
+              href="https://gitlab.com/theopenstore/openstore-app/-/graphs/master"
               v-translate
             >OpenStore App Contributors</a>
           </li>
