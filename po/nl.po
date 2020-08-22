@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2020-07-06 17:14+0000\n"
+"PO-Revision-Date: 2020-08-16 11:15+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@outlook.com>\n"
 "Language-Team: Dutch <https://translate.ubports.com/projects/openstore/"
 "open-storeio/nl/>\n"
@@ -774,7 +774,7 @@ msgstr "Verboden apps"
 
 #: src/views/About.vue:20
 msgid "Promote your app on the OpenStore!"
-msgstr "Promoot je app in OpenStore!"
+msgstr "Promoot je OpenStore-app!"
 
 #: src/views/Badge.vue:5
 msgid ""
@@ -783,9 +783,9 @@ msgid ""
 "are available in several different languages and in both PNG and SVG\n"
 "formats."
 msgstr ""
-"Promoot je app in OpenStore! Voeg deze emblemen toe aan je website,\n"
+"Promoot je OpenStore-app! Voeg deze emblemen toe aan je website,\n"
 "broncode, socialemediapagina of waar dan ook op internet. De emblemen\n"
-"zijn beschikbaar in verschillende talen, in zowel PNG- als SVG-\n"
+"zijn beschikbaar in verschillende talen, en in zowel png- als svg-\n"
 "formaat."
 
 #: src/views/ManagePackage.vue:14
