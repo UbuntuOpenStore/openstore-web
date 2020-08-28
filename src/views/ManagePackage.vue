@@ -16,6 +16,10 @@
 
       <rating-row :ratings="app.ratings" />
 
+      <h2 v-if="locked && user.role != 'admin'" class="p-muted-heading">
+        This app has been locked by an administrator
+      </h2>
+
       <div v-if="app.published">
         <router-link :to="{name: 'app', params: {id: app.id}}" target="_blank">
           <span class="mr" v-translate>Public Link</span>
@@ -42,7 +46,7 @@
         <router-link
           class="p-button--positive"
           :to="{name: 'manage_revisions', params: {id: app.id}}"
-          :disabled="saving"
+          :disabled="disabled"
         >
           <span v-translate>New Revision</span>
         </router-link>
@@ -79,6 +83,16 @@
                 v-translate
               >Info</a>
             </li>
+            <li class="p-tabs__item" role="presentation" v-if="user.role == 'admin'">
+              <a
+                class="p-tabs__link"
+                tabindex="-1"
+                role="tab"
+                @click="tab = 'admin'"
+                :aria-selected="tab == 'admin'"
+                v-translate
+              >Admin</a>
+            </li>
             <li class="p-tabs__item" role="presentation">
               <a
                 class="p-tabs__link"
@@ -110,7 +124,7 @@
                 type="text"
                 id="name"
                 class="p-form__control"
-                :disabled="saving"
+                :disabled="disabled"
                 v-model="app.name"
               />
             </div>
@@ -121,7 +135,7 @@
                 type="text"
                 id="tagline"
                 class="p-form__control"
-                :disabled="saving"
+                :disabled="disabled"
                 v-model="app.tagline"
               />
             </div>
@@ -132,7 +146,7 @@
                 id="description"
                 rows="4"
                 class="p-form__control"
-                :disabled="saving"
+                :disabled="disabled"
                 v-model="app.description"
               ></textarea>
             </div>
@@ -143,7 +157,7 @@
                 id="changelog"
                 rows="4"
                 class="p-form__control"
-                :disabled="saving"
+                :disabled="disabled"
                 v-model="app.changelog"
               ></textarea>
             </div>
@@ -159,7 +173,7 @@
                   accept="image/*"
                   multiple="multiple"
                   @change="screenshotFilesChanged($event.target.files)"
-                  :disabled="saving"
+                  :disabled="disabled"
                 />
 
                 <p
@@ -197,7 +211,7 @@
                 type="text"
                 id="category"
                 class="p-form__control"
-                :disabled="saving"
+                :disabled="disabled"
                 v-model="app.category"
               >
                 <option value v-translate>Choose a category</option>
@@ -216,7 +230,7 @@
                 type="text"
                 id="keywords"
                 class="p-form__control"
-                :disabled="saving"
+                :disabled="disabled"
                 v-model="app.keywords"
               />
               <p class="small text-lightgrey" v-translate>A comma separated list of keywords</p>
@@ -228,7 +242,7 @@
                 type="checkbox"
                 id="nsfw"
                 class="p-form__control"
-                :disabled="saving"
+                :disabled="disabled"
                 v-model="app.nsfw"
               />
               <div class="small text-lightgrey" v-translate>This app contains NSFW material</div>
@@ -244,7 +258,7 @@
                 type="text"
                 id="license"
                 class="p-form__control"
-                :disabled="saving"
+                :disabled="disabled"
                 v-model="app.license"
               >
                 <option value v-translate>Choose a license</option>
@@ -287,7 +301,7 @@
                 type="text"
                 id="source"
                 class="p-form__control"
-                :disabled="saving"
+                :disabled="disabled"
                 v-model="app.source"
               />
             </div>
@@ -298,7 +312,7 @@
                 type="text"
                 id="support_url"
                 class="p-form__control"
-                :disabled="saving"
+                :disabled="disabled"
                 v-model="app.support_url"
               />
             </div>
@@ -309,7 +323,7 @@
                 type="text"
                 id="donate_url"
                 class="p-form__control"
-                :disabled="saving"
+                :disabled="disabled"
                 v-model="app.donate_url"
               />
             </div>
@@ -320,7 +334,7 @@
                 type="text"
                 id="video_url"
                 class="p-form__control"
-                :disabled="saving"
+                :disabled="disabled"
                 v-model="app.video_url"
               />
               <div
@@ -328,13 +342,31 @@
                 v-translate
               >Only YouTube videos are supported at this time. Make sure the url is for the embedded video!</div>
             </div>
+          </div>
+        </div>
 
-            <div class="p-form__group" v-if="user.role == 'admin'">
+        <div :class="{hidden: tab != 'admin'}" class="p-card" v-if="user.role == 'admin'">
+          <div class="p-form__group">
+            <label for="locked" class="p-form__label" v-translate>Locked</label>
+            <button
+              class="p-switch"
+              type="button"
+              role="switch"
+              :aria-checked="locked"
+              @click="locked = !locked"
+            >
+              <span v-translate>Yes</span>
+              <span v-translate>No</span>
+            </button>
+          </div>
+
+          <div class="p-card__content">
+            <div class="p-form__group">
               <label for="maintainer" class="p-form__label" v-translate>Maintainer</label>
               <select
                 id="maintainer"
                 class="p-form__control"
-                :disabled="saving"
+                :disabled="disabled"
                 v-model="app.maintainer"
               >
                 <option value v-translate>Choose a maintainer</option>
@@ -346,9 +378,9 @@
               </select>
             </div>
 
-            <div class="p-form__group" v-if="user.role == 'admin'">
+            <div class="p-form__group">
               <label for="type_override" class="p-form__label" v-translate>Override Type</label>
-              <select id="type_override" class="p-form__control" v-model="app.type_override" :disabled="saving">
+              <select id="type_override" class="p-form__control" v-model="app.type_override" :disabled="disabled">
                 <option value v-translate>None</option>
                 <option value="app" v-translate>App</option>
                 <option value="webapp" v-translate>Web App</option>
@@ -467,7 +499,7 @@
           </div>
         </div>
 
-        <a class="p-button--positive" @click="save()" :disabled="saving">
+        <a class="p-button--positive" @click="save()" :disabled="disabled">
           <span v-translate>Save</span>
         </a>
 
@@ -475,12 +507,12 @@
           class="p-button--negative"
           :class="{hidden: app.revisions.length > 0}"
           @click="remove()"
-          :disabled="saving"
+          :disabled="disabled"
         >
           <span v-translate>Delete</span>
         </a>
 
-        <router-link class="p-button--neutral" :to="{name: 'manage'}" :disabled="saving">
+        <router-link class="p-button--neutral" :to="{name: 'manage'}" :disabled="disabled">
           <span v-translate>Cancel</span>
         </router-link>
 
@@ -532,6 +564,7 @@ export default {
     return {
       app: {},
       published: false,
+      locked: false,
       screenshotFiles: [],
       loading: false,
       saving: false,
@@ -569,6 +602,7 @@ export default {
           data.keywords = data.keywords.join(', ');
           this.app = data;
           this.published = this.app.published;
+          this.locked = this.app.locked;
 
           this.$emit('updateHead');
         }
@@ -625,10 +659,11 @@ export default {
       return revision;
     },
     save() {
-      if (!this.saving) {
+      if (!this.disabled) {
         this.saving = true;
 
         this.app.published = this.published;
+        this.app.locked = this.locked;
         let updateData = {};
 
         if (this.screenshotFiles.length > 0) {
@@ -680,6 +715,7 @@ export default {
               keywords: data.keywords.join(', '),
             };
             this.published = this.app.published;
+            this.locked = this.app.locked;
 
             const screenshotsElement = document.getElementById('screenshots');
             if (screenshotsElement) {
@@ -709,7 +745,7 @@ export default {
       }
     },
     remove() {
-      if (!this.saving) {
+      if (!this.disabled) {
         this.saving = true;
 
         api.manage
@@ -763,6 +799,9 @@ export default {
       }
 
       return this.revisions.slice(0, 10);
+    },
+    disabled() {
+      return this.saving || (this.locked && this.user.role != 'admin');
     },
   },
   watch: {
