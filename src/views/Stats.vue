@@ -26,7 +26,7 @@
         <tbody>
           <tr v-for="(count, name) in filteredTypes" :key="name">
             <td>{{humanTypeLabel[name]}}</td>
-            <td class="align-right">{{count}}</td>
+            <td class="align-right">{{count | number}}</td>
           </tr>
         </tbody>
       </table>
@@ -44,7 +44,7 @@
         <tbody>
           <tr v-for="(count, name) in categories" :key="name">
             <td>{{name || uncategorized}}</td>
-            <td class="align-right">{{count}}</td>
+            <td class="align-right">{{count | number}}</td>
           </tr>
         </tbody>
       </table>
@@ -62,7 +62,7 @@
         <tbody>
           <tr v-for="(count, name) in frameworks" :key="name">
             <td>{{name}}</td>
-            <td class="align-right">{{count}}</td>
+            <td class="align-right">{{count | number}}</td>
           </tr>
         </tbody>
       </table>
@@ -80,7 +80,7 @@
         <tbody>
           <tr v-for="(count, name) in architectures" :key="name">
             <td>{{name}}</td>
-            <td class="align-right">{{count}}</td>
+            <td class="align-right">{{count | number}}</td>
           </tr>
         </tbody>
       </table>

@@ -263,12 +263,12 @@
           <p v-if="app.latestDownloads > 0">
             <span v-translate>Downloads of the latest version</span>
             :
-            {{app.latestDownloads}}
+            {{app.latestDownloads | number}}
           </p>
           <p>
             <span v-translate>Total downloads</span>
             :
-            {{app.totalDownloads}}
+            {{app.totalDownloads | number}}
           </p>
         </div>
 

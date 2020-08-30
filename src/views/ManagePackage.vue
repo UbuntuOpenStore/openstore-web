@@ -461,8 +461,8 @@
                     <tr
                       v-for="revision in visibleRevisions"
                       :class="{
-                                                'strong': revision.revision == latestRevision(revision.channel, revision.architecture)
-                                            }"
+                        'strong': revision.revision == latestRevision(revision.channel, revision.architecture)
+                      }"
                       :key="revision.revision"
                     >
                       <td>
@@ -472,11 +472,11 @@
                       <td>{{revision.channel.charAt(0).toUpperCase()}}{{revision.channel.slice(1)}}</td>
                       <td>{{revision.architecture}}</td>
                       <td>v{{revision.version}}</td>
-                      <td>{{revision.downloads}}</td>
+                      <td>{{revision.downloads | number}}</td>
                     </tr>
                     <tr>
                       <td colspan="4" v-translate>Total</td>
-                      <td>{{app.totalDownloads}}</td>
+                      <td>{{app.totalDownloads | number}}</td>
                     </tr>
                   </tbody>
                 </table>

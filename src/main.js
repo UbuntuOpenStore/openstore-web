@@ -9,6 +9,7 @@ import miniToastr from 'mini-toastr';
 import * as Sentry from '@sentry/browser';
 import * as Integrations from '@sentry/integrations';
 import { format } from 'date-fns';
+import { number } from 'vuetensils/src/filters';
 
 import App from './App';
 import router from './router';
@@ -95,6 +96,8 @@ Vue.filter('titleCase', (value) => {
     return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
   });
 });
+
+Vue.filter('number', number);
 
 /* eslint-disable no-new */
 new Vue({
