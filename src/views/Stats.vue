@@ -67,6 +67,24 @@
         </tbody>
       </table>
     </div>
+
+    <div v-if="!loading" class="p-strip">
+      <h2>Architectures</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Architecture</th>
+            <th class="align-right">Count</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="(count, name) in architectures" :key="name">
+            <td>{{name}}</td>
+            <td class="align-right">{{count}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </template>
 
@@ -91,6 +109,8 @@ export default {
     return {
       categories: [],
       types: {},
+      frameworks: {},
+      architectures: {},
       loading: false,
       error: false,
       uncategorized: this.$gettext('Uncategorized'),
@@ -112,6 +132,7 @@ export default {
         this.types = stats.types;
         delete this.types.push;
         this.frameworks = stats.frameworks;
+        this.architectures = stats.architectures;
       })
       .catch((err) => {
         this.loading = false;
