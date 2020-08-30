@@ -32,6 +32,9 @@ export default {
 
     stats: () => axios.get(`${process.env.VUE_APP_DOMAIN}/api/v3/stats`)
       .then(success),
+
+    getReviews: (id) => axios.get(`${process.env.VUE_APP_DOMAIN}/api/v4/apps/${id}/reviews`)
+      .then(success),
   },
 
   categories: (lang, all = false) => {

@@ -31,7 +31,7 @@ if (process.env.VUE_APP_SENTRY) {
   });
 }
 
-miniToastr.init();
+miniToastr.init(); // TODO make the error message not disappear
 
 Vue.config.productionTip = false;
 Vue.use(VueHead, {

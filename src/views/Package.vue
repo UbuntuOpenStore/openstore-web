@@ -156,57 +156,6 @@
             screenshots, click the above button.
           </p>
         </div>
-      </div>
-
-      <div class="col-6" v-if="app">
-        <div class="row" v-if="showNSFW && app.changelog">
-          <h4>
-            <span v-translate>Changelog</span>:
-          </h4>
-          <p class="pre">{{app.changelog}}</p>
-        </div>
-
-        <div class="row permissions">
-          <h4>
-            <span v-translate>Permissions</span>:
-          </h4>
-          <ul>
-            <li
-              v-for="permission in permissions"
-              :key="permission"
-              :class="{'text-red': isRestricted(permission)}"
-              :title="restrictedLabel(permission)"
-            >
-              <span v-if="permission.type == 'write'">
-                <span v-translate>Unrestricted write access to:</span>
-                {{permission.path}}
-              </span>
-              <span v-if="permission.type == 'read'">
-                <span v-translate>Unrestricted read access to:</span>
-                {{permission.path}}
-              </span>
-              <span v-if="!permission.type">{{permissionLabels[permission]}}</span>
-            </li>
-            <li v-if="permissions.length === 0" v-translate>None</li>
-          </ul>
-        </div>
-
-        <div class="row info">
-          <h4>
-            <span v-translate>Stats</span>:
-          </h4>
-
-          <p v-if="app.latestDownloads > 0">
-            <span v-translate>Downloads of the latest version</span>
-            :
-            {{app.latestDownloads}}
-          </p>
-          <p>
-            <span v-translate>Total downloads</span>
-            :
-            {{app.totalDownloads}}
-          </p>
-        </div>
 
         <div class="row info">
           <h4>
@@ -272,6 +221,59 @@
           </p>
         </div>
       </div>
+
+      <div class="col-6" v-if="app">
+        <div class="row" v-if="showNSFW && app.changelog">
+          <h4>
+            <span v-translate>Changelog</span>:
+          </h4>
+          <p class="pre changelog">{{app.changelog}}</p>
+        </div>
+
+        <div class="row permissions">
+          <h4>
+            <span v-translate>Permissions</span>:
+          </h4>
+          <ul>
+            <li
+              v-for="permission in permissions"
+              :key="permission"
+              :class="{'text-red': isRestricted(permission)}"
+              :title="restrictedLabel(permission)"
+            >
+              <span v-if="permission.type == 'write'">
+                <span v-translate>Unrestricted write access to:</span>
+                {{permission.path}}
+              </span>
+              <span v-if="permission.type == 'read'">
+                <span v-translate>Unrestricted read access to:</span>
+                {{permission.path}}
+              </span>
+              <span v-if="!permission.type">{{permissionLabels[permission]}}</span>
+            </li>
+            <li v-if="permissions.length === 0" v-translate>None</li>
+          </ul>
+        </div>
+
+        <div class="row info">
+          <h4>
+            <span v-translate>Stats</span>:
+          </h4>
+
+          <p v-if="app.latestDownloads > 0">
+            <span v-translate>Downloads of the latest version</span>
+            :
+            {{app.latestDownloads}}
+          </p>
+          <p>
+            <span v-translate>Total downloads</span>
+            :
+            {{app.totalDownloads}}
+          </p>
+        </div>
+
+        <reviews :app="app" :reviews="reviews" />
+      </div>
     </div>
   </div>
 </template>
@@ -284,6 +286,7 @@ import opengraph from '@/opengraph';
 import utils from '@/utils';
 import Types from '@/components/Types.vue';
 import RatingRow from '@/components/RatingRow.vue';
+import Reviews from '@/components/Reviews.vue';
 
 const restricted = [
   'bluetooth',
@@ -305,6 +308,7 @@ export default {
   components: {
     Types,
     RatingRow,
+    Reviews,
   },
   head: {
     title() {
@@ -326,6 +330,7 @@ export default {
   data() {
     return {
       app: null,
+      reviews: [],
       showNSFW: true,
       showDownloadMenu: false,
       permissions: [],
@@ -370,76 +375,80 @@ export default {
     this.refresh();
   },
   methods: {
-    refresh() {
+    async refresh() {
       this.loading = true;
 
-      api.apps
-        .get(this.$route.params.id)
-        .then((data) => {
-          this.loading = false;
+      try {
+        const [app, reviews] = await Promise.all([
+          api.apps.get(this.$route.params.id),
+          api.apps.getReviews(this.$route.params.id),
+        ]);
 
-          this.app = data;
-          if (this.app.nsfw) {
-            this.showNSFW = false;
-          }
+        this.app = app;
+        this.reviews = reviews;
+        this.loading = false;
 
-          let permissions = [];
-          if (this.app && this.app.manifest && this.app.manifest.hooks) {
-            Object.values(this.app.manifest.hooks).forEach((hook) => {
-              if (hook.apparmor) {
-                if (hook.apparmor.policy_groups) {
-                  permissions = permissions.concat(hook.apparmor.policy_groups);
-                }
+        if (this.app.nsfw) {
+          this.showNSFW = false;
+        }
 
-                if (hook.apparmor.template == 'unconfined') {
-                  permissions.push('unconfined');
-                }
-
-                if (hook.apparmor.write_path) {
-                  hook.apparmor.write_path.forEach((path) => {
-                    permissions.push({
-                      type: 'write',
-                      path: path
-                        .replace('/home/phablet', '~')
-                        .replace('@{HOME}', '~'),
-                    });
-                  });
-                }
-
-                if (hook.apparmor.read_path) {
-                  hook.apparmor.read_path.forEach((path) => {
-                    permissions.push({
-                      type: 'read',
-                      path: path
-                        .replace('/home/phablet', '~')
-                        .replace('@{HOME}', '~'),
-                    });
-                  });
-                }
+        let permissions = [];
+        if (this.app && this.app.manifest && this.app.manifest.hooks) {
+          Object.values(this.app.manifest.hooks).forEach((hook) => {
+            if (hook.apparmor) {
+              if (hook.apparmor.policy_groups) {
+                permissions = permissions.concat(hook.apparmor.policy_groups);
               }
-            });
-          }
 
-          // Only unique permissions
-          permissions = permissions.filter(
-            (item, pos) => permissions.indexOf(item) == pos,
-          );
+              if (hook.apparmor.template == 'unconfined') {
+                permissions.push('unconfined');
+              }
 
-          this.permissions = permissions.sort();
-          this.$emit('updateHead');
-        })
-        .catch((err) => {
-          this.loading = false;
+              if (hook.apparmor.write_path) {
+                hook.apparmor.write_path.forEach((path) => {
+                  permissions.push({
+                    type: 'write',
+                    path: path
+                      .replace('/home/phablet', '~')
+                      .replace('@{HOME}', '~'),
+                  });
+                });
+              }
 
-          if (err.response && err.response.status) {
-            this.missing = true;
-          }
-          else {
-            this.error = true;
-          }
+              if (hook.apparmor.read_path) {
+                hook.apparmor.read_path.forEach((path) => {
+                  permissions.push({
+                    type: 'read',
+                    path: path
+                      .replace('/home/phablet', '~')
+                      .replace('@{HOME}', '~'),
+                  });
+                });
+              }
+            }
+          });
+        }
 
-          utils.captureException(err);
-        });
+        // Only unique permissions
+        permissions = permissions.filter(
+          (item, pos) => permissions.indexOf(item) == pos,
+        );
+
+        this.permissions = permissions.sort();
+        this.$emit('updateHead');
+      }
+      catch (err) {
+        this.loading = false;
+
+        if (err.response && err.response.status) {
+          this.missing = true;
+        }
+        else {
+          this.error = true;
+        }
+
+        utils.captureException(err);
+      }
     },
     toggleShowNSFW() {
       this.showNSFW = !this.showNSFW;
@@ -546,6 +555,11 @@ h2 {
 
 .pre {
   white-space: pre-line;
+}
+
+.changelog {
+  max-height: 20em;
+  overflow-y: scroll;
 }
 
 .p-matrix__item {

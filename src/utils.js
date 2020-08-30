@@ -17,6 +17,8 @@ export default {
         scope.setTag('status', err.response.status);
       }
 
+      /* eslint-disable-next-line no-console */
+      console.error(err);
       Sentry.captureException(err);
     });
   },
