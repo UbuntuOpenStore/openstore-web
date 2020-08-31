@@ -43,6 +43,8 @@
           <label for="sort-by" class="p-form__label" v-translate>Sort By</label>
           <select id="sort-by" class="p-form__control" v-model="query.sort">
             <option value="relevance" v-translate>Relevance</option>
+            <option value="-calculated_rating" v-translate>Most Popular</option>
+            <option value="calculated_rating" v-translate>Least Popular</option>
             <option value="name" v-translate>Title (A-Z)</option>
             <option value="-name" v-translate>Title (Z-A)</option>
             <option value="-published_date" v-translate>Newest</option>
