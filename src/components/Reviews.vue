@@ -1,6 +1,6 @@
 <template>
   <div class="reviews row">
-    <h4 v-if="reviews && reviews.reviews">
+    <h4 v-if="reviews && reviews.reviews && reviews.reviews.length > 0">
       <span v-translate>Reviews</span>:
     </h4>
 
