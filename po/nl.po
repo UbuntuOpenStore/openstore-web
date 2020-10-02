@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2020-08-16 11:15+0000\n"
+"PO-Revision-Date: 2020-09-28 14:25+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@outlook.com>\n"
 "Language-Team: Dutch <https://translate.ubports.com/projects/openstore/"
 "open-storeio/nl/>\n"
@@ -218,7 +218,7 @@ msgstr "Architectuur"
 
 #: src/views/Package.vue:267
 msgid "Audio"
-msgstr "Geluid"
+msgstr "Audio"
 
 #: src/views/Manage.vue:47 src/views/ManagePackage.vue:254
 #: src/views/Package.vue:155
@@ -255,7 +255,7 @@ msgstr "Bugtracker"
 
 #: src/views/Package.vue:269
 msgid "Calendar"
-msgstr "Kalender"
+msgstr "Agenda"
 
 #: src/views/Package.vue:270
 msgid "Camera"
@@ -306,7 +306,7 @@ msgstr "Kies een onderhouder"
 
 #: src/views/Package.vue:271
 msgid "Connectivity"
-msgstr "Connectiviteit"
+msgstr "Internetverbinding"
 
 #: src/views/About.vue:59
 msgid "Contact"
@@ -318,11 +318,11 @@ msgstr "Contactpersonen"
 
 #: src/views/Package.vue:274
 msgid "Content Exchange"
-msgstr "Inhoud uitwisselen"
+msgstr "Inhoudsuitwisseling"
 
 #: src/views/Package.vue:273
 msgid "Content Exchange Source"
-msgstr "Inhoud uitwisselen (bron)"
+msgstr "Inhoudsuitwisseling"
 
 #: src/views/About.vue:138
 msgid "Contributors"
@@ -427,7 +427,7 @@ msgstr "Framework"
 
 #: src/views/Package.vue:293
 msgid "Full System Access"
-msgstr "Volledige systeemtoegang"
+msgstr "Ongelimiteerde systeemtoegang"
 
 #: src/views/Submit.vue:100
 msgid "Gambling"
@@ -521,7 +521,7 @@ msgstr "Ga naar de laatste pagina"
 
 #: src/views/Package.vue:278
 msgid "Keep Display On"
-msgstr "Scherm niet uitschakelen"
+msgstr "Scherm ingeschakeld houden"
 
 #: src/views/Manage.vue:18
 msgid "Keep your api key private!"
@@ -615,7 +615,7 @@ msgstr "Ga naar de downloadsmap"
 
 #: src/views/Package.vue:283
 msgid "Networking"
-msgstr "Netwerk"
+msgstr "Netwerk en internet"
 
 #: src/views/Feeds.vue:9
 msgid "New Apps"
@@ -762,7 +762,7 @@ msgstr "Machtigingen"
 
 #: src/views/Package.vue:285
 msgid "Picture Files"
-msgstr "Afbeeldingsbestanden"
+msgstr "Afbeeldingen"
 
 #: src/views/ManagePackage.vue:43
 msgid "Presentation"
@@ -814,7 +814,7 @@ msgstr "Muziekbestanden uitlezen"
 
 #: src/views/Package.vue:284
 msgid "Read Picture Files"
-msgstr "Afbeeldingsbestanden uitlezen"
+msgstr "Afbeeldingen uitlezen"
 
 #: src/views/Package.vue:289
 msgid "Read Video Files"
@@ -886,7 +886,7 @@ msgstr ""
 
 #: src/views/Package.vue:287
 msgid "Sensors"
-msgstr "Sensoren"
+msgstr "Sensors"
 
 #: src/views/Submit.vue:74
 msgid "Sexually Explicit Content"

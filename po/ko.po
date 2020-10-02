@@ -8,66 +8,71 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2020-10-01 20:23+0000\n"
+"Last-Translator: Soohan Park <soobak0313@gmail.com>\n"
+"Language-Team: Korean <https://translate.ubports.com/projects/openstore/"
+"open-storeio/ko/>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #: src/views/Package.vue:118
 msgid ""
 "*This app contains NSFW content, to view the description and\n"
 "screenshots, click the above button."
 msgstr ""
+"*이 앱은 부적절한 내용을 포함합니다. 설명과 화면 갈무리를\n"
+"보려면 위쪽 단추를 눌러 주세요."
 
 #: src/views/ManagePackage.vue:577
 msgid "%{name} was successfully deleted"
-msgstr ""
+msgstr "%{name}이(가) 성공적으로 삭제되었습니다"
 
 #: src/views/ManagePackage.vue:157
 msgid "A comma separated list of keywords"
-msgstr ""
+msgstr "쉼표로 구분된 키워드 목록"
 
 #: src/App.vue:34 src/views/About.vue:3 src/views/About.vue:183
 #: src/views/About.vue:187
 msgid "About"
-msgstr ""
+msgstr "소개"
 
 #: src/App.vue:78
 msgid "About Us"
-msgstr ""
+msgstr "우리에 대하여"
 
 #: src/views/Package.vue:266
 msgid "Accounts"
-msgstr ""
+msgstr "계정"
 
 #: src/views/Browse.vue:16
 msgid "All Categories"
-msgstr ""
+msgstr "모든 범주"
 
 #: src/views/Browse.vue:31
 msgid "All Types"
-msgstr ""
+msgstr "모든 종류"
 
 #: src/views/Login.vue:26
 msgid "An account is not needed to download or install apps."
-msgstr ""
+msgstr "앱을 내려받거나 설치하는 데에는 계정이 필요하지 않습니다."
 
 #: src/views/ManagePackage.vue:444 src/views/ManagePackage.vue:462
 #: src/views/ManageRevisions.vue:136
 msgid "An error occured loading your app data"
-msgstr ""
+msgstr "앱 데이터를 불러오는 동안 오류가 발생했습니다"
 
 #: src/views/ManageRevisions.vue:183 src/views/Submit.vue:212
 msgid "An unknown error has occured"
-msgstr ""
+msgstr "알 수 없는 오류가 발생했습니다"
 
 #: src/views/About.vue:160
 msgid ""
 "And many amazing developers, testers, and users from the OpenStore community!"
-msgstr ""
+msgstr "그리고 OpenStore 커뮤니티의 수많은 멋진 개발자, 테스터, 그리고 사용자들이 있습니다!"
 
 #: src/views/About.vue:122
 msgid ""
@@ -78,42 +83,47 @@ msgid ""
 "contact you in the event there is an issue with your app.\n"
 "Additionally, this site uses cookies to keep you logged in to your account."
 msgstr ""
+"여러분이 제공해 주시는 모든 개인정보(예: 앱을 올리기 위해 계정을 만들 때 쓰이는 전자 우편 주소)는\n"
+"다른 곳으로 유출되지 않으며,\n"
+"여러분이 앱을 유지하는 것, 그리고 가끔은 앱에 문제가 있을 때 연락을 드리는 것 이외에\n"
+"다른 용도로 사용되지 않습니다.\n"
+"이에 더해, 이 누리집은 여러분이 계정에 로그인된 상태를 유지할 수 있도록 쿠키를 사용합니다."
 
 #: src/views/Manage.vue:14
 msgid "API Key"
-msgstr ""
+msgstr "API 키"
 
 #: src/components/Types.vue:3 src/views/Manage.vue:46 src/views/Stats.vue:108
 msgid "App"
-msgstr ""
+msgstr "앱"
 
 #: src/views/Submit.vue:95
 msgid "App containing or promoting any of the above are strictly prohibited."
-msgstr ""
+msgstr "위의 사항들을 포함하거나 장려하는 앱은 철저히 금지되어 있습니다."
 
 #: src/views/Submit.vue:133
 msgid "App Name"
-msgstr ""
+msgstr "앱 이름"
 
 #: src/App.vue:88
 msgid "App Stats"
-msgstr ""
+msgstr "앱 통계"
 
 #: src/views/Submit.vue:150
 msgid "App Title"
-msgstr ""
+msgstr "앱 제목"
 
 #: src/views/Stats.vue:19
 msgid "App Type"
-msgstr ""
+msgstr "앱 종류"
 
 #: src/views/Stats.vue:15
 msgid "App Types"
-msgstr ""
+msgstr "앱 종류들"
 
 #: src/views/Browse.vue:32
 msgid "Apps"
-msgstr ""
+msgstr "앱들"
 
 #: src/views/Submit.vue:101
 msgid ""
@@ -121,12 +131,14 @@ msgid ""
 "allowed.\n"
 "This includes, but is not limited to, online casinos, betting, and lotteries."
 msgstr ""
+"현실의 돈을 거래하는 것이 포함된 도박 요소를 포함하는 앱은 허용되지 않습니다.\n"
+"이는 온라인 카지노, 베팅, 복권 등을 포함합니다."
 
 #: src/views/Submit.vue:82
 msgid ""
 "Apps containing or promoting child abuse or child sexual abuse are strictly "
 "prohibited."
-msgstr ""
+msgstr "아동 학대나 아동의 성적 학대를 포함하거나 장려하는 앱은 철저히 금지되어 있습니다."
 
 #: src/views/Submit.vue:88
 msgid ""
@@ -134,6 +146,8 @@ msgid ""
 "This includes, but is not limited to, violence, terrorism, bomb/weapon "
 "making, self harm, and grotesque imagery."
 msgstr ""
+"불필요한 폭력을 포함하거나 장려하는 앱은 금지되어 있습니다.\n"
+"이는 폭력, 테러, 폭탄/무기 제조, 자해, 엽기적인 이미지 등을 포함합니다."
 
 #: src/views/Submit.vue:75
 msgid ""
@@ -141,22 +155,24 @@ msgid ""
 "This includes, but is not limited to, pornography and services promoting "
 "sexually explicit content."
 msgstr ""
+"성적으로 노골적인 내용을 포함하거나 장려하는 앱은 허용되지 않습니다.\n"
+"이는 포르노그래피와 성적으로 노골적인 내용을 판촉하는 서비스 등을 포함합니다."
 
 #: src/views/Submit.vue:7
 msgid ""
 "Apps not requiring manual review can be submitted by logging in with the "
 "\"Log In\" link above."
-msgstr ""
+msgstr "수동 검토를 요구하지 않는 앱은 위의 \"로그인\" 링크를 눌러 로그인하여 제출할 수 있습니다."
 
 #: src/views/Submit.vue:108
 msgid "Apps promoting illegal activities (based on USA law) are not allowed."
-msgstr ""
+msgstr "(미국 법률에 의거한) 불법 행위를 장려하는 앱은 허용되지 않습니다."
 
 #: src/views/Submit.vue:18
 msgid ""
 "Apps requiring manual review must be submitted by contacting an admin in our "
 "telegram group."
-msgstr ""
+msgstr "수동 검토를 요구하는 앱은 우리의 텔레그램 그룹에서 관리자에게 연락하여 제출해야만 합니다."
 
 #: src/views/Submit.vue:114
 msgid ""
@@ -164,6 +180,8 @@ msgid ""
 "privileges without user consent,\n"
 "or executing malicious process are strictly prohibited."
 msgstr ""
+"사용자 데이터를 훔치거나, 사용자의 동의 없이 권한을 상승시키려고 하거나, 악성 코드를 실행시키는\n"
+"것이 발견된 앱은 철저히 금지되어 있습니다."
 
 #: src/views/About.vue:129
 msgid ""
@@ -171,134 +189,136 @@ msgid ""
 "content policy.\n"
 "You can review the rules and policies before uploading your app."
 msgstr ""
+"OpenStore에 올려진 앱은 우리의 제출 규정과 내용 정책의 적용을 받습니다.\n"
+"앱을 올리기 전에 규정과 정책을 돌아볼 수 있습니다."
 
 #: src/views/ManagePackage.vue:258 src/views/Package.vue:193
 msgid "Architecture"
-msgstr ""
+msgstr "건축"
 
 #: src/views/Package.vue:267
 msgid "Audio"
-msgstr ""
+msgstr "음향"
 
 #: src/views/Manage.vue:47 src/views/ManagePackage.vue:254
 #: src/views/Package.vue:155
 msgid "Author"
-msgstr ""
+msgstr "저자"
 
 #: src/views/Package.vue:7
 msgid "Back"
-msgstr ""
+msgstr "뒤로"
 
 #: src/views/Badge.vue:28 src/views/Badge.vue:32 src/views/ManagePackage.vue:70
 msgid "Badge"
-msgstr ""
+msgstr "배지"
 
 #: src/views/About.vue:18
 msgid "Badges"
-msgstr ""
+msgstr "배지"
 
 #: src/views/Package.vue:268
 msgid "Bluetooth"
-msgstr ""
+msgstr "블루투스"
 
 #: src/App.vue:31
 msgid "Browse"
-msgstr ""
+msgstr "둘러보기"
 
 #: src/views/Browse.vue:162
 msgid "Browse Apps"
-msgstr ""
+msgstr "앱 둘러보기"
 
 #: src/views/About.vue:74
 msgid "Bug Tracker"
-msgstr ""
+msgstr "버그 추적기"
 
 #: src/views/Package.vue:269
 msgid "Calendar"
-msgstr ""
+msgstr "달력"
 
 #: src/views/Package.vue:270
 msgid "Camera"
-msgstr ""
+msgstr "카메라"
 
 #: src/views/ManagePackage.vue:358 src/views/ManageRevisions.vue:66
 #: src/views/Submit.vue:167
 msgid "Cancel"
-msgstr ""
+msgstr "취소"
 
 #: src/views/Browse.vue:14 src/views/ManagePackage.vue:140
 #: src/views/Package.vue:177
 msgid "Category"
-msgstr ""
+msgstr "범주"
 
 #: src/views/ManagePackage.vue:101 src/views/ManageRevisions.vue:50
 #: src/views/Package.vue:128
 msgid "Changelog"
-msgstr ""
+msgstr "변경 기록"
 
 #: src/views/ManagePackage.vue:295 src/views/ManageRevisions.vue:13
 msgid "Channel"
-msgstr ""
+msgstr "채널"
 
 #: src/views/ManagePackage.vue:274
 msgid "Channels"
-msgstr ""
+msgstr "채널들"
 
 #: src/App.vue:83
 msgid "Chat with us on Telegram"
-msgstr ""
+msgstr "텔레그램에서 우리와 대화해 보세요"
 
 #: src/views/Submit.vue:81
 msgid "Child Endangerment"
-msgstr ""
+msgstr "아동 위협"
 
 #: src/views/ManagePackage.vue:142
 msgid "Choose a category"
-msgstr ""
+msgstr "범주를 선택하세요"
 
 #: src/views/ManagePackage.vue:173
 msgid "Choose a license"
-msgstr ""
+msgstr "라이선스를 선택하세요"
 
 #: src/views/ManagePackage.vue:231
 msgid "Choose a maintainer"
-msgstr ""
+msgstr "유지자를 선택하세요"
 
 #: src/views/Package.vue:271
 msgid "Connectivity"
-msgstr ""
+msgstr "연결"
 
 #: src/views/About.vue:59
 msgid "Contact"
-msgstr ""
+msgstr "연락"
 
 #: src/views/Package.vue:272
 msgid "Contacts"
-msgstr ""
+msgstr "연락처"
 
 #: src/views/Package.vue:274
 msgid "Content Exchange"
-msgstr ""
+msgstr "자료 교환"
 
 #: src/views/Package.vue:273
 msgid "Content Exchange Source"
-msgstr ""
+msgstr "자료 교환 출처"
 
 #: src/views/About.vue:138
 msgid "Contributors"
-msgstr ""
+msgstr "기여자"
 
 #: src/components/CopyLine.vue:9
 msgid "Copy to clipboard"
-msgstr ""
+msgstr "클립보드에 복사하기"
 
 #: src/views/Stats.vue:20
 msgid "Count"
-msgstr ""
+msgstr "숫자"
 
 #: src/views/ManageRevisions.vue:57
 msgid "Create"
-msgstr ""
+msgstr "만들기"
 
 #: src/views/Package.vue:275
 msgid "Debug"
