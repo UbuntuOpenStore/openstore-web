@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2020-09-28 14:25+0000\n"
+"PO-Revision-Date: 2020-10-19 13:17+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@outlook.com>\n"
 "Language-Team: Dutch <https://translate.ubports.com/projects/openstore/"
 "open-storeio/nl/>\n"
@@ -85,13 +85,15 @@ msgid ""
 "contact you in the event there is an issue with your app.\n"
 "Additionally, this site uses cookies to keep you logged in to your account."
 msgstr ""
-"Alle persoonlijke gegevens die je ons wilt geven (bijvoorbeeld je e-"
-"mailadres als je een account registreert om je apps te uploaden),\n"
+"Alle persoonlijke gegevens die je met ons deelt (zoals je e-mailadres bij "
+"het registreren van een account),\n"
 "gaan niet verder dan ons, en worden niet gebruikt voor iets anders dan om je "
 "apps te onderhouden en,\n"
+"\n"
 "in zeldzame gevallen, contact met je op te nemen, als er een probleem is met "
 "je app.\n"
-"Bovendien gebruikt deze site cookies om je ingelogd te houden op je account."
+"Daarnaast gebruikt deze site cookies om zodat je ingelogd blijft op je "
+"account."
 
 #: src/views/Manage.vue:14
 msgid "API Key"
@@ -286,7 +288,7 @@ msgstr "Kanalen"
 
 #: src/App.vue:83
 msgid "Chat with us on Telegram"
-msgstr "Praat met ons op Telegram"
+msgstr "Chat met ons op Telegram"
 
 #: src/views/Submit.vue:81
 msgid "Child Endangerment"
@@ -322,7 +324,7 @@ msgstr "Inhoudsuitwisseling"
 
 #: src/views/Package.vue:273
 msgid "Content Exchange Source"
-msgstr "Inhoudsuitwisseling"
+msgstr "Inhoudsuitwisselingsbron"
 
 #: src/views/About.vue:138
 msgid "Contributors"
@@ -366,7 +368,7 @@ msgstr "Doneerlink"
 
 #: src/views/Package.vue:262
 msgid "Download"
-msgstr "Download"
+msgstr "Downloaden"
 
 #: src/views/ManagePackage.vue:288
 msgid "Download Stats"
@@ -383,7 +385,7 @@ msgstr "Downloads"
 
 #: src/views/ManagePackage.vue:119
 msgid "Drag and drop to sort screenshots."
-msgstr "Orden schermfoto's door ze te verslepen."
+msgstr "Rangschik schermfoto's door ze te verslepen."
 
 #: src/views/ManagePackage.vue:8
 msgid "Edit"
@@ -414,7 +416,7 @@ msgid ""
 "You can also submit issues, bugs, and feature requests to our GitLab bug "
 "tracker."
 msgstr ""
-"Als je vragen hebt, kun je gewoon met ons praten in onze telegramgroep.\n"
+"Als je vragen hebt, kun je gewoon met ons chatten in onze telegramgroep.\n"
 "Problemen, bugs en ideeën kun je indienen op onze GitLab-bugtracker."
 
 #: src/App.vue:93
@@ -462,7 +464,7 @@ msgstr "Ga naar de volgende pagina"
 
 #: src/views/About.vue:86
 msgid "GPL v3 License"
-msgstr "GPL v3-licentie"
+msgstr "GPLv3-licentie"
 
 #: src/views/Submit.vue:94
 msgid "Harassment, Bullying, or Hate Speech"
@@ -554,7 +556,7 @@ msgstr "Inloggen"
 
 #: src/views/Login.vue:24
 msgid "Log in to the OpenStore to be able to manage your apps."
-msgstr "Log in in OpenStore om je apps te beheren."
+msgstr "Log in om je apps te beheren."
 
 #: src/App.vue:43
 msgid "Log Out"
@@ -785,7 +787,7 @@ msgid ""
 msgstr ""
 "Promoot je OpenStore-app! Voeg deze emblemen toe aan je website,\n"
 "broncode, socialemediapagina of waar dan ook op internet. De emblemen\n"
-"zijn beschikbaar in verschillende talen, en in zowel png- als svg-\n"
+"zijn beschikbaar in verschillende talen, in zowel png- als svg-\n"
 "formaat."
 
 #: src/views/ManagePackage.vue:14
@@ -967,7 +969,7 @@ msgid ""
 msgstr ""
 "De apps die je kunt downloaden in OpenStore hebben hun eigen licenties en "
 "voorwaarden.\n"
-"Raadpleeg de pagina van elke afzonderlijke app voor meer informatie."
+"Raadpleeg voor meer informatie de pagina van elke afzonderlijke app."
 
 #: src/views/ManagePackage.vue:552
 msgid "The changes to %{name} were saved!"
@@ -1063,7 +1065,7 @@ msgid ""
 "You can find the code on the OpenStore GitLab page."
 msgstr ""
 "De broncode voor OpenStore-gerelateerde projecten is beschikbaar onder de "
-"GPL v3-licentie.\n"
+"GPLv3-licentie.\n"
 "De code is te vinden op de OpenStore GitLab-pagina."
 
 #: src/views/Package.vue:17
@@ -1096,15 +1098,15 @@ msgid ""
 "This app does not have access to restricted system data, see permissions for "
 "more details"
 msgstr ""
-"Deze app heeft geen toegang tot beperkte systeemgegevens - bekijk voor meer "
-"informatie de machtigingen"
+"Deze app heeft geen toegang tot beveiligde systeemgegevens - bekijk voor "
+"meer informatie de machtigingen"
 
 #: src/views/Package.vue:370
 msgid ""
 "This app has access to restricted system data, see permissions for more "
 "details"
 msgstr ""
-"Deze app heeft toegang tot beperkte systeemgegevens - bekijk voor meer "
+"Deze app heeft toegang tot beveiligde systeemgegevens - bekijk voor meer "
 "informatie de machtigingen"
 
 #: src/views/Submit.vue:141
@@ -1118,7 +1120,7 @@ msgid ""
 msgstr ""
 "Dit is de unieke id van je app.\n"
 "Deze moet exact overeenkomen met het veld \"name\" in manifest.json in je "
-"click-bestand en moet uit kleine letters bestaan.\n"
+"click-bestand en dient uit kleine letters te bestaan.\n"
 "Voorbeeld: \"openstore.openstore-team\", waarbij \"openstore\" de app is en "
 "\"openstore-team\" de groep of persoon die de app heeft ontwikkeld."
 
@@ -1188,7 +1190,7 @@ msgstr "URL"
 
 #: src/views/ManageRevisions.vue:44
 msgid "URL of App from the Web"
-msgstr "Web-url van de App"
+msgstr "Web-url van de app"
 
 #: src/views/Package.vue:288
 msgid "User Metrics"
@@ -1251,7 +1253,7 @@ msgid ""
 "You are only allowed to publish apps that you have permission to distribute."
 msgstr ""
 "Je mag alleen apps publiceren waarvan je toestemming hebt om ze te "
-"distribueren."
+"verspreiden."
 
 #: src/views/Submit.vue:22
 msgid "You must read over the content policy detailed below."
@@ -1262,7 +1264,7 @@ msgid ""
 "Your app can be pulled without warning at the discretion of our admins.\n"
 "Where possible, we will contact you regarding any such actions."
 msgstr ""
-"Je app kan zonder waarschuwing worden ingetrokken naar goeddunken van onze "
+"Je app kan zonder waarschuwing worden verwijderd naar goeddunken van onze "
 "beheerders.\n"
 "Waar mogelijk zullen we contact met je opnemen over dergelijke acties."
 
