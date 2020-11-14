@@ -8,17 +8,17 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2019-01-02 13:42+0000\n"
-"Last-Translator: Charles Stevens <yugioh2017@yandex.com>\n"
-"Language-Team: Arabic <https://translate.ubports.com/projects/openstore/open-"
-"storeio/ar/>\n"
+"PO-Revision-Date: 2020-11-14 16:51+0000\n"
+"Last-Translator: abidin <abidin24@tutanota.com>\n"
+"Language-Team: Arabic <https://translate.ubports.com/projects/openstore/"
+"open-storeio/ar/>\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 3.1.1\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #: src/views/Package.vue:118
 msgid ""
@@ -30,7 +30,7 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:577
 msgid "%{name} was successfully deleted"
-msgstr "تم حذف %{name} بنجاح"
+msgstr "حُذف %{name} بنجاح"
 
 #: src/views/ManagePackage.vue:157
 msgid "A comma separated list of keywords"
@@ -39,11 +39,11 @@ msgstr "قائمة كلمات المفتاحية  مفصولة بفواصل"
 #: src/App.vue:34 src/views/About.vue:3 src/views/About.vue:183
 #: src/views/About.vue:187
 msgid "About"
-msgstr "عن"
+msgstr "حول"
 
 #: src/App.vue:78
 msgid "About Us"
-msgstr "عن الموقع"
+msgstr "حولنا"
 
 #: src/views/Package.vue:266
 msgid "Accounts"
@@ -59,12 +59,12 @@ msgstr "كل الانواع"
 
 #: src/views/Login.vue:26
 msgid "An account is not needed to download or install apps."
-msgstr "يتوجب عليك التسجيل لتتمكن من تحميل او تنصيب التطبيقات."
+msgstr "لا تحتاج لحساب لتتمكن من تحميل او تثبيت التطبيقات."
 
 #: src/views/ManagePackage.vue:444 src/views/ManagePackage.vue:462
 #: src/views/ManageRevisions.vue:136
 msgid "An error occured loading your app data"
-msgstr "حدث خطأ اثناء تحميل معلومات التطبيق"
+msgstr "حدث خطأ اثناء تحميل بيانات التطبيق"
 
 #: src/views/ManageRevisions.vue:183 src/views/Submit.vue:212
 msgid "An unknown error has occured"
@@ -73,7 +73,7 @@ msgstr "حدث خطأ غير معروف"
 #: src/views/About.vue:160
 msgid ""
 "And many amazing developers, testers, and users from the OpenStore community!"
-msgstr "والعديد من المطورون الرائعون, المجربون, ومستخدمون من مجتمع OpenStore!"
+msgstr "وعديد من المطورين الرائعين, والمختبرين, والمستخدمين من مجتمع OpenStore!"
 
 #: src/views/About.vue:122
 msgid ""
@@ -85,11 +85,13 @@ msgid ""
 "Additionally, this site uses cookies to keep you logged in to your account."
 msgstr ""
 "أي بيانات شخصية تقرر منحنا اياها (على سبيل المثال ، عنوان بريدك الإلكتروني "
-"عند التسجيل للحصول على حساب لتحميل تطبيقاتك) لا تذهب لطرف آخر،\n"
-"ولن يتم استخدامه لأي شيء بخلاف السماح لك بالحفاظ على تطبيقاتك ، وفي حالات "
-"نادرة ، الاتصال بك في حالة وجود مشكلة في تطبيقك.\n"
-"بالإضافة إلى ذلك ، هذا الموقع يستخدم ملفات تعريف الارتباط(الكوكيز)للحفاظ على "
-"تسجيل الدخول إلى حسابك فقط."
+"عند التسجيل للحصول على حساب لرفع تطبيقاتك)\n"
+" لا تذهب لطرف آخر،\n"
+"ولن يتم استخدامه لأي شيء بخلاف السماح لك بصيانة تطبيقاتك ، وفي حالات نادرة ،"
+"\n"
+" الاتصال بك في حالة وجود مشكلة في تطبيقك.\n"
+"بالإضافة إلى ذلك ، هذا الموقع يستخدم ملفات تعريف الارتباط(الكعكات)للحفاظ على "
+"ولوجك فقط."
 
 #: src/views/Manage.vue:14
 msgid "API Key"
@@ -112,9 +114,8 @@ msgid "App Stats"
 msgstr "إحصائيات التطبيق"
 
 #: src/views/Submit.vue:150
-#, fuzzy
 msgid "App Title"
-msgstr "العنوان"
+msgstr "عنوان التطبيق"
 
 #: src/views/Stats.vue:19
 msgid "App Type"
@@ -171,8 +172,8 @@ msgid ""
 "Apps not requiring manual review can be submitted by logging in with the "
 "\"Log In\" link above."
 msgstr ""
-"يمكن رفع التطبيقات التي لا تتطلب مراجعة يدوية عن طريق تسجيل الدخول باستخدام "
-"رابط \"تسجيل الدخول\" أعلاه."
+"يمكن رفع التطبيقات التي لا تتطلب مراجعة يدوية عن طريق الولوج باستخدام رابط \""
+"لِج\" أعلاه."
 
 #: src/views/Submit.vue:108
 msgid "Apps promoting illegal activities (based on USA law) are not allowed."
@@ -185,8 +186,8 @@ msgid ""
 "Apps requiring manual review must be submitted by contacting an admin in our "
 "telegram group."
 msgstr ""
-"يجب تقديم التطبيقات التي تتطلب مراجعة يدوية من خلال الاتصال بمشرف في مجموعة "
-"التلغرام الخاصة بنا."
+"يجب تقديم التطبيقات التي تتطلب مراجعة يدوية من خلال الاتصال بمدير في مجموعة "
+"التلغرام خاصتنا."
 
 #: src/views/Submit.vue:114
 msgid ""
@@ -206,7 +207,7 @@ msgid ""
 msgstr ""
 "تخضع التطبيقات التي يتم تحميلها إلى OpenStore لقواعد التقديم وسياسة المحتوى "
 "الخاصة بنا.\n"
-"يمكنك مراجعة القواعد والسياسات قبل تحميل تطبيقك."
+"يمكنك مراجعة القواعد والسياسات قبل رفع تطبيقك."
 
 #: src/views/ManagePackage.vue:258 src/views/Package.vue:193
 msgid "Architecture"
@@ -223,15 +224,15 @@ msgstr "المقدّم"
 
 #: src/views/Package.vue:7
 msgid "Back"
-msgstr "العودة"
+msgstr "للخلف"
 
 #: src/views/Badge.vue:28 src/views/Badge.vue:32 src/views/ManagePackage.vue:70
 msgid "Badge"
-msgstr ""
+msgstr "الشارة"
 
 #: src/views/About.vue:18
 msgid "Badges"
-msgstr ""
+msgstr "الشارات"
 
 #: src/views/Package.vue:268
 msgid "Bluetooth"
@@ -247,7 +248,7 @@ msgstr "تصفح التطبيقات"
 
 #: src/views/About.vue:74
 msgid "Bug Tracker"
-msgstr "مكتشف المشاكل البرمجية"
+msgstr "مُقتفي العلل"
 
 #: src/views/Package.vue:269
 msgid "Calendar"
@@ -260,7 +261,7 @@ msgstr "كاميرا"
 #: src/views/ManagePackage.vue:358 src/views/ManageRevisions.vue:66
 #: src/views/Submit.vue:167
 msgid "Cancel"
-msgstr "إلغاء"
+msgstr "ألغ"
 
 #: src/views/Browse.vue:14 src/views/ManagePackage.vue:140
 #: src/views/Package.vue:177
@@ -298,19 +299,20 @@ msgstr "اختر ترخيص"
 
 #: src/views/ManagePackage.vue:231
 msgid "Choose a maintainer"
-msgstr "اختيار مشرف"
+msgstr "اختر مصين"
 
 #: src/views/Package.vue:271
 msgid "Connectivity"
 msgstr "التوصيل"
 
 #: src/views/About.vue:59
+#, fuzzy
 msgid "Contact"
 msgstr "اتصل"
 
 #: src/views/Package.vue:272
 msgid "Contacts"
-msgstr "جهات الاتصال"
+msgstr "المتراسلون"
 
 #: src/views/Package.vue:274
 msgid "Content Exchange"
@@ -326,7 +328,7 @@ msgstr "المساهمون"
 
 #: src/components/CopyLine.vue:9
 msgid "Copy to clipboard"
-msgstr "نسخ"
+msgstr "انسخ الى الحافظة"
 
 #: src/views/Stats.vue:20
 msgid "Count"
@@ -334,23 +336,23 @@ msgstr "العدد"
 
 #: src/views/ManageRevisions.vue:57
 msgid "Create"
-msgstr "إنشاء"
+msgstr "أنشئ"
 
 #: src/views/Package.vue:275
 msgid "Debug"
-msgstr "معالجة"
+msgstr "نقِّح"
 
 #: src/views/ManagePackage.vue:353
 msgid "Delete"
-msgstr "حذف"
+msgstr "احذف"
 
 #: src/views/ManagePackage.vue:90
 msgid "Description"
-msgstr "التفاصيل"
+msgstr "الوصف"
 
 #: src/views/ManagePackage.vue:55
 msgid "Discovery"
-msgstr "اكتشاف"
+msgstr "اكتشف"
 
 #: src/views/Package.vue:91
 msgid "Donate"
@@ -361,9 +363,8 @@ msgid "Donate URL"
 msgstr "رابط التبرع"
 
 #: src/views/Package.vue:262
-#, fuzzy
 msgid "Download"
-msgstr "التنزيلات"
+msgstr "نزّل"
 
 #: src/views/ManagePackage.vue:288
 msgid "Download Stats"
@@ -371,7 +372,7 @@ msgstr "إحصائيات التحميل"
 
 #: src/views/About.vue:43
 msgid "Download the OpenStore App"
-msgstr "حمّل تطبيق OpenStore"
+msgstr "نزّل تطبيق OpenStore"
 
 #: src/views/Manage.vue:50 src/views/Manage.vue:70
 #: src/views/ManagePackage.vue:297
@@ -380,11 +381,11 @@ msgstr "التنزيلات"
 
 #: src/views/ManagePackage.vue:119
 msgid "Drag and drop to sort screenshots."
-msgstr "قم بالسحب والإفلات لترتيب لقطات الشاشة."
+msgstr "اسحب وأفلت لترتيب لقطات الشاشة."
 
 #: src/views/ManagePackage.vue:8
 msgid "Edit"
-msgstr "تعديل"
+msgstr "حرر"
 
 #: src/views/ManagePackage.vue:443 src/views/ManagePackage.vue:461
 #: src/views/ManagePackage.vue:562 src/views/ManagePackage.vue:590
@@ -394,7 +395,7 @@ msgstr "خطأ"
 
 #: src/views/Feeds.vue:34 src/views/Feeds.vue:38
 msgid "Feeds"
-msgstr "التغذيات"
+msgstr "التلقيمات"
 
 #: src/views/ManagePackage.vue:266
 msgid "File Size"
@@ -411,22 +412,21 @@ msgid ""
 "You can also submit issues, bugs, and feature requests to our GitLab bug "
 "tracker."
 msgstr ""
-"لأي أسئلة قد تكون لديك أو مساعدة تحتاجها فأنك فقط تحتاج لمخاطبتنا على مجموعة "
-"تلغرام الخاصة بنا.\n"
-"يمكنك أيضا التبليغ عن المشاكل ، والأخطاء البرمجية ، وطلبات ميزات جديدة إلى "
-"منصة تعقب الأخطاء الخاص بنا على GitLab."
+"لأي أسئلة أو إن احتجت مساعدة فخاطبنا في مجموعة تلغرام خاصتنا.\n"
+"يمكنك أيضا التبليغ عن المشاكل ، والعلل ، وطلب ميزات جديدة عبر منصة تقفي "
+"العلل على GitLab."
 
 #: src/App.vue:93
 msgid "Fork us on GitLab"
-msgstr "شاركنا على GitLab"
+msgstr "شعّب مستودعاتنا على GitLab"
 
 #: src/views/ManagePackage.vue:262 src/views/Package.vue:189
 msgid "Framework"
-msgstr "منصة البناء"
+msgstr "هيكل"
 
 #: src/views/Package.vue:293
 msgid "Full System Access"
-msgstr "وصول كامل للنظام"
+msgstr "نفاذ كامل للنظام"
 
 #: src/views/Submit.vue:100
 msgid "Gambling"
@@ -434,7 +434,7 @@ msgstr "المقامرة"
 
 #: src/views/About.vue:25
 msgid "Get your badge"
-msgstr ""
+msgstr "احصل على شارة"
 
 #: src/views/Submit.vue:39
 msgid ""
@@ -451,11 +451,11 @@ msgstr ""
 
 #: src/views/Browse.vue:187 src/views/Manage.vue:174
 msgid "Go back a page"
-msgstr "العودة صفحة الى الوراء"
+msgstr "ارجع صفحة للخلف"
 
 #: src/views/Browse.vue:188 src/views/Manage.vue:175
 msgid "Go to the next page"
-msgstr "الذهاب للصفحة التالية"
+msgstr "للصفحة التالية"
 
 #: src/views/About.vue:86
 msgid "GPL v3 License"
@@ -467,7 +467,7 @@ msgstr "التحرش أو التسلط أو الكلام الذي يحض على 
 
 #: src/views/Package.vue:276
 msgid "History"
-msgstr "السجل"
+msgstr "التاريخ"
 
 #: src/views/Manage.vue:44
 msgid "Icon"
@@ -484,7 +484,8 @@ msgid ""
 "Not everyone will want to install apps with less confinement."
 msgstr ""
 "إذا كان من الممكن نشر تطبيق ما دون مراجعة يدوية إذا لم يكن لهذا الميزة "
-"الرائعة ، فقم بنشر نسخة مخففة!\n"
+"الرائعة،\n"
+" فانشر نسخة مخففة!\n"
 "لن يرغب الجميع في تثبيت التطبيقات مع ميزات أقل."
 
 #: src/views/Submit.vue:107
@@ -493,7 +494,7 @@ msgstr "أنشطة غير قانونية"
 
 #: src/views/Package.vue:277
 msgid "In App Purchases"
-msgstr "عمليات الشراء داخل التطبيق"
+msgstr "شراء داخل التطبيق"
 
 #: src/views/ManagePackage.vue:60 src/views/Package.vue:152
 msgid "Info"
@@ -501,23 +502,23 @@ msgstr "معلومات"
 
 #: src/views/About.vue:29 src/views/Package.vue:39
 msgid "Install"
-msgstr "تنصيب"
+msgstr "ثبت"
 
 #: src/views/Package.vue:264
 msgid "Install via the OpenStore app"
-msgstr "تنصيب عن طريق تطبيق OpenStore"
+msgstr "ثبت عن طريق تطبيق OpenStore"
 
 #: src/views/Browse.vue:186 src/views/Manage.vue:173
 msgid "Jump to the first page"
-msgstr "الذهاب للصفحة الاولى"
+msgstr "انتقل للصفحة الاولى"
 
 #: src/views/Browse.vue:189 src/views/Manage.vue:176
 msgid "Jump to the last page"
-msgstr "الذهاب الى الصفحة الاخيرة"
+msgstr "انتقل للصفحة الاخيرة"
 
 #: src/views/Package.vue:278
 msgid "Keep Display On"
-msgstr "استمر في العرض"
+msgstr "ابق الشاشة مفتوحة"
 
 #: src/views/Manage.vue:18
 msgid "Keep your api key private!"
@@ -546,52 +547,52 @@ msgstr "الموقع"
 
 #: src/App.vue:37
 msgid "Log In"
-msgstr "تسجيل الدخول"
+msgstr "لِج"
 
 #: src/views/Login.vue:24
 msgid "Log in to the OpenStore to be able to manage your apps."
-msgstr "سجل دخولك الى OpenStore لتتمكن من إدارة تطبيقاتك."
+msgstr "لِج الى OpenStore لتدير تطبيقاتك."
 
 #: src/App.vue:43
 msgid "Log Out"
-msgstr "تسجيل الخروج"
+msgstr "اخرج"
 
 #: src/views/Login.vue:40 src/views/Login.vue:44
 msgid "Login"
-msgstr "تسجيل الدخول"
+msgstr "لِج"
 
 #: src/views/Submit.vue:125
 msgid "Login to submit your app"
-msgstr "سجّل دخولك لرفع تطبيقك"
+msgstr "لِج لرفع تطبيقك"
 
 #: src/views/Login.vue:7
 msgid "Login via GitHub"
-msgstr "تسجيل الدخول عن طريق GitHub"
+msgstr "لِج عبر GitHub"
 
 #: src/views/Login.vue:12
 msgid "Login via GitLab"
-msgstr "تسجيل الدخول عن طريق GitLab"
+msgstr "لِج عبر GitLab"
 
 #: src/views/Login.vue:18
 msgid "Login via Ubuntu"
-msgstr "تسجيل الدخول عن طريق حساب Ubuntu"
+msgstr "لِج عبر Ubuntu"
 
 #: src/views/ManagePackage.vue:229
 msgid "Maintainer"
-msgstr "مشرف"
+msgstr "مصين"
 
 #: src/views/Submit.vue:113
 msgid "Malware"
-msgstr "البرمجيات الخبيثة"
+msgstr "برمجية خبيثة"
 
 #: src/App.vue:40 src/views/Manage.vue:152 src/views/ManagePackage.vue:381
 #: src/views/ManagePackage.vue:383
 msgid "Manage"
-msgstr "إدارة"
+msgstr "أدر"
 
 #: src/views/Manage.vue:148
 msgid "Manage Apps"
-msgstr "إدارة التطبيقات"
+msgstr "أدر التطبيقات"
 
 #: src/views/Package.vue:280
 msgid "Microphone"
@@ -624,7 +625,7 @@ msgstr "مراجعة جديدة"
 
 #: src/views/ManageRevisions.vue:178
 msgid "New revision for %{channel} was created!"
-msgstr "قد تم إنشاء مراجعة جديدة لـ %{channel}!"
+msgstr "أُنشئت مراجعة جديدة لـ %{channel}!"
 
 #: src/views/ManageRevisions.vue:8
 msgid "New Revision for %{name}"
@@ -640,7 +641,7 @@ msgstr "لا"
 
 #: src/views/Browse.vue:101 src/views/Manage.vue:94
 msgid "No apps found."
-msgstr "لم يتم العثور على تطبيقات."
+msgstr "لم يُعثر على تطبيقات."
 
 #: src/views/Manage.vue:81 src/views/Manage.vue:86 src/views/Package.vue:146
 msgid "None"
@@ -648,7 +649,7 @@ msgstr "لا شيء"
 
 #: src/views/Manage.vue:75
 msgid "Not published"
-msgstr "غير منشور"
+msgstr "لم يُنشر"
 
 #: src/views/ManagePackage.vue:161
 msgid "NSFW"
@@ -691,24 +692,23 @@ msgid ""
 "manually reviewed app will get a source code review."
 msgstr ""
 "يُسمح فقط بتطبيقات المفتوحة المصدر للمراجعة اليدوية:\n"
-"نظرًا لأن التطبيقات قد تتمتع بإمكانية الوصول العشوائي إلى الجهاز ، سيحصل كل "
-"تطبيق تمت مراجعته يدويًا على مراجعة للكود المصدري الخاص به."
+"نظرًا لأن التطبيقات قد تتمتع بنفاذ كيفي للجهاز ، سيحصل كل تطبيق تمت مراجعته "
+"يدويًا على مراجعة للشيفرة المصدرية."
 
 #: src/views/ManagePackage.vue:223
 msgid ""
 "Only YouTube videos are supported at this time. Make sure the url is for the "
 "embedded video!"
 msgstr ""
-"فقط مقاطع فيديو YouTube مدعومة في الوقت الحالي. تأكد من أن الرابط هو رابط "
-"التضمين الخاص بالفيديو!"
+"فقط فيديوهات يوتيوب مدعومة حاليا. تأكد من أن الرابط هو رابط تضمين الفيديو!"
 
 #: src/views/About.vue:47
 msgid "Open the terminal app"
-msgstr "افتح تطبيق الطرفية(Terminal)"
+msgstr "افتح تطبيق الطرفية"
 
 #: src/views/About.vue:145
 msgid "OpenStore API/Server Contributors"
-msgstr "مساهمو OpenStore في API/المخدم"
+msgstr "مساهمو OpenStore في API/الخادوم"
 
 #: src/views/Submit.vue:58
 msgid "OpenStore App Content Policy"
@@ -720,7 +720,7 @@ msgstr "المساهمون في تطبيق OpenStore"
 
 #: src/views/Badge.vue:3
 msgid "OpenStore Badges"
-msgstr ""
+msgstr "شارات OpenStore"
 
 #: src/views/About.vue:67
 msgid "OpenStore group on Telegram"
@@ -728,15 +728,15 @@ msgstr "مجموعة OpenStore على تلغرام"
 
 #: src/views/About.vue:93
 msgid "OpenStore source on GitLab"
-msgstr "الكود المصدري لـ OpenStore على GitLab"
+msgstr "الشيفرة المصدرية لـ OpenStore على GitLab"
 
 #: src/views/About.vue:150
 msgid "OpenStore Website Contributors"
-msgstr "المساهمون في الموقع الإلكتروني لـ OpenStore"
+msgstr "المساهمون في موقع OpenStore"
 
 #: src/views/ManageRevisions.vue:33
 msgid "OR"
-msgstr "او"
+msgstr "أو"
 
 #: src/views/ManagePackage.vue:245
 msgid "Package Info"
@@ -748,11 +748,11 @@ msgstr "المنتج/الناشر"
 
 #: src/views/NotFound.vue:3
 msgid "Page Not Found"
-msgstr "لم يتم العثور على الصفحة المطلوبة"
+msgstr "لم يُعثر على الصفحة"
 
 #: src/views/Package.vue:80 src/views/Package.vue:135
 msgid "Permissions"
-msgstr "الصلاحيات"
+msgstr "الأذون"
 
 #: src/views/Package.vue:285
 msgid "Picture Files"
@@ -760,7 +760,7 @@ msgstr "ملفات الصور"
 
 #: src/views/ManagePackage.vue:43
 msgid "Presentation"
-msgstr "تقديم"
+msgstr "عرض تقديمي"
 
 #: src/views/Submit.vue:69
 msgid "Prohibited Apps"
@@ -768,7 +768,7 @@ msgstr "التطبيقات المحظورة"
 
 #: src/views/About.vue:20
 msgid "Promote your app on the OpenStore!"
-msgstr ""
+msgstr "روّج لتطبيقك على OpenStore!"
 
 #: src/views/Badge.vue:5
 msgid ""
@@ -777,14 +777,18 @@ msgid ""
 "are available in several different languages and in both PNG and SVG\n"
 "formats."
 msgstr ""
+"روّج لتطبيقك على OpenStore! أضف هذه الشارات لموقعك،\n"
+" ومستودع الشيفرة، والشبكات الاجتماعية، و في أي موقع على الانترنت.\n"
+"تتوفر الشرات ببضع لغات \n"
+"وفي شكل SVG و PNG."
 
 #: src/views/ManagePackage.vue:14
 msgid "Public Link"
-msgstr "رابط عام"
+msgstr "رابط علني"
 
 #: src/views/ManagePackage.vue:21
 msgid "Publish"
-msgstr "نشر"
+msgstr "انشر"
 
 #: src/views/Manage.vue:74 src/views/Package.vue:185
 msgid "Published"
@@ -796,31 +800,31 @@ msgstr "تاريخ النشر"
 
 #: src/views/Package.vue:286
 msgid "Push Notifications"
-msgstr "التنبيهات الفورية"
+msgstr "ادفع التنبيهات"
 
 #: src/views/Package.vue:281
 msgid "Read Music Files"
-msgstr "قراءة ملفات الموسيقى"
+msgstr "اقرأ ملفات الموسيقى"
 
 #: src/views/Package.vue:284
 msgid "Read Picture Files"
-msgstr "قراءة ملفات الصور"
+msgstr "اقرأ ملفات الصور"
 
 #: src/views/Package.vue:289
 msgid "Read Video Files"
-msgstr "قراءة ملفات الفيديو"
+msgstr "اقرأ ملفات الفيديو"
 
 #: src/views/Browse.vue:41
 msgid "Relevance"
-msgstr "المشابهة"
+msgstr "وظيفة تمييزية"
 
 #: src/App.vue:103
 msgid "Report an Issue"
-msgstr "التبليغ عن مشكلة"
+msgstr "بلغ عن مشكلة"
 
 #: src/views/Package.vue:356
 msgid "Restricted permission"
-msgstr "صلاحيات مقيدة"
+msgstr "إذن مقيد"
 
 #: src/views/ManagePackage.vue:294
 msgid "Revision"
@@ -828,7 +832,7 @@ msgstr "مراجعة"
 
 #: src/App.vue:108 src/views/Feeds.vue:3
 msgid "RSS Feeds"
-msgstr "تغذيات RSS"
+msgstr "تلقيمات RSS"
 
 #: src/views/Submit.vue:4
 msgid "Rules for Submission"
@@ -840,17 +844,19 @@ msgstr "شروط رفع التطبيقات التي تحتاج مراجعة يد
 
 #: src/views/About.vue:50
 msgid "Run the command:"
-msgstr "نفذ الأمر:"
+msgstr "شغّل الأمر:"
 
 #: src/views/ManagePackage.vue:348
 msgid "Save"
-msgstr "حفظ"
+msgstr "احفظ"
 
 #: src/components/Types.vue:4 src/views/Stats.vue:109
+#, fuzzy
 msgid "Scope"
 msgstr "سكوب"
 
 #: src/views/Browse.vue:34
+#, fuzzy
 msgid "Scopes"
 msgstr "سكوبات"
 
@@ -864,17 +870,17 @@ msgstr "لقطات شاشة (الحد الأقصى 5)"
 
 #: src/views/Browse.vue:9 src/views/Manage.vue:26
 msgid "Search"
-msgstr "البحث"
+msgstr "ابحث"
 
 #: src/views/Submit.vue:35
 msgid ""
 "Send us a link to a repository for your app to our telegram group along with "
 "some instructions on how to build it."
-msgstr ""
+msgstr "أرسل رابط مستودع تطبيقك إلينا عبر تلغرام مرفوقا بتعليمات البناء."
 
 #: src/views/Package.vue:287
 msgid "Sensors"
-msgstr "مستكشفات"
+msgstr "الحساسات"
 
 #: src/views/Submit.vue:74
 msgid "Sexually Explicit Content"
@@ -882,15 +888,15 @@ msgstr "محتوى جنسي صريح"
 
 #: src/views/Package.vue:117
 msgid "Show NSFW Content"
-msgstr "عرض محتوى البالغين"
+msgstr "اعرض محتوى البالغين"
 
 #: src/App.vue:98
 msgid "Site Status"
-msgstr "إحصائيات الموقع"
+msgstr "حالة الموقع"
 
 #: src/views/Browse.vue:39
 msgid "Sort By"
-msgstr "فرز وفق"
+msgstr "افرز وفق"
 
 #: src/views/Package.vue:169
 msgid "Source"
@@ -911,12 +917,12 @@ msgstr "الحالة"
 
 #: src/App.vue:28 src/views/Submit.vue:162
 msgid "Submit"
-msgstr "رفع"
+msgstr "ارفع"
 
 #: src/views/Manage.vue:10 src/views/Submit.vue:129 src/views/Submit.vue:189
 #: src/views/Submit.vue:193
 msgid "Submit App"
-msgstr "رفع تطبيق"
+msgstr "ارفع تطبيقًا"
 
 #: src/views/About.vue:134
 msgid "Submit your app"
@@ -925,7 +931,7 @@ msgstr "ارفع تطبيقك"
 #: src/views/ManagePackage.vue:551 src/views/ManagePackage.vue:576
 #: src/views/ManageRevisions.vue:177
 msgid "Success"
-msgstr "نجاح"
+msgstr "نجح"
 
 #: src/views/Package.vue:165
 msgid "Support"
@@ -945,7 +951,7 @@ msgstr "الشروط"
 
 #: src/views/Package.vue:13
 msgid "The app you are looking for has been removed or does not exist"
-msgstr "التطبيق الذي تبحث عنه قد تم حذفه او غير موجود"
+msgstr "التطبيق الذي تبحث عنه محذوف او غير موجود"
 
 #: src/views/About.vue:97
 msgid ""
@@ -954,11 +960,11 @@ msgid ""
 "Consult each individual app's page for more information."
 msgstr ""
 "تملك التطبيقات المتاحة للتنزيل من OpenStore ترخيصها وشروطها الخاصة.\n"
-"راجع صفحة كل تطبيق على حدة للحصول على مزيد من المعلومات."
+"راجع صفحة كل تطبيق للحصول على مزيد من المعلومات عنه."
 
 #: src/views/ManagePackage.vue:552
 msgid "The changes to %{name} were saved!"
-msgstr "لقد تم حفظ التغييرات لـ  %{name}!"
+msgstr "حُفظت تغييرات %{name}!"
 
 #: src/views/About.vue:104
 msgid ""
@@ -972,8 +978,8 @@ msgid ""
 msgstr ""
 "OpenStore مشروع تطوعي غير ربحي.\n"
 "على الرغم من جميع الجهود لضمان أن كل شيء في المتجر آمن للتثبيت ، فإنك "
-"تستخدمه على مسؤوليتك الخاصة.\n"
-"ستخضع التطبيقات التي تم تحميلها إلى OpenStore لعملية مراجعة تلقائية أو\n"
+"تستخدمه على مسؤوليتك.\n"
+"ستخضع التطبيقات التي تم رفعها إلى OpenStore لعملية مراجعة تلقائية أو\n"
 "عملية مراجعة يدوية للتحقق من مشكلات الأمان أو الخصوصية المحتملة.\n"
 "هذا التدقيق بعيد عن أن يكون شاملاً ، ولا توجد ضمانات."
 
@@ -983,7 +989,7 @@ msgid ""
 "Touch.\n"
 "But if you need to install the OpenStore manually, follow these steps:"
 msgstr ""
-"تطبيق OpenStore مثبت بشكل افتراضي على نسخة UBports من اوبنتو Touch.\n"
+"تطبيق OpenStore مثبت بشكل افتراضي على نسخة UBports من اوبنتو توتش.\n"
 "ولكن إذا كنت بحاجة إلى تثبيت OpenStore يدويًا ، فاتبع الخطوات التالية:"
 
 #: src/views/About.vue:141
@@ -1035,7 +1041,7 @@ msgstr ""
 
 #: src/views/NotFound.vue:5
 msgid "The page you are looking for has been removed or does not exist"
-msgstr "الصفحة التي تبحث عنها قد تم إزالتها او غير موجودة"
+msgstr "الصفحة التي تبحث عنها مزالة او غير موجودة"
 
 #: src/views/About.vue:80
 msgid ""
@@ -1043,29 +1049,26 @@ msgid ""
 "v3.\n"
 "You can find the code on the OpenStore GitLab page."
 msgstr ""
-"الكود المصدري للمشاريع المرتبطة بـ OpenStore متوفر تحت ترخيص GPL v3.\n"
+"الشيفرو المصدريو للمشاريع المرتبطة بـ OpenStore متوفر تحت ترخيص GPL v3.\n"
 "يمكنك العثور على الكود المصدري في صفحة OpenStore GitLab."
 
 #: src/views/Package.vue:17
 msgid ""
 "There was an error trying to find this app, please refresh and try again."
 msgstr ""
-"لقد حدث خطأ اثناء المحاولة للعثور على هذا التطبيق, يرجى تحديث الصفحة وإعادة "
+"حدث خطأ اثناء المحاولة للعثور على هذا التطبيق, يرجى تحديث الصفحة وإعادة "
 "المحاولة."
 
 #: src/views/Browse.vue:65 src/views/Manage.vue:31
 msgid ""
 "There was an error trying to load the app list, please refresh and try again."
 msgstr ""
-"لقد حدث خطأ اثناء المحاولة لعرض قائمة التطبيقات, يرجى تحديث الصفحة وإعادة "
-"المحاولة."
+"حدث خطأ اثناء محاولة عرض قائمة التطبيقات, يرجى تحديث الصفحة وإعادة المحاولة."
 
 #: src/views/Stats.vue:5
 msgid ""
 "There was an error trying to load the stats, please refresh and try again."
-msgstr ""
-"لقد حدث خطأ اثناء المحاولة لعرض الإحصائيات, يرجى تحديث الصفحة وإعادة "
-"المحاولة."
+msgstr "حدث خطأ اثناء محاولة عرض الإحصائيات, يرجى تحديث الصفحة وإعادة المحاولة."
 
 #: src/views/ManagePackage.vue:163
 msgid "This app contains NSFW material"
@@ -1076,16 +1079,16 @@ msgid ""
 "This app does not have access to restricted system data, see permissions for "
 "more details"
 msgstr ""
-"لا يمتلك هذا التطبيق إمكانية الوصول إلى بيانات النظام المقيدة، راجع "
-"الصلاحيات لمزيد من التفاصيل"
+"لا يمتلك هذا التطبيق إمكانية الوصول إلى بيانات النظام المقيدة، راجع الأذون "
+"لمزيد من التفاصيل"
 
 #: src/views/Package.vue:370
 msgid ""
 "This app has access to restricted system data, see permissions for more "
 "details"
 msgstr ""
-"هذا التطبيق لديه صلاحية الوصول إلى بيانات النظام المقيدة ، راجع الصلاحيات "
-"لمزيد من التفاصيل"
+"هذا التطبيق يمكنه النفاذ إلى بيانات النظام المقيدة ، راجع الأذون لمزيد من "
+"التفاصيل"
 
 #: src/views/Submit.vue:141
 msgid ""
@@ -1097,15 +1100,15 @@ msgid ""
 "is the group or individual authoring the app."
 msgstr ""
 "هذا هو المعرف الفريد لتطبيقك.\n"
-"يجب أن يتطابق تمامًا مع حقل \"الاسم\" في ملف  manifest.json الخاص بتطبيقك "
-"ويجب أن يكون جميع الأحرف الصغيرة.\n"
+"يجب أن يتطابق تمامًا مع حقل \"الاسم\" في ملف manifest.json الخاص بتطبيقك "
+"ويجب أن تكون جميع الأحرف صغيرة.\n"
 "على سبيل المثال: \"openstore.openstore-team\" ، حيث \"openstore\" هو التطبيق "
 "و \"openstore-team\"\n"
 "هي المجموعة أو الشخص الذي يقوم برفع التطبيق."
 
 #: src/views/ManageRevisions.vue:52
 msgid "This will be added to the beginning of your current changelog"
-msgstr ""
+msgstr "سيضاف هذا الى رأس سجل التغييرات الحالي"
 
 #: src/views/ManagePackage.vue:80
 msgid "Title"
@@ -1124,11 +1127,11 @@ msgid "Total"
 msgstr "المجموع"
 
 #: src/views/Manage.vue:79
-#, fuzzy
 msgid "Total:"
-msgstr "المجموع"
+msgstr "المجموع:"
 
 #: src/views/ManagePackage.vue:279 src/views/Package.vue:197
+#, fuzzy
 msgid "Translation Languages"
 msgstr "لغات الترجمة"
 
@@ -1142,11 +1145,11 @@ msgstr "النوع"
 
 #: src/views/About.vue:14
 msgid "Ubuntu Touch"
-msgstr "اوبنتو Touch"
+msgstr "اوبنتو تاتش"
 
 #: src/views/Browse.vue:3
 msgid "Ubuntu Touch Apps"
-msgstr "تطبيقات اوبنتو Touch"
+msgstr "تطبيقات اوبنتو تاتش"
 
 #: src/views/Stats.vue:106
 msgid "Uncategorized"
@@ -1154,7 +1157,7 @@ msgstr "غير مصنف"
 
 #: src/views/Package.vue:181
 msgid "Updated"
-msgstr "تم تحديثه"
+msgstr "حُدث"
 
 #: src/views/Feeds.vue:18
 msgid "Updated Apps"
@@ -1170,7 +1173,7 @@ msgstr "رابط"
 
 #: src/views/ManageRevisions.vue:44
 msgid "URL of App from the Web"
-msgstr ""
+msgstr "رابط التطبيق في الويب"
 
 #: src/views/Package.vue:288
 msgid "User Metrics"
@@ -1178,7 +1181,7 @@ msgstr "مقاييس المستخدم"
 
 #: src/views/Manage.vue:49 src/views/ManagePackage.vue:296
 msgid "Version"
-msgstr "رقم النسخة"
+msgstr "الإصدار"
 
 #: src/views/Package.vue:291
 msgid "Video"
@@ -1214,13 +1217,14 @@ msgstr "تطبيقات الويب"
 
 #: src/views/Package.vue:292
 msgid "Webview"
-msgstr "Webview"
+msgstr "عرض الويب"
 
 #: src/views/Manage.vue:4
 msgid "Welcome %{name}!"
-msgstr ""
+msgstr "مرحبا %{name}!"
 
 #: src/views/ManageRevisions.vue:15 src/views/ManageRevisions.vue:174
+#, fuzzy
 msgid "Xenial"
 msgstr "Xenial"
 
@@ -1231,7 +1235,7 @@ msgstr "نعم"
 #: src/views/Submit.vue:10
 msgid ""
 "You are only allowed to publish apps that you have permission to distribute."
-msgstr "لا يُسمح لك سوى بنشر التطبيقات التي لديك صلاحية لتوزيعها."
+msgstr "لا يُسمح لك سوى بنشر التطبيقات التي لديك صلاحية توزيعها."
 
 #: src/views/Submit.vue:22
 msgid "You must read over the content policy detailed below."
@@ -1242,7 +1246,7 @@ msgid ""
 "Your app can be pulled without warning at the discretion of our admins.\n"
 "Where possible, we will contact you regarding any such actions."
 msgstr ""
-"يمكنك سحب تطبيقك بدون تحذير وفقًا لتقدير مشرفي المتجر.\n"
+"يمكن للمدير سحب تطبيقك بدون تحذير وفقًا لتقديره.\n"
 "وعند الإمكانية، سنتصل بك بخصوص أي من هذه الإجراءات."
 
 #~ msgid "All Channels"
