@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2020-11-14 16:51+0000\n"
+"PO-Revision-Date: 2020-11-21 23:26+0000\n"
 "Last-Translator: abidin <abidin24@tutanota.com>\n"
 "Language-Team: Arabic <https://translate.ubports.com/projects/openstore/"
 "open-storeio/ar/>\n"
@@ -215,7 +215,7 @@ msgstr "البنية"
 
 #: src/views/Package.vue:267
 msgid "Audio"
-msgstr "صوت"
+msgstr "الصوت"
 
 #: src/views/Manage.vue:47 src/views/ManagePackage.vue:254
 #: src/views/Package.vue:155
@@ -467,7 +467,7 @@ msgstr "التحرش أو التسلط أو الكلام الذي يحض على 
 
 #: src/views/Package.vue:276
 msgid "History"
-msgstr "التاريخ"
+msgstr "التأريخ"
 
 #: src/views/Manage.vue:44
 msgid "Icon"
@@ -539,7 +539,7 @@ msgstr "آخر تحديث"
 #: src/views/About.vue:78 src/views/ManagePackage.vue:171
 #: src/views/Package.vue:173
 msgid "License"
-msgstr "الترخيص"
+msgstr "الرخصة"
 
 #: src/views/Package.vue:279
 msgid "Location"
@@ -880,7 +880,7 @@ msgstr "أرسل رابط مستودع تطبيقك إلينا عبر تلغرا
 
 #: src/views/Package.vue:287
 msgid "Sensors"
-msgstr "الحساسات"
+msgstr "المستشعرات"
 
 #: src/views/Submit.vue:74
 msgid "Sexually Explicit Content"
@@ -1131,9 +1131,8 @@ msgid "Total:"
 msgstr "المجموع:"
 
 #: src/views/ManagePackage.vue:279 src/views/Package.vue:197
-#, fuzzy
 msgid "Translation Languages"
-msgstr "لغات الترجمة"
+msgstr "الترجمات"
 
 #: src/views/Browse.vue:102 src/views/Manage.vue:95
 msgid "Try searching for something else"
