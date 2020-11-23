@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2020-11-21 23:26+0000\n"
+"PO-Revision-Date: 2020-11-23 05:41+0000\n"
 "Last-Translator: abidin <abidin24@tutanota.com>\n"
 "Language-Team: Arabic <https://translate.ubports.com/projects/openstore/"
 "open-storeio/ar/>\n"
@@ -917,7 +917,7 @@ msgstr "الحالة"
 
 #: src/App.vue:28 src/views/Submit.vue:162
 msgid "Submit"
-msgstr "ارفع"
+msgstr "أرسل"
 
 #: src/views/Manage.vue:10 src/views/Submit.vue:129 src/views/Submit.vue:189
 #: src/views/Submit.vue:193
