@@ -38,7 +38,7 @@
 
         <div v-for="revision in revisions" :key="revision.key">
           <div class="p-form__group" v-if="fileUpload">
-            <label class="p-form__label" v-translate>File Upload</label>
+            <label class="p-form__label">{{uploadLabel}}</label>
             <input
               type="file"
               class="p-form__control file"
@@ -48,7 +48,7 @@
             />
           </div>
           <div class="p-form__group" v-else>
-            <label class="p-form__label" v-translate>URL</label>
+            <label class="p-form__label">{{uploadLabel}}</label>
             <input
               type="text"
               class="p-form__control"
@@ -273,6 +273,9 @@ export default {
         this.revisions.filter((revision) => revision.file || revision.downloadUrl)
           .length > 0
       );
+    },
+    uploadLabel() {
+      return this.fileUpload ? this.$gettext('File Upload') : this.$gettext('URL');
     },
   },
   watch: {
