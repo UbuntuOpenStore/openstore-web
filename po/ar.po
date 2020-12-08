@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2020-11-23 05:41+0000\n"
+"PO-Revision-Date: 2020-12-08 00:56+0000\n"
 "Last-Translator: abidin <abidin24@tutanota.com>\n"
 "Language-Team: Arabic <https://translate.ubports.com/projects/openstore/"
 "open-storeio/ar/>\n"
@@ -55,7 +55,7 @@ msgstr "جميع التصنيفات"
 
 #: src/views/Browse.vue:31
 msgid "All Types"
-msgstr "كل الانواع"
+msgstr "كل الأنواع"
 
 #: src/views/Login.vue:26
 msgid "An account is not needed to download or install apps."
@@ -127,7 +127,7 @@ msgstr "انواع التطبيقات"
 
 #: src/views/Browse.vue:32
 msgid "Apps"
-msgstr "التطبيقات"
+msgstr "تطبيقات"
 
 #: src/views/Submit.vue:101
 msgid ""
@@ -1120,7 +1120,7 @@ msgstr "العنوان (A-Z)"
 
 #: src/views/Browse.vue:43
 msgid "Title (Z-A)"
-msgstr "العنوان (Z-A)"
+msgstr "العنوان (A-Z)"
 
 #: src/views/ManagePackage.vue:314
 msgid "Total"
@@ -1223,7 +1223,6 @@ msgid "Welcome %{name}!"
 msgstr "مرحبا %{name}!"
 
 #: src/views/ManageRevisions.vue:15 src/views/ManageRevisions.vue:174
-#, fuzzy
 msgid "Xenial"
 msgstr "Xenial"
 
