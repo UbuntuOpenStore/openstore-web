@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-08 23:33-0400\n"
-"PO-Revision-Date: 2020-11-05 15:41+0000\n"
+"PO-Revision-Date: 2020-12-26 13:19+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://translate.ubports.com/projects/"
 "openstore/open-storeio/nb_NO/>\n"
@@ -96,7 +96,7 @@ msgstr "API nøkkel"
 
 #: src/components/Types.vue:3 src/views/Manage.vue:46 src/views/Stats.vue:108
 msgid "App"
-msgstr "App"
+msgstr "Program"
 
 #: src/views/Submit.vue:95
 msgid "App containing or promoting any of the above are strictly prohibited."
@@ -327,7 +327,7 @@ msgstr "Opprett"
 
 #: src/views/Package.vue:296
 msgid "Debug"
-msgstr "Debug"
+msgstr "Avlusing"
 
 #: src/views/ManagePackage.vue:353
 msgid "Delete"
@@ -414,7 +414,7 @@ msgstr "Rammeverk"
 
 #: src/views/Package.vue:314
 msgid "Full System Access"
-msgstr "Ubegrenset stystemtilgang"
+msgstr "Full systemtilgang"
 
 #: src/views/Submit.vue:100
 msgid "Gambling"
@@ -479,7 +479,7 @@ msgstr "Regelstridige aktiviteter"
 
 #: src/views/Package.vue:298
 msgid "In App Purchases"
-msgstr "Kjøp i app"
+msgstr "Kjøp i programmer"
 
 #: src/views/ManagePackage.vue:60 src/views/Package.vue:177
 msgid "Info"
@@ -503,7 +503,7 @@ msgstr "Gå til siste side"
 
 #: src/views/Package.vue:299
 msgid "Keep Display On"
-msgstr "Behold skjerm på"
+msgstr "Behold skjermen påslått"
 
 #: src/views/Manage.vue:18
 msgid "Keep your api key private!"
@@ -528,7 +528,7 @@ msgstr "Lisens"
 
 #: src/views/Package.vue:300
 msgid "Location"
-msgstr "Sted"
+msgstr "Posisjon"
 
 #: src/App.vue:37
 msgid "Log In"
@@ -779,19 +779,21 @@ msgstr "Utgivelsesdato"
 
 #: src/views/Package.vue:307
 msgid "Push Notifications"
-msgstr "Push meldinger"
+msgstr "Dyttingsmerknader"
 
 #: src/views/Package.vue:302
+#, fuzzy
 msgid "Read Music Files"
-msgstr "Les musikkfiler"
+msgstr "Leste musikkfiler"
 
 #: src/views/Package.vue:305
+#, fuzzy
 msgid "Read Picture Files"
-msgstr "Les bildefiler"
+msgstr "Leste bilderfiler"
 
 #: src/views/Package.vue:310
 msgid "Read Video Files"
-msgstr "Les videofiler"
+msgstr "Leste videofiler"
 
 #: src/views/Browse.vue:41
 msgid "Relevance"
@@ -1023,21 +1025,15 @@ msgstr ""
 
 #: src/views/Package.vue:17
 msgid "There was an error trying to find this app, please refresh and try again."
-msgstr ""
-"Det skjedde en feil ved søking etter denne appen. Vennligst oppfrisk og "
-"forsøk på nytt!"
+msgstr "Fant ikke programmet. Gjenoppfrisk og prøv igjen."
 
 #: src/views/Browse.vue:65 src/views/Manage.vue:31
 msgid "There was an error trying to load the app list, please refresh and try again."
-msgstr ""
-"Det skjedde en feil ved lasting av applisten. Vennligst oppfrisk og forsøk "
-"på nytt!"
+msgstr "Kunne ikke laste inn programlisten. Gjenoppfrisk og prøv igjen."
 
 #: src/views/Stats.vue:5
 msgid "There was an error trying to load the stats, please refresh and try again."
-msgstr ""
-"Det skjedde en feil ved lasting av statistikkene. Vennligst oppfrisk og "
-"forsøk på nytt!"
+msgstr "Kunne ikke laste inn statistikken. Gjenoppfrisk og prøv igjen."
 
 #: src/views/ManagePackage.vue:163
 msgid "This app contains NSFW material"
@@ -1151,7 +1147,7 @@ msgstr "URL til appen på nettet"
 
 #: src/views/Package.vue:309
 msgid "User Metrics"
-msgstr "Brukerstatistikk"
+msgstr "Bruksdata"
 
 #: src/views/Manage.vue:49 src/views/ManagePackage.vue:296
 msgid "Version"
@@ -1191,7 +1187,7 @@ msgstr "Web apper"
 
 #: src/views/Package.vue:313
 msgid "Webview"
-msgstr "Nettvisning"
+msgstr "Vev-visning"
 
 #: src/views/Manage.vue:4
 msgid "Welcome %{name}!"
