@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2020-10-19 13:17+0000\n"
+"PO-Revision-Date: 2021-01-09 04:45+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@outlook.com>\n"
 "Language-Team: Dutch <https://translate.ubports.com/projects/openstore/"
 "open-storeio/nl/>\n"
@@ -844,7 +844,7 @@ msgstr "RSS-feeds"
 
 #: src/views/Submit.vue:4
 msgid "Rules for Submission"
-msgstr "Regels omtrent indienen"
+msgstr "Regels omtrent publicatie"
 
 #: src/views/Submit.vue:31
 msgid "Rules for Submissions Requiring Manual Review"
@@ -925,12 +925,12 @@ msgstr "Status"
 
 #: src/App.vue:28 src/views/Submit.vue:162
 msgid "Submit"
-msgstr "Indienen"
+msgstr "Publiceren"
 
 #: src/views/Manage.vue:10 src/views/Submit.vue:129 src/views/Submit.vue:189
 #: src/views/Submit.vue:193
 msgid "Submit App"
-msgstr "App indienen"
+msgstr "App publiceren"
 
 #: src/views/About.vue:134
 msgid "Submit your app"
