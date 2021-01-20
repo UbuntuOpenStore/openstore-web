@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2021-01-15 07:31+0000\n"
+"PO-Revision-Date: 2021-01-20 08:20+0000\n"
 "Last-Translator: ierihon <idekovets@mail.ru>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/openstore/"
 "open-storeio/ru/>\n"
@@ -30,7 +30,7 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:577
 msgid "%{name} was successfully deleted"
-msgstr "%{name} было успешно удалено"
+msgstr "%{name} был успешно удалён"
 
 #: src/views/ManagePackage.vue:157
 msgid "A comma separated list of keywords"
@@ -219,9 +219,8 @@ msgid "Architecture"
 msgstr "Архитектура"
 
 #: src/views/Package.vue:267
-#, fuzzy
 msgid "Audio"
-msgstr "Звук"
+msgstr "Аудио"
 
 #: src/views/Manage.vue:47 src/views/ManagePackage.vue:254
 #: src/views/Package.vue:155
@@ -246,12 +245,11 @@ msgstr "Bluetoоth"
 
 #: src/App.vue:31
 msgid "Browse"
-msgstr "Приложения"
+msgstr "Обзор"
 
 #: src/views/Browse.vue:162
-#, fuzzy
 msgid "Browse Apps"
-msgstr "Каталог программ"
+msgstr "Обзор приложений"
 
 #: src/views/About.vue:74
 msgid "Bug Tracker"
@@ -366,7 +364,7 @@ msgstr "Пожертвовать"
 
 #: src/views/ManagePackage.vue:216
 msgid "Donate URL"
-msgstr ""
+msgstr "URL пожертвований"
 
 #: src/views/Package.vue:262
 msgid "Download"
@@ -374,7 +372,7 @@ msgstr "Скачать"
 
 #: src/views/ManagePackage.vue:288
 msgid "Download Stats"
-msgstr "Количество закачек"
+msgstr "Количество скачиваний"
 
 #: src/views/About.vue:43
 msgid "Download the OpenStore App"
@@ -486,14 +484,14 @@ msgid "ID"
 msgstr "ID"
 
 #: src/views/Submit.vue:44
-#, fuzzy
 msgid ""
 "If an application could be published without manual review if it wouldn’t be "
 "for that one cool feature,\npublish a stripped down version!\n"
 "Not everyone will want to install apps with less confinement."
 msgstr ""
 "Если приложение можно опубликовать без предварительного изучения, и его "
-"работа не нарушится без этой функции, опубликуйте урезанную версию!\n"
+"работа не нарушится без этой функции,\n"
+"опубликуйте урезанную версию!\n"
 "Не все захотят устанавливать приложения с ограничениями."
 
 #: src/views/Submit.vue:107
@@ -566,7 +564,6 @@ msgid "Log Out"
 msgstr "Выйти"
 
 #: src/views/Login.vue:40 src/views/Login.vue:44
-#, fuzzy
 msgid "Login"
 msgstr "Войти"
 
@@ -591,13 +588,11 @@ msgid "Maintainer"
 msgstr "Разработчик"
 
 #: src/views/Submit.vue:113
-#, fuzzy
 msgid "Malware"
 msgstr "Вредоносное ПО"
 
 #: src/App.vue:40 src/views/Manage.vue:152 src/views/ManagePackage.vue:381
 #: src/views/ManagePackage.vue:383
-#, fuzzy
 msgid "Manage"
 msgstr "Управление"
 
@@ -615,7 +610,7 @@ msgstr "Файлы с аудиозаписями"
 
 #: src/views/Manage.vue:45
 msgid "Name"
-msgstr "Имя"
+msgstr "Название"
 
 #: src/views/About.vue:48
 msgid "Navigate to the downloads folder"
@@ -631,23 +626,20 @@ msgstr "Новые приложения"
 
 #: src/views/ManagePackage.vue:37 src/views/ManageRevisions.vue:86
 #: src/views/ManageRevisions.vue:88
-#, fuzzy
 msgid "New Revision"
 msgstr "Новая версия"
 
 #: src/views/ManageRevisions.vue:178
-#, fuzzy
 msgid "New revision for %{channel} was created!"
-msgstr "Была создана новая версия для %{channel}!"
+msgstr "Создана новая версия для %{channel}!"
 
 #: src/views/ManageRevisions.vue:8
 msgid "New Revision for %{name}"
 msgstr "Новая версия %{name}"
 
 #: src/views/Browse.vue:44
-#, fuzzy
 msgid "Newest"
-msgstr "Самые последние"
+msgstr "Новейшие"
 
 #: src/views/ManagePackage.vue:31
 msgid "No"
@@ -662,7 +654,6 @@ msgid "None"
 msgstr "Нет"
 
 #: src/views/Manage.vue:75
-#, fuzzy
 msgid "Not published"
 msgstr "Не опубликовано"
 
@@ -680,7 +671,7 @@ msgstr "Самые старые"
 
 #: src/views/Browse.vue:47
 msgid "Oldest Update"
-msgstr "Давно необновляемые"
+msgstr "Давно не обновляемые"
 
 #: src/views/Submit.vue:60
 msgid ""
@@ -746,14 +737,13 @@ msgstr "Группа OpenStore в Telegram"
 
 #: src/views/About.vue:93
 msgid "OpenStore source on GitLab"
-msgstr "Исходные тексты OpenStore в  GitLab"
+msgstr "Исходный код OpenStore в GitLab"
 
 #: src/views/About.vue:150
 msgid "OpenStore Website Contributors"
 msgstr "В создании сайта OpenStor принимали участие"
 
 #: src/views/ManageRevisions.vue:33
-#, fuzzy
 msgid "OR"
 msgstr "ИЛИ"
 
@@ -775,7 +765,7 @@ msgstr "Разрешения"
 
 #: src/views/Package.vue:285
 msgid "Picture Files"
-msgstr "Файлы с картинками"
+msgstr "Файлы изображений"
 
 #: src/views/ManagePackage.vue:43
 msgid "Presentation"
@@ -802,14 +792,12 @@ msgstr ""
 "скачать  на разных языках и форматах PNG и SVG."
 
 #: src/views/ManagePackage.vue:14
-#, fuzzy
 msgid "Public Link"
-msgstr "Ссылка для всех"
+msgstr "Публичная ссылка"
 
 #: src/views/ManagePackage.vue:21
-#, fuzzy
 msgid "Publish"
-msgstr "Разместить"
+msgstr "Опубликовывать"
 
 #: src/views/Manage.vue:74 src/views/Package.vue:185
 msgid "Published"
@@ -828,19 +816,16 @@ msgid "Read Music Files"
 msgstr "Прочитать музыкальные файлы"
 
 #: src/views/Package.vue:284
-#, fuzzy
 msgid "Read Picture Files"
-msgstr "прочитать графические файлы"
+msgstr "Чтение файлов изображений"
 
 #: src/views/Package.vue:289
-#, fuzzy
 msgid "Read Video Files"
-msgstr "Прочитать видеофайлы"
+msgstr "Чтение видео файлов"
 
 #: src/views/Browse.vue:41
-#, fuzzy
 msgid "Relevance"
-msgstr "Релевантность"
+msgstr "Актуальность"
 
 #: src/App.vue:103
 msgid "Report an Issue"
@@ -909,29 +894,27 @@ msgstr "Сенсоры"
 
 #: src/views/Submit.vue:74
 msgid "Sexually Explicit Content"
-msgstr "Контент \"18+\""
+msgstr "Контент «18+»"
 
 #: src/views/Package.vue:117
 msgid "Show NSFW Content"
-msgstr "Показывать контент категории \"18+\""
+msgstr "Показывать контент категории «18+»"
 
 #: src/App.vue:98
 msgid "Site Status"
 msgstr "Статистика сайта"
 
 #: src/views/Browse.vue:39
-#, fuzzy
 msgid "Sort By"
-msgstr "Сортировка по типам"
+msgstr "Сортировать по"
 
 #: src/views/Package.vue:169
 msgid "Source"
-msgstr "Исходные тексты"
+msgstr "Исходный код"
 
 #: src/views/ManagePackage.vue:206
-#, fuzzy
 msgid "Source URL"
-msgstr "Source URL"
+msgstr "URL источника"
 
 #: src/views/ManagePackage.vue:65 src/views/Stats.vue:3 src/views/Stats.vue:92
 #: src/views/Stats.vue:96
@@ -957,21 +940,18 @@ msgstr "Разместить своё приложение"
 
 #: src/views/ManagePackage.vue:551 src/views/ManagePackage.vue:576
 #: src/views/ManageRevisions.vue:177
-#, fuzzy
 msgid "Success"
 msgstr "Успешно"
 
 #: src/views/Package.vue:165
 msgid "Support"
-msgstr "Техническая поддержка"
+msgstr "Поддержка"
 
 #: src/views/ManagePackage.vue:211
-#, fuzzy
 msgid "Support URL"
-msgstr "Support URL"
+msgstr "URL поддержки"
 
 #: src/views/ManagePackage.vue:85
-#, fuzzy
 msgid "Tag Line"
 msgstr "Теги"
 
@@ -1122,7 +1102,6 @@ msgstr ""
 "смотрите в правах доступа приложения"
 
 #: src/views/Package.vue:370
-#, fuzzy
 msgid ""
 "This app has access to restricted system data, see permissions for more "
 "details"
@@ -1145,7 +1124,6 @@ msgstr ""
 "- приложение, а \"openstore-team\" - команда разработчиков приложения."
 
 #: src/views/ManageRevisions.vue:52
-#, fuzzy
 msgid "This will be added to the beginning of your current changelog"
 msgstr "Этот текст будет добавлен в начало списка изменений"
 
@@ -1170,7 +1148,6 @@ msgid "Total:"
 msgstr "Итого:"
 
 #: src/views/ManagePackage.vue:279 src/views/Package.vue:197
-#, fuzzy
 msgid "Translation Languages"
 msgstr "Версии на других языках"
 
@@ -1192,7 +1169,7 @@ msgstr "Каталог программ для Ubuntu Touch"
 
 #: src/views/Stats.vue:106
 msgid "Uncategorized"
-msgstr ""
+msgstr "Без категории"
 
 #: src/views/Package.vue:181
 msgid "Updated"
@@ -1200,7 +1177,7 @@ msgstr "Обновлено"
 
 #: src/views/Feeds.vue:18
 msgid "Updated Apps"
-msgstr ""
+msgstr "Обновленные приложения"
 
 #: src/views/ManagePackage.vue:331
 msgid "Updated Date"
@@ -1212,7 +1189,7 @@ msgstr "URL"
 
 #: src/views/ManageRevisions.vue:44
 msgid "URL of App from the Web"
-msgstr ""
+msgstr "URL-адрес приложения из Интернета"
 
 #: src/views/Package.vue:288
 msgid "User Metrics"
@@ -1228,11 +1205,11 @@ msgstr "Видео"
 
 #: src/views/Package.vue:290
 msgid "Video Files"
-msgstr ""
+msgstr "Видео файлы"
 
 #: src/views/ManagePackage.vue:221
 msgid "Video URL"
-msgstr ""
+msgstr "URL видео"
 
 #: src/views/About.vue:37
 msgid "View Install Instructions"
