@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2021-01-20 08:20+0000\n"
+"PO-Revision-Date: 2021-01-31 11:27+0000\n"
 "Last-Translator: ierihon <idekovets@mail.ru>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/openstore/"
 "open-storeio/ru/>\n"
@@ -1233,7 +1233,7 @@ msgstr "Веб-приложения"
 
 #: src/views/Package.vue:292
 msgid "Webview"
-msgstr "Webview"
+msgstr "Просмотр веб-контента"
 
 #: src/views/Manage.vue:4
 msgid "Welcome %{name}!"
