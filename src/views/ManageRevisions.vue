@@ -38,7 +38,13 @@
 
         <div v-for="revision in revisions" :key="revision.key">
           <div class="p-form__group" v-if="fileUpload">
-            <label class="p-form__label">{{uploadLabel}}</label>
+            <label class="p-form__label">
+              {{uploadLabel}}
+
+              <span v-if="revision.progress > 0 && revision.progress < 100 && !revision.completed"> - {{revision.progress}}%</span>
+              <span v-if="revision.progress >= 100 && !revision.completed"> - {{processingText}}</span>
+              <span v-if="revision.completed"> - {{completedText}}</span>
+            </label>
             <input
               type="file"
               class="p-form__control file"
@@ -48,7 +54,12 @@
             />
           </div>
           <div class="p-form__group" v-else>
-            <label class="p-form__label">{{uploadLabel}}</label>
+            <label class="p-form__label">
+              {{uploadLabel}}
+
+              <span v-if="revision.progress >= 100 && !revision.completed"> - {{processingText}}</span>
+              <span v-if="revision.completed"> - {{completedText}}</span>
+            </label>
             <input
               type="text"
               class="p-form__control"
@@ -102,6 +113,7 @@
 </template>
 
 <script>
+import Vue from 'vue';
 import { mapState } from 'vuex';
 import miniToastr from 'mini-toastr';
 
@@ -114,6 +126,8 @@ function newRevision() {
     key: Math.random(),
     file: null,
     downloadUrl: null,
+    progress: 0,
+    completed: false,
   };
 }
 
@@ -150,6 +164,8 @@ export default {
       changelog: '',
       fileUpload: true,
       revisions: [newRevision()],
+      completedText: this.$gettext('Completed'),
+      processingText: this.$gettext('Processing'),
     };
   },
   created() {
@@ -223,7 +239,13 @@ export default {
               this.app.id,
               updateData,
               this.user.apikey,
+              (progressEvent) => {
+                const progress = parseInt(Math.round((progressEvent.loaded / progressEvent.total) * 100), 10);
+                Vue.set(this.revisions[i], 'progress', progress);
+              },
             );
+
+            Vue.set(this.revisions[i], 'completed', true);
           }
           catch (err) {
             let error = this.$gettext('An unknown error has occured');
