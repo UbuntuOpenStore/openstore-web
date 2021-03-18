@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2021-01-09 04:45+0000\n"
+"PO-Revision-Date: 2021-03-18 17:21+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@outlook.com>\n"
 "Language-Team: Dutch <https://translate.ubports.com/projects/openstore/"
 "open-storeio/nl/>\n"
@@ -201,7 +201,7 @@ msgid ""
 "or executing malicious process are strictly prohibited."
 msgstr ""
 "Apps waarvan wordt vastgesteld dat ze gebruikersgegevens stelen, hun "
-"machtigingen proberen uit te breiden zonder toestemming van de gebruiker,\n"
+"bevoegdheden proberen uit te breiden zonder toestemming van de gebruiker,\n"
 "of kwaadwillende processen uitvoeren zijn ten strengste verboden."
 
 #: src/views/About.vue:129
@@ -447,8 +447,8 @@ msgid ""
 "background\" will do.\n"
 "List all the special features you have, if there are more."
 msgstr ""
-"Geef een korte uitleg over de reden dat de app niet zonder extra "
-"machtigingen kan worden gepubliceerd.\n"
+"Geef in het kort aan waarom de app niet zonder extra bevoegdheden kan worden "
+"gepubliceerd.\n"
 "Je hoeft niet in details te treden; een uitleg als \"moet een "
 "achtergronddienst uitvoeren\" is voldoende.\n"
 "Maak een lijst van alle speciale functies die je nodig hebt, als het er meer "
@@ -760,7 +760,7 @@ msgstr "Pagina niet gevonden"
 
 #: src/views/Package.vue:80 src/views/Package.vue:135
 msgid "Permissions"
-msgstr "Machtigingen"
+msgstr "Bevoegdheden"
 
 #: src/views/Package.vue:285
 msgid "Picture Files"
@@ -832,7 +832,7 @@ msgstr "Probleem melden"
 
 #: src/views/Package.vue:356
 msgid "Restricted permission"
-msgstr "Beperkte machtigingen"
+msgstr "Beperkte bevoegdheden"
 
 #: src/views/ManagePackage.vue:294
 msgid "Revision"
@@ -1099,7 +1099,7 @@ msgid ""
 "more details"
 msgstr ""
 "Deze app heeft geen toegang tot beveiligde systeemgegevens - bekijk voor "
-"meer informatie de machtigingen"
+"meer informatie de bevoegdheden"
 
 #: src/views/Package.vue:370
 msgid ""
@@ -1107,7 +1107,7 @@ msgid ""
 "details"
 msgstr ""
 "Deze app heeft toegang tot beveiligde systeemgegevens - bekijk voor meer "
-"informatie de machtigingen"
+"informatie de bevoegdheden"
 
 #: src/views/Submit.vue:141
 msgid ""
