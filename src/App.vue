@@ -100,7 +100,7 @@
             <li class="p-footer__item">
               <a
                 class="p-footer__link"
-                href="https://status.open-store.io/"
+                href="https://stats.uptimerobot.com/R6Z8mtJ8P"
                 target="_blank"
                 v-translate
               >Site Status</a>
