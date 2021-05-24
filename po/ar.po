@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2020-12-08 00:56+0000\n"
-"Last-Translator: abidin <abidin24@tutanota.com>\n"
+"PO-Revision-Date: 2021-05-24 15:19+0000\n"
+"Last-Translator: Abdellatif Oussaid <oussaid.abdellatif@gmail.com>\n"
 "Language-Team: Arabic <https://translate.ubports.com/projects/openstore/"
 "open-storeio/ar/>\n"
 "Language: ar\n"
@@ -34,7 +34,7 @@ msgstr "حُذف %{name} بنجاح"
 
 #: src/views/ManagePackage.vue:157
 msgid "A comma separated list of keywords"
-msgstr "قائمة كلمات المفتاحية  مفصولة بفواصل"
+msgstr "قائمة كلمات مفتاحية مفصولة بفواصل"
 
 #: src/App.vue:34 src/views/About.vue:3 src/views/About.vue:183
 #: src/views/About.vue:187
@@ -59,7 +59,7 @@ msgstr "كل الأنواع"
 
 #: src/views/Login.vue:26
 msgid "An account is not needed to download or install apps."
-msgstr "لا تحتاج لحساب لتتمكن من تحميل او تثبيت التطبيقات."
+msgstr "لا تحتاج لحساب لتتمكن من تنزيل او تثبيت التطبيقات."
 
 #: src/views/ManagePackage.vue:444 src/views/ManagePackage.vue:462
 #: src/views/ManageRevisions.vue:136
@@ -103,7 +103,7 @@ msgstr "تطبيق"
 
 #: src/views/Submit.vue:95
 msgid "App containing or promoting any of the above are strictly prohibited."
-msgstr "يُحظر تمامًا تطبيق يحتوي على أي من العناصر الواردة أعلاه أو يروج له."
+msgstr "يُحظر تمامًا تطبيق يحتوي على أو يروج لأي من العناصر الواردة أعلاه ."
 
 #: src/views/Submit.vue:133
 msgid "App Name"
@@ -306,13 +306,12 @@ msgid "Connectivity"
 msgstr "التوصيل"
 
 #: src/views/About.vue:59
-#, fuzzy
 msgid "Contact"
-msgstr "اتصل"
+msgstr "جهة اتصال"
 
 #: src/views/Package.vue:272
 msgid "Contacts"
-msgstr "المتراسلون"
+msgstr "جهات الاتصال"
 
 #: src/views/Package.vue:274
 msgid "Content Exchange"
@@ -348,7 +347,7 @@ msgstr "احذف"
 
 #: src/views/ManagePackage.vue:90
 msgid "Description"
-msgstr "الوصف"
+msgstr "وصف"
 
 #: src/views/ManagePackage.vue:55
 msgid "Discovery"
@@ -368,7 +367,7 @@ msgstr "نزّل"
 
 #: src/views/ManagePackage.vue:288
 msgid "Download Stats"
-msgstr "إحصائيات التحميل"
+msgstr "إحصائيات التنزيلات"
 
 #: src/views/About.vue:43
 msgid "Download the OpenStore App"
@@ -534,7 +533,7 @@ msgstr "اللغة"
 
 #: src/views/Browse.vue:46
 msgid "Latest Update"
-msgstr "آخر تحديث"
+msgstr "اخر تحديث"
 
 #: src/views/About.vue:78 src/views/ManagePackage.vue:171
 #: src/views/Package.vue:173
@@ -665,7 +664,7 @@ msgstr "الأقدم"
 
 #: src/views/Browse.vue:47
 msgid "Oldest Update"
-msgstr "أقدم تحديث"
+msgstr "اقدم تحديث"
 
 #: src/views/Submit.vue:60
 msgid ""
@@ -851,14 +850,12 @@ msgid "Save"
 msgstr "احفظ"
 
 #: src/components/Types.vue:4 src/views/Stats.vue:109
-#, fuzzy
 msgid "Scope"
-msgstr "سكوب"
+msgstr "نطاق"
 
 #: src/views/Browse.vue:34
-#, fuzzy
 msgid "Scopes"
-msgstr "سكوبات"
+msgstr "نطاقات"
 
 #: src/views/Package.vue:107
 msgid "Screenshots"
