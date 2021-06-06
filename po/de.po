@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2021-04-11 23:45+0000\n"
+"PO-Revision-Date: 2021-06-06 08:59+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: German <https://translate.ubports.com/projects/openstore/"
 "open-storeio/de/>\n"
@@ -126,7 +126,7 @@ msgstr "App-Typen"
 
 #: src/views/Browse.vue:32
 msgid "Apps"
-msgstr "Apps"
+msgstr "Anwendungen"
 
 #: src/views/Submit.vue:101
 msgid ""
