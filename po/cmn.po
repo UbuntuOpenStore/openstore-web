@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-30 00:38-0500\n"
-"PO-Revision-Date: 2020-04-10 20:23+0000\n"
-"Last-Translator: Muge Niu <mugeniu12138@gmail.com>\n"
+"PO-Revision-Date: 2021-06-14 01:05+0000\n"
+"Last-Translator: Ito Rimai <ItoRimai@foxmail.com>\n"
 "Language-Team: Chinese (Mandarin) <https://translate.ubports.com/projects/"
 "openstore/open-storeio/cmn/>\n"
 "Language: cmn\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.8\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #: src/views/Package.vue:149
 msgid ""
@@ -354,9 +354,8 @@ msgid "Downloads of the latest version"
 msgstr "下载最新版本"
 
 #: src/views/ManagePackage.vue:119
-#, fuzzy
 msgid "Drag and drop to sort screenshots."
-msgstr "拖动以对截屏进行排序"
+msgstr "拖动可对屏幕截图进行排序。"
 
 #: src/views/ManagePackage.vue:8
 msgid "Edit"
@@ -389,7 +388,6 @@ msgstr ""
 "您还可以向我们的 GitLab 错误追踪组提交问题、错误和功能请求。"
 
 #: src/App.vue:93
-#, fuzzy
 msgid "Fork us on GitLab"
 msgstr "在GitLab上关注我们"
 
@@ -1085,12 +1083,11 @@ msgstr "未分类"
 
 #: src/views/Package.vue:180
 msgid "Unrestricted read access to:"
-msgstr "不受限制的访问："
+msgstr "不受限制的读取："
 
 #: src/views/Package.vue:176
-#, fuzzy
 msgid "Unrestricted write access to:"
-msgstr "不受限制的写访问"
+msgstr "不受限制的写入:"
 
 #: src/views/Package.vue:237
 msgid "Updated"
