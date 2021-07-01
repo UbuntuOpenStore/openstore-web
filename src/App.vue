@@ -127,6 +127,8 @@
 import Vue from 'vue';
 import { mapState } from 'vuex';
 
+// TODO upgrade to vue 3: https://github.com/vuejs/vue-next/tree/master/packages/vue-compat
+
 export default {
   name: 'app',
   data() {

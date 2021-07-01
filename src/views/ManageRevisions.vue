@@ -25,13 +25,15 @@
           </button>
         </div>
 
+        <!-- TODO enable this when click-review supports focal -->
         <!--
-                <div class="p-form__group">
-                    <label for="channel" class="p-form__label" v-translate>Channel</label>
-                    <select id="channel" class="p-form__control" v-model="channel" :disabled="saving">
-                        <option value="xenial" v-translate>Xenial</option>
-                    </select>
-                </div>
+        <div class="p-form__group">
+          <label for="channel" class="p-form__label" v-translate>Channel</label>
+          <select id="channel" class="p-form__control" v-model="channel" :disabled="saving">
+            <option value="xenial" v-translate>Xenial</option>
+            <option value="focal" v-translate>Focal</option>
+          </select>
+        </div>
         -->
 
         <div class="divider"></div>
@@ -227,7 +229,7 @@ export default {
             continue;
           }
 
-          updateData.append('channel', 'xenial');
+          updateData.append('channel', this.channel);
 
           if (first) {
             updateData.append('changelog', this.changelog);
@@ -267,14 +269,18 @@ export default {
 
         this.saving = false;
 
-        const channel = this.$gettext('Xenial');
+        let channelText = this.$gettext('Xenial');
+        if (this.channel == 'focal') {
+          channelText = this.$gettext('Focal');
+        }
+
         let message = this.$gettext(
           'New revision for %{channel} was created!',
-        ).replace('%{channel}', channel);
+        ).replace('%{channel}', channelText);
         if (this.revisions.length > 0) {
           message = this.$gettext(
             'New revisions for %{channel} were created!',
-          ).replace('%{channel}', channel);
+          ).replace('%{channel}', channelText);
         }
 
         miniToastr.success(message, this.$gettext('Success'));

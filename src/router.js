@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Browse from '@/views/Browse.vue';
 import Package from '@/views/Package.vue';
+import PackageVersions from '@/views/PackageVersions.vue';
 import About from '@/views/About.vue';
 import Badge from '@/views/Badge.vue';
 import Submit from '@/views/Submit.vue';
@@ -27,6 +28,10 @@ export default new Router({
       path: '/app/:id',
       name: 'app',
       component: Package,
+    }, {
+      path: '/app/:id/versions',
+      name: 'versions',
+      component: PackageVersions,
     }, {
       path: '/about',
       name: 'about',

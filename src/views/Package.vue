@@ -1,5 +1,5 @@
 <template>
-  <div class="row">
+  <div class="row package-view">
     <div class="back">
       <router-link :to="back">
         <svgicon icon="back" width="0.75em" height="0.75em" color="#007aa6" />
@@ -89,6 +89,14 @@
                     v{{download.version}}
                     ({{download.architecture}})
                   </a>
+
+                  <router-link
+                    :to="{name: 'versions', params: {id: app.id}}"
+                    class="p-contextual-menu__link"
+                    @click="showDownloadMenu = false"
+                  >
+                    <span class="mr" v-translate>Older Versions</span>
+                  </router-link>
                 </span>
               </span>
             </span>
@@ -526,60 +534,60 @@ export default {
 };
 </script>
 
-<style scoped>
-.back {
+<style>
+.package-view .back {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
 
-.icon {
+.package-view .icon {
   width: 92px;
   height: 92px;
   margin-right: 1em;
   border-radius: 8px;
 }
 
-h1 {
+.package-view h1 {
   margin-top: 0;
   font-size: 2em;
 }
 
-h2 {
+.package-view h2 {
   margin-top: 0;
   font-size: 1.5em;
 }
 
-.types {
+.package-view .types {
   margin-top: 0;
 }
 
-.pre {
+.package-view .pre {
   white-space: pre-line;
 }
 
-.changelog {
+.package-view .changelog {
   max-height: 20em;
   overflow-y: scroll;
 }
 
-.p-matrix__item {
+.package-view .p-matrix__item {
   display: block;
 }
 
-.info:first-child {
+.package-view .info:first-child {
   margin-top: 1em;
 }
 
-p + p {
+.package-view p + p {
   margin-top: 0.25em;
 }
 
-.video iframe {
+.package-view .video iframe {
   width: 100%;
   height: 315px;
 }
 
-.screenshot {
+.package-view .screenshot {
   display: block;
   width: auto;
   height: auto;
@@ -590,40 +598,40 @@ p + p {
   border-radius: 8px;
 }
 
-.screenshot-scroll {
+.package-view .screenshot-scroll {
   max-height: 330px;
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
 }
 
-.screenshot-scroll div {
+.package-view .screenshot-scroll div {
   display: inline-block;
   margin: 0;
 }
 
-.permissions li {
+.package-view .permissions li {
   margin-top: 0;
 }
 
-.version {
+.package-view .version {
   word-wrap: break-word;
 }
 
-.p-button--positive {
+.package-view .p-button--positive {
   margin-top: 0;
 }
 
-.p-button--positive {
+.package-view .p-button--positive {
   margin-top: 0.25em;
 }
 
-.p-contextual-menu__dropdown {
+.package-view .p-contextual-menu__dropdown {
   min-width: 16em;
   max-width: 20em;
 }
 
-button * {
+.package-view button * {
   margin-top: 0;
 }
 
@@ -631,13 +639,13 @@ button * {
   Copied from vanilla js because on small screen sizes the matrix isn't a matrix.
   But we don't want to change the matrix breakpoint for the other pages
 */
-.p-matrix {
+.package-view .p-matrix {
   display: flex;
   flex-wrap: wrap;
   margin-top: 2em;
 }
 
-.p-matrix__item {
+.package-view .p-matrix__item {
   border-right: 1px dotted #666;
   border-top: 1px dotted #666;
   margin-bottom: 0;
@@ -645,31 +653,31 @@ button * {
   width: 33.333%;
 }
 
-.p-matrix__item:empty {
+.package-view .p-matrix__item:empty {
   display: block;
 }
-.p-matrix__item:first-child,
-.p-matrix__item:nth-child(3n + 1) {
+.package-view .p-matrix__item:first-child,
+.package-view .p-matrix__item:nth-child(3n + 1) {
   padding-left: 0;
 }
-.p-matrix__item:last-child,
-.p-matrix__item:nth-child(3n) {
+.package-view .p-matrix__item:last-child,
+.package-view .p-matrix__item:nth-child(3n) {
   padding-right: 0;
 }
-.p-matrix__item:nth-child(-n + 3) {
+.package-view .p-matrix__item:nth-child(-n + 3) {
   border-top: 0;
 }
-.p-matrix__item:nth-child(2n) {
+.package-view .p-matrix__item:nth-child(2n) {
   border-right: 1px dotted #666;
   padding-right: 1rem;
 }
-.p-matrix__item:nth-child(3n) {
+.package-view .p-matrix__item:nth-child(3n) {
   border-right: 0;
   padding-right: 0;
 }
 
 @media screen and (max-width: 768px) {
-  .download-button {
+  .package-view .download-button {
     width: 100%;
     margin-left: 0;
   }
