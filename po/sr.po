@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-30 00:38-0500\n"
-"PO-Revision-Date: 2020-02-05 11:21+0000\n"
-"Last-Translator: Mladen B <mladen074@gmail.com>\n"
+"PO-Revision-Date: 2021-07-24 23:19+0000\n"
+"Last-Translator: Stefan Kalb <stefan.kalb@gmx.ch>\n"
 "Language-Team: Serbian <https://translate.ubports.com/projects/openstore/"
 "open-storeio/sr/>\n"
 "Language: sr\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
 "4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.8\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #: src/views/Package.vue:149
 msgid ""
@@ -1149,11 +1149,11 @@ msgstr "Насиље"
 
 #: src/components/Types.vue:5 src/views/Stats.vue:110
 msgid "Web App"
-msgstr ""
+msgstr "Web App"
 
 #: src/components/Types.vue:6 src/views/Stats.vue:111
 msgid "Web App+"
-msgstr ""
+msgstr "Web App+"
 
 #: src/views/Browse.vue:33
 msgid "Web Apps"
