@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2020-10-27 18:15+0000\n"
+"PO-Revision-Date: 2021-08-02 16:32+0000\n"
 "Last-Translator: Ivo Xavier <ivofernandes12@gmail.com>\n"
 "Language-Team: Portuguese (Portugal) <https://translate.ubports.com/projects/"
 "openstore/open-storeio/pt_PT/>\n"
@@ -616,7 +616,7 @@ msgstr "Navegue até a pasta de downloads"
 
 #: src/views/Package.vue:283
 msgid "Networking"
-msgstr "Rede de contactos"
+msgstr "Acesso à rede"
 
 #: src/views/Feeds.vue:9
 msgid "New Apps"
