@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2021-08-12 03:44+0000\n"
-"Last-Translator: George Kitsopoulos <gkitsopoulos@tutanota.com>\n"
+"PO-Revision-Date: 2021-09-21 00:46+0000\n"
+"Last-Translator: Efstathios Iosifidis <iefstathios@gmail.com>\n"
 "Language-Team: Greek <https://translate.ubports.com/projects/openstore/"
 "open-storeio/el/>\n"
 "Language: el\n"
@@ -188,45 +188,45 @@ msgstr ""
 
 #: ./src/views/ManagePackage.vue:454
 msgid "Arch"
-msgstr ""
+msgstr "Αρχιτεκτονική"
 
 #: ./src/views/ManagePackage.vue:408
 #: ./src/views/Package.vue:220
 msgid "Architecture"
-msgstr ""
+msgstr "Αρχιτεκτονική"
 
 #: ./src/views/Package.vue:352
 msgid "Audio"
-msgstr ""
+msgstr "Ήχος"
 
 #: ./src/views/Manage.vue:54
 #: ./src/views/ManagePackage.vue:404
 #: ./src/views/Package.vue:172
 msgid "Author"
-msgstr ""
+msgstr "Δημιουργός"
 
 #: ./src/views/Package.vue:6
 #: ./src/views/PackageVersions.vue:8
 msgid "Back"
-msgstr ""
+msgstr "Πίσω"
 
 #: ./src/views/Badge.vue:28
 #: ./src/views/Badge.vue:32
 #: ./src/views/ManagePackage.vue:106
 msgid "Badge"
-msgstr ""
+msgstr "Σήμα"
 
 #: ./src/views/About.vue:18
 msgid "Badges"
-msgstr ""
+msgstr "Σήματα"
 
 #: ./src/views/Package.vue:353
 msgid "Bluetooth"
-msgstr ""
+msgstr "Bluetooth"
 
 #: ./src/App.vue:37
 msgid "Browse"
-msgstr ""
+msgstr "Αναζήτηση"
 
 #: ./src/views/Browse.vue:143
 msgid "Browse Apps"
@@ -238,38 +238,38 @@ msgstr ""
 
 #: ./src/views/Package.vue:354
 msgid "Calendar"
-msgstr ""
+msgstr "Ημερολόγιο"
 
 #: ./src/views/Package.vue:355
 msgid "Camera"
-msgstr ""
+msgstr "Κάμερα"
 
 #: ./src/views/ManagePackage.vue:515
 #: ./src/views/ManageRevisions.vue:105
 #: ./src/views/Submit.vue:164
 msgid "Cancel"
-msgstr ""
+msgstr "Ακύρωση"
 
 #: ./src/views/Browse.vue:20
 #: ./src/views/ManagePackage.vue:208
 #: ./src/views/Package.vue:200
 msgid "Category"
-msgstr ""
+msgstr "Κατηγορία"
 
 #: ./src/views/ManagePackage.vue:154
 #: ./src/views/ManageRevisions.vue:82
 #: ./src/views/Package.vue:235
 msgid "Changelog"
-msgstr ""
+msgstr "Changelog"
 
 #: ./src/views/ManagePackage.vue:453
 #: ./src/views/ManageRevisions.vue:3
 msgid "Channel"
-msgstr ""
+msgstr "Κανάλι"
 
 #: ./src/views/ManagePackage.vue:420
 msgid "Channels"
-msgstr ""
+msgstr "Κανάλια"
 
 #: ./src/views/Submit.vue:87
 msgid "Child Endangerment"
@@ -277,7 +277,7 @@ msgstr ""
 
 #: ./src/views/ManagePackage.vue:216
 msgid "Choose a category"
-msgstr ""
+msgstr "Επιλέξτε κατηγορία"
 
 #: ./src/views/ManagePackage.vue:263
 msgid "Choose a license"
@@ -289,19 +289,19 @@ msgstr ""
 
 #: ./src/views/ManageRevisions.vue:169
 msgid "Completed"
-msgstr ""
+msgstr "Ολοκληρώθηκε"
 
 #: ./src/views/Package.vue:356
 msgid "Connectivity"
-msgstr ""
+msgstr "Συνδεσιμότητα"
 
 #: ./src/views/About.vue:62
 msgid "Contact"
-msgstr ""
+msgstr "Επαφή"
 
 #: ./src/views/Package.vue:357
 msgid "Contacts"
-msgstr ""
+msgstr "Επαφές"
 
 #: ./src/views/Package.vue:359
 msgid "Content Exchange"
@@ -313,31 +313,31 @@ msgstr ""
 
 #: ./src/views/About.vue:142
 msgid "Contributors"
-msgstr ""
+msgstr "Συντελεστές"
 
 #: ./src/components/CopyLine.vue:9
 msgid "Copy to clipboard"
-msgstr ""
+msgstr "Αντιγραφή στο πρόχειρο"
 
 #: ./src/views/Stats.vue:22
 msgid "Count"
-msgstr ""
+msgstr "Πλήθος"
 
 #: ./src/views/ManageRevisions.vue:97
 msgid "Create"
-msgstr ""
+msgstr "Δημιουργία"
 
 #: ./src/views/Package.vue:360
 msgid "Debug"
-msgstr ""
+msgstr "Αποσφαλμάτωση"
 
 #: ./src/views/ManagePackage.vue:511
 msgid "Delete"
-msgstr ""
+msgstr "Διαγραφή"
 
 #: ./src/views/ManagePackage.vue:143
 msgid "Description"
-msgstr ""
+msgstr "Περιγραφή"
 
 #: ./src/views/ManagePackage.vue:66
 msgid "Discovery"
@@ -345,7 +345,7 @@ msgstr ""
 
 #: ./src/views/Package.vue:136
 msgid "Donate"
-msgstr ""
+msgstr "Δωρεά"
 
 #: ./src/views/ManagePackage.vue:320
 msgid "Donate URL"
@@ -354,11 +354,11 @@ msgstr ""
 #: ./src/views/Package.vue:68
 #: ./src/views/Package.vue:87
 msgid "Download"
-msgstr ""
+msgstr "Λήψη"
 
 #: ./src/views/ManagePackage.vue:446
 msgid "Download Stats"
-msgstr ""
+msgstr "Στατιστικά λήψεων"
 
 #: ./src/views/About.vue:44
 msgid "Download the OpenStore App"
@@ -368,7 +368,7 @@ msgstr ""
 #: ./src/views/Manage.vue:75
 #: ./src/views/ManagePackage.vue:456
 msgid "Downloads"
-msgstr ""
+msgstr "Λήψεις"
 
 #: ./src/views/Package.vue:271
 msgid "Downloads of the latest version"
@@ -380,7 +380,7 @@ msgstr ""
 
 #: ./src/views/ManagePackage.vue:12
 msgid "Edit"
-msgstr ""
+msgstr "Επεξεργασία"
 
 #: ./src/views/ManagePackage.vue:611
 #: ./src/views/ManagePackage.vue:624
@@ -390,25 +390,25 @@ msgstr ""
 #: ./src/views/ManageRevisions.vue:263
 #: ./src/views/Submit.vue:231
 msgid "Error"
-msgstr ""
+msgstr "Σφάλμα"
 
 #: ./src/views/Feeds.vue:24
 #: ./src/views/Feeds.vue:28
 msgid "Feeds"
-msgstr ""
+msgstr "Ροές"
 
 #: ./src/views/ManageRevisions.vue:22
 msgid "File"
-msgstr ""
+msgstr "Αρχείο"
 
 #: ./src/views/ManageRevisions.vue:306
 msgid "File Upload"
-msgstr ""
+msgstr "Μεταφόρτωση αρχείου"
 
 #: ./src/views/ManageRevisions.vue:8
 #: ./src/views/ManageRevisions.vue:274
 msgid "Focal"
-msgstr ""
+msgstr "Focal"
 
 #: ./src/views/About.vue:64
 msgid ""
@@ -427,7 +427,7 @@ msgstr ""
 
 #: ./src/views/Submit.vue:104
 msgid "Gambling"
-msgstr ""
+msgstr "Τζόγος"
 
 #: ./src/views/About.vue:23
 msgid "Get your badge"
@@ -446,11 +446,11 @@ msgstr ""
 
 #: ./src/components/Pagination.vue:47
 msgid "Go to the next page"
-msgstr ""
+msgstr "Μετάβαση στην επόμενη σελίδα"
 
 #: ./src/views/About.vue:89
 msgid "GPL v3 License"
-msgstr ""
+msgstr "Άδεια χρήσης GPL v3"
 
 #: ./src/views/Submit.vue:100
 msgid "Harassment, Bullying, or Hate Speech"
@@ -458,15 +458,15 @@ msgstr ""
 
 #: ./src/views/Package.vue:361
 msgid "History"
-msgstr ""
+msgstr "Ιστορικό"
 
 #: ./src/views/Manage.vue:51
 msgid "Icon"
-msgstr ""
+msgstr "Εικονίδιο"
 
 #: ./src/views/ManagePackage.vue:400
 msgid "ID"
-msgstr ""
+msgstr "Ταυτότητα"
 
 #: ./src/views/Submit.vue:49
 msgid ""
@@ -477,7 +477,7 @@ msgstr ""
 
 #: ./src/views/Submit.vue:111
 msgid "Illegal Activities"
-msgstr ""
+msgstr "Παράνομες δραστηριότητες"
 
 #: ./src/views/Package.vue:362
 msgid "In App Purchases"
@@ -486,12 +486,12 @@ msgstr ""
 #: ./src/views/ManagePackage.vue:76
 #: ./src/views/Package.vue:169
 msgid "Info"
-msgstr ""
+msgstr "Πληροφορίες"
 
 #: ./src/views/About.vue:27
 #: ./src/views/Package.vue:49
 msgid "Install"
-msgstr ""
+msgstr "Εγκατάσταση"
 
 #: ./src/views/Package.vue:348
 msgid "Install via the OpenStore app"
@@ -503,7 +503,7 @@ msgstr ""
 
 #: ./src/components/Pagination.vue:48
 msgid "Jump to the last page"
-msgstr ""
+msgstr "Μετάβαση στην τελευταία σελίδα"
 
 #: ./src/views/Package.vue:363
 msgid "Keep Display On"
@@ -515,16 +515,16 @@ msgstr ""
 
 #: ./src/views/ManagePackage.vue:227
 msgid "Keywords"
-msgstr ""
+msgstr "Λέξεις κλειδιά"
 
 #: ./src/App.vue:66
 #: ./src/components/BadgeSelect.vue:4
 msgid "Language"
-msgstr ""
+msgstr "Γλώσσα"
 
 #: ./src/views/Browse.vue:51
 msgid "Latest Update"
-msgstr ""
+msgstr "Τελευταία ενημέρωση"
 
 #: ./src/views/Browse.vue:46
 msgid "Least Popular"
@@ -534,19 +534,19 @@ msgstr ""
 #: ./src/views/ManagePackage.vue:255
 #: ./src/views/Package.vue:195
 msgid "License"
-msgstr ""
+msgstr "Άδεια χρήσης"
 
 #: ./src/views/Package.vue:364
 msgid "Location"
-msgstr ""
+msgstr "Τοποθεσία"
 
 #: ./src/views/ManagePackage.vue:349
 msgid "Locked"
-msgstr ""
+msgstr "Κλειδωμένα"
 
 #: ./src/App.vue:43
 msgid "Log In"
-msgstr ""
+msgstr "Σύνδεση"
 
 #: ./src/views/Login.vue:24
 msgid "Log in to the OpenStore to be able to manage your apps."
@@ -554,12 +554,12 @@ msgstr ""
 
 #: ./src/App.vue:49
 msgid "Log Out"
-msgstr ""
+msgstr "Αποσύνδεση"
 
 #: ./src/views/Login.vue:40
 #: ./src/views/Login.vue:44
 msgid "Login"
-msgstr ""
+msgstr "Σύνδεση"
 
 #: ./src/views/Submit.vue:127
 msgid "Login to submit your app"
@@ -567,19 +567,19 @@ msgstr ""
 
 #: ./src/views/Login.vue:7
 msgid "Login via GitHub"
-msgstr ""
+msgstr "Σύνδεση μέσω Github"
 
 #: ./src/views/Login.vue:12
 msgid "Login via GitLab"
-msgstr ""
+msgstr "Σύνδεση μέσω GitLab"
 
 #: ./src/views/Login.vue:18
 msgid "Login via Ubuntu One"
-msgstr ""
+msgstr "Σύνδεση μέσω Ubuntu One"
 
 #: ./src/views/ManagePackage.vue:364
 msgid "Maintainer"
-msgstr ""
+msgstr "Συντηρητής"
 
 #: ./src/views/Submit.vue:115
 msgid "Malware"
@@ -590,27 +590,27 @@ msgstr ""
 #: ./src/views/ManagePackage.vue:543
 #: ./src/views/ManagePackage.vue:545
 msgid "Manage"
-msgstr ""
+msgstr "Διαχείριση"
 
 #: ./src/views/Manage.vue:127
 msgid "Manage Apps"
-msgstr ""
+msgstr "Διαχείριση εφαρμογών"
 
 #: ./src/views/Package.vue:365
 msgid "Microphone"
-msgstr ""
+msgstr "Μικρόφωνο"
 
 #: ./src/views/Browse.vue:45
 msgid "Most Popular"
-msgstr ""
+msgstr "Τα πιο δημοφιλή"
 
 #: ./src/views/Package.vue:367
 msgid "Music Files"
-msgstr ""
+msgstr "Αρχεία μουσικής"
 
 #: ./src/views/Manage.vue:52
 msgid "Name"
-msgstr ""
+msgstr "Όνομα"
 
 #: ./src/views/About.vue:51
 msgid "Navigate to the downloads folder"
@@ -622,13 +622,13 @@ msgstr ""
 
 #: ./src/views/Feeds.vue:6
 msgid "New Apps"
-msgstr ""
+msgstr "Νέες εφαρμογές"
 
 #: ./src/views/ManagePackage.vue:50
 #: ./src/views/ManageRevisions.vue:140
 #: ./src/views/ManageRevisions.vue:142
 msgid "New Revision"
-msgstr ""
+msgstr "Νέα αναθεώρηση"
 
 #: ./src/views/ManageRevisions.vue:277
 msgid "New revision for %{channel} was created!"
@@ -644,36 +644,36 @@ msgstr ""
 
 #: ./src/views/Browse.vue:49
 msgid "Newest"
-msgstr ""
+msgstr "Νεότερη"
 
 #: ./src/views/ManagePackage.vue:41
 #: ./src/views/ManagePackage.vue:358
 msgid "No"
-msgstr ""
+msgstr "Όχι"
 
 #: ./src/views/Browse.vue:108
 #: ./src/views/Manage.vue:100
 msgid "No apps found."
-msgstr ""
+msgstr "Δεν βρέθηκαν εφαρμογές."
 
 #: ./src/views/Package.vue:47
 msgid "No longer available"
-msgstr ""
+msgstr "Δεν είναι πλέον διαθέσιμα"
 
 #: ./src/views/Manage.vue:87
 #: ./src/views/Manage.vue:92
 #: ./src/views/ManagePackage.vue:383
 #: ./src/views/Package.vue:261
 msgid "None"
-msgstr ""
+msgstr "Kανένα"
 
 #: ./src/views/Manage.vue:81
 msgid "Not published"
-msgstr ""
+msgstr "Δεν δημοσιεύτηκε"
 
 #: ./src/views/ManagePackage.vue:239
 msgid "NSFW"
-msgstr ""
+msgstr "NSFW"
 
 #: ./src/views/Browse.vue:101
 msgid "NSFW content"
@@ -681,11 +681,11 @@ msgstr ""
 
 #: ./src/views/Package.vue:97
 msgid "Older Versions"
-msgstr ""
+msgstr "Άλλες εκδόσεις"
 
 #: ./src/views/Browse.vue:50
 msgid "Oldest"
-msgstr ""
+msgstr "Παλαιότερο"
 
 #: ./src/views/Browse.vue:52
 msgid "Oldest Update"
@@ -728,7 +728,7 @@ msgstr ""
 
 #: ./src/views/Badge.vue:3
 msgid "OpenStore Badges"
-msgstr ""
+msgstr "Σήματα OpenStore"
 
 #: ./src/views/About.vue:70
 msgid "OpenStore group on Telegram"
@@ -748,7 +748,7 @@ msgstr ""
 
 #: ./src/views/ManagePackage.vue:395
 msgid "Package Info"
-msgstr ""
+msgstr "Πληροφορίες πακέτου"
 
 #: ./src/views/Package.vue:179
 msgid "Packager/Publisher"
@@ -756,24 +756,24 @@ msgstr ""
 
 #: ./src/views/NotFound.vue:3
 msgid "Page Not Found"
-msgstr ""
+msgstr "Η Σελίδα δεν βρέθηκε"
 
 #: ./src/views/Package.vue:127
 #: ./src/views/Package.vue:242
 msgid "Permissions"
-msgstr ""
+msgstr "Δικαιώματα"
 
 #: ./src/views/Package.vue:370
 msgid "Picture Files"
-msgstr ""
+msgstr "Αρχεία εικόνας"
 
 #: ./src/views/ManagePackage.vue:56
 msgid "Presentation"
-msgstr ""
+msgstr "Παρουσίαση"
 
 #: ./src/views/ManageRevisions.vue:170
 msgid "Processing"
-msgstr ""
+msgstr "Γίνεται επεξεργασία"
 
 #: ./src/views/Submit.vue:75
 msgid "Prohibited Apps"
@@ -793,11 +793,11 @@ msgstr ""
 
 #: ./src/views/ManagePackage.vue:24
 msgid "Public Link"
-msgstr ""
+msgstr "Δημόσιος σύνδεσμος"
 
 #: ./src/views/ManagePackage.vue:31
 msgid "Publish"
-msgstr ""
+msgstr "Δημοσίευση"
 
 #: ./src/views/Manage.vue:80
 #: ./src/views/Package.vue:210
@@ -806,7 +806,7 @@ msgstr ""
 
 #: ./src/views/ManagePackage.vue:434
 msgid "Published Date"
-msgstr ""
+msgstr "Ημερομηνία δημοσίευσης"
 
 #: ./src/views/Package.vue:371
 msgid "Push Notifications"
@@ -826,11 +826,11 @@ msgstr ""
 
 #: ./src/views/Browse.vue:44
 msgid "Relevance"
-msgstr ""
+msgstr "Συνάφεια"
 
 #: ./src/App.vue:108
 msgid "Report an Issue"
-msgstr ""
+msgstr "Υποβάλετε ένα σφάλμα"
 
 #: ./src/views/Package.vue:474
 msgid "Restricted permission"
@@ -838,16 +838,16 @@ msgstr ""
 
 #: ./src/components/Reviews.vue:3
 msgid "Reviews"
-msgstr ""
+msgstr "Κριτικές"
 
 #: ./src/views/ManagePackage.vue:452
 msgid "Revision"
-msgstr ""
+msgstr "Αναθεώρηση"
 
 #: ./src/App.vue:116
 #: ./src/views/Feeds.vue:3
 msgid "RSS Feeds"
-msgstr ""
+msgstr "Τροφοδοσίες RSS"
 
 #: ./src/views/Submit.vue:4
 msgid "Rules for Submission"
@@ -859,15 +859,15 @@ msgstr ""
 
 #: ./src/views/About.vue:53
 msgid "Run the command:"
-msgstr ""
+msgstr "Εκτέλεση της εντολής:"
 
 #: ./src/views/ManagePackage.vue:502
 msgid "Save"
-msgstr ""
+msgstr "Αποθήκευση"
 
 #: ./src/views/Package.vue:150
 msgid "Screenshots"
-msgstr ""
+msgstr "Στιγμιότυπα οθόνης"
 
 #: ./src/views/ManagePackage.vue:165
 msgid "Screenshots (Limit 5)"
@@ -876,7 +876,7 @@ msgstr ""
 #: ./src/views/Browse.vue:9
 #: ./src/views/Manage.vue:25
 msgid "Search"
-msgstr ""
+msgstr "Αναζήτηση"
 
 #: ./src/views/Submit.vue:39
 msgid "Send us a link to a repository for your app to our telegram group along with some instructions on how to build it."
@@ -884,7 +884,7 @@ msgstr ""
 
 #: ./src/views/Package.vue:372
 msgid "Sensors"
-msgstr ""
+msgstr "Αισθητήρες"
 
 #: ./src/views/Submit.vue:80
 msgid "Sexually Explicit Content"
@@ -892,7 +892,7 @@ msgstr ""
 
 #: ./src/views/ManagePackage.vue:488
 msgid "Show All Revisions"
-msgstr ""
+msgstr "Εμφάνιση όλων των αναθεωρήσεων"
 
 #: ./src/views/Package.vue:160
 msgid "Show NSFW Content"
@@ -904,15 +904,15 @@ msgstr ""
 
 #: ./src/views/Browse.vue:42
 msgid "Sort By"
-msgstr ""
+msgstr "Ταξινόμηση κατά"
 
 #: ./src/views/Package.vue:191
 msgid "Source"
-msgstr ""
+msgstr "Πηγή"
 
 #: ./src/App.vue:92
 msgid "Source Code"
-msgstr ""
+msgstr "Πηγαίος κώδικας"
 
 #: ./src/views/ManagePackage.vue:298
 msgid "Source URL"
@@ -924,37 +924,37 @@ msgstr ""
 #: ./src/views/Stats.vue:100
 #: ./src/views/Stats.vue:104
 msgid "Stats"
-msgstr ""
+msgstr "Στατιστικά"
 
 #: ./src/views/Manage.vue:55
 msgid "Status"
-msgstr ""
+msgstr "Κατάσταση"
 
 #: ./src/App.vue:34
 #: ./src/views/Submit.vue:160
 msgid "Submit"
-msgstr ""
+msgstr "Υποβολή"
 
 #: ./src/views/Manage.vue:9
 #: ./src/views/Submit.vue:134
 #: ./src/views/Submit.vue:190
 #: ./src/views/Submit.vue:194
 msgid "Submit App"
-msgstr ""
+msgstr "Υποβολή εφαρμογής"
 
 #: ./src/views/About.vue:140
 msgid "Submit your app"
-msgstr ""
+msgstr "Υποβάλετε την εφαρμογή σας"
 
 #: ./src/views/ManagePackage.vue:728
 #: ./src/views/ManagePackage.vue:756
 #: ./src/views/ManageRevisions.vue:286
 msgid "Success"
-msgstr ""
+msgstr "Επιτυχία"
 
 #: ./src/views/Package.vue:183
 msgid "Support"
-msgstr ""
+msgstr "Υποστήριξη"
 
 #: ./src/views/ManagePackage.vue:309
 msgid "Support URL"
@@ -966,11 +966,11 @@ msgstr ""
 
 #: ./src/App.vue:81
 msgid "Telegram"
-msgstr ""
+msgstr "Telegram"
 
 #: ./src/views/About.vue:105
 msgid "Terms"
-msgstr ""
+msgstr "Όροι"
 
 #: ./src/views/Package.vue:10
 #: ./src/views/PackageVersions.vue:12
@@ -1080,27 +1080,27 @@ msgstr ""
 
 #: ./src/views/ManagePackage.vue:121
 msgid "Title"
-msgstr ""
+msgstr "Τίτλος"
 
 #: ./src/views/Browse.vue:47
 msgid "Title (A-Z)"
-msgstr ""
+msgstr "Τίτλος (Α-Ω)"
 
 #: ./src/views/Browse.vue:48
 msgid "Title (Z-A)"
-msgstr ""
+msgstr "Τίτλος (Ω-Α)"
 
 #: ./src/views/ManagePackage.vue:477
 msgid "Total"
-msgstr ""
+msgstr "Σύνολο"
 
 #: ./src/views/Package.vue:276
 msgid "Total downloads"
-msgstr ""
+msgstr "Συνολικές λήψεις"
 
 #: ./src/views/Manage.vue:85
 msgid "Total:"
-msgstr ""
+msgstr "Σύνολο:"
 
 #: ./src/views/ManagePackage.vue:425
 #: ./src/views/Package.vue:225
@@ -1115,19 +1115,19 @@ msgstr ""
 #: ./src/views/Browse.vue:33
 #: ./src/views/ManagePackage.vue:416
 msgid "Type"
-msgstr ""
+msgstr "Τύπος"
 
 #: ./src/views/About.vue:14
 msgid "Ubuntu Touch"
-msgstr ""
+msgstr "Ubuntu Touch"
 
 #: ./src/views/Browse.vue:3
 msgid "Ubuntu Touch Apps"
-msgstr ""
+msgstr "Εφαρμογές Ubuntu Touch"
 
 #: ./src/views/Stats.vue:116
 msgid "Uncategorized"
-msgstr ""
+msgstr "Μη κατηγοριοποιημένα"
 
 #: ./src/views/Package.vue:256
 msgid "Unrestricted read access to:"
@@ -1139,7 +1139,7 @@ msgstr ""
 
 #: ./src/views/Package.vue:205
 msgid "Updated"
-msgstr ""
+msgstr "Ενημερωμένο"
 
 #: ./src/views/Feeds.vue:10
 msgid "Updated Apps"
@@ -1156,7 +1156,7 @@ msgstr ""
 #: ./src/views/ManageRevisions.vue:23
 #: ./src/views/ManageRevisions.vue:306
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: ./src/views/ManageRevisions.vue:70
 msgid "URL of App from the Web"
@@ -1169,15 +1169,15 @@ msgstr ""
 #: ./src/views/Manage.vue:56
 #: ./src/views/ManagePackage.vue:455
 msgid "Version"
-msgstr ""
+msgstr "Έκδοση"
 
 #: ./src/views/Package.vue:376
 msgid "Video"
-msgstr ""
+msgstr "Βίντεο"
 
 #: ./src/views/Package.vue:375
 msgid "Video Files"
-msgstr ""
+msgstr "Αρχεία βίντεο"
 
 #: ./src/views/ManagePackage.vue:331
 msgid "Video URL"
@@ -1185,11 +1185,11 @@ msgstr ""
 
 #: ./src/views/About.vue:35
 msgid "View Install Instructions"
-msgstr ""
+msgstr "Προβολή οδηγιών εγκατάστασης"
 
 #: ./src/views/Submit.vue:93
 msgid "Violence"
-msgstr ""
+msgstr "Βία"
 
 #: ./src/components/Types.vue:4
 #: ./src/views/ManagePackage.vue:385
@@ -1213,17 +1213,17 @@ msgstr ""
 
 #: ./src/views/Manage.vue:4
 msgid "Welcome %{name}!"
-msgstr ""
+msgstr "Καλώς ήλθες %{name}!"
 
 #: ./src/views/ManageRevisions.vue:5
 #: ./src/views/ManageRevisions.vue:272
 msgid "Xenial"
-msgstr ""
+msgstr "Xenial"
 
 #: ./src/views/ManagePackage.vue:40
 #: ./src/views/ManagePackage.vue:357
 msgid "Yes"
-msgstr ""
+msgstr "Ναι"
 
 #: ./src/views/Submit.vue:11
 msgid "You are only allowed to publish apps that you have permission to distribute."
