@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2021-08-07 15:47+0000\n"
-"Last-Translator: German Semenov <GermanAizek@yandex.ru>\n"
+"PO-Revision-Date: 2021-10-05 08:58+0000\n"
+"Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/openstore/"
 "open-storeio/ru/>\n"
 "Language: ru\n"
@@ -25,7 +25,7 @@ msgid ""
 "*This app contains NSFW content, to view the description and\n"
 "screenshots, click the above button."
 msgstr ""
-"*Это приложение содержит контент для взрослых, чтобы просмотреть описание и\n"
+"*Это приложение содержит контент для взрослых. Чтобы просмотреть описание и\n"
 "скриншоты, нажмите на кнопку выше."
 
 #: src/views/ManagePackage.vue:577
@@ -74,7 +74,7 @@ msgstr "Произошла неизвестная ошибка"
 msgid ""
 "And many amazing developers, testers, and users from the OpenStore community!"
 msgstr ""
-"И множество замечательных разработчиков, тестеров и пользователей из "
+"И множество замечательных разработчиков, тестиовщиков и пользователей из "
 "сообщества OpenStore!"
 
 #: src/views/About.vue:122
@@ -86,17 +86,18 @@ msgid ""
 "contact you in the event there is an issue with your app.\n"
 "Additionally, this site uses cookies to keep you logged in to your account."
 msgstr ""
-"Любые личные данные, которые вы решите предоставить нам (например, ваш адрес "
-"электронной почты при регистрации Учетной записи для загрузки ваших "
-"приложений), не уйдут дальше нас,\n"
+"Любые личные данные, которые вы решите предоставить нам (например, адрес "
+"электронной почты при регистрации учетной записи для загрузки приложений), "
+"не уйдут дальше нас,\n"
 "и не будут использоваться ни для чего, кроме как для поддержки ваших "
-"приложений и, в редких случаях, для связи с вами, в случае возникновения "
-"проблемы с вашим приложением.\n"
-"Кроме того, этот сайт использует куки, чтобы вы вошли в свою учетную запись."
+"приложений и, в редких случаях, для связи с вами, ели с приложением "
+"возникнут какие-либо проблемы.\n"
+"Кроме того, этот сайт использует для работы cookie-файлы, которые необходимы "
+"для входа в учетную запись."
 
 #: src/views/Manage.vue:14
 msgid "API Key"
-msgstr "API Ключ"
+msgstr "API-ключ"
 
 #: src/components/Types.vue:3 src/views/Manage.vue:46 src/views/Stats.vue:108
 msgid "App"
@@ -118,7 +119,7 @@ msgstr "Статистика приложения"
 
 #: src/views/Submit.vue:150
 msgid "App Title"
-msgstr "Название Приложения"
+msgstr "Название приложения"
 
 #: src/views/Stats.vue:19
 msgid "App Type"
@@ -182,7 +183,7 @@ msgstr ""
 #: src/views/Submit.vue:108
 msgid "Apps promoting illegal activities (based on USA law) are not allowed."
 msgstr ""
-"Приложения, рекламирующие незаконную деятельность (основанные на "
+"Приложения, рекламирующие незаконную деятельность (основанную на "
 "законодательстве США), не допускаются."
 
 #: src/views/Submit.vue:18
