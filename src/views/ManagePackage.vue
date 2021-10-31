@@ -340,7 +340,7 @@
               <div
                 class="small text-lightgrey"
                 v-translate
-              >Only YouTube videos are supported at this time. Make sure the url is for the embedded video!</div>
+              >Only YouTube and Odysee videos are supported at this time. Make sure the url is for the embedded video!</div>
             </div>
           </div>
         </div>

@@ -684,7 +684,7 @@ msgid ""
 msgstr ""
 
 #: ./src/views/ManagePackage.vue:339
-msgid "Only YouTube videos are supported at this time. Make sure the url is for the embedded video!"
+msgid "Only YouTube and Odysee videos are supported at this time. Make sure the url is for the embedded video!"
 msgstr ""
 
 #: ./src/views/About.vue:50
