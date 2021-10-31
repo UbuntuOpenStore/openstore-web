@@ -22,7 +22,7 @@
     "easygettext": "^2.12.0",
     "lodash.isequal": "^4.5.0",
     "mini-toastr": "^0.8.1",
-    "node-sass": "^4.14.1",
+    "node-sass": "^6.0.1",
     "v-img": "^0.2.0",
     "vanilla-framework": "^1.8.1",
     "vue": "^2.6.11",
