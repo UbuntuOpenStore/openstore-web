@@ -116,6 +116,14 @@
             <li class="p-footer__item">
               <router-link :to="{name: 'feeds'}" class="p-footer__link" v-translate>RSS Feeds</router-link>
             </li>
+            <li class="p-footer__item">
+              <a
+                class="p-footer__link"
+                href="https://bhdouglass.com/donate/"
+                target="_blank"
+                v-translate
+              >Donate</a>
+            </li>
           </ul>
         </nav>
       </div>
