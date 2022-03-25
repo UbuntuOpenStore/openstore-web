@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2021-07-26 21:56+0000\n"
+"PO-Revision-Date: 2022-03-25 13:45+0000\n"
 "Last-Translator: Rondy Andersson <rondarius@vivaldi.net>\n"
 "Language-Team: Swedish <https://translate.ubports.com/projects/openstore/"
 "open-storeio/sv/>\n"
@@ -29,7 +29,7 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:577
 msgid "%{name} was successfully deleted"
-msgstr "%{name}har framgångsrikt tagits bort"
+msgstr "%{name} har framgångsrikt tagits bort"
 
 #: src/views/ManagePackage.vue:157
 msgid "A comma separated list of keywords"
@@ -159,7 +159,7 @@ msgid ""
 msgstr ""
 "Appar som innehåller eller uppmuntrar meningslöst våld är inte tillåtet.\n"
 "Detta inkluderar, men inte begränsat till, våld, terrorism, bomb/vapen "
-"tillverkning, självstypning och groteska illustrationer."
+"tillverkning, självstympning och groteska illustrationer."
 
 #: src/views/Submit.vue:75
 msgid ""
@@ -199,7 +199,7 @@ msgid ""
 "privileges without user consent,\n"
 "or executing malicious process are strictly prohibited."
 msgstr ""
-"Appar som blir upptäckta med att själa användarens data, försöker eskalera "
+"Appar som blir upptäckta med att stjäla användarens data, försöker eskalera "
 "deras privilegier utan användarens medgivande,\n"
 "eller utför skadliga processer är strängt förbjudet."
 
@@ -363,7 +363,7 @@ msgstr "Donera"
 
 #: src/views/ManagePackage.vue:216
 msgid "Donate URL"
-msgstr "Donera URL"
+msgstr "Donations URL"
 
 #: src/views/Package.vue:262
 msgid "Download"
@@ -450,8 +450,8 @@ msgid ""
 msgstr ""
 "Ge en kort beskrivning varför du inte kan publicera appen utan extra "
 "privilegier.\n"
-"Behöver inte gå in på några detaljer, en linje som ”behöver köra en daemon i "
-"bakgrunden” räcker.\n"
+"Behöver inte gå in på några detaljer, en rad som till exempel ”behöver köra "
+"en daemon i bakgrunden” räcker.\n"
 "Lista alla special funktioner som du har, om där finns fler."
 
 #: src/views/Browse.vue:187 src/views/Manage.vue:174
@@ -489,8 +489,9 @@ msgid ""
 "Not everyone will want to install apps with less confinement."
 msgstr ""
 "Om en applikation kunde bli publicerad utan en manuell genomgång om det inte "
-"vore för den där coola funktionen, publicera en avskalad version.\n"
-"Inte alla vill installera applikationer med färre inskränkning."
+"vore för den där coola funktionen, \n"
+"publicera en avskalad version.\n"
+"Inte alla vill installera applikationer med färre inskränkningar."
 
 #: src/views/Submit.vue:107
 msgid "Illegal Activities"
@@ -538,7 +539,7 @@ msgstr "Språk"
 
 #: src/views/Browse.vue:46
 msgid "Latest Update"
-msgstr "Senast uppdaterad"
+msgstr "Senaste Uppdateringen"
 
 #: src/views/About.vue:78 src/views/ManagePackage.vue:171
 #: src/views/Package.vue:173
@@ -705,8 +706,8 @@ msgid ""
 "Only YouTube videos are supported at this time. Make sure the url is for the "
 "embedded video!"
 msgstr ""
-"Endast Youtube videos stöds för tillfället. Säker ställ att url:en är för "
-"den inbäddade videon!"
+"Endast Youtube videos stöds för tillfället. Säkerställ att url:en är för den "
+"inbäddade videon!"
 
 #: src/views/About.vue:47
 msgid "Open the terminal app"
@@ -785,7 +786,8 @@ msgid ""
 msgstr ""
 "Marknadsför din app på OpenStore! Lägg til dessa märken på din websida,\n"
 "kod förråd, sociala medier, eller varhelst på internet. Märkena\n"
-"är tillgängliga i olika språk och i både PNG och SVG format."
+"är tillgängliga i olika språk och i både PNG och SVG\n"
+"format."
 
 #: src/views/ManagePackage.vue:14
 msgid "Public Link"
@@ -970,7 +972,7 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:552
 msgid "The changes to %{name} were saved!"
-msgstr "Förändringarna  till %[name] blev sparade!"
+msgstr "Förändringarna till %{name} blev sparade!"
 
 #: src/views/About.vue:104
 msgid ""
@@ -1005,7 +1007,7 @@ msgstr ""
 
 #: src/views/About.vue:141
 msgid "The OpenStore is made possible by many amazing contributors:"
-msgstr "OpenStore är möjliggjord på grund av många fantastiska kontributörer:"
+msgstr "OpenStore är möjliggjord på grund av många fantastiska bidragsgivare:"
 
 #: src/views/About.vue:5
 msgid ""
@@ -1040,7 +1042,7 @@ msgid ""
 "This information is not logged or stored and cannot be used to uniquely "
 "identify you."
 msgstr ""
-"OpenStore respekterar din inegritet.\n"
+"OpenStore respekterar din integritet.\n"
 "Vi spårar inte din enhet.\n"
 "Du behöver inget konto för att ladda ner och installera appar och vi spårar "
 "inte dina nedladdningar.\n"
@@ -1221,19 +1223,19 @@ msgstr "Våld"
 
 #: src/components/Types.vue:5 src/views/Stats.vue:110
 msgid "Web App"
-msgstr "Web App"
+msgstr "Webb App"
 
 #: src/components/Types.vue:6 src/views/Stats.vue:111
 msgid "Web App+"
-msgstr "Web App+"
+msgstr "Webb App+"
 
 #: src/views/Browse.vue:33
 msgid "Web Apps"
-msgstr "Web Appar"
+msgstr "Webb Appar"
 
 #: src/views/Package.vue:292
 msgid "Webview"
-msgstr "Webbvy"
+msgstr "Webb vy"
 
 #: src/views/Manage.vue:4
 msgid "Welcome %{name}!"
@@ -1251,7 +1253,7 @@ msgstr "Ja"
 msgid ""
 "You are only allowed to publish apps that you have permission to distribute."
 msgstr ""
-"Du har endast tillåtelse att publicera appar som du tillåtelse till att "
+"Du har endast tillåtelse att publicera appar som du har tillåtelse till att "
 "distribuera."
 
 #: src/views/Submit.vue:22
@@ -1265,7 +1267,7 @@ msgid ""
 msgstr ""
 "Din app kan bli bortplockad utan förvarning enligt våra administratörers "
 "bedömning.\n"
-"Där det är möjligt, kommer vi kontakta er angående en sådan handling."
+"Där det är möjligt, kommer vi att kontakta er angående en sådan handling."
 
 #~ msgid "All Channels"
 #~ msgstr "Alla Kanaler"
