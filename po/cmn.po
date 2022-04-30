@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-30 00:38-0500\n"
-"PO-Revision-Date: 2021-06-14 01:05+0000\n"
-"Last-Translator: Ito Rimai <ItoRimai@foxmail.com>\n"
+"PO-Revision-Date: 2022-04-19 12:50+0000\n"
+"Last-Translator: Animoe <w42023@outlook.com>\n"
 "Language-Team: Chinese (Mandarin) <https://translate.ubports.com/projects/"
 "openstore/open-storeio/cmn/>\n"
 "Language: cmn\n"
@@ -446,13 +446,13 @@ msgid "ID"
 msgstr "身份证件"
 
 #: src/views/Submit.vue:44
-#, fuzzy
 msgid ""
 "If an application could be published without manual review if it wouldn’t be for that one cool feature,\npublish a stripped down version!\n"
 "Not everyone will want to install apps with less confinement."
 msgstr ""
-"如果某个应用软件可以在没有人工审核的情况下发布，如果它不适用于那个很酷的功能，请发布一个精简版本！\n"
-"并不是每个人都希望安装限制较少的应用软件。"
+"如果某个应用软件可以在没有人工审核的情况下发布，如果它不适用于那个很酷的功能，\n"
+"就请发布一个精简版本！\n"
+"并不是每个人都希望安装较少限制的应用软件。"
 
 #: src/views/Submit.vue:107
 msgid "Illegal Activities"
