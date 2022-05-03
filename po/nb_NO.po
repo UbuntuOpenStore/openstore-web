@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-08 23:33-0400\n"
-"PO-Revision-Date: 2021-03-16 23:59+0000\n"
+"PO-Revision-Date: 2022-05-03 03:21+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://translate.ubports.com/projects/"
 "openstore/open-storeio/nb_NO/>\n"
@@ -291,7 +291,7 @@ msgstr "Velg vedlikeholder"
 
 #: src/views/Package.vue:292
 msgid "Connectivity"
-msgstr "Tilkobling"
+msgstr "Tilknytning"
 
 #: src/views/About.vue:59
 msgid "Contact"
@@ -327,7 +327,7 @@ msgstr "Opprett"
 
 #: src/views/Package.vue:296
 msgid "Debug"
-msgstr "Feilsøk"
+msgstr "Avlus"
 
 #: src/views/ManagePackage.vue:353
 msgid "Delete"
@@ -368,7 +368,7 @@ msgstr "Nedlastinger"
 
 #: src/views/Package.vue:166
 msgid "Downloads of the latest version"
-msgstr "Nedlastinger av nyeste versjon"
+msgstr "Nedlastninger av nyeste versjon"
 
 #: src/views/ManagePackage.vue:119
 msgid "Drag and drop to sort screenshots."
@@ -479,7 +479,7 @@ msgstr "Ulovlige aktiviteter"
 
 #: src/views/Package.vue:298
 msgid "In App Purchases"
-msgstr "Kjøp i programmer"
+msgstr "Kjøpsmuligheter i programmer"
 
 #: src/views/ManagePackage.vue:60 src/views/Package.vue:177
 msgid "Info"
@@ -487,11 +487,11 @@ msgstr "Info"
 
 #: src/views/About.vue:29 src/views/Package.vue:39
 msgid "Install"
-msgstr "Installér"
+msgstr "Installer"
 
 #: src/views/Package.vue:285
 msgid "Install via the OpenStore app"
-msgstr "Installér via OpenStore appen"
+msgstr "Installer via OpenStore-programmet"
 
 #: src/views/Browse.vue:186 src/views/Manage.vue:173
 msgid "Jump to the first page"
@@ -724,7 +724,7 @@ msgstr "Pakkeinformasjon"
 
 #: src/views/Package.vue:187
 msgid "Packager/Publisher"
-msgstr "Utgiver"
+msgstr "Sammenpakker/utgiver"
 
 #: src/views/NotFound.vue:3
 msgid "Page Not Found"
@@ -1085,7 +1085,7 @@ msgstr "Totalt"
 
 #: src/views/Package.vue:170
 msgid "Total downloads"
-msgstr "Totalt antall nedlastinger"
+msgstr "Totalt antall nedlastninger"
 
 #: src/views/Manage.vue:79
 msgid "Total:"
@@ -1173,11 +1173,11 @@ msgstr "Vold"
 
 #: src/components/Types.vue:5 src/views/Stats.vue:110
 msgid "Web App"
-msgstr "Web app"
+msgstr "Nett-program"
 
 #: src/components/Types.vue:6 src/views/Stats.vue:111
 msgid "Web App+"
-msgstr "Web app+"
+msgstr "Nett-program+"
 
 #: src/views/Browse.vue:33
 msgid "Web Apps"
