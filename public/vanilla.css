@@ -4401,3 +4401,9 @@ select {
 
 .text-white {
   color: #f5f5f5; }
+
+  .p-navigation .p-navigation__links .p-navigation__link {
+  border-left: none; }
+
+.p-navigation .p-navigation__links:last-of-type {
+  border-right: none; }
