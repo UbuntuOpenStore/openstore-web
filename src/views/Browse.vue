@@ -116,6 +116,7 @@
 </template>
 
 <script>
+import Vue from 'vue';
 import { mapState } from 'vuex';
 import debounce from 'debounce';
 import isEqual from 'lodash.isequal';
@@ -161,6 +162,7 @@ export default {
       apps: [],
       loading: false,
       error: false,
+      created: false,
     };
   },
   created() {
@@ -171,6 +173,10 @@ export default {
       query: this.$router.currentRoute.query,
     });
     this.debounceRefresh();
+
+    Vue.nextTick().then(() => {
+      this.created = true;
+    });
   },
   methods: {
     getQueryParams() {
@@ -228,7 +234,7 @@ export default {
         const search = this.$route.query.search ? this.$route.query.search : '';
         if (search != this.query.search) {
           this.query.search = search;
-          this.query.sort = 'relevance';
+          this.query.sort = this.query.sort ? this.query.sort : 'relevance';
           changed = true;
         }
       }
@@ -322,11 +328,13 @@ export default {
     },
     'query.search': function() {
       this.resetPage();
-      if (this.query.search) {
-        this.query.sort = 'relevance';
-      }
-      else {
-        this.query.sort = DEFAULT_SORT;
+      if (this.created) {
+        if (this.query.search) {
+          this.query.sort = 'relevance';
+        }
+        else {
+          this.query.sort = DEFAULT_SORT;
+        }
       }
 
       this.debounceRefresh();
