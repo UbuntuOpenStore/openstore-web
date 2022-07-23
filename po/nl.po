@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2022-02-15 06:07+0000\n"
+"PO-Revision-Date: 2022-07-23 13:25+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://translate.ubports.com/projects/openstore/"
 "open-storeio/nl/>\n"
@@ -97,7 +97,7 @@ msgstr ""
 
 #: src/views/Manage.vue:14
 msgid "API Key"
-msgstr "API-sleutel"
+msgstr "Api-sleutel"
 
 #: src/components/Types.vue:3 src/views/Manage.vue:46 src/views/Stats.vue:108
 msgid "App"
