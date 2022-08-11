@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-28 00:36-0400\n"
-"PO-Revision-Date: 2021-07-24 23:19+0000\n"
-"Last-Translator: Stefan Kalb <stefan.kalb@gmx.ch>\n"
+"PO-Revision-Date: 2022-08-11 18:31+0000\n"
+"Last-Translator: Lundrin <berenyi.vilmos@tutanota.com>\n"
 "Language-Team: Hungarian <https://translate.ubports.com/projects/openstore/"
 "open-storeio/hu/>\n"
 "Language: hu\n"
@@ -275,36 +275,36 @@ msgstr "Mégsem"
 #: src/views/Browse.vue:20 src/views/ManagePackage.vue:208
 #: src/views/Package.vue:245
 msgid "Category"
-msgstr ""
+msgstr "Kategória"
 
 #: src/views/ManagePackage.vue:154 src/views/ManageRevisions.vue:69
 #: src/views/Package.vue:163
 msgid "Changelog"
-msgstr ""
+msgstr "Változáslista"
 
 #: src/views/ManagePackage.vue:453 src/views/ManageRevisions.vue:4
 msgid "Channel"
-msgstr ""
+msgstr "Csatorna"
 
 #: src/views/ManagePackage.vue:420
 msgid "Channels"
-msgstr ""
+msgstr "Csatornák"
 
 #: src/views/Submit.vue:87
 msgid "Child Endangerment"
-msgstr ""
+msgstr "Gyermekveszélyeztetés"
 
 #: src/views/ManagePackage.vue:216
 msgid "Choose a category"
-msgstr ""
+msgstr "Válasszon egy kategóriát"
 
 #: src/views/ManagePackage.vue:263
 msgid "Choose a license"
-msgstr ""
+msgstr "Válasszon egy licencet"
 
 #: src/views/ManagePackage.vue:371
 msgid "Choose a maintainer"
-msgstr ""
+msgstr "Válasszon egy fejlesztőt"
 
 #: src/views/Package.vue:348
 msgid "Connectivity"
@@ -312,7 +312,7 @@ msgstr "Hálózati kapcsolatok"
 
 #: src/views/About.vue:62
 msgid "Contact"
-msgstr ""
+msgstr "Kapcsolat"
 
 #: src/views/Package.vue:349
 msgid "Contacts"
@@ -328,19 +328,19 @@ msgstr "Tartalom-csere Forrás"
 
 #: src/views/About.vue:142
 msgid "Contributors"
-msgstr ""
+msgstr "Hozzájárulók"
 
 #: src/components/CopyLine.vue:9
 msgid "Copy to clipboard"
-msgstr ""
+msgstr "Másolás vágólapra"
 
 #: src/views/Stats.vue:22
 msgid "Count"
-msgstr ""
+msgstr "Szám"
 
 #: src/views/ManageRevisions.vue:84
 msgid "Create"
-msgstr ""
+msgstr "Létrehoz"
 
 #: src/views/Package.vue:352
 msgid "Debug"
@@ -348,7 +348,7 @@ msgstr "Hibakeresés"
 
 #: src/views/ManagePackage.vue:511
 msgid "Delete"
-msgstr ""
+msgstr "Törlés"
 
 #: src/views/ManagePackage.vue:143
 msgid "Description"
@@ -356,32 +356,32 @@ msgstr "Leírás"
 
 #: src/views/ManagePackage.vue:66
 msgid "Discovery"
-msgstr ""
+msgstr "Felfedezés"
 
 #: src/views/Package.vue:128
 msgid "Donate"
-msgstr ""
+msgstr "Adományoz"
 
 #: src/views/ManagePackage.vue:320
 msgid "Donate URL"
-msgstr ""
+msgstr "Adományozási URL"
 
 #: src/views/Package.vue:68 src/views/Package.vue:87
 msgid "Download"
-msgstr ""
+msgstr "Letöltés"
 
 #: src/views/ManagePackage.vue:446
 msgid "Download Stats"
-msgstr ""
+msgstr "Letöltési Statisztikák"
 
 #: src/views/About.vue:44
 msgid "Download the OpenStore App"
-msgstr ""
+msgstr "Openstore-App letöltése"
 
 #: src/views/Manage.vue:57 src/views/Manage.vue:75
 #: src/views/ManagePackage.vue:456
 msgid "Downloads"
-msgstr ""
+msgstr "Letöltések"
 
 #: src/views/Package.vue:201
 msgid "Downloads of the latest version"
@@ -389,40 +389,43 @@ msgstr "Legújabb verziót letöltötték"
 
 #: src/views/ManagePackage.vue:178
 msgid "Drag and drop to sort screenshots."
-msgstr ""
+msgstr "Fogd és vidd a képernyőmentések rendezéséhez."
 
 #: src/views/ManagePackage.vue:12
 msgid "Edit"
-msgstr ""
+msgstr "Szerkesztés"
 
 #: src/views/ManagePackage.vue:611 src/views/ManagePackage.vue:624
 #: src/views/ManagePackage.vue:742 src/views/ManagePackage.vue:773
 #: src/views/ManageRevisions.vue:175 src/views/ManageRevisions.vue:239
 #: src/views/Submit.vue:231
 msgid "Error"
-msgstr ""
+msgstr "Hiba"
 
 #: src/views/Feeds.vue:24 src/views/Feeds.vue:28
 msgid "Feeds"
-msgstr ""
+msgstr "Hírek"
 
 #: src/views/ManageRevisions.vue:22
 msgid "File"
-msgstr ""
+msgstr "Fájl"
 
 #: src/views/ManageRevisions.vue:40
 msgid "File Upload"
-msgstr ""
+msgstr "Fájl Feltöltése"
 
 #: src/views/About.vue:64
 msgid ""
 "For any questions you may have or help you may need just chat with us in our telegram group.\n"
 "  You can also submit issues, bugs, and feature requests to our GitLab bug tracker."
 msgstr ""
+"Ha kérdésed van, vagy segítségre van szükséged, írj nekünk a telegram "
+"csoportunkban.\n"
+"  Hibajelentéseket és funkció kéréseket a GitLab bug trackerünkön is leadhat."
 
 #: src/views/ManagePackage.vue:412 src/views/Package.vue:260
 msgid "Framework"
-msgstr ""
+msgstr "Framework"
 
 #: src/views/Package.vue:370
 msgid "Full System Access"
@@ -430,11 +433,11 @@ msgstr "Teljes Rendszerhozzáérés"
 
 #: src/views/Submit.vue:104
 msgid "Gambling"
-msgstr ""
+msgstr "Szerencsejáték"
 
 #: src/views/About.vue:23
 msgid "Get your badge"
-msgstr ""
+msgstr "Szerezze meg a jelvényét"
 
 #: src/views/Submit.vue:44
 msgid ""
@@ -442,22 +445,27 @@ msgid ""
 "  No need to go into details, a one liner like \"needs to run a daemon in the background\" will do.\n"
 "  List all the special features you have, if there are more."
 msgstr ""
+"Írjon egy rövid magyarázatot, mért nem tudja kiadni az alkalmazást extra "
+"hozzáférések nélkül.\n"
+"  Nem kell részletekbe menni, egy egysoros, mint \"futtatnia kell egy daemon-"
+"t a háttérben\" megteszi.\n"
+"  Sorolja fel a különleges funkcióit, ha több is van."
 
 #: src/components/Pagination.vue:46
 msgid "Go back a page"
-msgstr ""
+msgstr "Vissza az előző oldalra"
 
 #: src/components/Pagination.vue:47
 msgid "Go to the next page"
-msgstr ""
+msgstr "Lépés a következő oldalra"
 
 #: src/views/About.vue:89
 msgid "GPL v3 License"
-msgstr ""
+msgstr "GPL v3 Licenc"
 
 #: src/views/Submit.vue:100
 msgid "Harassment, Bullying, or Hate Speech"
-msgstr ""
+msgstr "Zaklatás, Bullying, vagy Gyűlöletbeszéd"
 
 #: src/views/Package.vue:353
 msgid "History"
@@ -465,11 +473,11 @@ msgstr "Előzmények"
 
 #: src/views/Manage.vue:51
 msgid "Icon"
-msgstr ""
+msgstr "Ikon"
 
 #: src/views/ManagePackage.vue:400
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #: src/views/Submit.vue:49
 msgid ""
@@ -477,10 +485,14 @@ msgid ""
 "  publish a stripped down version!\n"
 "  Not everyone will want to install apps with less confinement."
 msgstr ""
+"Ha egy alkalmazás nem adható ki manuális elbírálás nélkül, ha nem lenne az a "
+"különleges része,\n"
+"  adjon ki egy visszafogottabb változatot!\n"
+"  Nem mindenki szeretne telepíteni egy alkalmazást kevesebb elszigeteléssel."
 
 #: src/views/Submit.vue:111
 msgid "Illegal Activities"
-msgstr ""
+msgstr "Illegális Tevékenységek"
 
 #: src/views/Package.vue:354
 msgid "In App Purchases"
@@ -488,7 +500,7 @@ msgstr "Alkalmazáson belüli vásárlások"
 
 #: src/views/ManagePackage.vue:76 src/views/Package.vue:214
 msgid "Info"
-msgstr ""
+msgstr "Infó"
 
 #: src/views/About.vue:27 src/views/Package.vue:49
 msgid "Install"
@@ -496,15 +508,15 @@ msgstr "Telepítés"
 
 #: src/views/Package.vue:340
 msgid "Install via the OpenStore app"
-msgstr ""
+msgstr "Letöltés az OpenStore alkalmazással"
 
 #: src/components/Pagination.vue:45
 msgid "Jump to the first page"
-msgstr ""
+msgstr "Ugrás az első oldalra"
 
 #: src/components/Pagination.vue:48
 msgid "Jump to the last page"
-msgstr ""
+msgstr "Ugrás az utolsó oldalra"
 
 #: src/views/Package.vue:355
 msgid "Keep Display On"
@@ -512,15 +524,15 @@ msgstr "Kijelző ébrentartása"
 
 #: src/views/Manage.vue:17
 msgid "Keep your api key private!"
-msgstr ""
+msgstr "Tartsa az API kulcsát titokban!"
 
 #: src/views/ManagePackage.vue:227
 msgid "Keywords"
-msgstr ""
+msgstr "Kulcsszavak"
 
 #: src/App.vue:66 src/components/BadgeSelect.vue:4
 msgid "Language"
-msgstr ""
+msgstr "Nyelv"
 
 #: src/views/Browse.vue:49
 msgid "Latest Update"
@@ -537,56 +549,56 @@ msgstr "Tartózkodási hely"
 
 #: src/views/ManagePackage.vue:349
 msgid "Locked"
-msgstr ""
+msgstr "Lezárva"
 
 #: src/App.vue:43
 msgid "Log In"
-msgstr ""
+msgstr "Bejelentkezés"
 
 #: src/views/Login.vue:24
 msgid "Log in to the OpenStore to be able to manage your apps."
-msgstr ""
+msgstr "Lépjen be az OpenStore-ba hogy kezelhesse az alkalmazásait."
 
 #: src/App.vue:49
 msgid "Log Out"
-msgstr ""
+msgstr "Kijelentkezés"
 
 #: src/views/Login.vue:40 src/views/Login.vue:44
 msgid "Login"
-msgstr ""
+msgstr "Bejelentkezés"
 
 #: src/views/Submit.vue:127
 msgid "Login to submit your app"
-msgstr ""
+msgstr "Lépjen be, hogy kiadhassa az alkalmazását"
 
 #: src/views/Login.vue:7
 msgid "Login via GitHub"
-msgstr ""
+msgstr "Bejelentkezés Github-bal"
 
 #: src/views/Login.vue:12
 msgid "Login via GitLab"
-msgstr ""
+msgstr "Bejelentkezés Gitlab-bal"
 
 #: src/views/Login.vue:18
 msgid "Login via Ubuntu One"
-msgstr ""
+msgstr "Bejelentkezés Ubuntu One-nal"
 
 #: src/views/ManagePackage.vue:364
 msgid "Maintainer"
-msgstr ""
+msgstr "Fejlesztő"
 
 #: src/views/Submit.vue:115
 msgid "Malware"
-msgstr ""
+msgstr "Kártékony Szoftver"
 
 #: src/App.vue:46 src/views/Manage.vue:131 src/views/ManagePackage.vue:543
 #: src/views/ManagePackage.vue:545
 msgid "Manage"
-msgstr ""
+msgstr "Kezelés"
 
 #: src/views/Manage.vue:127
 msgid "Manage Apps"
-msgstr ""
+msgstr "Alkalmazás Kezelése"
 
 #: src/views/Package.vue:357
 msgid "Microphone"
@@ -598,11 +610,11 @@ msgstr "Zenei fájlok"
 
 #: src/views/Manage.vue:52
 msgid "Name"
-msgstr ""
+msgstr "Név"
 
 #: src/views/About.vue:51
 msgid "Navigate to the downloads folder"
-msgstr ""
+msgstr "Navigálás a letöltések mappába"
 
 #: src/views/Package.vue:360
 msgid "Networking"
@@ -610,24 +622,24 @@ msgstr "Hálózatok"
 
 #: src/views/Feeds.vue:6
 msgid "New Apps"
-msgstr ""
+msgstr "Új Alkalmazások"
 
 #: src/views/ManagePackage.vue:50 src/views/ManageRevisions.vue:124
 #: src/views/ManageRevisions.vue:126
 msgid "New Revision"
-msgstr ""
+msgstr "Új Verzió"
 
 #: src/views/ManageRevisions.vue:249 src/views/ManageRevisions.vue:250
 msgid "New revision for %{channel} was created!"
-msgstr ""
+msgstr "Új verzió létrehozva %{channel}-hoz!"
 
 #: src/views/ManageRevisions.vue:8
 msgid "New Revision for %{name}"
-msgstr ""
+msgstr "Új verzió %{name}-hoz"
 
 #: src/views/ManageRevisions.vue:253 src/views/ManageRevisions.vue:254
 msgid "New revisions for %{channel} were created!"
-msgstr ""
+msgstr "Új verziók létrehozva %{channel}-hoz!"
 
 #: src/views/Browse.vue:47
 msgid "Newest"
@@ -635,32 +647,32 @@ msgstr "Legújabb"
 
 #: src/views/ManagePackage.vue:41 src/views/ManagePackage.vue:358
 msgid "No"
-msgstr ""
+msgstr "Nem"
 
 #: src/views/Browse.vue:106 src/views/Manage.vue:100
 msgid "No apps found."
-msgstr ""
+msgstr "Nem találtunk ilyen alkalmazást."
 
 #: src/views/Package.vue:47
 msgid "No longer available"
-msgstr ""
+msgstr "Már nem elérhető"
 
 #: src/views/Manage.vue:87 src/views/Manage.vue:92
 #: src/views/ManagePackage.vue:383 src/views/Package.vue:189
 msgid "None"
-msgstr ""
+msgstr "Nincs"
 
 #: src/views/Manage.vue:81
 msgid "Not published"
-msgstr ""
+msgstr "Nincs kiadva"
 
 #: src/views/ManagePackage.vue:239
 msgid "NSFW"
-msgstr ""
+msgstr "NSFW"
 
 #: src/views/Browse.vue:99
 msgid "NSFW content"
-msgstr ""
+msgstr "NSFW tartalom (18+)"
 
 #: src/views/Browse.vue:48
 msgid "Oldest"
@@ -678,56 +690,69 @@ msgid ""
 "Any account with serious infractions may be subject to termination.\n"
 "The OpenStore team thanks you for helping us promote a better enviroment for everyone."
 msgstr ""
+"Az OpenStore egyik fő célja egy biztonságos alkalmazásáruház biztosítása az "
+"összes korosztály számára.\n"
+"Ezen cél elérése érdekében bizonyos típusú alkalmazásokat nem engedünk "
+"kiadni.\n"
+"A megszabott szabályok megszegése az alkalmazás eltávolításához vezet.\n"
+"Súlyos szabályszegés a felhasználó tiltásához vezethet.\n"
+"Az OpenStore csapat köszöni a segítségét egy mindenkinek jobb környezet "
+"létrehozásában."
 
 #: src/views/Submit.vue:54
 msgid ""
 "Only open source applications allowed for manual review:\n"
 "  As the applications might have arbitrary access to the device, every manually reviewed app will get a source code review."
 msgstr ""
+"Csak nyílt forráskódú alkalmazásokat lehet manuális elbírálásra benyújtani:\n"
+"  Mivel az alkalmazásoknak lehet korlátlan hozzáférése a készülékhez, ezért "
+"minden manuálisan elbírált alkalmazás kódját auditálják."
 
 #: src/views/ManagePackage.vue:339
 msgid "Only YouTube videos are supported at this time. Make sure the url is for the embedded video!"
 msgstr ""
+"Jelenleg csak YouTube videók támogatottak. Győződjön meg, hogy az url a "
+"beágyazott videóé!"
 
 #: src/views/About.vue:50
 msgid "Open the terminal app"
-msgstr ""
+msgstr "Nyissa meg a terminál alkalmazást"
 
 #: src/views/About.vue:149
 msgid "OpenStore API/Server Contributors"
-msgstr ""
+msgstr "OpenStore API/Server Hozzájárulók"
 
 #: src/views/Submit.vue:64
 msgid "OpenStore App Content Policy"
-msgstr ""
+msgstr "OpenStore Alkalmazások Tartalmi Szabályzata"
 
 #: src/views/About.vue:161
 msgid "OpenStore App Contributors"
-msgstr ""
+msgstr "OpenStore Alkalmazás Hozzájárulói"
 
 #: src/views/Badge.vue:3
 msgid "OpenStore Badges"
-msgstr ""
+msgstr "OpenStore Jelvények"
 
 #: src/views/About.vue:70
 msgid "OpenStore group on Telegram"
-msgstr ""
+msgstr "OpenStore csoport Telegramon"
 
 #: src/views/About.vue:96
 msgid "OpenStore source on GitLab"
-msgstr ""
+msgstr "OpenStore forráskód GitLab-on"
 
 #: src/views/About.vue:155
 msgid "OpenStore Website Contributors"
-msgstr ""
+msgstr "OpenStore Honlap Hozzájárulói"
 
 #: src/views/ManagePackage.vue:381
 msgid "Override Type"
-msgstr ""
+msgstr "Override Type"
 
 #: src/views/ManagePackage.vue:395
 msgid "Package Info"
-msgstr ""
+msgstr "Csomag Infó"
 
 #: src/views/Package.vue:224
 msgid "Packager/Publisher"
@@ -735,7 +760,7 @@ msgstr "Csomagoló/Kiadó"
 
 #: src/views/NotFound.vue:3
 msgid "Page Not Found"
-msgstr ""
+msgstr "Oldal Nem Található"
 
 #: src/views/Package.vue:119 src/views/Package.vue:170
 msgid "Permissions"
@@ -747,15 +772,15 @@ msgstr "Képfájlok"
 
 #: src/views/ManagePackage.vue:56
 msgid "Presentation"
-msgstr ""
+msgstr "Prezentáció"
 
 #: src/views/Submit.vue:75
 msgid "Prohibited Apps"
-msgstr ""
+msgstr "Tiltott Alkalmazások"
 
 #: src/views/About.vue:20
 msgid "Promote your app on the OpenStore!"
-msgstr ""
+msgstr "Hirdesse az alkalmazását az OpenStore-on!"
 
 #: src/views/Badge.vue:5
 msgid ""
@@ -764,22 +789,26 @@ msgid ""
 "  are available in several different languages and in both PNG and SVG\n"
 "  formats."
 msgstr ""
+"Hirdesse az alkalmazását az OpenStore-on! Adja hozzá ezeket a jelvényeket a\n"
+"  honlapjához, Kód tárolójához, közösségi médiájához, vagy bárhol az\n"
+"  interneten. A jelvények elérhetők több különböző nyelven PNG és SVG\n"
+"  formátumban is."
 
 #: src/views/ManagePackage.vue:24
 msgid "Public Link"
-msgstr ""
+msgstr "Nyilvános Link"
 
 #: src/views/ManagePackage.vue:31
 msgid "Publish"
-msgstr ""
+msgstr "Kiadás"
 
 #: src/views/Manage.vue:80 src/views/Package.vue:255
 msgid "Published"
-msgstr ""
+msgstr "Kiadva"
 
 #: src/views/ManagePackage.vue:434
 msgid "Published Date"
-msgstr ""
+msgstr "Kiadás Dátuma"
 
 #: src/views/Package.vue:363
 msgid "Push Notifications"
@@ -803,43 +832,43 @@ msgstr "Relevancia"
 
 #: src/App.vue:108
 msgid "Report an Issue"
-msgstr ""
+msgstr "Hiba Jelentése"
 
 #: src/views/Package.vue:466
 msgid "Restricted permission"
-msgstr ""
+msgstr "Korlátozott Engedélyek"
 
 #: src/views/ManagePackage.vue:452
 msgid "Revision"
-msgstr ""
+msgstr "Verzió"
 
 #: src/App.vue:116 src/views/Feeds.vue:3
 msgid "RSS Feeds"
-msgstr ""
+msgstr "RSS Feeds"
 
 #: src/views/Submit.vue:4
 msgid "Rules for Submission"
-msgstr ""
+msgstr "Kiadás Feltételei"
 
 #: src/views/Submit.vue:35
 msgid "Rules for Submissions Requiring Manual Review"
-msgstr ""
+msgstr "Feltételek a Manuális Elbírálást Igénylő Kiadásokhoz"
 
 #: src/views/About.vue:53
 msgid "Run the command:"
-msgstr ""
+msgstr "Futtassa a parancsot:"
 
 #: src/views/ManagePackage.vue:502
 msgid "Save"
-msgstr ""
+msgstr "Mentés"
 
 #: src/views/Package.vue:142
 msgid "Screenshots"
-msgstr ""
+msgstr "Képernyőmentések"
 
 #: src/views/ManagePackage.vue:165
 msgid "Screenshots (Limit 5)"
-msgstr ""
+msgstr "Képernyőmentések (max. 5)"
 
 #: src/views/Browse.vue:9 src/views/Manage.vue:25
 msgid "Search"
@@ -848,6 +877,8 @@ msgstr "Keresés"
 #: src/views/Submit.vue:39
 msgid "Send us a link to a repository for your app to our telegram group along with some instructions on how to build it."
 msgstr ""
+"Küldjön egy linket az alkalmazása repository-jához a telegram csoportunkban "
+"egy rövid útmutatóval a buildeléséhez."
 
 #: src/views/Package.vue:364
 msgid "Sensors"
@@ -855,19 +886,19 @@ msgstr "Szenzorok"
 
 #: src/views/Submit.vue:80
 msgid "Sexually Explicit Content"
-msgstr ""
+msgstr "Szexuális Tartalom"
 
 #: src/views/ManagePackage.vue:488
 msgid "Show All Revisions"
-msgstr ""
+msgstr "Összes Verzió Mutatása"
 
 #: src/views/Package.vue:152
 msgid "Show NSFW Content"
-msgstr ""
+msgstr "NSFW Tartalom Mutatása"
 
 #: src/App.vue:100
 msgid "Site Status"
-msgstr ""
+msgstr "Honlap Státusz"
 
 #: src/views/Browse.vue:42
 msgid "Sort By"
@@ -875,7 +906,7 @@ msgstr "Rendezés"
 
 #: src/views/Package.vue:236
 msgid "Source"
-msgstr ""
+msgstr "Forráskód"
 
 #: src/App.vue:92
 msgid "Source Code"
@@ -883,16 +914,16 @@ msgstr "Forráskód"
 
 #: src/views/ManagePackage.vue:298
 msgid "Source URL"
-msgstr ""
+msgstr "Forráskód URL"
 
 #: src/views/ManagePackage.vue:96 src/views/Package.vue:197
 #: src/views/Stats.vue:3 src/views/Stats.vue:82 src/views/Stats.vue:86
 msgid "Stats"
-msgstr ""
+msgstr "Statisztika"
 
 #: src/views/Manage.vue:55
 msgid "Status"
-msgstr ""
+msgstr "Státusz"
 
 #: src/App.vue:34 src/views/Submit.vue:160
 msgid "Submit"
@@ -901,50 +932,53 @@ msgstr "Küldés"
 #: src/views/Manage.vue:9 src/views/Submit.vue:134 src/views/Submit.vue:190
 #: src/views/Submit.vue:194
 msgid "Submit App"
-msgstr ""
+msgstr "Alkalmazás Kiadása"
 
 #: src/views/About.vue:140
 msgid "Submit your app"
-msgstr ""
+msgstr "Adja ki az alkalmazását"
 
 #: src/views/ManagePackage.vue:728 src/views/ManagePackage.vue:756
 #: src/views/ManageRevisions.vue:258
 msgid "Success"
-msgstr ""
+msgstr "Siker"
 
 #: src/views/Package.vue:228
 msgid "Support"
-msgstr ""
+msgstr "Támogatás"
 
 #: src/views/ManagePackage.vue:309
 msgid "Support URL"
-msgstr ""
+msgstr "Támogatás URL"
 
 #: src/views/ManagePackage.vue:132
 msgid "Tag Line"
-msgstr ""
+msgstr "Címkék"
 
 #: src/App.vue:81
 msgid "Telegram"
-msgstr ""
+msgstr "Telegram"
 
 #: src/views/About.vue:105
 msgid "Terms"
-msgstr ""
+msgstr "Felhasználási feltételek"
 
 #: src/views/Package.vue:10
 msgid "The app you are looking for has been removed or does not exist"
-msgstr ""
+msgstr "A keresett alkalmazást eltávolították, vagy nem létezik"
 
 #: src/views/About.vue:100
 msgid ""
 "The apps available for download from the OpenStore have their own licencing and terms.\n"
 "  Consult each individual app's page for more information."
 msgstr ""
+"Az OpenStore-ról letölthető alkalmazások mind külön, saját licenc "
+"szabályzattal rendelkeznek.\n"
+"  Keresse fel az adott alkalmazás oldalát további információért."
 
 #: src/views/ManagePackage.vue:727
 msgid "The changes to %{name} were saved!"
-msgstr ""
+msgstr "Változtatások a(z) %{name}-hoz mentve!"
 
 #: src/views/About.vue:107
 msgid ""
@@ -954,16 +988,28 @@ msgid ""
 "  a manual review process to check for potential security or privacy issues.\n"
 "  This checking is far from exhaustive though, and there are no guarantees."
 msgstr ""
+"Az OpenStore egy non-profit önkéntesek által fenntartott projekt.\n"
+"  Bár mindent megteszünk, hogy minden a tárunkban megbízható, és "
+"biztonságosan telepíthető, csak SAJÁT FELELŐSSÉGÉRE HASZNÁLJA.\n"
+"  Az OpenStore-ra feltöltött alkalmazások átesnek egy automatizált "
+"elbíráláson, vagy\n"
+"  egy manuális elbírálási eljáráson potenciális biztonsági és adatvédelmi "
+"hibák kiszűrése érdekében.\n"
+"  Ezek az ellenőrzések azonban korántsem kimerítőek és semmit sem "
+"garantálhatunk."
 
 #: src/views/About.vue:29
 msgid ""
 "The OpenStore app is installed by default on the UBports builds of Ubuntu Touch.\n"
 "  But if you need to install the OpenStore manually, follow these steps:"
 msgstr ""
+"Az OpenStore alkalmazás alapból telepítve van a UBports által fejlesztett "
+"Ubuntu Touch rendszereken.\n"
+"  Ha azonban manuálisan kell telepítenie, kövesse ezeket a lépéseket:"
 
 #: src/views/About.vue:145
 msgid "The OpenStore is made possible by many amazing contributors:"
-msgstr ""
+msgstr "Az OpenStore-t számos nagyszerű hozzájáruló tette lehetővé:"
 
 #: src/views/About.vue:5
 msgid ""
@@ -973,6 +1019,13 @@ msgid ""
 "  You can also upload and manage your own apps for publication.\n"
 "  The OpenStore encourages the apps published within to be open source, but also accepts proprietary apps."
 msgstr ""
+"Az OpenStore a hivatalos alkalmazás áruháza az Ubuntu Touch-nak.\n"
+"  Ez egy nyílt forráskódú projekt, melyet egy csapat önkéntes vezet a "
+"közösség segítségével.\n"
+"  Felfedezhet és telepíthet új alkalmazásokat az Ubuntu Touch Készülékére.\n"
+"  Feltöltheti és kezelheti a saját alkalmazásait, amiket ki szeretne adni.\n"
+"  Az OpenStore támogatja, hogy a kiadott alkalmazások nyílt forráskódúak "
+"legyenek, de zárt forráskódú programokat is elfogad."
 
 #: src/views/About.vue:115
 msgid ""
@@ -984,40 +1037,65 @@ msgid ""
 "  are sent to the server to allow it to filter apps to only what you can install and present your native language where possible.\n"
 "  This information is not logged or stored and cannot be used to uniquely identify you."
 msgstr ""
+"Az OpenStore tiszteletben tartja az adataihoz való jogát.\n"
+"  Nem követjük nyomon önt vagy a készülékét.\n"
+"  Nincs szüksége felhasználói fiókra, hogy letöltsön és telepítsen "
+"alkalmazásokat, nem követjük nyomon a letöltéseit.\n"
+"  Fejlesztői információnak számon tartjuk a letöltések számát "
+"alkalmazásverziónként.\n"
+"  Készüléke információi (processzorarchitektúra, framework verzió, operációs "
+"rendszer verzió, és rendszer nyelve)\n"
+"  elküldésre kerülnek a szervernek, hogy szűrje csak azokat az "
+"alkalmazásokat, amiket telepíteni tud, és az anyanyelvét jelenítse meg, ha "
+"lehetséges.\n"
+"  Ezt az információt nem tároljuk, és nem lehet felhasználni az ön "
+"azonosítására."
 
 #: src/views/NotFound.vue:5
 msgid "The page you are looking for has been removed or does not exist"
-msgstr ""
+msgstr "A keresett oldalt eltávolították, vagy nem létezik"
 
 #: src/views/About.vue:83
 msgid ""
 "The source code for OpenStore related projects is available under the GPL v3.\n"
 "  You can find the code on the OpenStore GitLab page."
 msgstr ""
+"Az OpenStore-hoz tartozó projektek GPL v3 licenc alatt érhetők el.\n"
+"  A forráskódot megtekintheti az OpenStore GitLab oldalán."
 
 #: src/views/Package.vue:16
 msgid "There was an error trying to find this app, please refresh and try again."
 msgstr ""
+"Hiba történt az alkalmazás keresése közben, kérem frissítse az oldalt és "
+"próbálja újra."
 
 #: src/views/Browse.vue:68 src/views/Manage.vue:36
 msgid "There was an error trying to load the app list, please refresh and try again."
 msgstr ""
+"Hiba történt az alkalmazáslista betöltése közben, kérem frissítse az oldalt "
+"és próbálja újra."
 
 #: src/views/Stats.vue:5
 msgid "There was an error trying to load the stats, please refresh and try again."
 msgstr ""
+"Hiba történt az statisztika betöltése közben, kérem frissítse az oldalt és "
+"próbálja újra."
 
 #: src/views/ManagePackage.vue:247
 msgid "This app contains NSFW material"
-msgstr ""
+msgstr "Ez az alkalmazás NSFW (18+) tartalmat tartalmaz"
 
 #: src/views/Package.vue:480 src/views/Package.vue:481
 msgid "This app does not have access to restricted system data, see permissions for more details"
 msgstr ""
+"Ez az alkalmazás nem fér hozzá a lezárt rendszer adataihoz, nézze meg az "
+"engedélyeket a részletekért"
 
 #: src/views/Package.vue:484 src/views/Package.vue:485
 msgid "This app has access to restricted system data, see permissions for more details"
 msgstr ""
+"Ez az alkalmazás hozzá fér a lezárt rendszer adataihoz, nézze meg az "
+"engedélyeket a részletekért"
 
 #: src/views/Submit.vue:140
 msgid ""
@@ -1026,18 +1104,24 @@ msgid ""
 "  For example: \"openstore.openstore-team\", where \"openstore\" is the app and \"openstore-team\"\n"
 "  is the group or individual authoring the app."
 msgstr ""
+"Ez az azonosítója az alkalmazásának.\n"
+"  Ennek pontosan meg kell egyeznie a \"name\" mezővel a click manifest.json "
+"fájljában és csak kisbetűs lehet.\n"
+"  Pl.: \"openstore.openstore-team\", ahol \"openstore\" az alkalmazás, és \""
+"openstore-team\"\n"
+"  a csapat vagy személy, aki fejleszti az alkalmazást."
 
 #: src/views/ManagePackage.vue:582
 msgid "This revision is still available"
-msgstr ""
+msgstr "Ez a verzió még mindig elérhető"
 
 #: src/views/ManageRevisions.vue:77
 msgid "This will be added to the beginning of your current changelog"
-msgstr ""
+msgstr "Ez a szöveg a jelenlegi újdonságok lista tetejére fog kerülni"
 
 #: src/views/ManagePackage.vue:121
 msgid "Title"
-msgstr ""
+msgstr "Név"
 
 #: src/views/Browse.vue:45
 msgid "Title (A-Z)"
@@ -1049,7 +1133,7 @@ msgstr "Név (Z-A)"
 
 #: src/views/ManagePackage.vue:477
 msgid "Total"
-msgstr ""
+msgstr "Összes"
 
 #: src/views/Package.vue:206
 msgid "Total downloads"
@@ -1057,15 +1141,15 @@ msgstr "Összes letöltés"
 
 #: src/views/Manage.vue:85
 msgid "Total:"
-msgstr ""
+msgstr "Összes:"
 
 #: src/views/ManagePackage.vue:425 src/views/Package.vue:270
 msgid "Translation Languages"
-msgstr ""
+msgstr "Lefordított Nyelvek"
 
 #: src/views/Browse.vue:107 src/views/Manage.vue:101
 msgid "Try searching for something else"
-msgstr ""
+msgstr "Próbáljon keresni valami mást"
 
 #: src/views/Browse.vue:33 src/views/ManagePackage.vue:416
 msgid "Type"
@@ -1073,47 +1157,47 @@ msgstr "Típus"
 
 #: src/views/About.vue:14
 msgid "Ubuntu Touch"
-msgstr ""
+msgstr "Ubuntu Touch"
 
 #: src/views/Browse.vue:3
 msgid "Ubuntu Touch Apps"
-msgstr ""
+msgstr "Ubuntu Touch Alkalmazások"
 
 #: src/views/Stats.vue:96
 msgid "Uncategorized"
-msgstr ""
+msgstr "Nem kategorizált"
 
 #: src/views/Package.vue:184
 msgid "Unrestricted read access to:"
-msgstr ""
+msgstr "Korlátozatlan olvasási hozzáférés ehhez:"
 
 #: src/views/Package.vue:180
 msgid "Unrestricted write access to:"
-msgstr ""
+msgstr "Korlátozatlan írási hozzáférés ehhez:"
 
 #: src/views/Package.vue:250
 msgid "Updated"
-msgstr ""
+msgstr "Frissítve"
 
 #: src/views/Feeds.vue:10
 msgid "Updated Apps"
-msgstr ""
+msgstr "Frissített Alkalmazások"
 
 #: src/views/ManagePackage.vue:440
 msgid "Updated Date"
-msgstr ""
+msgstr "Frissítés Dátuma"
 
 #: src/views/ManageRevisions.vue:13
 msgid "Upload Revision via:"
-msgstr ""
+msgstr "Verzió feltöltése ezzel:"
 
 #: src/views/ManageRevisions.vue:23 src/views/ManageRevisions.vue:50
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: src/views/ManageRevisions.vue:57
 msgid "URL of App from the Web"
-msgstr ""
+msgstr "Alkalmazás URL címe az internetről"
 
 #: src/views/Package.vue:365
 msgid "User Metrics"
@@ -1121,7 +1205,7 @@ msgstr "Felhasználói metrika"
 
 #: src/views/Manage.vue:56 src/views/ManagePackage.vue:455
 msgid "Version"
-msgstr ""
+msgstr "Verzió"
 
 #: src/views/Package.vue:368
 msgid "Video"
@@ -1133,15 +1217,15 @@ msgstr "Videófájlok"
 
 #: src/views/ManagePackage.vue:331
 msgid "Video URL"
-msgstr ""
+msgstr "Videó URL"
 
 #: src/views/About.vue:35
 msgid "View Install Instructions"
-msgstr ""
+msgstr "Telepítési Útmutató Megtekintése"
 
 #: src/views/Submit.vue:93
 msgid "Violence"
-msgstr ""
+msgstr "Erőszak"
 
 #: src/components/Types.vue:4 src/views/ManagePackage.vue:385
 #: src/views/Stats.vue:99
@@ -1163,26 +1247,30 @@ msgstr "Webview"
 
 #: src/views/Manage.vue:4
 msgid "Welcome %{name}!"
-msgstr ""
+msgstr "Üdvözöljük %{name}!"
 
 #: src/views/ManageRevisions.vue:8 src/views/ManageRevisions.vue:248
 msgid "Xenial"
-msgstr ""
+msgstr "Xenial"
 
 #: src/views/ManagePackage.vue:40 src/views/ManagePackage.vue:357
 msgid "Yes"
-msgstr ""
+msgstr "Igen"
 
 #: src/views/Submit.vue:11
 msgid "You are only allowed to publish apps that you have permission to distribute."
 msgstr ""
+"Csak olyan alkalmazásokat adhat ki, melyek terjesztéséhet engedélye van."
 
 #: src/views/Submit.vue:25
 msgid "You must read over the content policy detailed below."
-msgstr ""
+msgstr "El kell olvasnia a lenti tartalmi szabályzatot."
 
 #: src/views/Submit.vue:15
 msgid ""
 "Your app can be pulled without warning at the discretion of our admins.\n"
 "  Where possible, we will contact you regarding any such actions."
 msgstr ""
+"Az alkalmazását az adminisztrátorok figyelmeztetés nélkül eltávolíthatják, "
+"ha szükségesnek látják.\n"
+"  Amennyiben lehetséges, kapcsolatba lépünk önnel ilyen helyzetekben."
