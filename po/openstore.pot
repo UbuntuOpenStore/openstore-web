@@ -61,7 +61,7 @@ msgid "An error occured loading your app data"
 msgstr ""
 
 #: ./src/views/ManageRevisions.vue:253
-#: ./src/views/Submit.vue:222
+#: ./src/views/Submit.vue:226
 msgid "An unknown error has occured"
 msgstr ""
 
@@ -89,11 +89,11 @@ msgstr ""
 msgid "App"
 msgstr ""
 
-#: ./src/views/Submit.vue:101
+#: ./src/views/Submit.vue:105
 msgid "App containing or promoting any of the above are strictly prohibited."
 msgstr ""
 
-#: ./src/views/Submit.vue:138
+#: ./src/views/Submit.vue:142
 msgid "App Name"
 msgstr ""
 
@@ -101,7 +101,7 @@ msgstr ""
 msgid "App Stats"
 msgstr ""
 
-#: ./src/views/Submit.vue:149
+#: ./src/views/Submit.vue:153
 msgid "App Title"
 msgstr ""
 
@@ -117,23 +117,23 @@ msgstr ""
 msgid "Apps"
 msgstr ""
 
-#: ./src/views/Submit.vue:105
+#: ./src/views/Submit.vue:109
 msgid ""
 "Apps containing gambling involving real world money transactions are not allowed.\n"
 "This includes, but is not limited to, online casinos, betting, and lotteries."
 msgstr ""
 
-#: ./src/views/Submit.vue:88
+#: ./src/views/Submit.vue:92
 msgid "Apps containing or promoting child abuse or child sexual abuse are strictly prohibited."
 msgstr ""
 
-#: ./src/views/Submit.vue:94
+#: ./src/views/Submit.vue:98
 msgid ""
 "Apps containing or promoting gratuitous violence are not allowed.\n"
 "This includes, but is not limited to, violence, terrorism, bomb/weapon making, self harm, and grotesque imagery."
 msgstr ""
 
-#: ./src/views/Submit.vue:81
+#: ./src/views/Submit.vue:85
 msgid ""
 "Apps containing or promoting sexually explicit content are not allowed.\n"
 "This includes, but is not limited to, pornography and services promoting sexually explicit content."
@@ -143,15 +143,15 @@ msgstr ""
 msgid "Apps not requiring manual review can be submitted by logging in with the \"Log In\" link above."
 msgstr ""
 
-#: ./src/views/Submit.vue:112
+#: ./src/views/Submit.vue:116
 msgid "Apps promoting illegal activities (based on USA law) are not allowed."
 msgstr ""
 
-#: ./src/views/Submit.vue:20
+#: ./src/views/Submit.vue:24
 msgid "Apps requiring manual review must be submitted by contacting an admin in our telegram group."
 msgstr ""
 
-#: ./src/views/Submit.vue:116
+#: ./src/views/Submit.vue:120
 msgid ""
 "Apps that are found to be stealing the users data, trying to escalate their privileges without user consent,\n"
 "or executing malicious process are strictly prohibited."
@@ -205,7 +205,7 @@ msgstr ""
 msgid "Browse"
 msgstr ""
 
-#: ./src/views/Browse.vue:143
+#: ./src/views/Browse.vue:144
 msgid "Browse Apps"
 msgstr ""
 
@@ -223,7 +223,7 @@ msgstr ""
 
 #: ./src/views/ManagePackage.vue:515
 #: ./src/views/ManageRevisions.vue:105
-#: ./src/views/Submit.vue:164
+#: ./src/views/Submit.vue:168
 msgid "Cancel"
 msgstr ""
 
@@ -248,7 +248,7 @@ msgstr ""
 msgid "Channels"
 msgstr ""
 
-#: ./src/views/Submit.vue:87
+#: ./src/views/Submit.vue:91
 msgid "Child Endangerment"
 msgstr ""
 
@@ -320,6 +320,7 @@ msgstr ""
 msgid "Discovery"
 msgstr ""
 
+#: ./src/App.vue:119
 #: ./src/views/Package.vue:136
 msgid "Donate"
 msgstr ""
@@ -365,7 +366,7 @@ msgstr ""
 #: ./src/views/ManagePackage.vue:773
 #: ./src/views/ManageRevisions.vue:193
 #: ./src/views/ManageRevisions.vue:263
-#: ./src/views/Submit.vue:231
+#: ./src/views/Submit.vue:235
 msgid "Error"
 msgstr ""
 
@@ -402,7 +403,7 @@ msgstr ""
 msgid "Full System Access"
 msgstr ""
 
-#: ./src/views/Submit.vue:104
+#: ./src/views/Submit.vue:108
 msgid "Gambling"
 msgstr ""
 
@@ -410,7 +411,7 @@ msgstr ""
 msgid "Get your badge"
 msgstr ""
 
-#: ./src/views/Submit.vue:44
+#: ./src/views/Submit.vue:48
 msgid ""
 "Give a short explanation why you can’t publish the app without extra privileges.\n"
 "  No need to go into details, a one liner like \"needs to run a daemon in the background\" will do.\n"
@@ -429,7 +430,7 @@ msgstr ""
 msgid "GPL v3 License"
 msgstr ""
 
-#: ./src/views/Submit.vue:100
+#: ./src/views/Submit.vue:104
 msgid "Harassment, Bullying, or Hate Speech"
 msgstr ""
 
@@ -445,14 +446,14 @@ msgstr ""
 msgid "ID"
 msgstr ""
 
-#: ./src/views/Submit.vue:49
+#: ./src/views/Submit.vue:53
 msgid ""
 "If an application could be published without manual review if it wouldn’t be for that one cool feature,\n"
 "  publish a stripped down version!\n"
 "  Not everyone will want to install apps with less confinement."
 msgstr ""
 
-#: ./src/views/Submit.vue:111
+#: ./src/views/Submit.vue:115
 msgid "Illegal Activities"
 msgstr ""
 
@@ -538,7 +539,7 @@ msgstr ""
 msgid "Login"
 msgstr ""
 
-#: ./src/views/Submit.vue:127
+#: ./src/views/Submit.vue:131
 msgid "Login to submit your app"
 msgstr ""
 
@@ -558,7 +559,7 @@ msgstr ""
 msgid "Maintainer"
 msgstr ""
 
-#: ./src/views/Submit.vue:115
+#: ./src/views/Submit.vue:119
 msgid "Malware"
 msgstr ""
 
@@ -668,7 +669,7 @@ msgstr ""
 msgid "Oldest Update"
 msgstr ""
 
-#: ./src/views/Submit.vue:66
+#: ./src/views/Submit.vue:70
 msgid ""
 "One of the main goals of the OpenStore is to provide a safe app store for people of all ages.\n"
 "To accomplish this goal we do not allow certain types of app to be published.\n"
@@ -677,7 +678,7 @@ msgid ""
 "The OpenStore team thanks you for helping us promote a better enviroment for everyone."
 msgstr ""
 
-#: ./src/views/Submit.vue:54
+#: ./src/views/Submit.vue:58
 msgid ""
 "Only open source applications allowed for manual review:\n"
 "  As the applications might have arbitrary access to the device, every manually reviewed app will get a source code review."
@@ -695,7 +696,7 @@ msgstr ""
 msgid "OpenStore API/Server Contributors"
 msgstr ""
 
-#: ./src/views/Submit.vue:64
+#: ./src/views/Submit.vue:68
 msgid "OpenStore App Content Policy"
 msgstr ""
 
@@ -752,7 +753,7 @@ msgstr ""
 msgid "Processing"
 msgstr ""
 
-#: ./src/views/Submit.vue:75
+#: ./src/views/Submit.vue:79
 msgid "Prohibited Apps"
 msgstr ""
 
@@ -830,7 +831,7 @@ msgstr ""
 msgid "Rules for Submission"
 msgstr ""
 
-#: ./src/views/Submit.vue:35
+#: ./src/views/Submit.vue:39
 msgid "Rules for Submissions Requiring Manual Review"
 msgstr ""
 
@@ -855,7 +856,7 @@ msgstr ""
 msgid "Search"
 msgstr ""
 
-#: ./src/views/Submit.vue:39
+#: ./src/views/Submit.vue:43
 msgid "Send us a link to a repository for your app to our telegram group along with some instructions on how to build it."
 msgstr ""
 
@@ -863,7 +864,7 @@ msgstr ""
 msgid "Sensors"
 msgstr ""
 
-#: ./src/views/Submit.vue:80
+#: ./src/views/Submit.vue:84
 msgid "Sexually Explicit Content"
 msgstr ""
 
@@ -908,14 +909,14 @@ msgid "Status"
 msgstr ""
 
 #: ./src/App.vue:34
-#: ./src/views/Submit.vue:160
+#: ./src/views/Submit.vue:164
 msgid "Submit"
 msgstr ""
 
 #: ./src/views/Manage.vue:9
-#: ./src/views/Submit.vue:134
-#: ./src/views/Submit.vue:190
+#: ./src/views/Submit.vue:138
 #: ./src/views/Submit.vue:194
+#: ./src/views/Submit.vue:198
 msgid "Submit App"
 msgstr ""
 
@@ -1039,7 +1040,7 @@ msgstr ""
 msgid "This app has access to restricted system data, see permissions for more details"
 msgstr ""
 
-#: ./src/views/Submit.vue:140
+#: ./src/views/Submit.vue:144
 msgid ""
 "This is the unique identifier for your app.\n"
 "  It must match exactly the \"name\" field in your click's manifest.json and must be all lowercase letters.\n"
@@ -1164,7 +1165,7 @@ msgstr ""
 msgid "View Install Instructions"
 msgstr ""
 
-#: ./src/views/Submit.vue:93
+#: ./src/views/Submit.vue:97
 msgid "Violence"
 msgstr ""
 
@@ -1202,15 +1203,19 @@ msgstr ""
 msgid "Yes"
 msgstr ""
 
+#: ./src/views/Submit.vue:15
+msgid "You are not allowed to impersonate someone else or another app."
+msgstr ""
+
 #: ./src/views/Submit.vue:11
 msgid "You are only allowed to publish apps that you have permission to distribute."
 msgstr ""
 
-#: ./src/views/Submit.vue:25
+#: ./src/views/Submit.vue:29
 msgid "You must read over the content policy detailed below."
 msgstr ""
 
-#: ./src/views/Submit.vue:15
+#: ./src/views/Submit.vue:19
 msgid ""
 "Your app can be pulled without warning at the discretion of our admins.\n"
 "  Where possible, we will contact you regarding any such actions."
