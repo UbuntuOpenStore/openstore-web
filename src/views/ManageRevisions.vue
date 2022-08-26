@@ -110,6 +110,13 @@
           <svgicon v-if="saving" class="spin" icon="spinner" width="1.5em" height="1.5em" color="#007aa6" />
         </span>
       </form>
+
+      <p v-if="error" class="text-red">
+        {{error}}
+        <ul>
+          <li v-for="reason in errorReasons" :key="reason">{{reason}}</li>
+        </ul>
+      </p>
     </div>
   </div>
 </template>
@@ -168,6 +175,8 @@ export default {
       revisions: [newRevision()],
       completedText: this.$gettext('Completed'),
       processingText: this.$gettext('Processing'),
+      error: '',
+      errorReasons: [],
     };
   },
   created() {
@@ -248,6 +257,8 @@ export default {
             );
 
             Vue.set(this.revisions[i], 'completed', true);
+            this.error = '';
+            this.errorReasons = [];
           }
           catch (err) {
             let error = this.$gettext('An unknown error has occured');
@@ -258,8 +269,19 @@ export default {
             ) {
               error = err.response.data.message;
             }
+            let reasons = [];
+            if (
+              err.response &&
+              err.response.data &&
+              err.response.data.data &&
+              err.response.data.data.reasons
+            ) {
+              reasons = err.response.data.data.reasons;
+            }
 
             this.saving = false;
+            this.error = error;
+            this.errorReasons = reasons;
             miniToastr.error(error, this.$gettext('Error'));
             utils.captureException(err);
 

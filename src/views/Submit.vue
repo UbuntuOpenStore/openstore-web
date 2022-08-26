@@ -173,6 +173,10 @@
               <svgicon v-if="saving" class="spin" icon="spinner" width="1.5em" height="1.5em" color="#007aa6" />
             </span>
           </form>
+
+          <p v-if="error" class="text-red">
+            {{error}}
+          </p>
         </div>
       </div>
     </div>
@@ -204,6 +208,8 @@ export default {
       id: this.$route.query.appId ? this.$route.query.appId : '',
       name: this.$route.query.name ? this.$route.query.name : '',
       saving: false,
+      error: '',
+      errorReasons: [],
     };
   },
   methods: {
@@ -221,6 +227,7 @@ export default {
               name: 'manage_package',
               params: { id: app.id },
             });
+            this.error = '';
           })
           .catch((err) => {
             let error = this.$gettext('An unknown error has occured');
@@ -231,6 +238,8 @@ export default {
             ) {
               error = err.response.data.message;
             }
+
+            this.error = error;
 
             miniToastr.error(error, this.$gettext('Error'));
             this.saving = false;
