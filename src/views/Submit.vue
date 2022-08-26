@@ -230,7 +230,7 @@ export default {
             this.error = '';
           })
           .catch((err) => {
-            let error = this.$gettext('An unknown error has occured');
+            let error = this.$gettext('An unknown error has occurred');
             if (
               err.response &&
               err.response.data &&

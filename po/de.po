@@ -66,7 +66,7 @@ msgid "An error occured loading your app data"
 msgstr "Fehler beim Laden Ihrer App-Daten"
 
 #: src/views/ManageRevisions.vue:183 src/views/Submit.vue:212
-msgid "An unknown error has occured"
+msgid "An unknown error has occurred"
 msgstr "Ein unbekannter Fehler ist aufgetreten"
 
 #: src/views/About.vue:160

@@ -729,7 +729,7 @@ export default {
             );
           })
           .catch((err) => {
-            let error = 'An unknown error has occured';
+            let error = 'An unknown error has occurred';
             if (
               err.response &&
               err.response.data &&
@@ -760,7 +760,7 @@ export default {
             this.$router.push({ name: 'manage' });
           })
           .catch((err) => {
-            let error = 'An unknown error has occured';
+            let error = 'An unknown error has occurred';
             if (
               err.response &&
               err.response.data &&

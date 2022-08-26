@@ -70,7 +70,7 @@ msgstr ""
 "Une erreur s'est produite lors du chargement des données de votre application"
 
 #: src/views/ManageRevisions.vue:183 src/views/Submit.vue:212
-msgid "An unknown error has occured"
+msgid "An unknown error has occurred"
 msgstr "Une erreur inconnue s'est produite"
 
 #: src/views/About.vue:160

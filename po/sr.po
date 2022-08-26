@@ -72,7 +72,7 @@ msgid "An error occured loading your app data"
 msgstr "Десила се грешка током учитавања података ваше апликације"
 
 #: src/views/ManageRevisions.vue:211 src/views/Submit.vue:212
-msgid "An unknown error has occured"
+msgid "An unknown error has occurred"
 msgstr "Десила се непозната грешка"
 
 #: src/views/About.vue:162

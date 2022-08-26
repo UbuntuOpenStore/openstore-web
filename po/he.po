@@ -75,7 +75,7 @@ msgid "An error occured loading your app data"
 msgstr "אירעה שגיאה בטעינת נתוני האפליקציה שלך"
 
 #: src/views/ManageRevisions.vue:229 src/views/Submit.vue:222
-msgid "An unknown error has occured"
+msgid "An unknown error has occurred"
 msgstr "אירעה שגיאה לא ידועה"
 
 #: src/views/About.vue:167

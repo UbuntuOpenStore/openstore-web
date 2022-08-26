@@ -71,7 +71,7 @@ msgstr "Παρουσιάστηκε σφάλμα κατά τη φόρτωση τ�
 
 #: ./src/views/ManageRevisions.vue:253
 #: ./src/views/Submit.vue:222
-msgid "An unknown error has occured"
+msgid "An unknown error has occurred"
 msgstr "Προέκυψε άγνωστο σφάλμα"
 
 #: ./src/views/About.vue:167

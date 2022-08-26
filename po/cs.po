@@ -66,7 +66,7 @@ msgid "An error occured loading your app data"
 msgstr "Při nahrávání dat aplikace došlo k chybě"
 
 #: src/views/ManageRevisions.vue:183 src/views/Submit.vue:212
-msgid "An unknown error has occured"
+msgid "An unknown error has occurred"
 msgstr "Došlo k neznámmé chybě"
 
 #: src/views/About.vue:160

@@ -62,7 +62,7 @@ msgstr ""
 
 #: ./src/views/ManageRevisions.vue:253
 #: ./src/views/Submit.vue:226
-msgid "An unknown error has occured"
+msgid "An unknown error has occurred"
 msgstr ""
 
 #: ./src/views/About.vue:167

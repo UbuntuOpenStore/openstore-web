@@ -66,7 +66,7 @@ msgid "An error occured loading your app data"
 msgstr "載入您的應用程式資料時出錯"
 
 #: src/views/ManageRevisions.vue:183 src/views/Submit.vue:212
-msgid "An unknown error has occured"
+msgid "An unknown error has occurred"
 msgstr "出現未知的錯誤"
 
 #: src/views/About.vue:160

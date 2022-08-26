@@ -66,7 +66,7 @@ msgid "An error occured loading your app data"
 msgstr "En fejl opstod under indlæsning af dine app data"
 
 #: src/views/ManageRevisions.vue:183 src/views/Submit.vue:212
-msgid "An unknown error has occured"
+msgid "An unknown error has occurred"
 msgstr "En ukendt fejl er opstået"
 
 #: src/views/About.vue:160
