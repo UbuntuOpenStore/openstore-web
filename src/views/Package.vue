@@ -358,6 +358,8 @@ export default {
         content_exchange_source: this.$gettext('Content Exchange Source'),
         content_exchange: this.$gettext('Content Exchange'),
         debug: this.$gettext('Debug'),
+        document_files_read: this.$gettext('Read Document Files'),
+        document_files: this.$gettext('Document Files'),
         history: this.$gettext('History'),
         'in-app-purchases': this.$gettext('In App Purchases'),
         'keep-display-on': this.$gettext('Keep Display On'),
