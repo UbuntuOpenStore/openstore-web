@@ -85,6 +85,7 @@
                     target="_blank"
                     @click="showDownloadMenu = false"
                   >
+                    {{download.channel | titleCase}}
                     <span class="mr" v-translate>Download</span>
                     v{{download.version}}
                     ({{download.architecture}})

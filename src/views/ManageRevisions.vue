@@ -25,8 +25,6 @@
           </button>
         </div>
 
-        <!-- TODO enable this when click-review supports focal -->
-        <!--
         <div class="p-form__group">
           <label for="channel" class="p-form__label" v-translate>Channel</label>
           <select id="channel" class="p-form__control" v-model="channel" :disabled="saving">
@@ -34,7 +32,6 @@
             <option value="focal" v-translate>Focal</option>
           </select>
         </div>
-        -->
 
         <div class="divider"></div>
 
