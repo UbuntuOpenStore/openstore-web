@@ -79,7 +79,8 @@ msgstr ""
 #: src/views/About.vue:122
 msgid ""
 "Any personal data you decide to give us (e.g. your email address when "
-"registering for an account to upload your apps)\ngoes no further than us,\n"
+"registering for an account to upload your apps)\n"
+"goes no further than us,\n"
 "and will not be used for anything other than allowing you to maintain your "
 "apps and, in rare cases,\n"
 "contact you in the event there is an issue with your app.\n"
@@ -100,7 +101,7 @@ msgstr "Chave API"
 
 #: src/components/Types.vue:3 src/views/Manage.vue:46 src/views/Stats.vue:108
 msgid "App"
-msgstr "Aplicação"
+msgstr "App"
 
 #: src/views/Submit.vue:95
 msgid "App containing or promoting any of the above are strictly prohibited."
@@ -219,7 +220,7 @@ msgstr "Arquitetura"
 
 #: src/views/Package.vue:267
 msgid "Audio"
-msgstr "Audio"
+msgstr "Áudio"
 
 #: src/views/Manage.vue:47 src/views/ManagePackage.vue:254
 #: src/views/Package.vue:155
@@ -228,7 +229,7 @@ msgstr "Autor"
 
 #: src/views/Package.vue:7
 msgid "Back"
-msgstr "Retroceder"
+msgstr "Anterior"
 
 #: src/views/Badge.vue:28 src/views/Badge.vue:32 src/views/ManagePackage.vue:70
 msgid "Badge"
@@ -307,7 +308,7 @@ msgstr "Escolha um programador"
 
 #: src/views/Package.vue:271
 msgid "Connectivity"
-msgstr "Conectividade"
+msgstr "Conetividade"
 
 #: src/views/About.vue:59
 msgid "Contact"
@@ -343,7 +344,7 @@ msgstr "Criar"
 
 #: src/views/Package.vue:275
 msgid "Debug"
-msgstr "Depurar"
+msgstr "Debug"
 
 #: src/views/ManagePackage.vue:353
 msgid "Delete"
@@ -472,7 +473,7 @@ msgstr "Assédio, intimidação ou discurso de ódio"
 
 #: src/views/Package.vue:276
 msgid "History"
-msgstr "História"
+msgstr "Histórico"
 
 #: src/views/Manage.vue:44
 msgid "Icon"
@@ -485,7 +486,8 @@ msgstr "ID"
 #: src/views/Submit.vue:44
 msgid ""
 "If an application could be published without manual review if it wouldn’t be "
-"for that one cool feature,\npublish a stripped down version!\n"
+"for that one cool feature,\n"
+"publish a stripped down version!\n"
 "Not everyone will want to install apps with less confinement."
 msgstr ""
 "Se uma aplicação puder ser publicada sem revisão manual, se não for esse "
@@ -498,7 +500,7 @@ msgstr "Atividades Ilegais"
 
 #: src/views/Package.vue:277
 msgid "In App Purchases"
-msgstr "Compras dentro da aplicação"
+msgstr "Compras dentro da App"
 
 #: src/views/ManagePackage.vue:60 src/views/Package.vue:152
 msgid "Info"
@@ -751,7 +753,7 @@ msgstr "Informações do Pacote"
 
 #: src/views/Package.vue:162
 msgid "Packager/Publisher"
-msgstr "Empacotador / Publicador"
+msgstr "Programador / Editor"
 
 #: src/views/NotFound.vue:3
 msgid "Page Not Found"
@@ -763,7 +765,7 @@ msgstr "Permissões"
 
 #: src/views/Package.vue:285
 msgid "Picture Files"
-msgstr "Arquivos de imagem"
+msgstr "Ficheiros de imagem"
 
 #: src/views/ManagePackage.vue:43
 msgid "Presentation"
@@ -806,7 +808,7 @@ msgstr "Data de publicação"
 
 #: src/views/Package.vue:286
 msgid "Push Notifications"
-msgstr "Notificações via push"
+msgstr "Notificações"
 
 #: src/views/Package.vue:281
 msgid "Read Music Files"
@@ -1206,7 +1208,7 @@ msgstr "Vídeo"
 
 #: src/views/Package.vue:290
 msgid "Video Files"
-msgstr "Ficheiros de Vídeo"
+msgstr "Ficheiros de vídeo"
 
 #: src/views/ManagePackage.vue:221
 msgid "Video URL"
@@ -1222,11 +1224,11 @@ msgstr "Violência"
 
 #: src/components/Types.vue:5 src/views/Stats.vue:110
 msgid "Web App"
-msgstr "Aplicação Web"
+msgstr "Web App"
 
 #: src/components/Types.vue:6 src/views/Stats.vue:111
 msgid "Web App+"
-msgstr "Aplicação Web+"
+msgstr "Web App+"
 
 #: src/views/Browse.vue:33
 msgid "Web Apps"
