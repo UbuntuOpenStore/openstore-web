@@ -27,7 +27,7 @@ export default {
       params: query,
     }).then(success),
 
-    get: (id) => axios.get(`${process.env.VUE_APP_DOMAIN}/api/v4/apps/${id}?channel=xenial`)
+    get: (id) => axios.get(`${process.env.VUE_APP_DOMAIN}/api/v4/apps/${id}`)
       .then(success),
 
     stats: () => axios.get(`${process.env.VUE_APP_DOMAIN}/api/v3/stats`)
