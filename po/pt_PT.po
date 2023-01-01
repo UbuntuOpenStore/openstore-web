@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2021-09-28 15:35+0000\n"
-"Last-Translator: Ivo Xavier <ivofernandes12@gmail.com>\n"
+"PO-Revision-Date: 2022-12-05 02:18+0000\n"
+"Last-Translator: Filipe Botelho <filipebotelhos@outlook.com>\n"
 "Language-Team: Portuguese (Portugal) <https://translate.ubports.com/projects/"
 "openstore/open-storeio/pt_PT/>\n"
 "Language: pt_PT\n"
@@ -63,7 +63,7 @@ msgstr "Uma conta não é necessária para descarregar ou instalar apps."
 #: src/views/ManagePackage.vue:444 src/views/ManagePackage.vue:462
 #: src/views/ManageRevisions.vue:136
 msgid "An error occured loading your app data"
-msgstr "Ocorreu um erro a carregar os dados  da sua app"
+msgstr "Ocorreu um erro a carregar os dados da sua app"
 
 #: src/views/ManageRevisions.vue:183 src/views/Submit.vue:212
 msgid "An unknown error has occurred"
