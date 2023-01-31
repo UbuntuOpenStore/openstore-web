@@ -407,11 +407,7 @@
                     </tr>
                     <tr>
                       <td class="name" v-translate>Architecture</td>
-                      <td>{{app.architecture}}</td>
-                    </tr>
-                    <tr>
-                      <td class="name" v-translate>Framework</td>
-                      <td>{{app.framework}}</td>
+                      <td>{{app.architectures.join(', ')}}</td>
                     </tr>
                     <tr>
                       <td class="name" v-translate>Type</td>

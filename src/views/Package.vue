@@ -213,15 +213,10 @@
             :
             {{app.published_date | date}}
           </p>
-          <p v-if="app.framework">
-            <span v-translate>Framework</span>
-            :
-            {{app.framework}}
-          </p>
-          <p v-if="app.architecture">
+          <p v-if="app.architectures">
             <span v-translate>Architecture</span>
             :
-            {{app.architecture}}
+            {{app.architectures.join(', ')}}
           </p>
           <p v-if="app.languages.length > 0">
             <span v-translate>Translation Languages</span>
