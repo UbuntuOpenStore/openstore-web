@@ -342,6 +342,17 @@
                 v-translate
               >Only YouTube and Odysee videos are supported at this time. Make sure the url is for the embedded video!</div>
             </div>
+
+            <div class="p-form__group">
+              <label for="translation_url" class="p-form__label" v-translate>Translation URL</label>
+              <input
+                type="text"
+                id="translation_url"
+                class="p-form__control"
+                :disabled="disabled"
+                v-model="app.translation_url"
+              />
+            </div>
           </div>
         </div>
 

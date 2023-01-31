@@ -193,6 +193,14 @@
             <span v-translate>Source</span>:
             <a :href="app.source" target="_blank" rel="noopener noreferrer">{{app.source}}</a>
           </p>
+          <p v-if="app.translation_url">
+            <span v-translate>Translations</span>:
+            <a
+              :href="app.translation_url"
+              target="_blank"
+              rel="noopener noreferrer"
+            >{{app.translation_url}}</a>
+          </p>
           <p v-if="app.license">
             <span v-translate>License</span>
             :
