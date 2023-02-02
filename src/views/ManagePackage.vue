@@ -4,7 +4,13 @@
       <svgicon class="spin" icon="spinner" width="3em" height="3em" color="#007aa6" />
     </div>
 
-    <div v-if="!loading">
+    <h2
+      v-if="error"
+      class="center text-red"
+      v-translate
+    >There was an error trying to find this app, please refresh and try again.</h2>
+
+    <div v-if="!loading && app">
       <h1>
         <router-link :to="{name: 'manage'}" title="Back">
           <svgicon icon="back" width="0.75em" height="0.75em" color="#007aa6" />
@@ -569,11 +575,12 @@ export default {
   },
   data() {
     return {
-      app: {},
+      app: null,
       published: false,
       locked: false,
       screenshotFiles: [],
       loading: false,
+      error: false,
       saving: false,
       tab: 'presentation',
       users: [],
@@ -599,6 +606,7 @@ export default {
   methods: {
     async getApp() {
       this.loading = true;
+      this.error = false;
 
       try {
         const data = await api.manage.get(
@@ -615,6 +623,7 @@ export default {
         }
       }
       catch (err) {
+        this.error = true;
         miniToastr.error(this.$gettext('An error occured loading your app data'), this.$gettext('Error'));
         utils.captureException(err);
       }
