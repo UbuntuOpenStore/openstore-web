@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2022-12-05 02:18+0000\n"
-"Last-Translator: Filipe Botelho <filipebotelhos@outlook.com>\n"
-"Language-Team: Portuguese (Portugal) <https://translate.ubports.com/projects/"
-"openstore/open-storeio/pt_PT/>\n"
+"PO-Revision-Date: 2023-02-06 06:16+0000\n"
+"Last-Translator: ssantos <ssantos@web.de>\n"
+"Language-Team: Portuguese (Portugal) <https://hosted.weblate.org/projects/"
+"open-store-io/openstore-web/pt_PT/>\n"
 "Language: pt_PT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.11.3\n"
+"X-Generator: Weblate 4.16-dev\n"
 
 #: src/views/Package.vue:118
 msgid ""
@@ -176,13 +176,13 @@ msgid ""
 "Apps not requiring manual review can be submitted by logging in with the "
 "\"Log In\" link above."
 msgstr ""
-"Aplicações que não exigem revisão manual podem ser enviados iniciando sessão "
-"com o link \"Entrar\" acima."
+"Apps que não exigem revisão manual podem ser enviados iniciando sessão com a "
+"ligação \"Entrar\" acima."
 
 #: src/views/Submit.vue:108
 msgid "Apps promoting illegal activities (based on USA law) are not allowed."
 msgstr ""
-"Aplicações que promovem atividades ilegais (com base na lei dos EUA) não são "
+"Apps que promovem atividades ilegais (com base na lei dos EUA) não são "
 "permitidos."
 
 #: src/views/Submit.vue:18
@@ -211,8 +211,7 @@ msgid ""
 msgstr ""
 "As aplicações enviadas para o OpenStore estão sujeitos às nossas regras de "
 "envio e política de conteúdo.\n"
-"Você pode analisar as regras e políticas antes de fazer o upload da sua "
-"aplicação."
+"Pode analisar as regras e políticas antes de fazer o upload da sua app."
 
 #: src/views/ManagePackage.vue:258 src/views/Package.vue:193
 msgid "Architecture"
@@ -416,10 +415,10 @@ msgid ""
 "You can also submit issues, bugs, and feature requests to our GitLab bug "
 "tracker."
 msgstr ""
-"Para qualquer dúvida que possa ter ou ajudar, você pode precisar apenas de "
+"Para qualquer dúvida que possa ter ou ajudar, pode precisar apenas de "
 "conversar connosco no nosso grupo do telegram.\n"
-"Você também pode submeter relatórios de falhas, bugs e solicitações de "
-"recursos no nosso gestor de erros no GitLab."
+"Também pode submeter relatórios de falhas, bugs e solicitações de recursos "
+"no nosso gestor de erros no GitLab."
 
 #: src/App.vue:93
 msgid "Fork us on GitLab"
@@ -449,11 +448,11 @@ msgid ""
 "background\" will do.\n"
 "List all the special features you have, if there are more."
 msgstr ""
-"Dê uma breve explicação do motivo pelo qual você não pode publicar a sua "
+"Dê uma breve explicação do motivo pelo qual não pode publicar a sua "
 "aplicação sem privilégios extras.\n"
 "Não há necessidade de entrar em detalhes, uma explicação, por exemplo do que "
 "\"precisa executar um daemon no fundo\" vai fazer.\n"
-"Liste todos os recursos especiais que você tem, se houver mais."
+"Liste todos os recursos especiais que tem, se houver mais."
 
 #: src/views/Browse.vue:187 src/views/Manage.vue:174
 msgid "Go back a page"
@@ -569,7 +568,7 @@ msgstr "Entrar"
 
 #: src/views/Submit.vue:125
 msgid "Login to submit your app"
-msgstr "Inicie sessão para enviar a sua aplicação"
+msgstr "Inicie sessão para enviar a sua app"
 
 #: src/views/Login.vue:7
 msgid "Login via GitHub"
@@ -688,9 +687,9 @@ msgstr ""
 "segura para pessoas de todas as idades.\n"
 "Para atingir esse objetivo, não permitimos a publicação de determinados "
 "tipos de aplicações\n"
-"O não cumprimento das diretrizes resultará na remoção da sua aplicação.\n"
+"O não cumprimento das diretrizes resultará na remoção da sua app.\n"
 "Qualquer conta com infrações graves pode estar sujeita a rescisão.\n"
-"A equipe da OpenStore agradece por nos ajudar a promover um ambiente melhor "
+"A equipa da OpenStore agradece por nos ajudar a promover um ambiente melhor "
 "para todos."
 
 #: src/views/Submit.vue:48
@@ -700,7 +699,7 @@ msgid ""
 "manually reviewed app will get a source code review."
 msgstr ""
 "Apenas aplicações de código aberto permitidas para revisão manual:\n"
-"Como as aplicações podem ter acesso arbitrário ao dispositivo, todos as "
+"Como as aplicações podem ter acesso arbitrário ao aparelho, todos as "
 "aplicações revistas manualmente receberão uma revisão do código-fonte."
 
 #: src/views/ManagePackage.vue:223
@@ -777,7 +776,7 @@ msgstr "Aplicações proibidas"
 
 #: src/views/About.vue:20
 msgid "Promote your app on the OpenStore!"
-msgstr "Promova a sua aplicação na OpenStore!"
+msgstr "Promova a sua app na OpenStore!"
 
 #: src/views/Badge.vue:5
 msgid ""
@@ -792,7 +791,7 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:14
 msgid "Public Link"
-msgstr "Link público"
+msgstr "Ligação pública"
 
 #: src/views/ManagePackage.vue:21
 msgid "Publish"
@@ -883,8 +882,8 @@ msgid ""
 "Send us a link to a repository for your app to our telegram group along with "
 "some instructions on how to build it."
 msgstr ""
-"Envie-nos um endereço para o repositório da sua aplicação para o nosso "
-"telegram, juntamente com algumas instruções de como o construir."
+"Envie-nos um endereço para o repositório da sua app para o nosso telegram "
+"com algumas instruções de como o construir."
 
 #: src/views/Package.vue:287
 msgid "Sensors"
@@ -934,7 +933,7 @@ msgstr "Enviar aplicação"
 
 #: src/views/About.vue:134
 msgid "Submit your app"
-msgstr "Submeta a sua aplicação"
+msgstr "Submeta a sua app"
 
 #: src/views/ManagePackage.vue:551 src/views/ManagePackage.vue:576
 #: src/views/ManageRevisions.vue:177
@@ -987,12 +986,12 @@ msgid ""
 msgstr ""
 "A OpenStore é um projeto voluntário sem fins lucrativos.\n"
 "Embora todo o esforço seja feito para garantir que tudo no repositório seja "
-"seguro para ser instalado, você o utiliza POR SUA CONTA E RISCO.\n"
+"seguro para ser instalado, o utiliza PELA SUA CONTA E RISCO.\n"
 "As aplicações enviadas para a OpenStore estarão sujeitas a um processo de "
 "revisão automatizado ou\n"
 "um processo de revisão manual para verificar possíveis problemas de "
 "segurança ou privacidade.\n"
-"Esta verificação está longe de ser exaustiva, e não há garantias."
+"Esta verificação está longe de ser exaustiva e não há garantias."
 
 #: src/views/About.vue:31
 msgid ""
@@ -1002,7 +1001,7 @@ msgid ""
 msgstr ""
 "A aplicação OpenStore é instalada por padrão nas compilações do UBports do "
 "Ubuntu Touch.\n"
-"Mas se você precisar de instalar a OpenStore manualmente, siga estas etapas:"
+"Mas se precisar de instalar a OpenStore manualmente, siga estas etapas:"
 
 #: src/views/About.vue:141
 msgid "The OpenStore is made possible by many amazing contributors:"
@@ -1021,9 +1020,8 @@ msgstr ""
 "A OpenStore é a loja de aplicações oficial do Ubuntu Touch.\n"
 "É um projeto de código aberto executado por uma equipa de voluntários com a "
 "ajuda da comunidade.\n"
-"Você pode descobrir e instalar novas aplicações no seu dispositivo Ubuntu "
-"Touch.\n"
-"Você também pode carregar e gerir as suas aplicações para publicação.\n"
+"Pode descobrir e instalar novas apps no seu aparelho Ubuntu Touch.\n"
+"Também pode carregar e gerir as suas aplicações para publicação.\n"
 "A OpenStore encoraja as aplicações publicadas a serem de código aberto, mas "
 "também aceita aplicações proprietárias."
 
@@ -1043,22 +1041,22 @@ msgid ""
 "identify you."
 msgstr ""
 "A OpenStore respeita a sua privacidade.\n"
-"Não rastreamos você nem o seu dispositivo.\n"
-"Você não precisa de uma conta para baixar e instalar aplicações e não "
-"rastreamos as suas transferências.\n"
-"Para informações do desenvolvedor, contamos o número de transferências por "
+"Não rastreamos nem o seu aparelho.\n"
+"Não precisa de uma conta para descarregarr e instalar apps e não rastreamos "
+"as suas transferências.\n"
+"Para informações do programador, contamos a quantidade de descargas por "
 "revisão da aplicação.\n"
-"Informações sobre o seu dispositivo (a arquitetura da cpu, versões da "
+"Informações sobre o seu aparelho (a arquitetura da cpu, versões da "
 "estrutura, versão e idioma do sistema operativo)\n"
 "são enviadas para o servidor para permitir que ele filtre as aplicações "
-"somente para o que você pode instalar e apresentar o seu idioma nativo "
-"sempre que possível.\n"
+"somente para o que pode instalar e apresentar o seu idioma nativo sempre que "
+"possível.\n"
 "Essas informações não são registadas ou armazenadas e não podem ser usadas "
 "para identificá-lo exclusivamente."
 
 #: src/views/NotFound.vue:5
 msgid "The page you are looking for has been removed or does not exist"
-msgstr "A página que você está procurando foi removida ou não existe"
+msgstr "A página que procura foi removida ou não existe"
 
 #: src/views/About.vue:80
 msgid ""
@@ -1068,7 +1066,7 @@ msgid ""
 msgstr ""
 "O código fonte para projetos relacionados ao OpenStore está disponível sob a "
 "GPL v3.\n"
-"Você pode encontrar o código na página OpenStore GitLab."
+"Pode encontrar o código na página OpenStore GitLab."
 
 #: src/views/Package.vue:17
 msgid ""
@@ -1119,12 +1117,12 @@ msgid ""
 "and \"openstore-team\"\n"
 "is the group or individual authoring the app."
 msgstr ""
-"Este é o identificador exclusivo da sua aplicação.\n"
+"Este é o identificador exclusivo da sua app.\n"
 "Ele deve corresponder exatamente ao campo \"nome\" no manifest.json do seu "
 "clique e deve conter todas as letras minúsculas.\n"
 "Por exemplo: \"openstore.openstore-team\", em que \"openstore\" é a "
 "aplicação e \"openstore-team\"\n"
-"é o grupo ou indivíduo que cria a aplicação."
+"é o grupo ou indivíduo que cria a app."
 
 #: src/views/ManageRevisions.vue:52
 msgid "This will be added to the beginning of your current changelog"
@@ -1254,21 +1252,21 @@ msgstr "Sim"
 msgid ""
 "You are only allowed to publish apps that you have permission to distribute."
 msgstr ""
-"Você só tem permissão para publicar as aplicações que você tem permissão "
-"para distribuir."
+"Só tem permissão para publicar as aplicações que tem permissão para "
+"distribuir."
 
 #: src/views/Submit.vue:22
 msgid "You must read over the content policy detailed below."
-msgstr "Você deve ler sobre a política de conteúdo detalhada abaixo."
+msgstr "Deve ler sobre a política de conteúdo detalhada abaixo."
 
 #: src/views/Submit.vue:13
 msgid ""
 "Your app can be pulled without warning at the discretion of our admins.\n"
 "Where possible, we will contact you regarding any such actions."
 msgstr ""
-"A sua aplicação pode ser removida sem aviso, a critério de nossos "
-"administradores.\n"
-"Sempre que possível, entraremos em contacto com você sobre tais ações."
+"A sua app pode ser removida sem aviso, a critério de nossos administradores."
+"\n"
+"Sempre que possível, entraremos em contacto consigo sobre tais ações."
 
 #~ msgid "All Channels"
 #~ msgstr "Todos os canais"
