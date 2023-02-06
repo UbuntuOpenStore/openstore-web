@@ -5,6 +5,7 @@
   "scripts": {
     "serve": "NODE_OPTIONS=--openssl-legacy-provider vue-cli-service serve",
     "build": "NODE_OPTIONS=--openssl-legacy-provider vue-cli-service build",
+    "legacy-build": "vue-cli-service build",
     "build-staging": "vue-cli-service build --mode staging",
     "lint": "vue-cli-service lint",
     "makemessages": "./makemessages.sh",
