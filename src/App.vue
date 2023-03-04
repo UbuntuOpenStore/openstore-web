@@ -119,7 +119,7 @@
             <li class="p-footer__item">
               <a
                 class="p-footer__link"
-                href="https://bhdouglass.com/donate/"
+                href="https://liberapay.com/OpenStore/"
                 target="_blank"
                 v-translate
               >Donate</a>
