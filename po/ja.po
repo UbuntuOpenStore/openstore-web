@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2020-05-06 04:47+0000\n"
-"Last-Translator: penyotike <penyotike@moimoi.re>\n"
+"PO-Revision-Date: 2023-03-04 05:28+0000\n"
+"Last-Translator: Taisei Washington <taiseiwashington27@gmail.com>\n"
 "Language-Team: Japanese <https://translate.ubports.com/projects/openstore/"
 "open-storeio/ja/>\n"
 "Language: ja\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.8\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #: src/views/Package.vue:118
 msgid ""
@@ -83,6 +83,9 @@ msgid ""
 "contact you in the event there is an issue with your app.\n"
 "Additionally, this site uses cookies to keep you logged in to your account."
 msgstr ""
+"お客様が当社に提供することを決定した個人データ（例：アプリをアップロードするためにアカウントを登録する際の電子メールアドレス）は、私たちよりも先に行くこと"
+"はありません。を作成し、お客様がアプリを維持できるようにする以外の目的で使用することはありませんし、稀なケースです。お客様のアプリに問題が発生した場合、お"
+"客様に連絡することがあります。"
 
 #: src/views/Manage.vue:14
 msgid "API Key"
@@ -184,6 +187,8 @@ msgid ""
 "content policy.\n"
 "You can review the rules and policies before uploading your app."
 msgstr ""
+"OpenStore にアップロードされたアプリには、提出規則とコンテンツ "
+"ポリシーが適用されます。アプリをアップロードする前に、ルールとポリシーを確認できます。"
 
 #: src/views/ManagePackage.vue:258 src/views/Package.vue:193
 msgid "Architecture"
@@ -301,7 +306,7 @@ msgstr "コンテンツ交換ソース"
 
 #: src/views/About.vue:138
 msgid "Contributors"
-msgstr ""
+msgstr "寄稿者"
 
 #: src/components/CopyLine.vue:9
 msgid "Copy to clipboard"
@@ -330,7 +335,7 @@ msgstr "説明文"
 
 #: src/views/ManagePackage.vue:55
 msgid "Discovery"
-msgstr ""
+msgstr "発見"
 
 #: src/views/Package.vue:91
 msgid "Donate"
