@@ -400,8 +400,8 @@
               <select id="type_override" class="p-form__control" v-model="app.type_override" :disabled="disabled">
                 <option value v-translate>None</option>
                 <option value="app" v-translate>App</option>
-                <option value="webapp" v-translate>Web App</option>
-                <option value="webapp+" v-translate>Web App+</option>
+                <option value="webapp" v-translate>Bookmark</option>
+                <option value="webapp+" v-translate>Web App</option>
               </select>
             </div>
           </div>

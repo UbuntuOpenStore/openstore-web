@@ -116,8 +116,8 @@ export default {
       uncategorized: this.$gettext('Uncategorized'),
       humanTypeLabel: {
         app: this.$gettext('App'),
-        webapp: this.$gettext('Web App'),
-        'webapp+': this.$gettext('Web App+'),
+        webapp: this.$gettext('Bookmark'),
+        'webapp+': this.$gettext('Web App'),
       },
     };
   },

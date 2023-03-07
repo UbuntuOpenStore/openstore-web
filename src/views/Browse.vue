@@ -35,7 +35,8 @@
           <select id="type" class="p-form__control" v-model="query.type">
             <option value v-translate>All Types</option>
             <option value="app" v-translate>Apps</option>
-            <option value="webapp" v-translate>Web Apps</option>
+            <option value="webapp" v-translate>Bookmarks</option> <!-- TODO implement in api -->
+            <option value="webapp+" v-translate>Web Apps</option>
           </select>
         </div>
 
