@@ -34,9 +34,9 @@
           <h1>{{app.name}}</h1>
           <h2>{{app.tagline}}</h2>
           <router-link
-            :to="{name: 'browse', query: {search: 'author:' + app.author}}"
-            v-if="app.author"
-          >{{app.author}}</router-link>
+            :to="{name: 'browse', query: {search: 'publisher:' + app.publisher}}"
+            v-if="app.publisher"
+          >{{app.publisher}}</router-link>
         </div>
 
         <div class="row">

@@ -52,7 +52,7 @@
               <th class="icon-cell" v-translate>Icon</th>
               <th class="u-hide--small" v-translate>Name</th>
               <th class="u-show--small u-hide" v-translate>App</th>
-              <th v-if="user.role == 'admin'" v-translate>Author</th>
+              <th v-if="user.role == 'admin'" v-translate>Publisher</th>
               <th class="u-hide--small" v-translate>Status</th>
               <th class="u-hide--small" v-translate>Version</th>
               <th class="u-hide--small" v-translate>Downloads</th>
@@ -76,7 +76,7 @@
                 <span v-translate>Downloads</span>
                 : {{app.totalDownloads || 'None'}}
               </td>
-              <td v-if="user.role == 'admin'">{{app.author}}</td>
+              <td v-if="user.role == 'admin'">{{app.publisher}}</td>
               <td class="u-hide--small">
                 <span v-if="app.published" class="text-green" v-translate>Published</span>
                 <span v-else class="text-lightgrey" v-translate>Not published</span>

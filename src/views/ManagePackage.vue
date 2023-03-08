@@ -419,8 +419,8 @@
                       <td>{{app.id}}</td>
                     </tr>
                     <tr>
-                      <td class="name" v-translate>Author</td>
-                      <td>{{app.author}}</td>
+                      <td class="name" v-translate>Publisher</td>
+                      <td>{{app.publisher}}</td>
                     </tr>
                     <tr>
                       <td class="name" v-translate>Architecture</td>

@@ -32,9 +32,9 @@
           <h1>{{app.name}}</h1>
           <h2>{{app.tagline}}</h2>
           <router-link
-            :to="{name: 'browse', query: {search: 'author:' + app.author}}"
-            v-if="app.author"
-          >{{app.author}}</router-link>
+            :to="{name: 'browse', query: {search: 'publisher:' + app.publisher}}"
+            v-if="app.publisher"
+          >{{app.publisher}}</router-link>
         </div>
 
         <div class="row">
@@ -170,17 +170,13 @@
           <h4>
             <span v-translate>Info</span>:
           </h4>
-          <p v-if="app.author">
-            <span v-translate>Author</span>:
+          <p v-if="app.publisher">
+            <span v-translate>Publisher</span>:
             <router-link
-              :to="{name: 'browse', query: {search: 'author:' + app.author}}"
-            >{{app.author}}</router-link>
+              :to="{name: 'browse', query: {search: 'publisher:' + app.publisher}}"
+            >{{app.publisher}}</router-link>
           </p>
 
-          <p v-if="app.maintainer_name">
-            <span v-translate>Packager/Publisher</span>
-            : {{app.maintainer_name}}
-          </p>
           <p v-if="app.support_url">
             <span v-translate>Support</span>:
             <a

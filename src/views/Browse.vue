@@ -307,8 +307,8 @@ export default {
 
       const query = { ...this.query };
       // TODO this is a little wonky, find a better user experience
-      if (query.search.substring(0, 7) == 'author:') {
-        query.author = query.search.replace('author:', '');
+      if (query.search.startsWith('author:') || query.search.startsWith('publisher:')) {
+        query.author = query.search.replace('author:', '').replace('publisher:', '');
         delete query.search;
       }
 
