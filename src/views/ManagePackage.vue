@@ -404,6 +404,16 @@
                 <option value="webapp+" v-translate>Web App</option>
               </select>
             </div>
+
+            <div class="p-form__group">
+              <label class="p-form__label" v-translate>Review Exceptions</label>
+              <div class="info">
+                <ul v-if="app.review_exceptions.length > 0">
+                  <li v-for="exception in app.review_exceptions" :key="exception">{{exception}}</li>
+                </ul>
+                <span v-else>None</span>
+              </div>
+            </div>
           </div>
         </div>
 
