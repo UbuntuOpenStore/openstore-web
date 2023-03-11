@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-02-06 06:16+0000\n"
+"PO-Revision-Date: 2023-03-12 14:40+0000\n"
 "Last-Translator: ssantos <ssantos@web.de>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/open-store-io/"
 "openstore-web/pt/>\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.16-dev\n"
+"X-Generator: Weblate 4.16.2-dev\n"
 "Generated-By: easygettext\n"
 
 #: ./src/views/Package.vue:161
@@ -55,7 +55,7 @@ msgstr "Todas as categorias"
 
 #: ./src/views/Browse.vue:35
 msgid "All Types"
-msgstr ""
+msgstr "Todos os tipos"
 
 #: ./src/views/Login.vue:26
 msgid "An account is not needed to download or install apps."
@@ -96,7 +96,7 @@ msgstr "Chave API"
 #: ./src/views/ManagePackage.vue:384
 #: ./src/views/Stats.vue:118
 msgid "App"
-msgstr ""
+msgstr "App"
 
 #: ./src/views/Submit.vue:105
 msgid "App containing or promoting any of the above are strictly prohibited."
@@ -124,7 +124,7 @@ msgstr "Tipos de App"
 
 #: ./src/views/Browse.vue:36
 msgid "Apps"
-msgstr ""
+msgstr "Aplicações"
 
 #: ./src/views/Submit.vue:109
 msgid ""
@@ -697,11 +697,11 @@ msgstr ""
 
 #: ./src/views/Browse.vue:50
 msgid "Oldest"
-msgstr ""
+msgstr "Mais Antigo"
 
 #: ./src/views/Browse.vue:52
 msgid "Oldest Update"
-msgstr ""
+msgstr "Atualização mais antiga"
 
 #: ./src/views/Submit.vue:70
 msgid ""
@@ -930,7 +930,7 @@ msgstr "Status do site"
 
 #: ./src/views/Browse.vue:42
 msgid "Sort By"
-msgstr ""
+msgstr "Ordenar por"
 
 #: ./src/views/Package.vue:191
 msgid "Source"
@@ -959,7 +959,7 @@ msgstr "Status"
 #: ./src/App.vue:34
 #: ./src/views/Submit.vue:164
 msgid "Submit"
-msgstr ""
+msgstr "Enviar"
 
 #: ./src/views/Manage.vue:9
 #: ./src/views/Submit.vue:138
@@ -1119,7 +1119,7 @@ msgstr "Título"
 
 #: ./src/views/Browse.vue:47
 msgid "Title (A-Z)"
-msgstr ""
+msgstr "Título (A-Z)"
 
 #: ./src/views/Browse.vue:48
 msgid "Title (Z-A)"
@@ -1150,7 +1150,7 @@ msgstr "Tente procurar por outra coisa"
 #: ./src/views/Browse.vue:33
 #: ./src/views/ManagePackage.vue:416
 msgid "Type"
-msgstr ""
+msgstr "Tipo"
 
 #: ./src/views/About.vue:14
 msgid "Ubuntu Touch"
@@ -1230,13 +1230,13 @@ msgstr "Violência"
 #: ./src/views/ManagePackage.vue:385
 #: ./src/views/Stats.vue:119
 msgid "Web App"
-msgstr ""
+msgstr "Web App"
 
 #: ./src/components/Types.vue:5
 #: ./src/views/ManagePackage.vue:386
 #: ./src/views/Stats.vue:120
 msgid "Web App+"
-msgstr ""
+msgstr "Web App+"
 
 #: ./src/views/Browse.vue:37
 msgid "Web Apps"
