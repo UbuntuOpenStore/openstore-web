@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2023-02-06 06:16+0000\n"
+"PO-Revision-Date: 2023-03-19 01:00+0000\n"
 "Last-Translator: ssantos <ssantos@web.de>\n"
 "Language-Team: Portuguese (Portugal) <https://hosted.weblate.org/projects/"
 "open-store-io/openstore-web/pt_PT/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.16-dev\n"
+"X-Generator: Weblate 4.16.2-dev\n"
 
 #: src/views/Package.vue:118
 msgid ""
@@ -367,11 +367,11 @@ msgstr "Endereço de doações"
 
 #: src/views/Package.vue:262
 msgid "Download"
-msgstr "Transferir"
+msgstr "Descargas"
 
 #: src/views/ManagePackage.vue:288
 msgid "Download Stats"
-msgstr "Estatísticas de transferências"
+msgstr "Estatísticas de descargas"
 
 #: src/views/About.vue:43
 msgid "Download the OpenStore App"
@@ -380,7 +380,7 @@ msgstr "Descarregue a aplicação da OpenStore"
 #: src/views/Manage.vue:50 src/views/Manage.vue:70
 #: src/views/ManagePackage.vue:297
 msgid "Downloads"
-msgstr "Transferências"
+msgstr "Descargas"
 
 #: src/views/ManagePackage.vue:119
 msgid "Drag and drop to sort screenshots."
