@@ -7,16 +7,16 @@ msgstr ""
 "Project-Id-Version: openstore\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2020-07-15 19:14+0000\n"
+"PO-Revision-Date: 2023-03-23 09:40+0000\n"
 "Last-Translator: Joan CiberSheep <cibersheep@gmail.com>\n"
-"Language-Team: Catalan <https://translate.ubports.com/projects/openstore/"
-"open-storeio/ca/>\n"
+"Language-Team: Catalan <https://hosted.weblate.org/projects/open-store-io/"
+"openstore-web/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.11.3\n"
+"X-Generator: Weblate 4.16.2-dev\n"
 
 #: src/views/Package.vue:118
 msgid ""
@@ -72,8 +72,8 @@ msgstr "S'ha produït un error desconegut"
 msgid ""
 "And many amazing developers, testers, and users from the OpenStore community!"
 msgstr ""
-"I a tothom de la meravellosa comunitat de l'OpenStore, pel  desenvolupament "
-"i les proves."
+"I a tothom de la meravellosa comunitat de l'OpenStore, pel desenvolupament i "
+"les proves."
 
 #: src/views/About.vue:122
 msgid ""
@@ -705,7 +705,7 @@ msgid ""
 "Only YouTube videos are supported at this time. Make sure the url is for the "
 "embedded video!"
 msgstr ""
-"Només s'admeten vídeos de YouTube de moment. Assegureu-vos que l'URL és per "
+"De moment només s'admeten vídeos de YouTube. Assegureu-vos que l'URL és per "
 "al vídeo incrustat."
 
 #: src/views/About.vue:47
@@ -971,7 +971,7 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:552
 msgid "The changes to %{name} were saved!"
-msgstr "S'han desat els canvis a %{name}."
+msgstr "S'han desat els canvis per %{name}."
 
 #: src/views/About.vue:104
 msgid ""
@@ -1065,9 +1065,9 @@ msgid ""
 "v3.\n"
 "You can find the code on the OpenStore GitLab page."
 msgstr ""
-"El codi font dels projectes relacionats amb OpenStore està disponible sota "
+"El codi font dels projectes relacionats amb l'OpenStore està disponible sota "
 "la GPL v3.\n"
-"Podeu trobar-ne el codi a la pàgina de de l'OpenStore al GitLab."
+"Podeu trobar-ne el codi a la pàgina de l'OpenStore a GitLab."
 
 #: src/views/Package.vue:17
 msgid ""
