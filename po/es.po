@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2023-03-26 20:38+0000\n"
+"PO-Revision-Date: 2023-03-27 21:37+0000\n"
 "Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/open-store-io/"
 "openstore-web/es/>\n"
@@ -869,7 +869,7 @@ msgstr "Alcance"
 
 #: src/views/Browse.vue:34
 msgid "Scopes"
-msgstr "Scopes"
+msgstr "Ámbitos"
 
 #: src/views/Package.vue:107
 msgid "Screenshots"
@@ -978,7 +978,7 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:552
 msgid "The changes to %{name} were saved!"
-msgstr "Se guardaron los cambios efectuados en %{name}."
+msgstr "¡Los cambios en %{name} se han guardado!"
 
 #: src/views/About.vue:104
 msgid ""
@@ -1243,7 +1243,7 @@ msgstr "Vista web"
 
 #: src/views/Manage.vue:4
 msgid "Welcome %{name}!"
-msgstr "Le damos la bienvenida, %{name}."
+msgstr "¡Bienvenido a %{name}!"
 
 #: src/views/ManageRevisions.vue:15 src/views/ManageRevisions.vue:174
 msgid "Xenial"
