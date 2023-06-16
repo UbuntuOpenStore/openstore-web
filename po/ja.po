@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2023-03-04 05:28+0000\n"
-"Last-Translator: Taisei Washington <taiseiwashington27@gmail.com>\n"
+"PO-Revision-Date: 2023-06-16 17:15+0000\n"
+"Last-Translator: NPL <alterlinuxer@gmail.com>\n"
 "Language-Team: Japanese <https://translate.ubports.com/projects/openstore/"
 "open-storeio/ja/>\n"
 "Language: ja\n"
@@ -83,9 +83,10 @@ msgid ""
 "contact you in the event there is an issue with your app.\n"
 "Additionally, this site uses cookies to keep you logged in to your account."
 msgstr ""
-"お客様が当社に提供することを決定した個人データ（例：アプリをアップロードするためにアカウントを登録する際の電子メールアドレス）は、私たちよりも先に行くこと"
-"はありません。を作成し、お客様がアプリを維持できるようにする以外の目的で使用することはありませんし、稀なケースです。お客様のアプリに問題が発生した場合、お"
-"客様に連絡することがあります。"
+"お客様が当社に提供することに同意した個人データ（例：アプリをアップロードするためにアカウントを登録する際のメールアドレス）は、私たち以外に送られることはあ"
+"りません。\n"
+"また、アプリを維持するため、または稀なケースですがアプリに問題が起きた場合の連絡以外に使用されることはありません。\n"
+"さらに、このサイトでは、お客様のアカウントへのログインを維持するためにクッキーを使用しています。"
 
 #: src/views/Manage.vue:14
 msgid "API Key"
@@ -196,7 +197,7 @@ msgstr "アーキテクチャ"
 
 #: src/views/Package.vue:267
 msgid "Audio"
-msgstr "音楽"
+msgstr "音声"
 
 #: src/views/Manage.vue:47 src/views/ManagePackage.vue:254
 #: src/views/Package.vue:155
@@ -284,7 +285,6 @@ msgid "Choose a maintainer"
 msgstr "メンテナーを選択"
 
 #: src/views/Package.vue:271
-#, fuzzy
 msgid "Connectivity"
 msgstr "接続性"
 
@@ -395,6 +395,8 @@ msgid ""
 "You can also submit issues, bugs, and feature requests to our GitLab bug "
 "tracker."
 msgstr ""
+"質問がある場合やヘルプが必要なときは、私達のTelegramグループでチャットをすることができます。\n"
+"問題、バグ、機能のリクエストをGitLabバグトラッカーに送信することもできます。"
 
 #: src/App.vue:93
 msgid "Fork us on GitLab"
@@ -473,16 +475,17 @@ msgid "In App Purchases"
 msgstr "アプリ内購入"
 
 #: src/views/ManagePackage.vue:60 src/views/Package.vue:152
+#, fuzzy
 msgid "Info"
-msgstr ""
+msgstr "情報"
 
 #: src/views/About.vue:29 src/views/Package.vue:39
 msgid "Install"
-msgstr ""
+msgstr "インストール"
 
 #: src/views/Package.vue:264
 msgid "Install via the OpenStore app"
-msgstr ""
+msgstr "OpenStoreアプリからインストール"
 
 #: src/views/Browse.vue:186 src/views/Manage.vue:173
 msgid "Jump to the first page"
@@ -498,24 +501,24 @@ msgstr ""
 
 #: src/views/Manage.vue:18
 msgid "Keep your api key private!"
-msgstr ""
+msgstr "APIキーは秘密にしてください！"
 
 #: src/views/ManagePackage.vue:155
 msgid "Keywords"
-msgstr ""
+msgstr "キーワード"
 
 #: src/App.vue:60 src/components/BadgeSelect.vue:4
 msgid "Language"
-msgstr ""
+msgstr "言語"
 
 #: src/views/Browse.vue:46
 msgid "Latest Update"
-msgstr ""
+msgstr "最新のアップデート"
 
 #: src/views/About.vue:78 src/views/ManagePackage.vue:171
 #: src/views/Package.vue:173
 msgid "License"
-msgstr ""
+msgstr "ライセンス"
 
 #: src/views/Package.vue:279
 msgid "Location"
@@ -523,68 +526,71 @@ msgstr ""
 
 #: src/App.vue:37
 msgid "Log In"
-msgstr ""
+msgstr "ログイン"
 
 #: src/views/Login.vue:24
 msgid "Log in to the OpenStore to be able to manage your apps."
-msgstr ""
+msgstr "OpenStoreにログインしてアプリを管理することができます。"
 
 #: src/App.vue:43
 msgid "Log Out"
-msgstr ""
+msgstr "ログアウト"
 
 #: src/views/Login.vue:40 src/views/Login.vue:44
 msgid "Login"
-msgstr ""
+msgstr "ログイン"
 
 #: src/views/Submit.vue:125
 msgid "Login to submit your app"
-msgstr ""
+msgstr "ログインしてアプリを送信する"
 
 #: src/views/Login.vue:7
 msgid "Login via GitHub"
-msgstr ""
+msgstr "GitHubでログイン"
 
 #: src/views/Login.vue:12
 msgid "Login via GitLab"
-msgstr ""
+msgstr "GitLabでログイン"
 
 #: src/views/Login.vue:18
 msgid "Login via Ubuntu"
-msgstr ""
+msgstr "Ubuntuでログイン"
 
 #: src/views/ManagePackage.vue:229
+#, fuzzy
 msgid "Maintainer"
-msgstr ""
+msgstr "管理者"
 
 #: src/views/Submit.vue:113
 msgid "Malware"
-msgstr ""
+msgstr "マルウェア"
 
 #: src/App.vue:40 src/views/Manage.vue:152 src/views/ManagePackage.vue:381
 #: src/views/ManagePackage.vue:383
 msgid "Manage"
-msgstr ""
+msgstr "管理"
 
 #: src/views/Manage.vue:148
 msgid "Manage Apps"
-msgstr ""
+msgstr "アプリを管理"
 
 #: src/views/Package.vue:280
+#, fuzzy
 msgid "Microphone"
-msgstr ""
+msgstr "マイク"
 
 #: src/views/Package.vue:282
+#, fuzzy
 msgid "Music Files"
-msgstr ""
+msgstr "音楽ファイル"
 
 #: src/views/Manage.vue:45
 msgid "Name"
-msgstr ""
+msgstr "名前"
 
 #: src/views/About.vue:48
 msgid "Navigate to the downloads folder"
-msgstr ""
+msgstr "ダウンロードフォルダに移動"
 
 #: src/views/Package.vue:283
 msgid "Networking"
@@ -592,7 +598,7 @@ msgstr ""
 
 #: src/views/Feeds.vue:9
 msgid "New Apps"
-msgstr ""
+msgstr "新規アプリ"
 
 #: src/views/ManagePackage.vue:37 src/views/ManageRevisions.vue:86
 #: src/views/ManageRevisions.vue:88
@@ -609,39 +615,42 @@ msgstr ""
 
 #: src/views/Browse.vue:44
 msgid "Newest"
-msgstr ""
+msgstr "最新"
 
 #: src/views/ManagePackage.vue:31
 msgid "No"
-msgstr ""
+msgstr "No"
 
 #: src/views/Browse.vue:101 src/views/Manage.vue:94
 msgid "No apps found."
-msgstr ""
+msgstr "アプリが見つかりませんでした。"
 
 #: src/views/Manage.vue:81 src/views/Manage.vue:86 src/views/Package.vue:146
 msgid "None"
-msgstr ""
+msgstr "なし"
 
 #: src/views/Manage.vue:75
+#, fuzzy
 msgid "Not published"
-msgstr ""
+msgstr "非公開"
 
 #: src/views/ManagePackage.vue:161
 msgid "NSFW"
-msgstr ""
+msgstr "NSFW"
 
 #: src/views/Browse.vue:90
 msgid "NSFW content"
-msgstr ""
+msgstr "NSFWなコンテンツ"
 
 #: src/views/Browse.vue:45
+#, fuzzy
 msgid "Oldest"
-msgstr ""
+msgstr "最古"
 
 #: src/views/Browse.vue:47
+#, fuzzy
 msgid "Oldest Update"
-msgstr ""
+msgstr "最古のアップデート"
 
 #: src/views/Submit.vue:60
 msgid ""
@@ -654,6 +663,11 @@ msgid ""
 "The OpenStore team thanks you for helping us promote a better enviroment for "
 "everyone."
 msgstr ""
+"OpenStoreにおけるひとつの主なゴールは、すべての年齢の人々にとって安全なアプリストアを提供することです。\n"
+"この目標を達成するために、特定のタイプのアプリを公開することはできません。\n"
+"ガイドラインに従わない場合、アプリが削除される場合があります。\n"
+"重大な違反のあるアカウントは停止されることがあります。\n"
+"OpenStoreチームは、すべての人により良い環境を促進することに協力するみなさんに感謝しています。"
 
 #: src/views/Submit.vue:48
 msgid ""
@@ -661,12 +675,16 @@ msgid ""
 "As the applications might have arbitrary access to the device, every "
 "manually reviewed app will get a source code review."
 msgstr ""
+"オープンソースのアプリケーションに限り、マニュアルレビューが可能です:\n"
+"アプリケーションはデバイスに任意にアクセスできる可能性があるため、マニュアルレビューしたアプリケーションはすべてソースコードレビューを受けることになります"
+"。"
 
 #: src/views/ManagePackage.vue:223
+#, fuzzy
 msgid ""
 "Only YouTube videos are supported at this time. Make sure the url is for the "
 "embedded video!"
-msgstr ""
+msgstr "現時点では、YouTubeの動画のみ対応しています。URLが埋め込み用のものであることを確認してください！"
 
 #: src/views/About.vue:47
 msgid "Open the terminal app"
@@ -693,8 +711,9 @@ msgid "OpenStore group on Telegram"
 msgstr ""
 
 #: src/views/About.vue:93
+#, fuzzy
 msgid "OpenStore source on GitLab"
-msgstr ""
+msgstr "OpenStore source on GitLab"
 
 #: src/views/About.vue:150
 msgid "OpenStore Website Contributors"
@@ -706,87 +725,97 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:245
 msgid "Package Info"
-msgstr ""
+msgstr "パッケージ情報"
 
 #: src/views/Package.vue:162
 msgid "Packager/Publisher"
-msgstr ""
+msgstr "作成者/公開者"
 
 #: src/views/NotFound.vue:3
 msgid "Page Not Found"
-msgstr ""
+msgstr "ページが見つかりません"
 
 #: src/views/Package.vue:80 src/views/Package.vue:135
 msgid "Permissions"
-msgstr ""
+msgstr "権限"
 
 #: src/views/Package.vue:285
 msgid "Picture Files"
-msgstr ""
+msgstr "画像ファイル"
 
 #: src/views/ManagePackage.vue:43
 msgid "Presentation"
 msgstr ""
 
 #: src/views/Submit.vue:69
+#, fuzzy
 msgid "Prohibited Apps"
-msgstr ""
+msgstr "禁止されたアプリ"
 
 #: src/views/About.vue:20
+#, fuzzy
 msgid "Promote your app on the OpenStore!"
-msgstr ""
+msgstr "OpenStoreでアプリを宣伝しよう！"
 
 #: src/views/Badge.vue:5
+#, fuzzy
 msgid ""
 "Promote your app on the OpenStore! Add these badges to your website,\n"
 "code repository, social media, or anywhere on the internet. The badges\n"
 "are available in several different languages and in both PNG and SVG\n"
 "formats."
 msgstr ""
+"OpenStoreでアプリを宣伝しよう！Webサイト、\n"
+"コードリポジトリ、ソーシャルメディアなどの\n"
+"インターネット上でこれらのバッジを追加してください。\n"
+"バッジは複数の言語及びPNG・SVG形式で利用できます。"
 
 #: src/views/ManagePackage.vue:14
 msgid "Public Link"
-msgstr ""
+msgstr "公開リンク"
 
 #: src/views/ManagePackage.vue:21
+#, fuzzy
 msgid "Publish"
-msgstr ""
+msgstr "公開"
 
 #: src/views/Manage.vue:74 src/views/Package.vue:185
+#, fuzzy
 msgid "Published"
-msgstr ""
+msgstr "公開済み"
 
 #: src/views/ManagePackage.vue:323
 msgid "Published Date"
-msgstr ""
+msgstr "公開日時"
 
 #: src/views/Package.vue:286
 msgid "Push Notifications"
-msgstr ""
+msgstr "プッシュ通知"
 
 #: src/views/Package.vue:281
 msgid "Read Music Files"
-msgstr ""
+msgstr "音楽ファイルの読み込み"
 
 #: src/views/Package.vue:284
 msgid "Read Picture Files"
-msgstr ""
+msgstr "画像ファイルの読み込み"
 
 #: src/views/Package.vue:289
 msgid "Read Video Files"
-msgstr ""
+msgstr "動画ファイルの読み込み"
 
 #: src/views/Browse.vue:41
+#, fuzzy
 msgid "Relevance"
-msgstr ""
+msgstr "関連"
 
 #: src/App.vue:103
 msgid "Report an Issue"
-msgstr ""
+msgstr "問題を報告"
 
 #: src/views/Package.vue:356
 msgid "Restricted permission"
-msgstr ""
+msgstr "制限付き権限"
 
 #: src/views/ManagePackage.vue:294
 msgid "Revision"
@@ -794,23 +823,23 @@ msgstr ""
 
 #: src/App.vue:108 src/views/Feeds.vue:3
 msgid "RSS Feeds"
-msgstr ""
+msgstr "RSSフィード"
 
 #: src/views/Submit.vue:4
 msgid "Rules for Submission"
-msgstr ""
+msgstr "提出時のルール"
 
 #: src/views/Submit.vue:31
 msgid "Rules for Submissions Requiring Manual Review"
-msgstr ""
+msgstr "マニュアルレビューが必要な提出時のルール"
 
 #: src/views/About.vue:50
 msgid "Run the command:"
-msgstr ""
+msgstr "コマンドを実行:"
 
 #: src/views/ManagePackage.vue:348
 msgid "Save"
-msgstr ""
+msgstr "保存"
 
 #: src/components/Types.vue:4 src/views/Stats.vue:109
 msgid "Scope"
@@ -822,15 +851,15 @@ msgstr ""
 
 #: src/views/Package.vue:107
 msgid "Screenshots"
-msgstr ""
+msgstr "スクリーンショット"
 
 #: src/views/ManagePackage.vue:106
 msgid "Screenshots (Limit 5)"
-msgstr ""
+msgstr "スクリーンショット (5枚まで)"
 
 #: src/views/Browse.vue:9 src/views/Manage.vue:26
 msgid "Search"
-msgstr ""
+msgstr "検索"
 
 #: src/views/Submit.vue:35
 msgid ""
