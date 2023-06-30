@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2023-06-16 17:15+0000\n"
+"PO-Revision-Date: 2023-06-30 23:53+0000\n"
 "Last-Translator: NPL <alterlinuxer@gmail.com>\n"
 "Language-Team: Japanese <https://translate.ubports.com/projects/openstore/"
 "open-storeio/ja/>\n"
@@ -489,11 +489,11 @@ msgstr "OpenStoreアプリからインストール"
 
 #: src/views/Browse.vue:186 src/views/Manage.vue:173
 msgid "Jump to the first page"
-msgstr ""
+msgstr "最初のページに移動する"
 
 #: src/views/Browse.vue:189 src/views/Manage.vue:176
 msgid "Jump to the last page"
-msgstr ""
+msgstr "最後のページに移動する"
 
 #: src/views/Package.vue:278
 msgid "Keep Display On"
@@ -521,8 +521,9 @@ msgid "License"
 msgstr "ライセンス"
 
 #: src/views/Package.vue:279
+#, fuzzy
 msgid "Location"
-msgstr ""
+msgstr "位置情報"
 
 #: src/App.vue:37
 msgid "Log In"
@@ -593,8 +594,9 @@ msgid "Navigate to the downloads folder"
 msgstr "ダウンロードフォルダに移動"
 
 #: src/views/Package.vue:283
+#, fuzzy
 msgid "Networking"
-msgstr ""
+msgstr "ネットワーク"
 
 #: src/views/Feeds.vue:9
 msgid "New Apps"
@@ -688,27 +690,27 @@ msgstr "現時点では、YouTubeの動画のみ対応しています。URLが�
 
 #: src/views/About.vue:47
 msgid "Open the terminal app"
-msgstr ""
+msgstr "端末アプリを開く"
 
 #: src/views/About.vue:145
 msgid "OpenStore API/Server Contributors"
-msgstr ""
+msgstr "OpenStore API/サーバー 貢献者"
 
 #: src/views/Submit.vue:58
 msgid "OpenStore App Content Policy"
-msgstr ""
+msgstr "OpenStoreアプリコンテンツポリシー"
 
 #: src/views/About.vue:155
 msgid "OpenStore App Contributors"
-msgstr ""
+msgstr "OpenStoreアプリ貢献者"
 
 #: src/views/Badge.vue:3
 msgid "OpenStore Badges"
-msgstr ""
+msgstr "OpenStoreバッジ"
 
 #: src/views/About.vue:67
 msgid "OpenStore group on Telegram"
-msgstr ""
+msgstr "OpenStoreのTelegramグループ"
 
 #: src/views/About.vue:93
 #, fuzzy
@@ -717,7 +719,7 @@ msgstr "OpenStore source on GitLab"
 
 #: src/views/About.vue:150
 msgid "OpenStore Website Contributors"
-msgstr ""
+msgstr "OpenStore Webサイト貢献者"
 
 #: src/views/ManageRevisions.vue:33
 msgid "OR"
@@ -869,7 +871,7 @@ msgstr ""
 
 #: src/views/Package.vue:287
 msgid "Sensors"
-msgstr ""
+msgstr "センサー"
 
 #: src/views/Submit.vue:74
 msgid "Sexually Explicit Content"
@@ -877,11 +879,11 @@ msgstr ""
 
 #: src/views/Package.vue:117
 msgid "Show NSFW Content"
-msgstr ""
+msgstr "NSFWコンテンツを表示"
 
 #: src/App.vue:98
 msgid "Site Status"
-msgstr ""
+msgstr "サイトステータス"
 
 #: src/views/Browse.vue:39
 msgid "Sort By"
@@ -889,46 +891,46 @@ msgstr ""
 
 #: src/views/Package.vue:169
 msgid "Source"
-msgstr ""
+msgstr "ソース"
 
 #: src/views/ManagePackage.vue:206
 msgid "Source URL"
-msgstr ""
+msgstr "ソースURL"
 
 #: src/views/ManagePackage.vue:65 src/views/Stats.vue:3 src/views/Stats.vue:92
 #: src/views/Stats.vue:96
 msgid "Stats"
-msgstr ""
+msgstr "統計"
 
 #: src/views/Manage.vue:48
 msgid "Status"
-msgstr ""
+msgstr "状態"
 
 #: src/App.vue:28 src/views/Submit.vue:162
 msgid "Submit"
-msgstr ""
+msgstr "提出"
 
 #: src/views/Manage.vue:10 src/views/Submit.vue:129 src/views/Submit.vue:189
 #: src/views/Submit.vue:193
 msgid "Submit App"
-msgstr ""
+msgstr "アプリを提出"
 
 #: src/views/About.vue:134
 msgid "Submit your app"
-msgstr ""
+msgstr "アプリを提出する"
 
 #: src/views/ManagePackage.vue:551 src/views/ManagePackage.vue:576
 #: src/views/ManageRevisions.vue:177
 msgid "Success"
-msgstr ""
+msgstr "成功"
 
 #: src/views/Package.vue:165
 msgid "Support"
-msgstr ""
+msgstr "サポート"
 
 #: src/views/ManagePackage.vue:211
 msgid "Support URL"
-msgstr ""
+msgstr "サポートURL"
 
 #: src/views/ManagePackage.vue:85
 msgid "Tag Line"
@@ -936,11 +938,11 @@ msgstr ""
 
 #: src/views/About.vue:102
 msgid "Terms"
-msgstr ""
+msgstr "チーム"
 
 #: src/views/Package.vue:13
 msgid "The app you are looking for has been removed or does not exist"
-msgstr ""
+msgstr "探しているアプリは、削除されたか存在しません"
 
 #: src/views/About.vue:97
 msgid ""
@@ -1124,7 +1126,7 @@ msgstr ""
 
 #: src/views/Package.vue:288
 msgid "User Metrics"
-msgstr ""
+msgstr "ユーザーメトリクス"
 
 #: src/views/Manage.vue:49 src/views/ManagePackage.vue:296
 msgid "Version"
@@ -1132,11 +1134,11 @@ msgstr ""
 
 #: src/views/Package.vue:291
 msgid "Video"
-msgstr ""
+msgstr "動画"
 
 #: src/views/Package.vue:290
 msgid "Video Files"
-msgstr ""
+msgstr "動画ファイル"
 
 #: src/views/ManagePackage.vue:221
 msgid "Video URL"
@@ -1152,11 +1154,11 @@ msgstr ""
 
 #: src/components/Types.vue:5 src/views/Stats.vue:110
 msgid "Web App"
-msgstr ""
+msgstr "ウェブアプリ"
 
 #: src/components/Types.vue:6 src/views/Stats.vue:111
 msgid "Web App+"
-msgstr ""
+msgstr "ウェブアプリ+"
 
 #: src/views/Browse.vue:33
 msgid "Web Apps"
@@ -1164,7 +1166,7 @@ msgstr ""
 
 #: src/views/Package.vue:292
 msgid "Webview"
-msgstr ""
+msgstr "Webview"
 
 #: src/views/Manage.vue:4
 msgid "Welcome %{name}!"
