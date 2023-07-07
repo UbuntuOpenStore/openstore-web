@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-03-19 01:00+0000\n"
-"Last-Translator: ssantos <ssantos@web.de>\n"
+"PO-Revision-Date: 2023-07-07 11:39+0000\n"
+"Last-Translator: Ivo Xavier <ivofernandes12@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/open-store-io/"
 "openstore-web/pt/>\n"
 "Language: pt\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.16.2-dev\n"
+"X-Generator: Weblate 5.0-dev\n"
 "Generated-By: easygettext\n"
 
 #: ./src/views/Package.vue:161
@@ -17,6 +17,8 @@ msgid ""
 "*This app contains NSFW content, to view the description and\n"
 "  screenshots, click the above button."
 msgstr ""
+"*Esta app contém conteúdo NSFW, para ver a descrição e\n"
+"  capturas de ecrã, clique no botão acima."
 
 #: ./src/views/ManagePackage.vue:755
 msgid "%{name} was successfully deleted"
@@ -43,11 +45,11 @@ msgstr "Contas"
 
 #: ./src/views/ManageRevisions.vue:75
 msgid "Add Another Architecture"
-msgstr ""
+msgstr "Adicionar Outra Arquitetura"
 
 #: ./src/views/ManagePackage.vue:86
 msgid "Admin"
-msgstr ""
+msgstr "Admin"
 
 #: ./src/views/Browse.vue:22
 msgid "All Categories"
