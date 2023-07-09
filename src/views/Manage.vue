@@ -171,7 +171,7 @@ export default {
           utils.captureException(err);
         });
     },
-    debounceRefresh: debounce(function () {
+    debounceRefresh: debounce(function() {
       this.refresh();
     }, 300),
   },
@@ -181,7 +181,7 @@ export default {
       this.query.skip = this.page * this.query.limit;
       this.debounceRefresh();
     },
-    'query.search': function () {
+    'query.search': function() {
       this.debounceRefresh();
     },
     isAuthenticated(newValue) {

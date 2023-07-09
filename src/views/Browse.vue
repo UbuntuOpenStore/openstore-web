@@ -328,7 +328,7 @@ export default {
           utils.captureException(err);
         });
     },
-    debounceRefresh: debounce(function () {
+    debounceRefresh: debounce(function() {
       this.setQueryParams();
       this.refresh();
     }, 300),
@@ -343,22 +343,22 @@ export default {
       this.query.skip = this.page * this.query.limit;
       this.debounceRefresh();
     },
-    'query.sort': function () {
+    'query.sort': function() {
       this.debounceRefresh();
     },
-    'query.type': function () {
+    'query.type': function() {
       this.resetPage();
       this.debounceRefresh();
     },
-    'query.category': function () {
+    'query.category': function() {
       this.resetPage();
       this.debounceRefresh();
     },
-    'query.channel': function () {
+    'query.channel': function() {
       this.resetPage();
       this.debounceRefresh();
     },
-    'query.search': function () {
+    'query.search': function() {
       this.resetPage();
       if (this.created) {
         if (this.query.search) {

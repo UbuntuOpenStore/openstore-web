@@ -183,7 +183,7 @@ export default {
     $route() {
       this.showMenu = false;
     },
-    '$language.current': function () {
+    '$language.current': function() {
       this.$store.dispatch('getCategories', this.$language.current);
 
       if (window.localStorage) {
