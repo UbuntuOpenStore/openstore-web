@@ -103,10 +103,10 @@ export default {
         const aname = a.display_name ? a.display_name.toLowerCase() : '';
         const bname = b.display_name ? b.display_name.toLowerCase() : '';
 
-        if (a.role == 'admin' && b.role != 'admin') {
+        if (a.role === 'admin' && b.role !== 'admin') {
           return -1;
         }
-        if (a.role != 'admin' && b.role == 'admin') {
+        if (a.role !== 'admin' && b.role === 'admin') {
           return 1;
         }
         if (aname > bname) {

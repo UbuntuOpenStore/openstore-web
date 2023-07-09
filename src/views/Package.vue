@@ -50,7 +50,7 @@
             <a
               :href="openstoreLink"
               class="p-button--positive"
-              v-if="app.id != 'openstore.openstore-team' && app.downloads.length > 0"
+              v-if="app.id !== 'openstore.openstore-team' && app.downloads.length > 0"
               :title="installTitle"
               v-translate
             >Install</a>
@@ -249,11 +249,11 @@
               :class="{'text-red': isRestricted(permission)}"
               :title="restrictedLabel(permission)"
             >
-              <span v-if="permission.type == 'write'">
+              <span v-if="permission.type === 'write'">
                 <span v-translate>Unrestricted write access to:</span>
                 {{permission.path}}
               </span>
-              <span v-if="permission.type == 'read'">
+              <span v-if="permission.type === 'read'">
                 <span v-translate>Unrestricted read access to:</span>
                 {{permission.path}}
               </span>
@@ -367,6 +367,7 @@ export default {
         microphone: this.$gettext('Microphone'),
         music_files_read: this.$gettext('Read Music Files'),
         music_files: this.$gettext('Music Files'),
+        nfc: this.$gettext('NFC'),
         networking: this.$gettext('Networking'),
         picture_files_read: this.$gettext('Read Picture Files'),
         picture_files: this.$gettext('Picture Files'),
@@ -410,7 +411,7 @@ export default {
                 permissions = permissions.concat(hook.apparmor.policy_groups);
               }
 
-              if (hook.apparmor.template == 'unconfined') {
+              if (hook.apparmor.template === 'unconfined') {
                 permissions.push('unconfined');
               }
 
@@ -441,7 +442,7 @@ export default {
 
         // Only unique permissions
         permissions = permissions.filter(
-          (item, pos) => permissions.indexOf(item) == pos,
+          (item, pos) => permissions.indexOf(item) === pos,
         );
 
         this.permissions = permissions.sort();

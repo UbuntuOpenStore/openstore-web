@@ -15,7 +15,7 @@
 
       <li
         v-for="(p, index) in pages"
-        :class="{active: value == p, 'u-hide--small': index > 2}"
+        :class="{active: value === p, 'u-hide--small': index > 2}"
         :key="p"
       >
         <a @click="setPage(p)">{{p + 1}}</a>
@@ -58,7 +58,7 @@ export default {
         actualPage = this.total;
       }
 
-      if (this.value != actualPage) {
+      if (this.value !== actualPage) {
         this.$emit('input', actualPage);
       }
     },

@@ -52,7 +52,7 @@
               <th class="icon-cell" v-translate>Icon</th>
               <th class="u-hide--small" v-translate>Name</th>
               <th class="u-show--small u-hide" v-translate>App</th>
-              <th v-if="user.role == 'admin'" v-translate>Publisher</th>
+              <th v-if="user.role === 'admin'" v-translate>Publisher</th>
               <th class="u-hide--small" v-translate>Status</th>
               <th class="u-hide--small" v-translate>Version</th>
               <th class="u-hide--small" v-translate>Downloads</th>
@@ -76,7 +76,7 @@
                 <span v-translate>Downloads</span>
                 : {{app.totalDownloads || 'None'}}
               </td>
-              <td v-if="user.role == 'admin'">{{app.publisher}}</td>
+              <td v-if="user.role === 'admin'">{{app.publisher}}</td>
               <td class="u-hide--small">
                 <span v-if="app.published" class="text-green" v-translate>Published</span>
                 <span v-else class="text-lightgrey" v-translate>Not published</span>
@@ -85,12 +85,12 @@
               <td class="u-hide--small">
                 <span class="mr" v-translate>Total:</span>
                 <span v-if="app.totalDownloads > 0">{{app.totalDownloads | number}}</span>
-                <span v-if="app.totalDownloads == 0" v-translate>None</span>
+                <span v-if="app.totalDownloads === 0" v-translate>None</span>
 
                 <div v-if="app.version">
                   <span class="mr">v{{app.version}}:</span>
                   <span v-if="app.latestDownloads > 0">{{app.latestDownloads | number}}</span>
-                  <span v-if="app.latestDownloads == 0" v-translate>None</span>
+                  <span v-if="app.latestDownloads === 0" v-translate>None</span>
                 </div>
               </td>
             </tr>
@@ -171,7 +171,7 @@ export default {
           utils.captureException(err);
         });
     },
-    debounceRefresh: debounce(function() {
+    debounceRefresh: debounce(function () {
       this.refresh();
     }, 300),
   },
@@ -181,7 +181,7 @@ export default {
       this.query.skip = this.page * this.query.limit;
       this.debounceRefresh();
     },
-    'query.search': function() {
+    'query.search': function () {
       this.debounceRefresh();
     },
     isAuthenticated(newValue) {

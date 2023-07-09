@@ -202,61 +202,61 @@ export default {
         }
       }
 
-      if (page != this.page) {
+      if (page !== this.page) {
         this.page = page;
         this.query.skip = this.page * this.query.limit;
         changed = true;
       }
 
-      if (this.$route.query.sort != this.query.sort) {
+      if (this.$route.query.sort !== this.query.sort) {
         const sort = this.$route.query.sort ?
           this.$route.query.sort :
           DEFAULT_SORT;
 
-        if (sort != this.query.sort) {
+        if (sort !== this.query.sort) {
           this.query.sort = sort;
           changed = true;
         }
       }
 
-      if (this.$route.query.type != this.query.type) {
+      if (this.$route.query.type !== this.query.type) {
         const type = this.$route.query.type ?
           this.$route.query.type :
           DEFAULT_TYPE;
 
-        if (type != this.query.type) {
+        if (type !== this.query.type) {
           this.query.type = type;
           changed = true;
         }
       }
 
-      if (this.$route.query.category != this.query.category) {
+      if (this.$route.query.category !== this.query.category) {
         let category = this.$route.query.category;
         if (!category) {
           category = DEFAULT_CATEGORY;
         }
 
-        if (category != this.query.category) {
+        if (category !== this.query.category) {
           this.query.category = category;
           changed = true;
         }
       }
 
-      if (this.$route.query.channel != this.query.channel) {
+      if (this.$route.query.channel !== this.query.channel) {
         let channel = this.$route.query.channel;
         if (!channel) {
           channel = DEFAULT_CHANNEL;
         }
 
-        if (channel != this.query.channel) {
+        if (channel !== this.query.channel) {
           this.query.channel = channel;
           changed = true;
         }
       }
 
-      if (this.$route.query.search != this.query.search) {
+      if (this.$route.query.search !== this.query.search) {
         const search = this.$route.query.search ? this.$route.query.search : '';
-        if (search != this.query.search) {
+        if (search !== this.query.search) {
           this.query.search = search;
           this.query.sort = this.query.sort ? this.query.sort : 'relevance';
           changed = true;
@@ -272,15 +272,15 @@ export default {
         queryParams.page = `${this.page + 1}`;
       }
 
-      if (this.query.sort != DEFAULT_SORT) {
+      if (this.query.sort !== DEFAULT_SORT) {
         queryParams.sort = this.query.sort;
       }
 
-      if (this.query.type != DEFAULT_TYPE) {
+      if (this.query.type !== DEFAULT_TYPE) {
         queryParams.type = this.query.type;
       }
 
-      if (this.query.category != DEFAULT_CATEGORY) {
+      if (this.query.category !== DEFAULT_CATEGORY) {
         queryParams.category = this.query.category;
       }
 
@@ -288,7 +288,7 @@ export default {
         queryParams.search = this.query.search;
       }
 
-      if (this.query.channel != DEFAULT_CHANNEL) {
+      if (this.query.channel !== DEFAULT_CHANNEL) {
         queryParams.channel = this.query.channel;
       }
 
@@ -328,7 +328,7 @@ export default {
           utils.captureException(err);
         });
     },
-    debounceRefresh: debounce(function() {
+    debounceRefresh: debounce(function () {
       this.setQueryParams();
       this.refresh();
     }, 300),
@@ -343,22 +343,22 @@ export default {
       this.query.skip = this.page * this.query.limit;
       this.debounceRefresh();
     },
-    'query.sort': function() {
+    'query.sort': function () {
       this.debounceRefresh();
     },
-    'query.type': function() {
+    'query.type': function () {
       this.resetPage();
       this.debounceRefresh();
     },
-    'query.category': function() {
+    'query.category': function () {
       this.resetPage();
       this.debounceRefresh();
     },
-    'query.channel': function() {
+    'query.channel': function () {
       this.resetPage();
       this.debounceRefresh();
     },
-    'query.search': function() {
+    'query.search': function () {
       this.resetPage();
       if (this.created) {
         if (this.query.search) {
@@ -374,22 +374,22 @@ export default {
     $route(to, from) {
       const changed = this.getQueryParams();
 
-      if (to.name != from.name || changed) {
+      if (to.name !== from.name || changed) {
         this.debounceRefresh();
       }
 
-      if (to.name != from.name) {
+      if (to.name !== from.name) {
         this.$emit('updateHead');
       }
     },
     categories() {
       let category = this.category;
-      const match = this.categories.find((c) => c.category == this.category);
+      const match = this.categories.find((c) => c.category === this.category);
       if (!match) {
         category = DEFAULT_CATEGORY;
       }
 
-      if (this.category != category) {
+      if (this.category !== category) {
         this.category = category;
 
         this.setQueryParams();

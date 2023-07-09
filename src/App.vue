@@ -1,5 +1,5 @@
 <template>
-  <div id="app" :class="{staging: env == 'staging'}">
+  <div id="app" :class="{staging: env === 'staging'}">
     <header id="navigation" class="p-navigation">
       <div class="row p-navigation__row">
         <div class="p-navigation__banner">
@@ -168,7 +168,7 @@ export default {
     this.$store.dispatch('getCategories', this.$language.current);
 
     await this.$store.dispatch('getUser');
-    if (this.isAuthenticated && this.$route.name == 'login') {
+    if (this.isAuthenticated && this.$route.name === 'login') {
       this.$router.push({ name: 'manage' });
     }
     else if (
@@ -183,7 +183,7 @@ export default {
     $route() {
       this.showMenu = false;
     },
-    '$language.current': function() {
+    '$language.current': function () {
       this.$store.dispatch('getCategories', this.$language.current);
 
       if (window.localStorage) {

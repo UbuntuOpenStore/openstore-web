@@ -289,7 +289,7 @@ export default {
         this.saving = false;
 
         let channelText = this.$gettext('Xenial');
-        if (this.channel == 'focal') {
+        if (this.channel === 'focal') {
           channelText = this.$gettext('Focal');
         }
 

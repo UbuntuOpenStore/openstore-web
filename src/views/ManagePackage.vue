@@ -22,7 +22,7 @@
 
       <rating-row :ratings="app.ratings" />
 
-      <h2 v-if="locked && user.role != 'admin'" class="p-muted-heading">
+      <h2 v-if="locked && user.role !== 'admin'" class="p-muted-heading">
         This app has been locked by an administrator
       </h2>
 
@@ -65,7 +65,7 @@
                 tabindex="0"
                 role="tab"
                 @click="tab = 'presentation'"
-                :aria-selected="tab == 'presentation'"
+                :aria-selected="tab === 'presentation'"
                 v-translate
               >Presentation</a>
             </li>
@@ -75,7 +75,7 @@
                 tabindex="-1"
                 role="tab"
                 @click="tab = 'discovery'"
-                :aria-selected="tab == 'discovery'"
+                :aria-selected="tab === 'discovery'"
                 v-translate
               >Discovery</a>
             </li>
@@ -85,17 +85,17 @@
                 tabindex="-1"
                 role="tab"
                 @click="tab = 'info'"
-                :aria-selected="tab == 'info'"
+                :aria-selected="tab === 'info'"
                 v-translate
               >Info</a>
             </li>
-            <li class="p-tabs__item" role="presentation" v-if="user.role == 'admin'">
+            <li class="p-tabs__item" role="presentation" v-if="user.role === 'admin'">
               <a
                 class="p-tabs__link"
                 tabindex="-1"
                 role="tab"
                 @click="tab = 'admin'"
-                :aria-selected="tab == 'admin'"
+                :aria-selected="tab === 'admin'"
                 v-translate
               >Admin</a>
             </li>
@@ -105,7 +105,7 @@
                 tabindex="-1"
                 role="tab"
                 @click="tab = 'stats'"
-                :aria-selected="tab == 'stats'"
+                :aria-selected="tab === 'stats'"
                 v-translate
               >Stats</a>
             </li>
@@ -115,14 +115,14 @@
                 tabindex="-1"
                 role="tab"
                 @click="tab = 'badge'"
-                :aria-selected="tab == 'badge'"
+                :aria-selected="tab === 'badge'"
                 v-translate
               >Badge</a>
             </li>
           </ul>
         </nav>
 
-        <div :class="{hidden: tab != 'presentation'}" class="p-card">
+        <div :class="{hidden: tab !== 'presentation'}" class="p-card">
           <div class="p-card__content">
             <div class="p-form__group">
               <label for="name" class="p-form__label" v-translate>Title</label>
@@ -209,7 +209,7 @@
           </div>
         </div>
 
-        <div :class="{hidden: tab != 'discovery'}" class="p-card">
+        <div :class="{hidden: tab !== 'discovery'}" class="p-card">
           <div class="p-card__content">
             <div class="p-form__group">
               <label for="category" class="p-form__label" v-translate>Category</label>
@@ -256,7 +256,7 @@
           </div>
         </div>
 
-        <div :class="{hidden: tab != 'info'}" class="p-card">
+        <div :class="{hidden: tab !== 'info'}" class="p-card">
           <div class="p-card__content">
             <div class="p-form__group">
               <label for="license" class="p-form__label" v-translate>License</label>
@@ -362,7 +362,7 @@
           </div>
         </div>
 
-        <div :class="{hidden: tab != 'admin'}" class="p-card" v-if="user.role == 'admin'">
+        <div :class="{hidden: tab !== 'admin'}" class="p-card" v-if="user.role === 'admin'">
           <div class="p-form__group">
             <label for="locked" class="p-form__label" v-translate>Locked</label>
             <button
@@ -417,7 +417,7 @@
           </div>
         </div>
 
-        <div :class="{hidden: tab != 'stats'}" class="p-card">
+        <div :class="{hidden: tab !== 'stats'}" class="p-card">
           <div class="p-card__content">
             <div class="p-form__group">
               <label class="p-form__label" v-translate>Package Info</label>
@@ -484,7 +484,7 @@
                     <tr
                       v-for="revision in visibleRevisions"
                       :class="{
-                        'strong': revision.revision == latestRevision(revision.channel, revision.architecture)
+                        'strong': revision.revision === latestRevision(revision.channel, revision.architecture)
                       }"
                       :key="revision.revision"
                     >
@@ -516,7 +516,7 @@
           </div>
         </div>
 
-        <div :class="{hidden: tab != 'badge'}" class="p-card">
+        <div :class="{hidden: tab !== 'badge'}" class="p-card">
           <div class="p-card__content">
             <badge-select :app-id="app.id" />
           </div>
@@ -641,7 +641,7 @@ export default {
       this.loading = false;
     },
     async getUsers() {
-      if (this.user.role == 'admin') {
+      if (this.user.role === 'admin') {
         try {
           const users = await api.users.getAll(this.user.apikey);
           this.users = users;
@@ -661,10 +661,10 @@ export default {
       }
     },
     removeScreenshot(screenshot) {
-      this.app.screenshots = this.app.screenshots.filter((s) => s != screenshot);
+      this.app.screenshots = this.app.screenshots.filter((s) => s !== screenshot);
     },
     latestRevision(channel, arch) {
-      if (channel == 'vivid') {
+      if (channel === 'vivid') {
         // Don't show anything for vivid any more
         return -1;
       }
@@ -675,7 +675,7 @@ export default {
 
       let revision = -1;
       this.app.revisions
-        .filter((data) => data.channel == channel && data.architecture == arch)
+        .filter((data) => data.channel === channel && data.architecture === arch)
         .forEach((data) => {
           if (revision < data.revision) {
             revision = data.revision;
@@ -718,10 +718,10 @@ export default {
             ) {
               updateData.append(key, this.app[key]);
             }
-            else if (key == 'screenshots') {
+            else if (key === 'screenshots') {
               updateData.append(key, JSON.stringify(this.app[key]));
             }
-            else if (key == 'keywords') {
+            else if (key === 'keywords') {
               updateData.append(key, this.app[key].join(','));
             }
           });
@@ -827,7 +827,7 @@ export default {
       return this.revisions.slice(0, 10);
     },
     disabled() {
-      return this.saving || (this.locked && this.user.role != 'admin');
+      return this.saving || (this.locked && this.user.role !== 'admin');
     },
   },
   watch: {
