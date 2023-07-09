@@ -14,8 +14,7 @@ cd $BASE/$VERSION
 # TODO use a cached node_modules
 npm install --production=false
 
-# TODO update this once the server's node version has been updated
-npm run legacy-build$ENV
+npm run build$ENV
 
 rm -f $BASE/current
 ln -s $BASE/$VERSION $BASE/current
