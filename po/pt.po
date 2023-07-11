@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-07-07 11:39+0000\n"
+"PO-Revision-Date: 2023-07-12 16:48+0000\n"
 "Last-Translator: Ivo Xavier <ivofernandes12@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/open-store-io/"
 "openstore-web/pt/>\n"
@@ -197,7 +197,7 @@ msgstr ""
 
 #: ./src/views/ManagePackage.vue:454
 msgid "Arch"
-msgstr ""
+msgstr "Arquitetura"
 
 #: ./src/views/ManagePackage.vue:408
 #: ./src/views/Package.vue:220
@@ -298,7 +298,7 @@ msgstr "Escolha um programador"
 
 #: ./src/views/ManageRevisions.vue:176
 msgid "Completed"
-msgstr ""
+msgstr "Completado"
 
 #: ./src/views/Package.vue:356
 msgid "Connectivity"
@@ -354,7 +354,7 @@ msgstr "Descobre"
 
 #: ./src/views/Package.vue:362
 msgid "Document Files"
-msgstr ""
+msgstr "Arquivo de Documentos"
 
 #: ./src/App.vue:119
 #: ./src/views/Package.vue:136
@@ -386,7 +386,7 @@ msgstr "Descargas"
 
 #: ./src/views/Package.vue:271
 msgid "Downloads of the latest version"
-msgstr ""
+msgstr "Transferências da última versão"
 
 #: ./src/views/ManagePackage.vue:178
 msgid "Drag and drop to sort screenshots."
@@ -413,7 +413,7 @@ msgstr "Feeds"
 
 #: ./src/views/ManageRevisions.vue:22
 msgid "File"
-msgstr ""
+msgstr "Ficheiro"
 
 #: ./src/views/ManageRevisions.vue:328
 msgid "File Upload"
@@ -422,7 +422,7 @@ msgstr "Carregar ficheiro"
 #: ./src/views/ManageRevisions.vue:8
 #: ./src/views/ManageRevisions.vue:296
 msgid "Focal"
-msgstr ""
+msgstr "Focal"
 
 #: ./src/views/About.vue:64
 msgid ""
@@ -542,7 +542,7 @@ msgstr "Última atualização"
 
 #: ./src/views/Browse.vue:46
 msgid "Least Popular"
-msgstr ""
+msgstr "Menos Popular"
 
 #: ./src/views/About.vue:81
 #: ./src/views/ManagePackage.vue:255
@@ -556,7 +556,7 @@ msgstr "Localização"
 
 #: ./src/views/ManagePackage.vue:349
 msgid "Locked"
-msgstr ""
+msgstr "Bloqueado"
 
 #: ./src/App.vue:43
 msgid "Log In"
@@ -589,7 +589,7 @@ msgstr "Iniciar sessão com o GitLab"
 
 #: ./src/views/Login.vue:18
 msgid "Login via Ubuntu One"
-msgstr ""
+msgstr "Iniciar Sessão via Ubuntu One"
 
 #: ./src/views/ManagePackage.vue:364
 msgid "Maintainer"
@@ -616,7 +616,7 @@ msgstr "Microfone"
 
 #: ./src/views/Browse.vue:45
 msgid "Most Popular"
-msgstr ""
+msgstr "Mais Popular"
 
 #: ./src/views/Package.vue:369
 msgid "Music Files"
@@ -654,7 +654,7 @@ msgstr "Nova revisão para % {name}"
 
 #: ./src/views/ManageRevisions.vue:303
 msgid "New revisions for %{channel} were created!"
-msgstr ""
+msgstr "Novas revisões para o %{channel} foram criadas!"
 
 #: ./src/views/Browse.vue:49
 msgid "Newest"
@@ -672,7 +672,7 @@ msgstr "Não foram encontradas aplicações."
 
 #: ./src/views/Package.vue:47
 msgid "No longer available"
-msgstr ""
+msgstr "Não está mais disponível"
 
 #: ./src/views/Manage.vue:87
 #: ./src/views/Manage.vue:92
@@ -695,7 +695,7 @@ msgstr "Conteúdo NSFW"
 
 #: ./src/views/Package.vue:97
 msgid "Older Versions"
-msgstr ""
+msgstr "Versões Antigas"
 
 #: ./src/views/Browse.vue:50
 msgid "Oldest"
@@ -731,6 +731,8 @@ msgstr ""
 #: ./src/views/ManagePackage.vue:339
 msgid "Only YouTube and Odysee videos are supported at this time. Make sure the url is for the embedded video!"
 msgstr ""
+"Apenas vídeos do YouTube e Odysee são suportados de momento. Certifique-se "
+"de que o URL é para o vídeo incorporado!"
 
 #: ./src/views/About.vue:50
 msgid "Open the terminal app"
@@ -766,7 +768,7 @@ msgstr "Contribuidores da página da OpenStore"
 
 #: ./src/views/ManagePackage.vue:381
 msgid "Override Type"
-msgstr ""
+msgstr "Tipo de Substituição"
 
 #: ./src/views/ManagePackage.vue:395
 msgid "Package Info"
@@ -795,7 +797,7 @@ msgstr "Apresentação"
 
 #: ./src/views/ManageRevisions.vue:177
 msgid "Processing"
-msgstr ""
+msgstr "A processar"
 
 #: ./src/views/Submit.vue:79
 msgid "Prohibited Apps"
@@ -836,7 +838,7 @@ msgstr "Notificações"
 
 #: ./src/views/Package.vue:361
 msgid "Read Document Files"
-msgstr ""
+msgstr "Ler Arquivos de Documentos"
 
 #: ./src/views/Package.vue:368
 msgid "Read Music Files"
@@ -864,7 +866,7 @@ msgstr "Permissão restrita"
 
 #: ./src/components/Reviews.vue:3
 msgid "Reviews"
-msgstr ""
+msgstr "Críticas"
 
 #: ./src/views/ManagePackage.vue:452
 msgid "Revision"
@@ -920,7 +922,7 @@ msgstr "Conteúdo sexualmente explícito"
 
 #: ./src/views/ManagePackage.vue:488
 msgid "Show All Revisions"
-msgstr ""
+msgstr "Mostrar Todas as Críticas"
 
 #: ./src/views/Package.vue:160
 msgid "Show NSFW Content"
@@ -940,7 +942,7 @@ msgstr "Fonte"
 
 #: ./src/App.vue:92
 msgid "Source Code"
-msgstr ""
+msgstr "Código-Fonte"
 
 #: ./src/views/ManagePackage.vue:298
 msgid "Source URL"
@@ -994,7 +996,7 @@ msgstr "Tag Line"
 
 #: ./src/App.vue:81
 msgid "Telegram"
-msgstr ""
+msgstr "Telegram"
 
 #: ./src/views/About.vue:105
 msgid "Terms"
@@ -1109,7 +1111,7 @@ msgstr ""
 
 #: ./src/views/ManagePackage.vue:582
 msgid "This revision is still available"
-msgstr ""
+msgstr "Esta revisão ainda está disponível"
 
 #: ./src/views/ManageRevisions.vue:90
 msgid "This will be added to the beginning of your current changelog"
@@ -1133,7 +1135,7 @@ msgstr "Total"
 
 #: ./src/views/Package.vue:276
 msgid "Total downloads"
-msgstr ""
+msgstr "Total de transferências"
 
 #: ./src/views/Manage.vue:85
 msgid "Total:"
@@ -1168,11 +1170,11 @@ msgstr "Sem categoria"
 
 #: ./src/views/Package.vue:256
 msgid "Unrestricted read access to:"
-msgstr ""
+msgstr "Acesso de leitura irrestrito a:"
 
 #: ./src/views/Package.vue:252
 msgid "Unrestricted write access to:"
-msgstr ""
+msgstr "Acesso de gravação irrestrito a:"
 
 #: ./src/views/Package.vue:205
 msgid "Updated"
@@ -1188,7 +1190,7 @@ msgstr "Data atualizada"
 
 #: ./src/views/ManageRevisions.vue:13
 msgid "Upload Revision via:"
-msgstr ""
+msgstr "Carregar revisão via:"
 
 #: ./src/views/ManageRevisions.vue:23
 #: ./src/views/ManageRevisions.vue:328
@@ -1265,6 +1267,7 @@ msgstr "Sim"
 #: ./src/views/Submit.vue:15
 msgid "You are not allowed to impersonate someone else or another app."
 msgstr ""
+"Você não tem permissão para se passar por outra pessoa ou outra aplicação."
 
 #: ./src/views/Submit.vue:11
 msgid "You are only allowed to publish apps that you have permission to distribute."
