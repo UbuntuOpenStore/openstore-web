@@ -271,7 +271,7 @@
           <p v-if="app.latestDownloads > 0">
             <span v-translate>Downloads of the latest version</span>
             :
-            {{app.latestDownloads | number}}
+            {{latestDownloads | number}}
           </p>
           <p>
             <span v-translate>Total downloads</span>
@@ -345,6 +345,7 @@ export default {
       missing: false,
       error: false,
       loading: false,
+      latestDownloads: 0,
       installTitle: this.$gettext('Install via the OpenStore app'),
       permissionLabels: {
         // TODO make these update with the language change
@@ -388,6 +389,7 @@ export default {
   methods: {
     async refresh() {
       this.loading = true;
+      this.latestDownloads = 0;
 
       try {
         const [app, reviews] = await Promise.all([
@@ -398,6 +400,11 @@ export default {
         this.app = app;
         this.reviews = reviews;
         this.loading = false;
+
+        // Include all channels in the downloads count
+        this.latestDownloads = app.downloads.reduce((acc, curr) => {
+          return acc + curr.downloads;
+        }, 0);
 
         if (this.app.nsfw) {
           this.showNSFW = false;

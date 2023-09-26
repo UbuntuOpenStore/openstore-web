@@ -5,6 +5,8 @@ function success(res) {
   return res.data.data;
 }
 
+export const DEFAULT_CHANNEL = 'focal';
+
 export default {
   auth: {
     me: async() => {
@@ -27,7 +29,7 @@ export default {
       params: query,
     }).then(success),
 
-    get: (id) => axios.get(`${process.env.VUE_APP_DOMAIN}/api/v4/apps/${id}`)
+    get: (id) => axios.get(`${process.env.VUE_APP_DOMAIN}/api/v4/apps/${id}?channel=${DEFAULT_CHANNEL}`)
       .then(success),
 
     stats: () => axios.get(`${process.env.VUE_APP_DOMAIN}/api/v3/stats`)
