@@ -108,7 +108,7 @@
               <svgicon icon="info" width="2em" height="2em" color="#1ab6ef" />
               <br />
 
-              v{{app.version}}
+              v{{version}}
               <span v-if="app.donate_url && app.license">
                 <br />
                 {{app.license}}
@@ -346,6 +346,7 @@ export default {
       error: false,
       loading: false,
       latestDownloads: 0,
+      version: '',
       installTitle: this.$gettext('Install via the OpenStore app'),
       permissionLabels: {
         // TODO make these update with the language change
@@ -390,6 +391,7 @@ export default {
     async refresh() {
       this.loading = true;
       this.latestDownloads = 0;
+      this.version = '';
 
       try {
         const [app, reviews] = await Promise.all([
@@ -400,6 +402,14 @@ export default {
         this.app = app;
         this.reviews = reviews;
         this.loading = false;
+
+        this.version = app.version;
+
+        // TODO make this more generic to survive the next upgrade
+        const focalDownload = app.downloads.find((download) => download.channel === 'focal');
+        if (focalDownload && focalDownload.version) {
+          this.version = focalDownload.version;
+        }
 
         // Include all channels in the downloads count
         this.latestDownloads = app.downloads.reduce((acc, curr) => {
