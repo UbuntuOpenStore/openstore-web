@@ -1,9 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
+"PO-Revision-Date: 2023-11-09 13:35+0000\n"
+"Last-Translator: phlostically <phlostically@mailinator.com>\n"
+"Language-Team: Esperanto <https://hosted.weblate.org/projects/open-store-io/"
+"openstore-web/eo/>\n"
 "Language: eo\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.2-dev\n"
 "Generated-By: easygettext\n"
 
 #: ./src/views/Package.vue:120
@@ -25,15 +31,15 @@ msgstr ""
 #: ./src/views/About.vue:12
 #: ./src/views/About.vue:16
 msgid "About"
-msgstr ""
+msgstr "Pri"
 
 #: ./src/App.vue:63
 msgid "About Us"
-msgstr ""
+msgstr "Pri ni"
 
 #: ./src/views/Package.vue:62
 msgid "Accounts"
-msgstr ""
+msgstr "Kontoj"
 
 #: ./src/views/ManageRevisions.vue:54
 msgid "Add Another Architecture"
@@ -45,11 +51,11 @@ msgstr ""
 
 #: ./src/views/Browse.vue:16
 msgid "All Categories"
-msgstr ""
+msgstr "Ĉiuj kategorioj"
 
 #: ./src/views/Browse.vue:50
 msgid "All Channels"
-msgstr ""
+msgstr "Ĉiuj kanaloj"
 
 #: ./src/views/Browse.vue:25
 msgid "All Types"
@@ -92,7 +98,7 @@ msgstr ""
 #: ./src/views/ManagePackage.vue:221
 #: ./src/views/Stats.vue:27
 msgid "App"
-msgstr ""
+msgstr "Programo"
 
 #: ./src/views/Submit.vue:85
 msgid "App containing or promoting any of the above are strictly prohibited."
@@ -120,7 +126,7 @@ msgstr ""
 
 #: ./src/views/Browse.vue:26
 msgid "Apps"
-msgstr ""
+msgstr "Programoj"
 
 #: ./src/views/Submit.vue:89
 msgid ""
@@ -170,7 +176,7 @@ msgstr ""
 
 #: ./src/views/ManagePackage.vue:297
 msgid "Arch"
-msgstr ""
+msgstr "Arĥitekturo"
 
 #: ./src/views/ManagePackage.vue:255
 #: ./src/views/Package.vue:168
