@@ -136,9 +136,14 @@
         You can review the rules and policies before uploading your app.
       </p>
 
-      <br />
-
       <router-link :to="{name: 'submit'}" v-translate>Submit your app</router-link>
+
+      <br/>
+
+      <a href="https://bhdouglass.com/blog/how-to-publish-an-ubuntu-touch-app/">
+        <span class="mr" v-translate>App Submission Tutorial</span>
+        <svgicon icon="external-link" width="1em" height="1em" color="#007aa6" />
+      </a>
 
       <h2 v-translate>Contributors</h2>
 

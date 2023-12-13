@@ -30,7 +30,7 @@ msgstr ""
 msgid "About Us"
 msgstr ""
 
-#: ./src/views/Package.vue:62
+#: ./src/views/Package.vue:64
 msgid "Accounts"
 msgstr ""
 
@@ -69,7 +69,7 @@ msgstr ""
 msgid "An unknown error has occurred"
 msgstr ""
 
-#: ./src/views/About.vue:146
+#: ./src/views/About.vue:151
 msgid "And many amazing developers, testers, and users from the OpenStore community!"
 msgstr ""
 
@@ -103,6 +103,10 @@ msgstr ""
 
 #: ./src/App.vue:69
 msgid "App Stats"
+msgstr ""
+
+#: ./src/views/About.vue:131
+msgid "App Submission Tutorial"
 msgstr ""
 
 #: ./src/views/Submit.vue:128
@@ -176,7 +180,7 @@ msgstr ""
 msgid "Architecture"
 msgstr ""
 
-#: ./src/views/Package.vue:63
+#: ./src/views/Package.vue:65
 msgid "Audio"
 msgstr ""
 
@@ -195,7 +199,7 @@ msgstr ""
 msgid "Badges"
 msgstr ""
 
-#: ./src/views/Package.vue:64
+#: ./src/views/Package.vue:66
 msgid "Bluetooth"
 msgstr ""
 
@@ -221,11 +225,11 @@ msgstr ""
 msgid "Bug Tracker"
 msgstr ""
 
-#: ./src/views/Package.vue:65
+#: ./src/views/Package.vue:67
 msgid "Calendar"
 msgstr ""
 
-#: ./src/views/Package.vue:66
+#: ./src/views/Package.vue:68
 msgid "Camera"
 msgstr ""
 
@@ -277,7 +281,7 @@ msgstr ""
 msgid "Completed"
 msgstr ""
 
-#: ./src/views/Package.vue:67
+#: ./src/views/Package.vue:69
 msgid "Connectivity"
 msgstr ""
 
@@ -285,19 +289,19 @@ msgstr ""
 msgid "Contact"
 msgstr ""
 
-#: ./src/views/Package.vue:68
+#: ./src/views/Package.vue:70
 msgid "Contacts"
 msgstr ""
 
-#: ./src/views/Package.vue:70
+#: ./src/views/Package.vue:72
 msgid "Content Exchange"
 msgstr ""
 
-#: ./src/views/Package.vue:69
+#: ./src/views/Package.vue:71
 msgid "Content Exchange Source"
 msgstr ""
 
-#: ./src/views/About.vue:130
+#: ./src/views/About.vue:135
 msgid "Contributors"
 msgstr ""
 
@@ -313,7 +317,7 @@ msgstr ""
 msgid "Create"
 msgstr ""
 
-#: ./src/views/Package.vue:71
+#: ./src/views/Package.vue:73
 msgid "Debug"
 msgstr ""
 
@@ -329,7 +333,7 @@ msgstr ""
 msgid "Discovery"
 msgstr ""
 
-#: ./src/views/Package.vue:73
+#: ./src/views/Package.vue:75
 msgid "Document Files"
 msgstr ""
 
@@ -408,7 +412,7 @@ msgid ""
 "You can also submit issues, bugs, and feature requests to our GitLab bug tracker."
 msgstr ""
 
-#: ./src/views/Package.vue:92
+#: ./src/views/Package.vue:94
 msgid "Full System Access"
 msgstr ""
 
@@ -443,7 +447,7 @@ msgstr ""
 msgid "Harassment, Bullying, or Hate Speech"
 msgstr ""
 
-#: ./src/views/Package.vue:74
+#: ./src/views/Package.vue:76
 msgid "History"
 msgstr ""
 
@@ -466,7 +470,7 @@ msgstr ""
 msgid "Illegal Activities"
 msgstr ""
 
-#: ./src/views/Package.vue:75
+#: ./src/views/Package.vue:77
 msgid "In App Purchases"
 msgstr ""
 
@@ -480,7 +484,7 @@ msgstr ""
 msgid "Install"
 msgstr ""
 
-#: ./src/views/Package.vue:59
+#: ./src/views/Package.vue:61
 msgid "Install via the OpenStore app"
 msgstr ""
 
@@ -492,7 +496,7 @@ msgstr ""
 msgid "Jump to the last page"
 msgstr ""
 
-#: ./src/views/Package.vue:76
+#: ./src/views/Package.vue:78
 msgid "Keep Display On"
 msgstr ""
 
@@ -523,7 +527,7 @@ msgstr ""
 msgid "License"
 msgstr ""
 
-#: ./src/views/Package.vue:77
+#: ./src/views/Package.vue:79
 msgid "Location"
 msgstr ""
 
@@ -583,7 +587,7 @@ msgstr ""
 msgid "Manage Apps"
 msgstr ""
 
-#: ./src/views/Package.vue:78
+#: ./src/views/Package.vue:80
 msgid "Microphone"
 msgstr ""
 
@@ -591,7 +595,7 @@ msgstr ""
 msgid "Most Popular"
 msgstr ""
 
-#: ./src/views/Package.vue:80
+#: ./src/views/Package.vue:82
 msgid "Music Files"
 msgstr ""
 
@@ -603,7 +607,7 @@ msgstr ""
 msgid "Navigate to the downloads folder"
 msgstr ""
 
-#: ./src/views/Package.vue:82
+#: ./src/views/Package.vue:84
 msgid "Networking"
 msgstr ""
 
@@ -633,7 +637,7 @@ msgstr ""
 msgid "Newest"
 msgstr ""
 
-#: ./src/views/Package.vue:81
+#: ./src/views/Package.vue:83
 msgid "NFC"
 msgstr ""
 
@@ -705,7 +709,7 @@ msgstr ""
 msgid "Open the terminal app"
 msgstr ""
 
-#: ./src/views/About.vue:137
+#: ./src/views/About.vue:142
 msgid "OpenStore API/Server Contributors"
 msgstr ""
 
@@ -713,7 +717,7 @@ msgstr ""
 msgid "OpenStore App Content Policy"
 msgstr ""
 
-#: ./src/views/About.vue:143
+#: ./src/views/About.vue:148
 msgid "OpenStore App Contributors"
 msgstr ""
 
@@ -729,7 +733,7 @@ msgstr ""
 msgid "OpenStore source on GitLab"
 msgstr ""
 
-#: ./src/views/About.vue:140
+#: ./src/views/About.vue:145
 msgid "OpenStore Website Contributors"
 msgstr ""
 
@@ -750,7 +754,7 @@ msgstr ""
 msgid "Permissions"
 msgstr ""
 
-#: ./src/views/Package.vue:84
+#: ./src/views/Package.vue:86
 msgid "Picture Files"
 msgstr ""
 
@@ -801,23 +805,23 @@ msgstr ""
 msgid "Publisher"
 msgstr ""
 
-#: ./src/views/Package.vue:85
+#: ./src/views/Package.vue:87
 msgid "Push Notifications"
 msgstr ""
 
-#: ./src/views/Package.vue:72
+#: ./src/views/Package.vue:74
 msgid "Read Document Files"
 msgstr ""
 
-#: ./src/views/Package.vue:79
+#: ./src/views/Package.vue:81
 msgid "Read Music Files"
 msgstr ""
 
-#: ./src/views/Package.vue:83
+#: ./src/views/Package.vue:85
 msgid "Read Picture Files"
 msgstr ""
 
-#: ./src/views/Package.vue:88
+#: ./src/views/Package.vue:90
 msgid "Read Video Files"
 msgstr ""
 
@@ -829,7 +833,7 @@ msgstr ""
 msgid "Report an Issue"
 msgstr ""
 
-#: ./src/views/Package.vue:188
+#: ./src/views/Package.vue:205
 msgid "Restricted permission"
 msgstr ""
 
@@ -883,7 +887,7 @@ msgstr ""
 msgid "Send us a link to a repository for your app to our telegram group along with some instructions on how to build it."
 msgstr ""
 
-#: ./src/views/Package.vue:86
+#: ./src/views/Package.vue:88
 msgid "Sensors"
 msgstr ""
 
@@ -943,7 +947,7 @@ msgstr ""
 msgid "Submit App"
 msgstr ""
 
-#: ./src/views/About.vue:128
+#: ./src/views/About.vue:126
 msgid "Submit your app"
 msgstr ""
 
@@ -1003,7 +1007,7 @@ msgid ""
 "But if you need to install the OpenStore manually, follow these steps:"
 msgstr ""
 
-#: ./src/views/About.vue:133
+#: ./src/views/About.vue:138
 msgid "The OpenStore is made possible by many amazing contributors:"
 msgstr ""
 
@@ -1056,11 +1060,11 @@ msgstr ""
 msgid "This app contains NSFW material"
 msgstr ""
 
-#: ./src/views/Package.vue:202
+#: ./src/views/Package.vue:219
 msgid "This app does not have access to restricted system data, see permissions for more details"
 msgstr ""
 
-#: ./src/views/Package.vue:206
+#: ./src/views/Package.vue:223
 msgid "This app has access to restricted system data, see permissions for more details"
 msgstr ""
 
@@ -1172,7 +1176,7 @@ msgstr ""
 msgid "URL of App from the Web"
 msgstr ""
 
-#: ./src/views/Package.vue:87
+#: ./src/views/Package.vue:89
 msgid "User Metrics"
 msgstr ""
 
@@ -1181,11 +1185,11 @@ msgstr ""
 msgid "Version"
 msgstr ""
 
-#: ./src/views/Package.vue:90
+#: ./src/views/Package.vue:92
 msgid "Video"
 msgstr ""
 
-#: ./src/views/Package.vue:89
+#: ./src/views/Package.vue:91
 msgid "Video Files"
 msgstr ""
 
@@ -1211,7 +1215,7 @@ msgstr ""
 msgid "Web Apps"
 msgstr ""
 
-#: ./src/views/Package.vue:91
+#: ./src/views/Package.vue:93
 msgid "Webview"
 msgstr ""
 
