@@ -130,12 +130,12 @@
             </div>
 
             <div class="p-matrix__item center" v-if="app.donate_url">
-              <a :href="app.donate_url" target="_blank" rel="noopener noreferrer">
+              <a :href="app.donate_url" target="_blank" rel="noopener noreferrer nofollow">
                 <svgicon icon="thumbs_up-full" width="2em" height="2em" color="#dd4814" />
               </a>
               <br />
 
-              <a :href="app.donate_url" target="_blank" rel="noopener noreferrer" v-translate>Donate</a>
+              <a :href="app.donate_url" target="_blank" rel="noopener noreferrer nofollow" v-translate>Donate</a>
             </div>
           </div>
         </div>
@@ -182,19 +182,19 @@
             <a
               :href="app.support_url"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer nofollow"
             >{{app.support_url}}</a>
           </p>
           <p v-if="app.source">
             <span v-translate>Source</span>:
-            <a :href="app.source" target="_blank" rel="noopener noreferrer">{{app.source}}</a>
+            <a :href="app.source" target="_blank" rel="noopener noreferrer nofollow">{{app.source}}</a>
           </p>
           <p v-if="app.translation_url">
             <span v-translate>Translations</span>:
             <a
               :href="app.translation_url"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer nofollow"
             >{{app.translation_url}}</a>
           </p>
           <p v-if="app.license">
