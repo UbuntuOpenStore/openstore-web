@@ -28,8 +28,8 @@
         <div class="p-form__group">
           <label for="channel" class="p-form__label" v-translate>Channel</label>
           <select id="channel" class="p-form__control" v-model="channel" :disabled="saving">
-            <option value="xenial" v-translate>Xenial</option>
             <option value="focal" v-translate>Focal</option>
+            <option value="xenial" v-translate>Xenial</option>
           </select>
         </div>
 
@@ -164,7 +164,7 @@ export default {
   data() {
     return {
       app: {},
-      channel: 'xenial',
+      channel: 'focal',
       loading: false,
       saving: false,
       changelog: '',
