@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-30 00:38-0500\n"
-"PO-Revision-Date: 2020-02-06 05:33+0000\n"
-"Last-Translator: Ege Öz <ege.oz@tutanota.com>\n"
-"Language-Team: Turkish <https://translate.ubports.com/projects/openstore/"
-"open-storeio/tr/>\n"
+"PO-Revision-Date: 2024-01-19 22:00+0000\n"
+"Last-Translator: Özgür KEYSAN <ozgurkeysan@gmail.com>\n"
+"Language-Team: Turkish <https://hosted.weblate.org/projects/open-store-io/"
+"openstore-web/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.8\n"
+"X-Generator: Weblate 5.4-dev\n"
 
 #: src/views/Package.vue:149
 msgid ""
@@ -101,7 +101,7 @@ msgstr "API Anahtarı"
 
 #: src/components/Types.vue:3 src/views/Manage.vue:46 src/views/Stats.vue:108
 msgid "App"
-msgstr "Uygulama"
+msgstr "Uygulamalar"
 
 #: src/views/Submit.vue:95
 msgid "App containing or promoting any of the above are strictly prohibited."
@@ -289,7 +289,7 @@ msgstr ""
 
 #: src/views/Package.vue:324
 msgid "Connectivity"
-msgstr "İletişim"
+msgstr "Bağlantı"
 
 #: src/views/About.vue:59
 msgid "Contact"
@@ -300,8 +300,9 @@ msgid "Contacts"
 msgstr "Kişiler"
 
 #: src/views/Package.vue:327
+#, fuzzy
 msgid "Content Exchange"
-msgstr ""
+msgstr "İçerik İşleyici"
 
 #: src/views/Package.vue:326
 msgid "Content Exchange Source"
@@ -325,7 +326,7 @@ msgstr "Oluştur"
 
 #: src/views/Package.vue:328
 msgid "Debug"
-msgstr "Hata Ayıkla"
+msgstr "Hata Ayıklama"
 
 #: src/views/ManagePackage.vue:351
 msgid "Delete"
@@ -410,7 +411,7 @@ msgstr ""
 
 #: src/views/Package.vue:346
 msgid "Full System Access"
-msgstr "Tüm Sistem Erişimi"
+msgstr "Tam Sistem Erişimi"
 
 #: src/views/Submit.vue:100
 msgid "Gambling"
@@ -445,7 +446,7 @@ msgstr "Rahatsızlık, Zorbalık veya Nefret Söylemi"
 
 #: src/views/Package.vue:329
 msgid "History"
-msgstr "Geçmiş"
+msgstr "Tarih"
 
 #: src/views/Manage.vue:44
 msgid "Icon"
@@ -466,8 +467,9 @@ msgid "Illegal Activities"
 msgstr "Yasadışı Aktiviteler"
 
 #: src/views/Package.vue:330
+#, fuzzy
 msgid "In App Purchases"
-msgstr "Uygulama İçi Satın Alımlar"
+msgstr "Uygulama İçi Satın Alma"
 
 #: src/views/ManagePackage.vue:60 src/views/Package.vue:208
 msgid "Info"
@@ -516,7 +518,7 @@ msgstr "Lisans"
 
 #: src/views/Package.vue:332
 msgid "Location"
-msgstr "Yer"
+msgstr "Konum"
 
 #: src/App.vue:37
 msgid "Log In"
@@ -573,7 +575,7 @@ msgstr "Mikrofon"
 
 #: src/views/Package.vue:335
 msgid "Music Files"
-msgstr "Müzik Dosyaları"
+msgstr "Müzikler"
 
 #: src/views/Manage.vue:45
 msgid "Name"
@@ -585,7 +587,7 @@ msgstr "İndirilenler dizinine git"
 
 #: src/views/Package.vue:336
 msgid "Networking"
-msgstr "Ağ"
+msgstr "Bağlantı Oluşturma"
 
 #: src/views/Feeds.vue:9
 msgid "New Apps"
@@ -759,7 +761,7 @@ msgstr "Yayınlanma Tarihi"
 
 #: src/views/Package.vue:339
 msgid "Push Notifications"
-msgstr ""
+msgstr "Bildirimleri Aç"
 
 #: src/views/Package.vue:334
 msgid "Read Music Files"
@@ -767,11 +769,11 @@ msgstr "Müzik Dosyalarını Oku"
 
 #: src/views/Package.vue:337
 msgid "Read Picture Files"
-msgstr "Resim Dosyalarını Oku"
+msgstr "Resim Dosyaları Okunuyor"
 
 #: src/views/Package.vue:342
 msgid "Read Video Files"
-msgstr "Video Dosyalarını Oku"
+msgstr "Video Dosyaları Okunuyor"
 
 #: src/views/Browse.vue:41
 msgid "Relevance"
@@ -1093,11 +1095,11 @@ msgstr ""
 
 #: src/views/Package.vue:344
 msgid "Video"
-msgstr ""
+msgstr "Video"
 
 #: src/views/Package.vue:343
 msgid "Video Files"
-msgstr ""
+msgstr "Video Dosyaları"
 
 #: src/views/ManagePackage.vue:221
 msgid "Video URL"
@@ -1113,7 +1115,7 @@ msgstr ""
 
 #: src/components/Types.vue:5 src/views/Stats.vue:110
 msgid "Web App"
-msgstr ""
+msgstr "İnternet Uygulamaları"
 
 #: src/components/Types.vue:6 src/views/Stats.vue:111
 msgid "Web App+"
@@ -1125,7 +1127,7 @@ msgstr ""
 
 #: src/views/Package.vue:345
 msgid "Webview"
-msgstr ""
+msgstr "Web Görünümü"
 
 #: src/views/Manage.vue:4
 msgid "Welcome %{name}!"
