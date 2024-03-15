@@ -10,8 +10,8 @@ msgstr ""
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
 "PO-Revision-Date: 2022-07-23 13:25+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
-"Language-Team: Dutch <https://translate.ubports.com/projects/openstore/"
-"open-storeio/nl/>\n"
+"Language-Team: Dutch <https://translate.ubports.com/projects/openstore/open-"
+"storeio/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 3.11.3\n"
 
-#: src/views/Package.vue:118
+#: src/views/Package.vue:120
 msgid ""
 "*This app contains NSFW content, to view the description and\n"
 "screenshots, click the above button."
@@ -27,32 +27,46 @@ msgstr ""
 "*Deze app bevat inhoud voor volwassenen. Klik op bovenstaande\n"
 "knop om de omschrijving en schermfoto's te tonen."
 
-#: src/views/ManagePackage.vue:577
+#: src/views/ManagePackage.vue:231
 msgid "%{name} was successfully deleted"
 msgstr "%{name} is verwijderd"
 
-#: src/views/ManagePackage.vue:157
+#: src/views/ManagePackage.vue:125
 msgid "A comma separated list of keywords"
 msgstr "Een kommagescheiden lijst met trefwoorden"
 
-#: src/App.vue:34 src/views/About.vue:3 src/views/About.vue:183
-#: src/views/About.vue:187
+#: src/App.vue:29 src/views/About.vue:3 src/views/About.vue:12
+#: src/views/About.vue:16
 msgid "About"
 msgstr "Over"
 
-#: src/App.vue:78
+#: src/App.vue:63
 msgid "About Us"
 msgstr "Over ons"
 
-#: src/views/Package.vue:266
+#: src/views/Package.vue:64
 msgid "Accounts"
 msgstr "Accounts"
+
+#: src/views/ManageRevisions.vue:54
+#, fuzzy
+#| msgid "Architecture"
+msgid "Add Another Architecture"
+msgstr "Architectuur"
+
+#: src/views/ManagePackage.vue:56
+msgid "Admin"
+msgstr ""
 
 #: src/views/Browse.vue:16
 msgid "All Categories"
 msgstr "Alle categorieën"
 
-#: src/views/Browse.vue:31
+#: src/views/Browse.vue:50
+msgid "All Channels"
+msgstr "Alle kanalen"
+
+#: src/views/Browse.vue:25
 msgid "All Types"
 msgstr "Alle soorten"
 
@@ -60,26 +74,27 @@ msgstr "Alle soorten"
 msgid "An account is not needed to download or install apps."
 msgstr "Je hebt geen account nodig om apps te downloaden of installeren."
 
-#: src/views/ManagePackage.vue:444 src/views/ManagePackage.vue:462
-#: src/views/ManageRevisions.vue:136
+#: src/views/ManagePackage.vue:87 src/views/ManagePackage.vue:100
+#: src/views/ManageRevisions.vue:78
 msgid "An error occured loading your app data"
 msgstr "Er is een fout opgetreden tijdens het laden van je appgegevens"
 
-#: src/views/ManageRevisions.vue:183 src/views/Submit.vue:212
+#: src/views/ManageRevisions.vue:140 src/views/Submit.vue:47
 msgid "An unknown error has occurred"
 msgstr "Er is een onbekende fout opgetreden"
 
-#: src/views/About.vue:160
+#: src/views/About.vue:151
 msgid ""
 "And many amazing developers, testers, and users from the OpenStore community!"
 msgstr ""
 "En de vele fantastische ontwikkelaars, testers en gebruikers binnen de "
 "OpenStore-gemeenschap!"
 
-#: src/views/About.vue:122
+#: src/views/About.vue:113
 msgid ""
 "Any personal data you decide to give us (e.g. your email address when "
-"registering for an account to upload your apps)\ngoes no further than us,\n"
+"registering for an account to upload your apps)\n"
+"goes no further than us,\n"
 "and will not be used for anything other than allowing you to maintain your "
 "apps and, in rare cases,\n"
 "contact you in the event there is an issue with your app.\n"
@@ -95,55 +110,67 @@ msgstr ""
 "Daarnaast gebruikt deze site cookies om zodat je ingelogd blijft op je "
 "account."
 
-#: src/views/Manage.vue:14
+#: src/views/Manage.vue:13
 msgid "API Key"
 msgstr "Api-sleutel"
 
-#: src/components/Types.vue:3 src/views/Manage.vue:46 src/views/Stats.vue:108
+#: src/components/Types.vue:3 src/views/Manage.vue:43
+#: src/views/ManagePackage.vue:221 src/views/Stats.vue:27
 msgid "App"
 msgstr "App"
 
-#: src/views/Submit.vue:95
+#: src/views/Submit.vue:85
 msgid "App containing or promoting any of the above are strictly prohibited."
 msgstr ""
 "Apps die bovenstaande inhoud bevatten of promoten zijn strikt verboden."
 
-#: src/views/Submit.vue:133
+#: src/views/Submit.vue:117
 msgid "App Name"
 msgstr "Appnaam"
 
-#: src/App.vue:88
+#: src/App.vue:69
 msgid "App Stats"
 msgstr "Appstatistieken"
 
-#: src/views/Submit.vue:150
+#: src/views/About.vue:131
+msgid "App Submission Tutorial"
+msgstr ""
+
+#: src/views/Submit.vue:128
 msgid "App Title"
 msgstr "Apptitel"
 
-#: src/views/Stats.vue:19
+#: src/views/Stats.vue:17
 msgid "App Type"
 msgstr "Soort app"
 
-#: src/views/Stats.vue:15
+#: src/views/Stats.vue:13
 msgid "App Types"
 msgstr "Soorten apps"
 
-#: src/views/Browse.vue:32
+#: src/views/Browse.vue:26
 msgid "Apps"
 msgstr "Apps"
 
-#: src/views/Submit.vue:101
+#: src/views/Submit.vue:89
+#, fuzzy
+#| msgid ""
+#| "Apps containing gambling involving real world money transactions are not "
+#| "allowed.\n"
+#| "This includes, but is not limited to, online casinos, betting, and "
+#| "lotteries."
 msgid ""
 "Apps containing gambling involving real world money transactions are not "
 "allowed.\n"
-"This includes, but is not limited to, online casinos, betting, and lotteries."
+"  This includes, but is not limited to, online casinos, betting, and "
+"lotteries."
 msgstr ""
 "Apps met gokspellen waarbij fysieke geldtransacties zijn betrokken, zijn "
 "niet toegestaan.\n"
 "Dit omvat, maar is niet beperkt tot, online-casino's, weddenschappen en "
 "loterijen."
 
-#: src/views/Submit.vue:82
+#: src/views/Submit.vue:74
 msgid ""
 "Apps containing or promoting child abuse or child sexual abuse are strictly "
 "prohibited."
@@ -151,20 +178,30 @@ msgstr ""
 "Apps met kindermishandeling of seksueel misbruik van kinderen zijn ten "
 "strengste verboden."
 
-#: src/views/Submit.vue:88
+#: src/views/Submit.vue:78
+#, fuzzy
+#| msgid ""
+#| "Apps containing or promoting gratuitous violence are not allowed.\n"
+#| "This includes, but is not limited to, violence, terrorism, bomb/weapon "
+#| "making, self harm, and grotesque imagery."
 msgid ""
 "Apps containing or promoting gratuitous violence are not allowed.\n"
-"This includes, but is not limited to, violence, terrorism, bomb/weapon "
+"  This includes, but is not limited to, violence, terrorism, bomb/weapon "
 "making, self harm, and grotesque imagery."
 msgstr ""
 "Apps die zinloos geweld bevatten of promoten, zijn niet toegestaan.\n"
 "Dit omvat, maar is niet beperkt tot, geweld, terrorisme, het maken van "
 "bommen/wapens, zelfbeschadiging en buitensporige beelden."
 
-#: src/views/Submit.vue:75
+#: src/views/Submit.vue:67
+#, fuzzy
+#| msgid ""
+#| "Apps containing or promoting sexually explicit content are not allowed.\n"
+#| "This includes, but is not limited to, pornography and services promoting "
+#| "sexually explicit content."
 msgid ""
 "Apps containing or promoting sexually explicit content are not allowed.\n"
-"This includes, but is not limited to, pornography and services promoting "
+"  This includes, but is not limited to, pornography and services promoting "
 "sexually explicit content."
 msgstr ""
 "Apps die seksueel expliciete inhoud bevatten of promoten, zijn niet "
@@ -180,13 +217,13 @@ msgstr ""
 "Apps waarvoor geen handmatige beoordeling nodig is, kunnen worden ingediend "
 "door in te loggen met de link ‘Inloggen’."
 
-#: src/views/Submit.vue:108
+#: src/views/Submit.vue:96
 msgid "Apps promoting illegal activities (based on USA law) are not allowed."
 msgstr ""
 "Apps die illegale activiteiten promoten (op basis van Amerikaanse wetgeving) "
 "zijn niet toegestaan."
 
-#: src/views/Submit.vue:18
+#: src/views/Submit.vue:15
 msgid ""
 "Apps requiring manual review must be submitted by contacting an admin in our "
 "telegram group."
@@ -194,17 +231,22 @@ msgstr ""
 "Apps die een handmatige beoordeling vereisen, moeten worden ingediend door "
 "contact op te nemen met een beheerder in onze telegramgroep."
 
-#: src/views/Submit.vue:114
+#: src/views/Submit.vue:100
+#, fuzzy
+#| msgid ""
+#| "Apps that are found to be stealing the users data, trying to escalate "
+#| "their privileges without user consent,\n"
+#| "or executing malicious process are strictly prohibited."
 msgid ""
 "Apps that are found to be stealing the users data, trying to escalate their "
 "privileges without user consent,\n"
-"or executing malicious process are strictly prohibited."
+"  or executing malicious process are strictly prohibited."
 msgstr ""
 "Apps waarvan wordt vastgesteld dat ze gebruikersgegevens stelen, hun "
 "bevoegdheden proberen uit te breiden zonder toestemming van de gebruiker,\n"
 "of kwaadwillende processen uitvoeren zijn ten strengste verboden."
 
-#: src/views/About.vue:129
+#: src/views/About.vue:121
 msgid ""
 "Apps uploaded to the OpenStore are subject to our submission rules and "
 "content policy.\n"
@@ -214,24 +256,23 @@ msgstr ""
 "inhoudsbeleid.\n"
 "Je kunt de regels en het beleid nalopen voordat je je app uploadt."
 
-#: src/views/ManagePackage.vue:258 src/views/Package.vue:193
+#: src/views/ManagePackage.vue:297
+msgid "Arch"
+msgstr ""
+
+#: src/views/ManagePackage.vue:255 src/views/Package.vue:168
 msgid "Architecture"
 msgstr "Architectuur"
 
-#: src/views/Package.vue:267
+#: src/views/Package.vue:65
 msgid "Audio"
 msgstr "Audio"
 
-#: src/views/Manage.vue:47 src/views/ManagePackage.vue:254
-#: src/views/Package.vue:155
-msgid "Author"
-msgstr "Maker"
-
-#: src/views/Package.vue:7
+#: src/views/Package.vue:6 src/views/PackageVersions.vue:8
 msgid "Back"
 msgstr "Terug"
 
-#: src/views/Badge.vue:28 src/views/Badge.vue:32 src/views/ManagePackage.vue:70
+#: src/views/Badge.vue:10 src/views/Badge.vue:14 src/views/ManagePackage.vue:62
 msgid "Badge"
 msgstr "Embleem"
 
@@ -239,177 +280,205 @@ msgstr "Embleem"
 msgid "Badges"
 msgstr "Emblemen"
 
-#: src/views/Package.vue:268
+#: src/views/Package.vue:66
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
-#: src/App.vue:31
+#: src/components/Types.vue:4 src/views/ManagePackage.vue:222
+#: src/views/Stats.vue:28
+msgid "Bookmark"
+msgstr ""
+
+#: src/views/Browse.vue:27
+msgid "Bookmarks"
+msgstr ""
+
+#: src/App.vue:26
 msgid "Browse"
 msgstr "Ontdekken"
 
-#: src/views/Browse.vue:162
+#: src/views/Browse.vue:27
 msgid "Browse Apps"
 msgstr "Apps ontdekken"
 
-#: src/views/About.vue:74
+#: src/views/About.vue:65
 msgid "Bug Tracker"
 msgstr "Bugtracker"
 
-#: src/views/Package.vue:269
+#: src/views/Package.vue:67
 msgid "Calendar"
 msgstr "Agenda"
 
-#: src/views/Package.vue:270
+#: src/views/Package.vue:68
 msgid "Camera"
 msgstr "Camera"
 
-#: src/views/ManagePackage.vue:358 src/views/ManageRevisions.vue:66
-#: src/views/Submit.vue:167
+#: src/views/ManagePackage.vue:345 src/views/ManageRevisions.vue:71
+#: src/views/Submit.vue:137
 msgid "Cancel"
 msgstr "Annuleren"
 
-#: src/views/Browse.vue:14 src/views/ManagePackage.vue:140
-#: src/views/Package.vue:177
+#: src/views/Browse.vue:14 src/views/ManagePackage.vue:114
+#: src/views/Package.vue:153
 msgid "Category"
 msgstr "Categorie"
 
-#: src/views/ManagePackage.vue:101 src/views/ManageRevisions.vue:50
-#: src/views/Package.vue:128
+#: src/views/ManagePackage.vue:85 src/views/ManageRevisions.vue:61
+#: src/views/Package.vue:183
 msgid "Changelog"
 msgstr "Wijzigingslog"
 
-#: src/views/ManagePackage.vue:295 src/views/ManageRevisions.vue:13
+#: src/views/Browse.vue:48 src/views/ManagePackage.vue:296
+#: src/views/ManageRevisions.vue:21
 msgid "Channel"
 msgstr "Kanaal"
 
-#: src/views/ManagePackage.vue:274
+#: src/views/ManagePackage.vue:263
 msgid "Channels"
 msgstr "Kanalen"
 
-#: src/App.vue:83
-msgid "Chat with us on Telegram"
-msgstr "Chat met ons op Telegram"
-
-#: src/views/Submit.vue:81
+#: src/views/Submit.vue:73
 msgid "Child Endangerment"
 msgstr "Bedreigend voor kinderen"
 
-#: src/views/ManagePackage.vue:142
+#: src/views/ManagePackage.vue:116
 msgid "Choose a category"
 msgstr "Kies een categorie"
 
-#: src/views/ManagePackage.vue:173
+#: src/views/ManagePackage.vue:141
 msgid "Choose a license"
 msgstr "Kies een licentie"
 
-#: src/views/ManagePackage.vue:231
+#: src/views/ManagePackage.vue:212
 msgid "Choose a maintainer"
 msgstr "Kies een onderhouder"
 
-#: src/views/Package.vue:271
+#: src/views/ManageRevisions.vue:52
+msgid "Completed"
+msgstr ""
+
+#: src/views/Package.vue:69
 msgid "Connectivity"
 msgstr "Internetverbinding"
 
-#: src/views/About.vue:59
+#: src/views/About.vue:50
 msgid "Contact"
 msgstr "Contactpersoon"
 
-#: src/views/Package.vue:272
+#: src/views/Package.vue:70
 msgid "Contacts"
 msgstr "Contactpersonen"
 
-#: src/views/Package.vue:274
+#: src/views/Package.vue:72
 msgid "Content Exchange"
 msgstr "Inhoudsuitwisseling"
 
-#: src/views/Package.vue:273
+#: src/views/Package.vue:71
 msgid "Content Exchange Source"
 msgstr "Inhoudsuitwisselingsbron"
 
-#: src/views/About.vue:138
+#: src/views/About.vue:135
 msgid "Contributors"
 msgstr "Bijdragers"
 
-#: src/components/CopyLine.vue:9
+#: src/components/CopyLine.vue:3
 msgid "Copy to clipboard"
 msgstr "Kopiëren naar klembord"
 
-#: src/views/Stats.vue:20
+#: src/views/Stats.vue:18
 msgid "Count"
 msgstr "Aantal"
 
-#: src/views/ManageRevisions.vue:57
+#: src/views/ManageRevisions.vue:67
 msgid "Create"
 msgstr "Maken"
 
-#: src/views/Package.vue:275
+#: src/views/Package.vue:73
 msgid "Debug"
 msgstr "Foutopsporing"
 
-#: src/views/ManagePackage.vue:353
+#: src/views/ManagePackage.vue:341
 msgid "Delete"
 msgstr "Verwijderen"
 
-#: src/views/ManagePackage.vue:90
+#: src/views/ManagePackage.vue:80
 msgid "Description"
 msgstr "Omschrijving"
 
-#: src/views/ManagePackage.vue:55
+#: src/views/ManagePackage.vue:50
 msgid "Discovery"
 msgstr "Ontdekken"
 
-#: src/views/Package.vue:91
+#: src/views/Package.vue:75
+#, fuzzy
+#| msgid "Picture Files"
+msgid "Document Files"
+msgstr "Afbeeldingen"
+
+#: src/App.vue:84 src/views/Package.vue:95
 msgid "Donate"
 msgstr "Doneren"
 
-#: src/views/ManagePackage.vue:216
+#: src/views/ManagePackage.vue:182
 msgid "Donate URL"
 msgstr "Doneerlink"
 
-#: src/views/Package.vue:262
+#: src/views/Package.vue:42 src/views/Package.vue:50
 msgid "Download"
 msgstr "Downloaden"
 
-#: src/views/ManagePackage.vue:288
+#: src/views/ManagePackage.vue:289
 msgid "Download Stats"
 msgstr "Statistieken downloaden"
 
-#: src/views/About.vue:43
+#: src/views/About.vue:39
 msgid "Download the OpenStore App"
 msgstr "Download de OpenStore-app"
 
-#: src/views/Manage.vue:50 src/views/Manage.vue:70
-#: src/views/ManagePackage.vue:297
+#: src/views/Manage.vue:47 src/views/Manage.vue:63
+#: src/views/ManagePackage.vue:299
 msgid "Downloads"
 msgstr "Downloads"
 
-#: src/views/ManagePackage.vue:119
+#: src/views/Package.vue:214
+msgid "Downloads of the latest version"
+msgstr ""
+
+#: src/views/ManagePackage.vue:95
 msgid "Drag and drop to sort screenshots."
 msgstr "Rangschik schermfoto's door ze te verslepen."
 
-#: src/views/ManagePackage.vue:8
+#: src/views/ManagePackage.vue:14
 msgid "Edit"
 msgstr "Bewerken"
 
-#: src/views/ManagePackage.vue:443 src/views/ManagePackage.vue:461
-#: src/views/ManagePackage.vue:562 src/views/ManagePackage.vue:590
-#: src/views/ManageRevisions.vue:135 src/views/Submit.vue:218
+#: src/views/ManagePackage.vue:87 src/views/ManagePackage.vue:100
+#: src/views/ManagePackage.vue:218 src/views/ManagePackage.vue:249
+#: src/views/ManageRevisions.vue:78 src/views/ManageRevisions.vue:161
+#: src/views/Submit.vue:58
 msgid "Error"
 msgstr "Fout"
 
-#: src/views/Feeds.vue:34 src/views/Feeds.vue:38
+#: src/views/Feeds.vue:7 src/views/Feeds.vue:11
 msgid "Feeds"
 msgstr "Feeds"
 
-#: src/views/ManagePackage.vue:266
-msgid "File Size"
+#: src/views/ManageRevisions.vue:15
+#, fuzzy
+#| msgid "File Size"
+msgid "File"
 msgstr "Bestandsgrootte"
 
-#: src/views/ManageRevisions.vue:22
+#: src/views/ManageRevisions.vue:204
 msgid "File Upload"
 msgstr "Bestandsupload"
 
-#: src/views/About.vue:61
+#: src/views/Browse.vue:52 src/views/ManageRevisions.vue:24
+#: src/views/ManageRevisions.vue:172
+msgid "Focal"
+msgstr ""
+
+#: src/views/About.vue:52
 msgid ""
 "For any questions you may have or help you may need just chat with us in our "
 "telegram group.\n"
@@ -419,27 +488,19 @@ msgstr ""
 "Als je vragen hebt, kun je gewoon met ons chatten in onze telegramgroep.\n"
 "Problemen, bugs en ideeën kun je indienen op onze GitLab-bugtracker."
 
-#: src/App.vue:93
-msgid "Fork us on GitLab"
-msgstr "Fork ons op GitLab"
-
-#: src/views/ManagePackage.vue:262 src/views/Package.vue:189
-msgid "Framework"
-msgstr "Framework"
-
-#: src/views/Package.vue:293
+#: src/views/Package.vue:94
 msgid "Full System Access"
 msgstr "Ongelimiteerde systeemtoegang"
 
-#: src/views/Submit.vue:100
+#: src/views/Submit.vue:88
 msgid "Gambling"
 msgstr "Gokken"
 
-#: src/views/About.vue:25
+#: src/views/About.vue:23
 msgid "Get your badge"
 msgstr "Embleem verkrijgen"
 
-#: src/views/Submit.vue:39
+#: src/views/Submit.vue:30
 msgid ""
 "Give a short explanation why you can’t publish the app without extra "
 "privileges.\n"
@@ -454,38 +515,39 @@ msgstr ""
 "Stel, zonodig, een lijst op met alle speciale functies die de app nodig "
 "heeft."
 
-#: src/views/Browse.vue:187 src/views/Manage.vue:174
+#: src/components/Pagination.vue:7
 msgid "Go back a page"
 msgstr "Ga een pagina terug"
 
-#: src/views/Browse.vue:188 src/views/Manage.vue:175
+#: src/components/Pagination.vue:8
 msgid "Go to the next page"
 msgstr "Ga naar de volgende pagina"
 
-#: src/views/About.vue:86
+#: src/views/About.vue:77
 msgid "GPL v3 License"
 msgstr "GPLv3-licentie"
 
-#: src/views/Submit.vue:94
+#: src/views/Submit.vue:84
 msgid "Harassment, Bullying, or Hate Speech"
 msgstr "Intimidatie, pesten of haatzaaien"
 
-#: src/views/Package.vue:276
+#: src/views/Package.vue:76
 msgid "History"
 msgstr "Geschiedenis"
 
-#: src/views/Manage.vue:44
+#: src/views/Manage.vue:41
 msgid "Icon"
 msgstr "Pictogram"
 
-#: src/views/ManagePackage.vue:250
+#: src/views/ManagePackage.vue:247
 msgid "ID"
 msgstr "ID"
 
-#: src/views/Submit.vue:44
+#: src/views/Submit.vue:35
 msgid ""
 "If an application could be published without manual review if it wouldn’t be "
-"for that one cool feature,\npublish a stripped down version!\n"
+"for that one cool feature,\n"
+"publish a stripped down version!\n"
 "Not everyone will want to install apps with less confinement."
 msgstr ""
 "Als een app kan worden gepubliceerd zonder handmatige beoordeling, als het "
@@ -493,64 +555,72 @@ msgstr ""
 "publiceer dan een uitgeklede versie!\n"
 "Niet iedereen zal apps willen installeren met minder beperkingen."
 
-#: src/views/Submit.vue:107
+#: src/views/Submit.vue:95
 msgid "Illegal Activities"
 msgstr "Illegale activiteiten"
 
-#: src/views/Package.vue:277
+#: src/views/Package.vue:77
 msgid "In App Purchases"
 msgstr "In-appaankopen"
 
-#: src/views/ManagePackage.vue:60 src/views/Package.vue:152
+#: src/views/ManagePackage.vue:53 src/views/Package.vue:128
 msgid "Info"
 msgstr "Informatie"
 
-#: src/views/About.vue:29 src/views/Package.vue:39
+#: src/views/About.vue:27 src/views/Package.vue:38
 msgid "Install"
 msgstr "Installeren"
 
-#: src/views/Package.vue:264
+#: src/views/Package.vue:61
 msgid "Install via the OpenStore app"
 msgstr "Installeren via de OpenStore-app"
 
-#: src/views/Browse.vue:186 src/views/Manage.vue:173
+#: src/components/Pagination.vue:6
 msgid "Jump to the first page"
 msgstr "Ga naar de eerste pagina"
 
-#: src/views/Browse.vue:189 src/views/Manage.vue:176
+#: src/components/Pagination.vue:9
 msgid "Jump to the last page"
 msgstr "Ga naar de laatste pagina"
 
-#: src/views/Package.vue:278
+#: src/views/Package.vue:78
 msgid "Keep Display On"
 msgstr "Scherm ingeschakeld houden"
 
-#: src/views/Manage.vue:18
+#: src/views/Manage.vue:17
 msgid "Keep your api key private!"
 msgstr "Deel je api-sleutel niet!"
 
-#: src/views/ManagePackage.vue:155
+#: src/views/ManagePackage.vue:123
 msgid "Keywords"
 msgstr "Trefwoorden"
 
-#: src/App.vue:60 src/components/BadgeSelect.vue:4
+#: src/App.vue:55 src/components/BadgeSelect.vue:4
 msgid "Language"
 msgstr "Taal"
 
-#: src/views/Browse.vue:46
+#: src/views/Browse.vue:42
 msgid "Latest Update"
 msgstr "Recentste update"
 
-#: src/views/About.vue:78 src/views/ManagePackage.vue:171
-#: src/views/Package.vue:173
+#: src/views/Browse.vue:37
+msgid "Least Popular"
+msgstr ""
+
+#: src/views/About.vue:69 src/views/ManagePackage.vue:139
+#: src/views/Package.vue:148
 msgid "License"
 msgstr "Licentie"
 
-#: src/views/Package.vue:279
+#: src/views/Package.vue:79
 msgid "Location"
 msgstr "Locatie"
 
-#: src/App.vue:37
+#: src/views/ManagePackage.vue:201
+msgid "Locked"
+msgstr ""
+
+#: src/App.vue:32
 msgid "Log In"
 msgstr "Inloggen"
 
@@ -558,15 +628,15 @@ msgstr "Inloggen"
 msgid "Log in to the OpenStore to be able to manage your apps."
 msgstr "Log in om je apps te beheren."
 
-#: src/App.vue:43
+#: src/App.vue:38
 msgid "Log Out"
 msgstr "Uitloggen"
 
-#: src/views/Login.vue:40 src/views/Login.vue:44
+#: src/views/Login.vue:7 src/views/Login.vue:11
 msgid "Login"
 msgstr "Inloggen"
 
-#: src/views/Submit.vue:125
+#: src/views/Submit.vue:111
 msgid "Login to submit your app"
 msgstr "Log in om je app in te dienen"
 
@@ -579,56 +649,62 @@ msgid "Login via GitLab"
 msgstr "Inloggen met GitLab"
 
 #: src/views/Login.vue:18
-msgid "Login via Ubuntu"
+#, fuzzy
+#| msgid "Login via Ubuntu"
+msgid "Login via Ubuntu One"
 msgstr "Inloggen met Ubuntu"
 
-#: src/views/ManagePackage.vue:229
+#: src/views/ManagePackage.vue:210
 msgid "Maintainer"
 msgstr "Beheerder"
 
-#: src/views/Submit.vue:113
+#: src/views/Submit.vue:99
 msgid "Malware"
 msgstr "Malware"
 
-#: src/App.vue:40 src/views/Manage.vue:152 src/views/ManagePackage.vue:381
-#: src/views/ManagePackage.vue:383
+#: src/App.vue:35 src/views/Manage.vue:20 src/views/ManagePackage.vue:16
+#: src/views/ManagePackage.vue:18
 msgid "Manage"
 msgstr "Beheren"
 
-#: src/views/Manage.vue:148
+#: src/views/Manage.vue:16
 msgid "Manage Apps"
 msgstr "Apps beheren"
 
-#: src/views/Package.vue:280
+#: src/views/Package.vue:80
 msgid "Microphone"
 msgstr "Microfoon"
 
-#: src/views/Package.vue:282
+#: src/views/Browse.vue:36
+msgid "Most Popular"
+msgstr ""
+
+#: src/views/Package.vue:82
 msgid "Music Files"
 msgstr "Muziekbestanden"
 
-#: src/views/Manage.vue:45
+#: src/views/Manage.vue:42
 msgid "Name"
 msgstr "Naam"
 
-#: src/views/About.vue:48
+#: src/views/About.vue:42
 msgid "Navigate to the downloads folder"
 msgstr "Ga naar de downloadsmap"
 
-#: src/views/Package.vue:283
+#: src/views/Package.vue:84
 msgid "Networking"
 msgstr "Netwerk en internet"
 
-#: src/views/Feeds.vue:9
+#: src/views/Feeds.vue:6
 msgid "New Apps"
 msgstr "Nieuwe apps"
 
-#: src/views/ManagePackage.vue:37 src/views/ManageRevisions.vue:86
-#: src/views/ManageRevisions.vue:88
+#: src/views/ManagePackage.vue:41 src/views/ManageRevisions.vue:23
+#: src/views/ManageRevisions.vue:25
 msgid "New Revision"
 msgstr "Nieuwe revisie"
 
-#: src/views/ManageRevisions.vue:178
+#: src/views/ManageRevisions.vue:175
 msgid "New revision for %{channel} was created!"
 msgstr "De nieuwe revisie op %{channel} is aangemaakt!"
 
@@ -636,52 +712,83 @@ msgstr "De nieuwe revisie op %{channel} is aangemaakt!"
 msgid "New Revision for %{name}"
 msgstr "Nieuwe revisie van %{name}"
 
-#: src/views/Browse.vue:44
+#: src/views/ManageRevisions.vue:179
+#, fuzzy
+#| msgid "New revision for %{channel} was created!"
+msgid "New revisions for %{channel} were created!"
+msgstr "De nieuwe revisie op %{channel} is aangemaakt!"
+
+#: src/views/Browse.vue:40
 msgid "Newest"
 msgstr "Nieuwste"
 
-#: src/views/ManagePackage.vue:31
+#: src/views/Package.vue:83
+msgid "NFC"
+msgstr ""
+
+#: src/views/ManagePackage.vue:36 src/views/ManagePackage.vue:204
 msgid "No"
 msgstr "Nee"
 
-#: src/views/Browse.vue:101 src/views/Manage.vue:94
+#: src/views/Browse.vue:96 src/views/Manage.vue:88
 msgid "No apps found."
 msgstr "Geen apps gevonden."
 
-#: src/views/Manage.vue:81 src/views/Manage.vue:86 src/views/Package.vue:146
+#: src/views/Package.vue:36
+msgid "No longer available"
+msgstr ""
+
+#: src/views/Manage.vue:75 src/views/Manage.vue:80
+#: src/views/ManagePackage.vue:220 src/views/Package.vue:204
 msgid "None"
 msgstr "Geen"
 
-#: src/views/Manage.vue:75
+#: src/views/Manage.vue:69
 msgid "Not published"
 msgstr "Niet gepubliceerd"
 
-#: src/views/ManagePackage.vue:161
+#: src/views/ManagePackage.vue:129
 msgid "NSFW"
 msgstr "Inhoud voor volwassenen"
 
-#: src/views/Browse.vue:90
+#: src/views/Browse.vue:89
 msgid "NSFW content"
 msgstr "Inhoud voor volwassenen"
 
-#: src/views/Browse.vue:45
+#: src/views/Package.vue:56
+#, fuzzy
+#| msgid "Version"
+msgid "Older Versions"
+msgstr "Versie"
+
+#: src/views/Browse.vue:41
 msgid "Oldest"
 msgstr "Oudste"
 
-#: src/views/Browse.vue:47
+#: src/views/Browse.vue:43
 msgid "Oldest Update"
 msgstr "Oudste update"
 
-#: src/views/Submit.vue:60
+#: src/views/Submit.vue:52
+#, fuzzy
+#| msgid ""
+#| "One of the main goals of the OpenStore is to provide a safe app store for "
+#| "people of all ages.\n"
+#| "To accomplish this goal we do not allow certain types of app to be "
+#| "published.\n"
+#| "Failure to follow the guidelines will result in your app being removed.\n"
+#| "Any account with serious infractions may be subject to termination.\n"
+#| "The OpenStore team thanks you for helping us promote a better enviroment "
+#| "for everyone."
 msgid ""
 "One of the main goals of the OpenStore is to provide a safe app store for "
 "people of all ages.\n"
-"To accomplish this goal we do not allow certain types of app to be "
+"  To accomplish this goal we do not allow certain types of app to be "
 "published.\n"
-"Failure to follow the guidelines will result in your app being removed.\n"
-"Any account with serious infractions may be subject to termination.\n"
-"The OpenStore team thanks you for helping us promote a better enviroment for "
-"everyone."
+"  Failure to follow the guidelines will result in your app being removed.\n"
+"  Any account with serious infractions may be subject to termination.\n"
+"  The OpenStore team thanks you for helping us promote a better enviroment "
+"for everyone."
 msgstr ""
 "Eén van de hoofddoelen van OpenStore is zorgen voor een veilige appwinkel "
 "voor mensen van alle leeftijden.\n"
@@ -692,7 +799,7 @@ msgstr ""
 "Het OpenStore-team bedankt je omdat je ons hebt geholpen een betere omgeving "
 "voor iedereen te promoten."
 
-#: src/views/Submit.vue:48
+#: src/views/Submit.vue:40
 msgid ""
 "Only open source applications allowed for manual review:\n"
 "As the applications might have arbitrary access to the device, every "
@@ -702,27 +809,31 @@ msgstr ""
 "omdat apps mogelijk eigenmachtige toegang tot het apparaat hebben. Daarom "
 "krijgt elke handmatig beoordeelde app een broncodebeoordeling."
 
-#: src/views/ManagePackage.vue:223
+#: src/views/ManagePackage.vue:189
+#, fuzzy
+#| msgid ""
+#| "Only YouTube videos are supported at this time. Make sure the url is for "
+#| "the embedded video!"
 msgid ""
-"Only YouTube videos are supported at this time. Make sure the url is for the "
-"embedded video!"
+"Only YouTube and Odysee videos are supported at this time. Make sure the url "
+"is for the embedded video!"
 msgstr ""
 "Momenteel worden alleen YouTube-video's ondersteund. Zorg dat de url die van "
 "de ingesloten video is!"
 
-#: src/views/About.vue:47
+#: src/views/About.vue:41
 msgid "Open the terminal app"
 msgstr "Terminal-app openen"
 
-#: src/views/About.vue:145
+#: src/views/About.vue:142
 msgid "OpenStore API/Server Contributors"
 msgstr "OpenStore-api/Serverbijdragers"
 
-#: src/views/Submit.vue:58
+#: src/views/Submit.vue:50
 msgid "OpenStore App Content Policy"
 msgstr "OpenStore-inhoudsbeleid"
 
-#: src/views/About.vue:155
+#: src/views/About.vue:148
 msgid "OpenStore App Contributors"
 msgstr "OpenStore-appbijdragers"
 
@@ -730,47 +841,47 @@ msgstr "OpenStore-appbijdragers"
 msgid "OpenStore Badges"
 msgstr "OpenStore-emblemen"
 
-#: src/views/About.vue:67
+#: src/views/About.vue:58
 msgid "OpenStore group on Telegram"
 msgstr "OpenStore-groep op Telegram"
 
-#: src/views/About.vue:93
+#: src/views/About.vue:84
 msgid "OpenStore source on GitLab"
 msgstr "OpenStore-broncode op GitLab"
 
-#: src/views/About.vue:150
+#: src/views/About.vue:145
 msgid "OpenStore Website Contributors"
 msgstr "OpenStore-websitebijdragers"
 
-#: src/views/ManageRevisions.vue:33
-msgid "OR"
-msgstr "OF"
+#: src/views/ManagePackage.vue:218
+msgid "Override Type"
+msgstr ""
 
-#: src/views/ManagePackage.vue:245
+#: src/views/ManagePackage.vue:242
 msgid "Package Info"
 msgstr "Pakketinformatie"
-
-#: src/views/Package.vue:162
-msgid "Packager/Publisher"
-msgstr "Pakketbeheerder/Uitgever"
 
 #: src/views/NotFound.vue:3
 msgid "Page Not Found"
 msgstr "Pagina niet gevonden"
 
-#: src/views/Package.vue:80 src/views/Package.vue:135
+#: src/views/Package.vue:86 src/views/Package.vue:190
 msgid "Permissions"
 msgstr "Bevoegdheden"
 
-#: src/views/Package.vue:285
+#: src/views/Package.vue:86
 msgid "Picture Files"
 msgstr "Afbeeldingen"
 
-#: src/views/ManagePackage.vue:43
+#: src/views/ManagePackage.vue:47
 msgid "Presentation"
 msgstr "Presentatie"
 
-#: src/views/Submit.vue:69
+#: src/views/ManageRevisions.vue:53
+msgid "Processing"
+msgstr ""
+
+#: src/views/Submit.vue:61
 msgid "Prohibited Apps"
 msgstr "Verboden apps"
 
@@ -790,55 +901,78 @@ msgstr ""
 "zijn beschikbaar in verschillende talen, in zowel png- als svg-\n"
 "formaat."
 
-#: src/views/ManagePackage.vue:14
+#: src/views/ManagePackage.vue:26
 msgid "Public Link"
 msgstr "Openbare link"
 
-#: src/views/ManagePackage.vue:21
+#: src/views/ManagePackage.vue:33
 msgid "Publish"
 msgstr "Publiceren"
 
-#: src/views/Manage.vue:74 src/views/Package.vue:185
+#: src/views/Manage.vue:68 src/views/Package.vue:163
 msgid "Published"
 msgstr "Gepubliceerd"
 
-#: src/views/ManagePackage.vue:323
+#: src/views/ManagePackage.vue:277
 msgid "Published Date"
 msgstr "Publicatiedatum"
 
-#: src/views/Package.vue:286
+#: src/views/Manage.vue:44 src/views/ManagePackage.vue:251
+#: src/views/Package.vue:131
+#, fuzzy
+#| msgid "Published"
+msgid "Publisher"
+msgstr "Gepubliceerd"
+
+#: src/views/Package.vue:87
 msgid "Push Notifications"
 msgstr "Pushmeldingen"
 
-#: src/views/Package.vue:281
+#: src/views/Package.vue:74
+#, fuzzy
+#| msgid "Read Picture Files"
+msgid "Read Document Files"
+msgstr "Afbeeldingen uitlezen"
+
+#: src/views/Package.vue:81
 msgid "Read Music Files"
 msgstr "Muziekbestanden uitlezen"
 
-#: src/views/Package.vue:284
+#: src/views/Package.vue:85
 msgid "Read Picture Files"
 msgstr "Afbeeldingen uitlezen"
 
-#: src/views/Package.vue:289
+#: src/views/Package.vue:90
 msgid "Read Video Files"
 msgstr "Videobestanden uitlezen"
 
-#: src/views/Browse.vue:41
+#: src/views/Browse.vue:35
 msgid "Relevance"
 msgstr "Relevantie"
 
-#: src/App.vue:103
+#: src/App.vue:78
 msgid "Report an Issue"
 msgstr "Probleem melden"
 
-#: src/views/Package.vue:356
+#: src/views/Package.vue:205
 msgid "Restricted permission"
 msgstr "Beperkte bevoegdheden"
 
-#: src/views/ManagePackage.vue:294
+#: src/views/ManagePackage.vue:228
+msgid "Review Exceptions"
+msgstr ""
+
+#: src/components/Reviews.vue:3
+#, fuzzy
+#| msgid "Webview"
+msgid "Reviews"
+msgstr "Webweergave"
+
+#: src/views/ManagePackage.vue:295
 msgid "Revision"
 msgstr "Revisie"
 
-#: src/App.vue:108 src/views/Feeds.vue:3
+#: src/App.vue:81 src/views/Feeds.vue:3
 msgid "RSS Feeds"
 msgstr "RSS-feeds"
 
@@ -846,39 +980,31 @@ msgstr "RSS-feeds"
 msgid "Rules for Submission"
 msgstr "Regels omtrent publicatie"
 
-#: src/views/Submit.vue:31
+#: src/views/Submit.vue:24
 msgid "Rules for Submissions Requiring Manual Review"
 msgstr "Regels omtrent ingediende apps die handmatige beoordeling vereisen"
 
-#: src/views/About.vue:50
+#: src/views/About.vue:44
 msgid "Run the command:"
 msgstr "Voer de opdracht uit:"
 
-#: src/views/ManagePackage.vue:348
+#: src/views/ManagePackage.vue:337
 msgid "Save"
 msgstr "Opslaan"
 
-#: src/components/Types.vue:4 src/views/Stats.vue:109
-msgid "Scope"
-msgstr "Scope"
-
-#: src/views/Browse.vue:34
-msgid "Scopes"
-msgstr "Scopes"
-
-#: src/views/Package.vue:107
+#: src/views/Package.vue:109
 msgid "Screenshots"
 msgstr "Schermfoto's"
 
-#: src/views/ManagePackage.vue:106
+#: src/views/ManagePackage.vue:90
 msgid "Screenshots (Limit 5)"
 msgstr "Schermfoto's (maximaal 5)"
 
-#: src/views/Browse.vue:9 src/views/Manage.vue:26
+#: src/views/Browse.vue:9 src/views/Manage.vue:25
 msgid "Search"
 msgstr "Zoeken"
 
-#: src/views/Submit.vue:35
+#: src/views/Submit.vue:28
 msgid ""
 "Send us a link to a repository for your app to our telegram group along with "
 "some instructions on how to build it."
@@ -886,82 +1012,98 @@ msgstr ""
 "Deel een link van de repo van je app in onze telegramgroep, tezamen met "
 "instructies hoe de app gecompileerd kan worden."
 
-#: src/views/Package.vue:287
+#: src/views/Package.vue:88
 msgid "Sensors"
 msgstr "Sensors"
 
-#: src/views/Submit.vue:74
+#: src/views/Submit.vue:66
 msgid "Sexually Explicit Content"
 msgstr "Seksueel expliciete inhoud"
 
-#: src/views/Package.vue:117
+#: src/views/ManagePackage.vue:323
+#, fuzzy
+#| msgid "New Revision"
+msgid "Show All Revisions"
+msgstr "Nieuwe revisie"
+
+#: src/views/Package.vue:119
 msgid "Show NSFW Content"
 msgstr "Inhoud voor volwassenen tonen"
 
-#: src/App.vue:98
+#: src/App.vue:75
 msgid "Site Status"
 msgstr "Sitestatus"
 
-#: src/views/Browse.vue:39
+#: src/views/Browse.vue:33
 msgid "Sort By"
 msgstr "Sorteren op"
 
-#: src/views/Package.vue:169
+#: src/views/Package.vue:140
 msgid "Source"
 msgstr "Bron"
 
-#: src/views/ManagePackage.vue:206
+#: src/App.vue:72
+#, fuzzy
+#| msgid "Source"
+msgid "Source Code"
+msgstr "Bron"
+
+#: src/views/ManagePackage.vue:172
 msgid "Source URL"
 msgstr "Bron-url"
 
-#: src/views/ManagePackage.vue:65 src/views/Stats.vue:3 src/views/Stats.vue:92
-#: src/views/Stats.vue:96
+#: src/views/ManagePackage.vue:59 src/views/Package.vue:210
+#: src/views/Stats.vue:3 src/views/Stats.vue:9 src/views/Stats.vue:13
 msgid "Stats"
 msgstr "Statistieken"
 
-#: src/views/Manage.vue:48
+#: src/views/Manage.vue:45
 msgid "Status"
 msgstr "Status"
 
-#: src/App.vue:28 src/views/Submit.vue:162
+#: src/App.vue:23 src/views/Submit.vue:133
 msgid "Submit"
 msgstr "Publiceren"
 
-#: src/views/Manage.vue:10 src/views/Submit.vue:129 src/views/Submit.vue:189
-#: src/views/Submit.vue:193
+#: src/views/Manage.vue:9 src/views/Submit.vue:113 src/views/Submit.vue:12
+#: src/views/Submit.vue:16
 msgid "Submit App"
 msgstr "App publiceren"
 
-#: src/views/About.vue:134
+#: src/views/About.vue:126
 msgid "Submit your app"
 msgstr "Dien je app in"
 
-#: src/views/ManagePackage.vue:551 src/views/ManagePackage.vue:576
-#: src/views/ManageRevisions.vue:177
+#: src/views/ManagePackage.vue:204 src/views/ManagePackage.vue:232
+#: src/views/ManageRevisions.vue:184
 msgid "Success"
 msgstr "Geslaagd"
 
-#: src/views/Package.vue:165
+#: src/views/Package.vue:136
 msgid "Support"
 msgstr "Ondersteuning"
 
-#: src/views/ManagePackage.vue:211
+#: src/views/ManagePackage.vue:177
 msgid "Support URL"
 msgstr "Ondersteuningsurl"
 
-#: src/views/ManagePackage.vue:85
+#: src/views/ManagePackage.vue:75
 msgid "Tag Line"
 msgstr "Slagzin"
 
-#: src/views/About.vue:102
+#: src/App.vue:66
+msgid "Telegram"
+msgstr ""
+
+#: src/views/About.vue:93
 msgid "Terms"
 msgstr "Voorwaarden"
 
-#: src/views/Package.vue:13
+#: src/views/Package.vue:10 src/views/PackageVersions.vue:12
 msgid "The app you are looking for has been removed or does not exist"
 msgstr "De app die je zoekt is verwijderd of bestaat niet"
 
-#: src/views/About.vue:97
+#: src/views/About.vue:88
 msgid ""
 "The apps available for download from the OpenStore have their own licencing "
 "and terms.\n"
@@ -971,11 +1113,11 @@ msgstr ""
 "voorwaarden.\n"
 "Raadpleeg voor meer informatie de pagina van elke afzonderlijke app."
 
-#: src/views/ManagePackage.vue:552
+#: src/views/ManagePackage.vue:203
 msgid "The changes to %{name} were saved!"
 msgstr "De wijzigingen aan %{name} zijn opgeslagen!"
 
-#: src/views/About.vue:104
+#: src/views/About.vue:95
 msgid ""
 "The OpenStore a non-profit volunteer project.\n"
 "Although every effort is made to ensure that everything in the repository is "
@@ -995,7 +1137,7 @@ msgstr ""
 "controleren op mogelijke beveiligings- of privacyproblemen.\n"
 "Deze controle is echter verre van volledig en er zijn geen garanties."
 
-#: src/views/About.vue:31
+#: src/views/About.vue:29
 msgid ""
 "The OpenStore app is installed by default on the UBports builds of Ubuntu "
 "Touch.\n"
@@ -1005,7 +1147,7 @@ msgstr ""
 "Ubuntu Touch.\n"
 "Als je OpenStore handmatig moet installeren, volg dan deze stappen:"
 
-#: src/views/About.vue:141
+#: src/views/About.vue:138
 msgid "The OpenStore is made possible by many amazing contributors:"
 msgstr "OpenStore wordt mogelijk gemaakt door vele geweldige bijdragers:"
 
@@ -1027,7 +1169,7 @@ msgstr ""
 "OpenStore moedigt aan dat gepubliceerde apps open source zijn, maar "
 "accepteert ook apps zonder broncode."
 
-#: src/views/About.vue:112
+#: src/views/About.vue:103
 msgid ""
 "The OpenStore respects your privacy.\n"
 "We don't track you or your device.\n"
@@ -1058,7 +1200,7 @@ msgstr ""
 msgid "The page you are looking for has been removed or does not exist"
 msgstr "De pagina die je zoekt is verwijderd of bestaat niet"
 
-#: src/views/About.vue:80
+#: src/views/About.vue:71
 msgid ""
 "The source code for OpenStore related projects is available under the GPL "
 "v3.\n"
@@ -1068,14 +1210,15 @@ msgstr ""
 "GPLv3-licentie.\n"
 "De code is te vinden op de OpenStore GitLab-pagina."
 
-#: src/views/Package.vue:17
+#: src/views/ManagePackage.vue:6 src/views/Package.vue:12
+#: src/views/PackageVersions.vue:14
 msgid ""
 "There was an error trying to find this app, please refresh and try again."
 msgstr ""
 "Er is een fout opgetreden bij het zoeken naar deze app. Herlaad de pagina en "
 "probeer het opnieuw."
 
-#: src/views/Browse.vue:65 src/views/Manage.vue:31
+#: src/views/Browse.vue:70 src/views/Manage.vue:30
 msgid ""
 "There was an error trying to load the app list, please refresh and try again."
 msgstr ""
@@ -1089,11 +1232,11 @@ msgstr ""
 "Er is een fout opgetreden bij het laden van de statistieken. Herlaad de "
 "pagina en probeer het opnieuw."
 
-#: src/views/ManagePackage.vue:163
+#: src/views/ManagePackage.vue:131
 msgid "This app contains NSFW material"
 msgstr "Deze app bevat inhoud voor volwassenen"
 
-#: src/views/Package.vue:368
+#: src/views/Package.vue:219
 msgid ""
 "This app does not have access to restricted system data, see permissions for "
 "more details"
@@ -1101,7 +1244,7 @@ msgstr ""
 "Deze app heeft geen toegang tot beveiligde systeemgegevens - bekijk voor "
 "meer informatie de bevoegdheden"
 
-#: src/views/Package.vue:370
+#: src/views/Package.vue:223
 msgid ""
 "This app has access to restricted system data, see permissions for more "
 "details"
@@ -1109,7 +1252,7 @@ msgstr ""
 "Deze app heeft toegang tot beveiligde systeemgegevens - bekijk voor meer "
 "informatie de bevoegdheden"
 
-#: src/views/Submit.vue:141
+#: src/views/Submit.vue:119
 msgid ""
 "This is the unique identifier for your app.\n"
 "It must match exactly the \"name\" field in your click's manifest.json and "
@@ -1124,39 +1267,61 @@ msgstr ""
 "Voorbeeld: ‘openstore.openstore-team’, waarbij ‘openstore’ de app is en "
 "‘openstore-team’ de groep of persoon die de app heeft ontwikkeld."
 
-#: src/views/ManageRevisions.vue:52
+#: src/views/ManagePackage.vue:56
+msgid "This revision is still available"
+msgstr ""
+
+#: src/views/ManageRevisions.vue:63
 msgid "This will be added to the beginning of your current changelog"
 msgstr "Dit wordt aan het begin van je huidige wijzigingslog toegevoegd"
 
-#: src/views/ManagePackage.vue:80
+#: src/views/ManagePackage.vue:70
 msgid "Title"
 msgstr "Naam"
 
-#: src/views/Browse.vue:42
+#: src/views/Browse.vue:38
 msgid "Title (A-Z)"
 msgstr "Naam (A-Z)"
 
-#: src/views/Browse.vue:43
+#: src/views/Browse.vue:39
 msgid "Title (Z-A)"
 msgstr "Naam (Z-A)"
 
-#: src/views/ManagePackage.vue:314
+#: src/views/ManagePackage.vue:316
 msgid "Total"
 msgstr "Totaal"
 
-#: src/views/Manage.vue:79
+#: src/views/Package.vue:219
+#, fuzzy
+#| msgid "Downloads"
+msgid "Total downloads"
+msgstr "Downloads"
+
+#: src/views/Manage.vue:73
 msgid "Total:"
 msgstr "Totaal:"
 
-#: src/views/ManagePackage.vue:279 src/views/Package.vue:197
+#: src/views/ManagePackage.vue:268 src/views/Package.vue:173
 msgid "Translation Languages"
 msgstr "Vertaald naar"
 
-#: src/views/Browse.vue:102 src/views/Manage.vue:95
+#: src/views/ManagePackage.vue:193
+#, fuzzy
+#| msgid "Translation Languages"
+msgid "Translation URL"
+msgstr "Vertaald naar"
+
+#: src/views/Package.vue:144
+#, fuzzy
+#| msgid "Translation Languages"
+msgid "Translations"
+msgstr "Vertaald naar"
+
+#: src/views/Browse.vue:97 src/views/Manage.vue:89
 msgid "Try searching for something else"
 msgstr "Probeer iets anders te zoeken"
 
-#: src/views/Browse.vue:29 src/views/ManagePackage.vue:270
+#: src/views/Browse.vue:23 src/views/ManagePackage.vue:259
 msgid "Type"
 msgstr "Soort"
 
@@ -1168,71 +1333,82 @@ msgstr "Ubuntu Touch"
 msgid "Ubuntu Touch Apps"
 msgstr "Ubuntu Touch-apps"
 
-#: src/views/Stats.vue:106
+#: src/views/Stats.vue:25
 msgid "Uncategorized"
 msgstr "Ongecategoriseerd"
 
-#: src/views/Package.vue:181
+#: src/views/Package.vue:199
+msgid "Unrestricted read access to:"
+msgstr ""
+
+#: src/views/Package.vue:195
+#, fuzzy
+#| msgid "Restricted permission"
+msgid "Unrestricted write access to:"
+msgstr "Beperkte bevoegdheden"
+
+#: src/views/Package.vue:158
 msgid "Updated"
 msgstr "Bijgewerkt"
 
-#: src/views/Feeds.vue:18
+#: src/views/Feeds.vue:10
 msgid "Updated Apps"
 msgstr "Bijgewerkte apps"
 
-#: src/views/ManagePackage.vue:331
+#: src/views/ManagePackage.vue:283
 msgid "Updated Date"
 msgstr "Bijgewerkt op"
 
-#: src/views/ManageRevisions.vue:36
+#: src/views/ManageRevisions.vue:13
+msgid "Upload Revision via:"
+msgstr ""
+
+#: src/views/ManageRevisions.vue:16 src/views/ManageRevisions.vue:204
 msgid "URL"
 msgstr "URL"
 
-#: src/views/ManageRevisions.vue:44
+#: src/views/ManageRevisions.vue:49
 msgid "URL of App from the Web"
 msgstr "Web-url van de app"
 
-#: src/views/Package.vue:288
+#: src/views/Package.vue:89
 msgid "User Metrics"
 msgstr "Gebruikersstatistieken"
 
-#: src/views/Manage.vue:49 src/views/ManagePackage.vue:296
+#: src/views/Manage.vue:46 src/views/ManagePackage.vue:298
 msgid "Version"
 msgstr "Versie"
 
-#: src/views/Package.vue:291
+#: src/views/Package.vue:92
 msgid "Video"
 msgstr "Video"
 
-#: src/views/Package.vue:290
+#: src/views/Package.vue:91
 msgid "Video Files"
 msgstr "Videobestanden"
 
-#: src/views/ManagePackage.vue:221
+#: src/views/ManagePackage.vue:187
 msgid "Video URL"
 msgstr "Video-url"
 
-#: src/views/About.vue:37
+#: src/views/About.vue:35
 msgid "View Install Instructions"
 msgstr "Installatie-instructies bekijken"
 
-#: src/views/Submit.vue:87
+#: src/views/Submit.vue:77
 msgid "Violence"
 msgstr "Geweld"
 
-#: src/components/Types.vue:5 src/views/Stats.vue:110
+#: src/components/Types.vue:5 src/views/ManagePackage.vue:223
+#: src/views/Stats.vue:29
 msgid "Web App"
 msgstr "Webapp"
 
-#: src/components/Types.vue:6 src/views/Stats.vue:111
-msgid "Web App+"
-msgstr "Webapp+"
-
-#: src/views/Browse.vue:33
+#: src/views/Browse.vue:28
 msgid "Web Apps"
 msgstr "Webapps"
 
-#: src/views/Package.vue:292
+#: src/views/Package.vue:93
 msgid "Webview"
 msgstr "Webweergave"
 
@@ -1240,26 +1416,31 @@ msgstr "Webweergave"
 msgid "Welcome %{name}!"
 msgstr "Welkom, %{name}!"
 
-#: src/views/ManageRevisions.vue:15 src/views/ManageRevisions.vue:174
+#: src/views/Browse.vue:51 src/views/ManageRevisions.vue:23
+#: src/views/ManageRevisions.vue:170
 msgid "Xenial"
 msgstr "Xenial"
 
-#: src/views/ManagePackage.vue:30
+#: src/views/ManagePackage.vue:35 src/views/ManagePackage.vue:203
 msgid "Yes"
 msgstr "Ja"
 
-#: src/views/Submit.vue:10
+#: src/views/Submit.vue:9
+msgid "You are not allowed to impersonate someone else or another app."
+msgstr ""
+
+#: src/views/Submit.vue:8
 msgid ""
 "You are only allowed to publish apps that you have permission to distribute."
 msgstr ""
 "Je mag alleen apps publiceren waarvan je toestemming hebt om ze te "
 "verspreiden."
 
-#: src/views/Submit.vue:22
+#: src/views/Submit.vue:17
 msgid "You must read over the content policy detailed below."
 msgstr "Het is verplicht om onderstaand inhoudsbeleid door te nemen."
 
-#: src/views/Submit.vue:13
+#: src/views/Submit.vue:10
 msgid ""
 "Your app can be pulled without warning at the discretion of our admins.\n"
 "Where possible, we will contact you regarding any such actions."
@@ -1268,8 +1449,32 @@ msgstr ""
 "beheerders.\n"
 "Waar mogelijk zullen we contact met je opnemen over dergelijke acties."
 
-#~ msgid "All Channels"
-#~ msgstr "Alle kanalen"
+#~ msgid "Author"
+#~ msgstr "Maker"
+
+#~ msgid "Chat with us on Telegram"
+#~ msgstr "Chat met ons op Telegram"
+
+#~ msgid "Fork us on GitLab"
+#~ msgstr "Fork ons op GitLab"
+
+#~ msgid "Framework"
+#~ msgstr "Framework"
+
+#~ msgid "OR"
+#~ msgstr "OF"
+
+#~ msgid "Packager/Publisher"
+#~ msgstr "Pakketbeheerder/Uitgever"
+
+#~ msgid "Scope"
+#~ msgstr "Scope"
+
+#~ msgid "Scopes"
+#~ msgstr "Scopes"
+
+#~ msgid "Web App+"
+#~ msgstr "Webapp+"
 
 #~ msgid "Download Vivid"
 #~ msgstr "Download Vivid"

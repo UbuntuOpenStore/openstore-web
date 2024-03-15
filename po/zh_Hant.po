@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 3.11.3\n"
 
-#: src/views/Package.vue:118
+#: src/views/Package.vue:120
 msgid ""
 "*This app contains NSFW content, to view the description and\n"
 "screenshots, click the above button."
@@ -27,32 +27,46 @@ msgstr ""
 "* 此應用程式包含敏感內容，以查看描述內容和\n"
 "螢幕截圖，按一下上面的按鈕。"
 
-#: src/views/ManagePackage.vue:577
+#: src/views/ManagePackage.vue:231
 msgid "%{name} was successfully deleted"
 msgstr "%{name} 已成功刪除"
 
-#: src/views/ManagePackage.vue:157
+#: src/views/ManagePackage.vue:125
 msgid "A comma separated list of keywords"
 msgstr "以逗號分開的關鍵字列表"
 
-#: src/App.vue:34 src/views/About.vue:3 src/views/About.vue:183
-#: src/views/About.vue:187
+#: src/App.vue:29 src/views/About.vue:3 src/views/About.vue:12
+#: src/views/About.vue:16
 msgid "About"
 msgstr "關於"
 
-#: src/App.vue:78
+#: src/App.vue:63
 msgid "About Us"
 msgstr "關於我們"
 
-#: src/views/Package.vue:266
+#: src/views/Package.vue:64
 msgid "Accounts"
 msgstr "帳戶"
+
+#: src/views/ManageRevisions.vue:54
+#, fuzzy
+#| msgid "Architecture"
+msgid "Add Another Architecture"
+msgstr "建構"
+
+#: src/views/ManagePackage.vue:56
+msgid "Admin"
+msgstr ""
 
 #: src/views/Browse.vue:16
 msgid "All Categories"
 msgstr "所有類別"
 
-#: src/views/Browse.vue:31
+#: src/views/Browse.vue:50
+msgid "All Channels"
+msgstr "所有通道"
+
+#: src/views/Browse.vue:25
 msgid "All Types"
 msgstr "所有類型"
 
@@ -60,24 +74,25 @@ msgstr "所有類型"
 msgid "An account is not needed to download or install apps."
 msgstr "下載或安裝應用程式是不須要帳戶的。"
 
-#: src/views/ManagePackage.vue:444 src/views/ManagePackage.vue:462
-#: src/views/ManageRevisions.vue:136
+#: src/views/ManagePackage.vue:87 src/views/ManagePackage.vue:100
+#: src/views/ManageRevisions.vue:78
 msgid "An error occured loading your app data"
 msgstr "載入您的應用程式資料時出錯"
 
-#: src/views/ManageRevisions.vue:183 src/views/Submit.vue:212
+#: src/views/ManageRevisions.vue:140 src/views/Submit.vue:47
 msgid "An unknown error has occurred"
 msgstr "出現未知的錯誤"
 
-#: src/views/About.vue:160
+#: src/views/About.vue:151
 msgid ""
 "And many amazing developers, testers, and users from the OpenStore community!"
 msgstr "和許多來自 OpenStore 社區中出色的開發人員、測試人員和使用者！"
 
-#: src/views/About.vue:122
+#: src/views/About.vue:113
 msgid ""
 "Any personal data you decide to give us (e.g. your email address when "
-"registering for an account to upload your apps)\ngoes no further than us,\n"
+"registering for an account to upload your apps)\n"
+"goes no further than us,\n"
 "and will not be used for anything other than allowing you to maintain your "
 "apps and, in rare cases,\n"
 "contact you in the event there is an issue with your app.\n"
@@ -89,70 +104,92 @@ msgstr ""
 "如果你的應用出現問題，請與你聯繫。\n"
 "此外，本網頁使用 Cookie 來保持您登入到您的帳戶。"
 
-#: src/views/Manage.vue:14
+#: src/views/Manage.vue:13
 msgid "API Key"
 msgstr "API 金鑰"
 
-#: src/components/Types.vue:3 src/views/Manage.vue:46 src/views/Stats.vue:108
+#: src/components/Types.vue:3 src/views/Manage.vue:43
+#: src/views/ManagePackage.vue:221 src/views/Stats.vue:27
 msgid "App"
 msgstr "應用程式"
 
-#: src/views/Submit.vue:95
+#: src/views/Submit.vue:85
 msgid "App containing or promoting any of the above are strictly prohibited."
 msgstr "包含或推廣上述任何內容的應用程式都是嚴格禁止的。"
 
-#: src/views/Submit.vue:133
+#: src/views/Submit.vue:117
 msgid "App Name"
 msgstr "應用程式名稱"
 
-#: src/App.vue:88
+#: src/App.vue:69
 msgid "App Stats"
 msgstr "應用程式統計"
 
-#: src/views/Submit.vue:150
+#: src/views/About.vue:131
+msgid "App Submission Tutorial"
+msgstr ""
+
+#: src/views/Submit.vue:128
 msgid "App Title"
 msgstr "App 名稱"
 
-#: src/views/Stats.vue:19
+#: src/views/Stats.vue:17
 msgid "App Type"
 msgstr "應用程式類型"
 
-#: src/views/Stats.vue:15
+#: src/views/Stats.vue:13
 msgid "App Types"
 msgstr "應用程式類型"
 
-#: src/views/Browse.vue:32
+#: src/views/Browse.vue:26
 msgid "Apps"
 msgstr "應用程式"
 
-#: src/views/Submit.vue:101
+#: src/views/Submit.vue:89
+#, fuzzy
+#| msgid ""
+#| "Apps containing gambling involving real world money transactions are not "
+#| "allowed.\n"
+#| "This includes, but is not limited to, online casinos, betting, and "
+#| "lotteries."
 msgid ""
 "Apps containing gambling involving real world money transactions are not "
 "allowed.\n"
-"This includes, but is not limited to, online casinos, betting, and lotteries."
+"  This includes, but is not limited to, online casinos, betting, and "
+"lotteries."
 msgstr ""
 "嚴禁包含或宣傳涉及真實世界貨幣交易的賭博的應用程式。\n"
 "這包括但不僅限於線上賭場、投注和彩票。"
 
-#: src/views/Submit.vue:82
+#: src/views/Submit.vue:74
 msgid ""
 "Apps containing or promoting child abuse or child sexual abuse are strictly "
 "prohibited."
 msgstr "嚴禁包含或宣傳虐待兒童或兒童性虐待的應用程式。"
 
-#: src/views/Submit.vue:88
+#: src/views/Submit.vue:78
+#, fuzzy
+#| msgid ""
+#| "Apps containing or promoting gratuitous violence are not allowed.\n"
+#| "This includes, but is not limited to, violence, terrorism, bomb/weapon "
+#| "making, self harm, and grotesque imagery."
 msgid ""
 "Apps containing or promoting gratuitous violence are not allowed.\n"
-"This includes, but is not limited to, violence, terrorism, bomb/weapon "
+"  This includes, but is not limited to, violence, terrorism, bomb/weapon "
 "making, self harm, and grotesque imagery."
 msgstr ""
 "嚴禁包含或宣傳無端暴力的應用程式。\n"
 "這包括但不僅限於暴力、恐怖主義、製造炸彈/武器、自殘和怪誕形象。"
 
-#: src/views/Submit.vue:75
+#: src/views/Submit.vue:67
+#, fuzzy
+#| msgid ""
+#| "Apps containing or promoting sexually explicit content are not allowed.\n"
+#| "This includes, but is not limited to, pornography and services promoting "
+#| "sexually explicit content."
 msgid ""
 "Apps containing or promoting sexually explicit content are not allowed.\n"
-"This includes, but is not limited to, pornography and services promoting "
+"  This includes, but is not limited to, pornography and services promoting "
 "sexually explicit content."
 msgstr ""
 "嚴禁包含或宣傳色情內容的應用程式。\n"
@@ -164,26 +201,31 @@ msgid ""
 "\"Log In\" link above."
 msgstr "透過上面的“登入”來連結登入，可以提交不需要手動審核的應用程序。"
 
-#: src/views/Submit.vue:108
+#: src/views/Submit.vue:96
 msgid "Apps promoting illegal activities (based on USA law) are not allowed."
 msgstr "嚴禁包含或宣傳非法活動的應用程式 (基於美國法律)。"
 
-#: src/views/Submit.vue:18
+#: src/views/Submit.vue:15
 msgid ""
 "Apps requiring manual review must be submitted by contacting an admin in our "
 "telegram group."
 msgstr "需要手動審核的應用程式，必須透過聯繫我們的 Telegram 群組的管理員提交。"
 
-#: src/views/Submit.vue:114
+#: src/views/Submit.vue:100
+#, fuzzy
+#| msgid ""
+#| "Apps that are found to be stealing the users data, trying to escalate "
+#| "their privileges without user consent,\n"
+#| "or executing malicious process are strictly prohibited."
 msgid ""
 "Apps that are found to be stealing the users data, trying to escalate their "
 "privileges without user consent,\n"
-"or executing malicious process are strictly prohibited."
+"  or executing malicious process are strictly prohibited."
 msgstr ""
 "被發現竊取使用者資料，試圖在未經使用者同意的情況下提升其許可權的應用程式，\n"
 "或者執行惡意程式是嚴格禁止的。"
 
-#: src/views/About.vue:129
+#: src/views/About.vue:121
 msgid ""
 "Apps uploaded to the OpenStore are subject to our submission rules and "
 "content policy.\n"
@@ -192,24 +234,23 @@ msgstr ""
 "上傳到 OpenStore 的應用程式是受我們的提交規則和內容政策所約束的。\n"
 "您可以在上傳應用程式之前查看規則以及政策。"
 
-#: src/views/ManagePackage.vue:258 src/views/Package.vue:193
+#: src/views/ManagePackage.vue:297
+msgid "Arch"
+msgstr ""
+
+#: src/views/ManagePackage.vue:255 src/views/Package.vue:168
 msgid "Architecture"
 msgstr "建構"
 
-#: src/views/Package.vue:267
+#: src/views/Package.vue:65
 msgid "Audio"
 msgstr "音訊"
 
-#: src/views/Manage.vue:47 src/views/ManagePackage.vue:254
-#: src/views/Package.vue:155
-msgid "Author"
-msgstr "作者"
-
-#: src/views/Package.vue:7
+#: src/views/Package.vue:6 src/views/PackageVersions.vue:8
 msgid "Back"
 msgstr "返回"
 
-#: src/views/Badge.vue:28 src/views/Badge.vue:32 src/views/ManagePackage.vue:70
+#: src/views/Badge.vue:10 src/views/Badge.vue:14 src/views/ManagePackage.vue:62
 msgid "Badge"
 msgstr "標章"
 
@@ -217,177 +258,205 @@ msgstr "標章"
 msgid "Badges"
 msgstr "標章"
 
-#: src/views/Package.vue:268
+#: src/views/Package.vue:66
 msgid "Bluetooth"
 msgstr "藍牙"
 
-#: src/App.vue:31
+#: src/components/Types.vue:4 src/views/ManagePackage.vue:222
+#: src/views/Stats.vue:28
+msgid "Bookmark"
+msgstr ""
+
+#: src/views/Browse.vue:27
+msgid "Bookmarks"
+msgstr ""
+
+#: src/App.vue:26
 msgid "Browse"
 msgstr "瀏覽"
 
-#: src/views/Browse.vue:162
+#: src/views/Browse.vue:27
 msgid "Browse Apps"
 msgstr "瀏覽應用程式"
 
-#: src/views/About.vue:74
+#: src/views/About.vue:65
 msgid "Bug Tracker"
 msgstr "錯誤追蹤"
 
-#: src/views/Package.vue:269
+#: src/views/Package.vue:67
 msgid "Calendar"
 msgstr "日曆"
 
-#: src/views/Package.vue:270
+#: src/views/Package.vue:68
 msgid "Camera"
 msgstr "相機"
 
-#: src/views/ManagePackage.vue:358 src/views/ManageRevisions.vue:66
-#: src/views/Submit.vue:167
+#: src/views/ManagePackage.vue:345 src/views/ManageRevisions.vue:71
+#: src/views/Submit.vue:137
 msgid "Cancel"
 msgstr "取消"
 
-#: src/views/Browse.vue:14 src/views/ManagePackage.vue:140
-#: src/views/Package.vue:177
+#: src/views/Browse.vue:14 src/views/ManagePackage.vue:114
+#: src/views/Package.vue:153
 msgid "Category"
 msgstr "類別"
 
-#: src/views/ManagePackage.vue:101 src/views/ManageRevisions.vue:50
-#: src/views/Package.vue:128
+#: src/views/ManagePackage.vue:85 src/views/ManageRevisions.vue:61
+#: src/views/Package.vue:183
 msgid "Changelog"
 msgstr "更改日誌"
 
-#: src/views/ManagePackage.vue:295 src/views/ManageRevisions.vue:13
+#: src/views/Browse.vue:48 src/views/ManagePackage.vue:296
+#: src/views/ManageRevisions.vue:21
 msgid "Channel"
 msgstr "通道"
 
-#: src/views/ManagePackage.vue:274
+#: src/views/ManagePackage.vue:263
 msgid "Channels"
 msgstr "通道"
 
-#: src/App.vue:83
-msgid "Chat with us on Telegram"
-msgstr "在 Telegram 上與我們聊天"
-
-#: src/views/Submit.vue:81
+#: src/views/Submit.vue:73
 msgid "Child Endangerment"
 msgstr "危害兒童"
 
-#: src/views/ManagePackage.vue:142
+#: src/views/ManagePackage.vue:116
 msgid "Choose a category"
 msgstr "選擇一個類別"
 
-#: src/views/ManagePackage.vue:173
+#: src/views/ManagePackage.vue:141
 msgid "Choose a license"
 msgstr "選擇許可證"
 
-#: src/views/ManagePackage.vue:231
+#: src/views/ManagePackage.vue:212
 msgid "Choose a maintainer"
 msgstr "選擇維護者"
 
-#: src/views/Package.vue:271
+#: src/views/ManageRevisions.vue:52
+msgid "Completed"
+msgstr ""
+
+#: src/views/Package.vue:69
 msgid "Connectivity"
 msgstr "連接"
 
-#: src/views/About.vue:59
+#: src/views/About.vue:50
 msgid "Contact"
 msgstr "聯繫"
 
-#: src/views/Package.vue:272
+#: src/views/Package.vue:70
 msgid "Contacts"
 msgstr "聯繫"
 
-#: src/views/Package.vue:274
+#: src/views/Package.vue:72
 msgid "Content Exchange"
 msgstr "內容替換"
 
-#: src/views/Package.vue:273
+#: src/views/Package.vue:71
 msgid "Content Exchange Source"
 msgstr "內容替換源"
 
-#: src/views/About.vue:138
+#: src/views/About.vue:135
 msgid "Contributors"
 msgstr "貢獻者"
 
-#: src/components/CopyLine.vue:9
+#: src/components/CopyLine.vue:3
 msgid "Copy to clipboard"
 msgstr "複製到剪貼簿"
 
-#: src/views/Stats.vue:20
+#: src/views/Stats.vue:18
 msgid "Count"
 msgstr "計算"
 
-#: src/views/ManageRevisions.vue:57
+#: src/views/ManageRevisions.vue:67
 msgid "Create"
 msgstr "建立"
 
-#: src/views/Package.vue:275
+#: src/views/Package.vue:73
 msgid "Debug"
 msgstr "除錯"
 
-#: src/views/ManagePackage.vue:353
+#: src/views/ManagePackage.vue:341
 msgid "Delete"
 msgstr "刪除"
 
-#: src/views/ManagePackage.vue:90
+#: src/views/ManagePackage.vue:80
 msgid "Description"
 msgstr "描述"
 
-#: src/views/ManagePackage.vue:55
+#: src/views/ManagePackage.vue:50
 msgid "Discovery"
 msgstr "發現"
 
-#: src/views/Package.vue:91
+#: src/views/Package.vue:75
+#, fuzzy
+#| msgid "Picture Files"
+msgid "Document Files"
+msgstr "圖片檔案"
+
+#: src/App.vue:84 src/views/Package.vue:95
 msgid "Donate"
 msgstr "贊助"
 
-#: src/views/ManagePackage.vue:216
+#: src/views/ManagePackage.vue:182
 msgid "Donate URL"
 msgstr "贊助網址"
 
-#: src/views/Package.vue:262
+#: src/views/Package.vue:42 src/views/Package.vue:50
 msgid "Download"
 msgstr "下載"
 
-#: src/views/ManagePackage.vue:288
+#: src/views/ManagePackage.vue:289
 msgid "Download Stats"
 msgstr "下載統計"
 
-#: src/views/About.vue:43
+#: src/views/About.vue:39
 msgid "Download the OpenStore App"
 msgstr "下載 OpenStore 應用程式"
 
-#: src/views/Manage.vue:50 src/views/Manage.vue:70
-#: src/views/ManagePackage.vue:297
+#: src/views/Manage.vue:47 src/views/Manage.vue:63
+#: src/views/ManagePackage.vue:299
 msgid "Downloads"
 msgstr "下載"
 
-#: src/views/ManagePackage.vue:119
+#: src/views/Package.vue:214
+msgid "Downloads of the latest version"
+msgstr ""
+
+#: src/views/ManagePackage.vue:95
 msgid "Drag and drop to sort screenshots."
 msgstr "拖放以對螢幕截圖進行排序。"
 
-#: src/views/ManagePackage.vue:8
+#: src/views/ManagePackage.vue:14
 msgid "Edit"
 msgstr "編輯"
 
-#: src/views/ManagePackage.vue:443 src/views/ManagePackage.vue:461
-#: src/views/ManagePackage.vue:562 src/views/ManagePackage.vue:590
-#: src/views/ManageRevisions.vue:135 src/views/Submit.vue:218
+#: src/views/ManagePackage.vue:87 src/views/ManagePackage.vue:100
+#: src/views/ManagePackage.vue:218 src/views/ManagePackage.vue:249
+#: src/views/ManageRevisions.vue:78 src/views/ManageRevisions.vue:161
+#: src/views/Submit.vue:58
 msgid "Error"
 msgstr "錯誤"
 
-#: src/views/Feeds.vue:34 src/views/Feeds.vue:38
+#: src/views/Feeds.vue:7 src/views/Feeds.vue:11
 msgid "Feeds"
 msgstr "提交"
 
-#: src/views/ManagePackage.vue:266
-msgid "File Size"
+#: src/views/ManageRevisions.vue:15
+#, fuzzy
+#| msgid "File Size"
+msgid "File"
 msgstr "檔案大小"
 
-#: src/views/ManageRevisions.vue:22
+#: src/views/ManageRevisions.vue:204
 msgid "File Upload"
 msgstr "檔案上傳"
 
-#: src/views/About.vue:61
+#: src/views/Browse.vue:52 src/views/ManageRevisions.vue:24
+#: src/views/ManageRevisions.vue:172
+msgid "Focal"
+msgstr ""
+
+#: src/views/About.vue:52
 msgid ""
 "For any questions you may have or help you may need just chat with us in our "
 "telegram group.\n"
@@ -398,27 +467,19 @@ msgstr ""
 "天。\n"
 "您還可以向我們的 GitLab 錯誤追蹤器提交問題、錯誤和功能請求。"
 
-#: src/App.vue:93
-msgid "Fork us on GitLab"
-msgstr "在 GitLab 上关注我們"
-
-#: src/views/ManagePackage.vue:262 src/views/Package.vue:189
-msgid "Framework"
-msgstr "架構"
-
-#: src/views/Package.vue:293
+#: src/views/Package.vue:94
 msgid "Full System Access"
 msgstr "完整系統权限"
 
-#: src/views/Submit.vue:100
+#: src/views/Submit.vue:88
 msgid "Gambling"
 msgstr "賭博"
 
-#: src/views/About.vue:25
+#: src/views/About.vue:23
 msgid "Get your badge"
 msgstr "獲取您的標章"
 
-#: src/views/Submit.vue:39
+#: src/views/Submit.vue:30
 msgid ""
 "Give a short explanation why you can’t publish the app without extra "
 "privileges.\n"
@@ -430,102 +491,111 @@ msgstr ""
 "沒有必要詳細說明，像 “需要在後台運行守護進程” 這樣的一句話就行了。\n"
 "列出您擁有的所有特殊功能（如果有更多）。"
 
-#: src/views/Browse.vue:187 src/views/Manage.vue:174
+#: src/components/Pagination.vue:7
 msgid "Go back a page"
 msgstr "返回上一頁"
 
-#: src/views/Browse.vue:188 src/views/Manage.vue:175
+#: src/components/Pagination.vue:8
 msgid "Go to the next page"
 msgstr "轉到下一頁"
 
-#: src/views/About.vue:86
+#: src/views/About.vue:77
 msgid "GPL v3 License"
 msgstr "GPL v3 許可證"
 
-#: src/views/Submit.vue:94
+#: src/views/Submit.vue:84
 msgid "Harassment, Bullying, or Hate Speech"
 msgstr "騷擾、霸淩或仇恨言論"
 
-#: src/views/Package.vue:276
+#: src/views/Package.vue:76
 msgid "History"
 msgstr "歷史"
 
-#: src/views/Manage.vue:44
+#: src/views/Manage.vue:41
 msgid "Icon"
 msgstr "圖示"
 
-#: src/views/ManagePackage.vue:250
+#: src/views/ManagePackage.vue:247
 msgid "ID"
 msgstr "身分"
 
-#: src/views/Submit.vue:44
+#: src/views/Submit.vue:35
 msgid ""
 "If an application could be published without manual review if it wouldn’t be "
-"for that one cool feature,\npublish a stripped down version!\n"
+"for that one cool feature,\n"
+"publish a stripped down version!\n"
 "Not everyone will want to install apps with less confinement."
 msgstr ""
 "假如某個應用程式可以在沒有人工審核的情況下發佈，如果它不適用於那個很酷的功"
 "能，請發佈一個精簡版本！\n"
 "並不是每個人都希望安裝限制較少的應用程式。"
 
-#: src/views/Submit.vue:107
+#: src/views/Submit.vue:95
 msgid "Illegal Activities"
 msgstr "非法活動"
 
-#: src/views/Package.vue:277
+#: src/views/Package.vue:77
 msgid "In App Purchases"
 msgstr "在應用程式內購買"
 
-#: src/views/ManagePackage.vue:60 src/views/Package.vue:152
+#: src/views/ManagePackage.vue:53 src/views/Package.vue:128
 msgid "Info"
 msgstr "資訊"
 
-#: src/views/About.vue:29 src/views/Package.vue:39
+#: src/views/About.vue:27 src/views/Package.vue:38
 msgid "Install"
 msgstr "安裝"
 
-#: src/views/Package.vue:264
+#: src/views/Package.vue:61
 msgid "Install via the OpenStore app"
 msgstr "透過 OpenStore 應用程式來進行安裝"
 
-#: src/views/Browse.vue:186 src/views/Manage.vue:173
+#: src/components/Pagination.vue:6
 msgid "Jump to the first page"
 msgstr "跳轉到第一頁"
 
-#: src/views/Browse.vue:189 src/views/Manage.vue:176
+#: src/components/Pagination.vue:9
 msgid "Jump to the last page"
 msgstr "跳轉到最後一頁"
 
-#: src/views/Package.vue:278
+#: src/views/Package.vue:78
 msgid "Keep Display On"
 msgstr "繼續顯示"
 
-#: src/views/Manage.vue:18
+#: src/views/Manage.vue:17
 msgid "Keep your api key private!"
 msgstr "保持你的 API 私密金鑰！"
 
-#: src/views/ManagePackage.vue:155
+#: src/views/ManagePackage.vue:123
 msgid "Keywords"
 msgstr "關鍵字"
 
-#: src/App.vue:60 src/components/BadgeSelect.vue:4
+#: src/App.vue:55 src/components/BadgeSelect.vue:4
 msgid "Language"
 msgstr "語言"
 
-#: src/views/Browse.vue:46
+#: src/views/Browse.vue:42
 msgid "Latest Update"
 msgstr "最新更新"
 
-#: src/views/About.vue:78 src/views/ManagePackage.vue:171
-#: src/views/Package.vue:173
+#: src/views/Browse.vue:37
+msgid "Least Popular"
+msgstr ""
+
+#: src/views/About.vue:69 src/views/ManagePackage.vue:139
+#: src/views/Package.vue:148
 msgid "License"
 msgstr "許可証"
 
-#: src/views/Package.vue:279
+#: src/views/Package.vue:79
 msgid "Location"
 msgstr "位置"
 
-#: src/App.vue:37
+#: src/views/ManagePackage.vue:201
+msgid "Locked"
+msgstr ""
+
+#: src/App.vue:32
 msgid "Log In"
 msgstr "登入"
 
@@ -533,15 +603,15 @@ msgstr "登入"
 msgid "Log in to the OpenStore to be able to manage your apps."
 msgstr "登入到 OpenStore ，以便能夠管理您的應用程式。"
 
-#: src/App.vue:43
+#: src/App.vue:38
 msgid "Log Out"
 msgstr "登出"
 
-#: src/views/Login.vue:40 src/views/Login.vue:44
+#: src/views/Login.vue:7 src/views/Login.vue:11
 msgid "Login"
 msgstr "登入"
 
-#: src/views/Submit.vue:125
+#: src/views/Submit.vue:111
 msgid "Login to submit your app"
 msgstr "登入以提交你的應用程式"
 
@@ -554,56 +624,62 @@ msgid "Login via GitLab"
 msgstr "透過 GitLab 來登錄"
 
 #: src/views/Login.vue:18
-msgid "Login via Ubuntu"
+#, fuzzy
+#| msgid "Login via Ubuntu"
+msgid "Login via Ubuntu One"
 msgstr "透過 Ubuntu 來登錄"
 
-#: src/views/ManagePackage.vue:229
+#: src/views/ManagePackage.vue:210
 msgid "Maintainer"
 msgstr "維護者"
 
-#: src/views/Submit.vue:113
+#: src/views/Submit.vue:99
 msgid "Malware"
 msgstr "惡意程式"
 
-#: src/App.vue:40 src/views/Manage.vue:152 src/views/ManagePackage.vue:381
-#: src/views/ManagePackage.vue:383
+#: src/App.vue:35 src/views/Manage.vue:20 src/views/ManagePackage.vue:16
+#: src/views/ManagePackage.vue:18
 msgid "Manage"
 msgstr "管理"
 
-#: src/views/Manage.vue:148
+#: src/views/Manage.vue:16
 msgid "Manage Apps"
 msgstr "管理應用程式"
 
-#: src/views/Package.vue:280
+#: src/views/Package.vue:80
 msgid "Microphone"
 msgstr "麥克風"
 
-#: src/views/Package.vue:282
+#: src/views/Browse.vue:36
+msgid "Most Popular"
+msgstr ""
+
+#: src/views/Package.vue:82
 msgid "Music Files"
 msgstr "音樂檔案"
 
-#: src/views/Manage.vue:45
+#: src/views/Manage.vue:42
 msgid "Name"
 msgstr "名稱"
 
-#: src/views/About.vue:48
+#: src/views/About.vue:42
 msgid "Navigate to the downloads folder"
 msgstr "導引到下載資料夾"
 
-#: src/views/Package.vue:283
+#: src/views/Package.vue:84
 msgid "Networking"
 msgstr "聯網"
 
-#: src/views/Feeds.vue:9
+#: src/views/Feeds.vue:6
 msgid "New Apps"
 msgstr "新的應用程式"
 
-#: src/views/ManagePackage.vue:37 src/views/ManageRevisions.vue:86
-#: src/views/ManageRevisions.vue:88
+#: src/views/ManagePackage.vue:41 src/views/ManageRevisions.vue:23
+#: src/views/ManageRevisions.vue:25
 msgid "New Revision"
 msgstr "新的版本"
 
-#: src/views/ManageRevisions.vue:178
+#: src/views/ManageRevisions.vue:175
 msgid "New revision for %{channel} was created!"
 msgstr "為 %{channel} 建立了新的修訂版本!"
 
@@ -611,52 +687,83 @@ msgstr "為 %{channel} 建立了新的修訂版本!"
 msgid "New Revision for %{name}"
 msgstr "%{channel} 新的修訂版本"
 
-#: src/views/Browse.vue:44
+#: src/views/ManageRevisions.vue:179
+#, fuzzy
+#| msgid "New revision for %{channel} was created!"
+msgid "New revisions for %{channel} were created!"
+msgstr "為 %{channel} 建立了新的修訂版本!"
+
+#: src/views/Browse.vue:40
 msgid "Newest"
 msgstr "最新"
 
-#: src/views/ManagePackage.vue:31
+#: src/views/Package.vue:83
+msgid "NFC"
+msgstr ""
+
+#: src/views/ManagePackage.vue:36 src/views/ManagePackage.vue:204
 msgid "No"
 msgstr "否"
 
-#: src/views/Browse.vue:101 src/views/Manage.vue:94
+#: src/views/Browse.vue:96 src/views/Manage.vue:88
 msgid "No apps found."
 msgstr "找不到應用程式。"
 
-#: src/views/Manage.vue:81 src/views/Manage.vue:86 src/views/Package.vue:146
+#: src/views/Package.vue:36
+msgid "No longer available"
+msgstr ""
+
+#: src/views/Manage.vue:75 src/views/Manage.vue:80
+#: src/views/ManagePackage.vue:220 src/views/Package.vue:204
 msgid "None"
 msgstr "沒有"
 
-#: src/views/Manage.vue:75
+#: src/views/Manage.vue:69
 msgid "Not published"
 msgstr "尚未發佈"
 
-#: src/views/ManagePackage.vue:161
+#: src/views/ManagePackage.vue:129
 msgid "NSFW"
 msgstr "敏感"
 
-#: src/views/Browse.vue:90
+#: src/views/Browse.vue:89
 msgid "NSFW content"
 msgstr "敏感內容"
 
-#: src/views/Browse.vue:45
+#: src/views/Package.vue:56
+#, fuzzy
+#| msgid "Version"
+msgid "Older Versions"
+msgstr "版本"
+
+#: src/views/Browse.vue:41
 msgid "Oldest"
 msgstr "最舊"
 
-#: src/views/Browse.vue:47
+#: src/views/Browse.vue:43
 msgid "Oldest Update"
 msgstr "最舊的更新"
 
-#: src/views/Submit.vue:60
+#: src/views/Submit.vue:52
+#, fuzzy
+#| msgid ""
+#| "One of the main goals of the OpenStore is to provide a safe app store for "
+#| "people of all ages.\n"
+#| "To accomplish this goal we do not allow certain types of app to be "
+#| "published.\n"
+#| "Failure to follow the guidelines will result in your app being removed.\n"
+#| "Any account with serious infractions may be subject to termination.\n"
+#| "The OpenStore team thanks you for helping us promote a better enviroment "
+#| "for everyone."
 msgid ""
 "One of the main goals of the OpenStore is to provide a safe app store for "
 "people of all ages.\n"
-"To accomplish this goal we do not allow certain types of app to be "
+"  To accomplish this goal we do not allow certain types of app to be "
 "published.\n"
-"Failure to follow the guidelines will result in your app being removed.\n"
-"Any account with serious infractions may be subject to termination.\n"
-"The OpenStore team thanks you for helping us promote a better enviroment for "
-"everyone."
+"  Failure to follow the guidelines will result in your app being removed.\n"
+"  Any account with serious infractions may be subject to termination.\n"
+"  The OpenStore team thanks you for helping us promote a better enviroment "
+"for everyone."
 msgstr ""
 "OpenStore 的主要目標之一是為所有年齡的人提供安全的應用程式商店。\n"
 "為了實現這一目標，我們不允許發佈某些類型的應用。\n"
@@ -664,7 +771,7 @@ msgstr ""
 "任何嚴重違規的話連帳戶都有可能被終止。\n"
 "OpenStore 團隊感謝您幫助我們為每個人推廣更好的環境。"
 
-#: src/views/Submit.vue:48
+#: src/views/Submit.vue:40
 msgid ""
 "Only open source applications allowed for manual review:\n"
 "As the applications might have arbitrary access to the device, every "
@@ -674,25 +781,29 @@ msgstr ""
 "由於應用程式可能具有對裝置的任意存取權限，因此每個手動審核的應用程式都將獲得"
 "源代碼審查。"
 
-#: src/views/ManagePackage.vue:223
+#: src/views/ManagePackage.vue:189
+#, fuzzy
+#| msgid ""
+#| "Only YouTube videos are supported at this time. Make sure the url is for "
+#| "the embedded video!"
 msgid ""
-"Only YouTube videos are supported at this time. Make sure the url is for the "
-"embedded video!"
+"Only YouTube and Odysee videos are supported at this time. Make sure the url "
+"is for the embedded video!"
 msgstr "目前只支援 YouTube 影片。確保網址是用於嵌入影片的!"
 
-#: src/views/About.vue:47
+#: src/views/About.vue:41
 msgid "Open the terminal app"
 msgstr "打開終端機應用程式"
 
-#: src/views/About.vue:145
+#: src/views/About.vue:142
 msgid "OpenStore API/Server Contributors"
 msgstr "OpenStore API/伺服器貢獻者"
 
-#: src/views/Submit.vue:58
+#: src/views/Submit.vue:50
 msgid "OpenStore App Content Policy"
 msgstr "OpenStore 應用程式內容政策"
 
-#: src/views/About.vue:155
+#: src/views/About.vue:148
 msgid "OpenStore App Contributors"
 msgstr "OpenStore 應用程式貢獻者"
 
@@ -700,47 +811,47 @@ msgstr "OpenStore 應用程式貢獻者"
 msgid "OpenStore Badges"
 msgstr "OpenStore 標章"
 
-#: src/views/About.vue:67
+#: src/views/About.vue:58
 msgid "OpenStore group on Telegram"
 msgstr "Telegram 上的 OpenStore 群組"
 
-#: src/views/About.vue:93
+#: src/views/About.vue:84
 msgid "OpenStore source on GitLab"
 msgstr "GitLab 上的 OpenStore 源碼"
 
-#: src/views/About.vue:150
+#: src/views/About.vue:145
 msgid "OpenStore Website Contributors"
 msgstr "OpenStore 網站貢獻者"
 
-#: src/views/ManageRevisions.vue:33
-msgid "OR"
-msgstr "或者"
+#: src/views/ManagePackage.vue:218
+msgid "Override Type"
+msgstr ""
 
-#: src/views/ManagePackage.vue:245
+#: src/views/ManagePackage.vue:242
 msgid "Package Info"
 msgstr "封包套件資訊"
-
-#: src/views/Package.vue:162
-msgid "Packager/Publisher"
-msgstr "封裝者/發行者"
 
 #: src/views/NotFound.vue:3
 msgid "Page Not Found"
 msgstr "找不到頁面"
 
-#: src/views/Package.vue:80 src/views/Package.vue:135
+#: src/views/Package.vue:86 src/views/Package.vue:190
 msgid "Permissions"
 msgstr "權限"
 
-#: src/views/Package.vue:285
+#: src/views/Package.vue:86
 msgid "Picture Files"
 msgstr "圖片檔案"
 
-#: src/views/ManagePackage.vue:43
+#: src/views/ManagePackage.vue:47
 msgid "Presentation"
 msgstr "介紹"
 
-#: src/views/Submit.vue:69
+#: src/views/ManageRevisions.vue:53
+msgid "Processing"
+msgstr ""
+
+#: src/views/Submit.vue:61
 msgid "Prohibited Apps"
 msgstr "已禁止的應用程式"
 
@@ -760,55 +871,78 @@ msgstr ""
 " 提供幾種不同的語言以及 PNG 和 SVG \n"
 " 格式。"
 
-#: src/views/ManagePackage.vue:14
+#: src/views/ManagePackage.vue:26
 msgid "Public Link"
 msgstr "公開連結"
 
-#: src/views/ManagePackage.vue:21
+#: src/views/ManagePackage.vue:33
 msgid "Publish"
 msgstr "發佈"
 
-#: src/views/Manage.vue:74 src/views/Package.vue:185
+#: src/views/Manage.vue:68 src/views/Package.vue:163
 msgid "Published"
 msgstr "發佈"
 
-#: src/views/ManagePackage.vue:323
+#: src/views/ManagePackage.vue:277
 msgid "Published Date"
 msgstr "發佈日期"
 
-#: src/views/Package.vue:286
+#: src/views/Manage.vue:44 src/views/ManagePackage.vue:251
+#: src/views/Package.vue:131
+#, fuzzy
+#| msgid "Published"
+msgid "Publisher"
+msgstr "發佈"
+
+#: src/views/Package.vue:87
 msgid "Push Notifications"
 msgstr "推送通知"
 
-#: src/views/Package.vue:281
+#: src/views/Package.vue:74
+#, fuzzy
+#| msgid "Read Picture Files"
+msgid "Read Document Files"
+msgstr "讀取圖片檔案"
+
+#: src/views/Package.vue:81
 msgid "Read Music Files"
 msgstr "讀取音樂檔案"
 
-#: src/views/Package.vue:284
+#: src/views/Package.vue:85
 msgid "Read Picture Files"
 msgstr "讀取圖片檔案"
 
-#: src/views/Package.vue:289
+#: src/views/Package.vue:90
 msgid "Read Video Files"
 msgstr "讀取影片檔案"
 
-#: src/views/Browse.vue:41
+#: src/views/Browse.vue:35
 msgid "Relevance"
 msgstr "關聯"
 
-#: src/App.vue:103
+#: src/App.vue:78
 msgid "Report an Issue"
 msgstr "報告問題"
 
-#: src/views/Package.vue:356
+#: src/views/Package.vue:205
 msgid "Restricted permission"
 msgstr "受限制的許可權"
 
-#: src/views/ManagePackage.vue:294
+#: src/views/ManagePackage.vue:228
+msgid "Review Exceptions"
+msgstr ""
+
+#: src/components/Reviews.vue:3
+#, fuzzy
+#| msgid "Webview"
+msgid "Reviews"
+msgstr "網路視圖"
+
+#: src/views/ManagePackage.vue:295
 msgid "Revision"
 msgstr "修訂"
 
-#: src/App.vue:108 src/views/Feeds.vue:3
+#: src/App.vue:81 src/views/Feeds.vue:3
 msgid "RSS Feeds"
 msgstr "RSS 訂閱"
 
@@ -816,120 +950,130 @@ msgstr "RSS 訂閱"
 msgid "Rules for Submission"
 msgstr "提交規範"
 
-#: src/views/Submit.vue:31
+#: src/views/Submit.vue:24
 msgid "Rules for Submissions Requiring Manual Review"
 msgstr "人工審核的提交規範"
 
-#: src/views/About.vue:50
+#: src/views/About.vue:44
 msgid "Run the command:"
 msgstr "執行指令："
 
-#: src/views/ManagePackage.vue:348
+#: src/views/ManagePackage.vue:337
 msgid "Save"
 msgstr "儲存"
 
-#: src/components/Types.vue:4 src/views/Stats.vue:109
-msgid "Scope"
-msgstr "觀查"
-
-#: src/views/Browse.vue:34
-msgid "Scopes"
-msgstr "觀查"
-
-#: src/views/Package.vue:107
+#: src/views/Package.vue:109
 msgid "Screenshots"
 msgstr "螢幕截圖"
 
-#: src/views/ManagePackage.vue:106
+#: src/views/ManagePackage.vue:90
 msgid "Screenshots (Limit 5)"
 msgstr "螢幕截圖 (僅限5張以內)"
 
-#: src/views/Browse.vue:9 src/views/Manage.vue:26
+#: src/views/Browse.vue:9 src/views/Manage.vue:25
 msgid "Search"
 msgstr "搜尋"
 
-#: src/views/Submit.vue:35
+#: src/views/Submit.vue:28
 msgid ""
 "Send us a link to a repository for your app to our telegram group along with "
 "some instructions on how to build it."
-msgstr "將您的應用程式存儲庫的鏈接以及有關怎樣建構它的說明發送給我們的 Telegram 群組。"
+msgstr ""
+"將您的應用程式存儲庫的鏈接以及有關怎樣建構它的說明發送給我們的 Telegram 群"
+"組。"
 
-#: src/views/Package.vue:287
+#: src/views/Package.vue:88
 msgid "Sensors"
 msgstr "感測器"
 
-#: src/views/Submit.vue:74
+#: src/views/Submit.vue:66
 msgid "Sexually Explicit Content"
 msgstr "性暗示內容"
 
-#: src/views/Package.vue:117
+#: src/views/ManagePackage.vue:323
+#, fuzzy
+#| msgid "New Revision"
+msgid "Show All Revisions"
+msgstr "新的版本"
+
+#: src/views/Package.vue:119
 msgid "Show NSFW Content"
 msgstr "顯示敏感內容"
 
-#: src/App.vue:98
+#: src/App.vue:75
 msgid "Site Status"
 msgstr "網頁狀態"
 
-#: src/views/Browse.vue:39
+#: src/views/Browse.vue:33
 msgid "Sort By"
 msgstr "排列依據"
 
-#: src/views/Package.vue:169
+#: src/views/Package.vue:140
 msgid "Source"
 msgstr "源碼"
 
-#: src/views/ManagePackage.vue:206
+#: src/App.vue:72
+#, fuzzy
+#| msgid "Source"
+msgid "Source Code"
+msgstr "源碼"
+
+#: src/views/ManagePackage.vue:172
 msgid "Source URL"
 msgstr "源碼網址"
 
-#: src/views/ManagePackage.vue:65 src/views/Stats.vue:3 src/views/Stats.vue:92
-#: src/views/Stats.vue:96
+#: src/views/ManagePackage.vue:59 src/views/Package.vue:210
+#: src/views/Stats.vue:3 src/views/Stats.vue:9 src/views/Stats.vue:13
 msgid "Stats"
 msgstr "統計"
 
-#: src/views/Manage.vue:48
+#: src/views/Manage.vue:45
 msgid "Status"
 msgstr "狀態"
 
-#: src/App.vue:28 src/views/Submit.vue:162
+#: src/App.vue:23 src/views/Submit.vue:133
 msgid "Submit"
 msgstr "提交"
 
-#: src/views/Manage.vue:10 src/views/Submit.vue:129 src/views/Submit.vue:189
-#: src/views/Submit.vue:193
+#: src/views/Manage.vue:9 src/views/Submit.vue:113 src/views/Submit.vue:12
+#: src/views/Submit.vue:16
 msgid "Submit App"
 msgstr "提交應用程式"
 
-#: src/views/About.vue:134
+#: src/views/About.vue:126
 msgid "Submit your app"
 msgstr "提交您的應用程式"
 
-#: src/views/ManagePackage.vue:551 src/views/ManagePackage.vue:576
-#: src/views/ManageRevisions.vue:177
+#: src/views/ManagePackage.vue:204 src/views/ManagePackage.vue:232
+#: src/views/ManageRevisions.vue:184
 msgid "Success"
 msgstr "成功"
 
-#: src/views/Package.vue:165
+#: src/views/Package.vue:136
 msgid "Support"
 msgstr "支援"
 
-#: src/views/ManagePackage.vue:211
+#: src/views/ManagePackage.vue:177
 msgid "Support URL"
 msgstr "支援網址"
 
-#: src/views/ManagePackage.vue:85
+#: src/views/ManagePackage.vue:75
 msgid "Tag Line"
 msgstr "標語"
 
-#: src/views/About.vue:102
+#: src/App.vue:66
+msgid "Telegram"
+msgstr ""
+
+#: src/views/About.vue:93
 msgid "Terms"
 msgstr "條款"
 
-#: src/views/Package.vue:13
+#: src/views/Package.vue:10 src/views/PackageVersions.vue:12
 msgid "The app you are looking for has been removed or does not exist"
 msgstr "您要尋找的應用程式已被刪除或不存在"
 
-#: src/views/About.vue:97
+#: src/views/About.vue:88
 msgid ""
 "The apps available for download from the OpenStore have their own licencing "
 "and terms.\n"
@@ -938,11 +1082,11 @@ msgstr ""
 "可從 OpenStore 下載的應用程式中擁有自己的許可證和條款。\n"
 "有關詳細的訊息，請參閱每個應用程式的頁面。"
 
-#: src/views/ManagePackage.vue:552
+#: src/views/ManagePackage.vue:203
 msgid "The changes to %{name} were saved!"
 msgstr "對 %{name} 所做的更改已經保存!"
 
-#: src/views/About.vue:104
+#: src/views/About.vue:95
 msgid ""
 "The OpenStore a non-profit volunteer project.\n"
 "Although every effort is made to ensure that everything in the repository is "
@@ -959,7 +1103,7 @@ msgstr ""
 "手動審核流程，以檢查潛在的安全或隱私問題。\n"
 "這種檢查遠非詳盡無遺，並且沒有任何保證。"
 
-#: src/views/About.vue:31
+#: src/views/About.vue:29
 msgid ""
 "The OpenStore app is installed by default on the UBports builds of Ubuntu "
 "Touch.\n"
@@ -968,7 +1112,7 @@ msgstr ""
 "在預設的情況下，OpenStore 應用程式安裝在 Ubuntu Touch 的 UBports 版本上。\n"
 "但是，如果您需要手動安裝 OpenStore，請按照下列的步驟來操作："
 
-#: src/views/About.vue:141
+#: src/views/About.vue:138
 msgid "The OpenStore is made possible by many amazing contributors:"
 msgstr "OpenStore 是由許多令人敬佩的貢獻者所促成的:"
 
@@ -988,7 +1132,7 @@ msgstr ""
 "您還可以上傳和管理自己的應用程式以供發佈。\n"
 "OpenStore 鼓勵在其中發布的應用程式是開源的，但也接受專有應用程式。"
 
-#: src/views/About.vue:112
+#: src/views/About.vue:103
 msgid ""
 "The OpenStore respects your privacy.\n"
 "We don't track you or your device.\n"
@@ -1016,7 +1160,7 @@ msgstr ""
 msgid "The page you are looking for has been removed or does not exist"
 msgstr "您要尋找的頁面已經被刪除或不存在"
 
-#: src/views/About.vue:80
+#: src/views/About.vue:71
 msgid ""
 "The source code for OpenStore related projects is available under the GPL "
 "v3.\n"
@@ -1025,12 +1169,13 @@ msgstr ""
 "OpenStore  相關專案的原始程式碼可在 GPL v3 下使用。\n"
 "您可以在 OpenStore GitLab 頁面上找到代碼。"
 
-#: src/views/Package.vue:17
+#: src/views/ManagePackage.vue:6 src/views/Package.vue:12
+#: src/views/PackageVersions.vue:14
 msgid ""
 "There was an error trying to find this app, please refresh and try again."
 msgstr "嘗試尋找此應用程式時出錯，請重新整理並重試。"
 
-#: src/views/Browse.vue:65 src/views/Manage.vue:31
+#: src/views/Browse.vue:70 src/views/Manage.vue:30
 msgid ""
 "There was an error trying to load the app list, please refresh and try again."
 msgstr "嘗試載入應用程式清單時出錯，請重新整理並重試。"
@@ -1040,23 +1185,23 @@ msgid ""
 "There was an error trying to load the stats, please refresh and try again."
 msgstr "嘗試載入統計資訊時出錯，請重新整理並重試。"
 
-#: src/views/ManagePackage.vue:163
+#: src/views/ManagePackage.vue:131
 msgid "This app contains NSFW material"
 msgstr "此應用程式包含敏感內容"
 
-#: src/views/Package.vue:368
+#: src/views/Package.vue:219
 msgid ""
 "This app does not have access to restricted system data, see permissions for "
 "more details"
 msgstr "此應用程式無法訪問受限制的系統數據，有關更多的詳細訊息請參閱權限"
 
-#: src/views/Package.vue:370
+#: src/views/Package.vue:223
 msgid ""
 "This app has access to restricted system data, see permissions for more "
 "details"
 msgstr "此應用可訪問受限制的系統數據，有關更多的詳細訊息請參閱權限"
 
-#: src/views/Submit.vue:141
+#: src/views/Submit.vue:119
 msgid ""
 "This is the unique identifier for your app.\n"
 "It must match exactly the \"name\" field in your click's manifest.json and "
@@ -1072,39 +1217,61 @@ msgstr ""
 "\"openstore-team\"\n"
 "是建立應用程式的群組或個人。"
 
-#: src/views/ManageRevisions.vue:52
+#: src/views/ManagePackage.vue:56
+msgid "This revision is still available"
+msgstr ""
+
+#: src/views/ManageRevisions.vue:63
 msgid "This will be added to the beginning of your current changelog"
 msgstr "這將會被添加到目前變更日誌的開頭"
 
-#: src/views/ManagePackage.vue:80
+#: src/views/ManagePackage.vue:70
 msgid "Title"
 msgstr "名稱"
 
-#: src/views/Browse.vue:42
+#: src/views/Browse.vue:38
 msgid "Title (A-Z)"
 msgstr "名稱 (A-Z)"
 
-#: src/views/Browse.vue:43
+#: src/views/Browse.vue:39
 msgid "Title (Z-A)"
 msgstr "名稱 (Z-A)"
 
-#: src/views/ManagePackage.vue:314
+#: src/views/ManagePackage.vue:316
 msgid "Total"
 msgstr "總計"
 
-#: src/views/Manage.vue:79
+#: src/views/Package.vue:219
+#, fuzzy
+#| msgid "Downloads"
+msgid "Total downloads"
+msgstr "下載"
+
+#: src/views/Manage.vue:73
 msgid "Total:"
 msgstr "總計:"
 
-#: src/views/ManagePackage.vue:279 src/views/Package.vue:197
+#: src/views/ManagePackage.vue:268 src/views/Package.vue:173
 msgid "Translation Languages"
 msgstr "翻譯語言"
 
-#: src/views/Browse.vue:102 src/views/Manage.vue:95
+#: src/views/ManagePackage.vue:193
+#, fuzzy
+#| msgid "Translation Languages"
+msgid "Translation URL"
+msgstr "翻譯語言"
+
+#: src/views/Package.vue:144
+#, fuzzy
+#| msgid "Translation Languages"
+msgid "Translations"
+msgstr "翻譯語言"
+
+#: src/views/Browse.vue:97 src/views/Manage.vue:89
 msgid "Try searching for something else"
 msgstr "嘗試搜尋其他內容"
 
-#: src/views/Browse.vue:29 src/views/ManagePackage.vue:270
+#: src/views/Browse.vue:23 src/views/ManagePackage.vue:259
 msgid "Type"
 msgstr "類型"
 
@@ -1116,71 +1283,82 @@ msgstr "Ubuntu Touch"
 msgid "Ubuntu Touch Apps"
 msgstr "Ubuntu Touch 應用程式"
 
-#: src/views/Stats.vue:106
+#: src/views/Stats.vue:25
 msgid "Uncategorized"
 msgstr "未分類"
 
-#: src/views/Package.vue:181
+#: src/views/Package.vue:199
+msgid "Unrestricted read access to:"
+msgstr ""
+
+#: src/views/Package.vue:195
+#, fuzzy
+#| msgid "Restricted permission"
+msgid "Unrestricted write access to:"
+msgstr "受限制的許可權"
+
+#: src/views/Package.vue:158
 msgid "Updated"
 msgstr "更新"
 
-#: src/views/Feeds.vue:18
+#: src/views/Feeds.vue:10
 msgid "Updated Apps"
 msgstr "更新應用程式"
 
-#: src/views/ManagePackage.vue:331
+#: src/views/ManagePackage.vue:283
 msgid "Updated Date"
 msgstr "更新日期"
 
-#: src/views/ManageRevisions.vue:36
+#: src/views/ManageRevisions.vue:13
+msgid "Upload Revision via:"
+msgstr ""
+
+#: src/views/ManageRevisions.vue:16 src/views/ManageRevisions.vue:204
 msgid "URL"
 msgstr "網址"
 
-#: src/views/ManageRevisions.vue:44
+#: src/views/ManageRevisions.vue:49
 msgid "URL of App from the Web"
 msgstr "來自網路的應用程式 URL"
 
-#: src/views/Package.vue:288
+#: src/views/Package.vue:89
 msgid "User Metrics"
 msgstr "使用者指標"
 
-#: src/views/Manage.vue:49 src/views/ManagePackage.vue:296
+#: src/views/Manage.vue:46 src/views/ManagePackage.vue:298
 msgid "Version"
 msgstr "版本"
 
-#: src/views/Package.vue:291
+#: src/views/Package.vue:92
 msgid "Video"
 msgstr "影片"
 
-#: src/views/Package.vue:290
+#: src/views/Package.vue:91
 msgid "Video Files"
 msgstr "影片檔案"
 
-#: src/views/ManagePackage.vue:221
+#: src/views/ManagePackage.vue:187
 msgid "Video URL"
 msgstr "影片網址"
 
-#: src/views/About.vue:37
+#: src/views/About.vue:35
 msgid "View Install Instructions"
 msgstr "查看安裝說明"
 
-#: src/views/Submit.vue:87
+#: src/views/Submit.vue:77
 msgid "Violence"
 msgstr "暴力"
 
-#: src/components/Types.vue:5 src/views/Stats.vue:110
+#: src/components/Types.vue:5 src/views/ManagePackage.vue:223
+#: src/views/Stats.vue:29
 msgid "Web App"
 msgstr "網路程式"
 
-#: src/components/Types.vue:6 src/views/Stats.vue:111
-msgid "Web App+"
-msgstr "網路程式+"
-
-#: src/views/Browse.vue:33
+#: src/views/Browse.vue:28
 msgid "Web Apps"
 msgstr "網路程式"
 
-#: src/views/Package.vue:292
+#: src/views/Package.vue:93
 msgid "Webview"
 msgstr "網路視圖"
 
@@ -1188,24 +1366,29 @@ msgstr "網路視圖"
 msgid "Welcome %{name}!"
 msgstr "您好 %{name}!"
 
-#: src/views/ManageRevisions.vue:15 src/views/ManageRevisions.vue:174
+#: src/views/Browse.vue:51 src/views/ManageRevisions.vue:23
+#: src/views/ManageRevisions.vue:170
 msgid "Xenial"
 msgstr "Xenial"
 
-#: src/views/ManagePackage.vue:30
+#: src/views/ManagePackage.vue:35 src/views/ManagePackage.vue:203
 msgid "Yes"
 msgstr "是"
 
-#: src/views/Submit.vue:10
+#: src/views/Submit.vue:9
+msgid "You are not allowed to impersonate someone else or another app."
+msgstr ""
+
+#: src/views/Submit.vue:8
 msgid ""
 "You are only allowed to publish apps that you have permission to distribute."
 msgstr "您只能發佈您有權分發的應用程式。"
 
-#: src/views/Submit.vue:22
+#: src/views/Submit.vue:17
 msgid "You must read over the content policy detailed below."
 msgstr "您必須閱讀以下所敘述的政策內容。"
 
-#: src/views/Submit.vue:13
+#: src/views/Submit.vue:10
 msgid ""
 "Your app can be pulled without warning at the discretion of our admins.\n"
 "Where possible, we will contact you regarding any such actions."
@@ -1213,8 +1396,32 @@ msgstr ""
 "我們的管理員可以自行決定是否在沒有警告的情況下提取您的應用。\n"
 "在可能的情況下，我們會就任何此類行為與您聯繫。"
 
-#~ msgid "All Channels"
-#~ msgstr "所有通道"
+#~ msgid "Author"
+#~ msgstr "作者"
+
+#~ msgid "Chat with us on Telegram"
+#~ msgstr "在 Telegram 上與我們聊天"
+
+#~ msgid "Fork us on GitLab"
+#~ msgstr "在 GitLab 上关注我們"
+
+#~ msgid "Framework"
+#~ msgstr "架構"
+
+#~ msgid "OR"
+#~ msgstr "或者"
+
+#~ msgid "Packager/Publisher"
+#~ msgstr "封裝者/發行者"
+
+#~ msgid "Scope"
+#~ msgstr "觀查"
+
+#~ msgid "Scopes"
+#~ msgstr "觀查"
+
+#~ msgid "Web App+"
+#~ msgstr "網路程式+"
 
 #~ msgid "Download Vivid"
 #~ msgstr "下載 Vivid 版本"

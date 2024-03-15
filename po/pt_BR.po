@@ -6,87 +6,106 @@ msgstr ""
 "Language-Team: Portuguese (Brazil) <https://translate.ubports.com/projects/"
 "openstore/open-storeio/pt_BR/>\n"
 "Language: pt_BR\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 3.11.3\n"
 "Generated-By: easygettext\n"
 
-#: ./src/views/Package.vue:161
+#: src/views/Package.vue:120
+#, fuzzy
+#| msgid ""
+#| "*This app contains NSFW content, to view the description and\n"
+#| "  screenshots, click the above button."
 msgid ""
 "*This app contains NSFW content, to view the description and\n"
-"  screenshots, click the above button."
+"screenshots, click the above button."
 msgstr ""
 "*Este aplicativo possui conteúdo sensível, para visualizar a descrição e\n"
 "…capturas de tela, clique no botão abaixo."
 
-#: ./src/views/ManagePackage.vue:755
+#: src/views/ManagePackage.vue:231
 msgid "%{name} was successfully deleted"
 msgstr "%{name} foi de apagado com sucesso"
 
-#: ./src/views/ManagePackage.vue:235
+#: src/views/ManagePackage.vue:125
 msgid "A comma separated list of keywords"
 msgstr "Uma lista de palavras-chave separadas por vírgulas"
 
-#: ./src/App.vue:40
-#: ./src/views/About.vue:3
-#: ./src/views/About.vue:191
-#: ./src/views/About.vue:195
+#: src/App.vue:29 src/views/About.vue:3 src/views/About.vue:12
+#: src/views/About.vue:16
 msgid "About"
 msgstr "Sobre"
 
-#: ./src/App.vue:78
+#: src/App.vue:63
 msgid "About Us"
 msgstr "Sobre nós"
 
-#: ./src/views/Package.vue:351
+#: src/views/Package.vue:64
 msgid "Accounts"
 msgstr "Contas"
 
-#: ./src/views/ManageRevisions.vue:75
+#: src/views/ManageRevisions.vue:54
 msgid "Add Another Architecture"
 msgstr "Adicionar outra arquitetura"
 
-#: ./src/views/ManagePackage.vue:86
+#: src/views/ManagePackage.vue:56
 msgid "Admin"
 msgstr "Administrador"
 
-#: ./src/views/Browse.vue:22
+#: src/views/Browse.vue:16
 msgid "All Categories"
 msgstr "Todas as categorias"
 
-#: ./src/views/Browse.vue:35
+#: src/views/Browse.vue:50
+#, fuzzy
+#| msgid "Channels"
+msgid "All Channels"
+msgstr "Canais"
+
+#: src/views/Browse.vue:25
 msgid "All Types"
 msgstr "Todos os tipos"
 
-#: ./src/views/Login.vue:26
+#: src/views/Login.vue:26
 msgid "An account is not needed to download or install apps."
 msgstr "Uma conta não é necessária para baixar ou instalar apps."
 
-#: ./src/views/ManagePackage.vue:611
-#: ./src/views/ManagePackage.vue:624
-#: ./src/views/ManageRevisions.vue:202
+#: src/views/ManagePackage.vue:87 src/views/ManagePackage.vue:100
+#: src/views/ManageRevisions.vue:78
 msgid "An error occured loading your app data"
 msgstr "Ocorreu um erro a carregar os dados do seu aplicativo"
 
-#: ./src/views/ManageRevisions.vue:264
-#: ./src/views/Submit.vue:233
+#: src/views/ManageRevisions.vue:140 src/views/Submit.vue:47
 msgid "An unknown error has occurred"
 msgstr "Ocorreu um erro desconhecido"
 
-#: ./src/views/About.vue:167
-msgid "And many amazing developers, testers, and users from the OpenStore community!"
+#: src/views/About.vue:151
+msgid ""
+"And many amazing developers, testers, and users from the OpenStore community!"
 msgstr ""
 "E tantos programadores fantásticos, testadores, e utilizadores da comunidade "
 "OpenStore!"
 
-#: ./src/views/About.vue:125
+#: src/views/About.vue:113
+#, fuzzy
+#| msgid ""
+#| "Any personal data you decide to give us (e.g. your email address when "
+#| "registering for an account to upload your apps)\n"
+#| "  goes no further than us,\n"
+#| "  and will not be used for anything other than allowing you to maintain "
+#| "your apps and, in rare cases,\n"
+#| "  contact you in the event there is an issue with your app.\n"
+#| "  Additionally, this site uses cookies to keep you logged in to your "
+#| "account."
 msgid ""
-"Any personal data you decide to give us (e.g. your email address when registering for an account to upload your apps)\n"
-"  goes no further than us,\n"
-"  and will not be used for anything other than allowing you to maintain your apps and, in rare cases,\n"
-"  contact you in the event there is an issue with your app.\n"
-"  Additionally, this site uses cookies to keep you logged in to your account."
+"Any personal data you decide to give us (e.g. your email address when "
+"registering for an account to upload your apps)\n"
+"goes no further than us,\n"
+"and will not be used for anything other than allowing you to maintain your "
+"apps and, in rare cases,\n"
+"contact you in the event there is an issue with your app.\n"
+"Additionally, this site uses cookies to keep you logged in to your account."
 msgstr ""
 "Quaisquer dados pessoais que você decida nos fornecer (ex. seu endereço de e-"
 "mail ao se registrar para uma conta para carregar seus aplicativos)\n"
@@ -96,377 +115,412 @@ msgstr ""
 "…entre em contato com você caso haja um problema com seu aplicativo.\n"
 "…Além disso, este site usa cookies para mantê-lo conectado à sua conta."
 
-#: ./src/views/Manage.vue:13
+#: src/views/Manage.vue:13
 msgid "API Key"
 msgstr "Chave API"
 
-#: ./src/components/Types.vue:3
-#: ./src/views/Manage.vue:53
-#: ./src/views/ManagePackage.vue:384
-#: ./src/views/Stats.vue:118
+#: src/components/Types.vue:3 src/views/Manage.vue:43
+#: src/views/ManagePackage.vue:221 src/views/Stats.vue:27
 msgid "App"
 msgstr "Aplicativo"
 
-#: ./src/views/Submit.vue:105
+#: src/views/Submit.vue:85
 msgid "App containing or promoting any of the above are strictly prohibited."
-msgstr "App que contém ou promove algo indicado acima é restritamente proibido."
+msgstr ""
+"App que contém ou promove algo indicado acima é restritamente proibido."
 
-#: ./src/views/Submit.vue:142
+#: src/views/Submit.vue:117
 msgid "App Name"
 msgstr "Nome do App"
 
-#: ./src/App.vue:89
+#: src/App.vue:69
 msgid "App Stats"
 msgstr "Estatísticas do App"
 
-#: ./src/views/Submit.vue:153
+#: src/views/About.vue:131
+msgid "App Submission Tutorial"
+msgstr ""
+
+#: src/views/Submit.vue:128
 msgid "App Title"
 msgstr "Título do App"
 
-#: ./src/views/Stats.vue:21
+#: src/views/Stats.vue:17
 msgid "App Type"
 msgstr "Tipo do App"
 
-#: ./src/views/Stats.vue:17
+#: src/views/Stats.vue:13
 msgid "App Types"
 msgstr "Tipos de App"
 
-#: ./src/views/Browse.vue:36
+#: src/views/Browse.vue:26
 msgid "Apps"
 msgstr "Aplicativos"
 
-#: ./src/views/Submit.vue:109
+#: src/views/Submit.vue:89
+#, fuzzy
+#| msgid ""
+#| "Apps containing gambling involving real world money transactions are not "
+#| "allowed.\n"
+#| "This includes, but is not limited to, online casinos, betting, and "
+#| "lotteries."
 msgid ""
-"Apps containing gambling involving real world money transactions are not allowed.\n"
-"This includes, but is not limited to, online casinos, betting, and lotteries."
+"Apps containing gambling involving real world money transactions are not "
+"allowed.\n"
+"  This includes, but is not limited to, online casinos, betting, and "
+"lotteries."
 msgstr ""
 "Apps que contenham jogos de azar envolvendo transações com dinheiro real não "
 "são permitidos.\n"
 "Isso inclui, mas não se limita a casinos online, apostas e loterias."
 
-#: ./src/views/Submit.vue:92
-msgid "Apps containing or promoting child abuse or child sexual abuse are strictly prohibited."
+#: src/views/Submit.vue:74
+msgid ""
+"Apps containing or promoting child abuse or child sexual abuse are strictly "
+"prohibited."
 msgstr ""
 "Apps que contenham ou promovam abuso infantil ou abuso sexual infantil são "
 "estritamente proibidos."
 
-#: ./src/views/Submit.vue:98
+#: src/views/Submit.vue:78
+#, fuzzy
+#| msgid ""
+#| "Apps containing or promoting gratuitous violence are not allowed.\n"
+#| "This includes, but is not limited to, violence, terrorism, bomb/weapon "
+#| "making, self harm, and grotesque imagery."
 msgid ""
 "Apps containing or promoting gratuitous violence are not allowed.\n"
-"This includes, but is not limited to, violence, terrorism, bomb/weapon making, self harm, and grotesque imagery."
+"  This includes, but is not limited to, violence, terrorism, bomb/weapon "
+"making, self harm, and grotesque imagery."
 msgstr ""
 "Apps contendo ou promovendo violência gratuita não são permitidos.\n"
 "Isso inclui, mas não se limita a, violência, terrorismo, fabricação de "
 "bombas / armas, autoflagelação e imagens grotescas."
 
-#: ./src/views/Submit.vue:85
+#: src/views/Submit.vue:67
+#, fuzzy
+#| msgid ""
+#| "Apps containing or promoting sexually explicit content are not allowed.\n"
+#| "This includes, but is not limited to, pornography and services promoting "
+#| "sexually explicit content."
 msgid ""
 "Apps containing or promoting sexually explicit content are not allowed.\n"
-"This includes, but is not limited to, pornography and services promoting sexually explicit content."
+"  This includes, but is not limited to, pornography and services promoting "
+"sexually explicit content."
 msgstr ""
 "Apps que contenham ou promovam conteúdo sexualmente explícito não são "
 "permitidos.\n"
 "Isso inclui, mas não se limita a, pornografia e serviços que promovem "
 "conteúdo sexualmente explícito."
 
-#: ./src/views/Submit.vue:7
-msgid "Apps not requiring manual review can be submitted by logging in with the \"Log In\" link above."
+#: src/views/Submit.vue:7
+msgid ""
+"Apps not requiring manual review can be submitted by logging in with the "
+"\"Log In\" link above."
 msgstr ""
 "Aplicações que não exigem revisão manual podem ser enviados iniciando sessão "
 "com o link \"Entrar\" acima."
 
-#: ./src/views/Submit.vue:116
+#: src/views/Submit.vue:96
 msgid "Apps promoting illegal activities (based on USA law) are not allowed."
 msgstr ""
 "Aplicativos que promovem atividades ilegais (com base na lei dos EUA) não "
 "são permitidos."
 
-#: ./src/views/Submit.vue:24
-msgid "Apps requiring manual review must be submitted by contacting an admin in our telegram group."
+#: src/views/Submit.vue:15
+msgid ""
+"Apps requiring manual review must be submitted by contacting an admin in our "
+"telegram group."
 msgstr ""
 "Os aplicativos que exigem revisão manual devem ser enviadas com o "
 "conhecimento de um administrador do nosso grupo do Telegram."
 
-#: ./src/views/Submit.vue:120
+#: src/views/Submit.vue:100
+#, fuzzy
+#| msgid ""
+#| "Apps that are found to be stealing the users data, trying to escalate "
+#| "their privileges without user consent,\n"
+#| "or executing malicious process are strictly prohibited."
 msgid ""
-"Apps that are found to be stealing the users data, trying to escalate their privileges without user consent,\n"
-"or executing malicious process are strictly prohibited."
+"Apps that are found to be stealing the users data, trying to escalate their "
+"privileges without user consent,\n"
+"  or executing malicious process are strictly prohibited."
 msgstr ""
 "Aplicativos identificados como estando a invadir os dados dos usuários, "
 "tentando escalar os seus privilégios sem o consentimento do utilizador.\n"
 "ou executar um processo malicioso são estritamente proibidos."
 
-#: ./src/views/About.vue:133
+#: src/views/About.vue:121
+#, fuzzy
+#| msgid ""
+#| "Apps uploaded to the OpenStore are subject to our submission rules and "
+#| "content policy.\n"
+#| "  You can review the rules and policies before uploading your app."
 msgid ""
-"Apps uploaded to the OpenStore are subject to our submission rules and content policy.\n"
-"  You can review the rules and policies before uploading your app."
+"Apps uploaded to the OpenStore are subject to our submission rules and "
+"content policy.\n"
+"You can review the rules and policies before uploading your app."
 msgstr ""
 "Os aplicativos carregados na OpenStore estão sujeitos às nossas regras de "
 "envio e política de conteúdo.\n"
 "…Você pode revisar as regras e políticas antes de carregar seu aplicativo."
 
-#: ./src/views/ManagePackage.vue:454
+#: src/views/ManagePackage.vue:297
 msgid "Arch"
 msgstr "Arquitetura"
 
-#: ./src/views/ManagePackage.vue:408
-#: ./src/views/Package.vue:220
+#: src/views/ManagePackage.vue:255 src/views/Package.vue:168
 msgid "Architecture"
 msgstr "Arquitetura"
 
-#: ./src/views/Package.vue:352
+#: src/views/Package.vue:65
 msgid "Audio"
 msgstr "Áudio"
 
-#: ./src/views/Manage.vue:54
-#: ./src/views/ManagePackage.vue:404
-#: ./src/views/Package.vue:172
-msgid "Author"
-msgstr "Autor"
-
-#: ./src/views/Package.vue:6
-#: ./src/views/PackageVersions.vue:8
+#: src/views/Package.vue:6 src/views/PackageVersions.vue:8
 msgid "Back"
 msgstr "Voltar"
 
-#: ./src/views/Badge.vue:28
-#: ./src/views/Badge.vue:32
-#: ./src/views/ManagePackage.vue:106
+#: src/views/Badge.vue:10 src/views/Badge.vue:14 src/views/ManagePackage.vue:62
 msgid "Badge"
 msgstr "Medalha"
 
-#: ./src/views/About.vue:18
+#: src/views/About.vue:18
 msgid "Badges"
 msgstr "Medalhas"
 
-#: ./src/views/Package.vue:353
+#: src/views/Package.vue:66
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
-#: ./src/App.vue:37
+#: src/components/Types.vue:4 src/views/ManagePackage.vue:222
+#: src/views/Stats.vue:28
+msgid "Bookmark"
+msgstr ""
+
+#: src/views/Browse.vue:27
+msgid "Bookmarks"
+msgstr ""
+
+#: src/App.vue:26
 msgid "Browse"
 msgstr "Buscar"
 
-#: ./src/views/Browse.vue:144
+#: src/views/Browse.vue:27
 msgid "Browse Apps"
 msgstr "Buscar apps"
 
-#: ./src/views/About.vue:77
+#: src/views/About.vue:65
 msgid "Bug Tracker"
 msgstr "Rastreador de bugs"
 
-#: ./src/views/Package.vue:354
+#: src/views/Package.vue:67
 msgid "Calendar"
 msgstr "Calendário"
 
-#: ./src/views/Package.vue:355
+#: src/views/Package.vue:68
 msgid "Camera"
 msgstr "Câmera"
 
-#: ./src/views/ManagePackage.vue:515
-#: ./src/views/ManageRevisions.vue:105
-#: ./src/views/Submit.vue:168
+#: src/views/ManagePackage.vue:345 src/views/ManageRevisions.vue:71
+#: src/views/Submit.vue:137
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: ./src/views/Browse.vue:20
-#: ./src/views/ManagePackage.vue:208
-#: ./src/views/Package.vue:200
+#: src/views/Browse.vue:14 src/views/ManagePackage.vue:114
+#: src/views/Package.vue:153
 msgid "Category"
 msgstr "Categoria"
 
-#: ./src/views/ManagePackage.vue:154
-#: ./src/views/ManageRevisions.vue:82
-#: ./src/views/Package.vue:235
+#: src/views/ManagePackage.vue:85 src/views/ManageRevisions.vue:61
+#: src/views/Package.vue:183
 msgid "Changelog"
 msgstr "Registo de log"
 
-#: ./src/views/ManagePackage.vue:453
-#: ./src/views/ManageRevisions.vue:3
+#: src/views/Browse.vue:48 src/views/ManagePackage.vue:296
+#: src/views/ManageRevisions.vue:21
 msgid "Channel"
 msgstr "Canal"
 
-#: ./src/views/ManagePackage.vue:420
+#: src/views/ManagePackage.vue:263
 msgid "Channels"
 msgstr "Canais"
 
-#: ./src/views/Submit.vue:91
+#: src/views/Submit.vue:73
 msgid "Child Endangerment"
 msgstr "Perigo para crianças"
 
-#: ./src/views/ManagePackage.vue:216
+#: src/views/ManagePackage.vue:116
 msgid "Choose a category"
 msgstr "Escolha uma categoria"
 
-#: ./src/views/ManagePackage.vue:263
+#: src/views/ManagePackage.vue:141
 msgid "Choose a license"
 msgstr "Escolha uma licença"
 
-#: ./src/views/ManagePackage.vue:371
+#: src/views/ManagePackage.vue:212
 msgid "Choose a maintainer"
 msgstr "Escolha um mantenedor"
 
-#: ./src/views/ManageRevisions.vue:176
+#: src/views/ManageRevisions.vue:52
 msgid "Completed"
 msgstr "Completado"
 
-#: ./src/views/Package.vue:356
+#: src/views/Package.vue:69
 msgid "Connectivity"
 msgstr "Conectividade"
 
-#: ./src/views/About.vue:62
+#: src/views/About.vue:50
 msgid "Contact"
 msgstr "Contato"
 
-#: ./src/views/Package.vue:357
+#: src/views/Package.vue:70
 msgid "Contacts"
 msgstr "Contatos"
 
-#: ./src/views/Package.vue:359
+#: src/views/Package.vue:72
 msgid "Content Exchange"
 msgstr "Troca de conteúdo"
 
-#: ./src/views/Package.vue:358
+#: src/views/Package.vue:71
 msgid "Content Exchange Source"
 msgstr "Fonte de troca de conteúdo"
 
-#: ./src/views/About.vue:142
+#: src/views/About.vue:135
 msgid "Contributors"
 msgstr "Contribuidores"
 
-#: ./src/components/CopyLine.vue:9
+#: src/components/CopyLine.vue:3
 msgid "Copy to clipboard"
 msgstr "Copiar para a área de transferência"
 
-#: ./src/views/Stats.vue:22
+#: src/views/Stats.vue:18
 msgid "Count"
 msgstr "Total"
 
-#: ./src/views/ManageRevisions.vue:97
+#: src/views/ManageRevisions.vue:67
 msgid "Create"
 msgstr "Criar"
 
-#: ./src/views/Package.vue:360
+#: src/views/Package.vue:73
 msgid "Debug"
 msgstr "Depurar"
 
-#: ./src/views/ManagePackage.vue:511
+#: src/views/ManagePackage.vue:341
 msgid "Delete"
 msgstr "Apagar"
 
-#: ./src/views/ManagePackage.vue:143
+#: src/views/ManagePackage.vue:80
 msgid "Description"
 msgstr "Descrição"
 
-#: ./src/views/ManagePackage.vue:66
+#: src/views/ManagePackage.vue:50
 msgid "Discovery"
 msgstr "Descobrir"
 
-#: ./src/views/Package.vue:362
+#: src/views/Package.vue:75
 msgid "Document Files"
 msgstr "Documentos"
 
-#: ./src/App.vue:119
-#: ./src/views/Package.vue:136
+#: src/App.vue:84 src/views/Package.vue:95
 msgid "Donate"
 msgstr "Doar"
 
-#: ./src/views/ManagePackage.vue:320
+#: src/views/ManagePackage.vue:182
 msgid "Donate URL"
 msgstr "Endereço para doações"
 
-#: ./src/views/Package.vue:68
-#: ./src/views/Package.vue:87
+#: src/views/Package.vue:42 src/views/Package.vue:50
 msgid "Download"
 msgstr "Download"
 
-#: ./src/views/ManagePackage.vue:446
+#: src/views/ManagePackage.vue:289
 msgid "Download Stats"
 msgstr "Status do download"
 
-#: ./src/views/About.vue:44
+#: src/views/About.vue:39
 msgid "Download the OpenStore App"
 msgstr "Baixar a OpenStore"
 
-#: ./src/views/Manage.vue:57
-#: ./src/views/Manage.vue:75
-#: ./src/views/ManagePackage.vue:456
+#: src/views/Manage.vue:47 src/views/Manage.vue:63
+#: src/views/ManagePackage.vue:299
 msgid "Downloads"
 msgstr "Downloads"
 
-#: ./src/views/Package.vue:271
+#: src/views/Package.vue:214
 msgid "Downloads of the latest version"
 msgstr "Download da última versão"
 
-#: ./src/views/ManagePackage.vue:178
+#: src/views/ManagePackage.vue:95
 msgid "Drag and drop to sort screenshots."
 msgstr "Arraste e solte para organizar as capturas de tela."
 
-#: ./src/views/ManagePackage.vue:12
+#: src/views/ManagePackage.vue:14
 msgid "Edit"
 msgstr "Editar"
 
-#: ./src/views/ManagePackage.vue:611
-#: ./src/views/ManagePackage.vue:624
-#: ./src/views/ManagePackage.vue:742
-#: ./src/views/ManagePackage.vue:773
-#: ./src/views/ManageRevisions.vue:202
-#: ./src/views/ManageRevisions.vue:285
-#: ./src/views/Submit.vue:244
+#: src/views/ManagePackage.vue:87 src/views/ManagePackage.vue:100
+#: src/views/ManagePackage.vue:218 src/views/ManagePackage.vue:249
+#: src/views/ManageRevisions.vue:78 src/views/ManageRevisions.vue:161
+#: src/views/Submit.vue:58
 msgid "Error"
 msgstr "Erro"
 
-#: ./src/views/Feeds.vue:24
-#: ./src/views/Feeds.vue:28
+#: src/views/Feeds.vue:7 src/views/Feeds.vue:11
 msgid "Feeds"
 msgstr "Fontes de notícias"
 
-#: ./src/views/ManageRevisions.vue:22
+#: src/views/ManageRevisions.vue:15
 msgid "File"
 msgstr "Arquivo"
 
-#: ./src/views/ManageRevisions.vue:328
+#: src/views/ManageRevisions.vue:204
 msgid "File Upload"
 msgstr "Carregar o arquivo"
 
-#: ./src/views/ManageRevisions.vue:8
-#: ./src/views/ManageRevisions.vue:296
+#: src/views/Browse.vue:52 src/views/ManageRevisions.vue:24
+#: src/views/ManageRevisions.vue:172
 msgid "Focal"
 msgstr ""
 
-#: ./src/views/About.vue:64
+#: src/views/About.vue:52
+#, fuzzy
+#| msgid ""
+#| "For any questions you may have or help you may need just chat with us in "
+#| "our telegram group.\n"
+#| "  You can also submit issues, bugs, and feature requests to our GitLab "
+#| "bug tracker."
 msgid ""
-"For any questions you may have or help you may need just chat with us in our telegram group.\n"
-"  You can also submit issues, bugs, and feature requests to our GitLab bug tracker."
+"For any questions you may have or help you may need just chat with us in our "
+"telegram group.\n"
+"You can also submit issues, bugs, and feature requests to our GitLab bug "
+"tracker."
 msgstr ""
 "Para tirar qualquer dúvida, ou se precisar de ajuda, entre em contato "
 "conosco através do nosso grupo no Telegram.\n"
 "…Você também pode enviar problemas, bugs e solicitações de recursos para o "
 "nosso rastreador de bugs do GitLab."
 
-#: ./src/views/ManagePackage.vue:412
-#: ./src/views/Package.vue:215
-msgid "Framework"
-msgstr "Framework"
-
-#: ./src/views/Package.vue:380
+#: src/views/Package.vue:94
 msgid "Full System Access"
 msgstr "Acesso total ao sistema"
 
-#: ./src/views/Submit.vue:108
+#: src/views/Submit.vue:88
 msgid "Gambling"
 msgstr "Jogos de azar"
 
-#: ./src/views/About.vue:23
+#: src/views/About.vue:23
 msgid "Get your badge"
 msgstr "Consiga a sua insignia"
 
-#: ./src/views/Submit.vue:48
+#: src/views/Submit.vue:30
 #, fuzzy
 msgid ""
-"Give a short explanation why you can’t publish the app without extra privileges.\n"
-"  No need to go into details, a one liner like \"needs to run a daemon in the background\" will do.\n"
-"  List all the special features you have, if there are more."
+"Give a short explanation why you can’t publish the app without extra "
+"privileges.\n"
+"No need to go into details, a one liner like \"needs to run a daemon in the "
+"background\" will do.\n"
+"List all the special features you have, if there are more."
 msgstr ""
 "Dê uma breve explicação do porquê você não pode publicar o aplicativo sem "
 "privilégios extras.\n"
@@ -474,264 +528,270 @@ msgstr ""
 "executar um daemon em segundo plano\" \n"
 "…Liste todas as características especiais que você tem, se houver mais."
 
-#: ./src/components/Pagination.vue:46
+#: src/components/Pagination.vue:7
 msgid "Go back a page"
 msgstr "Volte uma página"
 
-#: ./src/components/Pagination.vue:47
+#: src/components/Pagination.vue:8
 msgid "Go to the next page"
 msgstr "Vá para a próxima página"
 
-#: ./src/views/About.vue:89
+#: src/views/About.vue:77
 msgid "GPL v3 License"
 msgstr "Licença GPL v3"
 
-#: ./src/views/Submit.vue:104
+#: src/views/Submit.vue:84
 msgid "Harassment, Bullying, or Hate Speech"
 msgstr "Assédio, intimidação ou discurso de ódio"
 
-#: ./src/views/Package.vue:363
+#: src/views/Package.vue:76
 msgid "History"
 msgstr "História"
 
-#: ./src/views/Manage.vue:51
+#: src/views/Manage.vue:41
 msgid "Icon"
 msgstr "Ícone"
 
-#: ./src/views/ManagePackage.vue:400
+#: src/views/ManagePackage.vue:247
 msgid "ID"
 msgstr "ID"
 
-#: ./src/views/Submit.vue:53
+#: src/views/Submit.vue:35
 msgid ""
-"If an application could be published without manual review if it wouldn’t be for that one cool feature,\n"
-"  publish a stripped down version!\n"
-"  Not everyone will want to install apps with less confinement."
+"If an application could be published without manual review if it wouldn’t be "
+"for that one cool feature,\n"
+"publish a stripped down version!\n"
+"Not everyone will want to install apps with less confinement."
 msgstr ""
 
-#: ./src/views/Submit.vue:115
+#: src/views/Submit.vue:95
 msgid "Illegal Activities"
 msgstr "Atividades Ilegais"
 
-#: ./src/views/Package.vue:364
+#: src/views/Package.vue:77
 msgid "In App Purchases"
 msgstr "Compras dentro do app"
 
-#: ./src/views/ManagePackage.vue:76
-#: ./src/views/Package.vue:169
+#: src/views/ManagePackage.vue:53 src/views/Package.vue:128
 msgid "Info"
 msgstr "Informação"
 
-#: ./src/views/About.vue:27
-#: ./src/views/Package.vue:49
+#: src/views/About.vue:27 src/views/Package.vue:38
 msgid "Install"
 msgstr "Instalar"
 
-#: ./src/views/Package.vue:348
+#: src/views/Package.vue:61
 msgid "Install via the OpenStore app"
 msgstr "Instale o app através da OpenStore"
 
-#: ./src/components/Pagination.vue:45
+#: src/components/Pagination.vue:6
 msgid "Jump to the first page"
 msgstr "Ir para a primeira página"
 
-#: ./src/components/Pagination.vue:48
+#: src/components/Pagination.vue:9
 msgid "Jump to the last page"
 msgstr "Ir para a última página"
 
-#: ./src/views/Package.vue:365
+#: src/views/Package.vue:78
 msgid "Keep Display On"
 msgstr "Manter a tela ligada"
 
-#: ./src/views/Manage.vue:17
+#: src/views/Manage.vue:17
 msgid "Keep your api key private!"
 msgstr "Mantenha sua chave de API privada!"
 
-#: ./src/views/ManagePackage.vue:227
+#: src/views/ManagePackage.vue:123
 msgid "Keywords"
 msgstr "Palavras-chave"
 
-#: ./src/App.vue:66
-#: ./src/components/BadgeSelect.vue:4
+#: src/App.vue:55 src/components/BadgeSelect.vue:4
 msgid "Language"
 msgstr "Idioma"
 
-#: ./src/views/Browse.vue:51
+#: src/views/Browse.vue:42
 msgid "Latest Update"
 msgstr "Última atualização"
 
-#: ./src/views/Browse.vue:46
+#: src/views/Browse.vue:37
 msgid "Least Popular"
 msgstr "Últimos populares"
 
-#: ./src/views/About.vue:81
-#: ./src/views/ManagePackage.vue:255
-#: ./src/views/Package.vue:195
+#: src/views/About.vue:69 src/views/ManagePackage.vue:139
+#: src/views/Package.vue:148
 msgid "License"
 msgstr "Licença"
 
-#: ./src/views/Package.vue:366
+#: src/views/Package.vue:79
 msgid "Location"
 msgstr "Localização"
 
-#: ./src/views/ManagePackage.vue:349
+#: src/views/ManagePackage.vue:201
 msgid "Locked"
 msgstr "Bloqueado"
 
-#: ./src/App.vue:43
+#: src/App.vue:32
 msgid "Log In"
 msgstr "Cadastre-se"
 
-#: ./src/views/Login.vue:24
+#: src/views/Login.vue:24
 msgid "Log in to the OpenStore to be able to manage your apps."
 msgstr "Inicie sessão na OpenStore para poder gerenciar as suas aplicações."
 
-#: ./src/App.vue:49
+#: src/App.vue:38
 msgid "Log Out"
 msgstr "Sair"
 
-#: ./src/views/Login.vue:40
-#: ./src/views/Login.vue:44
+#: src/views/Login.vue:7 src/views/Login.vue:11
 msgid "Login"
 msgstr "Entrar"
 
-#: ./src/views/Submit.vue:131
+#: src/views/Submit.vue:111
 msgid "Login to submit your app"
 msgstr "Inicie sessão para enviar seu aplicativo"
 
-#: ./src/views/Login.vue:7
+#: src/views/Login.vue:7
 msgid "Login via GitHub"
 msgstr "Entrar com GitHub"
 
-#: ./src/views/Login.vue:12
+#: src/views/Login.vue:12
 msgid "Login via GitLab"
 msgstr "Entrar com GitLab"
 
-#: ./src/views/Login.vue:18
+#: src/views/Login.vue:18
 msgid "Login via Ubuntu One"
 msgstr "Entrar com Ubuntu One"
 
-#: ./src/views/ManagePackage.vue:364
+#: src/views/ManagePackage.vue:210
 msgid "Maintainer"
 msgstr "Colaborador"
 
-#: ./src/views/Submit.vue:119
+#: src/views/Submit.vue:99
 msgid "Malware"
 msgstr "Programa malicioso"
 
-#: ./src/App.vue:46
-#: ./src/views/Manage.vue:131
-#: ./src/views/ManagePackage.vue:543
-#: ./src/views/ManagePackage.vue:545
+#: src/App.vue:35 src/views/Manage.vue:20 src/views/ManagePackage.vue:16
+#: src/views/ManagePackage.vue:18
 msgid "Manage"
 msgstr "Gerenciar"
 
-#: ./src/views/Manage.vue:127
+#: src/views/Manage.vue:16
 msgid "Manage Apps"
 msgstr "Gerenciar seus aplicativos"
 
-#: ./src/views/Package.vue:367
+#: src/views/Package.vue:80
 msgid "Microphone"
 msgstr "Microfone"
 
-#: ./src/views/Browse.vue:45
+#: src/views/Browse.vue:36
 msgid "Most Popular"
 msgstr "Mais populares"
 
-#: ./src/views/Package.vue:369
+#: src/views/Package.vue:82
 msgid "Music Files"
 msgstr "Arquivos de música"
 
-#: ./src/views/Manage.vue:52
+#: src/views/Manage.vue:42
 msgid "Name"
 msgstr "Nome"
 
-#: ./src/views/About.vue:51
+#: src/views/About.vue:42
 msgid "Navigate to the downloads folder"
 msgstr "Navegue até a pasta de downloads"
 
-#: ./src/views/Package.vue:370
+#: src/views/Package.vue:84
 msgid "Networking"
 msgstr "Acesso à rede"
 
-#: ./src/views/Feeds.vue:6
+#: src/views/Feeds.vue:6
 msgid "New Apps"
 msgstr "Novos aplicativos"
 
-#: ./src/views/ManagePackage.vue:50
-#: ./src/views/ManageRevisions.vue:147
-#: ./src/views/ManageRevisions.vue:149
+#: src/views/ManagePackage.vue:41 src/views/ManageRevisions.vue:23
+#: src/views/ManageRevisions.vue:25
 msgid "New Revision"
 msgstr "Nova revisão"
 
-#: ./src/views/ManageRevisions.vue:299
+#: src/views/ManageRevisions.vue:175
 msgid "New revision for %{channel} was created!"
 msgstr "Nova revisão para % {channel} foi criada!"
 
-#: ./src/views/ManageRevisions.vue:8
+#: src/views/ManageRevisions.vue:8
 msgid "New Revision for %{name}"
 msgstr "Nova revisão para % {name}"
 
-#: ./src/views/ManageRevisions.vue:303
+#: src/views/ManageRevisions.vue:179
 msgid "New revisions for %{channel} were created!"
 msgstr "Nova revisão para % {channel} foi criada!"
 
-#: ./src/views/Browse.vue:49
+#: src/views/Browse.vue:40
 msgid "Newest"
 msgstr "Mais Recente"
 
-#: ./src/views/ManagePackage.vue:41
-#: ./src/views/ManagePackage.vue:358
+#: src/views/Package.vue:83
+msgid "NFC"
+msgstr ""
+
+#: src/views/ManagePackage.vue:36 src/views/ManagePackage.vue:204
 msgid "No"
 msgstr "Não"
 
-#: ./src/views/Browse.vue:108
-#: ./src/views/Manage.vue:100
+#: src/views/Browse.vue:96 src/views/Manage.vue:88
 msgid "No apps found."
 msgstr "Nehum aplicativo foi encontrado."
 
-#: ./src/views/Package.vue:47
+#: src/views/Package.vue:36
 msgid "No longer available"
 msgstr "Não está mais disponível"
 
-#: ./src/views/Manage.vue:87
-#: ./src/views/Manage.vue:92
-#: ./src/views/ManagePackage.vue:383
-#: ./src/views/Package.vue:261
+#: src/views/Manage.vue:75 src/views/Manage.vue:80
+#: src/views/ManagePackage.vue:220 src/views/Package.vue:204
 msgid "None"
 msgstr "Nenhum"
 
-#: ./src/views/Manage.vue:81
+#: src/views/Manage.vue:69
 msgid "Not published"
 msgstr "Não Publicado"
 
-#: ./src/views/ManagePackage.vue:239
+#: src/views/ManagePackage.vue:129
 msgid "NSFW"
 msgstr "Conteúdo sensível"
 
-#: ./src/views/Browse.vue:101
+#: src/views/Browse.vue:89
 msgid "NSFW content"
 msgstr "Conteúdo sensível"
 
-#: ./src/views/Package.vue:97
+#: src/views/Package.vue:56
 msgid "Older Versions"
 msgstr "Versões antigas"
 
-#: ./src/views/Browse.vue:50
+#: src/views/Browse.vue:41
 msgid "Oldest"
 msgstr "Mais Antigo"
 
-#: ./src/views/Browse.vue:52
+#: src/views/Browse.vue:43
 msgid "Oldest Update"
 msgstr "Atualização mais antiga"
 
-#: ./src/views/Submit.vue:70
+#: src/views/Submit.vue:52
+#, fuzzy
+#| msgid ""
+#| "One of the main goals of the OpenStore is to provide a safe app store for "
+#| "people of all ages.\n"
+#| "To accomplish this goal we do not allow certain types of app to be "
+#| "published.\n"
+#| "Failure to follow the guidelines will result in your app being removed.\n"
+#| "Any account with serious infractions may be subject to termination.\n"
+#| "The OpenStore team thanks you for helping us promote a better enviroment "
+#| "for everyone."
 msgid ""
-"One of the main goals of the OpenStore is to provide a safe app store for people of all ages.\n"
-"To accomplish this goal we do not allow certain types of app to be published.\n"
-"Failure to follow the guidelines will result in your app being removed.\n"
-"Any account with serious infractions may be subject to termination.\n"
-"The OpenStore team thanks you for helping us promote a better enviroment for everyone."
+"One of the main goals of the OpenStore is to provide a safe app store for "
+"people of all ages.\n"
+"  To accomplish this goal we do not allow certain types of app to be "
+"published.\n"
+"  Failure to follow the guidelines will result in your app being removed.\n"
+"  Any account with serious infractions may be subject to termination.\n"
+"  The OpenStore team thanks you for helping us promote a better enviroment "
+"for everyone."
 msgstr ""
 "Um dos principais objetivos da OpenStore é fornecer uma loja de aplicações "
 "segura para pessoas de todas as idades.\n"
@@ -742,559 +802,587 @@ msgstr ""
 "A equipe da OpenStore agradece por nos ajudar a promover um ambiente melhor "
 "para todos."
 
-#: ./src/views/Submit.vue:58
+#: src/views/Submit.vue:40
 #, fuzzy
 msgid ""
 "Only open source applications allowed for manual review:\n"
-"  As the applications might have arbitrary access to the device, every manually reviewed app will get a source code review."
+"As the applications might have arbitrary access to the device, every "
+"manually reviewed app will get a source code review."
 msgstr ""
 "Apenas aplicativos de código aberto são permitidos para avaliação manual:\n"
 "Como os aplicativos podem ter acesso arbitrário ao dispositivo, cada "
 "aplicativo revisado manualmente receberá uma revisão do código-fonte."
 
-#: ./src/views/ManagePackage.vue:339
+#: src/views/ManagePackage.vue:189
 #, fuzzy
-msgid "Only YouTube and Odysee videos are supported at this time. Make sure the url is for the embedded video!"
+msgid ""
+"Only YouTube and Odysee videos are supported at this time. Make sure the url "
+"is for the embedded video!"
 msgstr ""
 "Apenas os vídeos do YouTube e do Odysee são suportados no momento. "
 "Certifique-se de que o URL é para o vídeo incorporado!"
 
-#: ./src/views/About.vue:50
+#: src/views/About.vue:41
 msgid "Open the terminal app"
 msgstr "Abrir o aplicativo de terminal"
 
-#: ./src/views/About.vue:149
+#: src/views/About.vue:142
 msgid "OpenStore API/Server Contributors"
 msgstr "Colaboradores da API e servidor do OpenStore"
 
-#: ./src/views/Submit.vue:68
+#: src/views/Submit.vue:50
 msgid "OpenStore App Content Policy"
 msgstr "Política de conteúdo de aplicativos da OpenStore"
 
-#: ./src/views/About.vue:161
+#: src/views/About.vue:148
 msgid "OpenStore App Contributors"
 msgstr "Colaboradores do App da OpenStore"
 
-#: ./src/views/Badge.vue:3
+#: src/views/Badge.vue:3
 msgid "OpenStore Badges"
 msgstr "Emblemas da OpenStore"
 
-#: ./src/views/About.vue:70
+#: src/views/About.vue:58
 msgid "OpenStore group on Telegram"
 msgstr "Grupo do Telegram da OpenStore"
 
-#: ./src/views/About.vue:96
+#: src/views/About.vue:84
 msgid "OpenStore source on GitLab"
 msgstr "Código-fonte da OpenStore no GitLab"
 
-#: ./src/views/About.vue:155
+#: src/views/About.vue:145
 msgid "OpenStore Website Contributors"
 msgstr "Colaboradores da página da OpenStore"
 
-#: ./src/views/ManagePackage.vue:381
+#: src/views/ManagePackage.vue:218
 #, fuzzy
 msgid "Override Type"
 msgstr "Tipo de sobrescrita"
 
-#: ./src/views/ManagePackage.vue:395
+#: src/views/ManagePackage.vue:242
 msgid "Package Info"
 msgstr "Informações do Pacote"
 
-#: ./src/views/Package.vue:179
-msgid "Packager/Publisher"
-msgstr "Desenvolvedor/Publicante"
-
-#: ./src/views/NotFound.vue:3
+#: src/views/NotFound.vue:3
 msgid "Page Not Found"
 msgstr "Página não encontrada"
 
-#: ./src/views/Package.vue:127
-#: ./src/views/Package.vue:242
+#: src/views/Package.vue:86 src/views/Package.vue:190
 msgid "Permissions"
 msgstr "Permissões"
 
-#: ./src/views/Package.vue:372
+#: src/views/Package.vue:86
 msgid "Picture Files"
 msgstr "Arquivos de imagem"
 
-#: ./src/views/ManagePackage.vue:56
+#: src/views/ManagePackage.vue:47
 msgid "Presentation"
 msgstr "Apresentação"
 
-#: ./src/views/ManageRevisions.vue:177
+#: src/views/ManageRevisions.vue:53
 msgid "Processing"
 msgstr "Processando"
 
-#: ./src/views/Submit.vue:79
+#: src/views/Submit.vue:61
 msgid "Prohibited Apps"
 msgstr "Aplicativos proibidos"
 
-#: ./src/views/About.vue:20
+#: src/views/About.vue:20
 msgid "Promote your app on the OpenStore!"
 msgstr "Promova seu aplicativo na OpenStore!"
 
-#: ./src/views/Badge.vue:5
+#: src/views/Badge.vue:5
 msgid ""
 "Promote your app on the OpenStore! Add these badges to your website,\n"
-"  code repository, social media, or anywhere on the internet. The badges\n"
-"  are available in several different languages and in both PNG and SVG\n"
-"  formats."
+"code repository, social media, or anywhere on the internet. The badges\n"
+"are available in several different languages and in both PNG and SVG\n"
+"formats."
 msgstr ""
 
-#: ./src/views/ManagePackage.vue:24
+#: src/views/ManagePackage.vue:26
 msgid "Public Link"
 msgstr "Link público"
 
-#: ./src/views/ManagePackage.vue:31
+#: src/views/ManagePackage.vue:33
 msgid "Publish"
 msgstr "Publicar"
 
-#: ./src/views/Manage.vue:80
-#: ./src/views/Package.vue:210
+#: src/views/Manage.vue:68 src/views/Package.vue:163
 msgid "Published"
 msgstr "Publicado"
 
-#: ./src/views/ManagePackage.vue:434
+#: src/views/ManagePackage.vue:277
 msgid "Published Date"
 msgstr "Data de publicação"
 
-#: ./src/views/Package.vue:373
+#: src/views/Manage.vue:44 src/views/ManagePackage.vue:251
+#: src/views/Package.vue:131
+#, fuzzy
+#| msgid "Published"
+msgid "Publisher"
+msgstr "Publicado"
+
+#: src/views/Package.vue:87
 msgid "Push Notifications"
 msgstr "Notificações por push"
 
-#: ./src/views/Package.vue:361
+#: src/views/Package.vue:74
 msgid "Read Document Files"
 msgstr "Ler arquivo de documentos"
 
-#: ./src/views/Package.vue:368
+#: src/views/Package.vue:81
 msgid "Read Music Files"
 msgstr "Ler arquivos de música"
 
-#: ./src/views/Package.vue:371
+#: src/views/Package.vue:85
 msgid "Read Picture Files"
 msgstr "Ler arquivos de imagem"
 
-#: ./src/views/Package.vue:376
+#: src/views/Package.vue:90
 msgid "Read Video Files"
 msgstr "Ler arquivos de vídeo"
 
-#: ./src/views/Browse.vue:44
+#: src/views/Browse.vue:35
 msgid "Relevance"
 msgstr "Relevância"
 
-#: ./src/App.vue:108
+#: src/App.vue:78
 msgid "Report an Issue"
 msgstr "Reportar um problema"
 
-#: ./src/views/Package.vue:476
+#: src/views/Package.vue:205
 msgid "Restricted permission"
 msgstr "Permissão restrita"
 
-#: ./src/components/Reviews.vue:3
+#: src/views/ManagePackage.vue:228
+msgid "Review Exceptions"
+msgstr ""
+
+#: src/components/Reviews.vue:3
 msgid "Reviews"
 msgstr "Análise"
 
-#: ./src/views/ManagePackage.vue:452
+#: src/views/ManagePackage.vue:295
 msgid "Revision"
 msgstr "Revisão"
 
-#: ./src/App.vue:116
-#: ./src/views/Feeds.vue:3
+#: src/App.vue:81 src/views/Feeds.vue:3
 msgid "RSS Feeds"
 msgstr "Feeds RSS"
 
-#: ./src/views/Submit.vue:4
+#: src/views/Submit.vue:4
 msgid "Rules for Submission"
 msgstr "Regras para submissão"
 
-#: ./src/views/Submit.vue:39
+#: src/views/Submit.vue:24
 msgid "Rules for Submissions Requiring Manual Review"
 msgstr "Regras para submissões que exigem revisão manual"
 
-#: ./src/views/About.vue:53
+#: src/views/About.vue:44
 msgid "Run the command:"
 msgstr "Execute o comando:"
 
-#: ./src/views/ManagePackage.vue:502
+#: src/views/ManagePackage.vue:337
 msgid "Save"
 msgstr "Salvar"
 
-#: ./src/views/Package.vue:150
+#: src/views/Package.vue:109
 msgid "Screenshots"
 msgstr "Capturas de tela"
 
-#: ./src/views/ManagePackage.vue:165
+#: src/views/ManagePackage.vue:90
 msgid "Screenshots (Limit 5)"
 msgstr "Capturas de tela (Limite 5)"
 
-#: ./src/views/Browse.vue:9
-#: ./src/views/Manage.vue:25
+#: src/views/Browse.vue:9 src/views/Manage.vue:25
 msgid "Search"
 msgstr "Procurar"
 
-#: ./src/views/Submit.vue:43
-msgid "Send us a link to a repository for your app to our telegram group along with some instructions on how to build it."
+#: src/views/Submit.vue:28
+msgid ""
+"Send us a link to a repository for your app to our telegram group along with "
+"some instructions on how to build it."
 msgstr ""
 "Envie-nos um endereço para o repositório da sua aplicação para o nosso "
 "telegram, juntamente com algumas instruções de como o construir."
 
-#: ./src/views/Package.vue:374
+#: src/views/Package.vue:88
 msgid "Sensors"
 msgstr "Sensores"
 
-#: ./src/views/Submit.vue:84
+#: src/views/Submit.vue:66
 msgid "Sexually Explicit Content"
 msgstr "Conteúdo sexualmente explícito"
 
-#: ./src/views/ManagePackage.vue:488
+#: src/views/ManagePackage.vue:323
 msgid "Show All Revisions"
 msgstr "Mostrar todas a avaliações"
 
-#: ./src/views/Package.vue:160
+#: src/views/Package.vue:119
 msgid "Show NSFW Content"
 msgstr "Mostrar conteúdo sensível"
 
-#: ./src/App.vue:100
+#: src/App.vue:75
 msgid "Site Status"
 msgstr "Status do site"
 
-#: ./src/views/Browse.vue:42
+#: src/views/Browse.vue:33
 msgid "Sort By"
 msgstr "Organizar por"
 
-#: ./src/views/Package.vue:191
+#: src/views/Package.vue:140
 msgid "Source"
 msgstr "Fonte"
 
-#: ./src/App.vue:92
+#: src/App.vue:72
 msgid "Source Code"
 msgstr "Código fonte"
 
-#: ./src/views/ManagePackage.vue:298
+#: src/views/ManagePackage.vue:172
 msgid "Source URL"
 msgstr "URL de origem"
 
-#: ./src/views/ManagePackage.vue:96
-#: ./src/views/Package.vue:267
-#: ./src/views/Stats.vue:3
-#: ./src/views/Stats.vue:100
-#: ./src/views/Stats.vue:104
+#: src/views/ManagePackage.vue:59 src/views/Package.vue:210
+#: src/views/Stats.vue:3 src/views/Stats.vue:9 src/views/Stats.vue:13
 msgid "Stats"
 msgstr "Estatísticas"
 
-#: ./src/views/Manage.vue:55
+#: src/views/Manage.vue:45
 msgid "Status"
 msgstr "Status"
 
-#: ./src/App.vue:34
-#: ./src/views/Submit.vue:164
+#: src/App.vue:23 src/views/Submit.vue:133
 msgid "Submit"
 msgstr "Enviar"
 
-#: ./src/views/Manage.vue:9
-#: ./src/views/Submit.vue:138
-#: ./src/views/Submit.vue:198
-#: ./src/views/Submit.vue:202
+#: src/views/Manage.vue:9 src/views/Submit.vue:113 src/views/Submit.vue:12
+#: src/views/Submit.vue:16
 msgid "Submit App"
 msgstr "Enviar aplicativo"
 
-#: ./src/views/About.vue:140
+#: src/views/About.vue:126
 msgid "Submit your app"
 msgstr ""
 
-#: ./src/views/ManagePackage.vue:728
-#: ./src/views/ManagePackage.vue:756
-#: ./src/views/ManageRevisions.vue:308
+#: src/views/ManagePackage.vue:204 src/views/ManagePackage.vue:232
+#: src/views/ManageRevisions.vue:184
 msgid "Success"
 msgstr ""
 
-#: ./src/views/Package.vue:183
+#: src/views/Package.vue:136
 msgid "Support"
 msgstr ""
 
-#: ./src/views/ManagePackage.vue:309
+#: src/views/ManagePackage.vue:177
 msgid "Support URL"
 msgstr ""
 
-#: ./src/views/ManagePackage.vue:132
+#: src/views/ManagePackage.vue:75
 msgid "Tag Line"
 msgstr ""
 
-#: ./src/App.vue:81
+#: src/App.vue:66
 msgid "Telegram"
 msgstr ""
 
-#: ./src/views/About.vue:105
+#: src/views/About.vue:93
 msgid "Terms"
 msgstr ""
 
-#: ./src/views/Package.vue:10
-#: ./src/views/PackageVersions.vue:12
+#: src/views/Package.vue:10 src/views/PackageVersions.vue:12
 msgid "The app you are looking for has been removed or does not exist"
 msgstr ""
 
-#: ./src/views/About.vue:100
+#: src/views/About.vue:88
 msgid ""
-"The apps available for download from the OpenStore have their own licencing and terms.\n"
-"  Consult each individual app's page for more information."
+"The apps available for download from the OpenStore have their own licencing "
+"and terms.\n"
+"Consult each individual app's page for more information."
 msgstr ""
 
-#: ./src/views/ManagePackage.vue:727
+#: src/views/ManagePackage.vue:203
 msgid "The changes to %{name} were saved!"
 msgstr ""
 
-#: ./src/views/About.vue:107
+#: src/views/About.vue:95
 msgid ""
 "The OpenStore a non-profit volunteer project.\n"
-"  Although every effort is made to ensure that everything in the repository is safe to install, you use it AT YOUR OWN RISK.\n"
-"  Apps uploaded to the OpenStore will be subject to an automated review process or\n"
-"  a manual review process to check for potential security or privacy issues.\n"
-"  This checking is far from exhaustive though, and there are no guarantees."
+"Although every effort is made to ensure that everything in the repository is "
+"safe to install, you use it AT YOUR OWN RISK.\n"
+"Apps uploaded to the OpenStore will be subject to an automated review "
+"process or\n"
+"a manual review process to check for potential security or privacy issues.\n"
+"This checking is far from exhaustive though, and there are no guarantees."
 msgstr ""
 
-#: ./src/views/About.vue:29
+#: src/views/About.vue:29
 msgid ""
-"The OpenStore app is installed by default on the UBports builds of Ubuntu Touch.\n"
-"  But if you need to install the OpenStore manually, follow these steps:"
+"The OpenStore app is installed by default on the UBports builds of Ubuntu "
+"Touch.\n"
+"But if you need to install the OpenStore manually, follow these steps:"
 msgstr ""
 
-#: ./src/views/About.vue:145
+#: src/views/About.vue:138
 msgid "The OpenStore is made possible by many amazing contributors:"
 msgstr ""
 
-#: ./src/views/About.vue:5
+#: src/views/About.vue:5
 msgid ""
 "The OpenStore is the official app store for Ubuntu Touch.\n"
-"  It is an open source project run by a team of volunteers with help from the community.\n"
-"  You can discover and install new apps on your Ubuntu Touch device.\n"
-"  You can also upload and manage your own apps for publication.\n"
-"  The OpenStore encourages the apps published within to be open source, but also accepts proprietary apps."
+"It is an open source project run by a team of volunteers with help from the "
+"community.\n"
+"You can discover and install new apps on your Ubuntu Touch device.\n"
+"You can also upload and manage your own apps for publication.\n"
+"The OpenStore encourages the apps published within to be open source, but "
+"also accepts proprietary apps."
 msgstr ""
 
-#: ./src/views/About.vue:115
+#: src/views/About.vue:103
 msgid ""
 "The OpenStore respects your privacy.\n"
-"  We don't track you or your device.\n"
-"  You do not need an account to download and install apps and we do not track your downloads.\n"
-"  For developer information we count the number of downloads per app revision.\n"
-"  Information about your device (the cpu architecture, framework versions, OS version, and OS language)\n"
-"  are sent to the server to allow it to filter apps to only what you can install and present your native language where possible.\n"
-"  This information is not logged or stored and cannot be used to uniquely identify you."
+"We don't track you or your device.\n"
+"You do not need an account to download and install apps and we do not track "
+"your downloads.\n"
+"For developer information we count the number of downloads per app "
+"revision.\n"
+"Information about your device (the cpu architecture, framework versions, OS "
+"version, and OS language)\n"
+"are sent to the server to allow it to filter apps to only what you can "
+"install and present your native language where possible.\n"
+"This information is not logged or stored and cannot be used to uniquely "
+"identify you."
 msgstr ""
 
-#: ./src/views/NotFound.vue:5
+#: src/views/NotFound.vue:5
 msgid "The page you are looking for has been removed or does not exist"
 msgstr ""
 
-#: ./src/views/About.vue:83
+#: src/views/About.vue:71
 msgid ""
-"The source code for OpenStore related projects is available under the GPL v3.\n"
-"  You can find the code on the OpenStore GitLab page."
+"The source code for OpenStore related projects is available under the GPL "
+"v3.\n"
+"You can find the code on the OpenStore GitLab page."
 msgstr ""
 
-#: ./src/views/Package.vue:16
-#: ./src/views/PackageVersions.vue:18
-msgid "There was an error trying to find this app, please refresh and try again."
+#: src/views/ManagePackage.vue:6 src/views/Package.vue:12
+#: src/views/PackageVersions.vue:14
+msgid ""
+"There was an error trying to find this app, please refresh and try again."
 msgstr ""
 
-#: ./src/views/Browse.vue:70
-#: ./src/views/Manage.vue:36
-msgid "There was an error trying to load the app list, please refresh and try again."
+#: src/views/Browse.vue:70 src/views/Manage.vue:30
+msgid ""
+"There was an error trying to load the app list, please refresh and try again."
 msgstr ""
 
-#: ./src/views/Stats.vue:5
-msgid "There was an error trying to load the stats, please refresh and try again."
+#: src/views/Stats.vue:5
+msgid ""
+"There was an error trying to load the stats, please refresh and try again."
 msgstr ""
 
-#: ./src/views/ManagePackage.vue:247
+#: src/views/ManagePackage.vue:131
 msgid "This app contains NSFW material"
 msgstr ""
 
-#: ./src/views/Package.vue:490
-msgid "This app does not have access to restricted system data, see permissions for more details"
+#: src/views/Package.vue:219
+msgid ""
+"This app does not have access to restricted system data, see permissions for "
+"more details"
 msgstr ""
 
-#: ./src/views/Package.vue:494
-msgid "This app has access to restricted system data, see permissions for more details"
+#: src/views/Package.vue:223
+msgid ""
+"This app has access to restricted system data, see permissions for more "
+"details"
 msgstr ""
 
-#: ./src/views/Submit.vue:144
+#: src/views/Submit.vue:119
 msgid ""
 "This is the unique identifier for your app.\n"
-"  It must match exactly the \"name\" field in your click's manifest.json and must be all lowercase letters.\n"
-"  For example: \"openstore.openstore-team\", where \"openstore\" is the app and \"openstore-team\"\n"
-"  is the group or individual authoring the app."
+"It must match exactly the \"name\" field in your click's manifest.json and "
+"must be all lowercase letters.\n"
+"For example: \"openstore.openstore-team\", where \"openstore\" is the app "
+"and \"openstore-team\"\n"
+"is the group or individual authoring the app."
 msgstr ""
 
-#: ./src/views/ManagePackage.vue:582
+#: src/views/ManagePackage.vue:56
 msgid "This revision is still available"
 msgstr ""
 
-#: ./src/views/ManageRevisions.vue:90
+#: src/views/ManageRevisions.vue:63
 msgid "This will be added to the beginning of your current changelog"
 msgstr ""
 
-#: ./src/views/ManagePackage.vue:121
+#: src/views/ManagePackage.vue:70
 msgid "Title"
 msgstr ""
 
-#: ./src/views/Browse.vue:47
+#: src/views/Browse.vue:38
 msgid "Title (A-Z)"
 msgstr ""
 
-#: ./src/views/Browse.vue:48
+#: src/views/Browse.vue:39
 msgid "Title (Z-A)"
 msgstr ""
 
-#: ./src/views/ManagePackage.vue:477
+#: src/views/ManagePackage.vue:316
 msgid "Total"
 msgstr ""
 
-#: ./src/views/Package.vue:276
+#: src/views/Package.vue:219
 msgid "Total downloads"
 msgstr "Total de downloads"
 
-#: ./src/views/Manage.vue:85
+#: src/views/Manage.vue:73
 msgid "Total:"
 msgstr ""
 
-#: ./src/views/ManagePackage.vue:425
-#: ./src/views/Package.vue:225
+#: src/views/ManagePackage.vue:268 src/views/Package.vue:173
 msgid "Translation Languages"
 msgstr ""
 
-#: ./src/views/Browse.vue:109
-#: ./src/views/Manage.vue:101
+#: src/views/ManagePackage.vue:193
+msgid "Translation URL"
+msgstr ""
+
+#: src/views/Package.vue:144
+msgid "Translations"
+msgstr ""
+
+#: src/views/Browse.vue:97 src/views/Manage.vue:89
 msgid "Try searching for something else"
 msgstr ""
 
-#: ./src/views/Browse.vue:33
-#: ./src/views/ManagePackage.vue:416
+#: src/views/Browse.vue:23 src/views/ManagePackage.vue:259
 msgid "Type"
 msgstr ""
 
-#: ./src/views/About.vue:14
+#: src/views/About.vue:14
 msgid "Ubuntu Touch"
 msgstr ""
 
-#: ./src/views/Browse.vue:3
+#: src/views/Browse.vue:3
 msgid "Ubuntu Touch Apps"
 msgstr ""
 
-#: ./src/views/Stats.vue:116
+#: src/views/Stats.vue:25
 msgid "Uncategorized"
 msgstr ""
 
-#: ./src/views/Package.vue:256
+#: src/views/Package.vue:199
 msgid "Unrestricted read access to:"
 msgstr ""
 
-#: ./src/views/Package.vue:252
+#: src/views/Package.vue:195
 msgid "Unrestricted write access to:"
 msgstr ""
 
-#: ./src/views/Package.vue:205
+#: src/views/Package.vue:158
 msgid "Updated"
 msgstr ""
 
-#: ./src/views/Feeds.vue:10
+#: src/views/Feeds.vue:10
 msgid "Updated Apps"
 msgstr ""
 
-#: ./src/views/ManagePackage.vue:440
+#: src/views/ManagePackage.vue:283
 msgid "Updated Date"
 msgstr ""
 
-#: ./src/views/ManageRevisions.vue:13
+#: src/views/ManageRevisions.vue:13
 msgid "Upload Revision via:"
 msgstr ""
 
-#: ./src/views/ManageRevisions.vue:23
-#: ./src/views/ManageRevisions.vue:328
+#: src/views/ManageRevisions.vue:16 src/views/ManageRevisions.vue:204
 msgid "URL"
 msgstr ""
 
-#: ./src/views/ManageRevisions.vue:70
+#: src/views/ManageRevisions.vue:49
 msgid "URL of App from the Web"
 msgstr ""
 
-#: ./src/views/Package.vue:375
+#: src/views/Package.vue:89
 msgid "User Metrics"
 msgstr "Métricas de usuário"
 
-#: ./src/views/Manage.vue:56
-#: ./src/views/ManagePackage.vue:455
+#: src/views/Manage.vue:46 src/views/ManagePackage.vue:298
 msgid "Version"
 msgstr ""
 
-#: ./src/views/Package.vue:378
+#: src/views/Package.vue:92
 msgid "Video"
 msgstr "Vídeo"
 
-#: ./src/views/Package.vue:377
+#: src/views/Package.vue:91
 msgid "Video Files"
 msgstr "Arquivos de vídeo"
 
-#: ./src/views/ManagePackage.vue:331
+#: src/views/ManagePackage.vue:187
 msgid "Video URL"
 msgstr ""
 
-#: ./src/views/About.vue:35
+#: src/views/About.vue:35
 msgid "View Install Instructions"
 msgstr ""
 
-#: ./src/views/Submit.vue:97
+#: src/views/Submit.vue:77
 msgid "Violence"
 msgstr ""
 
-#: ./src/components/Types.vue:4
-#: ./src/views/ManagePackage.vue:385
-#: ./src/views/Stats.vue:119
+#: src/components/Types.vue:5 src/views/ManagePackage.vue:223
+#: src/views/Stats.vue:29
 msgid "Web App"
 msgstr "Aplicação Web"
 
-#: ./src/components/Types.vue:5
-#: ./src/views/ManagePackage.vue:386
-#: ./src/views/Stats.vue:120
-msgid "Web App+"
-msgstr "Aplicação Web+"
-
-#: ./src/views/Browse.vue:37
+#: src/views/Browse.vue:28
 msgid "Web Apps"
 msgstr ""
 
-#: ./src/views/Package.vue:379
+#: src/views/Package.vue:93
 msgid "Webview"
 msgstr "WebView"
 
-#: ./src/views/Manage.vue:4
+#: src/views/Manage.vue:4
 msgid "Welcome %{name}!"
 msgstr ""
 
-#: ./src/views/ManageRevisions.vue:5
-#: ./src/views/ManageRevisions.vue:294
+#: src/views/Browse.vue:51 src/views/ManageRevisions.vue:23
+#: src/views/ManageRevisions.vue:170
 msgid "Xenial"
 msgstr ""
 
-#: ./src/views/ManagePackage.vue:40
-#: ./src/views/ManagePackage.vue:357
+#: src/views/ManagePackage.vue:35 src/views/ManagePackage.vue:203
 msgid "Yes"
 msgstr ""
 
-#: ./src/views/Submit.vue:15
+#: src/views/Submit.vue:9
 msgid "You are not allowed to impersonate someone else or another app."
 msgstr ""
 
-#: ./src/views/Submit.vue:11
-msgid "You are only allowed to publish apps that you have permission to distribute."
+#: src/views/Submit.vue:8
+msgid ""
+"You are only allowed to publish apps that you have permission to distribute."
 msgstr ""
 
-#: ./src/views/Submit.vue:29
+#: src/views/Submit.vue:17
 msgid "You must read over the content policy detailed below."
 msgstr ""
 
-#: ./src/views/Submit.vue:19
+#: src/views/Submit.vue:10
 msgid ""
 "Your app can be pulled without warning at the discretion of our admins.\n"
-"  Where possible, we will contact you regarding any such actions."
+"Where possible, we will contact you regarding any such actions."
 msgstr ""
+
+#~ msgid "Author"
+#~ msgstr "Autor"
+
+#~ msgid "Framework"
+#~ msgstr "Framework"
+
+#~ msgid "Packager/Publisher"
+#~ msgstr "Desenvolvedor/Publicante"
+
+#~ msgid "Web App+"
+#~ msgstr "Aplicação Web+"
