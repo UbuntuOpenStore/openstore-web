@@ -9,7 +9,7 @@ Please report any bugs/features/requests in our [bug tracker](https://gitlab.com
 ## Translations
 
 If you would like to help out with translations head over to the OpenStore
-project on the [UBports Weblate instance](https://translate.ubports.com/projects/openstore/open-storeio/).
+project on the [Weblate](https://hosted.weblate.org/projects/open-store-io/).
 
 ## Donations
 
@@ -27,7 +27,7 @@ To get setup with development, checkout the
 
 ## License
 
-Copyright (C) 2023 [Brian Douglass](http://bhdouglass.com/)
+Copyright (C) 2024 [Brian Douglass](http://bhdouglass.com/)
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License version 3, as published
 by the Free Software Foundation.
