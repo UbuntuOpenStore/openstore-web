@@ -8,17 +8,17 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-30 00:38-0500\n"
-"PO-Revision-Date: 2020-04-02 12:22+0000\n"
-"Last-Translator: Daniel Frańczak <danielfranczak5@wp.pl>\n"
-"Language-Team: Polish <https://translate.ubports.com/projects/openstore/open-"
-"storeio/pl/>\n"
+"PO-Revision-Date: 2024-03-16 20:01+0000\n"
+"Last-Translator: Eryk Michalak <gnu.ewm@protonmail.com>\n"
+"Language-Team: Polish <https://hosted.weblate.org/projects/open-store-io/"
+"openstore-web/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.8\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: src/views/Package.vue:120
 msgid ""
@@ -286,11 +286,11 @@ msgstr "Bluetooth"
 #: src/components/Types.vue:4 src/views/ManagePackage.vue:222
 #: src/views/Stats.vue:28
 msgid "Bookmark"
-msgstr ""
+msgstr "Zakładka"
 
 #: src/views/Browse.vue:27
 msgid "Bookmarks"
-msgstr ""
+msgstr "Zakładki"
 
 #: src/App.vue:26
 msgid "Browse"
@@ -598,7 +598,7 @@ msgstr "Język"
 
 #: src/views/Browse.vue:42
 msgid "Latest Update"
-msgstr "Najnowsza aktualizacja"
+msgstr "Ostatnio zaktualizowane"
 
 #: src/views/Browse.vue:37
 msgid "Least Popular"
@@ -674,7 +674,7 @@ msgstr "Mikrofon"
 
 #: src/views/Browse.vue:36
 msgid "Most Popular"
-msgstr ""
+msgstr "Najpopularniejsze"
 
 #: src/views/Package.vue:82
 msgid "Music Files"
@@ -762,7 +762,7 @@ msgstr "Najstarsza"
 
 #: src/views/Browse.vue:43
 msgid "Oldest Update"
-msgstr "Najstarsza aktualizacja"
+msgstr "Najdawniej aktualizowane"
 
 #: src/views/Submit.vue:52
 #, fuzzy
@@ -1278,11 +1278,11 @@ msgstr "Tytuł"
 
 #: src/views/Browse.vue:38
 msgid "Title (A-Z)"
-msgstr "Tytuł (A-Z)"
+msgstr "Nazwa (A-Z)"
 
 #: src/views/Browse.vue:39
 msgid "Title (Z-A)"
-msgstr "Tytuł (Z-A)"
+msgstr "Nazwa (Z-A)"
 
 #: src/views/ManagePackage.vue:316
 msgid "Total"
@@ -1399,7 +1399,7 @@ msgstr "Aplikacja internetowa"
 
 #: src/views/Browse.vue:28
 msgid "Web Apps"
-msgstr "Web Apps"
+msgstr "Aplikacje internetowe"
 
 #: src/views/Package.vue:93
 msgid "Webview"
