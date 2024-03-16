@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
 "PO-Revision-Date: 2024-03-16 20:01+0000\n"
-"Last-Translator: Adam Havelka <adam@uxes.cz>\n"
+"Last-Translator: Jozef Mlich <jmlich83@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/open-store-io/"
 "openstore-web/cs/>\n"
 "Language: cs\n"
@@ -49,14 +49,12 @@ msgid "Accounts"
 msgstr "Účty"
 
 #: src/views/ManageRevisions.vue:54
-#, fuzzy
-#| msgid "Architecture"
 msgid "Add Another Architecture"
-msgstr "Architektura"
+msgstr "Přidat další architekturu"
 
 #: src/views/ManagePackage.vue:56
 msgid "Admin"
-msgstr ""
+msgstr "Admin"
 
 #: src/views/Browse.vue:16
 msgid "All Categories"
@@ -133,7 +131,7 @@ msgstr "Statistiky aplikace"
 
 #: src/views/About.vue:131
 msgid "App Submission Tutorial"
-msgstr ""
+msgstr "Průvodce odesláním aplikace"
 
 #: src/views/Submit.vue:128
 msgid "App Title"
@@ -152,20 +150,14 @@ msgid "Apps"
 msgstr "Aplikace"
 
 #: src/views/Submit.vue:89
-#, fuzzy
-#| msgid ""
-#| "Apps containing gambling involving real world money transactions are not "
-#| "allowed.\n"
-#| "This includes, but is not limited to, online casinos, betting, and "
-#| "lotteries."
 msgid ""
 "Apps containing gambling involving real world money transactions are not "
 "allowed.\n"
 "  This includes, but is not limited to, online casinos, betting, and "
 "lotteries."
 msgstr ""
-"Aplikace obsahující hazardní hry, které zahrnují transakce v reálném světě, "
-"nejsou povoleny.\n"
+"Aplikace obsahující hazardní hry, které zahrnují finanční transakce v "
+"reálném světě, nejsou povoleny.\n"
 "To zahrnuje, mimo jiné, online kasina, sázky a loterie."
 
 #: src/views/Submit.vue:74
@@ -177,11 +169,6 @@ msgstr ""
 "zneužívání dětí jsou přísně zakázány."
 
 #: src/views/Submit.vue:78
-#, fuzzy
-#| msgid ""
-#| "Apps containing or promoting gratuitous violence are not allowed.\n"
-#| "This includes, but is not limited to, violence, terrorism, bomb/weapon "
-#| "making, self harm, and grotesque imagery."
 msgid ""
 "Apps containing or promoting gratuitous violence are not allowed.\n"
 "  This includes, but is not limited to, violence, terrorism, bomb/weapon "
@@ -192,11 +179,6 @@ msgstr ""
 "sebepoškozování a groteskní snímky."
 
 #: src/views/Submit.vue:67
-#, fuzzy
-#| msgid ""
-#| "Apps containing or promoting sexually explicit content are not allowed.\n"
-#| "This includes, but is not limited to, pornography and services promoting "
-#| "sexually explicit content."
 msgid ""
 "Apps containing or promoting sexually explicit content are not allowed.\n"
 "  This includes, but is not limited to, pornography and services promoting "
@@ -230,11 +212,6 @@ msgstr ""
 "správci naší skupiny na Telegramu."
 
 #: src/views/Submit.vue:100
-#, fuzzy
-#| msgid ""
-#| "Apps that are found to be stealing the users data, trying to escalate "
-#| "their privileges without user consent,\n"
-#| "or executing malicious process are strictly prohibited."
 msgid ""
 "Apps that are found to be stealing the users data, trying to escalate their "
 "privileges without user consent,\n"
@@ -256,7 +233,7 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:297
 msgid "Arch"
-msgstr ""
+msgstr "Arch"
 
 #: src/views/ManagePackage.vue:255 src/views/Package.vue:168
 msgid "Architecture"
@@ -353,7 +330,7 @@ msgstr "Zvolte správce"
 
 #: src/views/ManageRevisions.vue:52
 msgid "Completed"
-msgstr ""
+msgstr "Hotovo"
 
 #: src/views/Package.vue:69
 msgid "Connectivity"
@@ -408,10 +385,8 @@ msgid "Discovery"
 msgstr "Objevit"
 
 #: src/views/Package.vue:75
-#, fuzzy
-#| msgid "Picture Files"
 msgid "Document Files"
-msgstr "Soubory s obrázky"
+msgstr "Soubory s dokumenty"
 
 #: src/App.vue:84 src/views/Package.vue:95
 msgid "Donate"
@@ -440,7 +415,7 @@ msgstr "Stahování"
 
 #: src/views/Package.vue:214
 msgid "Downloads of the latest version"
-msgstr ""
+msgstr "Stáhnout nejnovější verzi"
 
 #: src/views/ManagePackage.vue:95
 msgid "Drag and drop to sort screenshots."
@@ -462,10 +437,8 @@ msgid "Feeds"
 msgstr "Kanály"
 
 #: src/views/ManageRevisions.vue:15
-#, fuzzy
-#| msgid "File Size"
 msgid "File"
-msgstr "Velikost souboru"
+msgstr "Soubor"
 
 #: src/views/ManageRevisions.vue:204
 msgid "File Upload"
@@ -474,7 +447,7 @@ msgstr "Nahrát soubor"
 #: src/views/Browse.vue:52 src/views/ManageRevisions.vue:24
 #: src/views/ManageRevisions.vue:172
 msgid "Focal"
-msgstr ""
+msgstr "Focal"
 
 #: src/views/About.vue:52
 msgid ""
@@ -616,7 +589,7 @@ msgstr "Umístění"
 
 #: src/views/ManagePackage.vue:201
 msgid "Locked"
-msgstr ""
+msgstr "Uzamčeno"
 
 #: src/App.vue:32
 msgid "Log In"
@@ -647,10 +620,8 @@ msgid "Login via GitLab"
 msgstr "Přihlásit se přes GitLab"
 
 #: src/views/Login.vue:18
-#, fuzzy
-#| msgid "Login via Ubuntu"
 msgid "Login via Ubuntu One"
-msgstr "Přihlásit se přes Ubuntu účet"
+msgstr "Přihlásit se přes účet Ubuntu One"
 
 #: src/views/ManagePackage.vue:210
 msgid "Maintainer"
@@ -711,10 +682,8 @@ msgid "New Revision for %{name}"
 msgstr "Nová revize pro %{name}"
 
 #: src/views/ManageRevisions.vue:179
-#, fuzzy
-#| msgid "New revision for %{channel} was created!"
 msgid "New revisions for %{channel} were created!"
-msgstr "Nová revize pro %{channel} byla vytvořena!"
+msgstr "Nové revize pro %{channel} byly vytvořeny!"
 
 #: src/views/Browse.vue:40
 msgid "Newest"
@@ -722,7 +691,7 @@ msgstr "Nejnovější"
 
 #: src/views/Package.vue:83
 msgid "NFC"
-msgstr ""
+msgstr "NFC"
 
 #: src/views/ManagePackage.vue:36 src/views/ManagePackage.vue:204
 msgid "No"
@@ -734,7 +703,7 @@ msgstr "Žádné aplikace nebyly nalezeny."
 
 #: src/views/Package.vue:36
 msgid "No longer available"
-msgstr ""
+msgstr "Již není k dispozici"
 
 #: src/views/Manage.vue:75 src/views/Manage.vue:80
 #: src/views/ManagePackage.vue:220 src/views/Package.vue:204
@@ -754,10 +723,8 @@ msgid "NSFW content"
 msgstr "Obsah pro dospělé"
 
 #: src/views/Package.vue:56
-#, fuzzy
-#| msgid "Version"
 msgid "Older Versions"
-msgstr "Verze"
+msgstr "Starší verze"
 
 #: src/views/Browse.vue:41
 msgid "Oldest"
@@ -768,16 +735,6 @@ msgid "Oldest Update"
 msgstr "Nejstarší aktualizace"
 
 #: src/views/Submit.vue:52
-#, fuzzy
-#| msgid ""
-#| "One of the main goals of the OpenStore is to provide a safe app store for "
-#| "people of all ages.\n"
-#| "To accomplish this goal we do not allow certain types of app to be "
-#| "published.\n"
-#| "Failure to follow the guidelines will result in your app being removed.\n"
-#| "Any account with serious infractions may be subject to termination.\n"
-#| "The OpenStore team thanks you for helping us promote a better enviroment "
-#| "for everyone."
 msgid ""
 "One of the main goals of the OpenStore is to provide a safe app store for "
 "people of all ages.\n"
@@ -790,10 +747,10 @@ msgid ""
 msgstr ""
 "Jedním z hlavních cílů OpenStore je poskytnout bezpečné prostředí nabídky "
 "aplikací pro všechny věkové kategorie.\n"
-"K dosažení tohoto cíle neumožňujeme publikování určitých typů aplikací.\n"
-"Nedodržení pokynů vede k vymazání aplikace.\n"
-"Každý účet s vážnými přestupky může být ukončen.\n"
-"Tým OpenStore vám děkuje, že nám pomáháte podporovat bezpečné a lepší "
+"  K dosažení tohoto cíle neumožňujeme publikování určitých typů aplikací.\n"
+"  Nedodržení pokynů vede k vymazání aplikace.\n"
+"  Každý účet s vážnými přestupky může být ukončen.\n"
+"  Tým OpenStore vám děkuje, že nám pomáháte podporovat bezpečné a lepší "
 "prostředí pro každého."
 
 #: src/views/Submit.vue:40
@@ -808,16 +765,12 @@ msgstr ""
 "každé ručně kontrolované aplikace bude ověřen zdrojový kód."
 
 #: src/views/ManagePackage.vue:189
-#, fuzzy
-#| msgid ""
-#| "Only YouTube videos are supported at this time. Make sure the url is for "
-#| "the embedded video!"
 msgid ""
 "Only YouTube and Odysee videos are supported at this time. Make sure the url "
 "is for the embedded video!"
 msgstr ""
-"Momentálně jsou podporována pouze videa YouTube. Ujistěte se, že url je pro "
-"vestavěné video!"
+"Momentálně jsou podporována pouze videa YouTube a Odysee. Ujistěte se, že "
+"url je pro vestavěné video!"
 
 #: src/views/About.vue:41
 msgid "Open the terminal app"
@@ -853,7 +806,7 @@ msgstr "OpenStore Website spolupracovníci"
 
 #: src/views/ManagePackage.vue:218
 msgid "Override Type"
-msgstr ""
+msgstr "Typ přepsání"
 
 #: src/views/ManagePackage.vue:242
 msgid "Package Info"
@@ -877,7 +830,7 @@ msgstr "Představení"
 
 #: src/views/ManageRevisions.vue:53
 msgid "Processing"
-msgstr ""
+msgstr "Zpracovává se"
 
 #: src/views/Submit.vue:61
 msgid "Prohibited Apps"
@@ -894,7 +847,7 @@ msgid ""
 "are available in several different languages and in both PNG and SVG\n"
 "formats."
 msgstr ""
-"Doporučte svou aplikaci na OpenStore!  Přidejte tyto značky na váš web,\n"
+"Doporučte svou aplikaci na OpenStore!  Přidejte tyto znáčky na váš web,\n"
 " úložiště kódů, sociální média nebo kdekoli na internetu.  Značky \n"
 " jsou k dispozici v několika různých jazycích a v PNG i SVG\n"
 " formátech."
@@ -917,20 +870,16 @@ msgstr "Datum zveřejnění"
 
 #: src/views/Manage.vue:44 src/views/ManagePackage.vue:251
 #: src/views/Package.vue:131
-#, fuzzy
-#| msgid "Published"
 msgid "Publisher"
-msgstr "Uveřejněno"
+msgstr "Vydavatel"
 
 #: src/views/Package.vue:87
 msgid "Push Notifications"
 msgstr "Oznámení Push"
 
 #: src/views/Package.vue:74
-#, fuzzy
-#| msgid "Read Picture Files"
 msgid "Read Document Files"
-msgstr "Načíst soubory s obrázky"
+msgstr "Načíst soubory s dokumenty"
 
 #: src/views/Package.vue:81
 msgid "Read Music Files"
@@ -961,10 +910,8 @@ msgid "Review Exceptions"
 msgstr ""
 
 #: src/components/Reviews.vue:3
-#, fuzzy
-#| msgid "Webview"
 msgid "Reviews"
-msgstr "Webový režim"
+msgstr "Recenze"
 
 #: src/views/ManagePackage.vue:295
 msgid "Revision"
@@ -1019,10 +966,8 @@ msgid "Sexually Explicit Content"
 msgstr "Sexuálně orientovaný obsah"
 
 #: src/views/ManagePackage.vue:323
-#, fuzzy
-#| msgid "New Revision"
 msgid "Show All Revisions"
-msgstr "Nové revize"
+msgstr "Zobrazit všechny revize"
 
 #: src/views/Package.vue:119
 msgid "Show NSFW Content"
@@ -1041,10 +986,8 @@ msgid "Source"
 msgstr "Zdroj"
 
 #: src/App.vue:72
-#, fuzzy
-#| msgid "Source"
 msgid "Source Code"
-msgstr "Zdroj"
+msgstr "Zdrojový kód"
 
 #: src/views/ManagePackage.vue:172
 msgid "Source URL"
@@ -1091,7 +1034,7 @@ msgstr "Krátký popis"
 
 #: src/App.vue:66
 msgid "Telegram"
-msgstr ""
+msgstr "Telegram"
 
 #: src/views/About.vue:93
 msgid "Terms"
@@ -1271,7 +1214,7 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:56
 msgid "This revision is still available"
-msgstr ""
+msgstr "Tato revize již není k dispozici"
 
 #: src/views/ManageRevisions.vue:63
 msgid "This will be added to the beginning of your current changelog"
@@ -1294,10 +1237,8 @@ msgid "Total"
 msgstr "Celkem"
 
 #: src/views/Package.vue:219
-#, fuzzy
-#| msgid "Downloads"
 msgid "Total downloads"
-msgstr "Stahování"
+msgstr "Celkový počet stažení"
 
 #: src/views/Manage.vue:73
 msgid "Total:"
@@ -1308,16 +1249,12 @@ msgid "Translation Languages"
 msgstr "Jazykové mutace"
 
 #: src/views/ManagePackage.vue:193
-#, fuzzy
-#| msgid "Translation Languages"
 msgid "Translation URL"
-msgstr "Jazykové mutace"
+msgstr "URL pro překlad"
 
 #: src/views/Package.vue:144
-#, fuzzy
-#| msgid "Translation Languages"
 msgid "Translations"
-msgstr "Jazykové mutace"
+msgstr "Překlady"
 
 #: src/views/Browse.vue:97 src/views/Manage.vue:89
 msgid "Try searching for something else"
@@ -1341,13 +1278,11 @@ msgstr "Bez uvedené kategorie"
 
 #: src/views/Package.vue:199
 msgid "Unrestricted read access to:"
-msgstr ""
+msgstr "Neomezený přístup pro čtení do:"
 
 #: src/views/Package.vue:195
-#, fuzzy
-#| msgid "Restricted permission"
 msgid "Unrestricted write access to:"
-msgstr "Omezená oprávnění"
+msgstr "Neomezený přístup pro zápis do:"
 
 #: src/views/Package.vue:158
 msgid "Updated"
@@ -1363,7 +1298,7 @@ msgstr "Datum aktualizace"
 
 #: src/views/ManageRevisions.vue:13
 msgid "Upload Revision via:"
-msgstr ""
+msgstr "Nahrát revizi přes:"
 
 #: src/views/ManageRevisions.vue:16 src/views/ManageRevisions.vue:204
 msgid "URL"
@@ -1430,6 +1365,7 @@ msgstr "Ano"
 #: src/views/Submit.vue:9
 msgid "You are not allowed to impersonate someone else or another app."
 msgstr ""
+"Nemáte povoleno se přepnout na identitu někoho jiného nebo další aplikaci."
 
 #: src/views/Submit.vue:8
 msgid ""
