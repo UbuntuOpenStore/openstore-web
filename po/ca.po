@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: openstore\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2023-03-23 09:40+0000\n"
+"PO-Revision-Date: 2024-03-18 18:01+0000\n"
 "Last-Translator: Joan CiberSheep <cibersheep@gmail.com>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/open-store-io/"
 "openstore-web/ca/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.16.2-dev\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: src/views/Package.vue:120
 msgid ""
@@ -67,7 +67,7 @@ msgstr "Tots els canals"
 
 #: src/views/Browse.vue:25
 msgid "All Types"
-msgstr "Tots els tipus"
+msgstr "Totes les castes"
 
 #: src/views/Login.vue:26
 msgid "An account is not needed to download or install apps."
@@ -284,11 +284,11 @@ msgstr "Bluetooth"
 #: src/components/Types.vue:4 src/views/ManagePackage.vue:222
 #: src/views/Stats.vue:28
 msgid "Bookmark"
-msgstr ""
+msgstr "Marcador"
 
 #: src/views/Browse.vue:27
 msgid "Bookmarks"
-msgstr ""
+msgstr "Marcadors"
 
 #: src/App.vue:26
 msgid "Browse"
@@ -598,11 +598,11 @@ msgstr "Idioma"
 
 #: src/views/Browse.vue:42
 msgid "Latest Update"
-msgstr "Última actualització"
+msgstr "Actualitzada recentment"
 
 #: src/views/Browse.vue:37
 msgid "Least Popular"
-msgstr ""
+msgstr "Manco popular"
 
 #: src/views/About.vue:69 src/views/ManagePackage.vue:139
 #: src/views/Package.vue:148
@@ -675,7 +675,7 @@ msgstr "Micròfon"
 
 #: src/views/Browse.vue:36
 msgid "Most Popular"
-msgstr ""
+msgstr "Més popular"
 
 #: src/views/Package.vue:82
 msgid "Music Files"
@@ -718,7 +718,7 @@ msgstr "S'ha creat una nova revisió per %{channel}."
 
 #: src/views/Browse.vue:40
 msgid "Newest"
-msgstr "El més nou"
+msgstr "Més nova"
 
 #: src/views/Package.vue:83
 msgid "NFC"
@@ -761,11 +761,11 @@ msgstr "Versió"
 
 #: src/views/Browse.vue:41
 msgid "Oldest"
-msgstr "El més antic"
+msgstr "Més antiga"
 
 #: src/views/Browse.vue:43
 msgid "Oldest Update"
-msgstr "Actualització més antiga"
+msgstr "Actualitzada fa més temps"
 
 #: src/views/Submit.vue:52
 #, fuzzy
@@ -1325,7 +1325,7 @@ msgstr "Intenteu cercar una altra cosa"
 
 #: src/views/Browse.vue:23 src/views/ManagePackage.vue:259
 msgid "Type"
-msgstr "Tipus"
+msgstr "Casta"
 
 #: src/views/About.vue:14
 msgid "Ubuntu Touch"
