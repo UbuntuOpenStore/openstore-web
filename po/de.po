@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2022-04-30 15:08+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
-"Language-Team: German <https://translate.ubports.com/projects/openstore/open-"
-"storeio/de/>\n"
+"PO-Revision-Date: 2024-03-20 20:01+0000\n"
+"Last-Translator: Daniel Frost <one@frostinfo.de>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/open-store-io/"
+"openstore-web/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.11.3\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: src/views/Package.vue:120
 msgid ""
@@ -49,14 +49,12 @@ msgid "Accounts"
 msgstr "Konten"
 
 #: src/views/ManageRevisions.vue:54
-#, fuzzy
-#| msgid "Architecture"
 msgid "Add Another Architecture"
-msgstr "Architektur"
+msgstr "Eine andere Architektur hinzufügen"
 
 #: src/views/ManagePackage.vue:56
 msgid "Admin"
-msgstr ""
+msgstr "Administrator"
 
 #: src/views/Browse.vue:16
 msgid "All Categories"
@@ -146,7 +144,7 @@ msgstr "App-Typen"
 
 #: src/views/Browse.vue:26
 msgid "Apps"
-msgstr "Anwendungen"
+msgstr "Apps"
 
 #: src/views/Submit.vue:89
 #, fuzzy
@@ -284,11 +282,11 @@ msgstr "Bluetooth"
 #: src/components/Types.vue:4 src/views/ManagePackage.vue:222
 #: src/views/Stats.vue:28
 msgid "Bookmark"
-msgstr ""
+msgstr "Lesezeichen"
 
 #: src/views/Browse.vue:27
 msgid "Bookmarks"
-msgstr ""
+msgstr "Lesezeichen"
 
 #: src/App.vue:26
 msgid "Browse"
@@ -598,11 +596,11 @@ msgstr "Sprache"
 
 #: src/views/Browse.vue:42
 msgid "Latest Update"
-msgstr "Letzte Aktualisierung"
+msgstr "neuester Aktualisierung"
 
 #: src/views/Browse.vue:37
 msgid "Least Popular"
-msgstr ""
+msgstr "weniger beliebt"
 
 #: src/views/About.vue:69 src/views/ManagePackage.vue:139
 #: src/views/Package.vue:148
@@ -674,7 +672,7 @@ msgstr "Mikrofon"
 
 #: src/views/Browse.vue:36
 msgid "Most Popular"
-msgstr ""
+msgstr "sehr beliebt"
 
 #: src/views/Package.vue:82
 msgid "Music Files"
@@ -717,7 +715,7 @@ msgstr "Eine neue Überarbeitung für %{channel} wurde erstellt!"
 
 #: src/views/Browse.vue:40
 msgid "Newest"
-msgstr "Neueste"
+msgstr "am neuesten"
 
 #: src/views/Package.vue:83
 msgid "NFC"
@@ -760,11 +758,11 @@ msgstr "Version"
 
 #: src/views/Browse.vue:41
 msgid "Oldest"
-msgstr "Älteste"
+msgstr "am ältesten"
 
 #: src/views/Browse.vue:43
 msgid "Oldest Update"
-msgstr "Älteste Aktualisierung"
+msgstr "ältester Aktualisierung"
 
 #: src/views/Submit.vue:52
 #, fuzzy
@@ -945,7 +943,7 @@ msgstr "Videodateien lesen"
 
 #: src/views/Browse.vue:35
 msgid "Relevance"
-msgstr "Bedeutung"
+msgstr "Relevanz"
 
 #: src/App.vue:78
 msgid "Report an Issue"
@@ -1060,7 +1058,7 @@ msgstr "Status"
 
 #: src/App.vue:23 src/views/Submit.vue:133
 msgid "Submit"
-msgstr "Übermitteln"
+msgstr "Absenden"
 
 #: src/views/Manage.vue:9 src/views/Submit.vue:113 src/views/Submit.vue:12
 #: src/views/Submit.vue:16
@@ -1404,7 +1402,7 @@ msgstr "Web-App"
 
 #: src/views/Browse.vue:28
 msgid "Web Apps"
-msgstr "Webapps"
+msgstr "Web-App"
 
 #: src/views/Package.vue:93
 msgid "Webview"
