@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2024-03-16 20:01+0000\n"
+"PO-Revision-Date: 2024-04-20 10:07+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/open-store-io/"
 "openstore-web/nl/>\n"
@@ -1220,11 +1220,11 @@ msgstr "Naam"
 
 #: src/views/Browse.vue:38
 msgid "Title (A-Z)"
-msgstr "Naam (A-Z)"
+msgstr "Titel (A-Z)"
 
 #: src/views/Browse.vue:39
 msgid "Title (Z-A)"
-msgstr "Naam (Z-A)"
+msgstr "Titel (Z-A)"
 
 #: src/views/ManagePackage.vue:316
 msgid "Total"
@@ -1256,7 +1256,7 @@ msgstr "Probeer een andere zoekopdracht"
 
 #: src/views/Browse.vue:23 src/views/ManagePackage.vue:259
 msgid "Type"
-msgstr "Soort"
+msgstr "Soort app"
 
 #: src/views/About.vue:14
 msgid "Ubuntu Touch"
