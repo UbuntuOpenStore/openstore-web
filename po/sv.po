@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2023-01-01 23:36+0000\n"
-"Last-Translator: Rondy Andersson <rondarius@vivaldi.net>\n"
-"Language-Team: Swedish <https://translate.ubports.com/projects/openstore/"
-"open-storeio/sv/>\n"
+"PO-Revision-Date: 2024-04-29 00:07+0000\n"
+"Last-Translator: Kristoffer Grundström <swedishsailfishosuser@tutanota.com>\n"
+"Language-Team: Swedish <https://hosted.weblate.org/projects/open-store-io/"
+"openstore-web/sv/>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.11.3\n"
+"X-Generator: Weblate 5.5.1\n"
 
 #: src/views/Package.vue:120
 msgid ""
@@ -49,14 +49,12 @@ msgid "Accounts"
 msgstr "Konton"
 
 #: src/views/ManageRevisions.vue:54
-#, fuzzy
-#| msgid "Architecture"
 msgid "Add Another Architecture"
-msgstr "Arkitektur"
+msgstr "Lägg till en annan arkitektur"
 
 #: src/views/ManagePackage.vue:56
 msgid "Admin"
-msgstr ""
+msgstr "Admin"
 
 #: src/views/Browse.vue:16
 msgid "All Categories"
@@ -68,7 +66,7 @@ msgstr "Alla Kanaler"
 
 #: src/views/Browse.vue:25
 msgid "All Types"
-msgstr "Alla sorter"
+msgstr "Alla typer"
 
 #: src/views/Login.vue:26
 msgid "An account is not needed to download or install apps."
@@ -153,21 +151,15 @@ msgid "Apps"
 msgstr "Appar"
 
 #: src/views/Submit.vue:89
-#, fuzzy
-#| msgid ""
-#| "Apps containing gambling involving real world money transactions are not "
-#| "allowed.\n"
-#| "This includes, but is not limited to, online casinos, betting, and "
-#| "lotteries."
 msgid ""
 "Apps containing gambling involving real world money transactions are not "
 "allowed.\n"
 "  This includes, but is not limited to, online casinos, betting, and "
 "lotteries."
 msgstr ""
-"Appar där hasardspel med överföringar av verkliga pengar ingår är inte "
-"tillåtna.\n"
-"Detta inkluderar, men är inte begränsat till, online-kasinon, vadslagning "
+"Appar som innehåller hasardspel där överföringar av verkliga pengar ingår "
+"tillåts inte.\n"
+"  Detta inkluderar, men är inte begränsat till, online-kasinon, vadslagning "
 "och lotterier."
 
 #: src/views/Submit.vue:74
@@ -286,11 +278,11 @@ msgstr "Blåtand"
 #: src/components/Types.vue:4 src/views/ManagePackage.vue:222
 #: src/views/Stats.vue:28
 msgid "Bookmark"
-msgstr ""
+msgstr "Bokmärk"
 
 #: src/views/Browse.vue:27
 msgid "Bookmarks"
-msgstr ""
+msgstr "Bokmärken"
 
 #: src/App.vue:26
 msgid "Browse"
@@ -409,10 +401,8 @@ msgid "Discovery"
 msgstr "Upptäcka"
 
 #: src/views/Package.vue:75
-#, fuzzy
-#| msgid "Picture Files"
 msgid "Document Files"
-msgstr "Bild Filer"
+msgstr "Dokument-filer"
 
 #: src/App.vue:84 src/views/Package.vue:95
 msgid "Donate"
@@ -441,7 +431,7 @@ msgstr "Nedladdningar"
 
 #: src/views/Package.vue:214
 msgid "Downloads of the latest version"
-msgstr ""
+msgstr "Hämtningar av den senaste versionen"
 
 #: src/views/ManagePackage.vue:95
 msgid "Drag and drop to sort screenshots."
@@ -475,7 +465,7 @@ msgstr "Ladda upp fil"
 #: src/views/Browse.vue:52 src/views/ManageRevisions.vue:24
 #: src/views/ManageRevisions.vue:172
 msgid "Focal"
-msgstr ""
+msgstr "Focal"
 
 #: src/views/About.vue:52
 msgid ""
@@ -600,12 +590,13 @@ msgid "Language"
 msgstr "Språk"
 
 #: src/views/Browse.vue:42
+#, fuzzy
 msgid "Latest Update"
-msgstr "Senaste Uppdateringen"
+msgstr "Senaste uppdatering"
 
 #: src/views/Browse.vue:37
 msgid "Least Popular"
-msgstr ""
+msgstr "Minst populärt"
 
 #: src/views/About.vue:69 src/views/ManagePackage.vue:139
 #: src/views/Package.vue:148
@@ -618,7 +609,7 @@ msgstr "Plats"
 
 #: src/views/ManagePackage.vue:201
 msgid "Locked"
-msgstr ""
+msgstr "Låst"
 
 #: src/App.vue:32
 msgid "Log In"
@@ -649,10 +640,8 @@ msgid "Login via GitLab"
 msgstr "Logga in via GitLab"
 
 #: src/views/Login.vue:18
-#, fuzzy
-#| msgid "Login via Ubuntu"
 msgid "Login via Ubuntu One"
-msgstr "Logga in via Ubuntu"
+msgstr "Logga in med Ubuntu One"
 
 #: src/views/ManagePackage.vue:210
 msgid "Maintainer"
@@ -677,7 +666,7 @@ msgstr "Mikrofon"
 
 #: src/views/Browse.vue:36
 msgid "Most Popular"
-msgstr ""
+msgstr "Mest populärt"
 
 #: src/views/Package.vue:82
 msgid "Music Files"
@@ -724,7 +713,7 @@ msgstr "Nyaste"
 
 #: src/views/Package.vue:83
 msgid "NFC"
-msgstr ""
+msgstr "NFC"
 
 #: src/views/ManagePackage.vue:36 src/views/ManagePackage.vue:204
 msgid "No"
@@ -756,30 +745,19 @@ msgid "NSFW content"
 msgstr "NSFW innehåll"
 
 #: src/views/Package.vue:56
-#, fuzzy
-#| msgid "Version"
 msgid "Older Versions"
-msgstr "Version"
+msgstr "Äldre versioner"
 
 #: src/views/Browse.vue:41
 msgid "Oldest"
 msgstr "Äldsta"
 
 #: src/views/Browse.vue:43
+#, fuzzy
 msgid "Oldest Update"
-msgstr "Äldsta uppdateringen"
+msgstr "Äldsta uppdatering"
 
 #: src/views/Submit.vue:52
-#, fuzzy
-#| msgid ""
-#| "One of the main goals of the OpenStore is to provide a safe app store for "
-#| "people of all ages.\n"
-#| "To accomplish this goal we do not allow certain types of app to be "
-#| "published.\n"
-#| "Failure to follow the guidelines will result in your app being removed.\n"
-#| "Any account with serious infractions may be subject to termination.\n"
-#| "The OpenStore team thanks you for helping us promote a better enviroment "
-#| "for everyone."
 msgid ""
 "One of the main goals of the OpenStore is to provide a safe app store for "
 "people of all ages.\n"
@@ -792,10 +770,11 @@ msgid ""
 msgstr ""
 "Ett av de främsta målen av OpenStore är att tillhanda hålla en trygg app "
 "butik för människor i alla åldrar.\n"
-"För att uppnå detta mål tillåter vi inte att vissa appar blir publicerade.\n"
-"Misslyckas man med att följa dessa riktlinjer blir resultat det att din app "
-"blir borttagen.\n"
-"OpenStore teamet tackar er för att ni hjälper oss att verka för en bättre "
+"  För att uppnå detta mål tillåter vi inte att vissa appar blir publicerade."
+"\n"
+"  Misslyckas man med att följa dessa riktlinjer blir resultat det att din "
+"app blir borttagen.\n"
+"  OpenStore-teamet tackar er för att ni hjälper oss att verka för en bättre "
 "miljö för alla."
 
 #: src/views/Submit.vue:40
@@ -878,7 +857,7 @@ msgstr "Presentation"
 
 #: src/views/ManageRevisions.vue:53
 msgid "Processing"
-msgstr ""
+msgstr "Behandlar"
 
 #: src/views/Submit.vue:61
 msgid "Prohibited Apps"
@@ -918,10 +897,8 @@ msgstr "Publicerad Datum"
 
 #: src/views/Manage.vue:44 src/views/ManagePackage.vue:251
 #: src/views/Package.vue:131
-#, fuzzy
-#| msgid "Published"
 msgid "Publisher"
-msgstr "Publicerad"
+msgstr "Utgivare"
 
 #: src/views/Package.vue:87
 msgid "Push Notifications"
@@ -1020,10 +997,8 @@ msgid "Sexually Explicit Content"
 msgstr "Uttryckligt Sexuellt Innehåll"
 
 #: src/views/ManagePackage.vue:323
-#, fuzzy
-#| msgid "New Revision"
 msgid "Show All Revisions"
-msgstr "Ny Revidering"
+msgstr "Visa alla revisioner"
 
 #: src/views/Package.vue:119
 msgid "Show NSFW Content"
@@ -1035,17 +1010,15 @@ msgstr "Sajt status"
 
 #: src/views/Browse.vue:33
 msgid "Sort By"
-msgstr "Sortera Efter"
+msgstr "Sortera efter"
 
 #: src/views/Package.vue:140
 msgid "Source"
 msgstr "Källa"
 
 #: src/App.vue:72
-#, fuzzy
-#| msgid "Source"
 msgid "Source Code"
-msgstr "Källa"
+msgstr "Källkod"
 
 #: src/views/ManagePackage.vue:172
 msgid "Source URL"
@@ -1062,7 +1035,7 @@ msgstr "Status"
 
 #: src/App.vue:23 src/views/Submit.vue:133
 msgid "Submit"
-msgstr "Lämna in"
+msgstr "Skicka"
 
 #: src/views/Manage.vue:9 src/views/Submit.vue:113 src/views/Submit.vue:12
 #: src/views/Submit.vue:16
@@ -1092,7 +1065,7 @@ msgstr "Tagg tråd"
 
 #: src/App.vue:66
 msgid "Telegram"
-msgstr ""
+msgstr "Telegram"
 
 #: src/views/About.vue:93
 msgid "Terms"
@@ -1270,7 +1243,7 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:56
 msgid "This revision is still available"
-msgstr ""
+msgstr "Den här revisionen är fortfarande tillgänglig"
 
 #: src/views/ManageRevisions.vue:63
 msgid "This will be added to the beginning of your current changelog"
@@ -1293,10 +1266,8 @@ msgid "Total"
 msgstr "Totalt"
 
 #: src/views/Package.vue:219
-#, fuzzy
-#| msgid "Downloads"
 msgid "Total downloads"
-msgstr "Nedladdningar"
+msgstr "Totalt antal hämtningar"
 
 #: src/views/Manage.vue:73
 msgid "Total:"
@@ -1313,10 +1284,8 @@ msgid "Translation URL"
 msgstr "Översättnings språk"
 
 #: src/views/Package.vue:144
-#, fuzzy
-#| msgid "Translation Languages"
 msgid "Translations"
-msgstr "Översättnings språk"
+msgstr "Översättningar"
 
 #: src/views/Browse.vue:97 src/views/Manage.vue:89
 msgid "Try searching for something else"
@@ -1343,10 +1312,8 @@ msgid "Unrestricted read access to:"
 msgstr ""
 
 #: src/views/Package.vue:195
-#, fuzzy
-#| msgid "Restricted permission"
 msgid "Unrestricted write access to:"
-msgstr "Begränsade tillstånd"
+msgstr "Obegränsad skriv-åtkomst till:"
 
 #: src/views/Package.vue:158
 msgid "Updated"
@@ -1362,7 +1329,7 @@ msgstr "Uppdaterade Datum"
 
 #: src/views/ManageRevisions.vue:13
 msgid "Upload Revision via:"
-msgstr ""
+msgstr "Ladda upp revision via:"
 
 #: src/views/ManageRevisions.vue:16 src/views/ManageRevisions.vue:204
 msgid "URL"
@@ -1407,7 +1374,7 @@ msgstr "Webb App"
 
 #: src/views/Browse.vue:28
 msgid "Web Apps"
-msgstr "Webb Appar"
+msgstr "Webb-appar"
 
 #: src/views/Package.vue:93
 msgid "Webview"
