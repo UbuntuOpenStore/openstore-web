@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-30 00:38-0500\n"
-"PO-Revision-Date: 2024-05-30 07:30+0000\n"
+"PO-Revision-Date: 2024-06-02 07:09+0000\n"
 "Last-Translator: Ali Beyaz <alipolatbeyaz@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/open-store-io/"
 "openstore-web/tr/>\n"
@@ -114,7 +114,7 @@ msgstr "API Anahtarı"
 #: src/components/Types.vue:3 src/views/Manage.vue:43
 #: src/views/ManagePackage.vue:221 src/views/Stats.vue:27
 msgid "App"
-msgstr "Uygulamalar"
+msgstr "Uygulama"
 
 #: src/views/Submit.vue:85
 msgid "App containing or promoting any of the above are strictly prohibited."
@@ -504,7 +504,7 @@ msgstr "Rahatsızlık, Zorbalık veya Nefret Söylemi"
 
 #: src/views/Package.vue:76
 msgid "History"
-msgstr "Tarih"
+msgstr "Geçmiş"
 
 #: src/views/Manage.vue:41
 msgid "Icon"
@@ -650,7 +650,7 @@ msgstr "En Popüler"
 
 #: src/views/Package.vue:82
 msgid "Music Files"
-msgstr "Müzikler"
+msgstr "Müzik Dosyaları"
 
 #: src/views/Manage.vue:42
 msgid "Name"
@@ -662,7 +662,7 @@ msgstr "İndirilenler dizinine git"
 
 #: src/views/Package.vue:84
 msgid "Networking"
-msgstr "Bağlantı Oluşturma"
+msgstr "Ağ araçları"
 
 #: src/views/Feeds.vue:6
 msgid "New Apps"
@@ -687,7 +687,7 @@ msgstr "%{channel} için yeni revizyonlar oluşturuldu!"
 
 #: src/views/Browse.vue:40
 msgid "Newest"
-msgstr "En yeni"
+msgstr "En Yeni"
 
 #: src/views/Package.vue:83
 msgid "NFC"
@@ -728,7 +728,7 @@ msgstr "Eski versiyonlar"
 
 #: src/views/Browse.vue:41
 msgid "Oldest"
-msgstr "En eski"
+msgstr "En Eski"
 
 #: src/views/Browse.vue:43
 msgid "Oldest Update"
@@ -874,7 +874,7 @@ msgstr "Yayıncı"
 
 #: src/views/Package.vue:87
 msgid "Push Notifications"
-msgstr "Bildirimleri Aç"
+msgstr "Bildirimler"
 
 #: src/views/Package.vue:74
 msgid "Read Document Files"
@@ -882,19 +882,19 @@ msgstr "Belge Dosyalarını Oku"
 
 #: src/views/Package.vue:81
 msgid "Read Music Files"
-msgstr "Müzik Dosyalarını Oku"
+msgstr "Müzik Dosyalarını Okuma"
 
 #: src/views/Package.vue:85
 msgid "Read Picture Files"
-msgstr "Resim Dosyaları Okunuyor"
+msgstr "Resim Dosyalarını  Okuma"
 
 #: src/views/Package.vue:90
 msgid "Read Video Files"
-msgstr "Video Dosyaları Okunuyor"
+msgstr "Video Dosyalarını Okuma"
 
 #: src/views/Browse.vue:35
 msgid "Relevance"
-msgstr "Alaka düzeyi"
+msgstr "Alaka Düzeyi"
 
 #: src/App.vue:78
 msgid "Report an Issue"
