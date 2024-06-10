@@ -27,8 +27,8 @@ deploy:
     - echo $VERSION
     - npm run translations
     - npm run generate-icons
-    - rsync -av --delete --exclude node_modules --exclude ".git" . root@ssh.open-store.io:/srv/openstore-web/$VERSION
-    - ssh root@ssh.open-store.io "/srv/openstore-web/$VERSION/deploy/post-deploy.sh $VERSION"
+    - rsync -av --delete --exclude node_modules --exclude ".git" . brian@ssh.open-store.io:/srv/openstore-web/$VERSION
+    - ssh brian@ssh.open-store.io "/srv/openstore-web/$VERSION/deploy/post-deploy.sh $VERSION"
 
 deploy_staging:
   stage: deploy
@@ -46,8 +46,8 @@ deploy_staging:
     - echo $VERSION
     - npm run translations
     - npm run generate-icons
-    - rsync -av --delete --exclude node_modules --exclude ".git" . root@ssh.open-store.io:/srv/openstore-web$ENV/$VERSION
-    - ssh root@ssh.open-store.io "/srv/openstore-web$ENV/$VERSION/deploy/post-deploy.sh $VERSION $ENV"
+    - rsync -av --delete --exclude node_modules --exclude ".git" . brian@ssh.open-store.io:/srv/openstore-web$ENV/$VERSION
+    - ssh brian@ssh.open-store.io "/srv/openstore-web$ENV/$VERSION/deploy/post-deploy.sh $VERSION $ENV"
 
 sast:
   variables:
