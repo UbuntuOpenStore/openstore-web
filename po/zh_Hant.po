@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2021-06-23 01:22+0000\n"
-"Last-Translator: louies0623 <louies0623@gmail.com>\n"
-"Language-Team: Chinese (Traditional) <https://translate.ubports.com/projects/"
-"openstore/open-storeio/zh_Hant/>\n"
+"PO-Revision-Date: 2024-07-03 05:09+0000\n"
+"Last-Translator: hugoalh <hugoalh@users.noreply.hosted.weblate.org>\n"
+"Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
+"open-store-io/openstore-web/zh_Hant/>\n"
 "Language: zh_Hant\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.11.3\n"
+"X-Generator: Weblate 5.7-dev\n"
 
 #: src/views/Package.vue:120
 msgid ""
@@ -49,10 +49,8 @@ msgid "Accounts"
 msgstr "帳戶"
 
 #: src/views/ManageRevisions.vue:54
-#, fuzzy
-#| msgid "Architecture"
 msgid "Add Another Architecture"
-msgstr "建構"
+msgstr "新增另一個架構"
 
 #: src/views/ManagePackage.vue:56
 msgid "Admin"
@@ -127,7 +125,7 @@ msgstr "應用程式統計"
 
 #: src/views/About.vue:131
 msgid "App Submission Tutorial"
-msgstr ""
+msgstr "應用程式提交教學"
 
 #: src/views/Submit.vue:128
 msgid "App Title"
@@ -236,7 +234,7 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:297
 msgid "Arch"
-msgstr ""
+msgstr "架構"
 
 #: src/views/ManagePackage.vue:255 src/views/Package.vue:168
 msgid "Architecture"
@@ -265,11 +263,11 @@ msgstr "藍牙"
 #: src/components/Types.vue:4 src/views/ManagePackage.vue:222
 #: src/views/Stats.vue:28
 msgid "Bookmark"
-msgstr ""
+msgstr "書籤"
 
 #: src/views/Browse.vue:27
 msgid "Bookmarks"
-msgstr ""
+msgstr "書籤"
 
 #: src/App.vue:26
 msgid "Browse"
@@ -333,7 +331,7 @@ msgstr "選擇維護者"
 
 #: src/views/ManageRevisions.vue:52
 msgid "Completed"
-msgstr ""
+msgstr "已完成"
 
 #: src/views/Package.vue:69
 msgid "Connectivity"
@@ -388,10 +386,8 @@ msgid "Discovery"
 msgstr "發現"
 
 #: src/views/Package.vue:75
-#, fuzzy
-#| msgid "Picture Files"
 msgid "Document Files"
-msgstr "圖片檔案"
+msgstr "文件檔案"
 
 #: src/App.vue:84 src/views/Package.vue:95
 msgid "Donate"
@@ -420,7 +416,7 @@ msgstr "下載"
 
 #: src/views/Package.vue:214
 msgid "Downloads of the latest version"
-msgstr ""
+msgstr "最新版本的下載"
 
 #: src/views/ManagePackage.vue:95
 msgid "Drag and drop to sort screenshots."
@@ -442,10 +438,8 @@ msgid "Feeds"
 msgstr "提交"
 
 #: src/views/ManageRevisions.vue:15
-#, fuzzy
-#| msgid "File Size"
 msgid "File"
-msgstr "檔案大小"
+msgstr "檔案"
 
 #: src/views/ManageRevisions.vue:204
 msgid "File Upload"
@@ -580,7 +574,7 @@ msgstr "最新更新"
 
 #: src/views/Browse.vue:37
 msgid "Least Popular"
-msgstr ""
+msgstr "最不受歡迎"
 
 #: src/views/About.vue:69 src/views/ManagePackage.vue:139
 #: src/views/Package.vue:148
@@ -593,7 +587,7 @@ msgstr "位置"
 
 #: src/views/ManagePackage.vue:201
 msgid "Locked"
-msgstr ""
+msgstr "已鎖定"
 
 #: src/App.vue:32
 msgid "Log In"
@@ -624,10 +618,8 @@ msgid "Login via GitLab"
 msgstr "透過 GitLab 來登錄"
 
 #: src/views/Login.vue:18
-#, fuzzy
-#| msgid "Login via Ubuntu"
 msgid "Login via Ubuntu One"
-msgstr "透過 Ubuntu 來登錄"
+msgstr "透過 Ubuntu One 登入"
 
 #: src/views/ManagePackage.vue:210
 msgid "Maintainer"
@@ -652,7 +644,7 @@ msgstr "麥克風"
 
 #: src/views/Browse.vue:36
 msgid "Most Popular"
-msgstr ""
+msgstr "最受歡迎"
 
 #: src/views/Package.vue:82
 msgid "Music Files"
@@ -699,7 +691,7 @@ msgstr "最新"
 
 #: src/views/Package.vue:83
 msgid "NFC"
-msgstr ""
+msgstr "NFC"
 
 #: src/views/ManagePackage.vue:36 src/views/ManagePackage.vue:204
 msgid "No"
@@ -711,7 +703,7 @@ msgstr "找不到應用程式。"
 
 #: src/views/Package.vue:36
 msgid "No longer available"
-msgstr ""
+msgstr "不再可用"
 
 #: src/views/Manage.vue:75 src/views/Manage.vue:80
 #: src/views/ManagePackage.vue:220 src/views/Package.vue:204
@@ -731,10 +723,8 @@ msgid "NSFW content"
 msgstr "敏感內容"
 
 #: src/views/Package.vue:56
-#, fuzzy
-#| msgid "Version"
 msgid "Older Versions"
-msgstr "版本"
+msgstr "較舊版本"
 
 #: src/views/Browse.vue:41
 msgid "Oldest"
@@ -742,7 +732,7 @@ msgstr "最舊"
 
 #: src/views/Browse.vue:43
 msgid "Oldest Update"
-msgstr "最舊的更新"
+msgstr "最舊更新"
 
 #: src/views/Submit.vue:52
 #, fuzzy
@@ -825,7 +815,7 @@ msgstr "OpenStore 網站貢獻者"
 
 #: src/views/ManagePackage.vue:218
 msgid "Override Type"
-msgstr ""
+msgstr "覆寫類型"
 
 #: src/views/ManagePackage.vue:242
 msgid "Package Info"
@@ -849,7 +839,7 @@ msgstr "介紹"
 
 #: src/views/ManageRevisions.vue:53
 msgid "Processing"
-msgstr ""
+msgstr "正在處理"
 
 #: src/views/Submit.vue:61
 msgid "Prohibited Apps"
@@ -889,20 +879,16 @@ msgstr "發佈日期"
 
 #: src/views/Manage.vue:44 src/views/ManagePackage.vue:251
 #: src/views/Package.vue:131
-#, fuzzy
-#| msgid "Published"
 msgid "Publisher"
-msgstr "發佈"
+msgstr "發佈者"
 
 #: src/views/Package.vue:87
 msgid "Push Notifications"
 msgstr "推送通知"
 
 #: src/views/Package.vue:74
-#, fuzzy
-#| msgid "Read Picture Files"
 msgid "Read Document Files"
-msgstr "讀取圖片檔案"
+msgstr "讀取文件檔案"
 
 #: src/views/Package.vue:81
 msgid "Read Music Files"
@@ -918,7 +904,7 @@ msgstr "讀取影片檔案"
 
 #: src/views/Browse.vue:35
 msgid "Relevance"
-msgstr "關聯"
+msgstr "關聯性"
 
 #: src/App.vue:78
 msgid "Report an Issue"
@@ -991,10 +977,8 @@ msgid "Sexually Explicit Content"
 msgstr "性暗示內容"
 
 #: src/views/ManagePackage.vue:323
-#, fuzzy
-#| msgid "New Revision"
 msgid "Show All Revisions"
-msgstr "新的版本"
+msgstr "顯示全部修訂"
 
 #: src/views/Package.vue:119
 msgid "Show NSFW Content"
@@ -1006,17 +990,15 @@ msgstr "網頁狀態"
 
 #: src/views/Browse.vue:33
 msgid "Sort By"
-msgstr "排列依據"
+msgstr "排序方式"
 
 #: src/views/Package.vue:140
 msgid "Source"
 msgstr "源碼"
 
 #: src/App.vue:72
-#, fuzzy
-#| msgid "Source"
 msgid "Source Code"
-msgstr "源碼"
+msgstr "原始碼"
 
 #: src/views/ManagePackage.vue:172
 msgid "Source URL"
@@ -1063,7 +1045,7 @@ msgstr "標語"
 
 #: src/App.vue:66
 msgid "Telegram"
-msgstr ""
+msgstr "Telegram"
 
 #: src/views/About.vue:93
 msgid "Terms"
@@ -1219,7 +1201,7 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:56
 msgid "This revision is still available"
-msgstr ""
+msgstr "此修訂仍然可用"
 
 #: src/views/ManageRevisions.vue:63
 msgid "This will be added to the beginning of your current changelog"
@@ -1231,21 +1213,19 @@ msgstr "名稱"
 
 #: src/views/Browse.vue:38
 msgid "Title (A-Z)"
-msgstr "名稱 (A-Z)"
+msgstr "標題（A-Z）"
 
 #: src/views/Browse.vue:39
 msgid "Title (Z-A)"
-msgstr "名稱 (Z-A)"
+msgstr "標題（Z-A）"
 
 #: src/views/ManagePackage.vue:316
 msgid "Total"
 msgstr "總計"
 
 #: src/views/Package.vue:219
-#, fuzzy
-#| msgid "Downloads"
 msgid "Total downloads"
-msgstr "下載"
+msgstr "下載總計"
 
 #: src/views/Manage.vue:73
 msgid "Total:"
@@ -1256,16 +1236,12 @@ msgid "Translation Languages"
 msgstr "翻譯語言"
 
 #: src/views/ManagePackage.vue:193
-#, fuzzy
-#| msgid "Translation Languages"
 msgid "Translation URL"
-msgstr "翻譯語言"
+msgstr "翻譯網址"
 
 #: src/views/Package.vue:144
-#, fuzzy
-#| msgid "Translation Languages"
 msgid "Translations"
-msgstr "翻譯語言"
+msgstr "翻譯"
 
 #: src/views/Browse.vue:97 src/views/Manage.vue:89
 msgid "Try searching for something else"
@@ -1292,10 +1268,8 @@ msgid "Unrestricted read access to:"
 msgstr ""
 
 #: src/views/Package.vue:195
-#, fuzzy
-#| msgid "Restricted permission"
 msgid "Unrestricted write access to:"
-msgstr "受限制的許可權"
+msgstr "無限制的寫入存取："
 
 #: src/views/Package.vue:158
 msgid "Updated"
@@ -1311,7 +1285,7 @@ msgstr "更新日期"
 
 #: src/views/ManageRevisions.vue:13
 msgid "Upload Revision via:"
-msgstr ""
+msgstr "經此上載修訂："
 
 #: src/views/ManageRevisions.vue:16 src/views/ManageRevisions.vue:204
 msgid "URL"
@@ -1356,7 +1330,7 @@ msgstr "網路程式"
 
 #: src/views/Browse.vue:28
 msgid "Web Apps"
-msgstr "網路程式"
+msgstr "網路應用程式"
 
 #: src/views/Package.vue:93
 msgid "Webview"
@@ -1377,7 +1351,7 @@ msgstr "是"
 
 #: src/views/Submit.vue:9
 msgid "You are not allowed to impersonate someone else or another app."
-msgstr ""
+msgstr "你不被允許冒充其他人或其他應用程式。"
 
 #: src/views/Submit.vue:8
 msgid ""
