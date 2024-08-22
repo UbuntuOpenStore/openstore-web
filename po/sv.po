@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2024-04-29 00:07+0000\n"
+"PO-Revision-Date: 2024-08-23 01:09+0000\n"
 "Last-Translator: Kristoffer Grundström <swedishsailfishosuser@tutanota.com>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/open-store-io/"
 "openstore-web/sv/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5.1\n"
+"X-Generator: Weblate 5.7\n"
 
 #: src/views/Package.vue:120
 msgid ""
@@ -132,7 +132,7 @@ msgstr "Appens statistik"
 
 #: src/views/About.vue:131
 msgid "App Submission Tutorial"
-msgstr ""
+msgstr "Handledning för inlämning av appar"
 
 #: src/views/Submit.vue:128
 msgid "App Title"
@@ -171,34 +171,25 @@ msgstr ""
 "utnyttjande av barn är strängeligen förbjudna."
 
 #: src/views/Submit.vue:78
-#, fuzzy
-#| msgid ""
-#| "Apps containing or promoting gratuitous violence are not allowed.\n"
-#| "This includes, but is not limited to, violence, terrorism, bomb/weapon "
-#| "making, self harm, and grotesque imagery."
 msgid ""
 "Apps containing or promoting gratuitous violence are not allowed.\n"
 "  This includes, but is not limited to, violence, terrorism, bomb/weapon "
 "making, self harm, and grotesque imagery."
 msgstr ""
 "Appar som innehåller eller uppmuntrar meningslöst våld är inte tillåtet.\n"
-"Detta inkluderar, men är inte begränsat till våld, terrorism, bomb/vapen-"
-"tillverkning, självstympning och groteska illustrationer."
+"  Detta inkluderar, men är inte begränsat till våld, terrorism, bomb/vapen-"
+"tillverkning, självskadebeteende och groteska illustrationer."
 
 #: src/views/Submit.vue:67
-#, fuzzy
-#| msgid ""
-#| "Apps containing or promoting sexually explicit content are not allowed.\n"
-#| "This includes, but is not limited to, pornography and services promoting "
-#| "sexually explicit content."
 msgid ""
 "Apps containing or promoting sexually explicit content are not allowed.\n"
 "  This includes, but is not limited to, pornography and services promoting "
 "sexually explicit content."
 msgstr ""
-"Appar som innehåller eller uppmuntrar sexuellt innehåll är inte tillåtna.\n"
-"Detta inkluderar, men inte begränsat till, pornografi och tjänster som "
-"uppmuntrar sexuellt innehåll."
+"Appar som innehåller eller uppmuntrar sexuellt explicit innehåll tillåts "
+"inte.\n"
+"  Detta inkluderar, men är inte begränsat till, pornografi och tjänster som "
+"uppmuntrar sexuellt explicit innehåll."
 
 #: src/views/Submit.vue:7
 msgid ""
@@ -223,11 +214,6 @@ msgstr ""
 "att man kontaktar en administratör i vår telegram grupp."
 
 #: src/views/Submit.vue:100
-#, fuzzy
-#| msgid ""
-#| "Apps that are found to be stealing the users data, trying to escalate "
-#| "their privileges without user consent,\n"
-#| "or executing malicious process are strictly prohibited."
 msgid ""
 "Apps that are found to be stealing the users data, trying to escalate their "
 "privileges without user consent,\n"
@@ -235,7 +221,7 @@ msgid ""
 msgstr ""
 "Appar som blir upptäckta med att stjäla användarens data, försöker eskalera "
 "deras privilegier utan användarens medgivande,\n"
-"eller utför skadliga processer är strängt förbjudet."
+"  eller utför skadliga processer är strängt förbjudet."
 
 #: src/views/About.vue:121
 msgid ""
@@ -249,7 +235,7 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:297
 msgid "Arch"
-msgstr ""
+msgstr "Ark"
 
 #: src/views/ManagePackage.vue:255 src/views/Package.vue:168
 msgid "Architecture"
@@ -346,7 +332,7 @@ msgstr "Välj en vårdare"
 
 #: src/views/ManageRevisions.vue:52
 msgid "Completed"
-msgstr ""
+msgstr "Slutfört"
 
 #: src/views/Package.vue:69
 msgid "Connectivity"
@@ -453,10 +439,8 @@ msgid "Feeds"
 msgstr "Flöden"
 
 #: src/views/ManageRevisions.vue:15
-#, fuzzy
-#| msgid "File Size"
 msgid "File"
-msgstr "Filstorlek"
+msgstr "Fil"
 
 #: src/views/ManageRevisions.vue:204
 msgid "File Upload"
@@ -590,9 +574,8 @@ msgid "Language"
 msgstr "Språk"
 
 #: src/views/Browse.vue:42
-#, fuzzy
 msgid "Latest Update"
-msgstr "Senaste uppdatering"
+msgstr "Senaste uppdateringen"
 
 #: src/views/Browse.vue:37
 msgid "Least Popular"
@@ -702,10 +685,8 @@ msgid "New Revision for %{name}"
 msgstr "Ny revidering för %{name}"
 
 #: src/views/ManageRevisions.vue:179
-#, fuzzy
-#| msgid "New revision for %{channel} was created!"
 msgid "New revisions for %{channel} were created!"
-msgstr "Ny revidering för %{channel} skapades!"
+msgstr "Nya revisioner för %{channel} skapades!"
 
 #: src/views/Browse.vue:40
 msgid "Newest"
@@ -725,7 +706,7 @@ msgstr "Inga appar hittades."
 
 #: src/views/Package.vue:36
 msgid "No longer available"
-msgstr ""
+msgstr "Ej tillgänglig längre"
 
 #: src/views/Manage.vue:75 src/views/Manage.vue:80
 #: src/views/ManagePackage.vue:220 src/views/Package.vue:204
@@ -753,9 +734,8 @@ msgid "Oldest"
 msgstr "Äldsta"
 
 #: src/views/Browse.vue:43
-#, fuzzy
 msgid "Oldest Update"
-msgstr "Äldsta uppdatering"
+msgstr "Äldsta uppdateringen"
 
 #: src/views/Submit.vue:52
 msgid ""
@@ -768,12 +748,13 @@ msgid ""
 "  The OpenStore team thanks you for helping us promote a better enviroment "
 "for everyone."
 msgstr ""
-"Ett av de främsta målen av OpenStore är att tillhanda hålla en trygg app "
-"butik för människor i alla åldrar.\n"
-"  För att uppnå detta mål tillåter vi inte att vissa appar blir publicerade."
+"En av de huvudsakliga målen med OpenStore är att tillhanda hålla en trygg "
+"app-butik för människor i alla åldrar.\n"
+"  För att uppnå det här målet så tillåter vi inte att vissa appar publiceras."
 "\n"
-"  Misslyckas man med att följa dessa riktlinjer blir resultat det att din "
-"app blir borttagen.\n"
+"  Misslyckas man med att följa dessa riktlinjer blir resultatet att din app "
+"tas bort.\n"
+"  Ett konto med allvarliga överträdelser kan bli föremål för uppsägning.\n"
 "  OpenStore-teamet tackar er för att ni hjälper oss att verka för en bättre "
 "miljö för alla."
 
@@ -788,16 +769,12 @@ msgstr ""
 "källkods granskning av varje manuellt granskad app."
 
 #: src/views/ManagePackage.vue:189
-#, fuzzy
-#| msgid ""
-#| "Only YouTube videos are supported at this time. Make sure the url is for "
-#| "the embedded video!"
 msgid ""
 "Only YouTube and Odysee videos are supported at this time. Make sure the url "
 "is for the embedded video!"
 msgstr ""
-"Endast Youtube videos stöds för tillfället. Säkerställ att url:en är för den "
-"inbäddade videon!"
+"Enbart YouTube och Odysee-videor stöds just den här tiden. Se till att url:"
+"en är för den inbäddade videon!"
 
 #: src/views/About.vue:41
 msgid "Open the terminal app"
@@ -833,7 +810,7 @@ msgstr "OpenStore Hemsida Bidragsgivare"
 
 #: src/views/ManagePackage.vue:218
 msgid "Override Type"
-msgstr ""
+msgstr "Typ av åsidosättning"
 
 #: src/views/ManagePackage.vue:242
 msgid "Package Info"
@@ -905,10 +882,8 @@ msgid "Push Notifications"
 msgstr "Push-meddelanden"
 
 #: src/views/Package.vue:74
-#, fuzzy
-#| msgid "Read Picture Files"
 msgid "Read Document Files"
-msgstr "Läs in Bild Filer"
+msgstr "Läs dokument-filer"
 
 #: src/views/Package.vue:81
 msgid "Read Music Files"
@@ -936,13 +911,11 @@ msgstr "Begränsade tillstånd"
 
 #: src/views/ManagePackage.vue:228
 msgid "Review Exceptions"
-msgstr ""
+msgstr "Förhandsgranska undantag"
 
 #: src/components/Reviews.vue:3
-#, fuzzy
-#| msgid "Webview"
 msgid "Reviews"
-msgstr "Webb vy"
+msgstr "Omdömen"
 
 #: src/views/ManagePackage.vue:295
 msgid "Revision"
@@ -1278,10 +1251,8 @@ msgid "Translation Languages"
 msgstr "Översättnings språk"
 
 #: src/views/ManagePackage.vue:193
-#, fuzzy
-#| msgid "Translation Languages"
 msgid "Translation URL"
-msgstr "Översättnings språk"
+msgstr "URL till översättningen"
 
 #: src/views/Package.vue:144
 msgid "Translations"
@@ -1309,7 +1280,7 @@ msgstr "Okategoriserad"
 
 #: src/views/Package.vue:199
 msgid "Unrestricted read access to:"
-msgstr ""
+msgstr "Obegränsad läs-åtkomst till:"
 
 #: src/views/Package.vue:195
 msgid "Unrestricted write access to:"
@@ -1395,7 +1366,7 @@ msgstr "Ja"
 
 #: src/views/Submit.vue:9
 msgid "You are not allowed to impersonate someone else or another app."
-msgstr ""
+msgstr "Du tillåts inte att personifiera någon annan eller en annan app."
 
 #: src/views/Submit.vue:8
 msgid ""
