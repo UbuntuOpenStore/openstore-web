@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2024-08-23 01:09+0000\n"
+"PO-Revision-Date: 2024-09-03 18:09+0000\n"
 "Last-Translator: Kristoffer Grundström <swedishsailfishosuser@tutanota.com>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/open-store-io/"
 "openstore-web/sv/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.7\n"
+"X-Generator: Weblate 5.8-dev\n"
 
 #: src/views/Package.vue:120
 msgid ""
@@ -1341,7 +1341,7 @@ msgstr "Våld"
 #: src/components/Types.vue:5 src/views/ManagePackage.vue:223
 #: src/views/Stats.vue:29
 msgid "Web App"
-msgstr "Webb App"
+msgstr "Webb-app"
 
 #: src/views/Browse.vue:28
 msgid "Web Apps"
