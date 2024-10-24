@@ -4,7 +4,7 @@ stages:
 
 test:
   stage: test
-  image: bhdouglass/openstore-ci
+  image: bhdouglass/openstore-ci:20
   before_script:
     - npm install
   script:
@@ -16,7 +16,7 @@ deploy:
   stage: deploy
   only:
     - master
-  image: bhdouglass/openstore-ci
+  image: bhdouglass/openstore-ci:20
   before_script:
     - eval $(ssh-agent -s)
     - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
@@ -34,7 +34,7 @@ deploy_staging:
   stage: deploy
   only:
     - staging
-  image: bhdouglass/openstore-ci
+  image: bhdouglass/openstore-ci:20
   before_script:
     - eval $(ssh-agent -s)
     - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
