@@ -60,7 +60,6 @@
           <select id="channel" class="p-form__control" v-model="query.channel">
             <option value="" v-translate>All Channels</option>
             <option value="focal" v-translate>Focal</option>
-            <option value="xenial" v-translate>Xenial</option>
           </select>
         </div>
       </form>

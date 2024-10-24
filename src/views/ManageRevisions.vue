@@ -25,13 +25,14 @@
           </button>
         </div>
 
-        <div class="p-form__group">
-          <label for="channel" class="p-form__label" v-translate>Channel</label>
-          <select id="channel" class="p-form__control" v-model="channel" :disabled="saving">
-            <option value="focal" v-translate>Focal</option>
-            <option value="xenial" v-translate>Xenial</option>
-          </select>
-        </div>
+        <!--
+          <div class="p-form__group">
+            <label for="channel" class="p-form__label" v-translate>Channel</label>
+            <select id="channel" class="p-form__control" v-model="channel" :disabled="saving">
+              <option value="focal" v-translate>Focal</option>
+            </select>
+          </div>
+        -->
 
         <div class="divider"></div>
 
@@ -288,11 +289,7 @@ export default {
 
         this.saving = false;
 
-        let channelText = this.$gettext('Xenial');
-        if (this.channel === 'focal') {
-          channelText = this.$gettext('Focal');
-        }
-
+        const channelText = this.$gettext('Focal');
         let message = this.$gettext(
           'New revision for %{channel} was created!',
         ).replace('%{channel}', channelText);
