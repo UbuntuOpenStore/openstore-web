@@ -1,5 +1,8 @@
 #!/bin/bash
 
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
+
 VERSION=$1
 ENV=${2:-""}
 BASE=/srv/openstore-web$ENV
