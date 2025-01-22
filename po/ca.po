@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: openstore\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2024-10-31 06:00+0000\n"
+"PO-Revision-Date: 2025-01-23 05:01+0000\n"
 "Last-Translator: Joan CiberSheep <cibersheep@gmail.com>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/open-store-io/"
 "openstore-web/ca/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.8.2-dev\n"
+"X-Generator: Weblate 5.10-dev\n"
 
 #: src/views/Package.vue:120
 msgid ""
@@ -41,7 +41,7 @@ msgstr "Quant a"
 
 #: src/App.vue:63
 msgid "About Us"
-msgstr "Sobre nosaltres"
+msgstr "Quant a nosaltres"
 
 #: src/views/Package.vue:64
 msgid "Accounts"
@@ -49,7 +49,7 @@ msgstr "Comptes"
 
 #: src/views/ManageRevisions.vue:54
 msgid "Add Another Architecture"
-msgstr "Afegeix una arquitectura noca"
+msgstr "Afegeix una arquitectura nova"
 
 #: src/views/ManagePackage.vue:56
 msgid "Admin"
