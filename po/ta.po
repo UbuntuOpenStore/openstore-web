@@ -189,7 +189,7 @@ msgstr ""
 
 #: ./src/views/Package.vue:65
 msgid "Audio"
-msgstr ""
+msgstr "ஆடியோ"
 
 #: ./src/views/Package.vue:6
 #: ./src/views/PackageVersions.vue:8
