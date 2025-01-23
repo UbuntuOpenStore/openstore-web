@@ -916,7 +916,7 @@ msgstr ""
 
 #: ./src/views/Browse.vue:33
 msgid "Sort By"
-msgstr ""
+msgstr "வரிசைப்படுத்தவும்"
 
 #: ./src/views/Package.vue:140
 msgid "Source"
