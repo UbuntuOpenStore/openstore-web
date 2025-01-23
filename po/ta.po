@@ -1136,7 +1136,7 @@ msgstr ""
 #: ./src/views/Browse.vue:23
 #: ./src/views/ManagePackage.vue:259
 msgid "Type"
-msgstr ""
+msgstr "வகை"
 
 #: ./src/views/About.vue:14
 msgid "Ubuntu Touch"
