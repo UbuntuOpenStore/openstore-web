@@ -1194,7 +1194,7 @@ msgstr ""
 
 #: ./src/views/Package.vue:92
 msgid "Video"
-msgstr ""
+msgstr "ஒளிதோற்றம்"
 
 #: ./src/views/Package.vue:91
 msgid "Video Files"
