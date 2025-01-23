@@ -234,7 +234,7 @@ msgstr ""
 
 #: ./src/views/Package.vue:67
 msgid "Calendar"
-msgstr ""
+msgstr "நாட்காட்டி"
 
 #: ./src/views/Package.vue:68
 msgid "Camera"
