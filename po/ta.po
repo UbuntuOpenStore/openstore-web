@@ -374,7 +374,7 @@ msgstr ""
 
 #: ./src/views/Package.vue:214
 msgid "Downloads of the latest version"
-msgstr ""
+msgstr "அண்மைக் கால பதிப்பின் பதிவிறக்கங்கள்"
 
 #: ./src/views/ManagePackage.vue:95
 msgid "Drag and drop to sort screenshots."
