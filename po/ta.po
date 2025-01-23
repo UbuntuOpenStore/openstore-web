@@ -1101,7 +1101,7 @@ msgstr "தலைப்பு (A-Z)"
 
 #: ./src/views/Browse.vue:39
 msgid "Title (Z-A)"
-msgstr ""
+msgstr "தலைப்பு (Z-A)"
 
 #: ./src/views/ManagePackage.vue:316
 msgid "Total"
