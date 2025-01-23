@@ -945,7 +945,7 @@ msgstr ""
 #: ./src/App.vue:23
 #: ./src/views/Submit.vue:133
 msgid "Submit"
-msgstr ""
+msgstr "சமர்ப்பிக்கவும்"
 
 #: ./src/views/Manage.vue:9
 #: ./src/views/Submit.vue:113
