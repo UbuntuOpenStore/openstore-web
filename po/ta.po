@@ -1216,7 +1216,7 @@ msgstr ""
 #: ./src/views/ManagePackage.vue:223
 #: ./src/views/Stats.vue:29
 msgid "Web App"
-msgstr ""
+msgstr "வலை பயன்பாடு"
 
 #: ./src/views/Browse.vue:28
 msgid "Web Apps"
