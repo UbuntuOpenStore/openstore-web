@@ -298,7 +298,7 @@ msgstr ""
 
 #: ./src/views/Package.vue:70
 msgid "Contacts"
-msgstr ""
+msgstr "தொடர்புகள்"
 
 #: ./src/views/Package.vue:72
 msgid "Content Exchange"
