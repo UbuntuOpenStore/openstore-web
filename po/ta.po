@@ -479,7 +479,7 @@ msgstr ""
 
 #: ./src/views/Package.vue:77
 msgid "In App Purchases"
-msgstr ""
+msgstr "பயன்பாட்டு வாங்குதல்களில்"
 
 #: ./src/views/ManagePackage.vue:53
 #: ./src/views/Package.vue:128
