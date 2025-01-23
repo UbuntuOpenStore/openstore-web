@@ -924,7 +924,7 @@ msgstr ""
 
 #: ./src/App.vue:72
 msgid "Source Code"
-msgstr ""
+msgstr "மூலக் குறியீடு"
 
 #: ./src/views/ManagePackage.vue:172
 msgid "Source URL"
