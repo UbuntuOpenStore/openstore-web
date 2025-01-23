@@ -1185,7 +1185,7 @@ msgstr ""
 
 #: ./src/views/Package.vue:89
 msgid "User Metrics"
-msgstr ""
+msgstr "பயனர் அளவீடுகள்"
 
 #: ./src/views/Manage.vue:46
 #: ./src/views/ManagePackage.vue:298
