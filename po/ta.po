@@ -421,7 +421,7 @@ msgstr ""
 
 #: ./src/views/Package.vue:94
 msgid "Full System Access"
-msgstr ""
+msgstr "முழு கணினி அணுகல்"
 
 #: ./src/views/Submit.vue:88
 msgid "Gambling"
