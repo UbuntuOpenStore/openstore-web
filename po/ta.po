@@ -687,7 +687,7 @@ msgstr ""
 
 #: ./src/views/Browse.vue:41
 msgid "Oldest"
-msgstr ""
+msgstr "பழமையானது"
 
 #: ./src/views/Browse.vue:43
 msgid "Oldest Update"
