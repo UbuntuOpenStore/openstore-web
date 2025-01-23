@@ -1198,7 +1198,7 @@ msgstr ""
 
 #: ./src/views/Package.vue:91
 msgid "Video Files"
-msgstr ""
+msgstr "வீடியோ கோப்புகள்"
 
 #: ./src/views/ManagePackage.vue:187
 msgid "Video URL"
