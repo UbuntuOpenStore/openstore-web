@@ -334,7 +334,7 @@ msgstr ""
 
 #: ./src/views/ManagePackage.vue:80
 msgid "Description"
-msgstr ""
+msgstr "விவரம்"
 
 #: ./src/views/ManagePackage.vue:50
 msgid "Discovery"
