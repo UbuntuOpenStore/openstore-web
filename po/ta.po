@@ -456,7 +456,7 @@ msgstr ""
 
 #: ./src/views/Package.vue:76
 msgid "History"
-msgstr ""
+msgstr "வரலாறு"
 
 #: ./src/views/Manage.vue:41
 msgid "Icon"
