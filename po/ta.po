@@ -244,7 +244,7 @@ msgstr "கேமரா"
 #: ./src/views/ManageRevisions.vue:71
 #: ./src/views/Submit.vue:137
 msgid "Cancel"
-msgstr ""
+msgstr "ரத்துசெய்"
 
 #: ./src/views/Browse.vue:14
 #: ./src/views/ManagePackage.vue:114
