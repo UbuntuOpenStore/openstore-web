@@ -522,7 +522,7 @@ msgstr ""
 
 #: ./src/views/Browse.vue:42
 msgid "Latest Update"
-msgstr ""
+msgstr "அண்மைக் கால புதுப்பிப்பு"
 
 #: ./src/views/Browse.vue:37
 msgid "Least Popular"
