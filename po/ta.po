@@ -830,7 +830,7 @@ msgstr "படக் கோப்புகளைப் படியுங்க�
 
 #: ./src/views/Package.vue:90
 msgid "Read Video Files"
-msgstr ""
+msgstr "வீடியோ கோப்புகளைப் படியுங்கள்"
 
 #: ./src/views/Browse.vue:35
 msgid "Relevance"
