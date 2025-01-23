@@ -306,7 +306,7 @@ msgstr ""
 
 #: ./src/views/Package.vue:71
 msgid "Content Exchange Source"
-msgstr ""
+msgstr "உள்ளடக்க பரிமாற்ற மூல"
 
 #: ./src/views/About.vue:135
 msgid "Contributors"
