@@ -1224,7 +1224,7 @@ msgstr ""
 
 #: ./src/views/Package.vue:93
 msgid "Webview"
-msgstr ""
+msgstr "வெப்வியூ"
 
 #: ./src/views/Manage.vue:4
 msgid "Welcome %{name}!"
