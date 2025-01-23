@@ -130,7 +130,7 @@ msgstr ""
 
 #: ./src/views/Browse.vue:26
 msgid "Apps"
-msgstr ""
+msgstr "பயன்பாடுகள்"
 
 #: ./src/views/Submit.vue:89
 msgid ""
