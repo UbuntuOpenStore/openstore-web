@@ -1097,7 +1097,7 @@ msgstr ""
 
 #: ./src/views/Browse.vue:38
 msgid "Title (A-Z)"
-msgstr ""
+msgstr "தலைப்பு (A-Z)"
 
 #: ./src/views/Browse.vue:39
 msgid "Title (Z-A)"
