@@ -834,7 +834,7 @@ msgstr "வீடியோ கோப்புகளைப் படியுங�
 
 #: ./src/views/Browse.vue:35
 msgid "Relevance"
-msgstr ""
+msgstr "பொருத்தமானது"
 
 #: ./src/App.vue:78
 msgid "Report an Issue"
