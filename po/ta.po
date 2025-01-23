@@ -489,7 +489,7 @@ msgstr ""
 #: ./src/views/About.vue:27
 #: ./src/views/Package.vue:38
 msgid "Install"
-msgstr ""
+msgstr "நிறுவவும்"
 
 #: ./src/views/Package.vue:61
 msgid "Install via the OpenStore app"
