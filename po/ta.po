@@ -596,7 +596,7 @@ msgstr ""
 
 #: ./src/views/Package.vue:80
 msgid "Microphone"
-msgstr ""
+msgstr "ஒலிவாங்கி"
 
 #: ./src/views/Browse.vue:36
 msgid "Most Popular"
