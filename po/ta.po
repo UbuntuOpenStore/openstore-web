@@ -616,7 +616,7 @@ msgstr ""
 
 #: ./src/views/Package.vue:84
 msgid "Networking"
-msgstr ""
+msgstr "நெட்வொர்க்கிங்"
 
 #: ./src/views/Feeds.vue:6
 msgid "New Apps"
