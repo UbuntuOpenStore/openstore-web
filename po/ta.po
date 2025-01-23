@@ -505,7 +505,7 @@ msgstr ""
 
 #: ./src/views/Package.vue:78
 msgid "Keep Display On"
-msgstr ""
+msgstr "காட்சியைத் தொடருங்கள்"
 
 #: ./src/views/Manage.vue:17
 msgid "Keep your api key private!"
