@@ -896,7 +896,7 @@ msgstr ""
 
 #: ./src/views/Package.vue:88
 msgid "Sensors"
-msgstr ""
+msgstr "சென்சார்கள்"
 
 #: ./src/views/Submit.vue:66
 msgid "Sexually Explicit Content"
