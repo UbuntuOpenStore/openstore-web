@@ -302,7 +302,7 @@ msgstr "தொடர்புகள்"
 
 #: ./src/views/Package.vue:72
 msgid "Content Exchange"
-msgstr ""
+msgstr "உள்ளடக்க பரிமாற்றம்"
 
 #: ./src/views/Package.vue:71
 msgid "Content Exchange Source"
