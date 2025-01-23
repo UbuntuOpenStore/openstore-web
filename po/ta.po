@@ -822,7 +822,7 @@ msgstr ""
 
 #: ./src/views/Package.vue:81
 msgid "Read Music Files"
-msgstr ""
+msgstr "இசை கோப்புகளைப் படியுங்கள்"
 
 #: ./src/views/Package.vue:85
 msgid "Read Picture Files"
