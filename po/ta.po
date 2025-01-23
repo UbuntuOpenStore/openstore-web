@@ -532,7 +532,7 @@ msgstr ""
 #: ./src/views/ManagePackage.vue:139
 #: ./src/views/Package.vue:148
 msgid "License"
-msgstr ""
+msgstr "உரிமம்"
 
 #: ./src/views/Package.vue:79
 msgid "Location"
