@@ -526,7 +526,7 @@ msgstr ""
 
 #: ./src/views/Browse.vue:37
 msgid "Least Popular"
-msgstr ""
+msgstr "குறைந்தது பிரபலமானது"
 
 #: ./src/views/About.vue:69
 #: ./src/views/ManagePackage.vue:139
