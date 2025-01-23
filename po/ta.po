@@ -763,7 +763,7 @@ msgstr "அனுமதிகள்"
 
 #: ./src/views/Package.vue:86
 msgid "Picture Files"
-msgstr ""
+msgstr "படக் கோப்புகள்"
 
 #: ./src/views/ManagePackage.vue:47
 msgid "Presentation"
