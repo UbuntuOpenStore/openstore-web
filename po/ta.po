@@ -759,7 +759,7 @@ msgstr ""
 #: ./src/views/Package.vue:86
 #: ./src/views/Package.vue:190
 msgid "Permissions"
-msgstr ""
+msgstr "அனுமதிகள்"
 
 #: ./src/views/Package.vue:86
 msgid "Picture Files"
