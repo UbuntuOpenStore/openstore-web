@@ -642,7 +642,7 @@ msgstr ""
 
 #: ./src/views/Browse.vue:40
 msgid "Newest"
-msgstr ""
+msgstr "புதியது"
 
 #: ./src/views/Package.vue:83
 msgid "NFC"
