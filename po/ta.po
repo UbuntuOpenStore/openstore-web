@@ -208,7 +208,7 @@ msgstr ""
 
 #: ./src/views/Package.vue:66
 msgid "Bluetooth"
-msgstr ""
+msgstr "ஊடலை"
 
 #: ./src/components/Types.vue:4
 #: ./src/views/ManagePackage.vue:222
