@@ -600,7 +600,7 @@ msgstr "ஒலிவாங்கி"
 
 #: ./src/views/Browse.vue:36
 msgid "Most Popular"
-msgstr ""
+msgstr "மிகவும் பிரபலமானது"
 
 #: ./src/views/Package.vue:82
 msgid "Music Files"
