@@ -218,7 +218,7 @@ msgstr "புத்தககுறி"
 
 #: ./src/views/Browse.vue:27
 msgid "Bookmarks"
-msgstr ""
+msgstr "புக்மார்க்குகள்"
 
 #: ./src/App.vue:26
 msgid "Browse"
