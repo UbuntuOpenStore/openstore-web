@@ -888,7 +888,7 @@ msgstr ""
 #: ./src/views/Browse.vue:9
 #: ./src/views/Manage.vue:25
 msgid "Search"
-msgstr ""
+msgstr "தேடல்"
 
 #: ./src/views/Submit.vue:28
 msgid "Send us a link to a repository for your app to our telegram group along with some instructions on how to build it."
