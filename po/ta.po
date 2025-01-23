@@ -536,7 +536,7 @@ msgstr "உரிமம்"
 
 #: ./src/views/Package.vue:79
 msgid "Location"
-msgstr ""
+msgstr "இடம்"
 
 #: ./src/views/ManagePackage.vue:201
 msgid "Locked"
