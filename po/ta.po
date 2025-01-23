@@ -39,7 +39,7 @@ msgstr ""
 
 #: ./src/views/Package.vue:64
 msgid "Accounts"
-msgstr ""
+msgstr "கணக்குகள்"
 
 #: ./src/views/ManageRevisions.vue:54
 msgid "Add Another Architecture"
