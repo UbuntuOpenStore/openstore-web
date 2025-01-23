@@ -238,7 +238,7 @@ msgstr "நாட்காட்டி"
 
 #: ./src/views/Package.vue:68
 msgid "Camera"
-msgstr ""
+msgstr "கேமரா"
 
 #: ./src/views/ManagePackage.vue:345
 #: ./src/views/ManageRevisions.vue:71
