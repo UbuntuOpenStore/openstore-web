@@ -1109,7 +1109,7 @@ msgstr ""
 
 #: ./src/views/Package.vue:219
 msgid "Total downloads"
-msgstr ""
+msgstr "மொத்த பதிவிறக்கங்கள்"
 
 #: ./src/views/Manage.vue:73
 msgid "Total:"
