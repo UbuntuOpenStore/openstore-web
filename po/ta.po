@@ -604,7 +604,7 @@ msgstr ""
 
 #: ./src/views/Package.vue:82
 msgid "Music Files"
-msgstr ""
+msgstr "இசை கோப்புகள்"
 
 #: ./src/views/Manage.vue:42
 msgid "Name"
