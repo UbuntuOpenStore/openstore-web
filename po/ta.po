@@ -59,7 +59,7 @@ msgstr ""
 
 #: ./src/views/Browse.vue:25
 msgid "All Types"
-msgstr ""
+msgstr "அனைத்து வகைகளும்"
 
 #: ./src/views/Login.vue:26
 msgid "An account is not needed to download or install apps."
