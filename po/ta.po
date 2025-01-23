@@ -290,7 +290,7 @@ msgstr ""
 
 #: ./src/views/Package.vue:69
 msgid "Connectivity"
-msgstr ""
+msgstr "இணைப்பு"
 
 #: ./src/views/About.vue:50
 msgid "Contact"
