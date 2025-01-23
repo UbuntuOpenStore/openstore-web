@@ -214,7 +214,7 @@ msgstr ""
 #: ./src/views/ManagePackage.vue:222
 #: ./src/views/Stats.vue:28
 msgid "Bookmark"
-msgstr ""
+msgstr "புத்தககுறி"
 
 #: ./src/views/Browse.vue:27
 msgid "Bookmarks"
