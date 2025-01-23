@@ -194,7 +194,7 @@ msgstr "ஆடியோ"
 #: ./src/views/Package.vue:6
 #: ./src/views/PackageVersions.vue:8
 msgid "Back"
-msgstr ""
+msgstr "பின்"
 
 #: ./src/views/Badge.vue:10
 #: ./src/views/Badge.vue:14
