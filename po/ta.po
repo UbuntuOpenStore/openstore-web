@@ -826,7 +826,7 @@ msgstr "இசை கோப்புகளைப் படியுங்கள�
 
 #: ./src/views/Package.vue:85
 msgid "Read Picture Files"
-msgstr ""
+msgstr "படக் கோப்புகளைப் படியுங்கள்"
 
 #: ./src/views/Package.vue:90
 msgid "Read Video Files"
