@@ -1,9 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
+"PO-Revision-Date: 2025-01-31 09:02+0000\n"
+"Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
+"Language-Team: Finnish <https://hosted.weblate.org/projects/open-store-io/"
+"openstore-web/fi/>\n"
 "Language: fi\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10-dev\n"
 "Generated-By: easygettext\n"
 
 #: src/views/Package.vue:120
@@ -11,65 +17,69 @@ msgid ""
 "*This app contains NSFW content, to view the description and\n"
 "screenshots, click the above button."
 msgstr ""
+"*Tämä sovellus sisältää NSFW-sisältöä. Näet kuvauksen ja\n"
+"kuvakaappaukset napsauttamalla yllä olevaa painiketta."
 
 #: src/views/ManagePackage.vue:231
 msgid "%{name} was successfully deleted"
-msgstr ""
+msgstr "%{name} poistettiin onnistuneesti"
 
 #: src/views/ManagePackage.vue:125
 msgid "A comma separated list of keywords"
-msgstr ""
+msgstr "Pilkuilla eroteltu avainsanaluettelo"
 
 #: src/App.vue:29 src/views/About.vue:3 src/views/About.vue:12
 #: src/views/About.vue:16
 msgid "About"
-msgstr ""
+msgstr "Tietoja"
 
 #: src/App.vue:63
 msgid "About Us"
-msgstr ""
+msgstr "Tietoja meistä"
 
 #: src/views/Package.vue:64
 msgid "Accounts"
-msgstr ""
+msgstr "Tilit"
 
 #: src/views/ManageRevisions.vue:54
 msgid "Add Another Architecture"
-msgstr ""
+msgstr "Lisää toinen arkkitehtuuri"
 
 #: src/views/ManagePackage.vue:56
 msgid "Admin"
-msgstr ""
+msgstr "Järjestelmänvalvoja"
 
 #: src/views/Browse.vue:16
 msgid "All Categories"
-msgstr ""
+msgstr "Kaikki luokat"
 
 #: src/views/Browse.vue:50
 msgid "All Channels"
-msgstr ""
+msgstr "Kaikki kanavat"
 
 #: src/views/Browse.vue:25
 msgid "All Types"
-msgstr ""
+msgstr "Kaikki tyypit"
 
 #: src/views/Login.vue:26
 msgid "An account is not needed to download or install apps."
-msgstr ""
+msgstr "Tiliä ei tarvita sovellusten lataamiseen tai asentamiseen."
 
 #: src/views/ManagePackage.vue:87 src/views/ManagePackage.vue:100
 #: src/views/ManageRevisions.vue:78
 msgid "An error occured loading your app data"
-msgstr ""
+msgstr "Sovellustietojesi lataamisessa tapahtui virhe"
 
 #: src/views/ManageRevisions.vue:140 src/views/Submit.vue:47
 msgid "An unknown error has occurred"
-msgstr ""
+msgstr "Tapahtui tuntematon virhe"
 
 #: src/views/About.vue:151
 msgid ""
 "And many amazing developers, testers, and users from the OpenStore community!"
 msgstr ""
+"Ja monia uskomattomia kehittäjiä, testaajia ja käyttäjiä OpenStore-"
+"yhteisöstä!"
 
 #: src/views/About.vue:113
 msgid ""
@@ -81,47 +91,57 @@ msgid ""
 "contact you in the event there is an issue with your app.\n"
 "Additionally, this site uses cookies to keep you logged in to your account."
 msgstr ""
+"Henkilötiedot, jotka päätät antaa meille (esim. sähköpostiosoitteesi "
+"rekisteröityessäsi tilille sovellusten lataamista varten),\n"
+"eivät mene pidemmälle kuin me,\n"
+"eikä niitä käytetä muuhun tarkoitukseen kuin sovellustesi ylläpitoon ja "
+"harvoissa tapauksissa\n"
+"ottaa sinuun yhteyttä, jos sovelluksessasi on ongelma.\n"
+"Lisäksi tämä sivusto käyttää evästeitä pitääkseen sinut kirjautuneena "
+"tilillesi."
 
 #: src/views/Manage.vue:13
 msgid "API Key"
-msgstr ""
+msgstr "Sovellusliittymäavain"
 
 #: src/components/Types.vue:3 src/views/Manage.vue:43
 #: src/views/ManagePackage.vue:221 src/views/Stats.vue:27
 msgid "App"
-msgstr ""
+msgstr "Sovellus"
 
 #: src/views/Submit.vue:85
 msgid "App containing or promoting any of the above are strictly prohibited."
 msgstr ""
+"Sovellukset, jotka sisältävät tai mainostavat mitä tahansa edellä "
+"mainituista, ovat ehdottomasti kiellettyjä."
 
 #: src/views/Submit.vue:117
 msgid "App Name"
-msgstr ""
+msgstr "Sovelluksen nimi"
 
 #: src/App.vue:69
 msgid "App Stats"
-msgstr ""
+msgstr "Sovelluksen tilastot"
 
 #: src/views/About.vue:131
 msgid "App Submission Tutorial"
-msgstr ""
+msgstr "Sovelluksen lähettämisen opastus"
 
 #: src/views/Submit.vue:128
 msgid "App Title"
-msgstr ""
+msgstr "Sovelluksen otsikko"
 
 #: src/views/Stats.vue:17
 msgid "App Type"
-msgstr ""
+msgstr "Sovelluksen tyyppi"
 
 #: src/views/Stats.vue:13
 msgid "App Types"
-msgstr ""
+msgstr "Sovelluksen tyypit"
 
 #: src/views/Browse.vue:26
 msgid "Apps"
-msgstr ""
+msgstr "Sovellukset"
 
 #: src/views/Submit.vue:89
 msgid ""
@@ -130,12 +150,18 @@ msgid ""
 "  This includes, but is not limited to, online casinos, betting, and "
 "lotteries."
 msgstr ""
+"Sovellukset, jotka sisältävät uhkapelejä, joihin liittyy tosielämän "
+"rahansiirtoja, eivät ole sallittuja.\n"
+" Tämä sisältää, mutta ei rajoittuen, online-kasinot, vedonlyönnin ja "
+"arpajaiset."
 
 #: src/views/Submit.vue:74
 msgid ""
 "Apps containing or promoting child abuse or child sexual abuse are strictly "
 "prohibited."
 msgstr ""
+"Sovellukset, jotka sisältävät tai edistävät lasten hyväksikäyttöä tai lasten "
+"seksuaalista hyväksikäyttöä, ovat ehdottomasti kiellettyjä."
 
 #: src/views/Submit.vue:78
 msgid ""
@@ -143,6 +169,10 @@ msgid ""
 "  This includes, but is not limited to, violence, terrorism, bomb/weapon "
 "making, self harm, and grotesque imagery."
 msgstr ""
+"Sovellukset, jotka sisältävät tarpeetonta väkivaltaa tai edistävät sitä, "
+"eivät ole sallittuja.\n"
+" Näitä ovat muun muassa väkivalta, terrorismi, pommien/aseiden valmistus, "
+"itsensä vahingoittaminen ja groteski kuvamateriaali."
 
 #: src/views/Submit.vue:67
 msgid ""
@@ -150,22 +180,32 @@ msgid ""
 "  This includes, but is not limited to, pornography and services promoting "
 "sexually explicit content."
 msgstr ""
+"Sovellukset, jotka sisältävät seksuaalista sisältöä tai mainostavat sitä, "
+"eivät ole sallittuja.\n"
+" Tämä sisältää, mutta ei rajoittuen, pornografian ja palvelut, jotka "
+"edistävät seksuaalista sisältöä."
 
 #: src/views/Submit.vue:7
 msgid ""
 "Apps not requiring manual review can be submitted by logging in with the "
 "\"Log In\" link above."
 msgstr ""
+"Sovellukset, jotka eivät vaadi manuaalista arviointia, voidaan lähettää "
+"kirjautumalla sisään yllä olevan \"Kirjaudu sisään\" -linkin kautta."
 
 #: src/views/Submit.vue:96
 msgid "Apps promoting illegal activities (based on USA law) are not allowed."
 msgstr ""
+"Sovellukset, jotka edistävät laitonta toimintaa (Yhdysvaltojen lakien "
+"perusteella), eivät ole sallittuja."
 
 #: src/views/Submit.vue:15
 msgid ""
 "Apps requiring manual review must be submitted by contacting an admin in our "
 "telegram group."
 msgstr ""
+"Manuaalista arviointia vaativat sovellukset tulee lähettää ottamalla "
+"yhteyttä sähkeryhmämme järjestelmänvalvojaan."
 
 #: src/views/Submit.vue:100
 msgid ""
@@ -173,6 +213,9 @@ msgid ""
 "privileges without user consent,\n"
 "  or executing malicious process are strictly prohibited."
 msgstr ""
+"Sovellukset, joiden havaitaan varastavan käyttäjien tietoja, yrittävän "
+"laajentaa heidän oikeuksiaan ilman käyttäjän lupaa\n"
+" tai suorittaa haitallisia prosesseja, ovat ehdottomasti kiellettyjä."
 
 #: src/views/About.vue:121
 msgid ""
@@ -180,219 +223,222 @@ msgid ""
 "content policy.\n"
 "You can review the rules and policies before uploading your app."
 msgstr ""
+"OpenStoreen ladattuihin sovelluksiin sovelletaan lähetyssääntöjämme ja "
+"sisältökäytäntöämme.\n"
+"Voit tutustua sääntöihin ja käytäntöihin ennen sovelluksen uloslataamista."
 
 #: src/views/ManagePackage.vue:297
 msgid "Arch"
-msgstr ""
+msgstr "Arkkitehtuuri"
 
 #: src/views/ManagePackage.vue:255 src/views/Package.vue:168
 msgid "Architecture"
-msgstr ""
+msgstr "Arkkitehtuuri"
 
 #: src/views/Package.vue:65
 msgid "Audio"
-msgstr ""
+msgstr "Audio"
 
 #: src/views/Package.vue:6 src/views/PackageVersions.vue:8
 msgid "Back"
-msgstr ""
+msgstr "Takaisin"
 
 #: src/views/Badge.vue:10 src/views/Badge.vue:14 src/views/ManagePackage.vue:62
 msgid "Badge"
-msgstr ""
+msgstr "Kunniamerkki"
 
 #: src/views/About.vue:18
 msgid "Badges"
-msgstr ""
+msgstr "Kunniamerkit"
 
 #: src/views/Package.vue:66
 msgid "Bluetooth"
-msgstr ""
+msgstr "Bluetooth"
 
 #: src/components/Types.vue:4 src/views/ManagePackage.vue:222
 #: src/views/Stats.vue:28
 msgid "Bookmark"
-msgstr ""
+msgstr "Kirjanmerkki"
 
 #: src/views/Browse.vue:27
 msgid "Bookmarks"
-msgstr ""
+msgstr "Kirjanmerkit"
 
 #: src/App.vue:26
 msgid "Browse"
-msgstr ""
+msgstr "Selaa"
 
 #: src/views/Browse.vue:27
 msgid "Browse Apps"
-msgstr ""
+msgstr "Selaa sovelluksia"
 
 #: src/views/About.vue:65
 msgid "Bug Tracker"
-msgstr ""
+msgstr "Vianseuranta"
 
 #: src/views/Package.vue:67
 msgid "Calendar"
-msgstr ""
+msgstr "Kalenteri"
 
 #: src/views/Package.vue:68
 msgid "Camera"
-msgstr ""
+msgstr "Kamera"
 
 #: src/views/ManagePackage.vue:345 src/views/ManageRevisions.vue:71
 #: src/views/Submit.vue:137
 msgid "Cancel"
-msgstr ""
+msgstr "Peruuta"
 
 #: src/views/Browse.vue:14 src/views/ManagePackage.vue:114
 #: src/views/Package.vue:153
 msgid "Category"
-msgstr ""
+msgstr "Luokka"
 
 #: src/views/ManagePackage.vue:85 src/views/ManageRevisions.vue:61
 #: src/views/Package.vue:183
 msgid "Changelog"
-msgstr ""
+msgstr "Muutosloki"
 
 #: src/views/Browse.vue:48 src/views/ManagePackage.vue:296
 #: src/views/ManageRevisions.vue:21
 msgid "Channel"
-msgstr ""
+msgstr "Kanava"
 
 #: src/views/ManagePackage.vue:263
 msgid "Channels"
-msgstr ""
+msgstr "Kanavat"
 
 #: src/views/Submit.vue:73
 msgid "Child Endangerment"
-msgstr ""
+msgstr "Lapsille vaarantaminen"
 
 #: src/views/ManagePackage.vue:116
 msgid "Choose a category"
-msgstr ""
+msgstr "Valitse luokka"
 
 #: src/views/ManagePackage.vue:141
 msgid "Choose a license"
-msgstr ""
+msgstr "Valitse lisenssi"
 
 #: src/views/ManagePackage.vue:212
 msgid "Choose a maintainer"
-msgstr ""
+msgstr "Valitse ylläpitäjä"
 
 #: src/views/ManageRevisions.vue:52
 msgid "Completed"
-msgstr ""
+msgstr "Valmiina"
 
 #: src/views/Package.vue:69
 msgid "Connectivity"
-msgstr ""
+msgstr "Liitettävyys"
 
 #: src/views/About.vue:50
 msgid "Contact"
-msgstr ""
+msgstr "Yhteyshenkilö"
 
 #: src/views/Package.vue:70
 msgid "Contacts"
-msgstr ""
+msgstr "Yhteyshenkilöt"
 
 #: src/views/Package.vue:72
 msgid "Content Exchange"
-msgstr ""
+msgstr "Sisällönvaihto"
 
 #: src/views/Package.vue:71
 msgid "Content Exchange Source"
-msgstr ""
+msgstr "Sisällönvaihdon lähde"
 
 #: src/views/About.vue:135
 msgid "Contributors"
-msgstr ""
+msgstr "Osallistujat"
 
 #: src/components/CopyLine.vue:3
 msgid "Copy to clipboard"
-msgstr ""
+msgstr "Kopioi leikepöydälle"
 
 #: src/views/Stats.vue:18
 msgid "Count"
-msgstr ""
+msgstr "Laske"
 
 #: src/views/ManageRevisions.vue:67
 msgid "Create"
-msgstr ""
+msgstr "Luo"
 
 #: src/views/Package.vue:73
 msgid "Debug"
-msgstr ""
+msgstr "Suorita viankorjaus"
 
 #: src/views/ManagePackage.vue:341
 msgid "Delete"
-msgstr ""
+msgstr "Poista"
 
 #: src/views/ManagePackage.vue:80
 msgid "Description"
-msgstr ""
+msgstr "Kuvaus"
 
 #: src/views/ManagePackage.vue:50
 msgid "Discovery"
-msgstr ""
+msgstr "Tutustuminen"
 
 #: src/views/Package.vue:75
 msgid "Document Files"
-msgstr ""
+msgstr "Asiakirjatiedostot"
 
 #: src/App.vue:84 src/views/Package.vue:95
 msgid "Donate"
-msgstr ""
+msgstr "Lahjoita"
 
 #: src/views/ManagePackage.vue:182
 msgid "Donate URL"
-msgstr ""
+msgstr "Lahjoitus-URL-osoite"
 
 #: src/views/Package.vue:42 src/views/Package.vue:50
 msgid "Download"
-msgstr ""
+msgstr "Lataa"
 
 #: src/views/ManagePackage.vue:289
 msgid "Download Stats"
-msgstr ""
+msgstr "Lataa tilastot"
 
 #: src/views/About.vue:39
 msgid "Download the OpenStore App"
-msgstr ""
+msgstr "Lataa OpenStore-sovellus"
 
 #: src/views/Manage.vue:47 src/views/Manage.vue:63
 #: src/views/ManagePackage.vue:299
 msgid "Downloads"
-msgstr ""
+msgstr "Lataukset"
 
 #: src/views/Package.vue:214
 msgid "Downloads of the latest version"
-msgstr ""
+msgstr "Uusimman version lataukset"
 
 #: src/views/ManagePackage.vue:95
 msgid "Drag and drop to sort screenshots."
-msgstr ""
+msgstr "Vedä ja pudota lajitellaksesi kuvakaappauksia."
 
 #: src/views/ManagePackage.vue:14
 msgid "Edit"
-msgstr ""
+msgstr "Muokkaa"
 
 #: src/views/ManagePackage.vue:87 src/views/ManagePackage.vue:100
 #: src/views/ManagePackage.vue:218 src/views/ManagePackage.vue:249
 #: src/views/ManageRevisions.vue:78 src/views/ManageRevisions.vue:161
 #: src/views/Submit.vue:58
 msgid "Error"
-msgstr ""
+msgstr "Virhe"
 
 #: src/views/Feeds.vue:7 src/views/Feeds.vue:11
 msgid "Feeds"
-msgstr ""
+msgstr "Syötteet"
 
 #: src/views/ManageRevisions.vue:15
 msgid "File"
-msgstr ""
+msgstr "Tiedosto"
 
 #: src/views/ManageRevisions.vue:204
 msgid "File Upload"
-msgstr ""
+msgstr "Tiedoston uloslataus"
 
 #: src/views/Browse.vue:52 src/views/ManageRevisions.vue:24
 #: src/views/ManageRevisions.vue:172
@@ -406,18 +452,22 @@ msgid ""
 "You can also submit issues, bugs, and feature requests to our GitLab bug "
 "tracker."
 msgstr ""
+"Jos sinulla on kysyttävää tai tarvitset apua, voit vain keskustella "
+"kanssamme sähkeryhmässämme.\n"
+"Voit myös lähettää ongelmia, bugeja ja ominaisuuspyyntöjä GitLabin "
+"vianseurantaan."
 
 #: src/views/Package.vue:94
 msgid "Full System Access"
-msgstr ""
+msgstr "Täysi järjestelmän käyttöoikeus"
 
 #: src/views/Submit.vue:88
 msgid "Gambling"
-msgstr ""
+msgstr "Uhkapelaaminen"
 
 #: src/views/About.vue:23
 msgid "Get your badge"
-msgstr ""
+msgstr "Hanki kunniamerkkisi"
 
 #: src/views/Submit.vue:30
 msgid ""
@@ -427,34 +477,38 @@ msgid ""
 "background\" will do.\n"
 "List all the special features you have, if there are more."
 msgstr ""
+"Anna lyhyt selitys, miksi et voi julkaista sovellusta ilman lisäoikeuksia.\n"
+"Ei tarvitse mennä yksityiskohtiin, yksi liner, kuten "
+"\"täytyy ajaa daemon taustalla\", riittää.\n"
+"Luettele kaikki erikoisominaisuudet, joita sinulla on, jos niitä on enemmän."
 
 #: src/components/Pagination.vue:7
 msgid "Go back a page"
-msgstr ""
+msgstr "Palaa sivulle"
 
 #: src/components/Pagination.vue:8
 msgid "Go to the next page"
-msgstr ""
+msgstr "Siirry seuraavalle sivulle"
 
 #: src/views/About.vue:77
 msgid "GPL v3 License"
-msgstr ""
+msgstr "GPL v3 -lisenssi"
 
 #: src/views/Submit.vue:84
 msgid "Harassment, Bullying, or Hate Speech"
-msgstr ""
+msgstr "Häirintä, kiusaaminen tai vihapuhe"
 
 #: src/views/Package.vue:76
 msgid "History"
-msgstr ""
+msgstr "Historia"
 
 #: src/views/Manage.vue:41
 msgid "Icon"
-msgstr ""
+msgstr "Kuvake"
 
 #: src/views/ManagePackage.vue:247
 msgid "ID"
-msgstr ""
+msgstr "Tunnus"
 
 #: src/views/Submit.vue:35
 msgid ""
@@ -463,214 +517,218 @@ msgid ""
 "publish a stripped down version!\n"
 "Not everyone will want to install apps with less confinement."
 msgstr ""
+"Jos sovellus voitaisiin julkaista ilman manuaalista arviointia, jos se ei "
+"olisi tätä hienoa ominaisuutta,\n"
+"julkaise riisuttu versio!\n"
+"Kaikki eivät halua asentaa sovelluksia vähemmän rajoituksin."
 
 #: src/views/Submit.vue:95
 msgid "Illegal Activities"
-msgstr ""
+msgstr "Laittomat toimet"
 
 #: src/views/Package.vue:77
 msgid "In App Purchases"
-msgstr ""
+msgstr "Sovelluksen sisäiset ostokset"
 
 #: src/views/ManagePackage.vue:53 src/views/Package.vue:128
 msgid "Info"
-msgstr ""
+msgstr "Tietoa"
 
 #: src/views/About.vue:27 src/views/Package.vue:38
 msgid "Install"
-msgstr ""
+msgstr "Asenna"
 
 #: src/views/Package.vue:61
 msgid "Install via the OpenStore app"
-msgstr ""
+msgstr "Asenna OpenStore-sovelluksen kautta"
 
 #: src/components/Pagination.vue:6
 msgid "Jump to the first page"
-msgstr ""
+msgstr "Hyppää ensimmäiselle sivulle"
 
 #: src/components/Pagination.vue:9
 msgid "Jump to the last page"
-msgstr ""
+msgstr "Hyppää viimeiselle sivulle"
 
 #: src/views/Package.vue:78
 msgid "Keep Display On"
-msgstr ""
+msgstr "Pidä näyttö päällä"
 
 #: src/views/Manage.vue:17
 msgid "Keep your api key private!"
-msgstr ""
+msgstr "Pidä API-avaimesi yksityisenä!"
 
 #: src/views/ManagePackage.vue:123
 msgid "Keywords"
-msgstr ""
+msgstr "Avainsanat"
 
 #: src/App.vue:55 src/components/BadgeSelect.vue:4
 msgid "Language"
-msgstr ""
+msgstr "Kieli"
 
 #: src/views/Browse.vue:42
 msgid "Latest Update"
-msgstr ""
+msgstr "Uusin päivitys"
 
 #: src/views/Browse.vue:37
 msgid "Least Popular"
-msgstr ""
+msgstr "Vähiten suosittu"
 
 #: src/views/About.vue:69 src/views/ManagePackage.vue:139
 #: src/views/Package.vue:148
 msgid "License"
-msgstr ""
+msgstr "Lisenssi"
 
 #: src/views/Package.vue:79
 msgid "Location"
-msgstr ""
+msgstr "Sijainti"
 
 #: src/views/ManagePackage.vue:201
 msgid "Locked"
-msgstr ""
+msgstr "Lukittu"
 
 #: src/App.vue:32
 msgid "Log In"
-msgstr ""
+msgstr "Kirjaudu sisään"
 
 #: src/views/Login.vue:24
 msgid "Log in to the OpenStore to be able to manage your apps."
-msgstr ""
+msgstr "Kirjaudu OpenStoreen hallitaksesi sovelluksiasi."
 
 #: src/App.vue:38
 msgid "Log Out"
-msgstr ""
+msgstr "Kirjaudu ulos"
 
 #: src/views/Login.vue:7 src/views/Login.vue:11
 msgid "Login"
-msgstr ""
+msgstr "Sisäänkirjautuminen"
 
 #: src/views/Submit.vue:111
 msgid "Login to submit your app"
-msgstr ""
+msgstr "Kirjaudu sisään lähettääksesi sovelluksesi"
 
 #: src/views/Login.vue:7
 msgid "Login via GitHub"
-msgstr ""
+msgstr "Sisäänkirjautuminen GitHubin kautta"
 
 #: src/views/Login.vue:12
 msgid "Login via GitLab"
-msgstr ""
+msgstr "Sisäänkirjautuminen GitLabin kautta"
 
 #: src/views/Login.vue:18
 msgid "Login via Ubuntu One"
-msgstr ""
+msgstr "Sisäänkirjautuminen Ubuntu Onen kautta"
 
 #: src/views/ManagePackage.vue:210
 msgid "Maintainer"
-msgstr ""
+msgstr "Ylläpitäjä"
 
 #: src/views/Submit.vue:99
 msgid "Malware"
-msgstr ""
+msgstr "Haittaohjelma"
 
 #: src/App.vue:35 src/views/Manage.vue:20 src/views/ManagePackage.vue:16
 #: src/views/ManagePackage.vue:18
 msgid "Manage"
-msgstr ""
+msgstr "Hallinnoi"
 
 #: src/views/Manage.vue:16
 msgid "Manage Apps"
-msgstr ""
+msgstr "Hallinnoi sovelluksia"
 
 #: src/views/Package.vue:80
 msgid "Microphone"
-msgstr ""
+msgstr "Mikrofoni"
 
 #: src/views/Browse.vue:36
 msgid "Most Popular"
-msgstr ""
+msgstr "Suosituimmat"
 
 #: src/views/Package.vue:82
 msgid "Music Files"
-msgstr ""
+msgstr "Musiikkitiedostot"
 
 #: src/views/Manage.vue:42
 msgid "Name"
-msgstr ""
+msgstr "Nimi"
 
 #: src/views/About.vue:42
 msgid "Navigate to the downloads folder"
-msgstr ""
+msgstr "Siirry latauskansioon"
 
 #: src/views/Package.vue:84
 msgid "Networking"
-msgstr ""
+msgstr "Verkostoituminen"
 
 #: src/views/Feeds.vue:6
 msgid "New Apps"
-msgstr ""
+msgstr "Uudet sovellukset"
 
 #: src/views/ManagePackage.vue:41 src/views/ManageRevisions.vue:23
 #: src/views/ManageRevisions.vue:25
 msgid "New Revision"
-msgstr ""
+msgstr "Uusi tarkistus"
 
 #: src/views/ManageRevisions.vue:175
 msgid "New revision for %{channel} was created!"
-msgstr ""
+msgstr "Uusi tarkistus %{channel}:lle luotiin!"
 
 #: src/views/ManageRevisions.vue:8
 msgid "New Revision for %{name}"
-msgstr ""
+msgstr "Uusi tarkistus %{name}:lle"
 
 #: src/views/ManageRevisions.vue:179
 msgid "New revisions for %{channel} were created!"
-msgstr ""
+msgstr "Uudet tarkistukset %{channel}:lle luotiin!"
 
 #: src/views/Browse.vue:40
 msgid "Newest"
-msgstr ""
+msgstr "Uusin"
 
 #: src/views/Package.vue:83
 msgid "NFC"
-msgstr ""
+msgstr "Near Field Communication (NFC)"
 
 #: src/views/ManagePackage.vue:36 src/views/ManagePackage.vue:204
 msgid "No"
-msgstr ""
+msgstr "Ei"
 
 #: src/views/Browse.vue:96 src/views/Manage.vue:88
 msgid "No apps found."
-msgstr ""
+msgstr "Sovelluksia ei löytynyt."
 
 #: src/views/Package.vue:36
 msgid "No longer available"
-msgstr ""
+msgstr "Ei enää saatavilla"
 
 #: src/views/Manage.vue:75 src/views/Manage.vue:80
 #: src/views/ManagePackage.vue:220 src/views/Package.vue:204
 msgid "None"
-msgstr ""
+msgstr "Ei mitään"
 
 #: src/views/Manage.vue:69
 msgid "Not published"
-msgstr ""
+msgstr "Ei julkaistu"
 
 #: src/views/ManagePackage.vue:129
 msgid "NSFW"
-msgstr ""
+msgstr "NSFW"
 
 #: src/views/Browse.vue:89
 msgid "NSFW content"
-msgstr ""
+msgstr "NSFW-sisältö"
 
 #: src/views/Package.vue:56
 msgid "Older Versions"
-msgstr ""
+msgstr "Vanhemmat versiot"
 
 #: src/views/Browse.vue:41
 msgid "Oldest"
-msgstr ""
+msgstr "Vanhin"
 
 #: src/views/Browse.vue:43
 msgid "Oldest Update"
-msgstr ""
+msgstr "Vanhin päivitys"
 
 #: src/views/Submit.vue:52
 msgid ""
@@ -683,6 +741,14 @@ msgid ""
 "  The OpenStore team thanks you for helping us promote a better enviroment "
 "for everyone."
 msgstr ""
+"Yksi OpenStoren päätavoitteista on tarjota turvallinen sovelluskauppa kaiken "
+"ikäisille.\n"
+" Tämän tavoitteen saavuttamiseksi emme salli tietyntyyppisten sovellusten "
+"julkaisemista.\n"
+" Ohjeiden noudattamatta jättäminen johtaa sovelluksesi poistamiseen.\n"
+" Mikä tahansa tili, jolla on vakavia rikkomuksia, voidaan sulkea.\n"
+" OpenStore-tiimi kiittää sinua, kun autat meitä edistämään parempaa "
+"ympäristöä kaikille."
 
 #: src/views/Submit.vue:40
 msgid ""
@@ -690,80 +756,85 @@ msgid ""
 "As the applications might have arbitrary access to the device, every "
 "manually reviewed app will get a source code review."
 msgstr ""
+"Vain avoimen lähdekoodin sovellukset sallitaan manuaaliseen arviointiin:\n"
+"Koska sovelluksilla voi olla mielivaltainen pääsy laitteeseen, jokainen "
+"manuaalisesti arvioitu sovellus saa lähdekoodiarvioinnin."
 
 #: src/views/ManagePackage.vue:189
 msgid ""
 "Only YouTube and Odysee videos are supported at this time. Make sure the url "
 "is for the embedded video!"
 msgstr ""
+"Vain YouTube- ja Odysee-videoita tuetaan tällä hetkellä. Varmista, että URL-"
+"osoite on upotetulle videolle!"
 
 #: src/views/About.vue:41
 msgid "Open the terminal app"
-msgstr ""
+msgstr "Avaa päätesovellus"
 
 #: src/views/About.vue:142
 msgid "OpenStore API/Server Contributors"
-msgstr ""
+msgstr "OpenStore API/palvelin -osallistujat"
 
 #: src/views/Submit.vue:50
 msgid "OpenStore App Content Policy"
-msgstr ""
+msgstr "OpenStore-sovelluksen sisältökäytäntö"
 
 #: src/views/About.vue:148
 msgid "OpenStore App Contributors"
-msgstr ""
+msgstr "OpenStore-sovelluksen osallistujat"
 
 #: src/views/Badge.vue:3
 msgid "OpenStore Badges"
-msgstr ""
+msgstr "OpenStore-kunniamerkit"
 
 #: src/views/About.vue:58
 msgid "OpenStore group on Telegram"
-msgstr ""
+msgstr "OpenStore-ryhmä Telegramissa"
 
 #: src/views/About.vue:84
 msgid "OpenStore source on GitLab"
-msgstr ""
+msgstr "OpenStore-lähde GitLabissa"
 
 #: src/views/About.vue:145
 msgid "OpenStore Website Contributors"
-msgstr ""
+msgstr "OpenStore-verkkosivuston osallistuajat"
 
 #: src/views/ManagePackage.vue:218
 msgid "Override Type"
-msgstr ""
+msgstr "Ohitustyyppi"
 
 #: src/views/ManagePackage.vue:242
 msgid "Package Info"
-msgstr ""
+msgstr "Paketin tiedot"
 
 #: src/views/NotFound.vue:3
 msgid "Page Not Found"
-msgstr ""
+msgstr "Sivua ei löytynyt"
 
 #: src/views/Package.vue:86 src/views/Package.vue:190
 msgid "Permissions"
-msgstr ""
+msgstr "Luvat"
 
 #: src/views/Package.vue:86
 msgid "Picture Files"
-msgstr ""
+msgstr "Kuvatiedostot"
 
 #: src/views/ManagePackage.vue:47
 msgid "Presentation"
-msgstr ""
+msgstr "Esittely"
 
 #: src/views/ManageRevisions.vue:53
 msgid "Processing"
-msgstr ""
+msgstr "Käsittely"
 
 #: src/views/Submit.vue:61
 msgid "Prohibited Apps"
-msgstr ""
+msgstr "Kielletyt sovellukset"
 
 #: src/views/About.vue:20
 msgid "Promote your app on the OpenStore!"
-msgstr ""
+msgstr "Mainosta sovellustasi OpenStoressa!"
 
 #: src/views/Badge.vue:5
 msgid ""
@@ -772,196 +843,203 @@ msgid ""
 "are available in several different languages and in both PNG and SVG\n"
 "formats."
 msgstr ""
+"Mainosta sovellustasi OpenStoressa! Lisää nämä merkit verkkosivustollesi,\n"
+"koodivarastoon, sosiaaliseen mediaan tai minne tahansa Internetiin. "
+"Kunniamerkit\n"
+"ovat saatavilla useilla eri kielillä sekä PNG- että SVG-muodossa\n"
+"muotoja."
 
 #: src/views/ManagePackage.vue:26
 msgid "Public Link"
-msgstr ""
+msgstr "Julkinen linkki"
 
 #: src/views/ManagePackage.vue:33
 msgid "Publish"
-msgstr ""
+msgstr "Julkaise"
 
 #: src/views/Manage.vue:68 src/views/Package.vue:163
 msgid "Published"
-msgstr ""
+msgstr "Julkaistu"
 
 #: src/views/ManagePackage.vue:277
 msgid "Published Date"
-msgstr ""
+msgstr "Julkaisupäivämäärä"
 
 #: src/views/Manage.vue:44 src/views/ManagePackage.vue:251
 #: src/views/Package.vue:131
 msgid "Publisher"
-msgstr ""
+msgstr "Julkaisija"
 
 #: src/views/Package.vue:87
 msgid "Push Notifications"
-msgstr ""
+msgstr "Työnnä ilmoitukset"
 
 #: src/views/Package.vue:74
 msgid "Read Document Files"
-msgstr ""
+msgstr "Lue asiakirjatiedostoja"
 
 #: src/views/Package.vue:81
 msgid "Read Music Files"
-msgstr ""
+msgstr "Lue musiikkitiedostoja"
 
 #: src/views/Package.vue:85
 msgid "Read Picture Files"
-msgstr ""
+msgstr "Lue kuvatiedostoja"
 
 #: src/views/Package.vue:90
 msgid "Read Video Files"
-msgstr ""
+msgstr "Lue videotiedostoja"
 
 #: src/views/Browse.vue:35
 msgid "Relevance"
-msgstr ""
+msgstr "Merkityksellisyys"
 
 #: src/App.vue:78
 msgid "Report an Issue"
-msgstr ""
+msgstr "Ilmoita viasta"
 
 #: src/views/Package.vue:205
 msgid "Restricted permission"
-msgstr ""
+msgstr "Rajoitettu lupa"
 
 #: src/views/ManagePackage.vue:228
 msgid "Review Exceptions"
-msgstr ""
+msgstr "Arvioi poikkeukset"
 
 #: src/components/Reviews.vue:3
 msgid "Reviews"
-msgstr ""
+msgstr "Arvioinnit"
 
 #: src/views/ManagePackage.vue:295
 msgid "Revision"
-msgstr ""
+msgstr "Tarkistus"
 
 #: src/App.vue:81 src/views/Feeds.vue:3
 msgid "RSS Feeds"
-msgstr ""
+msgstr "RSS-syötteet"
 
 #: src/views/Submit.vue:4
 msgid "Rules for Submission"
-msgstr ""
+msgstr "Lähettämisen säännöt"
 
 #: src/views/Submit.vue:24
 msgid "Rules for Submissions Requiring Manual Review"
-msgstr ""
+msgstr "Manuaalista arviointia edellyttävien lähetysten säännöt"
 
 #: src/views/About.vue:44
 msgid "Run the command:"
-msgstr ""
+msgstr "Suorita komento:"
 
 #: src/views/ManagePackage.vue:337
 msgid "Save"
-msgstr ""
+msgstr "Tallenna"
 
 #: src/views/Package.vue:109
 msgid "Screenshots"
-msgstr ""
+msgstr "Kuvakaappaukset"
 
 #: src/views/ManagePackage.vue:90
 msgid "Screenshots (Limit 5)"
-msgstr ""
+msgstr "Kuvakaappaukset (rajoitus 5)"
 
 #: src/views/Browse.vue:9 src/views/Manage.vue:25
 msgid "Search"
-msgstr ""
+msgstr "Haku"
 
 #: src/views/Submit.vue:28
 msgid ""
 "Send us a link to a repository for your app to our telegram group along with "
 "some instructions on how to build it."
 msgstr ""
+"Lähetä meille linkki sovelluksesi arkistoon sähkeryhmällemme sekä ohjeita "
+"sen rakentamiseen."
 
 #: src/views/Package.vue:88
 msgid "Sensors"
-msgstr ""
+msgstr "Anturit"
 
 #: src/views/Submit.vue:66
 msgid "Sexually Explicit Content"
-msgstr ""
+msgstr "Seksuaalisesti avoin sisältö"
 
 #: src/views/ManagePackage.vue:323
 msgid "Show All Revisions"
-msgstr ""
+msgstr "Näytä kaikki tarkistukset"
 
 #: src/views/Package.vue:119
 msgid "Show NSFW Content"
-msgstr ""
+msgstr "Näytä NSFW-sisältö"
 
 #: src/App.vue:75
 msgid "Site Status"
-msgstr ""
+msgstr "Sivuston tila"
 
 #: src/views/Browse.vue:33
 msgid "Sort By"
-msgstr ""
+msgstr "Lajitteluperuste"
 
 #: src/views/Package.vue:140
 msgid "Source"
-msgstr ""
+msgstr "Lähde"
 
 #: src/App.vue:72
 msgid "Source Code"
-msgstr ""
+msgstr "Lähdekoodi"
 
 #: src/views/ManagePackage.vue:172
 msgid "Source URL"
-msgstr ""
+msgstr "Lähteen URL-osoite"
 
 #: src/views/ManagePackage.vue:59 src/views/Package.vue:210
 #: src/views/Stats.vue:3 src/views/Stats.vue:9 src/views/Stats.vue:13
 msgid "Stats"
-msgstr ""
+msgstr "Tilastot"
 
 #: src/views/Manage.vue:45
 msgid "Status"
-msgstr ""
+msgstr "Tila"
 
 #: src/App.vue:23 src/views/Submit.vue:133
 msgid "Submit"
-msgstr ""
+msgstr "Lähetä"
 
 #: src/views/Manage.vue:9 src/views/Submit.vue:113 src/views/Submit.vue:12
 #: src/views/Submit.vue:16
 msgid "Submit App"
-msgstr ""
+msgstr "Lähetä sovellus"
 
 #: src/views/About.vue:126
 msgid "Submit your app"
-msgstr ""
+msgstr "Lähetä sovelluksesi"
 
 #: src/views/ManagePackage.vue:204 src/views/ManagePackage.vue:232
 #: src/views/ManageRevisions.vue:184
 msgid "Success"
-msgstr ""
+msgstr "Onnistui"
 
 #: src/views/Package.vue:136
 msgid "Support"
-msgstr ""
+msgstr "Tuki"
 
 #: src/views/ManagePackage.vue:177
 msgid "Support URL"
-msgstr ""
+msgstr "Tuen URL-osoite"
 
 #: src/views/ManagePackage.vue:75
 msgid "Tag Line"
-msgstr ""
+msgstr "Tag-rivi"
 
 #: src/App.vue:66
 msgid "Telegram"
-msgstr ""
+msgstr "Telegram"
 
 #: src/views/About.vue:93
 msgid "Terms"
-msgstr ""
+msgstr "Säännöt"
 
 #: src/views/Package.vue:10 src/views/PackageVersions.vue:12
 msgid "The app you are looking for has been removed or does not exist"
-msgstr ""
+msgstr "Etsimäsi sovellus on poistettu tai sitä ei ole olemassa"
 
 #: src/views/About.vue:88
 msgid ""
@@ -969,10 +1047,13 @@ msgid ""
 "and terms.\n"
 "Consult each individual app's page for more information."
 msgstr ""
+"OpenStoresta ladattavissa olevilla sovelluksilla on omat lisenssinsä ja "
+"ehdot.\n"
+"Saat lisätietoja kunkin sovelluksen sivulta."
 
 #: src/views/ManagePackage.vue:203
 msgid "The changes to %{name} were saved!"
-msgstr ""
+msgstr "Muutokset kohteeseen %{name} tallennettiin!"
 
 #: src/views/About.vue:95
 msgid ""
@@ -984,6 +1065,15 @@ msgid ""
 "a manual review process to check for potential security or privacy issues.\n"
 "This checking is far from exhaustive though, and there are no guarantees."
 msgstr ""
+"OpenStore on voittoa tavoittelematon vapaaehtoisprojekti.\n"
+"Vaikka pyrimme kaikin tavoin varmistamaan, että kaikki arkistossa oleva on "
+"turvallista asentaa, käytät sitä OMALLA VASTUULLASI.\n"
+"OpenStoreen ladatuille sovelluksille suoritetaan automaattinen "
+"tarkistusprosessi tai manuaalinen tarkistusprosessi mahdollisten tietoturva-"
+"\n"
+"tai tietosuojaongelmien tarkistamiseksi.\n"
+"Tämä tarkistus ei kuitenkaan ole läheskään kattava, eikä siitä ole mitään "
+"takeita."
 
 #: src/views/About.vue:29
 msgid ""
@@ -991,10 +1081,14 @@ msgid ""
 "Touch.\n"
 "But if you need to install the OpenStore manually, follow these steps:"
 msgstr ""
+"OpenStore-sovellus on asennettu oletusarvoisesti Ubuntu Touchin UBports-"
+"koonteihin.\n"
+"Mutta jos sinun täytyy asentaa OpenStore manuaalisesti, noudata näitä "
+"ohjeita:"
 
 #: src/views/About.vue:138
 msgid "The OpenStore is made possible by many amazing contributors:"
-msgstr ""
+msgstr "OpenStoren ovat mahdollistaneet monet upeat osallistujat:"
 
 #: src/views/About.vue:5
 msgid ""
@@ -1006,6 +1100,13 @@ msgid ""
 "The OpenStore encourages the apps published within to be open source, but "
 "also accepts proprietary apps."
 msgstr ""
+"OpenStore on Ubuntu Touchin virallinen sovelluskauppa.\n"
+"Se on avoimen lähdekoodin projekti, jota vetää vapaaehtoistiimi yhteisön "
+"avustuksella.\n"
+"Voit löytää ja asentaa uusia sovelluksia Ubuntu Touch -laitteellesi.\n"
+"Voit myös ladata ja hallita omia sovelluksiasi julkaistavaksi.\n"
+"OpenStore kannustaa sisällä julkaistuja sovelluksia avoimeen lähdekoodiin, "
+"mutta hyväksyy myös omat sovellukset."
 
 #: src/views/About.vue:103
 msgid ""
@@ -1022,10 +1123,22 @@ msgid ""
 "This information is not logged or stored and cannot be used to uniquely "
 "identify you."
 msgstr ""
+"OpenStore kunnioittaa yksityisyyttäsi.\n"
+"Emme seuraa sinua tai laitettasi.\n"
+"Et tarvitse tiliä sovellusten lataamiseen ja asentamiseen, emmekä seuraa "
+"latauksiasi.\n"
+"Kehittäjätietojen saamiseksi laskemme latausten määrän sovellusversiota "
+"kohti.\n"
+"Tietoja laitteestasi (suorittimen arkkitehtuuri, kehysversiot, "
+"käyttöjärjestelmäversio ja käyttöjärjestelmän kieli)\n"
+"lähetetään palvelimelle, jotta se voi suodattaa sovelluksia vain siihen, "
+"mitä voit asentaa ja esittää äidinkielesi mahdollisuuksien mukaan.\n"
+"Näitä tietoja ei kirjata tai tallenneta, eikä niitä voida käyttää "
+"yksilöimään sinua."
 
 #: src/views/NotFound.vue:5
 msgid "The page you are looking for has been removed or does not exist"
-msgstr ""
+msgstr "Etsimäsi sivu on poistettu tai sitä ei ole olemassa"
 
 #: src/views/About.vue:71
 msgid ""
@@ -1033,38 +1146,47 @@ msgid ""
 "v3.\n"
 "You can find the code on the OpenStore GitLab page."
 msgstr ""
+"OpenStoreen liittyvien projektien lähdekoodi on saatavilla GPLv3-lisenssillä."
+"\n"
+"Löydät koodin OpenStore GitLab -sivulta."
 
 #: src/views/ManagePackage.vue:6 src/views/Package.vue:12
 #: src/views/PackageVersions.vue:14
 msgid ""
 "There was an error trying to find this app, please refresh and try again."
 msgstr ""
+"Tämän sovelluksen etsimisessä tapahtui virhe. Virkistä ja yritä uudelleen."
 
 #: src/views/Browse.vue:70 src/views/Manage.vue:30
 msgid ""
 "There was an error trying to load the app list, please refresh and try again."
 msgstr ""
+"Sovellusluettelon lataamisessa tapahtui virhe. Virkisitä ja yritä uudelleen."
 
 #: src/views/Stats.vue:5
 msgid ""
 "There was an error trying to load the stats, please refresh and try again."
-msgstr ""
+msgstr "Tilastojen lataamisessa tapahtui virhe. Virkistä ja yritä uudelleen."
 
 #: src/views/ManagePackage.vue:131
 msgid "This app contains NSFW material"
-msgstr ""
+msgstr "Tämä sovellus sisältää NSFW-materiaalia"
 
 #: src/views/Package.vue:219
 msgid ""
 "This app does not have access to restricted system data, see permissions for "
 "more details"
 msgstr ""
+"Tällä sovelluksella ei ole pääsyä rajoitettuihin järjestelmätietoihin; katso "
+"luvat saadaksesi lisätietoja"
 
 #: src/views/Package.vue:223
 msgid ""
 "This app has access to restricted system data, see permissions for more "
 "details"
 msgstr ""
+"Tällä sovelluksella on pääsy rajoitettuihin järjestelmätietoihin; katso "
+"luvat saadaksesi lisätietoja"
 
 #: src/views/Submit.vue:119
 msgid ""
@@ -1075,172 +1197,181 @@ msgid ""
 "and \"openstore-team\"\n"
 "is the group or individual authoring the app."
 msgstr ""
+"Tämä on sovelluksesi yksilöllinen tunniste.\n"
+"Sen on vastattava täsmälleen \"nimi\"-kenttää klikkauksen manifest.json-"
+"tiedostossa, ja sen on oltava pieniä kirjaimia.\n"
+"Esimerkiksi: \"openstore.openstore-joukkue\", jossa \"openstore\" on "
+"sovellus ja \"openstore-joukkue\"\n"
+"on ryhmä tai henkilö, joka on luonut sovelluksen."
 
 #: src/views/ManagePackage.vue:56
 msgid "This revision is still available"
-msgstr ""
+msgstr "Tämä tarkistus on edelleen saatavilla"
 
 #: src/views/ManageRevisions.vue:63
 msgid "This will be added to the beginning of your current changelog"
-msgstr ""
+msgstr "Tämä lisätään nykyisen muutoslokisi alkuun"
 
 #: src/views/ManagePackage.vue:70
 msgid "Title"
-msgstr ""
+msgstr "Otsikko"
 
 #: src/views/Browse.vue:38
 msgid "Title (A-Z)"
-msgstr ""
+msgstr "Otsikko (A-Z)"
 
 #: src/views/Browse.vue:39
 msgid "Title (Z-A)"
-msgstr ""
+msgstr "Otsikko (Z-A)"
 
 #: src/views/ManagePackage.vue:316
 msgid "Total"
-msgstr ""
+msgstr "Yhteensä"
 
 #: src/views/Package.vue:219
 msgid "Total downloads"
-msgstr ""
+msgstr "Latauksia yhteensä"
 
 #: src/views/Manage.vue:73
 msgid "Total:"
-msgstr ""
+msgstr "Yhteensä:"
 
 #: src/views/ManagePackage.vue:268 src/views/Package.vue:173
 msgid "Translation Languages"
-msgstr ""
+msgstr "Käännöskielet"
 
 #: src/views/ManagePackage.vue:193
 msgid "Translation URL"
-msgstr ""
+msgstr "Käännöksen URL-osoite"
 
 #: src/views/Package.vue:144
 msgid "Translations"
-msgstr ""
+msgstr "Käännökset"
 
 #: src/views/Browse.vue:97 src/views/Manage.vue:89
 msgid "Try searching for something else"
-msgstr ""
+msgstr "Yritä etsiä jotain muuta"
 
 #: src/views/Browse.vue:23 src/views/ManagePackage.vue:259
 msgid "Type"
-msgstr ""
+msgstr "Tyyppi"
 
 #: src/views/About.vue:14
 msgid "Ubuntu Touch"
-msgstr ""
+msgstr "Ubuntu Touch"
 
 #: src/views/Browse.vue:3
 msgid "Ubuntu Touch Apps"
-msgstr ""
+msgstr "Ubuntu Touch -sovellukset"
 
 #: src/views/Stats.vue:25
 msgid "Uncategorized"
-msgstr ""
+msgstr "Luokittelemattomat"
 
 #: src/views/Package.vue:199
 msgid "Unrestricted read access to:"
-msgstr ""
+msgstr "Rajoittamaton lukuoikeus kohteisiin:"
 
 #: src/views/Package.vue:195
 msgid "Unrestricted write access to:"
-msgstr ""
+msgstr "Rajoittamaton kirjoitusoikeus kohteisiin:"
 
 #: src/views/Package.vue:158
 msgid "Updated"
-msgstr ""
+msgstr "Päivitetty"
 
 #: src/views/Feeds.vue:10
 msgid "Updated Apps"
-msgstr ""
+msgstr "Päivitetyt sovellukset"
 
 #: src/views/ManagePackage.vue:283
 msgid "Updated Date"
-msgstr ""
+msgstr "Päivityksen päivämäärä"
 
 #: src/views/ManageRevisions.vue:13
 msgid "Upload Revision via:"
-msgstr ""
+msgstr "Uloslataa tarkistus kautta:"
 
 #: src/views/ManageRevisions.vue:16 src/views/ManageRevisions.vue:204
 msgid "URL"
-msgstr ""
+msgstr "URL-osoite"
 
 #: src/views/ManageRevisions.vue:49
 msgid "URL of App from the Web"
-msgstr ""
+msgstr "Sovelluksen URL-osoite verkosta"
 
 #: src/views/Package.vue:89
 msgid "User Metrics"
-msgstr ""
+msgstr "Käyttäjämittarit"
 
 #: src/views/Manage.vue:46 src/views/ManagePackage.vue:298
 msgid "Version"
-msgstr ""
+msgstr "Versio"
 
 #: src/views/Package.vue:92
 msgid "Video"
-msgstr ""
+msgstr "Video"
 
 #: src/views/Package.vue:91
 msgid "Video Files"
-msgstr ""
+msgstr "Videotiedostot"
 
 #: src/views/ManagePackage.vue:187
 msgid "Video URL"
-msgstr ""
+msgstr "Videon URL-osoite"
 
 #: src/views/About.vue:35
 msgid "View Install Instructions"
-msgstr ""
+msgstr "Katso asennusohjeet"
 
 #: src/views/Submit.vue:77
 msgid "Violence"
-msgstr ""
+msgstr "Väkivalta"
 
 #: src/components/Types.vue:5 src/views/ManagePackage.vue:223
 #: src/views/Stats.vue:29
 msgid "Web App"
-msgstr ""
+msgstr "Verkkosovellus"
 
 #: src/views/Browse.vue:28
 msgid "Web Apps"
-msgstr ""
+msgstr "Verkkosovellukset"
 
 #: src/views/Package.vue:93
 msgid "Webview"
-msgstr ""
+msgstr "Webview"
 
 #: src/views/Manage.vue:4
 msgid "Welcome %{name}!"
-msgstr ""
+msgstr "Tervetuloa %{name}!"
 
 #: src/views/Browse.vue:51 src/views/ManageRevisions.vue:23
 #: src/views/ManageRevisions.vue:170
 msgid "Xenial"
-msgstr ""
+msgstr "Xenial"
 
 #: src/views/ManagePackage.vue:35 src/views/ManagePackage.vue:203
 msgid "Yes"
-msgstr ""
+msgstr "Kyllä"
 
 #: src/views/Submit.vue:9
 msgid "You are not allowed to impersonate someone else or another app."
-msgstr ""
+msgstr "Et saa esiintyä toisena tai toisena sovelluksena."
 
 #: src/views/Submit.vue:8
 msgid ""
 "You are only allowed to publish apps that you have permission to distribute."
-msgstr ""
+msgstr "Voit julkaista vain sovelluksia, joiden jakeluun sinulla on lupa."
 
 #: src/views/Submit.vue:17
 msgid "You must read over the content policy detailed below."
-msgstr ""
+msgstr "Sinun tulee lukea alla kuvattu sisältökäytäntö."
 
 #: src/views/Submit.vue:10
 msgid ""
 "Your app can be pulled without warning at the discretion of our admins.\n"
 "Where possible, we will contact you regarding any such actions."
 msgstr ""
+"Sovelluksesi voidaan vetää ilman varoitusta järjestelmänvalvojien harkinnan "
+"mukaan.\n"
+"Mikäli mahdollista, otamme sinuun yhteyttä tällaisista toimista."
