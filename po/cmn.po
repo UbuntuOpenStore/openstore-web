@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-30 00:38-0500\n"
-"PO-Revision-Date: 2025-03-06 04:15+0000\n"
+"PO-Revision-Date: 2025-03-06 08:43+0000\n"
 "Last-Translator: ChenLei <falsecollector@outlook.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/open-store-io/openstore-web/zh_Hans/>\n"
@@ -54,17 +54,15 @@ msgstr "添加架构"
 
 #: src/views/ManagePackage.vue:56
 msgid "Admin"
-msgstr ""
+msgstr "管理员"
 
 #: src/views/Browse.vue:16
 msgid "All Categories"
 msgstr "所有目录"
 
 #: src/views/Browse.vue:50
-#, fuzzy
-#| msgid "Channels"
 msgid "All Channels"
-msgstr "通道"
+msgstr "全部通道"
 
 #: src/views/Browse.vue:25
 msgid "All Types"
@@ -98,11 +96,11 @@ msgid ""
 "contact you in the event there is an issue with your app.\n"
 "Additionally, this site uses cookies to keep you logged in to your account."
 msgstr ""
-"您向我们提供的任何个人资料  (例如:您注册帐户上传应用程式时的电子邮件地址)，我"
-"们不会泄露给其他人\n"
-"除了维护你的应用程式，并不会用于任何其他，在极少数情况下，\n"
-"如果你的应用出现问题，与你联系。\n"
-"此外，本网页使用 Cookie 来确保您登入到您的帐户。"
+"您向我们提供的任何个人资料(例如:您注册帐户上传应用程式时的电子邮件地址),\n"
+"我们不会泄露给其他人,\n"
+"除了维护你的应用程式,并不会用于任何其他，在极少数情况下,\n"
+"如果你的应用出现问题,与你联系.\n"
+"此外,本网页使用 Cookie 来确保您登入到您的帐户."
 
 #: src/views/Manage.vue:13
 msgid "API Key"
@@ -127,7 +125,7 @@ msgstr "应用软件统计"
 
 #: src/views/About.vue:131
 msgid "App Submission Tutorial"
-msgstr ""
+msgstr "应用提交教程"
 
 #: src/views/Submit.vue:128
 msgid "App Title"
@@ -146,12 +144,6 @@ msgid "Apps"
 msgstr "我的应用"
 
 #: src/views/Submit.vue:89
-#, fuzzy
-#| msgid ""
-#| "Apps containing gambling involving real world money transactions are not "
-#| "allowed.\n"
-#| "This includes, but is not limited to, online casinos, betting, and "
-#| "lotteries."
 msgid ""
 "Apps containing gambling involving real world money transactions are not "
 "allowed.\n"
@@ -159,7 +151,7 @@ msgid ""
 "lotteries."
 msgstr ""
 "严禁包含或宣传涉及真实世界货币交易的赌博的应用软件。\n"
-"这包括但不仅限于线上赌场、投注和彩票。"
+"  这包括但不仅限于线上赌场、投注和彩票。"
 
 #: src/views/Submit.vue:74
 msgid ""
@@ -168,32 +160,22 @@ msgid ""
 msgstr "严禁包含或宣传虐待儿童或儿童性虐待的应用软件。"
 
 #: src/views/Submit.vue:78
-#, fuzzy
-#| msgid ""
-#| "Apps containing or promoting gratuitous violence are not allowed.\n"
-#| "This includes, but is not limited to, violence, terrorism, bomb/weapon "
-#| "making, self harm, and grotesque imagery."
 msgid ""
 "Apps containing or promoting gratuitous violence are not allowed.\n"
 "  This includes, but is not limited to, violence, terrorism, bomb/weapon "
 "making, self harm, and grotesque imagery."
 msgstr ""
 "严禁包含或宣传无端暴力的应用软件。\n"
-"这包括但不仅限于暴力、恐怖主义、製造炸弹/武器、自残和怪诞形象。"
+"           这包括但不仅限于暴力、恐怖主义、製造炸弹/武器、自残和怪诞形象。"
 
 #: src/views/Submit.vue:67
-#, fuzzy
-#| msgid ""
-#| "Apps containing or promoting sexually explicit content are not allowed.\n"
-#| "This includes, but is not limited to, pornography and services promoting "
-#| "sexually explicit content."
 msgid ""
 "Apps containing or promoting sexually explicit content are not allowed.\n"
 "  This includes, but is not limited to, pornography and services promoting "
 "sexually explicit content."
 msgstr ""
 "严禁包含或宣传色情内容的应用软件。\n"
-"这包括但不仅限于色情内容和宣传色情内容服务。"
+"           这包括但不仅限于色情内容和宣传色情内容服务。"
 
 #: src/views/Submit.vue:7
 msgid ""
@@ -212,18 +194,13 @@ msgid ""
 msgstr "需要手动审核的应用软件，必须通过联系我们的 Telegram 群组的管理员提交。"
 
 #: src/views/Submit.vue:100
-#, fuzzy
-#| msgid ""
-#| "Apps that are found to be stealing the users data, trying to escalate "
-#| "their privileges without user consent,\n"
-#| "or executing malicious process are strictly prohibited."
 msgid ""
 "Apps that are found to be stealing the users data, trying to escalate their "
 "privileges without user consent,\n"
 "  or executing malicious process are strictly prohibited."
 msgstr ""
-"严禁窃取使用者资料，试图在未经使用者同意的情况下提升其许可权或者执行恶意程式"
-"的软件。"
+"严禁窃取使用者资料，\n"
+"           试图在未经使用者同意的情况下提升其许可权或者执行恶意程式的软件。"
 
 #: src/views/About.vue:121
 msgid ""
@@ -236,7 +213,7 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:297
 msgid "Arch"
-msgstr ""
+msgstr "架构"
 
 #: src/views/ManagePackage.vue:255 src/views/Package.vue:168
 msgid "Architecture"
@@ -244,7 +221,7 @@ msgstr "构建"
 
 #: src/views/Package.vue:65
 msgid "Audio"
-msgstr "语音"
+msgstr "声音"
 
 #: src/views/Package.vue:6 src/views/PackageVersions.vue:8
 msgid "Back"
@@ -333,7 +310,7 @@ msgstr "选择维护者"
 
 #: src/views/ManageRevisions.vue:52
 msgid "Completed"
-msgstr ""
+msgstr "已完成"
 
 #: src/views/Package.vue:69
 msgid "Connectivity"
@@ -353,7 +330,7 @@ msgstr "文本替换"
 
 #: src/views/Package.vue:71
 msgid "Content Exchange Source"
-msgstr "文本替换源码"
+msgstr "内容来源"
 
 #: src/views/About.vue:135
 msgid "Contributors"
@@ -388,10 +365,8 @@ msgid "Discovery"
 msgstr "描述"
 
 #: src/views/Package.vue:75
-#, fuzzy
-#| msgid "Picture Files"
 msgid "Document Files"
-msgstr "图片文件"
+msgstr "文档文件"
 
 #: src/App.vue:84 src/views/Package.vue:95
 msgid "Donate"
@@ -452,7 +427,7 @@ msgstr "上传文件"
 #: src/views/Browse.vue:52 src/views/ManageRevisions.vue:24
 #: src/views/ManageRevisions.vue:172
 msgid "Focal"
-msgstr ""
+msgstr "焦点"
 
 #: src/views/About.vue:52
 msgid ""
@@ -558,7 +533,7 @@ msgstr "跳转到尾页"
 
 #: src/views/Package.vue:78
 msgid "Keep Display On"
-msgstr "继续显示"
+msgstr "保持亮屏"
 
 #: src/views/Manage.vue:17
 msgid "Keep your api key private!"
@@ -591,7 +566,7 @@ msgstr "位置"
 
 #: src/views/ManagePackage.vue:201
 msgid "Locked"
-msgstr ""
+msgstr "锁定"
 
 #: src/App.vue:32
 msgid "Log In"
@@ -622,10 +597,8 @@ msgid "Login via GitLab"
 msgstr "通过GitLab登录"
 
 #: src/views/Login.vue:18
-#, fuzzy
-#| msgid "Login via Ubuntu"
 msgid "Login via Ubuntu One"
-msgstr "通过Ubuntu登录"
+msgstr "通过Ubuntu One登录"
 
 #: src/views/ManagePackage.vue:210
 msgid "Maintainer"
@@ -695,7 +668,7 @@ msgstr "最新"
 
 #: src/views/Package.vue:83
 msgid "NFC"
-msgstr ""
+msgstr "NFC"
 
 #: src/views/ManagePackage.vue:36 src/views/ManagePackage.vue:204
 msgid "No"
@@ -727,10 +700,8 @@ msgid "NSFW content"
 msgstr "敏感内容"
 
 #: src/views/Package.vue:56
-#, fuzzy
-#| msgid "Version"
 msgid "Older Versions"
-msgstr "版本"
+msgstr "旧版本"
 
 #: src/views/Browse.vue:41
 msgid "Oldest"
@@ -741,16 +712,6 @@ msgid "Oldest Update"
 msgstr "历史更新"
 
 #: src/views/Submit.vue:52
-#, fuzzy
-#| msgid ""
-#| "One of the main goals of the OpenStore is to provide a safe app store for "
-#| "people of all ages.\n"
-#| "To accomplish this goal we do not allow certain types of app to be "
-#| "published.\n"
-#| "Failure to follow the guidelines will result in your app being removed.\n"
-#| "Any account with serious infractions may be subject to termination.\n"
-#| "The OpenStore team thanks you for helping us promote a better enviroment "
-#| "for everyone."
 msgid ""
 "One of the main goals of the OpenStore is to provide a safe app store for "
 "people of all ages.\n"
@@ -762,10 +723,10 @@ msgid ""
 "for everyone."
 msgstr ""
 "OpenStore 的主要目标之一是为所有年龄的人提供安全的应用商店。\n"
-"为了实现这一目标，我们不允许发布某些类型的应用。\n"
-"如果不遵守这些规定，你的应用软件将被删除。\n"
-"任何严重违规的话连帐户都有可能被终止。\n"
-"OpenStore 团队感谢您帮助我们为每个人推广更好的环境。"
+"          为了实现这一目标，我们不允许发布某些类型的应用。\n"
+"          如果不遵守这些规定，你的应用软件将被删除。\n"
+"          任何严重违规的话连帐户都有可能被终止。\n"
+"          OpenStore 团队感谢您帮助我们为每个人推广更好的环境。"
 
 #: src/views/Submit.vue:40
 msgid ""
@@ -778,14 +739,10 @@ msgstr ""
 "源代码审查。"
 
 #: src/views/ManagePackage.vue:189
-#, fuzzy
-#| msgid ""
-#| "Only YouTube videos are supported at this time. Make sure the url is for "
-#| "the embedded video!"
 msgid ""
 "Only YouTube and Odysee videos are supported at this time. Make sure the url "
 "is for the embedded video!"
-msgstr "目前只支持 YouTube 影片。确保网址是用于嵌入影片的!"
+msgstr "目前只支持 YouTube和 Odysee。确保网址是用于嵌入影片的!"
 
 #: src/views/About.vue:41
 msgid "Open the terminal app"
@@ -821,7 +778,7 @@ msgstr "OpenStore网站贡献者"
 
 #: src/views/ManagePackage.vue:218
 msgid "Override Type"
-msgstr ""
+msgstr "覆盖类型"
 
 #: src/views/ManagePackage.vue:242
 msgid "Package Info"
@@ -845,7 +802,7 @@ msgstr "介绍"
 
 #: src/views/ManageRevisions.vue:53
 msgid "Processing"
-msgstr ""
+msgstr "处理"
 
 #: src/views/Submit.vue:61
 msgid "Prohibited Apps"
@@ -885,8 +842,6 @@ msgstr "发布时间"
 
 #: src/views/Manage.vue:44 src/views/ManagePackage.vue:251
 #: src/views/Package.vue:131
-#, fuzzy
-#| msgid "Published"
 msgid "Publisher"
 msgstr "发布"
 
@@ -895,10 +850,8 @@ msgid "Push Notifications"
 msgstr "推送通知"
 
 #: src/views/Package.vue:74
-#, fuzzy
-#| msgid "Read Picture Files"
 msgid "Read Document Files"
-msgstr "读取图片文件"
+msgstr "读取文档文件"
 
 #: src/views/Package.vue:81
 msgid "Read Music Files"
@@ -926,13 +879,11 @@ msgstr "限制许可"
 
 #: src/views/ManagePackage.vue:228
 msgid "Review Exceptions"
-msgstr ""
+msgstr "审核异常"
 
 #: src/components/Reviews.vue:3
-#, fuzzy
-#| msgid "Webview"
 msgid "Reviews"
-msgstr "网络视图"
+msgstr "评论"
 
 #: src/views/ManagePackage.vue:295
 msgid "Revision"
@@ -987,10 +938,8 @@ msgid "Sexually Explicit Content"
 msgstr "性暗示內容"
 
 #: src/views/ManagePackage.vue:323
-#, fuzzy
-#| msgid "New Revision"
 msgid "Show All Revisions"
-msgstr "新版本"
+msgstr "显示所有修订版本"
 
 #: src/views/Package.vue:119
 msgid "Show NSFW Content"
@@ -1009,10 +958,8 @@ msgid "Source"
 msgstr "来源"
 
 #: src/App.vue:72
-#, fuzzy
-#| msgid "Source"
 msgid "Source Code"
-msgstr "来源"
+msgstr "源代码"
 
 #: src/views/ManagePackage.vue:172
 msgid "Source URL"
@@ -1059,7 +1006,7 @@ msgstr "口号"
 
 #: src/App.vue:66
 msgid "Telegram"
-msgstr ""
+msgstr "Telegram"
 
 #: src/views/About.vue:93
 msgid "Terms"
@@ -1162,8 +1109,8 @@ msgid ""
 "v3.\n"
 "You can find the code on the OpenStore GitLab page."
 msgstr ""
-"OpenStore  相关专案的原始程式码可在 GPL v3 下使用。\n"
-"您可以在 OpenStore GitLab 页面上找到代码。"
+"OpenStore相关专案的原始程式码可在 GPL v3 下使用.\n"
+"您可以在 OpenStore GitLab 页面上找到代码."
 
 #: src/views/ManagePackage.vue:6 src/views/Package.vue:12
 #: src/views/PackageVersions.vue:14
@@ -1207,15 +1154,15 @@ msgid ""
 "is the group or individual authoring the app."
 msgstr ""
 "这是你的应用软件的唯一识别码。\n"
-"它必须与您的按一下的清单中的 \"名称\" 栏位完全符合，并且必须全部是小写字"
-"母。\n"
-"例如: \"openstore.openstore-team\" ，其中 \"openstore\" 是应用软件和  "
+"它必须与您的按一下的清单中的 \"名称\" 栏位完全符合，并且必须全部是小写字母。"
+"\n"
+"例如: \"openstore.openstore-team\" ，其中 \"openstore\" 是应用软件和 "
 "\"openstore-team\"\n"
 "是建立应用软件的群组或个人。"
 
 #: src/views/ManagePackage.vue:56
 msgid "This revision is still available"
-msgstr ""
+msgstr "这次修订仍然可用"
 
 #: src/views/ManageRevisions.vue:63
 msgid "This will be added to the beginning of your current changelog"
@@ -1250,16 +1197,12 @@ msgid "Translation Languages"
 msgstr "翻译语言"
 
 #: src/views/ManagePackage.vue:193
-#, fuzzy
-#| msgid "Translation Languages"
 msgid "Translation URL"
-msgstr "翻译语言"
+msgstr "翻译URL"
 
 #: src/views/Package.vue:144
-#, fuzzy
-#| msgid "Translation Languages"
 msgid "Translations"
-msgstr "翻译语言"
+msgstr "翻译"
 
 #: src/views/Browse.vue:97 src/views/Manage.vue:89
 msgid "Try searching for something else"
@@ -1369,7 +1312,7 @@ msgstr "是"
 
 #: src/views/Submit.vue:9
 msgid "You are not allowed to impersonate someone else or another app."
-msgstr ""
+msgstr "您不允许冒充他人或另一个应用程序。"
 
 #: src/views/Submit.vue:8
 msgid ""
