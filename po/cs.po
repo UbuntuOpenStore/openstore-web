@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2025-03-21 20:13+0000\n"
+"PO-Revision-Date: 2025-04-04 10:49+0000\n"
 "Last-Translator: Jozef Mlich <jmlich83@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/open-store-io/"
 "openstore-web/cs/>\n"
@@ -991,7 +991,7 @@ msgstr "Zdrojový kód"
 
 #: src/views/ManagePackage.vue:172
 msgid "Source URL"
-msgstr "Zdrojový odkaz"
+msgstr "Odkaz na zdrojový kód"
 
 #: src/views/ManagePackage.vue:59 src/views/Package.vue:210
 #: src/views/Stats.vue:3 src/views/Stats.vue:9 src/views/Stats.vue:13
