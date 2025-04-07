@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2024-04-20 10:07+0000\n"
+"PO-Revision-Date: 2025-04-07 11:09+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/open-store-io/"
 "openstore-web/nl/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.11-dev\n"
 
 #: src/views/Package.vue:120
 msgid ""
@@ -376,7 +376,7 @@ msgstr "Verwijderen"
 
 #: src/views/ManagePackage.vue:80
 msgid "Description"
-msgstr "Omschrijving"
+msgstr "Beschrijving"
 
 #: src/views/ManagePackage.vue:50
 msgid "Discovery"
@@ -1220,11 +1220,11 @@ msgstr "Naam"
 
 #: src/views/Browse.vue:38
 msgid "Title (A-Z)"
-msgstr "Titel (A-Z)"
+msgstr "Titel (A–Z)"
 
 #: src/views/Browse.vue:39
 msgid "Title (Z-A)"
-msgstr "Titel (Z-A)"
+msgstr "Titel (Z–A)"
 
 #: src/views/ManagePackage.vue:316
 msgid "Total"
@@ -1232,7 +1232,7 @@ msgstr "Totaal"
 
 #: src/views/Package.vue:219
 msgid "Total downloads"
-msgstr "Totaalaantal downloads"
+msgstr "Totaal aantal downloads"
 
 #: src/views/Manage.vue:73
 msgid "Total:"
