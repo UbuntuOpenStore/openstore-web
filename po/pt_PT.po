@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2023-03-19 01:00+0000\n"
+"PO-Revision-Date: 2025-04-11 17:05+0000\n"
 "Last-Translator: ssantos <ssantos@web.de>\n"
 "Language-Team: Portuguese (Portugal) <https://hosted.weblate.org/projects/"
 "open-store-io/openstore-web/pt_PT/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.16.2-dev\n"
+"X-Generator: Weblate 5.11-dev\n"
 
 #: src/views/Package.vue:120
 msgid ""
@@ -49,14 +49,12 @@ msgid "Accounts"
 msgstr "Contas"
 
 #: src/views/ManageRevisions.vue:54
-#, fuzzy
-#| msgid "Architecture"
 msgid "Add Another Architecture"
-msgstr "Arquitetura"
+msgstr "Adicionar outra arquitetura"
 
 #: src/views/ManagePackage.vue:56
 msgid "Admin"
-msgstr ""
+msgstr "Admin"
 
 #: src/views/Browse.vue:16
 msgid "All Categories"
