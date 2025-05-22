@@ -5,6 +5,8 @@ function success(res) {
   return res.data.data;
 }
 
+axios.defaults.headers.common['X-Source'] = 'openstore-web';
+
 export default {
   auth: {
     me: async() => {
