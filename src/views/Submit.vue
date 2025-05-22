@@ -73,7 +73,7 @@
           To accomplish this goal we do not allow certain types of app to be published.
           Failure to follow the guidelines will result in your app being removed.
           Any account with serious infractions may be subject to termination.
-          The OpenStore team thanks you for helping us promote a better enviroment for everyone.
+          The OpenStore team thanks you for helping us promote a better environment for everyone.
         </p>
 
         <h2>
