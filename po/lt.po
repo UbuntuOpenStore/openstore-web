@@ -1,9 +1,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
+"PO-Revision-Date: 2025-08-10 12:02+0000\n"
+"Last-Translator: Tomas Darius Davainis <tomas@davainis.lt>\n"
+"Language-Team: Lithuanian <https://hosted.weblate.org/projects/open-store-io/"
+"openstore-web/lt/>\n"
 "Language: lt\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && (n % 100 < 11 || n % 100 > "
+"19)) ? 0 : ((n % 10 >= 2 && n % 10 <= 9 && (n % 100 < 11 || n % 100 > 19)) ? "
+"1 : 2);\n"
+"X-Generator: Weblate 5.13-dev\n"
 "Generated-By: easygettext\n"
 
 #: src/views/Package.vue:120
@@ -18,20 +26,20 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:125
 msgid "A comma separated list of keywords"
-msgstr ""
+msgstr "Kableliais atskirtų raktažodžių sąrašas"
 
 #: src/App.vue:29 src/views/About.vue:3 src/views/About.vue:12
 #: src/views/About.vue:16
 msgid "About"
-msgstr ""
+msgstr "Apie"
 
 #: src/App.vue:63
 msgid "About Us"
-msgstr ""
+msgstr "Apie mus"
 
 #: src/views/Package.vue:64
 msgid "Accounts"
-msgstr ""
+msgstr "Paskyros"
 
 #: src/views/ManageRevisions.vue:54
 msgid "Add Another Architecture"
@@ -84,12 +92,12 @@ msgstr ""
 
 #: src/views/Manage.vue:13
 msgid "API Key"
-msgstr ""
+msgstr "API raktas"
 
 #: src/components/Types.vue:3 src/views/Manage.vue:43
 #: src/views/ManagePackage.vue:221 src/views/Stats.vue:27
 msgid "App"
-msgstr ""
+msgstr "Programa"
 
 #: src/views/Submit.vue:85
 msgid "App containing or promoting any of the above are strictly prohibited."
@@ -97,11 +105,11 @@ msgstr ""
 
 #: src/views/Submit.vue:117
 msgid "App Name"
-msgstr ""
+msgstr "Programos pavadinimas"
 
 #: src/App.vue:69
 msgid "App Stats"
-msgstr ""
+msgstr "Programos statistika"
 
 #: src/views/About.vue:131
 msgid "App Submission Tutorial"
@@ -199,11 +207,11 @@ msgstr ""
 
 #: src/views/Badge.vue:10 src/views/Badge.vue:14 src/views/ManagePackage.vue:62
 msgid "Badge"
-msgstr ""
+msgstr "Ženklelis"
 
 #: src/views/About.vue:18
 msgid "Badges"
-msgstr ""
+msgstr "Ženkleliai"
 
 #: src/views/Package.vue:66
 msgid "Bluetooth"
@@ -246,7 +254,7 @@ msgstr ""
 #: src/views/Browse.vue:14 src/views/ManagePackage.vue:114
 #: src/views/Package.vue:153
 msgid "Category"
-msgstr ""
+msgstr "Kategorija"
 
 #: src/views/ManagePackage.vue:85 src/views/ManageRevisions.vue:61
 #: src/views/Package.vue:183
@@ -284,7 +292,7 @@ msgstr ""
 
 #: src/views/Package.vue:69
 msgid "Connectivity"
-msgstr ""
+msgstr "Ryšys"
 
 #: src/views/About.vue:50
 msgid "Contact"
