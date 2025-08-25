@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-08 23:33-0400\n"
-"PO-Revision-Date: 2024-03-28 12:02+0000\n"
-"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"PO-Revision-Date: 2025-08-26 18:02+0000\n"
+"Last-Translator: Ida Brenna <ida@larald.no>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/"
 "open-store-io/openstore-web/nb_NO/>\n"
 "Language: nb_NO\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.13\n"
 
 #: src/views/Package.vue:120
 msgid ""
@@ -49,24 +49,20 @@ msgid "Accounts"
 msgstr "Kontoer"
 
 #: src/views/ManageRevisions.vue:54
-#, fuzzy
-#| msgid "Architecture"
 msgid "Add Another Architecture"
-msgstr "Arkitektur"
+msgstr "Legg til en annen arkitektur"
 
 #: src/views/ManagePackage.vue:56
 msgid "Admin"
-msgstr ""
+msgstr "Administrator"
 
 #: src/views/Browse.vue:16
 msgid "All Categories"
 msgstr "Alle kategorier"
 
 #: src/views/Browse.vue:50
-#, fuzzy
-#| msgid "Channels"
 msgid "All Channels"
-msgstr "Kanaler"
+msgstr "Alle kanaler"
 
 #: src/views/Browse.vue:25
 msgid "All Types"
@@ -133,7 +129,7 @@ msgstr "App statistikk"
 
 #: src/views/About.vue:131
 msgid "App Submission Tutorial"
-msgstr ""
+msgstr "Appopplastingskurs"
 
 #: src/views/Submit.vue:128
 msgid "App Title"
@@ -152,12 +148,6 @@ msgid "Apps"
 msgstr "Apper"
 
 #: src/views/Submit.vue:89
-#, fuzzy
-#| msgid ""
-#| "Apps containing gambling involving real world money transactions are not "
-#| "allowed.\n"
-#| "This includes, but is not limited to, online casinos, betting, and "
-#| "lotteries."
 msgid ""
 "Apps containing gambling involving real world money transactions are not "
 "allowed.\n"
@@ -165,7 +155,7 @@ msgid ""
 "lotteries."
 msgstr ""
 "Spillapper som involverer spill med virkelige pengemidler er forbudt.\n"
-"Dette inkluderer, men begrenser seg ikke til, online kasinoer, betting og "
+"  Dette inkluderer, men begrenser seg ikke til, nettkasinoer, betting og "
 "lotterier."
 
 #: src/views/Submit.vue:74
@@ -177,35 +167,24 @@ msgstr ""
 "overgrep mot barn er strengt forbudt."
 
 #: src/views/Submit.vue:78
-#, fuzzy
-#| msgid ""
-#| "Apps containing or promoting gratuitous violence are not allowed.\n"
-#| "This includes, but is not limited to, violence, terrorism, bomb/weapon "
-#| "making, self harm, and grotesque imagery."
 msgid ""
 "Apps containing or promoting gratuitous violence are not allowed.\n"
 "  This includes, but is not limited to, violence, terrorism, bomb/weapon "
 "making, self harm, and grotesque imagery."
 msgstr ""
 "Apper som inneholder eller promoterer umotivert vold er forbudt.\n"
-"Dette inkluderer, men begrenser seg ikke til, vold, terrorisme, produksjon "
-"av bomber/våpen, selvskading og bilder\n"
-"som vekker avsky."
+"  Dette inkluderer, men begrenser seg ikke til, vold, terrorisme, produksjon "
+"av bomber/våpen, selvskading og bilder som vekker avsky."
 
 #: src/views/Submit.vue:67
-#, fuzzy
-#| msgid ""
-#| "Apps containing or promoting sexually explicit content are not allowed.\n"
-#| "This includes, but is not limited to, pornography and services promoting "
-#| "sexually explicit content."
 msgid ""
 "Apps containing or promoting sexually explicit content are not allowed.\n"
 "  This includes, but is not limited to, pornography and services promoting "
 "sexually explicit content."
 msgstr ""
-"Apper som inneholder eller promoterer eksplisitt seksuelt innhold er "
-"forbudt.\n"
-"Dette inkluderer, men begrenser seg ikke til, pornografi og tjenester som "
+"Apper som inneholder eller promoterer eksplisitt seksuelt innhold er forbudt."
+"\n"
+"  Dette inkluderer, men begrenser seg ikke til, pornografi og tjenester som "
 "promoterer eksplisitt seksuelt innhold."
 
 #: src/views/Submit.vue:7
@@ -231,11 +210,6 @@ msgstr ""
 "Telegram gruppe for kontroll."
 
 #: src/views/Submit.vue:100
-#, fuzzy
-#| msgid ""
-#| "Apps that are found to be stealing the users data, trying to escalate "
-#| "their privileges without user consent,\n"
-#| "or executing malicious process are strictly prohibited."
 msgid ""
 "Apps that are found to be stealing the users data, trying to escalate their "
 "privileges without user consent,\n"
@@ -243,7 +217,7 @@ msgid ""
 msgstr ""
 "Apper som viser seg å stjele brukerens data, forsøker å øke sine tillatelser "
 "uten brukergodkjenning,\n"
-"eller utfører ondsinnede handlinger er strengt forbudt."
+"  eller utfører ondsinnede handlinger er strengt forbudt."
 
 #: src/views/About.vue:121
 msgid ""
@@ -286,11 +260,11 @@ msgstr "Blåtann"
 #: src/components/Types.vue:4 src/views/ManagePackage.vue:222
 #: src/views/Stats.vue:28
 msgid "Bookmark"
-msgstr ""
+msgstr "Bokmerke"
 
 #: src/views/Browse.vue:27
 msgid "Bookmarks"
-msgstr ""
+msgstr "Bokmerker"
 
 #: src/App.vue:26
 msgid "Browse"
@@ -354,7 +328,7 @@ msgstr "Velg vedlikeholder"
 
 #: src/views/ManageRevisions.vue:52
 msgid "Completed"
-msgstr ""
+msgstr "Fullført"
 
 #: src/views/Package.vue:69
 msgid "Connectivity"
@@ -409,10 +383,8 @@ msgid "Discovery"
 msgstr "Oppdag"
 
 #: src/views/Package.vue:75
-#, fuzzy
-#| msgid "Picture Files"
 msgid "Document Files"
-msgstr "Bildefiler"
+msgstr "Dokumentfiler"
 
 #: src/App.vue:84 src/views/Package.vue:95
 msgid "Donate"
@@ -463,10 +435,8 @@ msgid "Feeds"
 msgstr "Feeder"
 
 #: src/views/ManageRevisions.vue:15
-#, fuzzy
-#| msgid "File Size"
 msgid "File"
-msgstr "Filstørrelse"
+msgstr "Fil"
 
 #: src/views/ManageRevisions.vue:204
 msgid "File Upload"
@@ -475,7 +445,7 @@ msgstr "Filopplasting"
 #: src/views/Browse.vue:52 src/views/ManageRevisions.vue:24
 #: src/views/ManageRevisions.vue:172
 msgid "Focal"
-msgstr ""
+msgstr "Focal"
 
 #: src/views/About.vue:52
 msgid ""
@@ -598,11 +568,11 @@ msgstr "Språk"
 
 #: src/views/Browse.vue:42
 msgid "Latest Update"
-msgstr "Nyeste utgivelse"
+msgstr "Sist oppdatert"
 
 #: src/views/Browse.vue:37
 msgid "Least Popular"
-msgstr ""
+msgstr "Minst populær"
 
 #: src/views/About.vue:69 src/views/ManagePackage.vue:139
 #: src/views/Package.vue:148
@@ -615,7 +585,7 @@ msgstr "Posisjon"
 
 #: src/views/ManagePackage.vue:201
 msgid "Locked"
-msgstr ""
+msgstr "Låst"
 
 #: src/App.vue:32
 msgid "Log In"
@@ -646,10 +616,8 @@ msgid "Login via GitLab"
 msgstr "Logg inn via GitLab"
 
 #: src/views/Login.vue:18
-#, fuzzy
-#| msgid "Login via Ubuntu"
 msgid "Login via Ubuntu One"
-msgstr "Logg inn via Ubuntu"
+msgstr "Logg inn via Ubuntu One"
 
 #: src/views/ManagePackage.vue:210
 msgid "Maintainer"
@@ -674,7 +642,7 @@ msgstr "Mikrofon"
 
 #: src/views/Browse.vue:36
 msgid "Most Popular"
-msgstr ""
+msgstr "Mest populær"
 
 #: src/views/Package.vue:82
 msgid "Music Files"
@@ -710,10 +678,8 @@ msgid "New Revision for %{name}"
 msgstr "Ny utgave av %{name}"
 
 #: src/views/ManageRevisions.vue:179
-#, fuzzy
-#| msgid "New revision for %{channel} was created!"
 msgid "New revisions for %{channel} were created!"
-msgstr "Ny utgave av %{channel} ble opprettet!"
+msgstr "Nye utgaver av %{channel} ble opprettet!"
 
 #: src/views/Browse.vue:40
 msgid "Newest"
@@ -721,7 +687,7 @@ msgstr "Nyeste"
 
 #: src/views/Package.vue:83
 msgid "NFC"
-msgstr ""
+msgstr "NFC"
 
 #: src/views/ManagePackage.vue:36 src/views/ManagePackage.vue:204
 msgid "No"
@@ -733,7 +699,7 @@ msgstr "Ingen apper funnet."
 
 #: src/views/Package.vue:36
 msgid "No longer available"
-msgstr ""
+msgstr "Ikke lenger tilgjengelig"
 
 #: src/views/Manage.vue:75 src/views/Manage.vue:80
 #: src/views/ManagePackage.vue:220 src/views/Package.vue:204
@@ -753,30 +719,18 @@ msgid "NSFW content"
 msgstr "Innhold som er uegnet for arbeidsplassen"
 
 #: src/views/Package.vue:56
-#, fuzzy
-#| msgid "Version"
 msgid "Older Versions"
-msgstr "Versjon"
+msgstr "Eldre versjoner"
 
 #: src/views/Browse.vue:41
 msgid "Oldest"
-msgstr "Eldst"
+msgstr "Eldste"
 
 #: src/views/Browse.vue:43
 msgid "Oldest Update"
-msgstr "Eldste utgave"
+msgstr "Eldste oppdatering"
 
 #: src/views/Submit.vue:52
-#, fuzzy
-#| msgid ""
-#| "One of the main goals of the OpenStore is to provide a safe app store for "
-#| "people of all ages.\n"
-#| "To accomplish this goal we do not allow certain types of app to be "
-#| "published.\n"
-#| "Failure to follow the guidelines will result in your app being removed.\n"
-#| "Any account with serious infractions may be subject to termination.\n"
-#| "The OpenStore team thanks you for helping us promote a better environment "
-#| "for everyone."
 msgid ""
 "One of the main goals of the OpenStore is to provide a safe app store for "
 "people of all ages.\n"
@@ -787,12 +741,13 @@ msgid ""
 "  The OpenStore team thanks you for helping us promote a better environment "
 "for everyone."
 msgstr ""
-"Et hovedmål for OpenStore er å være en sikker app kilde for folk i alle "
+"Et hovedmål for OpenStore er å være en sikker app-kilde for folk i alle "
 "aldere.\n"
-"For å oppnå dette tillater vi ikke publisering av visse typer innhold.\n"
-"Dersom retningslinjene ikke blir overholdt vil din app bli fjernet.\n"
-"Ved alvorlige brudd på retningslinjene vil kontoen bli slettet.\n"
-"OpenStore teamet takker for at du hjelper oss å sikre et godt miljø for alle."
+" For å oppnå dette tillater vi ikke publisering av visse typer innhold.\n"
+" Dersom retningslinjene ikke blir overholdt vil din app bli fjernet.\n"
+" Ved alvorlige brudd på retningslinjene vil kontoen bli slettet.\n"
+" OpenStore-teamet takker for at du hjelper oss å sikre et godt miljø for "
+"alle."
 
 #: src/views/Submit.vue:40
 msgid ""
@@ -805,16 +760,12 @@ msgstr ""
 "kontroll innebære gjennomgang av kildekoden."
 
 #: src/views/ManagePackage.vue:189
-#, fuzzy
-#| msgid ""
-#| "Only YouTube videos are supported at this time. Make sure the url is for "
-#| "the embedded video!"
 msgid ""
 "Only YouTube and Odysee videos are supported at this time. Make sure the url "
 "is for the embedded video!"
 msgstr ""
-"For tiden støttes kun YouTube videoer. Sørg for at URLen er til den "
-"innebygde videoen!"
+"For tiden støttes kun YouTube- og Odysee-videoer. Sørg for at URLen er til "
+"den innebygde videoen!"
 
 #: src/views/About.vue:41
 msgid "Open the terminal app"
@@ -874,7 +825,7 @@ msgstr "Presentasjon"
 
 #: src/views/ManageRevisions.vue:53
 msgid "Processing"
-msgstr ""
+msgstr "Jobber"
 
 #: src/views/Submit.vue:61
 msgid "Prohibited Apps"
@@ -913,20 +864,16 @@ msgstr "Utgivelsesdato"
 
 #: src/views/Manage.vue:44 src/views/ManagePackage.vue:251
 #: src/views/Package.vue:131
-#, fuzzy
-#| msgid "Published"
 msgid "Publisher"
-msgstr "Publisert"
+msgstr "Utgiver"
 
 #: src/views/Package.vue:87
 msgid "Push Notifications"
 msgstr "Dyttingsmerknader"
 
 #: src/views/Package.vue:74
-#, fuzzy
-#| msgid "Read Picture Files"
 msgid "Read Document Files"
-msgstr "Leste bildefiler"
+msgstr "Les dokumentfiler"
 
 #: src/views/Package.vue:81
 msgid "Read Music Files"
@@ -954,13 +901,11 @@ msgstr "Begrenset tilgang"
 
 #: src/views/ManagePackage.vue:228
 msgid "Review Exceptions"
-msgstr ""
+msgstr "Undersøk unntakene"
 
 #: src/components/Reviews.vue:3
-#, fuzzy
-#| msgid "Webview"
 msgid "Reviews"
-msgstr "Vev-visning"
+msgstr "Anmeldelser"
 
 #: src/views/ManagePackage.vue:295
 msgid "Revision"
@@ -1015,10 +960,8 @@ msgid "Sexually Explicit Content"
 msgstr "Eksplisitt seksuelt innhold"
 
 #: src/views/ManagePackage.vue:323
-#, fuzzy
-#| msgid "New Revision"
 msgid "Show All Revisions"
-msgstr "Ny utgave"
+msgstr "Vis alle revisjoner"
 
 #: src/views/Package.vue:119
 msgid "Show NSFW Content"
@@ -1030,17 +973,15 @@ msgstr "Nettstedsstatus"
 
 #: src/views/Browse.vue:33
 msgid "Sort By"
-msgstr "Sortér etter"
+msgstr "Sorter etter"
 
 #: src/views/Package.vue:140
 msgid "Source"
 msgstr "Kilde"
 
 #: src/App.vue:72
-#, fuzzy
-#| msgid "Source"
 msgid "Source Code"
-msgstr "Kilde"
+msgstr "Kildekode"
 
 #: src/views/ManagePackage.vue:172
 msgid "Source URL"
@@ -1057,7 +998,7 @@ msgstr "Status"
 
 #: src/App.vue:23 src/views/Submit.vue:133
 msgid "Submit"
-msgstr "Send inn"
+msgstr "Send"
 
 #: src/views/Manage.vue:9 src/views/Submit.vue:113 src/views/Submit.vue:12
 #: src/views/Submit.vue:16
@@ -1087,7 +1028,7 @@ msgstr "Nøkkelord"
 
 #: src/App.vue:66
 msgid "Telegram"
-msgstr ""
+msgstr "Telegram"
 
 #: src/views/About.vue:93
 msgid "Terms"
@@ -1254,7 +1195,7 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:56
 msgid "This revision is still available"
-msgstr ""
+msgstr "Denne revisjonen er fortsatt tilgjengelig"
 
 #: src/views/ManageRevisions.vue:63
 msgid "This will be added to the beginning of your current changelog"
@@ -1289,16 +1230,12 @@ msgid "Translation Languages"
 msgstr "Oversettelsesspråk"
 
 #: src/views/ManagePackage.vue:193
-#, fuzzy
-#| msgid "Translation Languages"
 msgid "Translation URL"
-msgstr "Oversettelsesspråk"
+msgstr "URL til oversettelsen"
 
 #: src/views/Package.vue:144
-#, fuzzy
-#| msgid "Translation Languages"
 msgid "Translations"
-msgstr "Oversettelsesspråk"
+msgstr "Oversettelser"
 
 #: src/views/Browse.vue:97 src/views/Manage.vue:89
 msgid "Try searching for something else"
@@ -1342,7 +1279,7 @@ msgstr "Oppdatert dato"
 
 #: src/views/ManageRevisions.vue:13
 msgid "Upload Revision via:"
-msgstr ""
+msgstr "Last ned revisjon via:"
 
 #: src/views/ManageRevisions.vue:16 src/views/ManageRevisions.vue:204
 msgid "URL"
@@ -1387,7 +1324,7 @@ msgstr "Nett-program"
 
 #: src/views/Browse.vue:28
 msgid "Web Apps"
-msgstr "Web apper"
+msgstr "Nett-applikasjoner"
 
 #: src/views/Package.vue:93
 msgid "Webview"
@@ -1409,6 +1346,7 @@ msgstr "Ja"
 #: src/views/Submit.vue:9
 msgid "You are not allowed to impersonate someone else or another app."
 msgstr ""
+"Du har ikke lov til å gi deg ut for å være noen andre eller en annen app."
 
 #: src/views/Submit.vue:8
 msgid ""
