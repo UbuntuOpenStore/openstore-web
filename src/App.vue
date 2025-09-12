@@ -108,7 +108,7 @@
             <li class="p-footer__item">
               <a
                 class="p-footer__link"
-                href="https://gitlab.com/theopenstore/openstore-meta/issues"
+                href="https://gitlab.com/theopenstore/openstore/-/issues"
                 target="_blank"
                 v-translate
               >Report an Issue</a>
