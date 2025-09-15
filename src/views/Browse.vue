@@ -2,7 +2,11 @@
   <div>
     <div class="p-strip">
       <h1 v-translate>Ubuntu Touch Apps</h1>
+      <p>
+        Check out <a href="https://next.open-store.io">the new OpenStore website</a>!
+      </p>
     </div>
+
 
     <div class="row filters">
       <form class="p-form p-form--inline" @submit.prevent>

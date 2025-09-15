@@ -34,6 +34,12 @@
         </div>
       </form>
 
+      <p>
+        Going forward, all new OpenStore features will be only available through
+        <a href="https://next.open-store.io/manage">the new website</a>.
+        Please use it to manage your apps.
+      </p>
+
       <h2
         v-if="error"
         class="center text-red"

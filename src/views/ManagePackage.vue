@@ -11,6 +11,12 @@
     >There was an error trying to find this app, please refresh and try again.</h2>
 
     <div v-if="!loading && app">
+      <p>
+        Going forward, all new OpenStore features will be only available through
+        <a href="https://next.open-store.io/manage">the new website</a>.
+        Please use it to manage your apps.
+      </p>
+
       <h1>
         <router-link :to="{name: 'manage'}" title="Back">
           <svgicon icon="back" width="0.75em" height="0.75em" color="#007aa6" />
