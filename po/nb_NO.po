@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-08 23:33-0400\n"
-"PO-Revision-Date: 2025-08-26 18:02+0000\n"
+"PO-Revision-Date: 2025-09-17 14:01+0000\n"
 "Last-Translator: Ida Brenna <ida@larald.no>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/"
 "open-store-io/openstore-web/nb_NO/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.13\n"
+"X-Generator: Weblate 5.14-dev\n"
 
 #: src/views/Package.vue:120
 msgid ""
@@ -231,7 +231,7 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:297
 msgid "Arch"
-msgstr ""
+msgstr "Arkitektur"
 
 #: src/views/ManagePackage.vue:255 src/views/Package.vue:168
 msgid "Architecture"
@@ -679,7 +679,7 @@ msgstr "Ny utgave av %{name}"
 
 #: src/views/ManageRevisions.vue:179
 msgid "New revisions for %{channel} were created!"
-msgstr "Nye utgaver av %{channel} ble opprettet!"
+msgstr "Ny utgave av %{channel} ble opprettet!"
 
 #: src/views/Browse.vue:40
 msgid "Newest"
@@ -797,7 +797,7 @@ msgstr "OpenStore kildekode på GitLab"
 
 #: src/views/About.vue:145
 msgid "OpenStore Website Contributors"
-msgstr "Bidragsytere til OpenStore nettsiden"
+msgstr "Bidragsytere til OpenStore-nettsiden"
 
 #: src/views/ManagePackage.vue:218
 msgid "Override Type"
@@ -825,7 +825,7 @@ msgstr "Presentasjon"
 
 #: src/views/ManageRevisions.vue:53
 msgid "Processing"
-msgstr "Jobber"
+msgstr "Bearbeider"
 
 #: src/views/Submit.vue:61
 msgid "Prohibited Apps"
@@ -873,7 +873,7 @@ msgstr "Dyttingsmerknader"
 
 #: src/views/Package.vue:74
 msgid "Read Document Files"
-msgstr "Les dokumentfiler"
+msgstr "Leste dokumentfiler"
 
 #: src/views/Package.vue:81
 msgid "Read Music Files"
@@ -901,11 +901,11 @@ msgstr "Begrenset tilgang"
 
 #: src/views/ManagePackage.vue:228
 msgid "Review Exceptions"
-msgstr "Undersøk unntakene"
+msgstr "Undersøk unntak"
 
 #: src/components/Reviews.vue:3
 msgid "Reviews"
-msgstr "Anmeldelser"
+msgstr "Rapporter"
 
 #: src/views/ManagePackage.vue:295
 msgid "Revision"
@@ -961,7 +961,7 @@ msgstr "Eksplisitt seksuelt innhold"
 
 #: src/views/ManagePackage.vue:323
 msgid "Show All Revisions"
-msgstr "Vis alle revisjoner"
+msgstr "Vis alle versjoner"
 
 #: src/views/Package.vue:119
 msgid "Show NSFW Content"
@@ -1195,7 +1195,7 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:56
 msgid "This revision is still available"
-msgstr "Denne revisjonen er fortsatt tilgjengelig"
+msgstr "Denne utgaven er fortsatt tilgjengelig"
 
 #: src/views/ManageRevisions.vue:63
 msgid "This will be added to the beginning of your current changelog"
@@ -1231,7 +1231,7 @@ msgstr "Oversettelsesspråk"
 
 #: src/views/ManagePackage.vue:193
 msgid "Translation URL"
-msgstr "URL til oversettelsen"
+msgstr "Oversettelses-URL"
 
 #: src/views/Package.vue:144
 msgid "Translations"
@@ -1279,7 +1279,7 @@ msgstr "Oppdatert dato"
 
 #: src/views/ManageRevisions.vue:13
 msgid "Upload Revision via:"
-msgstr "Last ned revisjon via:"
+msgstr "Last opp versjonen via:"
 
 #: src/views/ManageRevisions.vue:16 src/views/ManageRevisions.vue:204
 msgid "URL"
