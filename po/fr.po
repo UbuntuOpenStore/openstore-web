@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2024-03-25 14:01+0000\n"
+"PO-Revision-Date: 2025-10-13 22:07+0000\n"
 "Last-Translator: Steve <steve.kueffer.ch@gmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/open-store-io/"
 "openstore-web/fr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.14-dev\n"
 
 #: src/views/Package.vue:120
 msgid ""
@@ -522,7 +522,7 @@ msgstr "Icône"
 
 #: src/views/ManagePackage.vue:247
 msgid "ID"
-msgstr "Identifiant"
+msgstr "ID"
 
 #: src/views/Submit.vue:35
 msgid ""
