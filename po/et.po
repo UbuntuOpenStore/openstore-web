@@ -1,12 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-10-25 08:03+0000\n"
+"Last-Translator: Priit Jõerüüt <jrthwlate@users.noreply.hosted.weblate.org>\n"
+"Language-Team: Estonian <https://hosted.weblate.org/projects/open-store-io/"
+"openstore-web/et/>\n"
 "Language: et\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.14.1-dev\n"
 "Generated-By: easygettext\n"
 
 #: ./src/views/Package.vue:120
@@ -14,68 +17,73 @@ msgid ""
 "*This app contains NSFW content, to view the description and\n"
 "screenshots, click the above button."
 msgstr ""
+"* Selles rakenduses leidub tööle ja avalikku ruumi mittesobivat sisu,\n"
+"klõpsi ülalolevat nuppu nägemaks kirjeldust ja ekraanitõmmiseid."
 
 #: ./src/views/ManagePackage.vue:231
 msgid "%{name} was successfully deleted"
-msgstr ""
+msgstr "Kustutamine õnnestus: %{name}"
 
 #: ./src/views/ManagePackage.vue:125
 msgid "A comma separated list of keywords"
-msgstr ""
+msgstr "Komadega eraldatud loend märksõnadega"
 
 #: ./src/App.vue:29
 #: ./src/views/About.vue:3
 #: ./src/views/About.vue:12
 #: ./src/views/About.vue:16
 msgid "About"
-msgstr ""
+msgstr "Teave"
 
 #: ./src/App.vue:63
 msgid "About Us"
-msgstr ""
+msgstr "Saidi teave"
 
 #: ./src/views/Package.vue:64
 msgid "Accounts"
-msgstr ""
+msgstr "Kasutajakontod"
 
 #: ./src/views/ManageRevisions.vue:54
 msgid "Add Another Architecture"
-msgstr ""
+msgstr "Lisa veel üks arhitektuur"
 
 #: ./src/views/ManagePackage.vue:56
 msgid "Admin"
-msgstr ""
+msgstr "Peakasutaja"
 
 #: ./src/views/Browse.vue:16
 msgid "All Categories"
-msgstr ""
+msgstr "Kõik kategooriad"
 
 #: ./src/views/Browse.vue:50
 msgid "All Channels"
-msgstr ""
+msgstr "Kõik kanalid"
 
 #: ./src/views/Browse.vue:25
 msgid "All Types"
-msgstr ""
+msgstr "Kõik tüübid"
 
 #: ./src/views/Login.vue:26
 msgid "An account is not needed to download or install apps."
 msgstr ""
+"Rakenduste allalaadimiseks ja paigaldamiseks pole kasutajakonto vajalik."
 
 #: ./src/views/ManagePackage.vue:87
 #: ./src/views/ManagePackage.vue:100
 #: ./src/views/ManageRevisions.vue:78
 msgid "An error occured loading your app data"
-msgstr ""
+msgstr "Sinu rakenduse andmete allalaadimisel tekkis viga"
 
 #: ./src/views/ManageRevisions.vue:140
 #: ./src/views/Submit.vue:47
 msgid "An unknown error has occurred"
-msgstr ""
+msgstr "Tekkis tundmatu viga"
 
 #: ./src/views/About.vue:151
 msgid "And many amazing developers, testers, and users from the OpenStore community!"
 msgstr ""
+"Ja palju suurepäraseid arendajaid, testijaid ja kasutajaid OpenStore'i "
+"kogukonnast!"
 
 #: ./src/views/About.vue:113
 msgid ""
@@ -88,46 +96,48 @@ msgstr ""
 
 #: ./src/views/Manage.vue:13
 msgid "API Key"
-msgstr ""
+msgstr "API võti"
 
 #: ./src/components/Types.vue:3
 #: ./src/views/Manage.vue:43
 #: ./src/views/ManagePackage.vue:221
 #: ./src/views/Stats.vue:27
 msgid "App"
-msgstr ""
+msgstr "Rakendus"
 
 #: ./src/views/Submit.vue:85
 msgid "App containing or promoting any of the above are strictly prohibited."
 msgstr ""
+"Keelatud on rakendus, mis sisaldab mõnda ülaltoodust või reklaamib/tutvustab "
+"seda."
 
 #: ./src/views/Submit.vue:117
 msgid "App Name"
-msgstr ""
+msgstr "Rakenduse nimi"
 
 #: ./src/App.vue:69
 msgid "App Stats"
-msgstr ""
+msgstr "Rakenduse statistika"
 
 #: ./src/views/About.vue:131
 msgid "App Submission Tutorial"
-msgstr ""
+msgstr "Rakenduse lisamise juhend"
 
 #: ./src/views/Submit.vue:128
 msgid "App Title"
-msgstr ""
+msgstr "Rakenduse nimi"
 
 #: ./src/views/Stats.vue:17
 msgid "App Type"
-msgstr ""
+msgstr "Rakenduse tüüp"
 
 #: ./src/views/Stats.vue:13
 msgid "App Types"
-msgstr ""
+msgstr "Rakenduse tüübid"
 
 #: ./src/views/Browse.vue:26
 msgid "Apps"
-msgstr ""
+msgstr "Rakendused"
 
 #: ./src/views/Submit.vue:89
 msgid ""
@@ -138,6 +148,9 @@ msgstr ""
 #: ./src/views/Submit.vue:74
 msgid "Apps containing or promoting child abuse or child sexual abuse are strictly prohibited."
 msgstr ""
+"Rakendused, mis sisaldavad lastevastast vägivalda või seksuaalset "
+"ärakasutamist või reklaamivad, tutvustavad või viitavad sellele, on rangelt "
+"keelatud."
 
 #: ./src/views/Submit.vue:78
 msgid ""
@@ -177,209 +190,209 @@ msgstr ""
 
 #: ./src/views/ManagePackage.vue:297
 msgid "Arch"
-msgstr ""
+msgstr "Arhitektuur"
 
 #: ./src/views/ManagePackage.vue:255
 #: ./src/views/Package.vue:168
 msgid "Architecture"
-msgstr ""
+msgstr "Arhitektuur"
 
 #: ./src/views/Package.vue:65
 msgid "Audio"
-msgstr ""
+msgstr "Heli"
 
 #: ./src/views/Package.vue:6
 #: ./src/views/PackageVersions.vue:8
 msgid "Back"
-msgstr ""
+msgstr "Tagasi"
 
 #: ./src/views/Badge.vue:10
 #: ./src/views/Badge.vue:14
 #: ./src/views/ManagePackage.vue:62
 msgid "Badge"
-msgstr ""
+msgstr "Reklaamsilt"
 
 #: ./src/views/About.vue:18
 msgid "Badges"
-msgstr ""
+msgstr "Reklaamsildid"
 
 #: ./src/views/Package.vue:66
 msgid "Bluetooth"
-msgstr ""
+msgstr "Bluetooth"
 
 #: ./src/components/Types.vue:4
 #: ./src/views/ManagePackage.vue:222
 #: ./src/views/Stats.vue:28
 msgid "Bookmark"
-msgstr ""
+msgstr "Lisa järjehoidjaks"
 
 #: ./src/views/Browse.vue:27
 msgid "Bookmarks"
-msgstr ""
+msgstr "Järjehoidjad"
 
 #: ./src/App.vue:26
 msgid "Browse"
-msgstr ""
+msgstr "Sirvi"
 
 #: ./src/views/Browse.vue:27
 msgid "Browse Apps"
-msgstr ""
+msgstr "Sirvi rakendusi"
 
 #: ./src/views/About.vue:65
 msgid "Bug Tracker"
-msgstr ""
+msgstr "Veahaldus"
 
 #: ./src/views/Package.vue:67
 msgid "Calendar"
-msgstr ""
+msgstr "Kalender"
 
 #: ./src/views/Package.vue:68
 msgid "Camera"
-msgstr ""
+msgstr "Kaamera"
 
 #: ./src/views/ManagePackage.vue:345
 #: ./src/views/ManageRevisions.vue:71
 #: ./src/views/Submit.vue:137
 msgid "Cancel"
-msgstr ""
+msgstr "Katkesta"
 
 #: ./src/views/Browse.vue:14
 #: ./src/views/ManagePackage.vue:114
 #: ./src/views/Package.vue:153
 msgid "Category"
-msgstr ""
+msgstr "Kategooria"
 
 #: ./src/views/ManagePackage.vue:85
 #: ./src/views/ManageRevisions.vue:61
 #: ./src/views/Package.vue:183
 msgid "Changelog"
-msgstr ""
+msgstr "Muudatuste logi"
 
 #: ./src/views/Browse.vue:48
 #: ./src/views/ManagePackage.vue:296
 #: ./src/views/ManageRevisions.vue:21
 msgid "Channel"
-msgstr ""
+msgstr "Kanal"
 
 #: ./src/views/ManagePackage.vue:263
 msgid "Channels"
-msgstr ""
+msgstr "Kanalid"
 
 #: ./src/views/Submit.vue:73
 msgid "Child Endangerment"
-msgstr ""
+msgstr "Ohtlik lastele"
 
 #: ./src/views/ManagePackage.vue:116
 msgid "Choose a category"
-msgstr ""
+msgstr "Vali kategooria"
 
 #: ./src/views/ManagePackage.vue:141
 msgid "Choose a license"
-msgstr ""
+msgstr "Vali litsents"
 
 #: ./src/views/ManagePackage.vue:212
 msgid "Choose a maintainer"
-msgstr ""
+msgstr "Vali hooldaja"
 
 #: ./src/views/ManageRevisions.vue:52
 msgid "Completed"
-msgstr ""
+msgstr "Valmis"
 
 #: ./src/views/Package.vue:69
 msgid "Connectivity"
-msgstr ""
+msgstr "Ühenduvus"
 
 #: ./src/views/About.vue:50
 msgid "Contact"
-msgstr ""
+msgstr "Kontakt"
 
 #: ./src/views/Package.vue:70
 msgid "Contacts"
-msgstr ""
+msgstr "Kontaktid"
 
 #: ./src/views/Package.vue:72
 msgid "Content Exchange"
-msgstr ""
+msgstr "Sisuvahetus"
 
 #: ./src/views/Package.vue:71
 msgid "Content Exchange Source"
-msgstr ""
+msgstr "Sisuvahetuse allikas"
 
 #: ./src/views/About.vue:135
 msgid "Contributors"
-msgstr ""
+msgstr "Kaasautorid"
 
 #: ./src/components/CopyLine.vue:3
 msgid "Copy to clipboard"
-msgstr ""
+msgstr "Kopeeri lõikelauale"
 
 #: ./src/views/Stats.vue:18
 msgid "Count"
-msgstr ""
+msgstr "Kokku"
 
 #: ./src/views/ManageRevisions.vue:67
 msgid "Create"
-msgstr ""
+msgstr "Loo"
 
 #: ./src/views/Package.vue:73
 msgid "Debug"
-msgstr ""
+msgstr "Veaotsing"
 
 #: ./src/views/ManagePackage.vue:341
 msgid "Delete"
-msgstr ""
+msgstr "Kustuta"
 
 #: ./src/views/ManagePackage.vue:80
 msgid "Description"
-msgstr ""
+msgstr "Kirjeldus"
 
 #: ./src/views/ManagePackage.vue:50
 msgid "Discovery"
-msgstr ""
+msgstr "Avastamine"
 
 #: ./src/views/Package.vue:75
 msgid "Document Files"
-msgstr ""
+msgstr "Dokumendifailid"
 
 #: ./src/App.vue:84
 #: ./src/views/Package.vue:95
 msgid "Donate"
-msgstr ""
+msgstr "Toeta arendajat"
 
 #: ./src/views/ManagePackage.vue:182
 msgid "Donate URL"
-msgstr ""
+msgstr "Võrguaadress rahaliseks toetamiseks"
 
 #: ./src/views/Package.vue:42
 #: ./src/views/Package.vue:50
 msgid "Download"
-msgstr ""
+msgstr "Laadi alla"
 
 #: ./src/views/ManagePackage.vue:289
 msgid "Download Stats"
-msgstr ""
+msgstr "Allalaadimise statistika"
 
 #: ./src/views/About.vue:39
 msgid "Download the OpenStore App"
-msgstr ""
+msgstr "Laadi alla OpenStore'i rakendus"
 
 #: ./src/views/Manage.vue:47
 #: ./src/views/Manage.vue:63
 #: ./src/views/ManagePackage.vue:299
 msgid "Downloads"
-msgstr ""
+msgstr "Allalaadimised"
 
 #: ./src/views/Package.vue:214
 msgid "Downloads of the latest version"
-msgstr ""
+msgstr "Viimase versiooni allalaadimisi"
 
 #: ./src/views/ManagePackage.vue:95
 msgid "Drag and drop to sort screenshots."
-msgstr ""
+msgstr "Ekraanitõmmiste järjekorda saad muuta lohistades."
 
 #: ./src/views/ManagePackage.vue:14
 msgid "Edit"
-msgstr ""
+msgstr "Muuda"
 
 #: ./src/views/ManagePackage.vue:87
 #: ./src/views/ManagePackage.vue:100
@@ -389,26 +402,26 @@ msgstr ""
 #: ./src/views/ManageRevisions.vue:161
 #: ./src/views/Submit.vue:58
 msgid "Error"
-msgstr ""
+msgstr "Viga"
 
 #: ./src/views/Feeds.vue:7
 #: ./src/views/Feeds.vue:11
 msgid "Feeds"
-msgstr ""
+msgstr "Uudisvood"
 
 #: ./src/views/ManageRevisions.vue:15
 msgid "File"
-msgstr ""
+msgstr "Fail"
 
 #: ./src/views/ManageRevisions.vue:204
 msgid "File Upload"
-msgstr ""
+msgstr "Faili üleslaadimine"
 
 #: ./src/views/Browse.vue:52
 #: ./src/views/ManageRevisions.vue:24
 #: ./src/views/ManageRevisions.vue:172
 msgid "Focal"
-msgstr ""
+msgstr "Focal"
 
 #: ./src/views/About.vue:52
 msgid ""
@@ -418,15 +431,15 @@ msgstr ""
 
 #: ./src/views/Package.vue:94
 msgid "Full System Access"
-msgstr ""
+msgstr "Täisligipääs süsteemile"
 
 #: ./src/views/Submit.vue:88
 msgid "Gambling"
-msgstr ""
+msgstr "Hasartmängud"
 
 #: ./src/views/About.vue:23
 msgid "Get your badge"
-msgstr ""
+msgstr "Siit saada oma reklaamsildi"
 
 #: ./src/views/Submit.vue:30
 msgid ""
@@ -437,31 +450,31 @@ msgstr ""
 
 #: ./src/components/Pagination.vue:7
 msgid "Go back a page"
-msgstr ""
+msgstr "Tagasi ühe lehe võrra"
 
 #: ./src/components/Pagination.vue:8
 msgid "Go to the next page"
-msgstr ""
+msgstr "Mine edasi järgmisele lehele"
 
 #: ./src/views/About.vue:77
 msgid "GPL v3 License"
-msgstr ""
+msgstr "GPL v3 litsents"
 
 #: ./src/views/Submit.vue:84
 msgid "Harassment, Bullying, or Hate Speech"
-msgstr ""
+msgstr "Häirimine, kiusamine või vihakõne"
 
 #: ./src/views/Package.vue:76
 msgid "History"
-msgstr ""
+msgstr "Ajalugu"
 
 #: ./src/views/Manage.vue:41
 msgid "Icon"
-msgstr ""
+msgstr "Ikoon"
 
 #: ./src/views/ManagePackage.vue:247
 msgid "ID"
-msgstr ""
+msgstr "Tunnus"
 
 #: ./src/views/Submit.vue:35
 msgid ""
@@ -472,223 +485,223 @@ msgstr ""
 
 #: ./src/views/Submit.vue:95
 msgid "Illegal Activities"
-msgstr ""
+msgstr "Illegaalsed tegevused"
 
 #: ./src/views/Package.vue:77
 msgid "In App Purchases"
-msgstr ""
+msgstr "Rakendusesisesed ostud"
 
 #: ./src/views/ManagePackage.vue:53
 #: ./src/views/Package.vue:128
 msgid "Info"
-msgstr ""
+msgstr "Teave"
 
 #: ./src/views/About.vue:27
 #: ./src/views/Package.vue:38
 msgid "Install"
-msgstr ""
+msgstr "Paigalda"
 
 #: ./src/views/Package.vue:61
 msgid "Install via the OpenStore app"
-msgstr ""
+msgstr "Paigalda OpenStore'i rakenduse abil"
 
 #: ./src/components/Pagination.vue:6
 msgid "Jump to the first page"
-msgstr ""
+msgstr "Mine esimesele lehele"
 
 #: ./src/components/Pagination.vue:9
 msgid "Jump to the last page"
-msgstr ""
+msgstr "Mine viimasele lehele"
 
 #: ./src/views/Package.vue:78
 msgid "Keep Display On"
-msgstr ""
+msgstr "Ekraani hoidmine sisselülitatuna"
 
 #: ./src/views/Manage.vue:17
 msgid "Keep your api key private!"
-msgstr ""
+msgstr "Hoia oma API-võtit turvaliselt ja privaatselt!"
 
 #: ./src/views/ManagePackage.vue:123
 msgid "Keywords"
-msgstr ""
+msgstr "Märksõnad"
 
 #: ./src/App.vue:55
 #: ./src/components/BadgeSelect.vue:4
 msgid "Language"
-msgstr ""
+msgstr "Keel"
 
 #: ./src/views/Browse.vue:42
 msgid "Latest Update"
-msgstr ""
+msgstr "Viimane uuendus"
 
 #: ./src/views/Browse.vue:37
 msgid "Least Popular"
-msgstr ""
+msgstr "Vähem populaarsed"
 
 #: ./src/views/About.vue:69
 #: ./src/views/ManagePackage.vue:139
 #: ./src/views/Package.vue:148
 msgid "License"
-msgstr ""
+msgstr "Litsents"
 
 #: ./src/views/Package.vue:79
 msgid "Location"
-msgstr ""
+msgstr "Asukoht"
 
 #: ./src/views/ManagePackage.vue:201
 msgid "Locked"
-msgstr ""
+msgstr "Lukus"
 
 #: ./src/App.vue:32
 msgid "Log In"
-msgstr ""
+msgstr "Logi sisse"
 
 #: ./src/views/Login.vue:24
 msgid "Log in to the OpenStore to be able to manage your apps."
-msgstr ""
+msgstr "Oma rakenduste haldamiseks logi sisse OpenStore'i."
 
 #: ./src/App.vue:38
 msgid "Log Out"
-msgstr ""
+msgstr "Logi välja"
 
 #: ./src/views/Login.vue:7
 #: ./src/views/Login.vue:11
 msgid "Login"
-msgstr ""
+msgstr "Logi sisse"
 
 #: ./src/views/Submit.vue:111
 msgid "Login to submit your app"
-msgstr ""
+msgstr "Oma rakenduse üleslaadimiseks logi sisse"
 
 #: ./src/views/Login.vue:7
 msgid "Login via GitHub"
-msgstr ""
+msgstr "Logi sisse GitHubi abil"
 
 #: ./src/views/Login.vue:12
 msgid "Login via GitLab"
-msgstr ""
+msgstr "Logi sisse GitLabi abil"
 
 #: ./src/views/Login.vue:18
 msgid "Login via Ubuntu One"
-msgstr ""
+msgstr "Logi sisse Ubuntu One'i abil"
 
 #: ./src/views/ManagePackage.vue:210
 msgid "Maintainer"
-msgstr ""
+msgstr "Hooldaja"
 
 #: ./src/views/Submit.vue:99
 msgid "Malware"
-msgstr ""
+msgstr "Pahavara"
 
 #: ./src/App.vue:35
 #: ./src/views/Manage.vue:20
 #: ./src/views/ManagePackage.vue:16
 #: ./src/views/ManagePackage.vue:18
 msgid "Manage"
-msgstr ""
+msgstr "Halda"
 
 #: ./src/views/Manage.vue:16
 msgid "Manage Apps"
-msgstr ""
+msgstr "Halda rakendusi"
 
 #: ./src/views/Package.vue:80
 msgid "Microphone"
-msgstr ""
+msgstr "Mikrofon"
 
 #: ./src/views/Browse.vue:36
 msgid "Most Popular"
-msgstr ""
+msgstr "Populaarseimad"
 
 #: ./src/views/Package.vue:82
 msgid "Music Files"
-msgstr ""
+msgstr "Muusikafailid"
 
 #: ./src/views/Manage.vue:42
 msgid "Name"
-msgstr ""
+msgstr "Nimi"
 
 #: ./src/views/About.vue:42
 msgid "Navigate to the downloads folder"
-msgstr ""
+msgstr "Mine allalaadimiste kausta"
 
 #: ./src/views/Package.vue:84
 msgid "Networking"
-msgstr ""
+msgstr "Võrgundus"
 
 #: ./src/views/Feeds.vue:6
 msgid "New Apps"
-msgstr ""
+msgstr "Uued rakendused"
 
 #: ./src/views/ManagePackage.vue:41
 #: ./src/views/ManageRevisions.vue:23
 #: ./src/views/ManageRevisions.vue:25
 msgid "New Revision"
-msgstr ""
+msgstr "Uus redaktsioon"
 
 #: ./src/views/ManageRevisions.vue:175
 msgid "New revision for %{channel} was created!"
-msgstr ""
+msgstr "Uus redaktsioon %{channel} kanali jaoks on loodud!"
 
 #: ./src/views/ManageRevisions.vue:8
 msgid "New Revision for %{name}"
-msgstr ""
+msgstr "Uus redaktsioon: %{name}"
 
 #: ./src/views/ManageRevisions.vue:179
 msgid "New revisions for %{channel} were created!"
-msgstr ""
+msgstr "Uus redaktsioon %{channel} kanali jaoks sai loodud!"
 
 #: ./src/views/Browse.vue:40
 msgid "Newest"
-msgstr ""
+msgstr "Uusim"
 
 #: ./src/views/Package.vue:83
 msgid "NFC"
-msgstr ""
+msgstr "NFC"
 
 #: ./src/views/ManagePackage.vue:36
 #: ./src/views/ManagePackage.vue:204
 msgid "No"
-msgstr ""
+msgstr "Ei"
 
 #: ./src/views/Browse.vue:96
 #: ./src/views/Manage.vue:88
 msgid "No apps found."
-msgstr ""
+msgstr "Rakendusi ei leidu."
 
 #: ./src/views/Package.vue:36
 msgid "No longer available"
-msgstr ""
+msgstr "Pole enam saadaval"
 
 #: ./src/views/Manage.vue:75
 #: ./src/views/Manage.vue:80
 #: ./src/views/ManagePackage.vue:220
 #: ./src/views/Package.vue:204
 msgid "None"
-msgstr ""
+msgstr "Puudub"
 
 #: ./src/views/Manage.vue:69
 msgid "Not published"
-msgstr ""
+msgstr "Pole avaldatud"
 
 #: ./src/views/ManagePackage.vue:129
 msgid "NSFW"
-msgstr ""
+msgstr "Ebasobilik sisu"
 
 #: ./src/views/Browse.vue:89
 msgid "NSFW content"
-msgstr ""
+msgstr "Tööl ja avalikkuses ebasobilik sisu"
 
 #: ./src/views/Package.vue:56
 msgid "Older Versions"
-msgstr ""
+msgstr "Vanemad versioonid"
 
 #: ./src/views/Browse.vue:41
 msgid "Oldest"
-msgstr ""
+msgstr "Vanim"
 
 #: ./src/views/Browse.vue:43
 msgid "Oldest Update"
-msgstr ""
+msgstr "Vanim uuendus"
 
 #: ./src/views/Submit.vue:52
 msgid ""
@@ -711,35 +724,35 @@ msgstr ""
 
 #: ./src/views/About.vue:41
 msgid "Open the terminal app"
-msgstr ""
+msgstr "Ava terminalirakendus"
 
 #: ./src/views/About.vue:142
 msgid "OpenStore API/Server Contributors"
-msgstr ""
+msgstr "OpenStore'i API/Serveri kaasautorid"
 
 #: ./src/views/Submit.vue:50
 msgid "OpenStore App Content Policy"
-msgstr ""
+msgstr "OpenStore'i rakenduse sisureeglid"
 
 #: ./src/views/About.vue:148
 msgid "OpenStore App Contributors"
-msgstr ""
+msgstr "OpenStore'i rakenduse kaasautorid"
 
 #: ./src/views/Badge.vue:3
 msgid "OpenStore Badges"
-msgstr ""
+msgstr "OpenStore'i reklaamsildid"
 
 #: ./src/views/About.vue:58
 msgid "OpenStore group on Telegram"
-msgstr ""
+msgstr "OpenStore'i grupp Telegramis"
 
 #: ./src/views/About.vue:84
 msgid "OpenStore source on GitLab"
-msgstr ""
+msgstr "OpenStore'i lähtekood GitLabis"
 
 #: ./src/views/About.vue:145
 msgid "OpenStore Website Contributors"
-msgstr ""
+msgstr "OpenStore'i veebisaidi kaasautorid"
 
 #: ./src/views/ManagePackage.vue:218
 msgid "Override Type"
@@ -747,36 +760,36 @@ msgstr ""
 
 #: ./src/views/ManagePackage.vue:242
 msgid "Package Info"
-msgstr ""
+msgstr "Paketi teave"
 
 #: ./src/views/NotFound.vue:3
 msgid "Page Not Found"
-msgstr ""
+msgstr "Veebilehte ei leidu"
 
 #: ./src/views/Package.vue:86
 #: ./src/views/Package.vue:190
 msgid "Permissions"
-msgstr ""
+msgstr "Õigused"
 
 #: ./src/views/Package.vue:86
 msgid "Picture Files"
-msgstr ""
+msgstr "Pildifailid"
 
 #: ./src/views/ManagePackage.vue:47
 msgid "Presentation"
-msgstr ""
+msgstr "Esitlus"
 
 #: ./src/views/ManageRevisions.vue:53
 msgid "Processing"
-msgstr ""
+msgstr "Töötlemisel"
 
 #: ./src/views/Submit.vue:61
 msgid "Prohibited Apps"
-msgstr ""
+msgstr "Keelatud rakendused"
 
 #: ./src/views/About.vue:20
 msgid "Promote your app on the OpenStore!"
-msgstr ""
+msgstr "Reklaami oma rakendust OpenStore'is!"
 
 #: ./src/views/Badge.vue:5
 msgid ""
@@ -788,79 +801,79 @@ msgstr ""
 
 #: ./src/views/ManagePackage.vue:26
 msgid "Public Link"
-msgstr ""
+msgstr "Avalik link"
 
 #: ./src/views/ManagePackage.vue:33
 msgid "Publish"
-msgstr ""
+msgstr "Avalda"
 
 #: ./src/views/Manage.vue:68
 #: ./src/views/Package.vue:163
 msgid "Published"
-msgstr ""
+msgstr "Avaldatud"
 
 #: ./src/views/ManagePackage.vue:277
 msgid "Published Date"
-msgstr ""
+msgstr "Avaldamise kuupäev"
 
 #: ./src/views/Manage.vue:44
 #: ./src/views/ManagePackage.vue:251
 #: ./src/views/Package.vue:131
 msgid "Publisher"
-msgstr ""
+msgstr "Väljaandja"
 
 #: ./src/views/Package.vue:87
 msgid "Push Notifications"
-msgstr ""
+msgstr "Tõuketeavitused"
 
 #: ./src/views/Package.vue:74
 msgid "Read Document Files"
-msgstr ""
+msgstr "Dokumendifailide lugemine"
 
 #: ./src/views/Package.vue:81
 msgid "Read Music Files"
-msgstr ""
+msgstr "Muusikafailide lugemine"
 
 #: ./src/views/Package.vue:85
 msgid "Read Picture Files"
-msgstr ""
+msgstr "Pildifailide lugemine"
 
 #: ./src/views/Package.vue:90
 msgid "Read Video Files"
-msgstr ""
+msgstr "Videofailide lugemine"
 
 #: ./src/views/Browse.vue:35
 msgid "Relevance"
-msgstr ""
+msgstr "Teemakohasus"
 
 #: ./src/App.vue:78
 msgid "Report an Issue"
-msgstr ""
+msgstr "Teata veast või probleemist"
 
 #: ./src/views/Package.vue:205
 msgid "Restricted permission"
-msgstr ""
+msgstr "Piiratud õigused"
 
 #: ./src/views/ManagePackage.vue:228
 msgid "Review Exceptions"
-msgstr ""
+msgstr "Vaata erandid üle"
 
 #: ./src/components/Reviews.vue:3
 msgid "Reviews"
-msgstr ""
+msgstr "Arvustused"
 
 #: ./src/views/ManagePackage.vue:295
 msgid "Revision"
-msgstr ""
+msgstr "Redaktsioon"
 
 #: ./src/App.vue:81
 #: ./src/views/Feeds.vue:3
 msgid "RSS Feeds"
-msgstr ""
+msgstr "RSS-vood"
 
 #: ./src/views/Submit.vue:4
 msgid "Rules for Submission"
-msgstr ""
+msgstr "Rakenduse lisamise reeglid"
 
 #: ./src/views/Submit.vue:24
 msgid "Rules for Submissions Requiring Manual Review"
@@ -868,24 +881,24 @@ msgstr ""
 
 #: ./src/views/About.vue:44
 msgid "Run the command:"
-msgstr ""
+msgstr "Käivita käsk:"
 
 #: ./src/views/ManagePackage.vue:337
 msgid "Save"
-msgstr ""
+msgstr "Salvesta"
 
 #: ./src/views/Package.vue:109
 msgid "Screenshots"
-msgstr ""
+msgstr "Ekraanitõmmised"
 
 #: ./src/views/ManagePackage.vue:90
 msgid "Screenshots (Limit 5)"
-msgstr ""
+msgstr "Ekraanitõmmised (kuni 5)"
 
 #: ./src/views/Browse.vue:9
 #: ./src/views/Manage.vue:25
 msgid "Search"
-msgstr ""
+msgstr "Otsi"
 
 #: ./src/views/Submit.vue:28
 msgid "Send us a link to a repository for your app to our telegram group along with some instructions on how to build it."
@@ -893,39 +906,39 @@ msgstr ""
 
 #: ./src/views/Package.vue:88
 msgid "Sensors"
-msgstr ""
+msgstr "Andurid"
 
 #: ./src/views/Submit.vue:66
 msgid "Sexually Explicit Content"
-msgstr ""
+msgstr "Varjamatu seksuaalne sisu"
 
 #: ./src/views/ManagePackage.vue:323
 msgid "Show All Revisions"
-msgstr ""
+msgstr "Näita kõiki redaktsioone"
 
 #: ./src/views/Package.vue:119
 msgid "Show NSFW Content"
-msgstr ""
+msgstr "Näita tööl ja avalikkuses ebasobilikku sisu"
 
 #: ./src/App.vue:75
 msgid "Site Status"
-msgstr ""
+msgstr "Veebisaidi olek"
 
 #: ./src/views/Browse.vue:33
 msgid "Sort By"
-msgstr ""
+msgstr "Järjestuse viis"
 
 #: ./src/views/Package.vue:140
 msgid "Source"
-msgstr ""
+msgstr "Lähtekood"
 
 #: ./src/App.vue:72
 msgid "Source Code"
-msgstr ""
+msgstr "Lähtekood"
 
 #: ./src/views/ManagePackage.vue:172
 msgid "Source URL"
-msgstr ""
+msgstr "Lähtekoodi võrguaadress"
 
 #: ./src/views/ManagePackage.vue:59
 #: ./src/views/Package.vue:210
@@ -933,53 +946,53 @@ msgstr ""
 #: ./src/views/Stats.vue:9
 #: ./src/views/Stats.vue:13
 msgid "Stats"
-msgstr ""
+msgstr "Statistika"
 
 #: ./src/views/Manage.vue:45
 msgid "Status"
-msgstr ""
+msgstr "Olek"
 
 #: ./src/App.vue:23
 #: ./src/views/Submit.vue:133
 msgid "Submit"
-msgstr ""
+msgstr "Lisa rakendus"
 
 #: ./src/views/Manage.vue:9
 #: ./src/views/Submit.vue:113
 #: ./src/views/Submit.vue:12
 #: ./src/views/Submit.vue:16
 msgid "Submit App"
-msgstr ""
+msgstr "Lisa rakendus"
 
 #: ./src/views/About.vue:126
 msgid "Submit your app"
-msgstr ""
+msgstr "Lisa oma rakendus"
 
 #: ./src/views/ManagePackage.vue:204
 #: ./src/views/ManagePackage.vue:232
 #: ./src/views/ManageRevisions.vue:184
 msgid "Success"
-msgstr ""
+msgstr "Õnnestus"
 
 #: ./src/views/Package.vue:136
 msgid "Support"
-msgstr ""
+msgstr "Kasutajatugi"
 
 #: ./src/views/ManagePackage.vue:177
 msgid "Support URL"
-msgstr ""
+msgstr "Kasutajatoe võrguaadress"
 
 #: ./src/views/ManagePackage.vue:75
 msgid "Tag Line"
-msgstr ""
+msgstr "Reklaamlause"
 
 #: ./src/App.vue:66
 msgid "Telegram"
-msgstr ""
+msgstr "Telegram"
 
 #: ./src/views/About.vue:93
 msgid "Terms"
-msgstr ""
+msgstr "Tingimused"
 
 #: ./src/views/Package.vue:10
 #: ./src/views/PackageVersions.vue:12
@@ -1013,7 +1026,7 @@ msgstr ""
 
 #: ./src/views/About.vue:138
 msgid "The OpenStore is made possible by many amazing contributors:"
-msgstr ""
+msgstr "OpenStore on olemas tänu paljude suurepäraste kaasautorite tegevusele:"
 
 #: ./src/views/About.vue:5
 msgid ""
@@ -1037,7 +1050,7 @@ msgstr ""
 
 #: ./src/views/NotFound.vue:5
 msgid "The page you are looking for has been removed or does not exist"
-msgstr ""
+msgstr "Sinu otsitav leht on eemaldatud või teda pole olnudki olemas"
 
 #: ./src/views/About.vue:71
 msgid ""
@@ -1062,7 +1075,7 @@ msgstr ""
 
 #: ./src/views/ManagePackage.vue:131
 msgid "This app contains NSFW material"
-msgstr ""
+msgstr "Selles rakenduses leidub ebasobilikku sisu"
 
 #: ./src/views/Package.vue:219
 msgid "This app does not have access to restricted system data, see permissions for more details"
@@ -1082,7 +1095,7 @@ msgstr ""
 
 #: ./src/views/ManagePackage.vue:56
 msgid "This revision is still available"
-msgstr ""
+msgstr "See redaktsioon on jätkuvalt saadaval"
 
 #: ./src/views/ManageRevisions.vue:63
 msgid "This will be added to the beginning of your current changelog"
@@ -1090,165 +1103,167 @@ msgstr ""
 
 #: ./src/views/ManagePackage.vue:70
 msgid "Title"
-msgstr ""
+msgstr "Nimi"
 
 #: ./src/views/Browse.vue:38
 msgid "Title (A-Z)"
-msgstr ""
+msgstr "Pealkiri (A..Z)"
 
 #: ./src/views/Browse.vue:39
 msgid "Title (Z-A)"
-msgstr ""
+msgstr "Pealkiri (Z..A)"
 
 #: ./src/views/ManagePackage.vue:316
 msgid "Total"
-msgstr ""
+msgstr "Kokku"
 
 #: ./src/views/Package.vue:219
 msgid "Total downloads"
-msgstr ""
+msgstr "Allalaadimisi kokku"
 
 #: ./src/views/Manage.vue:73
 msgid "Total:"
-msgstr ""
+msgstr "Kokku:"
 
 #: ./src/views/ManagePackage.vue:268
 #: ./src/views/Package.vue:173
 msgid "Translation Languages"
-msgstr ""
+msgstr "Tõlke keeled"
 
 #: ./src/views/ManagePackage.vue:193
 msgid "Translation URL"
-msgstr ""
+msgstr "Tõlkimise võrguaadress"
 
 #: ./src/views/Package.vue:144
 msgid "Translations"
-msgstr ""
+msgstr "Tõlked"
 
 #: ./src/views/Browse.vue:97
 #: ./src/views/Manage.vue:89
 msgid "Try searching for something else"
-msgstr ""
+msgstr "Proovi otsida midagi muud"
 
 #: ./src/views/Browse.vue:23
 #: ./src/views/ManagePackage.vue:259
 msgid "Type"
-msgstr ""
+msgstr "Tüüp"
 
 #: ./src/views/About.vue:14
 msgid "Ubuntu Touch"
-msgstr ""
+msgstr "Ubuntu Touch"
 
 #: ./src/views/Browse.vue:3
 msgid "Ubuntu Touch Apps"
-msgstr ""
+msgstr "Ubuntu Touchi rakendused"
 
 #: ./src/views/Stats.vue:25
 msgid "Uncategorized"
-msgstr ""
+msgstr "Kategoriseerimata"
 
 #: ./src/views/Package.vue:199
 msgid "Unrestricted read access to:"
-msgstr ""
+msgstr "Piiramatu õigus lugeda asukohast:"
 
 #: ./src/views/Package.vue:195
 msgid "Unrestricted write access to:"
-msgstr ""
+msgstr "Piiramatu õigus kirjutada asukohta:"
 
 #: ./src/views/Package.vue:158
 msgid "Updated"
-msgstr ""
+msgstr "Uuendatud"
 
 #: ./src/views/Feeds.vue:10
 msgid "Updated Apps"
-msgstr ""
+msgstr "Uuendatud rakendused"
 
 #: ./src/views/ManagePackage.vue:283
 msgid "Updated Date"
-msgstr ""
+msgstr "Uuendamise kuupäev"
 
 #: ./src/views/ManageRevisions.vue:13
 msgid "Upload Revision via:"
-msgstr ""
+msgstr "Laadi redaktsioon üles:"
 
 #: ./src/views/ManageRevisions.vue:16
 #: ./src/views/ManageRevisions.vue:204
 msgid "URL"
-msgstr ""
+msgstr "Võrguaadress"
 
 #: ./src/views/ManageRevisions.vue:49
 msgid "URL of App from the Web"
-msgstr ""
+msgstr "Rakenduse aadress veebis"
 
 #: ./src/views/Package.vue:89
 msgid "User Metrics"
-msgstr ""
+msgstr "Kasutajate statistika"
 
 #: ./src/views/Manage.vue:46
 #: ./src/views/ManagePackage.vue:298
 msgid "Version"
-msgstr ""
+msgstr "Versioon"
 
 #: ./src/views/Package.vue:92
 msgid "Video"
-msgstr ""
+msgstr "Video"
 
 #: ./src/views/Package.vue:91
 msgid "Video Files"
-msgstr ""
+msgstr "Videofailid"
 
 #: ./src/views/ManagePackage.vue:187
 msgid "Video URL"
-msgstr ""
+msgstr "Video võrguaadress"
 
 #: ./src/views/About.vue:35
 msgid "View Install Instructions"
-msgstr ""
+msgstr "Vaata paigaldusjuhendit"
 
 #: ./src/views/Submit.vue:77
 msgid "Violence"
-msgstr ""
+msgstr "Vägivald"
 
 #: ./src/components/Types.vue:5
 #: ./src/views/ManagePackage.vue:223
 #: ./src/views/Stats.vue:29
 msgid "Web App"
-msgstr ""
+msgstr "Veebirakendus"
 
 #: ./src/views/Browse.vue:28
 msgid "Web Apps"
-msgstr ""
+msgstr "Veebirakendused"
 
 #: ./src/views/Package.vue:93
 msgid "Webview"
-msgstr ""
+msgstr "Webview sisemine brauser"
 
 #: ./src/views/Manage.vue:4
 msgid "Welcome %{name}!"
-msgstr ""
+msgstr "Tere tulemast, %{name}!"
 
 #: ./src/views/Browse.vue:51
 #: ./src/views/ManageRevisions.vue:23
 #: ./src/views/ManageRevisions.vue:170
 msgid "Xenial"
-msgstr ""
+msgstr "Xenial"
 
 #: ./src/views/ManagePackage.vue:35
 #: ./src/views/ManagePackage.vue:203
 msgid "Yes"
-msgstr ""
+msgstr "Jah"
 
 #: ./src/views/Submit.vue:9
 msgid "You are not allowed to impersonate someone else or another app."
 msgstr ""
+"Sa ei tohi kehastuda mõneks teiseks isikuks ja rakendus et tohi esineda muu "
+"rakendusena."
 
 #: ./src/views/Submit.vue:8
 msgid "You are only allowed to publish apps that you have permission to distribute."
-msgstr ""
+msgstr "Sa võid avaldada rakendusi, mille levitamiseks sul on õigus."
 
 #: ./src/views/Submit.vue:17
 msgid "You must read over the content policy detailed below."
-msgstr ""
+msgstr "Sa pead lugema läbi alljärgnevad sisureeglid."
 
 #: ./src/views/Submit.vue:10
 msgid ""
