@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-10-25 08:03+0000\n"
+"PO-Revision-Date: 2025-10-26 19:03+0000\n"
 "Last-Translator: Priit Jõerüüt <jrthwlate@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/open-store-io/"
 "openstore-web/et/>\n"
@@ -93,6 +93,13 @@ msgid ""
 "contact you in the event there is an issue with your app.\n"
 "Additionally, this site uses cookies to keep you logged in to your account."
 msgstr ""
+"Kõik isiklikud andmed, mida sa meile esitad (nt e-posti aadress, mis on "
+"rakenduste üleslaadimist võimaldava konto jaoks vajalik)\n"
+"ei jõua meie juurest kaugemale\n"
+"ning neid ei kasutata muuks, kui sinu rakenduste haldamiseks.\n"
+"Mõnel erandjuhul võib juhtuda, et võtame sinuga rakenduses osas ühendust.\n"
+"Lisaks kasutab see veebisait küpsiseid, mille abil tagatakse saiti "
+"sisselogituse olek."
 
 #: ./src/views/Manage.vue:13
 msgid "API Key"
@@ -175,6 +182,8 @@ msgstr ""
 #: ./src/views/Submit.vue:15
 msgid "Apps requiring manual review must be submitted by contacting an admin in our telegram group."
 msgstr ""
+"Kui rakendus vajab inimese poolt ülevaatamist, siis pead sellest meie "
+"Telegrami grupis anda peakasutajatele teada."
 
 #: ./src/views/Submit.vue:100
 msgid ""
@@ -187,6 +196,9 @@ msgid ""
 "Apps uploaded to the OpenStore are subject to our submission rules and content policy.\n"
 "You can review the rules and policies before uploading your app."
 msgstr ""
+"Kõik OpenStore'i üleslaaditud rakendused peavad vastama üleslaadimise ja "
+"sisureeglitele.\n"
+"Nendega saad tutvuda enne oma rakenduse üleslaadimist."
 
 #: ./src/views/ManagePackage.vue:297
 msgid "Arch"
@@ -428,6 +440,10 @@ msgid ""
 "For any questions you may have or help you may need just chat with us in our telegram group.\n"
 "You can also submit issues, bugs, and feature requests to our GitLab bug tracker."
 msgstr ""
+"Kui sul on küsimusi või vajad abi, siis saad meiega vestelda meie Telegrami "
+"grupis.\n"
+"Meie GitLabi veahaldusesse saad lisada nii vigade kui probleemide "
+"kirjeldusi, kui ka uute arenduste ettepanekuid."
 
 #: ./src/views/Package.vue:94
 msgid "Full System Access"
@@ -721,6 +737,8 @@ msgstr ""
 #: ./src/views/ManagePackage.vue:189
 msgid "Only YouTube and Odysee videos are supported at this time. Make sure the url is for the embedded video!"
 msgstr ""
+"Hetkel on toetatud vaid YouTube'i ja Odysee videod. Palun kontrolli, et "
+"kasutad lõimimiseks mõeldud võrguaadressi!"
 
 #: ./src/views/About.vue:41
 msgid "Open the terminal app"
@@ -798,6 +816,10 @@ msgid ""
 "are available in several different languages and in both PNG and SVG\n"
 "formats."
 msgstr ""
+"Reklaami oma OpenStore'i rakendust! Lisa need reklaamsildid\n"
+"oma veebisaiti, lähtekoodi hoiudlasse, sotsiaalmeediasse ja \n"
+"mujalegi internetis. Reklaamsildid on saadaval eri keeletes \n"
+"ning nii PNG- kui SVG-vormingutes."
 
 #: ./src/views/ManagePackage.vue:26
 msgid "Public Link"
@@ -997,17 +1019,20 @@ msgstr "Tingimused"
 #: ./src/views/Package.vue:10
 #: ./src/views/PackageVersions.vue:12
 msgid "The app you are looking for has been removed or does not exist"
-msgstr ""
+msgstr "Sinu otsitav rakendus on eemaldatud või teda pole olnudki olemas"
 
 #: ./src/views/About.vue:88
 msgid ""
 "The apps available for download from the OpenStore have their own licencing and terms.\n"
 "Consult each individual app's page for more information."
 msgstr ""
+"OpenStore'i rakendusetepoes saadavalolevad rakendused on avaldatud oma "
+"litsentsi ja tingimuste alusel.\n"
+"Täpsemat teavet leiad iga rakenduse infovaatest."
 
 #: ./src/views/ManagePackage.vue:203
 msgid "The changes to %{name} were saved!"
-msgstr ""
+msgstr "Muudatused on salvestatud: %{name}!"
 
 #: ./src/views/About.vue:95
 msgid ""
@@ -1017,12 +1042,23 @@ msgid ""
 "a manual review process to check for potential security or privacy issues.\n"
 "This checking is far from exhaustive though, and there are no guarantees."
 msgstr ""
+"OpenStore on mittetulunduslik ja vabatahtlikul alusel toimiv projekt.\n"
+"Kuigi anname endast parima, et kõik meie rakenduste hoidlast paigaldatavad "
+"rakendused on ohutud ja turvalised,\n"
+"kasutad sa neid siiski OMAL VASTUTUSEL.\n"
+"OpenStore'i üleslaaditud rakendustele tehakse automaatne või käsitsi "
+"kontroll võimalike turva- ja privaatsusriskide tuvastamiseks.\n"
+"Selline kontroll on kõike muud, kui täielik ning lõplik garantii puudub."
 
 #: ./src/views/About.vue:29
 msgid ""
 "The OpenStore app is installed by default on the UBports builds of Ubuntu Touch.\n"
 "But if you need to install the OpenStore manually, follow these steps:"
 msgstr ""
+"OpenStore'i rakendus on Ubuntu Touchi UBports-variatsioonis vaikimisi "
+"paigaldatud.\n"
+"Aga kui peaks olema vaja OpenStore'i käsitsi paigaldada, siis toimi "
+"alljärgnevalt:"
 
 #: ./src/views/About.vue:138
 msgid "The OpenStore is made possible by many amazing contributors:"
@@ -1047,6 +1083,18 @@ msgid ""
 "are sent to the server to allow it to filter apps to only what you can install and present your native language where possible.\n"
 "This information is not logged or stored and cannot be used to uniquely identify you."
 msgstr ""
+"OpenStore austab sinu privaatsust.\n"
+"Me ei jälita sinu seadet ega pea arvet sinu tegemiste üle. \n"
+"Rakenduste allalaadimiseks ja paigaldamiseks pole sul vaja kasutajakontot. "
+"See tähendab, et me ei logi ka sinu allalaadimisi. \n"
+"Arendajate jaoks me logime rakenduste redaktsioonide allalaadimiskordade "
+"arvu.\n"
+"Teave sinu nutiseadme kohta (protsessori arhitektuur, käitusraamistike "
+"versioonid, operatsioonisüsteemi versioon ja keel)\n"
+"saadetakse serverisse vaid selleks, et otsingus filtreerida rakendusi, mida "
+"saad paigaldada ja kui võimalik, teha seda sinu keeles.\n"
+"Seda teavet ei logita ega salvestata ning seega selle alusel ei saa sind "
+"unikaalselt tuvastada."
 
 #: ./src/views/NotFound.vue:5
 msgid "The page you are looking for has been removed or does not exist"
@@ -1057,21 +1105,30 @@ msgid ""
 "The source code for OpenStore related projects is available under the GPL v3.\n"
 "You can find the code on the OpenStore GitLab page."
 msgstr ""
+"OpenStore'i ja temaga seotud projektide lähtekood on avaldatud GPL v3 "
+"litsentsi alusel.\n"
+"Lähtekoodi leiad OpenStore'i GitLabi lehelt."
 
 #: ./src/views/ManagePackage.vue:6
 #: ./src/views/Package.vue:12
 #: ./src/views/PackageVersions.vue:14
 msgid "There was an error trying to find this app, please refresh and try again."
 msgstr ""
+"Selle rakenduse leidmisel tekkis viga. Palun laadi andmed uuesti ning proovi "
+"veel kord."
 
 #: ./src/views/Browse.vue:70
 #: ./src/views/Manage.vue:30
 msgid "There was an error trying to load the app list, please refresh and try again."
 msgstr ""
+"Rakenduste loendi laadimisel tekkis viga. Palun laadi andmed uuesti ning "
+"proovi veel kord."
 
 #: ./src/views/Stats.vue:5
 msgid "There was an error trying to load the stats, please refresh and try again."
 msgstr ""
+"Statistika laadimisel tekkis viga. Palun laadi andmed uuesti ning proovi "
+"veel kord."
 
 #: ./src/views/ManagePackage.vue:131
 msgid "This app contains NSFW material"
@@ -1080,10 +1137,14 @@ msgstr "Selles rakenduses leidub ebasobilikku sisu"
 #: ./src/views/Package.vue:219
 msgid "This app does not have access to restricted system data, see permissions for more details"
 msgstr ""
+"Sellel rakendusel puudub ligipääs süsteemi piiratud andmetele, üksikasjaliku "
+"teabe leiad õiguste loendist"
 
 #: ./src/views/Package.vue:223
 msgid "This app has access to restricted system data, see permissions for more details"
 msgstr ""
+"Sellel rakendusel on ligipääs süsteemi piiratud andmetele, üksikasjaliku "
+"teabe leiad õiguste loendist"
 
 #: ./src/views/Submit.vue:119
 msgid ""
@@ -1099,7 +1160,7 @@ msgstr "See redaktsioon on jätkuvalt saadaval"
 
 #: ./src/views/ManageRevisions.vue:63
 msgid "This will be added to the beginning of your current changelog"
-msgstr ""
+msgstr "See teave lisatakse senise muudatuste logi algusesse"
 
 #: ./src/views/ManagePackage.vue:70
 msgid "Title"
@@ -1270,3 +1331,5 @@ msgid ""
 "Your app can be pulled without warning at the discretion of our admins.\n"
 "Where possible, we will contact you regarding any such actions."
 msgstr ""
+"Meie peakasutajatel on õigus rakendus ilma igasuguse hoiatuseta eemaldada.\n"
+"Kui võimalik siis me anname sulle sellest teada."
