@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-10-27 20:02+0000\n"
+"PO-Revision-Date: 2025-11-05 07:51+0000\n"
 "Last-Translator: Priit Jõerüüt <jrthwlate@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/open-store-io/"
 "openstore-web/et/>\n"
@@ -151,6 +151,9 @@ msgid ""
 "Apps containing gambling involving real world money transactions are not allowed.\n"
 "  This includes, but is not limited to, online casinos, betting, and lotteries."
 msgstr ""
+"Kui hasartmängus on otseselt või kaudselt kasutusel pärisraha, siis see pole "
+"lubatud.\n"
+"  Sealhulgas, aga mitte ainult, veebikasiinod, ennustused ja lotod."
 
 #: ./src/views/Submit.vue:74
 msgid "Apps containing or promoting child abuse or child sexual abuse are strictly prohibited."
@@ -164,12 +167,19 @@ msgid ""
 "Apps containing or promoting gratuitous violence are not allowed.\n"
 "  This includes, but is not limited to, violence, terrorism, bomb/weapon making, self harm, and grotesque imagery."
 msgstr ""
+"Rakendused, mis sisaldavad asjatut vägivalda, on keelatud. Sealhulgas, aga "
+"mitte ainult vägivaldsus, \n"
+"  terrorism, lõhkeaine kasutamine, pommide ja relvade valmistamine, "
+"enesevigastamine ja grotesksed pildid."
 
 #: ./src/views/Submit.vue:67
 msgid ""
 "Apps containing or promoting sexually explicit content are not allowed.\n"
 "  This includes, but is not limited to, pornography and services promoting sexually explicit content."
 msgstr ""
+"Varjamatu seksuaalse sisuga rakendused pole lubatud.\n"
+"  Sealhulgas, aga mitte ainult pornograafia ja teenused, mis reklaamivad "
+"vastavat varjamata sisu."
 
 #: ./src/views/Submit.vue:7
 msgid "Apps not requiring manual review can be submitted by logging in with the \"Log In\" link above."
@@ -180,6 +190,8 @@ msgstr ""
 #: ./src/views/Submit.vue:96
 msgid "Apps promoting illegal activities (based on USA law) are not allowed."
 msgstr ""
+"Poel lubatud rakendused, mis tutvustavad või reklaamivad illegaalseid "
+"tegevusi (Ameerika Ühendriikide seaduste alusel)."
 
 #: ./src/views/Submit.vue:15
 msgid "Apps requiring manual review must be submitted by contacting an admin in our telegram group."
@@ -192,6 +204,9 @@ msgid ""
 "Apps that are found to be stealing the users data, trying to escalate their privileges without user consent,\n"
 "  or executing malicious process are strictly prohibited."
 msgstr ""
+"Rangelt keelatud on rakendused, mis võivad varastada kasutajate andmeid,\n"
+"  suurendada õigusi ilma kasutaja teadmata või käivitada pahatahtlikul "
+"eesmärgil toimivaid protsesse."
 
 #: ./src/views/About.vue:121
 msgid ""
@@ -465,6 +480,11 @@ msgid ""
 "No need to go into details, a one liner like \"needs to run a daemon in the background\" will do.\n"
 "List all the special features you have, if there are more."
 msgstr ""
+"Palun lisa lühike selgitus, miks sa ei saa rakendust avalda nii, et ta ei "
+"vajaks täiendavaid õigusi.\n"
+"Hiidpalju üksikasju pole vaja, üherealine selgitus on piisav "
+"(nt. vajab tööks deemonit/taustateenust).\n"
+"Kui selliseid omadusi on mitu, siis pane kõik kirja."
 
 #: ./src/components/Pagination.vue:7
 msgid "Go back a page"
@@ -500,6 +520,9 @@ msgid ""
 "publish a stripped down version!\n"
 "Not everyone will want to install apps with less confinement."
 msgstr ""
+"Kui sellise funktsionaalsuse eemaldamine oleks võimalik\n"
+"ja sa saaksid rakenduse kohe avaldada, siis tee seda!\n"
+"Paljud ei soovi kasutada liiga suurte õigustega rakendusi."
 
 #: ./src/views/Submit.vue:95
 msgid "Illegal Activities"
@@ -729,12 +752,23 @@ msgid ""
 "  Any account with serious infractions may be subject to termination.\n"
 "  The OpenStore team thanks you for helping us promote a better enviroment for everyone."
 msgstr ""
+"Üks OpenStore'i eesmärke on toimida turvalise rakendustepoena kõikide "
+"vanusegruppide jaoks.\n"
+"  Sellise eesmärgi saavutamiseks me ei luba mõnda tüüpi rakenduste "
+"avaldamist.\n"
+"  Reeglite mittejärgimise korral eemaldame sinu rakenduse.\n"
+"  Tõsisemate rikkumiste puhul võime ka kasutajakonto sulgeda.\n"
+"  OpenStore'i tiim tänab sind ette, et osaled kõikide jaoks parema ja "
+"turvalisema keskkonna loomisel."
 
 #: ./src/views/Submit.vue:40
 msgid ""
 "Only open source applications allowed for manual review:\n"
 "As the applications might have arbitrary access to the device, every manually reviewed app will get a source code review."
 msgstr ""
+"Vaid avatud lähtekoodiga rakendused sobivad käsitsi ülevaatamiseks.\n"
+"Kuna sellistel rakendustel võivad olla seadmes väga laiad õigused, siis "
+"kõikide nende puhul vaatame lähtekoodi läbi."
 
 #: ./src/views/ManagePackage.vue:189
 msgid "Only YouTube and Odysee videos are supported at this time. Make sure the url is for the embedded video!"
@@ -776,7 +810,7 @@ msgstr "OpenStore'i veebisaidi kaasautorid"
 
 #: ./src/views/ManagePackage.vue:218
 msgid "Override Type"
-msgstr ""
+msgstr "Sürjutamise tüüp"
 
 #: ./src/views/ManagePackage.vue:242
 msgid "Package Info"
@@ -901,7 +935,7 @@ msgstr "Rakenduse lisamise reeglid"
 
 #: ./src/views/Submit.vue:24
 msgid "Rules for Submissions Requiring Manual Review"
-msgstr ""
+msgstr "Tarkvara lisamise reeglid, kui see vajab käsitsi ülevaatamist"
 
 #: ./src/views/About.vue:44
 msgid "Run the command:"
@@ -927,6 +961,8 @@ msgstr "Otsi"
 #: ./src/views/Submit.vue:28
 msgid "Send us a link to a repository for your app to our telegram group along with some instructions on how to build it."
 msgstr ""
+"Saada oma lähtekoodihoidla link koos kompileerimisjuhendiga meie "
+"telegramigruppi."
 
 #: ./src/views/Package.vue:88
 msgid "Sensors"
@@ -1074,6 +1110,14 @@ msgid ""
 "You can also upload and manage your own apps for publication.\n"
 "The OpenStore encourages the apps published within to be open source, but also accepts proprietary apps."
 msgstr ""
+"OpenStore on Ubuntu Touchi ametlik rakendustepood.\n"
+"Tegemist on avatud lähtekoodiga projektiga, mida kogukonna toel juhivad "
+"vabatahtlikud.\n"
+"Sul on võimalik oma Ubuntu Touchi seadme jaoks leida ja paigaldada uusi "
+"rakendusi.\n"
+"Sa saad ka rakendusi üles laadida ja avaldamiseks hallata.\n"
+"OpenStore'i esimene soovitus on, et ka rakendused oleksid avatud "
+"lähtekoodiga, kuid omandusliku/suletud lähtekoodiga rakendused pole keelatud."
 
 #: ./src/views/About.vue:103
 msgid ""
@@ -1155,6 +1199,12 @@ msgid ""
 "For example: \"openstore.openstore-team\", where \"openstore\" is the app and \"openstore-team\"\n"
 "is the group or individual authoring the app."
 msgstr ""
+"See on sinu rakenduse unikaalne tunnus.\n"
+"See peab täpselt vastama sinu kootatud click-paketi manifest.json faili "
+"„name“ väljale ning peab olema väiketähtedes.\n"
+"Näiteks: „openstore.openstore-team“ puhul oleks „openstore“ rakendus ja "
+"„openstore-team“\n"
+"oleks konkreetne isik või tiim, kes selle avaldas/koostas."
 
 #: ./src/views/ManagePackage.vue:56
 msgid "This revision is still available"
