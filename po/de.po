@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2024-03-20 20:01+0000\n"
+"PO-Revision-Date: 2025-11-14 21:51+0000\n"
 "Last-Translator: Daniel Frost <one@frostinfo.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/open-store-io/"
 "openstore-web/de/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.15-dev\n"
 
 #: src/views/Package.vue:120
 msgid ""
@@ -128,7 +128,7 @@ msgstr "App-Statistiken"
 
 #: src/views/About.vue:131
 msgid "App Submission Tutorial"
-msgstr ""
+msgstr "Tutorial Appübermittlung"
 
 #: src/views/Submit.vue:128
 msgid "App Title"
@@ -147,12 +147,6 @@ msgid "Apps"
 msgstr "Apps"
 
 #: src/views/Submit.vue:89
-#, fuzzy
-#| msgid ""
-#| "Apps containing gambling involving real world money transactions are not "
-#| "allowed.\n"
-#| "This includes, but is not limited to, online casinos, betting, and "
-#| "lotteries."
 msgid ""
 "Apps containing gambling involving real world money transactions are not "
 "allowed.\n"
@@ -160,8 +154,8 @@ msgid ""
 "lotteries."
 msgstr ""
 "Apps, welche Glücksspiel mit echtem Geld enthalten, sind nicht erlaubt.\n"
-"Das beinhaltet, ist aber nicht beschränkt auf, Online-Casinos, Wettbüros und "
-"Lotterien."
+"  Das beinhaltet, ist aber nicht beschränkt auf, Online-Casinos, Wettbüros "
+"und Lotterien."
 
 #: src/views/Submit.vue:74
 msgid ""
@@ -172,11 +166,6 @@ msgstr ""
 "streng verboten."
 
 #: src/views/Submit.vue:78
-#, fuzzy
-#| msgid ""
-#| "Apps containing or promoting gratuitous violence are not allowed.\n"
-#| "This includes, but is not limited to, violence, terrorism, bomb/weapon "
-#| "making, self harm, and grotesque imagery."
 msgid ""
 "Apps containing or promoting gratuitous violence are not allowed.\n"
 "  This includes, but is not limited to, violence, terrorism, bomb/weapon "
@@ -184,15 +173,10 @@ msgid ""
 msgstr ""
 "Apps, welche Gewaltverherrlichung enthalten oder anbieten, sind nicht "
 "erlaubt.\n"
-"Das beinhaltet, ist aber nicht beschränkt auf, Gewalt, Terrorismus, Bomben-/"
-"Waffenbau, Selbstverletzung oder abstoßende Bilder."
+"  Das beinhaltet, ist aber nicht beschränkt auf, Gewalt, Terrorismus, "
+"Bomben-/Waffenbau, Selbstverletzung oder abstoßende Bilder."
 
 #: src/views/Submit.vue:67
-#, fuzzy
-#| msgid ""
-#| "Apps containing or promoting sexually explicit content are not allowed.\n"
-#| "This includes, but is not limited to, pornography and services promoting "
-#| "sexually explicit content."
 msgid ""
 "Apps containing or promoting sexually explicit content are not allowed.\n"
 "  This includes, but is not limited to, pornography and services promoting "
@@ -200,7 +184,7 @@ msgid ""
 msgstr ""
 "Apps, welche sexuell eindeutige Inhalte enthalten oder anbieten, sind nicht "
 "erlaubt.\n"
-"Das beinhaltet, ist aber nicht beschränkt auf, Pornografie oder Angebote "
+"  Das beinhaltet, ist aber nicht beschränkt auf, Pornografie oder Angebote "
 "sexueller Dienstleistungen."
 
 #: src/views/Submit.vue:7
@@ -226,11 +210,6 @@ msgstr ""
 "einen Administrator in unserer Telegram-Gruppe."
 
 #: src/views/Submit.vue:100
-#, fuzzy
-#| msgid ""
-#| "Apps that are found to be stealing the users data, trying to escalate "
-#| "their privileges without user consent,\n"
-#| "or executing malicious process are strictly prohibited."
 msgid ""
 "Apps that are found to be stealing the users data, trying to escalate their "
 "privileges without user consent,\n"
@@ -238,7 +217,7 @@ msgid ""
 msgstr ""
 "Apps, bei welchen herausgefunden wird, dass sie Nutzerdaten stehlen, Rechte "
 "ohne Nutzerzustimmung\n"
-"erweitern oder bösartige Prozesse ausführen, sind streng verboten."
+"  erweitern oder bösartige Prozesse ausführen, sind streng verboten."
 
 #: src/views/About.vue:121
 msgid ""
@@ -253,7 +232,7 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:297
 msgid "Arch"
-msgstr ""
+msgstr "Architektur"
 
 #: src/views/ManagePackage.vue:255 src/views/Package.vue:168
 msgid "Architecture"
