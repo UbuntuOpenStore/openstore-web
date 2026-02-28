@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openstore-web 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-21 22:39-0400\n"
-"PO-Revision-Date: 2025-11-14 21:51+0000\n"
+"PO-Revision-Date: 2026-03-01 18:09+0000\n"
 "Last-Translator: Daniel Frost <one@frostinfo.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/open-store-io/"
 "openstore-web/de/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.15-dev\n"
+"X-Generator: Weblate 5.16.1-dev\n"
 
 #: src/views/Package.vue:120
 msgid ""
@@ -329,7 +329,7 @@ msgstr "Einen Betreuer auswählen"
 
 #: src/views/ManageRevisions.vue:52
 msgid "Completed"
-msgstr ""
+msgstr "Abgeschlossen"
 
 #: src/views/Package.vue:69
 msgid "Connectivity"
@@ -903,10 +903,8 @@ msgid "Push Notifications"
 msgstr "Push-Benachrichtigungen"
 
 #: src/views/Package.vue:74
-#, fuzzy
-#| msgid "Read Picture Files"
 msgid "Read Document Files"
-msgstr "Bilddateien lesen"
+msgstr "Dokumente lesen"
 
 #: src/views/Package.vue:81
 msgid "Read Music Files"
@@ -934,13 +932,11 @@ msgstr "Eingeschränkte Zugriffsrechte"
 
 #: src/views/ManagePackage.vue:228
 msgid "Review Exceptions"
-msgstr ""
+msgstr "Review Ausnahmen"
 
 #: src/components/Reviews.vue:3
-#, fuzzy
-#| msgid "Webview"
 msgid "Reviews"
-msgstr "Webinhalte anzeigen"
+msgstr "Reviews"
 
 #: src/views/ManagePackage.vue:295
 msgid "Revision"
@@ -995,10 +991,8 @@ msgid "Sexually Explicit Content"
 msgstr "Explizit sexueller Inhalt"
 
 #: src/views/ManagePackage.vue:323
-#, fuzzy
-#| msgid "New Revision"
 msgid "Show All Revisions"
-msgstr "Neue Überarbeitung"
+msgstr "Zeige alle Versionen"
 
 #: src/views/Package.vue:119
 msgid "Show NSFW Content"
@@ -1017,10 +1011,8 @@ msgid "Source"
 msgstr "Quelle"
 
 #: src/App.vue:72
-#, fuzzy
-#| msgid "Source"
 msgid "Source Code"
-msgstr "Quelle"
+msgstr "Quellcode"
 
 #: src/views/ManagePackage.vue:172
 msgid "Source URL"
@@ -1067,7 +1059,7 @@ msgstr "Zusammenfassung"
 
 #: src/App.vue:66
 msgid "Telegram"
-msgstr ""
+msgstr "Telegram"
 
 #: src/views/About.vue:93
 msgid "Terms"
@@ -1244,7 +1236,7 @@ msgstr ""
 
 #: src/views/ManagePackage.vue:56
 msgid "This revision is still available"
-msgstr ""
+msgstr "Diese Version ist immer noch verfügbar"
 
 #: src/views/ManageRevisions.vue:63
 msgid "This will be added to the beginning of your current changelog"
@@ -1267,10 +1259,8 @@ msgid "Total"
 msgstr "Insgesamt"
 
 #: src/views/Package.vue:219
-#, fuzzy
-#| msgid "Downloads"
 msgid "Total downloads"
-msgstr "Herunterladen"
+msgstr "Downloads insgesamt"
 
 #: src/views/Manage.vue:73
 msgid "Total:"
@@ -1281,16 +1271,12 @@ msgid "Translation Languages"
 msgstr "Übersetzte Sprachen"
 
 #: src/views/ManagePackage.vue:193
-#, fuzzy
-#| msgid "Translation Languages"
 msgid "Translation URL"
-msgstr "Übersetzte Sprachen"
+msgstr "Link für Übersetzung"
 
 #: src/views/Package.vue:144
-#, fuzzy
-#| msgid "Translation Languages"
 msgid "Translations"
-msgstr "Übersetzte Sprachen"
+msgstr "Übersetzung"
 
 #: src/views/Browse.vue:97 src/views/Manage.vue:89
 msgid "Try searching for something else"
@@ -1314,13 +1300,11 @@ msgstr "Nicht kategorisiert"
 
 #: src/views/Package.vue:199
 msgid "Unrestricted read access to:"
-msgstr ""
+msgstr "Uneingeschränkter Zugriff auf:"
 
 #: src/views/Package.vue:195
-#, fuzzy
-#| msgid "Restricted permission"
 msgid "Unrestricted write access to:"
-msgstr "Eingeschränkte Zugriffsrechte"
+msgstr "Uneingeschränkter Schreibzugriff auf:"
 
 #: src/views/Package.vue:158
 msgid "Updated"
@@ -1336,7 +1320,7 @@ msgstr "Datum der Aktualisierung"
 
 #: src/views/ManageRevisions.vue:13
 msgid "Upload Revision via:"
-msgstr ""
+msgstr "Version hochladen mit:"
 
 #: src/views/ManageRevisions.vue:16 src/views/ManageRevisions.vue:204
 msgid "URL"
@@ -1402,7 +1386,7 @@ msgstr "Ja"
 
 #: src/views/Submit.vue:9
 msgid "You are not allowed to impersonate someone else or another app."
-msgstr ""
+msgstr "Es ist nicht gestattet andere Personen oder deren Apps zu übernehmen."
 
 #: src/views/Submit.vue:8
 msgid ""
